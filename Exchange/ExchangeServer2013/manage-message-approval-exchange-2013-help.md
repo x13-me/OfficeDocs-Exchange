@@ -4,6 +4,8 @@ TOCTitle: Manage message approval
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to manage message approval in Exchange 2013
 ms.reviewer:
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 f1.keywords:
@@ -33,10 +35,15 @@ To learn how to implement common scenarios, see [Common message approval scenari
 
 Here's a comparison of the two approaches to message approval.
 
-|**What do you want to do?**|**Approach**|**First step**|
-|:-----|:-----|:-----|
-|Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.|
-|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a transport rule using the **Forward the message for approval** action.  <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
+<br>
+
+****
+
+|What do you want to do?|Approach|First step|
+|---|---|---|
+|Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \> **Groups**, edit the distribution group, and then select **Message approval**.|
+|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a transport rule using the **Forward the message for approval** action. <p> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
+|
 
 ## How the approval process works
 

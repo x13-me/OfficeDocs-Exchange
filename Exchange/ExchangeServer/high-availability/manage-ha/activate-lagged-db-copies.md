@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Howt to activate lagged mailbox database copy
+# How to activate lagged mailbox database copy
 
 A lagged mailbox database copy is a mailbox database copy configured with a replay lag time value greater than 0. If you want the database to replay all log files and make the database copy current, activating and recovering a lagged mailbox database copy is a simple process. However, if you want to replay log files up to a specific point in time, it's a more difficult operation because you have to manually manipulate log files and run Eseutil.
 

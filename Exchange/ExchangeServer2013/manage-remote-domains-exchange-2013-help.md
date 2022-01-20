@@ -5,6 +5,8 @@ ms:assetid: 41a86907-bd9e-40d0-94d3-6deb95a0bffa
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997639(v=EXCHG.150)
 ms:contentKeyID: 51438504
 ms.reviewer: 
+ms.topic: article
+description: How to manage remote domains in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -60,7 +62,7 @@ This example creates a remote domain entry for messages sent to the fabrikam.com
 New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a remote domain, do the following:
 
@@ -94,7 +96,7 @@ This example removes the remote domain entry named Contoso
 Remove-RemoteDomain Contoso
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed the remote domain, do the following:
 

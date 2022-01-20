@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to remove address book policies (ABPs) from Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c20c6f82-2f75-4116-9be1-c5af10113f71
 ms.reviewer:

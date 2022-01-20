@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: This topic describes the recipient filter options that admins can use in custom address lists and global address lists (GALs) in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
 ms.reviewer: 

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Set up an organization relationship to share calendar information with an external business partner. Microsoft 365 and Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization. If you want to share calendars with an on-premises Exchange organization, the on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as federation) and must meet minimum software requirements.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 58ac4338-b883-404f-a6be-eca38ccd8088
 ms.reviewer: 

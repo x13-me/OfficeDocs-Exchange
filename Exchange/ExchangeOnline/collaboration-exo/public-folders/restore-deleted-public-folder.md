@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.reviewer: 
 ms.collection: 

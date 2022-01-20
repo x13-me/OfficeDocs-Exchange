@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms.collection:
@@ -641,3 +641,11 @@ If you still want to migrate your public folders by using PST files, follow thes
 
 > [!CAUTION]
 > If you've already started a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration. The first option is to wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes. The other option is to [create a public folder mailbox](create-public-folder-mailbox.md) and then use the **New-PublicFolder** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox.
+
+## Troubleshoot public folder migrations
+Select the following button for common issues during public folder migration:
+
+> [!div class="nextstepaction"]
+> [Run Tests: Troubleshoot public folder migration](https://aka.ms/PFMGTE)
+
+A flyout page opens in the Microsoft 365 admin center, login with your tenant admin account and select appropriate option.

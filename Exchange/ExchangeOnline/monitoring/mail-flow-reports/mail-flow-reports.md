@@ -22,6 +22,7 @@ The following mail flow reports are available:
 
 - [Auto forwarded messages report](mfr-auto-forwarded-messages-report.md)
 - [Email issues for priority accounts report](mfr-email-issues-for-priority-accounts-report.md)
+- [Exchange transport rule report](mfr-exchange-transport-rule-report.md)
 - [Inbound messages report](mfr-inbound-messages-and-outbound-messages-reports.md)
 - [Non-accepted domain report](mfr-non-accepted-domain-report.md)
 - [Non-delivery details report](mfr-non-delivery-details-report.md)

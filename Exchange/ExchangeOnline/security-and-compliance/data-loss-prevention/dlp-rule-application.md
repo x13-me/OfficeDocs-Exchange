@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how data loss prevention (DLP) rules evaluate messages
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 ms.reviewer: 

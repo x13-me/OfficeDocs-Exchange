@@ -5,6 +5,8 @@ ms:assetid: 76848ea9-79db-4ac8-bdfa-eecc79394461
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461932(v=EXCHG.150)
 ms:contentKeyID: 49289309
 ms.reviewer: 
+ms.topic: article
+description: About the MyPersonalInformation role in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

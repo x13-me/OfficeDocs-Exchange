@@ -5,6 +5,8 @@ ms:assetid: e9c84dd2-4436-41e6-98ff-3f7ac801614c
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.store(v=EXCHG.150)
 ms:contentKeyID: 49720907
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the Store health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

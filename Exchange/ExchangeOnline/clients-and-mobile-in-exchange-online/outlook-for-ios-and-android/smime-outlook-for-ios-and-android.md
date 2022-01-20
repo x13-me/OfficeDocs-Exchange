@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Admins can learn how to configure the S/MIME infrastructure in Exchange Online for use with Outlook for iOS and Android.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 title: S/MIME for Outlook for iOS and Android in Exchange Online
 ms.reviewer: smithre4
@@ -152,7 +152,7 @@ End users will need to enable S/MIME functionality manually by accessing their a
 
 ![Screenshots showing Outlook for iOS S/MIME security settings.](../../media/sensitive-s-mime-setting.png)
 
-When the S/MIME setting is enabled, Outlook for iOS and Android will automatically disable the **Organize By Thread** setting. This is because S/MIME encryption becomes more complex as a conversation thread grows. By removing the threaded conversation view, Outlook for iOS and Android reduces the opportunity for issues with certificates across recipients during signing and encryption. As this is an app-level setting, this change affects all accounts added to the app. This threaded conversation dialog is rendered in iOS as follows:
+When the S/MIME setting is enabled, Outlook for iOS and Android will automatically disable the **Organize By Thread** setting. This is because S/MIME encryption becomes more complex as a conversation thread grows. By removing the threaded conversation view, Outlook for iOS and Android reduces the opportunity for issues with certificates across recipients during signing and encryption. As this is an app-level setting, this change affects all accounts added to the app. This threaded conversation dialog is rendered in iOS as follows:
 
 ![Screenshot showing the Outlook for iOS threaded conversation dialog.](../../media/sensitive-ios-threaded-con.png)
 

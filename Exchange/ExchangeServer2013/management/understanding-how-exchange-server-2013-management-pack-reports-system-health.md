@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How Exchange Server 2013 Management Pack reports on system health
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -17,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-This topic provides information about how the Exchange Server 2013 Management Pack monitors and reports Exchange system health. In the Exchange 2013 Management Pack, health state information is rolled up in a simple manner. Whenever a healthset is unhealthy and the escalate responder is triggered, the following event is logged in the Windows event log:
+This topic provides information about how the Exchange Server 2013 Management Pack monitors and reports Exchange system health. In the Exchange 2013 Management Pack, health state information is rolled up in a simple manner. Whenever a health set is unhealthy and the escalate responder is triggered, the following event is logged in the Windows event log:
 
 ## Managed Availability
 
@@ -37,7 +39,7 @@ In Exchange Server 2013, several architectural changes were made. One of the key
 
 - **Responders**: If a monitor determines that a component is unhealthy, it will trigger a responder. If the problem is recoverable, the responder attempts to recover the component using the built-in logic. There are several responders available for each component, but the one responder that's relevant for the Exchange 2013 Management Pack is the *Escalate Responder*. When the Escalate Responder is triggered, it generates an event that the Exchange 2013 Management Pack recognizes and feeds the appropriate information into that alert that provides administrators with the information necessary to address the problem.
 
-Each component in Exchange 2013 uses a specific set of probes, monitors and responders to monitor itself. These collections of probes and monitors are referred to as *health sets*. For example, there are a number of probes that collect data about various aspects of the ActiveSync service. This data is processed by a designated set of monitors that trigger the appropriate responders to correct any issues that they detect in the ActiveSync service. Collectively, these components make up the ActiveSync health set.
+Each component in Exchange 2013 uses a specific set of probes, monitors, and responders to monitor itself. These collections of probes and monitors are referred to as *health sets*. For example, there are a number of probes that collect data about various aspects of the ActiveSync service. This data is processed by a designated set of monitors that trigger the appropriate responders to correct any issues that they detect in the ActiveSync service. Collectively, these components make up the ActiveSync health set.
 
 The health sets in Exchange are organized into the following four categories that correspond to the management pack dashboard:
 
@@ -59,8 +61,8 @@ This topic provides information about how the Exchange Server 2013 Management Pa
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -110,8 +112,8 @@ The Management Pack agent detects and processes this event. Using this event, Ma
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -157,6 +159,6 @@ The Management Pack agent detects and processes this event. Using this event, Ma
 </tbody>
 </table>
 
-The management packs that monitored previous versions of Exchange were completely centralized. Agents on each Exchange server would collect data and a central correlation engine would compare and evaluate all the data reported by the agents to determine overall service health. In large scale environments, this process resulted in complex correlations, causing delays in alert generation. In Exchange 2013, alert correlation is no longer used. Instead, each server performs its own monitoring and alerts SCOM if necessary, allowing for a highly scalable architecture.
+The management packs that monitored previous versions of Exchange were completely centralized. Agents on each Exchange server would collect data and a central correlation engine would compare and evaluate all the data reported by the agents to determine overall service health. In large-scale environments, this process resulted in complex correlations, causing delays in alert generation. In Exchange 2013, alert correlation is no longer used. Instead, each server performs its own monitoring and alerts SCOM if necessary, allowing for a highly scalable architecture.
 
 Depending on the impact of the event, and the health set that triggers it, the problem is shown in the SCOM console in a different category. If the event causes user impact, then the customer touch points indicator is shown as unhealthy. If it causes an entire component like OWA to be unavailable, then the service component indicator is shown as unhealthy. If it's a problem with a particular server, then the corresponding server health indicator is shown as unhealthy. Finally if the problem is related to a resource that Exchange depends on, the key dependencies indicator is shown as unhealthy. For more information about these categories, see [Getting started with Exchange Server 2013 Management Pack](getting-started-with-exchange-server-2013-management-pack.md).

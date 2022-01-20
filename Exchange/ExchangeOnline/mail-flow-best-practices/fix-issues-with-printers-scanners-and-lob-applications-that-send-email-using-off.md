@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Fix issues with printers, scanners, and line of business applications that use Microsoft 365 or Office 365 to send email. '
 ms.topic: troubleshooting
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
 ms.reviewer:
@@ -141,15 +141,15 @@ There are a few things you should check:
    > [!CAUTION]
    > Don't do this step unless you understand the risks that are involved.
 
-   - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
-   - Browse to **Azure Active Directory** \> **Properties**.
+   - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
+   - Browse to **Azure Active Directory** \> **Properties**.
    - Select **Manage security defaults**.
    - Set the **Enable security defaults** toggle to **No**.
    - Select **Save**.
 
 4. Exclude the user from a [Conditional Access policy](/azure/active-directory/conditional-access/overview) that [blocks Legacy Authentication](/azure/active-directory/conditional-access/block-legacy-authentication):
-   - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
-   - Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+   - Sign in to the Azure portal as a Security administrator, Conditional Access administrator, or Global administrator.
+   - Browse to **Azure Active Directory** \> **Security** \> **Conditional Access**.
    - In the policy that blocks Legacy Authentication, exclude the mailbox being used under **Users and Groups** > **Exclude**.
    - Select **Save**.
 
@@ -206,7 +206,7 @@ This can be caused by a number of issues.
 
 Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Microsoft 365 or Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md#option-3-configure-a-connector-to-send-mail-using-microsoft-365-or-office-365-smtp-relay) to edit your existing connector settings.
 
-### 5.7.64 TenantAttribution; Relay Access Denied or 4.4.62 Mail sent to the wrong Office 365 region
+### 5.7.64 TenantAttribution; Relay Access Denied or 4.4.62 Mail sent to the wrong Office 365 region
 
 This error indicates that email sent from your application or device is not correctly [attributed](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-message-attribution/ba-p/749143) to your tenant. A common cause of this issue is a change in your dedicated and static IP address or a change in the certificate used by your application or device. Update the inbound connector with the new IP address or new certificate information.
 

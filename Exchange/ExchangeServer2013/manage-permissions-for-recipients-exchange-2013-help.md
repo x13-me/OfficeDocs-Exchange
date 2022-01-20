@@ -4,6 +4,8 @@ TOCTitle: Manage permissions for recipients
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to manage recipient permissions in Exchange 2013
 ms.reviewer:
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 f1.keywords:

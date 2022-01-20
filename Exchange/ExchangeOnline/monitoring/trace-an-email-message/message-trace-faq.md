@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Frequently asked questions about message trace.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2
 ms.reviewer: 
