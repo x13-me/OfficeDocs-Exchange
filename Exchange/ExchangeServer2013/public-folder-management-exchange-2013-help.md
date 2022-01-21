@@ -7,6 +7,8 @@ ms:contentKeyID: 49289438
 ms.topic: article
 description: Learn about the Public Folder Management management role group.
 ms.reviewer: 
+ms.topic: article
+description: The Public Folder Management role group is one of several built-in role groups that make up the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -15,7 +17,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Public Folder Management
+# Public folder management
 
 _**Applies to:** Exchange Server 2013_
 
@@ -79,15 +81,15 @@ For more information about role assignments and management scopes, see the follo
 
 ### Management roles assigned to this role group
 
-<table >
+<table>
 <colgroup>
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
-<col  />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
