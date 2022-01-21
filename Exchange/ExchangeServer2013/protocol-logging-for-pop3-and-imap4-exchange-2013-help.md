@@ -5,6 +5,7 @@ ms:assetid: 212ed3d5-0c98-4346-a860-1cfcac5d73c4
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335141(v=EXCHG.150)
 ms:contentKeyID: 50395394
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 description: How to use protocol logging to review the POP3 and IMAP4 connections in your Exchange environment
 ms.author: serdars

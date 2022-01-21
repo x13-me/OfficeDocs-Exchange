@@ -9,8 +9,6 @@ ms.assetid: 7af6d094-199f-4134-a25d-9fc7e9c05fe1
 f1.keywords:
 ms.topic: article
 description: How to prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Server
-ms.topic: article
-description:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
