@@ -150,6 +150,8 @@ To verify that you have successfully registered the Microsoft Office 2010 Filter
 
 ## Register third-party IFilters to support additional file formats
 
+You can extend the attachment scanning capability for additional file types by registering additional third-party IFilters. Support for additional files can be added by installing and registering the file type's IFilter on each of your Mailbox servers.
+    
 > [!IMPORTANT]
 > Microsoft hasn't tested third-party IFilters with transport rules, therefore we recommend that you deploy and test any third-party IFilters in a test environment before deploying into your production environment.
 
