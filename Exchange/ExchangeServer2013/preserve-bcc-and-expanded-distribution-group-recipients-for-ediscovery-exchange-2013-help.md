@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to preserve Bcc and expanded distribution group recipient information for eDiscovery in Microsoft Exchange
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 f1.keywords:
 - NOCSH
