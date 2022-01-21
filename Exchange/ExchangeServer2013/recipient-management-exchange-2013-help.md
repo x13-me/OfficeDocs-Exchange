@@ -5,6 +5,8 @@ ms:assetid: 669d602e-68e3-41f9-a455-b942d212d130
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298028(v=EXCHG.150)
 ms:contentKeyID: 49289275
 ms.reviewer: 
+ms.topic: article
+description: About the Recipient Management role group of the Role Based Access Control permissions model in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -81,15 +83,15 @@ For more information about role assignments and management scopes, see the follo
 
 ### Management roles assigned to this role group
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -5,9 +5,11 @@ ms:assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms:mtpsurl: https://technet.microsoft.com/library/Ee364755(v=EXCHG.150)
 ms:contentKeyID: 49289452
 ms.reviewer: 
+ms.topic: article
+description: About the Recoverable Items folder in Microsoft Exchange
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -115,11 +117,11 @@ The following table lists the contents of and actions that can be performed in t
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -162,11 +164,11 @@ The following table lists the contents of and actions that can be performed in t
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -211,8 +213,8 @@ The following table lists the message properties that trigger copy-on-write page
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -279,10 +281,10 @@ The following table lists the events logged when the Recoverable Items folder re
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
