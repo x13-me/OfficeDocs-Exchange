@@ -5,6 +5,8 @@ ms:assetid: 0338980f-3a64-49d3-bc3c-bf6f10f88cb4
 ms:mtpsurl: https://technet.microsoft.com/library/JJ837174(v=EXCHG.150)
 ms:contentKeyID: 49940598
 ms.reviewer: 
+ms.topic: article
+description: How to register Filter Pack IFilters with Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -128,7 +130,7 @@ Deploying the Office 2010 Filter Pack consists of two main steps:
 
     4. Start the Microsoft Exchange Transport service.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully registered the Microsoft Office 2010 Filter Pack IFilters, do the following:
 
@@ -205,9 +207,9 @@ This procedure shows how to deploy the [Adobe PDF IFilter](https://www.adobe.com
 
    4. Start the Microsoft Exchange Transport service.
 
-## How do you know this worked?
+### How do you know this worked?
 
-Use the same procedure listed in the How do you know this worked? section earlier in this topic, substituting Publisher files with Adobe PDF files.
+Use the same procedure listed in the "How do you know this worked?" section earlier in this topic, substituting Publisher files with Adobe PDF files.
 
 ## For more information
 
