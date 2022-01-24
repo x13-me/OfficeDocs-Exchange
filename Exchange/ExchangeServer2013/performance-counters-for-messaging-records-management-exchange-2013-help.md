@@ -131,7 +131,7 @@ The following table describes performance counters for MRM.
 <p>This counter is reset to zero at every work cycle checkpoint of the Managed Folder Assistant work cycle.</p></td>
 </tr>
 <tr class="odd">
-<td><p>TotalSizeItemsMoved - Size of Items Moved due to an Archive policy tag (In Bytes)</p></td>
+<td><p>TotalSizeItemsMoved - Size of Items Moved because of an Archive policy tag (In Bytes)</p></td>
 <td><p>MSExchange Managed Folder Assistant</p></td>
 <td><p>Indicates the total size of items moved to a folder or moved to archive by the Managed Folder Assistant.</p>
 <p>The following items are included:</p>
@@ -157,7 +157,7 @@ The following table describes performance counters for MRM.
 <td><p>TotalItemsWithDefaultTag - Items stamped with Default Tag (Expiry or Archive)</p></td>
 <td><p>MSExchange Managed Folder Assistant</p></td>
 <td><p>Indicates the number of items assigned a default policy tag (DPT) based on a user action, for example, when a user selects a message with a personal tag and selects <strong>Use folder policy</strong>.</p>
-<p>If a new user is assigned a retention policy with a DPT, the counter is incremented by the number of items that will be assigned the DPT due to the retention policy.</p>
+<p>If a new user is assigned a retention policy with a DPT, the counter is incremented by the number of items that will be assigned the DPT because of the retention policy.</p>
 
 > [!NOTE]
 > If a user has a retention policy with a DPT, new messages that arrive through transport get a default tag, and this isn't tracked by this counter.
@@ -170,26 +170,26 @@ The following table describes performance counters for MRM.
 <td><p>Indicates the number of items tagged with the system cleanup tag. This includes mailbox metadata items that aren't visible to users.</p></td>
 </tr>
 <tr class="odd">
-<td><p>TotalItemsExpiredByDefaultExpiryTag - Items expired due to a default Expiry Tag</p></td>
+<td><p>TotalItemsExpiredByDefaultExpiryTag - Items expired because a default Expiry Tag</p></td>
 <td><p>MSExchange Managed Folder Assistant</p></td>
-<td><p>Indicates the number of items expired (soft or hard deleted) by the Managed Folder Assistant due to any non-personal (default or system) tag in a retention policy.</p>
+<td><p>Indicates the number of items expired (soft or hard deleted) by the Managed Folder Assistant because of any non-personal (default or system) tag in a retention policy.</p>
 <p>This doesn't include the items expired by Recoverable Items clean up or system clean up.</p></td>
 </tr>
 <tr class="even">
-<td><p>TotalItemsExpiredByPersonalExpiryTag - Items expired due to a personal Expiry Tag</p></td>
+<td><p>TotalItemsExpiredByPersonalExpiryTag - Items expired because of a personal Expiry Tag</p></td>
 <td><p>MSExchange Managed Folder Assistant</p></td>
-<td><p>Indicates the number of items expired (soft or hard deleted) by the Managed Folder Assistant due to a personal tag in the retention policy.</p></td>
+<td><p>Indicates the number of items expired (soft or hard deleted) by the Managed Folder Assistant because of a personal tag in the retention policy.</p></td>
 </tr>
 <tr class="odd">
-<td><p>TotalItemsMovedByDefaultArchiveTag - Items moved due to a default Archive Tag</p></td>
+<td><p>TotalItemsMovedByDefaultArchiveTag - Items moved because of a default Archive Tag</p></td>
 <td><p>MSExchange Managed Folder Assistant</p></td>
-<td><p>Indicates the number of items moved to the archive by the Managed Folder Assistant due to any non-personal (default or system) archive tag in a retention policy.</p>
+<td><p>Indicates the number of items moved to the archive by the Managed Folder Assistant because of any non-personal (default or system) archive tag in a retention policy.</p>
 <p>This doesn't include the items moved to the Recoverable Items folder in archive by Recoverable Items cleanup.</p></td>
 </tr>
 <tr class="even">
-<td><p>TotalItemsMovedByPersonalArchiveTag - Items Moved due to an Archive Tag</p></td>
+<td><p>TotalItemsMovedByPersonalArchiveTag - Items Moved because of an Archive Tag</p></td>
 <td><p>MSExchange Managed Folder Assistant</p></td>
-<td><p>Indicates the number of items moved to the archive by the Managed Folder Assistant due to a personal archive tag in a retention policy.</p></td>
+<td><p>Indicates the number of items moved to the archive by the Managed Folder Assistant because of a personal archive tag in a retention policy.</p></td>
 </tr>
 <tr class="odd">
 <td><p>TotalMovedDumpsterItems - Mailbox Dumpsters Moved Items</p></td>
