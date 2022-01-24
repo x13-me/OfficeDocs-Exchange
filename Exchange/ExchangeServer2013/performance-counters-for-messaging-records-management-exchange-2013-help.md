@@ -170,7 +170,7 @@ The following table describes performance counters for MRM.
 <td><p>Indicates the number of items tagged with the system cleanup tag. This includes mailbox metadata items that aren't visible to users.</p></td>
 </tr>
 <tr class="odd">
-<td><p>TotalItemsExpiredByDefaultExpiryTag - Items expired because a default Expiry Tag</p></td>
+<td><p>TotalItemsExpiredByDefaultExpiryTag - Items expired because of a default Expiry Tag</p></td>
 <td><p>MSExchange Managed Folder Assistant</p></td>
 <td><p>Indicates the number of items expired (soft or hard deleted) by the Managed Folder Assistant because of any non-personal (default or system) tag in a retention policy.</p>
 <p>This doesn't include the items expired by Recoverable Items clean up or system clean up.</p></td>
