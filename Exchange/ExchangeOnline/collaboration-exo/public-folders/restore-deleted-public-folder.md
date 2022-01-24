@@ -91,7 +91,7 @@ The user restoring the public folder must have the **Public Folders** role assig
 
 Restoring a folder restores all of its subfolders, but you can also restore only one subfolder.
 
-For example, the following commands restores `Subfolder1` under `\Parent1`:
+For example, the following commands restore `Subfolder1` under `\Parent1`:
 
 ```PowerShell
 $pf = Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse | where {$_.Name -eq "Subfolder1"}; Set-PublicFolder $pf.identity -Path \Parent1
