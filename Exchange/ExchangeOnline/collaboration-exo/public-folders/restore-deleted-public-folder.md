@@ -18,13 +18,15 @@ title: Restore a deleted public folder in Exchange Online
 
 # Restore a deleted public folder in Exchange Online
 
-In some cases, you can restore a public folder that has been deleted.
+This article walks you through the steps to restore a delete public folder in Exchange Online.
 
-Public folders that have been deleted by users or administrators are stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. Deleted folders are preserved here until the time retention period is over.
+Public folders that have been deleted by users (using client like Outlook) or administrators (using administrative tools like Power Shell or EAC) are normally stored in the public folder dumpster located in `\NON_IPM_SUBTREE\DUMPSTER_ROOT`. Deleted folders are preserved here until the time retention period is over.
 
-For scenarios where public folder contents are put on hold using retention policy, the folders removed from `\NON_IPM_SUBTREE\DUMPSTER_ROOT` are preserved under `\NON_IPM_SUBTREE\DiscoveryHolds` until the retention hold period is over.
+For the scenarios where [public folder contents are put on hold using retention policy](https://docs.microsoft.com/microsoft-365/compliance/create-retention-policies), the folders removed from `\NON_IPM_SUBTREE\DUMPSTER_ROOT` are preserved under `\NON_IPM_SUBTREE\DiscoveryHolds` until the retention hold period is over.
 
 Any folders preserved in the public folder dumpster or under the DiscoverHolds folder can be restored using EXO PowerShell. Restoring the public folder will restore all subfolders and items present in the folder.
+
+In some rare scenarios, you may also find folders under `\NON_IPM_SUBTREE\LOST_AND_FOUND`. [Please read this article](https://techcommunity.microsoft.com/t5/exchange-team-blog/introducing-public-folder-8220-lost-and-found-8221-functionality/ba-p/604043) for more details on LOST_AND_FOUND and how to recover folders if you find them under LOST_AND_FOUND
 
 > [!NOTE]
 > The folders in the dumpster are permanently deleted after the retention period is over. After a public folder is permanently deleted, it cannot be restored, unless it is preserved under DiscoveryHolds by a retention policy.
@@ -42,19 +44,21 @@ The user restoring the public folder must have the `Public Folders` role assigne
     The following command lists all non-system public folders in the dumpster:
 
     ```PowerShell
-    Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.FolderClass -ne "$null"}
+    Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse -ResultSize Unlimited |?{$_.FolderClass -ne "$null"}
     ```
 
     Alternatively, you can search for specific folders. For example, the following command searches for a deleted public folder that was named `Marketing`:
 
     ```PowerShell
-    Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse |?{$_.Name -like "Marketing"}
+    Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse -ResultSize Unlimited |?{$_.Name -like "Marketing"}
     ```
 
-    You can also search for public folders present under `\NON_IPM_SUBTREE\DiscoverHolds`. For example, the following command searches for a deleted public folder that was named `Sales`:
+    Public folders moved under `\NON_IPM_SUBTREE\DiscoveryHolds` have a GUID appended to there name. You can search for public folders present under `\NON_IPM_SUBTREE\DiscoveryHolds` using following command. 
+    
+    For example, the following command searches for a deleted public folder that was named `Sales`:
     
     ```PowerShell
-    Get-PublicFolder \NON_IPM_SUBTREE\DiscoveryHolds -Recurse |?{$_.Name -like "Sales"}
+    Get-PublicFolder \NON_IPM_SUBTREE\DiscoveryHolds -Recurse -ResultSize Unlimited |?{$_.Name -like "*Sales*"}
     ```
 
 1. Use the following command to restore the desired public folder:
@@ -62,7 +66,6 @@ The user restoring the public folder must have the `Public Folders` role assigne
     ```PowerShell
     Set-PublicFolder -Identity "Full path of folder to be restored" -Path "Parent folder path where folder needs to be restored"
     ```
-
     For example, to restore a public folder named `PF1` to the root of the public folder tree:
 
     ```PowerShell
@@ -72,8 +75,19 @@ The user restoring the public folder must have the `Public Folders` role assigne
     The following alternate example restores a public folder named `Sales` to the root of the public folder tree:
 
     ```PowerShell
-    Set-PublicFolder -Identity \NON_IPM_SUBTREE\DiscoveryHolds\Sales -Path \
+    Set-PublicFolder -Identity \NON_IPM_SUBTREE\DiscoveryHolds\Sales_774d775c-da53-4ee7-869c-353c8a6e3265 -Path \
     ```
+
+In case you are not sure of original path of deleted folder, use following command to find original path where the folder was present before deletion.
+    
+For example, to find original path of deleted folder named `Marketing` : 
+
+    
+    $folder=Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse -ResultSize Unlimited |?{$_.Name -like "Marketing"};Get-PublicFolder (Get-PublicFolder $folder.ParentPath).DumpsterEntryId
+    
+    
+
+
 
 ### Restore a specific subfolder
 
