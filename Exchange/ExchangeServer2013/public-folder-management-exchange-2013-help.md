@@ -4,8 +4,6 @@ TOCTitle: Public Folder Management
 ms:assetid: e167d95e-bb39-43fd-b960-204ab0de27da
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876947(v=EXCHG.150)
 ms:contentKeyID: 49289438
-ms.topic: article
-description: Learn about the Public Folder Management management role group.
 ms.reviewer: 
 ms.topic: article
 description: The Public Folder Management role group is one of several built-in role groups that make up the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server
