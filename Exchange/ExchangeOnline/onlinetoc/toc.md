@@ -33,7 +33,7 @@
 ### [Manage distribution groups](../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md)
 #### [Create group naming policy](../recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy.md)
 #### [Override group naming policy](../recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy.md)
-###  [Dynamic distribution groups]()
+###  Dynamic distribution groups
 #### [Manage dynamic distribution groups](../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md)
 #### [Modern dynamic distribution groups in Exchange Online](../recipients-in-exchange-online/manage-dynamic-distribution-groups/modern-dynamic-distribution-groups.md)
 #### [View group members](../recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members.md)
