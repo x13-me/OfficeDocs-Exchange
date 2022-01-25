@@ -83,9 +83,10 @@ On the Exchange server, run the following command to synchronize mail-enabled pu
 
 Where `Credential` is your Microsoft 365 or Office 365 admin username and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
 
+> [!IMPORTANT]
+> Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` switch. As part of the sync operation, the script, when appropriate, could create, update or delete mail-enabled public folder objects on Exchange Online.
+
 > [!NOTE]
-> Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` switch.
->
 > We also recommend that you run this script daily to synchronize your mail-enabled public folders.
 
 Use the steps in [Troubleshooting mail enabled public folder synchronization failures when using PowerShell script](/exchange/troubleshoot/public-folders/mepf-sync-failures-script) if you see errors while running the script. 
