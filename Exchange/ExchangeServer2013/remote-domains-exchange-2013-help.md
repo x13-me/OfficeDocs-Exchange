@@ -5,6 +5,8 @@ ms:assetid: 10fb7d62-4d78-40a3-82db-d62bcd27ba42
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996309(v=EXCHG.150)
 ms:contentKeyID: 49289173
 ms.reviewer: 
+ms.topic: article
+description: Create remote domain entries to define settings for message transfer between your Microsoft Exchange Server organization and domains outside your organization
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -48,9 +50,9 @@ The following table describes various client and server combinations and the typ
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
