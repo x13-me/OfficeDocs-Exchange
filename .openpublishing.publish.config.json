@@ -50,27 +50,25 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "exchange/common",
       "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
       "branch": "live",
-      "branch_mapping": {},
-      "include_in_build": true
+      "branch_mapping": {}
     },
     {
       "path_to_root": "outlook/common",
       "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
       "branch": "live",
-      "branch_mapping": {},
-      "include_in_build": true
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
