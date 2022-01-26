@@ -903,7 +903,7 @@ if($OutboundConnectorCount -gt 0){
 #*****************************************************************************
 # TransportRule
 #*****************************************************************************
-Add-Content $outfile "`n[Byte[]]$Data = Get-Content -Path `".TransportRules.xml`" -Encoding Byte -ReadCount 0"
+Add-Content $outfile "`n$Data = [System.IO.File]::ReadAllBytes('.TransportRules.xml')"
 Add-Content $outfile "`nImport-TransportRuleCollection -FileData $Data"
 #****************************************************************************
 # Domain Type

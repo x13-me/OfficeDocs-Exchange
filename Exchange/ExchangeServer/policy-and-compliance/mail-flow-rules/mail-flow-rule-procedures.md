@@ -467,13 +467,13 @@ For detailed syntax and parameter information, see [Export-TransportRuleCollecti
 1. Use the following syntax:
 
    ```PowerShell
-   [Byte[]]$Data = Get-Content -Path "<OutputFile>" -Encoding Byte -ReadCount 0
+   $Data = [System.IO.File]::ReadAllBytes('<OutputFile>')
    ```
 
    For example, to import the mail flow rule collection from C:\My Documents\Exported Rules.xml, run the following command:
 
    ```PowerShell
-   Byte[]]$Data = Get-Content -Path "C:\My Documents\Exported Rules.xml" -Encoding Byte -ReadCount 0
+   $Data = [System.IO.File]::ReadAllBytes('C:\My Documents\Exported Rules.xml')
    ```
 
 2. Run the following command:
