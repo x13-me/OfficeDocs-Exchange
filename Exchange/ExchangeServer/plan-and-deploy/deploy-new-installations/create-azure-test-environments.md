@@ -242,7 +242,7 @@ $saName=(Get-AZStorageaccount | Where {$_.ResourceGroupName -eq $rgName}).Storag
 New-AZAvailabilitySet -ResourceGroupName $rgName -Name exAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 # Specify the virtual machine name and size
 $vmName="exVM"
-$vmSize="Standard_D3_v2"
+$vmSize="standard_d8s_v3"
 $vnet=Get-AZVirtualNetwork -Name "EXSrvrVnet" -ResourceGroupName $rgName
 $avSet=Get-AZAvailabilitySet -Name exAvailabilitySet -ResourceGroupName $rgName
 $vm=New-AZVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avSet.Id
