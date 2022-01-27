@@ -136,7 +136,7 @@ Get-OutboundConnector | Export-Clixml OutboundConnector.xml
 # Exchange mail flow rules
 #****************************************************************************
 $file = Export-TransportRuleCollection
-Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
+[System.IO.File]::WriteAllBytes('.TransportRules.xml', $file.FileData)
 ```
 
 Run the following commands from the Export directory to update the .xml files with the target organization. Replace contoso.onmicrosoft.com and contososuites.onmicrosoft.com with your source and target organization names.
