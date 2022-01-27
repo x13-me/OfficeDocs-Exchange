@@ -451,13 +451,13 @@ You can import a mail flow rule collection that you've previously exported as a 
 2. Use the following syntax:
 
    ```PowerShell
-   Set-Content -Path "<OutputFile>" -Value $file.FileData -Encoding Byte
+   [System.IO.File]::WriteAllBytes('<OutputFile>', $File.FileData)
    ```
 
    For example, to save the exported mail flow rule collection to the file C:\My Documents\Exported Rules.xml, run the following command:
 
    ```PowerShell
-   Set-Content -Path "C:\My Documents\Exported Rules.xml" -Value $file.FileData -Encoding Byte
+   [System.IO.File]::WriteAllBytes('C:\My Documents\Exported Rules.xml', $File.FileData)
    ```
 
 For detailed syntax and parameter information, see [Export-TransportRuleCollection](/powershell/module/exchange/export-transportrulecollection).
