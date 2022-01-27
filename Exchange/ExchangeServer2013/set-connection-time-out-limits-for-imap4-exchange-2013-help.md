@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998665(v=EXCHG.150)
 ms:contentKeyID: 50395405
 ms.reviewer: 
 manager: serdars
+ms.topic: how-to
+description: How to set connection time-out limits for IMAP4 in Microsoft Exchange
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
