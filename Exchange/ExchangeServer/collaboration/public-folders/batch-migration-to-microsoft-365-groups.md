@@ -20,7 +20,7 @@ title: Use batch migration to migrate Exchange Server public folders to Microsof
 
 # Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups
 
-Through a process known as *batch migration*, you can move some or all of your Exchange Server public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Microsoft 365 Groups](migrate-to-microsoft-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
+Through a process known as *batch migration*, you can move some or all of your Exchange Server public folders to Microsoft 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. For more information about the features and benefits of Groups, see [Migrate your public folders to Microsoft 365 Groups](migrate-to-microsoft-365-groups.md).
 
 This article contains the step-by-step procedures for performing the actual batch migration of your Exchange Server public folders.
 
@@ -34,19 +34,19 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - In Exchange Server, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
 
-- Before you migrate your public folders to Microsoft 365 Groups, we recommend that you first move user mailboxes to Microsoft 365 or Office 365 for those users who need access to Microsoft 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../../../ExchangeOnline/mailbox-migration/mailbox-migration.md).
+- We recommend that you move user mailboxes to Microsoft 365 or Office 365 for those users who need access to Microsoft 365 Groups. For more information, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../../../ExchangeOnline/mailbox-migration/mailbox-migration.md).
 
 - MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](../../architecture/mailbox-servers/mrs-proxy-endpoint.md) for details.
 
 - You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2016 or Exchange 2019 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Only public folders of type calendar and mail can be migrated to Microsoft 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Microsoft 365 or Office 365 are expected to be created prior to the migration.
+- Currently, 0nly Calendar and Mail public folders can be migrated to Microsoft 365 Groups. Migrating other types of public folders is not supported. Also, the target Groups need to exist in Microsoft 365 or Office 365 before the migration.
 
 - The batch migration process only copies messages and calendar items from public folders for migration to Microsoft 365 Groups. It doesn't copy other entities of public folders like policies, rules, and permissions.
 
 - Microsoft 365 Groups comes with a 50GB mailbox. Ensure that the sum of public folder data that you're migrating totals less than 50GB. In addition, leave storage space for additional content to be added by your users in the future, post-migration. We recommend migrating public folders no bigger than 25GB in total size.
 
-- This is not an "all or nothing" migration. You can pick and choose specific public folders to migrate, and only those public folders will be migrated. If the public folder being migrated has sub-folders, those sub-folders will not be automatically included in the migration. If you need to migrate them, you need to explicitly include them. The migration batch allows for a mapping of a maximum two sub-folders to a single Microsoft 365 or Office 365 Group mailbox.
+- This migration is not an "all or nothing". You can pick and choose specific public folders to migrate. If the migrated public folder has sub-folders, those sub-folders are not automatically included in the migration. You need to explicitly include any sub-folders that you want to migrate. The migration allows you to map a maximum two sub-folders to a single Microsoft 365 Group mailbox.
 
 - The public folders will not be affected in any manner by this migration. However, once you use our lock-down script to make the migrated public folders read-only, your users will be forced to use Microsoft 365 groups instead of public folders.
 
