@@ -208,7 +208,7 @@ For more information about the CSV file requirements for local move requests, se
 To create a migration batch, use this syntax:
 
 ```PowerShell
-New-MigrationBatch -Local [-AutoStart] [-AutoComplete] -Name "<MigrationBatchName>" -CSVData ([Byte[]](Get-Content -Encoding Byte -Path "<PathAndFileName>" -ReadCount 0)) [<-ArchiveOnly | -PrimaryOnly>] [-TargetDatabases "<MailboxDatabase1>","<MailboxDatabase1>"... [-TargetArchiveDatabases "<MailboxDatabase1>","<MailboxDatabase1>"...] [-Priority <PriorityValue>] [-BadItemLimit <Value>] [-AcceptLargeDataLoss]
+New-MigrationBatch -Local [-AutoStart] [-AutoComplete] -Name "<MigrationBatchName>" -CSVData ([System.IO.File]::ReadAllBytes('<PathAndFileName>')) [<-ArchiveOnly | -PrimaryOnly>] [-TargetDatabases "<MailboxDatabase1>","<MailboxDatabase1>"... [-TargetArchiveDatabases "<MailboxDatabase1>","<MailboxDatabase1>"...] [-Priority <PriorityValue>] [-BadItemLimit <Value>] [-AcceptLargeDataLoss]
 ```
 
 This example creates a migration batch with these settings:
