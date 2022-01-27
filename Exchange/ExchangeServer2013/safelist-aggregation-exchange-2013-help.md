@@ -15,7 +15,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Safelist aggregation
+# Safelist aggregation in Exchange
 
 _**Applies to:** Exchange Server 2013_
 
