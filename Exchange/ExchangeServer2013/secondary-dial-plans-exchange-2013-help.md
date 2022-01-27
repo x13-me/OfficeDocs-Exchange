@@ -5,6 +5,8 @@ ms:assetid: ecf474c2-042d-4aaf-9f5b-d5138c56ef39
 ms:mtpsurl: https://technet.microsoft.com/library/Ff629383(v=EXCHG.150)
 ms:contentKeyID: 54817012
 ms.reviewer: 
+ms.topic: article
+description: Secondary dial plans in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -50,8 +52,8 @@ The following table defines terms that are used when discussing primary and seco
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
