@@ -5,6 +5,8 @@ ms:assetid: 09e6732a-4e99-44d0-801d-9463fdc57a9b
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638083(v=EXCHG.150)
 ms:contentKeyID: 48384809
 ms.reviewer: 
+ms.topic: article
+description: In Microsoft Exchange, administrators can set up different levels of calendar access to allow businesses to collaborate with other businesses and enable users share their schedules
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -28,9 +30,9 @@ The following sharing scenarios are supported in Exchange 2013:
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -69,9 +71,9 @@ The following table lists the differences between organization relationships and
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -193,8 +195,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

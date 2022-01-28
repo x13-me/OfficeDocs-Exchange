@@ -5,6 +5,8 @@ ms:assetid: 8a1b5de1-8f97-4e19-97d6-de3c0770c55e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657466(v=EXCHG.150)
 ms:contentKeyID: 49289334
 ms.reviewer: 
+ms.topic: article
+description: Sharing policies in Microsoft Exchange enable user-established, people-to-people sharing of calendar information with different types of external users
 manager: serdars
 ms.author: serdars
 author: msdmaguire

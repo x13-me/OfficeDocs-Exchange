@@ -5,6 +5,8 @@ ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 ms:mtpsurl:
 ms:contentKeyID:
 ms.reviewer:
+ms.topic: how-to
+description: How to set up a virtual certificate collection to validate S/MIME in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
