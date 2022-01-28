@@ -126,7 +126,7 @@ After you export the TPD data from your on-premises AD RMS servers, you need to 
 1. In the Exchange Online organization, import the TPD data.
 
    ```PowerShell
-   Import-RMSTrustedPublishingDomain -FileData $( [Byte[]] (Get-Content -Encoding Byte -Path "<Path to exported TPD file>" -ReadCount 0))
+   Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<Path to exported TPD file>'))
    ```
 
 2. Enable IRM in the Exchange Online organization.
