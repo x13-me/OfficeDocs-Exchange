@@ -8,8 +8,6 @@ ms.reviewer:
 ms.topic: article
 description: Microsoft Exchange client features that give users who are enabled for Exchange Unified Messaging (UM) access to the email and voice mail messages in their mailbox
 manager: serdars
-ms.topic: article
-description: Client voice mail features in Microsoft Exchange
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
