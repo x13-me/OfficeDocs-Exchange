@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d0d10ab1-08c1-4ffe-aaa5-f9dbd9a118ed
 ms.reviewer: 
@@ -32,6 +32,8 @@ This topic covers the following complex mail flow scenarios using Exchange Onlin
 ## Using a third-party cloud service with Microsoft 365 or Office 365
 
 ### Scenario 1 - MX record points to third-party spam filtering
+  > [!IMPORTANT]
+  > Microsoft strongly recommends you to enable Enhanced Filtering for Connectors or bypass filtering completely using a mail flow rule (check out point 5). Failure to follow this will inevitably result in misclassification of inbound email to your organization and to subpar experience of Office 365 email and protection features.
 
 I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service for spam, malware, and phish filtering. All email from the internet must first be filtered by this third-party cloud service before being routed to Microsoft 365 or Office 365.
 

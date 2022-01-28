@@ -2,11 +2,11 @@
 ms.localizationpriority: medium
 description: 'Summary: An overview of SMTP AUTH in Exchange Online.'
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid:
 ms.reviewer:
-title: Enable or disable SMTP AUTH
+title: Enable or disable SMTP AUTH in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar

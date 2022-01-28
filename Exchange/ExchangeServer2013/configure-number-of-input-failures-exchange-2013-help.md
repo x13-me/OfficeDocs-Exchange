@@ -4,6 +4,8 @@ TOCTitle: Configure the number of input failures before Outlook Voice Access use
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure the number of input failures before Outlook Voice Access users are disconnected in Exchange Server
 ms.reviewer:
 ms.assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a
 f1.keywords:

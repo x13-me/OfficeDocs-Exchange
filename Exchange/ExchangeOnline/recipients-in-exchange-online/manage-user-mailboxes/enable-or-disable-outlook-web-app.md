@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: You can use the EAC or Exchange Online PowerShell to enable or disable Outlook on the web for a user mailbox. When Outlook on the web is enabled, a user can use Outlook on the web to send and receive email. When Outlook on the web is disabled, the mailbox will continue to receive email messages, and a user can access it to send and receive email by using a MAPI client, such as Microsoft Outlook, or with a POP or IMAP email client, assuming that the mailbox is enabled to support access by those clients.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Enable or disable Outlook on the web for a mailbox
+title: Enable or disable Outlook on the web for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Enable or disable Outlook on the web for a mailbox
+# Enable or disable Outlook on the web for a mailbox in Exchange Online
 
 You can use the EAC or Exchange Online PowerShell to enable or disable Outlook on the web (formerly known as Outlook Web App) for a user mailbox. When Outlook on the web is enabled, a user can use Outlook on the web to send and receive email. When Outlook on the web is disabled, the mailbox will continue to receive email messages, and a user can access it to send and receive email by using a MAPI client, such as Microsoft Outlook, or with a POP or IMAP email client, assuming that the mailbox is enabled to support access by those clients.
 

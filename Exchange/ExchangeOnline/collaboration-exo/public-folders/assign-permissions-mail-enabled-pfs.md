@@ -3,17 +3,17 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 description: 'Summary: How to assign "Send As" or "Send on Behalf" permissions to your Exchange Online public folders.'
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders
+title: Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders in Exchange Online
 
 ---
 
-# Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders
+# Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders in Exchange Online
 
 You can assign either "Send As" or "Send on Behalf" permissions for mail-enabled public folders to users in Microsoft Exchange Online.
 
@@ -60,17 +60,22 @@ For detailed syntax and parameter information, see the following articles:
 
 For Exchange Online mailboxes accessing public folders deployed at On-Premises:
 
-1) Ensure Mail Enabled Public Folders are synced to Exchange Online 
-Use following EXO PowerShell command to ensure On-Premises mail public folder are synced:
+1. Ensure Mail Enabled Public Folders are synced to Exchange Online:
 
-`Get-MailPublicFolder <MEPFName>`
-Example:
-Following example lists MEPF named OnPremPF
+   ```powershell
+   Get-MailPublicFolder <MEPFName>
+   ```
 
-`Get-MailPublicFolder OnPremPF`
+   Example:
 
-If the MEPF from On-Premises are not showing in EXO, use the Sync-MailPublicFolders.ps1 (for Exchange Server 2010) or Sync-ModernMailPublicFolders.ps1 (For Exchange 2013/2016/2019) to sync the MEPF's first.
+   ```powershell
+   Get-MailPublicFolder OnPremPF
+   ```
 
-2) Use following command in EXO PowerShell to assign SendAs permission:
+   If the MEPF from On-Premises are not showing in EXO, use the Sync-MailPublicFolders.ps1 (for Exchange Server 2010) or Sync-ModernMailPublicFolders.ps1 (For Exchange 2013/2016/2019) to sync the MEPF's first.
 
-`Add-RecipientPermission -Identity 'OnPremPF1' -Trustee "Richard" -AccessRights 'SendAs'`
+2. Use following command in EXO PowerShell to assign SendAs permission:
+
+   ```powershell
+   Add-RecipientPermission -Identity 'OnPremPF1' -Trustee "Richard" -AccessRights 'SendAs'
+   ```

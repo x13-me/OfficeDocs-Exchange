@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: 'Summary: How to set up public folders, including assigning permissions to them in the EAC.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Set up public folders in a new organization
+title: Set up public folders in a new organization in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar

@@ -1,5 +1,5 @@
 ---
-title: "Auto forwarded messages report in the new EAC"
+title: "Auto forwarded messages report in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ ms.assetid:
 description: "Admins can learn how to use the Auto forwarded messages report in the new Exchange admin center to see the internal senders and external recipients of forwarded messages from your organization."
 ---
 
-# Auto forwarded messages report in the new EAC
+# Auto forwarded messages report in the new EAC in Exchange Online
 
 The **Auto-forwarded messages** report in the new Exchange admin center (new EAC) displays information on messages that are automatically forwarded from your organization to recipients in external domains. You can use this report to look for potential data leaks.
 
@@ -41,7 +41,7 @@ The **Auto forwarded message details** section shows the following information a
 - **Forwarding type**
 - **Recipient name**
 - **Recipient domain**
-- **Details**
+- **Details**: If the message was auto-forwarded by an Inbox rule, the ID of the rule is shown. Otherwise, this value is blank. In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you can use the [Get-InboxRule](/powershell/module/exchange/get-inboxrule) cmdlet to identify the rule by running the following command: `Get-InboxRule -Identity <MailboxAlias>\<RuleID>`. For example, `Get-InboxRule -Identity lila\8754395095991580000`.
 - **Forward count**
 - **First forward date**
 

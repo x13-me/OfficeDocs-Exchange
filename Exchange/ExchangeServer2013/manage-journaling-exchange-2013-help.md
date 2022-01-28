@@ -4,6 +4,8 @@ TOCTitle: Manage journaling
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to manage journaling in Exchange 2013
 ms.reviewer:
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 f1.keywords:

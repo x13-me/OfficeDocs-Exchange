@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the recording idle time-out value in Exchange Server
 ms.assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
 f1.keywords:
 - NOCSH

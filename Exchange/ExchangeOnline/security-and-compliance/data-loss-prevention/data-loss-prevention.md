@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: Learn about DLP policies in Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Data loss prevention
+title: Data loss prevention in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -22,6 +22,9 @@ manager: serdars
 
 > [!NOTE]
 > Legacy Exchange Online data loss prevention in the Exchange admin center is in the process of being deprecated. We recommend that you create DLP policies in the Microsoft 365 compliance center. For more information about this DLP, see [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
+>
+> - Starting **April 1, 2022**, administrators will no longer be able to make configuration changes to DLP policies in the classic Exchange admin center.
+> - Starting **June 1, 2022**, all remaining policies in the classic Exchange admin center will be auto-migrated to the Microsoft 365 compliance center along with the retirement of DLP in the classic Exchange admin center.
 >
 > You can easily migrate your legacy Exchange Online DLP policies using the migration wizard. For more information, see [Migrate Exchange Online data loss prevention policies to the Microsoft 365 compliance center](/microsoft-365/compliance/dlp-migrate-exo-policy-to-unified-dlp).
 

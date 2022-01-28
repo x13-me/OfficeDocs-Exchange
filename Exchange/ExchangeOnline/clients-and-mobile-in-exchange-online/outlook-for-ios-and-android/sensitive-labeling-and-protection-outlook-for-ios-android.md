@@ -2,9 +2,9 @@
 ms.localizationpriority: medium
 description: 'How to classify and/or protect messages when using Outlook for iOS and Android.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
-title: Sensitivity labeling and protection in Outlook for iOS and Android
+title: Sensitivity labeling and protection in Outlook for iOS and Android in Exchange Online
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
@@ -14,7 +14,7 @@ manager: serdars
 
 ---
 
-# Sensitivity labeling and protection in Outlook for iOS and Android
+# Sensitivity labeling and protection in Outlook for iOS and Android in Exchange Online
 
 **Summary**: How to classify and/or protect messages when using Outlook for iOS and Android.
 

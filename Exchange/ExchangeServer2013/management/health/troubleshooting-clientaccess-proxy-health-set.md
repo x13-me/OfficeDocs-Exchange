@@ -7,6 +7,8 @@ ms:contentKeyID: 49720841
 ms.reviewer:
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the ClientAccess.Proxy health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

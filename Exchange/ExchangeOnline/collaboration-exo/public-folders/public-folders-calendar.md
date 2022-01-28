@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-ms.author: v-cichur
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: cichur
@@ -13,11 +13,11 @@ description: This article describes how to create a public folder calendar.
 audience: ITPro
 f1.keywords:
 - NOCSH
-title: Create a public folder calendar
+title: Create a public folder calendar in Exchange Online
 ms.service: exchange-online
 ---
 
-# Create a Public Folder calendar
+# Create a Public Folder calendar in Exchange Online
 
 A public folder calendar is a good solution for people looking for only a shared calendar without having to maintain an additional mailbox along with it. This article explains how to set up and access public folder calendars in Microsoft Exchange Online.
 

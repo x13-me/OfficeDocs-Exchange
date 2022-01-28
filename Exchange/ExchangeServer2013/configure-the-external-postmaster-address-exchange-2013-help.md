@@ -7,6 +7,8 @@ ms:contentKeyID: 49318579
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure the external postmaster address in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

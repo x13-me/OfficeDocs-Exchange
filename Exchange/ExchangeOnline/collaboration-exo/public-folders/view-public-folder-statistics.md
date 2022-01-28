@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: 'Exchange Online: View statistics for public folders and public folder items'
+title: View statistics for public folders and public folder items in Exchange Online' in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Exchange Online: View statistics for public folders and public folder items
+# View statistics for public folders and public folder items in Exchange Online
 
 This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
 

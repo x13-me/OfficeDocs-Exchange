@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 510524c6-6d3e-416f-9e27-fa25446b099a
 ms.reviewer: 
@@ -30,8 +30,12 @@ Leakage of sensitive information such as intellectual property, trade secrets, b
 
 The following table provides an overview of the security and compliance features in Exchange Online and includes links to topics that will help you learn about and manage these features.
 
-|**Feature**|**Description**|
-|:-----|:-----|
+<br>
+
+****
+
+|Feature|Description|
+|---|---|
 |[Archive mailboxes in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes)|Archive mailboxes (called In-Place Archiving) let people in your Microsoft 365 or Office 365 organization take control of messaging data by providing additional email storage. People can use Outlook or Outlook on the web (formerly known as Outlook Web App) to view messages in their archive mailbox and move or copy messages between their primary and archive mailboxes.|
 |[Litigation Hold](in-place-and-litigation-holds.md)|Litigation Hold allows you to preserve or archive mailbox content for compliance and eDiscovery.|
 |[Inactive mailboxes in Exchange Online](/microsoft-365/compliance/inactive-mailboxes-in-office-365)|You can preserve the contents of deleted mailboxes indefinitely by using inactive mailboxes. You can make an inactive mailbox by placing an In-Place Hold or a Litigation Hold on the mailbox, and then deleting the corresponding user account. In addition to preserving mailbox contents, administrators or compliance officers can use Content Search in the Microsoft 365 compliance centers to search the contents of an inactive mailbox.|
@@ -43,3 +47,4 @@ The following table provides an overview of the security and compliance features
 |[S/MIME for Message Signing and Encryption](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption)|Secure/Multipurpose Internet Mail Extensions (S/MIME) allows email users to help protect sensitive information by sending signed and encrypted email within their organization. As an administrator, you can enable S/MIME-based security for your organization if you have mailboxes in either Exchange Server or Exchange Online.|
 |[Journaling in Exchange Online](journaling/journaling.md)|Journaling can help you meet legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. In Exchange Online, you can create journal rules to deliver journal reports to your on-premises mailbox or archiving system, or to an external archiving service.|
 |[Mail flow rules (transport rules) in Exchange Online](mail-flow-rules/mail-flow-rules.md)|You can use mail flow rules (also known as transport rules) to inspect messages sent or received by your users and take actions such as blocking or bouncing a message, holding it for review by a manager or an administrator or delivering a copy to another recipient if the message matches specified conditions.|
+|

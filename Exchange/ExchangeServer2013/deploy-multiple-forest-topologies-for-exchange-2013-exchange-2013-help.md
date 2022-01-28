@@ -7,6 +7,8 @@ ms:contentKeyID: 50406267
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to deploy multiple forest topologies for Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to assign offline address books (OABs) to mailboxes in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
 ms.reviewer: 

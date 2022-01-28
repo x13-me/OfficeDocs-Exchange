@@ -1,5 +1,5 @@
 ---
-title: "How it all works in the backend"
+title: Overview of the G Suite migration process in Exchange Online
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Overview of the backend process that takes place while you are migr
 ms.custom: seo-marvel-jun2021
 ---
 
-# Overview of the process
+# Overview of the G Suite migration process in Exchange Online
 
 Before beginning your migration, review the following diagrams to understand how a Google Workspace staged migration works. The diagrams show how a fictitious company named Fabrikam, Inc., with the domain name *fabrikaminc.net* performed their migration.
 

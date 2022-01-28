@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about message approval in Exchange Online
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 ms.reviewer: 

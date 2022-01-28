@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
 ms.reviewer: 
 description: Add an SSL certificate to your Exchange server 2013.
-title: Add an SSL certificate to Exchange 2013
+title: Add an SSL certificate to Exchange 2013 for migration to Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -25,7 +25,7 @@ manager: serdars
 
 ---
 
-# Add an SSL certificate to Exchange 2013
+# Add an SSL certificate to Exchange 2013 for migration to Exchange Online
 
 Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or Office 365, and Exchange ActiveSync, require certificates to be configured on your Exchange 2013 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
 

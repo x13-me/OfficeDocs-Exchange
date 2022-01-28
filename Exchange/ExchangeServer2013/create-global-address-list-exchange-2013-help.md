@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a global address list in Exchange Server
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
 f1.keywords:
 - NOCSH

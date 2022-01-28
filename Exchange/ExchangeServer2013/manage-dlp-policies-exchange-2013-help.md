@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to manage DLP policies in Microsoft Exchange 2013
 ms.assetid: ba81fabd-7f7f-4ef7-968f-ce851ada9d70
 f1.keywords:
 - NOCSH

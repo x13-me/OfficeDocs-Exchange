@@ -148,7 +148,7 @@ Before you create the cloud-based archive mailbox, you need to assign the produc
 The following example creates a cloud-based archive mailbox for Ayla who has a primary **on-premises mailbox**:
 
 ```PowerShell
-Enable-Mailbox -Identity ayla@contoso.com -RemoteArchive -ArchiveDomain "archive.contoso.com"
+Enable-Mailbox -Identity ayla@contoso.com -RemoteArchive -ArchiveDomain "contoso.mail.onmicrosoft.com"
 ```
 
 For detailed syntax and parameter information, see [Enable-Mailbox](/powershell/module/exchange/enable-mailbox).

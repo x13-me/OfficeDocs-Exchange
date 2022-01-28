@@ -2,11 +2,11 @@
 ms.localizationpriority: medium
 description: "To validate and troubleshoot mail flow from Microsoft 365 or Office 365 to your organization's email server (also called on-premises server), validate your connectors. You can set up and validate connectors on the connectors page in the Exchange admin center (EAC). The built-in validation tests that your mail flow from Microsoft 365 or Office 365 reaches:"
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 6c8c2964-d553-4329-8166-6e508dd63fa0
 ms.reviewer: 
-title: Test mail flow by validating your connectors
+title: Test mail flow by validating your connectors in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Test mail flow by validating your connectors
+# Test mail flow by validating your connectors in Exchange Online
 
 To validate and troubleshoot mail flow from Microsoft 365 or Office 365 to your organization's email server (also called on-premises server), validate your connectors. You can set up and validate connectors on the **connectors** page in the Exchange admin center (EAC). The built-in validation tests that your mail flow from Microsoft 365 or Office 365 reaches:
 

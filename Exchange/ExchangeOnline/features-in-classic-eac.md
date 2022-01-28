@@ -6,7 +6,7 @@ author: Benny-54
 ms.author: v-bshilpa
 ms.assetid: 
 ms.reviewer: 
-title: Classic EAC - Get to classic and features
+title: Classic EAC in Exchange Online - Get to classic and features in Exchange Online
 f1.keywords:
 - NOCSH
 ms.collection: 
@@ -18,10 +18,10 @@ manager: serdars
 
 ---
 
-# Classic Exchange admin center
+# Classic Exchange admin center in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 ## Get to the Classic Exchange admin center
 

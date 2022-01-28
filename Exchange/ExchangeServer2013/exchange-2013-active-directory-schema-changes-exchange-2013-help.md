@@ -4,7 +4,9 @@ TOCTitle: Exchange 2013 Active Directory schema changes
 ms:assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb738144(v=EXCHG.150)
 ms:contentKeyID: 49289322
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: Active Directory schema changes in Exchange Server 2013 
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -110,9 +112,9 @@ This section contains the classes modified in Exchange 2013 CU7.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -171,9 +173,9 @@ This section contains the classes modified in Exchange 2013 CU6.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -210,9 +212,9 @@ This section contains the attributes modified in Exchange 2013 CU6.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,8 +248,8 @@ This section contains the classes added in Exchange 2013 CU5.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -281,9 +283,9 @@ This section contains the attributes modified in Exchange 2013 CU5.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -331,8 +333,8 @@ This section contains the classes added in Exchange 2013 SP1.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -358,9 +360,9 @@ This section contains the attributes added in Exchange 2013 SP1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -415,9 +417,9 @@ This section contains the attributes modified in Exchange 2013 SP1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -451,8 +453,8 @@ This section contains the classes added in Exchange 2013 CU3.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -480,9 +482,9 @@ This section contains the attributes modified in Exchange 2013 CU3.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -518,8 +520,8 @@ This section contains the classes added in Exchange 2013 CU2.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -545,9 +547,9 @@ This section contains the classes modified in Exchange 2013 CU2.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -587,9 +589,9 @@ This section contains the attributes modified in Exchange 2013 CU2.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -648,9 +650,9 @@ This section contains the classes modified in Exchange 2013 CU1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -759,8 +761,8 @@ This section contains the classes modified in Exchange 2013 CU1.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -786,9 +788,9 @@ This section contains the attributes modified in Exchange 2013 CU1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -839,8 +841,8 @@ The following table lists the attributes that are added to the list of indexed a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -900,9 +902,9 @@ This section contains the classes modified in Exchange 2013 RTM.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -1686,9 +1688,9 @@ This section contains the attributes modified in Exchange 2013 RTM.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -2244,8 +2246,8 @@ The following table lists the extended rights that are added when you install Ex
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -2687,8 +2689,8 @@ The following table lists the attributes that are added to the list of indexed a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

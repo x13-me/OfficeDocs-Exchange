@@ -7,6 +7,8 @@ ms:contentKeyID: 51588093
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create user mailboxes in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -128,7 +130,7 @@ New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinil
 
 For syntax and parameter information, see [New-Mailbox](/powershell/module/exchange/New-Mailbox).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a user mailbox, do one of the following:
 
@@ -200,7 +202,7 @@ For syntax and parameter information, see [Enable-Mailbox](/powershell/module/ex
 
 For more information about pipelining, see [about_Pipelines](/powershell/module/microsoft.powershell.core/about/about_pipelines).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a mailbox for an existing user, do one of the following:
 

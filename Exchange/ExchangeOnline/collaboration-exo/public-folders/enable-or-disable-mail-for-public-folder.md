@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Mail-enabling a public folder allows users to post to the public folder by sending an email message to it. When a public folder is mail-enabled additional settings become available for the public folder in the Exchange admin center (EAC), such as email addresses and mail quotas. In Exchange Online PowerShell, before a public folder is mail-enabled, you use the Set-PublicFolder cmdlet to manage all of its settings. After the public folder is mail-enabled, you use the Set-PublicFolder and the Set-MailPublicFolder cmdlets to manage the settings.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Mail-enable or mail-disable a public folder in Exchange Server
+title: Mail-enable or mail-disable a public folder in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Mail-enable or mail-disable a public folder in Exchange Server
+# Mail-enable or mail-disable a public folder in Exchange Online
 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Mail-enabling a public folder allows users to post to the public folder by sending an email message to it. When a public folder is mail-enabled additional settings become available for the public folder in the Exchange admin center (EAC), such as email addresses and mail quotas. In Exchange Online PowerShell, before a public folder is mail-enabled, you use the **Set-PublicFolder** cmdlet to manage all of its settings. After the public folder is mail-enabled, you use the **Set-PublicFolder** and the **Set-MailPublicFolder** cmdlets to manage the settings.
 

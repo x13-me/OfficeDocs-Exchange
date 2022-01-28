@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: A list of topic links for the procedures that admins uses to manage address lists in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 595e1f02-4398-4a7a-b4a4-768af8b9e42e
 ms.reviewer: 

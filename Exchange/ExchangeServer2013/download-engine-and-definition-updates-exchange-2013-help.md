@@ -4,6 +4,8 @@ TOCTitle: Download engine and definition updates
 ms:assetid: 8f2ca383-e463-4df0-aa5d-29afe2f81aaf
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657471(v=EXCHG.150)
 ms:contentKeyID: 49289349
+ms.topic: article
+description: Microsoft Exchange Server 2013 administrators can manually download anti-malware engine and definition (signature) updates.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

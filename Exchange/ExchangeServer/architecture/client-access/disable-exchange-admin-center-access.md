@@ -70,7 +70,7 @@ Set-ECPVirtualDirectory -Identity "MBX01\ecp (Default Web Site)" -AdminEnabled $
 To verify that you've disabled access to the EAC on the server, replace _\<Server\>_ with the name of your Exchange server, and run the following command to verify the value of the **AdminEnabled** property:
 
 ```PowerShell
- -Identity "MBX01\ecp (Default Web Site)" | Format-List AdminEnabled
+ Get-ECPVirtualDirectory -Identity "MBX01\ecp (Default Web Site)" | Format-List AdminEnabled
 ```
 
 When you open `https://<servername>/ecp` or from the internal network, your own **Settings** \> **Options** page in Outlook on the web opens instead of the EAC.

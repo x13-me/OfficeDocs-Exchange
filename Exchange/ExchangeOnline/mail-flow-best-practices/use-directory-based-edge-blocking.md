@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: ca7b7416-92ed-40ad-abdb-695be46ea2e4
 ms.reviewer:
@@ -14,11 +14,11 @@ description: Admins can learn how to configure Directory-Based Edge Blocking (DB
 f1.keywords:
 - NOCSH
 audience: ITPro
-title: Use Directory-Based Edge Blocking to reject messages sent to invalid recipients
+title: Use Directory-Based Edge Blocking to reject messages sent to invalid recipients in Exchange Online
 
 ---
 
-# Use Directory-Based Edge Blocking to reject messages sent to invalid recipients
+# Use Directory-Based Edge Blocking to reject messages sent to invalid recipients in Exchange Online
 
 Directory-Based Edge Blocking (DBEB) lets you reject messages for invalid recipients at the service network perimeter in Microsoft 365 organizations with Exchange Online mailboxes and in standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. DBEB lets admins add mail-enabled recipients to Microsoft 365 or Office 365 and block all messages sent to email addresses that aren't present in Microsoft 365 or Office 365.
 

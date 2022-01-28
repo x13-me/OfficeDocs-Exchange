@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create a regular or exclusive scope in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

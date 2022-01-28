@@ -7,6 +7,8 @@ ms:contentKeyID: 49289403
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Transport rules in Exchange 2013 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -63,9 +65,9 @@ The following table shows how multiple conditions, condition values, exceptions,
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -106,9 +108,9 @@ The following table describes the rule properties that are available in transpor
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -180,8 +182,8 @@ There are several types of messages that pass through an organization. The follo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

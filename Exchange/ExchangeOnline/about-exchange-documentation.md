@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
-description: You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
+description: Learn about Exchange Online documentation.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: cbc07e0d-2884-4e5d-8065-39b7f6299b9b
 ms.reviewer: 
-title: About Exchange documentation
+title: About Exchange Online documentation in Exchange Online
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -18,15 +18,15 @@ manager: serdars
 
 ---
 
-# About Exchange documentation
+# About Exchange Online documentation
 
-You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
+You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Exchange Online. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
 
 Other information related to Exchange documentation is in [Third-party copyright notices](../ExchangeServer/about-documentation/third-party-copyrights.md).
 
 ## Where to find Exchange documentation
 
-[Exchange documentation](../Hub/index.yml) is your primary gateway to in-depth technical information about Microsoft Exchange.
+[Exchange documentation](../Hub/index.yml) is your primary gateway to in-depth technical information about Exchange Online.
 
 The [Exchange Team Blog](https://techcommunity.microsoft.com/t5/exchange-team-blog/bg-p/Exchange) contains technical articles written by the Exchange Team, as well as product announcements and updates. The blog is an excellent way to interact with the Exchange Team. We read and respond to your feedback and comments.
 
@@ -40,4 +40,4 @@ Looking for more than just documentation? Check out these other Exchange resourc
 
 - [Exchange and Exchange Online development](/exchange/client-developer/exchange-server-development): You'll find Exchange developer documentation here.
 
-- [Accessibility in Exchange Online](./accessibility/accessibility.md): This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities.
+- [Accessibility in Exchange Online](./accessibility/accessibility.md): This topic provides important information about features, products, and services that help make Exchange Online more accessible for people with disabilities.

@@ -7,12 +7,12 @@ ms:contentKeyID: 59888992
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: Managed availability in Microsoft Exchange 2013
 author: serdars
 ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
-description: The manner in which administrators ensure availability of Exchange Server 2013 organization
 ---
 
 # Managed Availability
@@ -196,8 +196,8 @@ There are 12 cmdlets used for managed availability, which are described in the f
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

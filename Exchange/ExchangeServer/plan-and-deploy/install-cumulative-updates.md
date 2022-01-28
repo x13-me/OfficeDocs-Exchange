@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 description: 'Summary: Learn about installing Cumulative Updates (CUs) in Exchange 2016 or Exchange 2019.'
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
 ms.author: serdars
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
@@ -111,8 +111,13 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 To install an Exchange CU from the command line, use the following syntax:
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
 ```console
-<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Upgrade [/DomainController:<ServerFQDN>] [/EnableErrorReporting]
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:Upgrade [/DomainController:<ServerFQDN>] [/EnableErrorReporting]
 ```
 
 **Notes**:
@@ -124,7 +129,7 @@ To install an Exchange CU from the command line, use the following syntax:
 This example uses the Exchange CU files on drive E: to install the CU on the local server, and uses the domain controller dc01.contoso.com to read from and write to Active Directory.
 
 ```console
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Upgrade /DomainController:dc01.contoso.com
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:Upgrade /DomainController:dc01.contoso.com
 ```
 
 For more information about unattended Setup from the command line, see [Install Exchange using unattended mode](deploy-new-installations/unattended-installs.md).

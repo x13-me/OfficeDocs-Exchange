@@ -5,6 +5,8 @@ ms:assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms:mtpsurl:
 ms:contentKeyID:
 ms.reviewer: 
+description: About add-ins available for Outlook in Exchange Server
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -28,6 +30,8 @@ Outlook clients supports a variety of add-ins that are available through the Off
 
 > [!NOTE]
 > Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> **New** ![Add Icon.](../ExchangeOnline/media/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
+>
+> - URLs with redirections are not supported in Exchange Server 2016, Exchange Server 2019, and Exchange Online. Use a direct URL to the manifest.
 
 > [!NOTE]
 > Some add-ins for Outlook are installed by default. Default add-ins for Outlook only activate on English language content. For example, German postal addresses in the message body won't activate the Bing Maps add-in.

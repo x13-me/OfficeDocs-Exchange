@@ -7,6 +7,8 @@ ms:contentKeyID: 49300447
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Foreign connectors in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

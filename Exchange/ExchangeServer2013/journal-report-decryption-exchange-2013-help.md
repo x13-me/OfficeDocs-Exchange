@@ -7,6 +7,8 @@ ms:contentKeyID: 49319930
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Journal report decryption in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

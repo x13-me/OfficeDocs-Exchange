@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: Learn how to use Exchange Online PowerShell to change the deleted item retention period for Exchange Online mailboxes.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: ce17f1ec-b96c-4c9e-b20a-507fe0afc684
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Change how long permanently deleted items are kept for an Exchange Online mailbox
+title: Change how long permanently deleted items are kept for an Exchange Online mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -21,7 +21,7 @@ manager: serdars
 # Change how long permanently deleted items are kept for an Exchange Online mailbox
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App), the item is moved to a folder (**Recoverable Items** \> **Deletions**) and kept there for 14 days, by default. You can change how long items are kept, up to a maximum of 30 days.
 

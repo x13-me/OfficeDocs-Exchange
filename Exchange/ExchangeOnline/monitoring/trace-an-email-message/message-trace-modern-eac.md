@@ -1,5 +1,5 @@
 ---
-title: "Message trace in the modern EAC"
+title: Message trace in the modern EAC in Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,7 +14,7 @@ ms.custom:
 description: "Admins can use message trace in the modern Exchange amdin center to find out what happened to messages."
 ---
 
-# Message trace in the modern Exchange admin center
+# Message trace in the modern Exchange admin center in Exchange Online
 
 Message trace in the modern Exchange admin center (modern EAC) follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
@@ -205,6 +205,8 @@ The message trace details contain the following additional information that's no
   - **Transfer**: Recipients were moved to a bifurcated message because of content conversion, message recipient limits, or agents.
   - **Defer**: The message delivery was postponed and might be re-attempted later.
   - **Resolved**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
+  - **DLP rule**: The message had a DLP rule match in this message.
+  - **Sensitivity label:** A server-side labeling event occurred. For example, a label was automatically added to a message that includes an action to encrypt or was added via the web or mobile client. This action is completed by the Exchange server and logged. A label added via Outlook will not be included in the event field.
 
   Notes:
 

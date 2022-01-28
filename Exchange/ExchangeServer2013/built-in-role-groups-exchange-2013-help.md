@@ -4,6 +4,7 @@ TOCTitle: Built-in role groups
 ms:assetid: f786b88a-8263-4475-a3c5-104fbb322ec5
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351266(v=EXCHG.150)
 ms:contentKeyID: 49289461
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Use auditing reports to troubleshoot configuration issues in Exchange Server 
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 f1.keywords:
 - NOCSH

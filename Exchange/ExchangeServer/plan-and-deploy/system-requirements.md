@@ -30,6 +30,8 @@ To actually install Exchange 2019, see [Deploy new installations of Exchange](./
 
 The supported coexistence scenarios between Exchange 2019 and earlier versions of Exchange are described in the following table:
 
+<br>
+
 ****
 
 |Exchange version|Exchange 2019 organization coexistence|
@@ -47,6 +49,8 @@ Exchange 2019 supports hybrid deployments with Microsoft 365 or Office 365 organ
 ## Network and directory server requirements for Exchange 2019
 
 The requirements for the network and the directory servers in your Exchange 2019 organization are described in the following table:
+
+<br>
 
 ****
 
@@ -73,6 +77,8 @@ To learn more about the issues that you'll encounter when you install Exchange o
 
 For information about deploying Exchange in a virtualized environment, see [Exchange Server virtualization](../plan-and-deploy/virtualization.md).
 
+<br>
+
 ****
 
 |Component|Requirement|Notes|
@@ -86,6 +92,8 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 |
 
 ## Supported operating systems for Exchange 2019
+
+<br>
 
 ****
 
@@ -119,11 +127,13 @@ We strongly recommend that you use the latest version of the .NET Framework that
 >
 > - The complete prerequisite list for Exchange 2019 is available [here](./prerequisites.md?preserve-view=true&view=exchserver-2019).
 
+<br>
+
 ****
 
 |Exchange 2019 version|.NET Framework 4.8|.NET Framework 4.7.2|
 |---|:---:|:---:|
-|CU4 to CU10|Supported||
+|CU4 to CU11|Supported||
 |CU2, CU3|Supported|Supported|
 |RTM, CU1||Supported|
 |
@@ -154,6 +164,8 @@ To actually install Exchange 2016, see [Deploy new installations of Exchange](./
 
 The following table lists the scenarios in which coexistence between Exchange 2016 and earlier versions of Exchange is supported.
 
+<br>
+
 ****
 
 |Exchange version|Exchange organization coexistence|
@@ -171,6 +183,8 @@ Exchange 2016 supports hybrid deployments with Microsoft 365 or Office 365 organ
 ## Network and directory server requirements for Exchange 2016
 
 The following table lists the requirements for the network and the directory servers in your Exchange 2016 organization.
+
+<br>
 
 ****
 
@@ -198,6 +212,8 @@ For security and performance reasons, we recommend that you install Exchange 201
 
 For information about deploying Exchange in a virtualized environment, see [Exchange Server virtualization](virtualization.md).
 
+<br>
+
 ****
 
 |Component|Requirement|Notes|
@@ -222,6 +238,8 @@ For information about deploying Exchange in a virtualized environment, see [Exch
   ```
 
 - **Windows Server 2016**: Install Windows Server 2016 and choose the **Desktop Experience** installation option. If a computer is running Windows Server 2016 Core mode and you want to install Exchange 2016 on it, you'll need to reinstall the operating system and choose the **Desktop Experience** installation option.
+
+<br>
 
 ****
 
@@ -251,11 +269,13 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 >
 > - The complete prerequisite list for Exchange 2016 is available [here](./prerequisites.md?preserve-view=true&view=exchserver-2016).
 
+<br>
+
 ****
 
 |Exchange 2016 version|.NET Framework 4.8|.NET Framework 4.7.2|.NET Framework 4.7.1|.NET Framework 4.6.2|
 |---|:---:|:---:|:---:|:---:|
-|CU15 to CU21|Supported||||
+|CU15 to CU22|Supported||||
 |CU13, CU14|Supported|Supported|||
 |CU11, CU12||Supported|Supported||
 |CU10|||Supported||

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Disable outgoing calls on Unified Messaging IP gateways in Exchange Server
 ms.assetid: a3777cc6-37e4-4359-ada3-a962ac0ef0c3
 f1.keywords:
 - NOCSH

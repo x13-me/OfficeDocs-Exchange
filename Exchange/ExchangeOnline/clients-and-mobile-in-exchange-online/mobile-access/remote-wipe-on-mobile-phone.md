@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
-description: Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to wipe their phone clean of all corporate and user information.
+description: Admins can learn how to remote wipe a mobile phone in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 ms.reviewer: 
-title: "Exchange Online: Perform a remote wipe on a mobile phone"
+title: Perform a remote wipe on a mobile phone in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Perform a remote wipe on a mobile phone in Exchange Server
+# Perform a remote wipe on a mobile phone in Exchange Online
 
 Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to wipe their phone clean of all corporate and user information.
 
@@ -54,9 +54,12 @@ Since Outlook for iOS and Android appears as a single mobile device association 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to wipe a user's phone
+## Use the classic EAC to wipe a user's phone
 
-You can use the EAC to wipe a user's phone or cancel a remote wipe that has not yet completed.
+> [!NOTE]
+> The classic EAC will be fully deprecated by September 2022. For more information, see [Deprecation of the classic Exchange admin center in WW service](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-the-classic-exchange-admin-center-in-ww-service/ba-p/2736358).
+
+You can use the classic EAC to wipe a user's phone or cancel a remote wipe that has not yet completed.
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -85,20 +88,6 @@ Clear-MobileDevice -AccountOnly -Identity WM_TonySmith -NotificationEmailAddress
 The **-AccountOnly** switch has no effect on Outlook devices because an account-only remote wipe is the only type of wipe that is supported by Outlook. See [Clear-MobileDevice](/powershell/module/exchange/clear-mobiledevice) for more information.
 
 ## Use Outlook on the web to wipe a user's phone
-
-Your users can use Outlook on the web to wipe their own phones.
-
-1. In Outlook on the web, select the **Settings** icon.
-
-2. Under **Your app settings**, select **Mail**.
-
-3. Under **Options**, click to expand **General** if necessary, and then select **Mobile devices**.
-
-4. Select the mobile phone.
-
-5. Click or tap the **Wipe Device** icon (or the **Account Only Remote Wipe Device** icon if desired).
-
-## Use the New Outlook on the web to wipe a user's phone
 
 1. In Outlook on the web, select the **Settings** icon.
 

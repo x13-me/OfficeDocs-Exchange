@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Microsoft 365 or Office 365 and Exchange Online provide several features that can help your end users easily collaborate in email.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7d433daa-c68f-4441-b2f5-1280991185c2
 ms.reviewer: 
@@ -65,4 +65,3 @@ The following table gives you a quick glance at each of the collaboration featur
 
 > [!NOTE]
 > <sup>1</sup> Depending on workload, the ideal group size may be very small (not more than 25). If more than a few users need to access a Shared mailbox at the same time, consider one of the other options.
-

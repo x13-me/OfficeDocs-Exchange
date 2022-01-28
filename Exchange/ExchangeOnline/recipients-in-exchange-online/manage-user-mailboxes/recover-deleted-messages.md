@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Administrators can search for and recover deleted email messages in a user's mailbox.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 ms.reviewer: 
@@ -20,7 +20,7 @@ manager: serdars
 # Recover deleted messages in a user's mailbox in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 (This article is intended for Exchange administrators.)
 

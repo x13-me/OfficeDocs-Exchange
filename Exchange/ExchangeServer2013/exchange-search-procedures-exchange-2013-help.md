@@ -7,6 +7,8 @@ ms:contentKeyID: 51407263
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Exchange search procedures 
 author: msdmaguire
 f1.keywords:
 - NOCSH
