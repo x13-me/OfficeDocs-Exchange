@@ -44,7 +44,7 @@ The following list details the available options for migrating public folders to
 
 - Exchange 2019 public folders can be migrated to Exchange Online or Microsoft 365 groups.
 
-Currently only migrations to Exchange 2016 or Exchange 2019 in the same Active Directory forest are supported. Cross-forest migrations will be supported in the future.
+Currently only migrations to Exchange 2016 or Exchange 2019 in the same Active Directory forest are supported. The cross forest migration of public folders from Exchange 2013, Exchange 2016 or Exchange 2019 to another Exchange On-Premises organization is not supported.
 
 ### After migration to Exchange 2016, what happens to the hierarchy on the source Exchange 2010 servers?
 
