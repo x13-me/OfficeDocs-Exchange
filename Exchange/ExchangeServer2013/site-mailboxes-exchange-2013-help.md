@@ -6,11 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150499(v=EXCHG.150)
 ms:contentKeyID: 47559965
 ms.reviewer: 
 ms.topic: article
-description: About using site mailboxes in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: serdars
-ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
