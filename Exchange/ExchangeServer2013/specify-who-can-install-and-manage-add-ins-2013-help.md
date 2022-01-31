@@ -7,8 +7,6 @@ ms:contentKeyID:
 ms.topic: article
 description: How to specify administrators/users who can manage Outlook add-in in Microsoft Exchange
 ms.reviewer: 
-ms.topic: article
-description: How to specify who can manage the Outlook add-in in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
