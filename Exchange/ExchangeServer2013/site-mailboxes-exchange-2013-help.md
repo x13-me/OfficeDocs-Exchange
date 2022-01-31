@@ -5,6 +5,8 @@ ms:assetid: 2c4393f4-d274-4e6c-bd09-9577e68c5a33
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150499(v=EXCHG.150)
 ms:contentKeyID: 47559965
 ms.reviewer: 
+ms.topic: article
+description: About using site mailboxes in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: serdars
@@ -43,9 +45,9 @@ Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cm
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
