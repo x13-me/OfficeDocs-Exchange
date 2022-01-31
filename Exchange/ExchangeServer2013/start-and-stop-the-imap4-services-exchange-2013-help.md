@@ -5,6 +5,8 @@ ms:assetid: a52db4bd-69a6-47b2-acf3-d9d8571c7a87
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124022(v=EXCHG.150)
 ms:contentKeyID: 49315251
 ms.reviewer: 
+ms.topic: how-to
+description: How to start and stop the IMAP4 services in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
