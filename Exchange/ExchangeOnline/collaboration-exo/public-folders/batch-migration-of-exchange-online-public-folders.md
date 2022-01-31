@@ -128,7 +128,7 @@ In this step, you gather information from your Exchange environment, and then yo
 1. In Exchange Online PowerShell, run the following command to create a new public folder-to-Microsoft 365 group migration batch.
 
    ```PowerShell
-   New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup [-AutoStart]
+   New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData ([System.IO.File]::ReadAllBytes('<path to .csv file>')) -PublicFolderToUnifiedGroup [-AutoStart]
    ```
 
    In this command:
@@ -203,12 +203,12 @@ In the following command:
 2. Create a new batch with the same .csv file by running the following command:
 
    ```PowerShell
-   New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+   New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData ([System.IO.File]::ReadAllBytes('<path to .csv file>')) -PublicFolderToUnifiedGroup [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
    ```
 
    In this command:
 
-   - _CSVData_ is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
+   - _CSVData_ is the .csv file created above in [Step 3: Create the .csv file](#step-3-create-the-csv-file). Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
    - _NotificationEmails_ is an optional parameter that can be used to set email addresses that will receive notifications about the status and progress of the migration.
    - _AutoStart_ is an optional switch that starts the migration batch as soon as it is created.
 
