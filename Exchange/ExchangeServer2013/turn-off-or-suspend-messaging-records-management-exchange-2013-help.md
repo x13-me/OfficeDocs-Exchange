@@ -4,7 +4,8 @@ TOCTitle: Turn off or suspend messaging records management
 ms:assetid: 631191aa-3bba-4ebf-a727-c48ed2ebe176
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998580(v=EXCHG.150)
 ms:contentKeyID: 51439479
-ms.reviewer: 
+ms.reviewer: how-to
+description: How to turn off or suspend messaging records management in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
