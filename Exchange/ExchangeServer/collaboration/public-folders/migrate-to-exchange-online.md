@@ -1,8 +1,9 @@
 ---
+title: Batch migrate Exchange Server public folders to Microsoft 365 or Office 365
 ms.localizationpriority: medium
-ms.author: serdars
+ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 ms.prod: exchange-server-it-pro
 ms.collection:
@@ -12,7 +13,6 @@ description: 'Summary: This article tells you how to move modern public folders 
 f1.keywords:
 - NOCSH
 audience: ITPro
-title: Batch migrate Exchange Server public folders to Microsoft 365 or Office 365
 
 ---
 
@@ -375,8 +375,9 @@ A number of commands now need to be run both in your Exchange Server on-premises
 
    > 91edc6dd-478a-497c-8731-b0b793f5a986
 
-   > [!NOTE]
-The public folder mailbox GUID mentioned in the previous command must be obtained from the on-premises server; if it is obtained from Exchange Online, the migration batch will fail with the error "Cannot find a recipient that has mailbox GUID".
+> [!NOTE]
+The public folder mailbox GUID mentioned in the previous command must be obtained from the on-premises server; if it is obtained from Exchange Online, the migration batch will fail with transient error.
+
 
 5. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
 
@@ -390,6 +391,8 @@ The public folder mailbox GUID mentioned in the previous command must be obtaine
 
    Separate multiple email addresses with commas.
 
+   > [!NOTE]
+You may notice the above command failing with the error "Cannot find a recipient that has mailbox GUID" with the GUID mentioned of public folder mailbox in EXO. This can happen because of AD replication latency. In such case, wait for an hour and retry the command again.
 
 6. Finally, start the migration using the following command in Exchange Online PowerShell:
 
