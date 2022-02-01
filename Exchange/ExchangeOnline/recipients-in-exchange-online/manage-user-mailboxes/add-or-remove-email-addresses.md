@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.reviewer:
 f1.keywords:
 - NOCSH
-title: Add or remove email addresses for a mailbox Exchange Admin Center
+title: Add or remove email addresses for a mailbox in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,10 +18,10 @@ manager: serdars
 
 ---
 
-# Add or remove email addresses for a mailbox in Exchange Admin Center
+# Add or remove email addresses for a mailbox in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
 
@@ -45,7 +45,7 @@ The procedures in this article show how to add or remove email addresses for a u
 
 ## Add an email address to a user mailbox
 
-### Use the new Exchange Admin Center (EAC) to add an email address
+### Use the new Exchange admin center (EAC) to add an email address
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 

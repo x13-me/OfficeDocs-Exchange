@@ -1,5 +1,5 @@
 ---
-title: "Mailboxes exceeding receiving limits report in the new EAC"
+title: "Mailboxes exceeding receiving limits report in the new EAC in Exchange Online"
 f1.keywords:
 ms.author: v-bshilpa
 author: Benny-54
@@ -13,7 +13,7 @@ description: This article is about mailboxes that receive large volumes of messa
 ms.custom:
 ---
 
-# Mailboxes exceeding receiving limits report in the new EAC
+# Mailboxes exceeding receiving limits report in the new EAC in Exchange Online
 
 In the new Exchange Center (EAC), the Mailboxes exceeding receiving limits report displays information on mailboxes that are receiving large volumes of messages in a short amount of time.
 

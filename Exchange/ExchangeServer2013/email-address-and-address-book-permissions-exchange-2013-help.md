@@ -7,6 +7,8 @@ ms:contentKeyID: 47559955
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Email address and address book permissions in Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -38,8 +40,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

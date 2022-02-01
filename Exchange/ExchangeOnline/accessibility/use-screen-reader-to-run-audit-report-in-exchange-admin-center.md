@@ -1,13 +1,13 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: cdf7bb59-e1a5-457c-9a59-558904fbd68c
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to run audit reports in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to run an audit report in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to run audit reports in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to run an audit report in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to run an audit report in the Exchange admin center in Exchange Online
+# Use a screen reader to run an audit report in the Classic Exchange admin center in Exchange Online
 
-You can run audit reports and search for audit information by using your screen reader in the Exchange admin center (EAC) in Exchange Online. Certain audit reports can help you troubleshoot configuration issues by tracking specific changes made by administrators. Other audit reports can help you monitor regulatory, compliance, and litigation requirements.
+You can run audit reports and search for audit information by using your screen reader in the Classic Exchange admin center (Classic EAC) in Exchange Online. Certain audit reports can help you troubleshoot configuration issues by tracking specific changes made by administrators. Other audit reports can help you monitor regulatory, compliance, and litigation requirements.
 
 ## Get started
 

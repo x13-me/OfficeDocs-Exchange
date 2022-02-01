@@ -242,7 +242,7 @@ $saName=(Get-AZStorageaccount | Where {$_.ResourceGroupName -eq $rgName}).Storag
 New-AZAvailabilitySet -ResourceGroupName $rgName -Name exAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 # Specify the virtual machine name and size
 $vmName="exVM"
-$vmSize="Standard_D3_v2"
+$vmSize="standard_d8s_v3"
 $vnet=Get-AZVirtualNetwork -Name "EXSrvrVnet" -ResourceGroupName $rgName
 $avSet=Get-AZAvailabilitySet -Name exAvailabilitySet -ResourceGroupName $rgName
 $vm=New-AZVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avSet.Id
@@ -332,9 +332,14 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
 
 11. From an administrator-level Windows PowerShell command prompt on exVM, run the following:
 
+   > [!NOTE]
+   > - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+   >
+   > - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
    ```powershell
    e:
-   .\setup.exe /mode:Install /role:Mailbox /OrganizationName:Contoso /IacceptExchangeServerLicenseTerms
+   .\setup.exe /mode:Install /role:Mailbox /OrganizationName:Contoso /IAcceptExchangeServerLicenseTerms_DiagnosticDataON
    Restart-Computer
    ```
 

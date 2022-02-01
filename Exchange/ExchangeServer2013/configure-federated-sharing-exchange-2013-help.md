@@ -7,6 +7,8 @@ ms:contentKeyID: 49289377
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to configure federated sharing in Exchange Server
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH

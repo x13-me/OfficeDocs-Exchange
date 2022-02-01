@@ -7,6 +7,8 @@ ms:contentKeyID: 50387717
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure storage quotas for a mailbox in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

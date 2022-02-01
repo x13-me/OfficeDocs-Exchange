@@ -6,6 +6,8 @@ ms:mtpsurl:
 ms:contentKeyID:
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: Keyboard shortcuts for the Exchange admin center 
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
@@ -27,8 +29,8 @@ By using keyboard shortcuts in the Exchange admin center (EAC), you can quickly 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

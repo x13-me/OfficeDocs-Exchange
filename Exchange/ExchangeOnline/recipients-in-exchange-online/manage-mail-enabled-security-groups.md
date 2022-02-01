@@ -8,7 +8,7 @@ ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Manage mail-enabled security groups
+title: Manage mail-enabled security groups in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,10 +18,10 @@ manager: serdars
 
 ---
 
-# Manage mail-enabled security groups
+# Manage mail-enabled security groups in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 A mail-enabled security group can be used to distribute messages and to grant access permissions to resources in Active Directory. For more information, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
 

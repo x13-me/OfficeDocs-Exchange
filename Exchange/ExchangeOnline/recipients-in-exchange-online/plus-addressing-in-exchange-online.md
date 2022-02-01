@@ -1,5 +1,5 @@
 ---
-title: "Plus Addressing in Exchange Online"
+title: Plus Addressing in Exchange Online
 ms.author: v-bshilpa
 author: Benny-54
 manager: Serdars
@@ -26,9 +26,15 @@ The original email address must be valid; the `+tag` value that you add is arbit
 
 Plus addressing is available in [Outlook](https://outlook.live.com/owa/). By default, plus addressing support is disabled in Exchange Online. Since Exchange Online has always supported regular email addresses that already contain the plus sign, if you enable plus addressing, these email addresses might stop working.
 
-You can't enable plus addressing in the Exchange admin center (EAC); you can only enable it through Exchange Online PowerShell. If your organization's email is routed through Exchange Online to your on-premises servers, mailboxes hosted on-premises will also be able to use plus addresses.  
+If your organization's email is routed through Exchange Online to your on-premises servers, mailboxes hosted on-premises will also be able to use plus addresses.  
 
-## Enable plus addressing in your Exchange Online organization
+## Use the new Exchange admin center to enable plus addressing
+
+1. In the new [Exchange admin center](https://admin.exchange.microsoft.com), go to **Settings** \> **Mail flow**.
+
+2. Select **Turn on plus addressing for your organization**, and then select **Save**.
+
+## Use PowerShell to enable plus addressing
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

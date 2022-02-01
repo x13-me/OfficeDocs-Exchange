@@ -5,6 +5,8 @@ ms:assetid: 1412d8a1-605a-4b1e-bee3-0c97f2cc9e65
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adupdaterequired(v=EXCHG.150)
 ms:contentKeyID: 46628816
 ms.reviewer: 
+ms.topic: article
+description: 'Exchange setup fails: insufficient permissions to prepare Active Directory' 
 manager: serdars
 ms.author: serdars
 author: msdmaguire

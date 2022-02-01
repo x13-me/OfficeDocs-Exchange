@@ -5,6 +5,8 @@ ms:assetid: f8f5b205-dd47-4fc3-8322-3fa115ae475a
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351270(v=EXCHG.150)
 ms:contentKeyID: 49289472
 ms.reviewer: 
+ms.topic: article
+description: Management role scopes in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: You can use the EAC or Exchange Online PowerShell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Configure message delivery restrictions for a mailbox
+title: Configure message delivery restrictions for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Configure message delivery restrictions for a mailbox in Exchange Server
+# Configure message delivery restrictions for a mailbox in Exchange Online
 
 You can use the new EAC, the classic EAC or Exchange Online PowerShell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
 
@@ -103,7 +103,7 @@ For additional management tasks related to recipients, see the following topics:
 
 5. Click **OK** to close the **Message Delivery Restrictions** page, and then click **Save** to save your changes.
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully configured message delivery restrictions for a user mailbox, do one the following:
 
@@ -167,7 +167,7 @@ For detailed syntax and parameter information related to configuring delivery re
 
 - [Set-MailUser](/powershell/module/exchange/set-mailuser)
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully configured message delivery restrictions for a user mailbox using powershell, do one the following:
 

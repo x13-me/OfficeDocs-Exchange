@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
 ms.reviewer: 
 description: "For consumers who want to migrate their Gmail mailboxes to Microsoft 365 or Office 365 with IMAP and app passwords."
-title: Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365 
+title: Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar

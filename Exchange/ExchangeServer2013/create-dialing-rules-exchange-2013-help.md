@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create dialing rules for users in Exchange Server
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 f1.keywords:
 - NOCSH

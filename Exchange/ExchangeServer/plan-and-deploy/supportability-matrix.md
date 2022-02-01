@@ -58,7 +58,8 @@ The following tables identify the operating system platforms on which each versi
 
 |Server operating system|Exchange 2019|Exchange 2016 CU3 and later|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|:---:|
-|Windows Server 2019|Supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2022|Not supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2019|supported|Not supported|Not supported|Not supported|Not supported|
 |Windows Server 2016|Not supported|Supported|Not supported|Not supported|Not supported|
 |Windows Server 2012 R2|Not supported|Supported|Supported|Supported|Supported|
 |Windows Server 2012|Not supported|Supported|Supported|Supported|Supported|
@@ -75,6 +76,7 @@ The following tables identify the operating system platforms on which each versi
 
 |Client operating system|Exchange 2019|Exchange 2016 CU3 and later|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|
+|Windows 11|Not supported|Not supported|Not supported|Not supported|
 |Windows 10|Supported|Supported|Not supported|Not supported|
 |Windows 8.1|Not supported|Supported|Supported|Not supported|
 |Windows 8|Not supported|Not supported|Supported|Supported|
@@ -90,6 +92,7 @@ The following table identifies the Active Directory environments that Exchange c
 
 |Operating system environment|Exchange 2019|Exchange 2016 CU12 and later|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Windows Server 2022 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |Windows Server 2019 Active Directory servers|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |Windows Server 2016 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Not supported|
 |Windows Server 2012 R2 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
@@ -263,7 +266,7 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 8. Take DAG member servers out of [maintenance mode](../high-availability/manage-ha/manage-dags.md#performing-maintenance-on-dag-members) by replacing \<ServerName\> with the name of the server and running the following command in the Exchange Management Shell:
 
    ```powershell
-   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active - Requester Maintenance
+   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active -Requester Maintenance
    ```
 
 ### Exchange 2019

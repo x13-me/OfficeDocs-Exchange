@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How DLP rules are applied to evaluate messages in Exchange 2013
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 f1.keywords:
 - NOCSH
@@ -88,7 +90,7 @@ The way this rule is set up by Microsoft makes it mandatory that corroborating e
 
 You can use a custom rule that defines a pattern without extra evidence, as shown in the next example. This would detect messages with only credit card number and no corroborating evidence.
 
-```powershell
+```xml
       <Pattern confidenceLevel="85">
          <IdMatch idRef="Func_credit_card" />
       </Pattern>
@@ -99,10 +101,7 @@ The illustration of credit cards in this article can be extended to other sensit
 
 ```powershell
 $rule_collection = Get-ClassificationRuleCollection
-```
-
-```powershell
-$rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+[System.IO.File]::WriteAllBytes('oob_classifications.xml', $rule_collection[0].SerializedClassificationRuleCollection)
 ```
 
 ## For more information

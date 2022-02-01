@@ -7,6 +7,8 @@ ms:contentKeyID: 53496601
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Post-deployment operations procedures in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,7 +27,7 @@ For each Exchange server, only the monitors that are applicable to the roles ins
 
 Your user account needs to be a member of the Operations Manager Administrators role to perform this procedure.
 
-1. Log on to your SCOM server and open the SCOM console.
+1. Log on to your System Center Operations Manager server and open the System Center Operations Manager console.
 
 2. In the Operations Console, click **Monitoring**.
 
@@ -53,13 +55,13 @@ Exchange Server 2013 management pack is designed to be simple to deploy and use.
 
 ## Enable or disable monitors
 
-Depending on your needs, you may want to disable or enable specific alerts within the SCOM console or entire health sets using the Shell. The following sections provide examples of both approaches.
+Depending on your needs, you may want to disable or enable specific alerts within the System Center Operations Manager console or entire health sets using the Shell. The following sections provide examples of both approaches.
 
-## Enable or disable an alert using SCOM console
+## Enable or disable an alert using System Center Operations Manager console
 
-Let's say you see an alert in the **Active Alerts** for the Store health set on a server named Server1 and this server doesn't currently have any databases with active mailboxes on it. In this case, you may not want to get alerted for the Store health set on this server. You will still be able to see the health of Server1 in the SCOM console, but won't get alerted for the Store health set.
+Let's say you see an alert in the **Active Alerts** for the Store health set on a server named Server1 and this server doesn't currently have any databases with active mailboxes on it. In this case, you may not want to get alerted for the Store health set on this server. You will still be able to see the health of Server1 in the System Center Operations Manager console, but won't get alerted for the Store health set.
 
-To disable this alert in the SCOM console:
+To disable this alert in the System Center Operations Manager console:
 
 1. Right click on the alert, and then select **Overrides** \> **Disable the Monitor** \> **For the object: Server1 - Store**.
 
@@ -75,7 +77,7 @@ Let's say that you don't use the POP3 feature in your organization. You may want
 
 1. Start the Exchange Management Shell
 
-2. First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](/powershell/module/exchange/Get-MonitoringItemIdentity) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
+2. First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](/powershell/module/exchange/Get-MonitoringItemIdentity) cmdlet to get a list of all monitors associated with the POP.Protocol health set. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
 
    ```powershell
    $POPMonitoringItems = Get-MonitoringItemIdentity -Identity POP.Protocol -Server Mailbox1
@@ -105,7 +107,7 @@ You also may need to modify specific thresholds for various monitor properties. 
 
 1. Start the Exchange Management Shell.
 
-2. The delivery queues are monitored by the HubTransport health set. First you need to get the list of monitors associated with this healthset that are responsible for internal delivery queues.
+2. The delivery queues are monitored by the HubTransport health set. First you need to get the list of monitors associated with this health set that are responsible for internal delivery queues.
 
    ```powershell
    Get-MonitoringItemIdentity -Identity HubTransport -Server Mailbox1 | Where {$_.Name -like "*InternalAggregateDeliveryQueue*" -and $_.ItemType -eq "Monitor"} | Format-Table Name

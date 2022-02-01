@@ -4,6 +4,8 @@ TOCTitle: Configure an Outlook Voice Access number
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure an Outlook Voice Access number in Exchange Server
 ms.reviewer:
 ms.assetid: 443c838e-f266-4893-b6b2-e5fc96579b55
 f1.keywords:

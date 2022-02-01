@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a custom DLP policy in Exchange Server
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 f1.keywords:
 - NOCSH

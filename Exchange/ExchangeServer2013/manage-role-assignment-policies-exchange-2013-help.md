@@ -5,6 +5,8 @@ ms:assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657511(v=EXCHG.150)
 ms:contentKeyID: 49289465
 ms.reviewer: 
+ms.topic: article
+description: How to manage role assignment policies in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -21,7 +23,7 @@ If you want to customize the permissions that you assign to a group of end users
 
 Looking for other management tasks related to managing permissions? Check out [Permissions](permissions-exchange-2013-help.md).
 
-## What do you need to know before you begin?
+### What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes
 
@@ -85,7 +87,7 @@ For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](/p
 
 If you no longer need a management role assignment policy, you can remove it.
 
-## What do you need to know before you begin?
+### What do you need to know before you begin?
 
 - All users assigned the assignment policy must be changed to another assignment policy. For more information about how to change an assignment policy on a mailbox, see [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md).
 

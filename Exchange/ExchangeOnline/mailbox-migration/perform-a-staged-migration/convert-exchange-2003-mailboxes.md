@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 5296a30b-00cb-44be-8855-ed9d14d93e17
 ms.reviewer: 
 description: Convert Exchange 2003 mailboxes to mail enabled users.
-title: Convert Exchange 2003 mailboxes to mail-enabled users
+title: Convert Exchange 2003 mailboxes to mail-enabled users in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -28,7 +28,7 @@ manager: serdars
 
 ---
 
-# Convert Exchange 2003 mailboxes to mail-enabled users
+# Convert Exchange 2003 mailboxes to mail-enabled users in Exchange Online
 
 After you have completed a staged migration, convert the mailboxes to mail-enabled users so that the mailboxes can automatically connect to the cloud mailbox.
 

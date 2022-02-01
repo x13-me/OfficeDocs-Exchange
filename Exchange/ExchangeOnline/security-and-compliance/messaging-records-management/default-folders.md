@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: You can use Retention tags and retention policies to manage email lifecycle. Retention Policies contain Retention Tags, which are settings you can use to specify when a message should be automatically moved to the archive or when it should be deleted.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Default folders that support Retention Policy Tags
+title: Default folders that support Retention Policy Tags in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Default folders that support Retention Policy Tags
+# Default folders that support Retention Policy Tags in Exchange Online
 
 > [!NOTE]
 > To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.

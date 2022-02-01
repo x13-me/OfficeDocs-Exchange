@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.reviewer: 
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Manage journaling
+# Manage journaling in Exchange Online
 
 Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. For more information about journaling, see [Journaling in Exchange Online](journaling.md).
 

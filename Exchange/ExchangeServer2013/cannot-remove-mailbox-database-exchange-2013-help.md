@@ -4,6 +4,8 @@ TOCTitle: Cannot remove mailbox database
 ms:assetid: 5881e4c0-c2e2-48db-84b4-7f9ce3cf46a7
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.unwillingtoremovemailboxdatabase(v=EXCHG.150)
 ms:contentKeyID: 46628948
+ms.topic: article
+description: Exchange Server 2013 Setup can't remove a user mailbox database from the local server without incurring potential data loss.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

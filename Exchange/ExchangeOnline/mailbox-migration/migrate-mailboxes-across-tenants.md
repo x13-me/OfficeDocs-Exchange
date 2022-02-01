@@ -1,7 +1,7 @@
 ---
 description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
 ms.reviewer: 
@@ -295,9 +295,9 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline
 $Global:ExchRemoteCmdlets = Get-PSSession -Name ExchangeOnlineInternalSession*
 }
-# Import the CSV file
+# Import the CSV file in Exchange Online
 $csv = Import-CSV $inputfile
-# Create Rooms contained in the CSV file
+# Create Rooms contained in the CSV file in Exchange Online
 $csv | foreach-object{
 New-Mailbox -Name $_.RoomName -Room -PrimarySmtpAddress $_.RoomSMTPAddress -ResourceCapacity $_.RoomCapacity
 }
@@ -349,10 +349,10 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline
 $Global:ExchRemoteCmdlets = Get-PSSession -Name ExchangeOnlineInternalSession*
 }
-# Import the CSV file and change primary smtp address
+# Import the CSV file and change primary smtp address in Exchange Online
 $csv = Import-CSV $inputfile
 $csv | foreach-object{
-# Set variable for email address to remove
+# Set variable for email address to remove in Exchange Online
 $removeaddr = $_.username + "@" + $_.emailsuffix
 Write-Host ("Processing User: " + $_.UserName +" - Removing " + $removeaddr)
 Set-Mailbox $_.Username -EmailAddresses @{Remove=$removeaddr}

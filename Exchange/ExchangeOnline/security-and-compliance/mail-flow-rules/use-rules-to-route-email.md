@@ -3,7 +3,7 @@ description: Learn how to use mail flow rules to route email messages based on t
 ms.localizationpriority: medium
 ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 ms.collection: 
@@ -18,7 +18,7 @@ title: Use mail flow rules to route email based on a list of words, phrases, or 
 
 ---
 
-# Use mail flow rules to route email based on a list of words, phrases, or patterns
+# Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online
 
 In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use mail flow rules (also known as transport rules) to find and act on messages that contains specific words. This action can help your users comply with your organization's email policies.
 

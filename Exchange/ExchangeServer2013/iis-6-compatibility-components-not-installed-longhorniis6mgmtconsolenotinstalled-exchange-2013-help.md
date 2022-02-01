@@ -7,6 +7,8 @@ ms:contentKeyID: 46628997
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Exchange Setup can't complete without IIS 6 Compatibility components installed
 author: msdmaguire
 f1.keywords:
 - NOCSH

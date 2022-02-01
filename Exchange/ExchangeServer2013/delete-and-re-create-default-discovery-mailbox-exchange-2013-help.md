@@ -5,17 +5,19 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to delete and recreate the default discovery mailbox in Exchange Server
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Delete and re-create the default discovery mailbox in Exchange 2013
+# Delete and recreate the default discovery mailbox in Exchange 2013
 
 _**Applies to:** Exchange Server 2013_
 
-You can use the Exchange Management Shell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
+You can use the Exchange Management Shell to delete the default discovery mailbox, recreate it, and then assign permissions to it.
 
 ## Why would I want to do this?
 

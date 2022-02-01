@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3bce1321-0bff-40dc-92e1-52c5b955cdf5
-description: "Admins can lear about cross-premises email with an on-premises email system other than Exchange and Exchange Online."
-title: Plan to coexist with a third-party messaging system using Active Directory Domain Services
+description: "Admins can learn about cross-premises email with an on-premises email system other than Exchange and Exchange Online."
+title: Plan for third-party email coexistence with Microsoft 365 or Office 365 and Azure Active Directory
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -47,7 +47,7 @@ As you plan for this third-party email coexistence, consider the Azure Active Di
 
 - The on-premises organization is running Active Directory with the Microsoft Exchange 2016 or later schema updates.
 
-- The Exchange Management Shell and the Exchange Server Active Directory schema are required for managing email-related users. To meet these requirements, install the Exchange 2016 Mailbox server role on a server in the on-premises organization.
+- The Exchange Management Shell and the Exchange Server Active Directory schema are required for managing email-related users. To meet these requirements, install the Exchange 2016 Mailbox server role on a server in the on-premises organization.
 
 - Every recipient object from the third-party system needs to have corresponding user object in local Active Directory. The users will need mail-enabled as part of the coexistence process.
 
@@ -75,7 +75,7 @@ The use of the Exchange admin center and Exchange Management Shell is required t
 
 Because you will be configuring Exchange Online to send email to your on-premises mail system, you'll have to make an additional configuration in the cloud to avoid mail formatting issues.
 
-By default, Exchange Online sends messages back to the on-premises email system in rich text or Transport Neutral Encapsulation Format (TNEF), which might result in your users receiving plain text emails with Winmail.dat attachments. As a result, you need to configure Exchange Online to send all mail to your on-premises system in non-TNEF format (HTML or text). To do this, you need to specify the on-premises primary SMTP domain as a *remote domain* in Exchange Online. You can then disable TNEF formatting for all email that is sent to the remote domain.
+By default, Exchange Online sends messages back to the on-premises email system in rich text or Transport Neutral Encapsulation Format (TNEF), which might result in your users receiving plain text emails with Winmail.dat attachments. As a result, you need to configure Exchange Online to send all mail to your on-premises system in non-TNEF format (HTML or text). To do this, you need to specify the on-premises primary SMTP domain as a *remote domain* in Exchange Online. You can then disable TNEF formatting for all email that is sent to the remote domain.
 
 ## Implementation
 
@@ -103,7 +103,7 @@ You need to subscribe to Microsoft 365 or Office 365 to create a service tenant 
 
 When you subscribe, be sure to verify the primary SMTP domain in your organization with Microsoft 365 or Office 365. The process of verifying a domain proves that you own the domain. The verified domain is also the domain that the Azure Active Directory Sync tool uses to provision objects in the cloud. Then add the mail routing domain representing the third-party system.
 
-Learn more at [Sign up for Microsoft 365](https://products.office.com/business/enterprise-productivity-tools).
+Learn more at [Sign up for Microsoft 365](https://products.office.com/business/enterprise-productivity-tools).
 
 ## Step 2: Install Exchange Server 2016
 
@@ -127,13 +127,13 @@ Learn more at [Sign up for Microsoft 365](https://products.office.com/business/
 
 ## Step 4: Enable mail-enabled users in your on-premises Active Directory
 
-After you've updated your Active Directory with the Exchange schema, you can now *mail-enable* existing users in your Active Directory. In the context of this scenario, mail-enabled users represent the users (that have mailboxes) in your on-premises messaging system that you want to represent in the cloud address book.
+After you've updated your Active Directory with the Exchange schema, you can now *mail-enable* existing users in your Active Directory. In the context of this scenario, mail-enabled users represent the users (that have mailboxes) in your on-premises messaging system that you want to represent in the cloud address book.
 
-Using the Exchange Management Shell, run [Enable-MailUser](/powershell/module/exchange/Enable-MailUser) for each user that you want to be displayed in the cloud address book and who has a mailbox in your on-premises messaging organization.
+Using the Exchange Management Shell, run [Enable-MailUser](/powershell/module/exchange/Enable-MailUser) for each user that you want to be displayed in the cloud address book and who has a mailbox in your on-premises messaging organization.
 
-The **Enable-MailUser** cmdlet only takes the *ExternalEmailAddress* parameter. This is also referred to as the *target address* of the mail-enabled user object. This parameter updates the target SMTP address for the mail-enabled user, which enables cross-premises mail flow.
+The **Enable-MailUser** cmdlet only takes the *ExternalEmailAddress* parameter. This is also referred to as the *target address* of the mail-enabled user object. This parameter updates the target SMTP address for the mail-enabled user, which enables cross-premises mail flow.
 
-The *ExternalEmailAddress* parameter is an email address that you enter for the user. The email address must meet the following criteria:
+The *ExternalEmailAddress* parameter is an email address that you enter for the user. The email address must meet the following criteria:
 
 - It must be the valid primary SMTP email address of the user in your on-premises organization.
 
@@ -141,13 +141,13 @@ The *ExternalEmailAddress* parameter is an email address that you enter for th
 
 - The domain part of the email address must match the UPN domain for the user in the on-premises directory.
 
-Here's an example of an **Enable-MailUser** command:
+Here's an example of an **Enable-MailUser** command:
 
 ```powershell
 Enable-MailUser -Identity "Gabriela Laureano" -ExternalEmailAddress glaureano@domino.contoso.com -PrimarySMTPAddress glaureano@contoso.com
 ```
 
-To learn more about how to install, configure, and run Exchange Management Shell, see [Exchange Management Shell](/powershell/exchange/exchange-management-shell).
+To learn more about how to install, configure, and run Exchange Management Shell, see [Exchange Management Shell](/powershell/exchange/exchange-management-shell).
 
 If you need to create or modify users in your on-premises Active Directory, see the following topics:
 
@@ -163,11 +163,11 @@ If you need to create or modify users in your on-premises Active Directory, see 
 
 3. In the optional features section, select **Exchange Hybrid Deployment**.
 
-The Exchange Hybrid Deployment feature allows for the co-existence of Exchange mailboxes in both on-premises and Microsoft 365 or Office 365. Azure AD Connect is synchronizing a specific set of [attributes](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#exchange-hybrid-writeback) from Azure AD back into your on-premises directory.
+The Exchange Hybrid Deployment feature allows for the co-existence of Exchange mailboxes in both on-premises and Microsoft 365 or Office 365. Azure AD Connect is synchronizing a specific set of [attributes](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#exchange-hybrid-writeback) from Azure AD back into your on-premises directory.
 
 ## Step 6: Configure shared namespace routing
 
-In the context of this cross-premises email scenario, a *shared namespace* refers to an SMTP addressing namespace. When you configure a shared namespace, you define how messages will be routed between your on-premises mail system and the cloud, and how messages will be routed between your on-premises system, the cloud, and the internet.
+In the context of this cross-premises email scenario, a *shared namespace* refers to an SMTP addressing namespace. When you configure a shared namespace, you define how messages will be routed between your on-premises mail system and the cloud, and how messages will be routed between your on-premises system, the cloud, and the internet.
 
 The procedure for implementing a shared namespace depends on:
 
@@ -179,7 +179,7 @@ In either case, the cloud-based Exchange Online configurations are similar. Afte
 
 ## Step 7: Disable TNEF to your on-premises messaging system
 
-As previously mentioned, Exchange Online will, by default, send TNEF-encoded messages to the on-premises system. To disable this functionality, see [Manage remote domains in Exchange Online](../mail-flow-best-practices/remote-domains/manage-remote-domains.md)
+As previously mentioned, Exchange Online will, by default, send TNEF-encoded messages to the on-premises system. To disable this functionality, see [Manage remote domains in Exchange Online](../mail-flow-best-practices/remote-domains/manage-remote-domains.md)
 
 ## Mailbox migration
 
@@ -187,24 +187,24 @@ This section provides links to more information about migrating mailboxes from y
 
 ### Moving messaging-related data
 
-As previously stated, the majority of messaging migration tools that are included with Microsoft 365 and Office 365 are designed to work with Exchange Server. However, Microsoft 365 and Office 365 also include the [IMAP migration tool](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md) for generic email data migration.
+As previously stated, the majority of messaging migration tools that are included with Microsoft 365 and Office 365 are designed to work with Exchange Server. However, Microsoft 365 and Office 365 also include the [IMAP migration tool](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md) for generic email data migration.
 
-For organizations that use Outlook as an email client, you can also use the [PST Capture tool](/microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization) to migrate messaging data to the cloud.
+For organizations that use Outlook as an email client, you can also use the [PST Capture tool](/microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization) to migrate messaging data to the cloud.
 
 For other messaging migration solutions, you might need to work with a third-party solution provider.
 
 Here are some third-party migration tools and partners that can assist with Exchange migrations from third-party platforms:
 
-- **[Binary Tree](https://binarytree.com/)**: Provider of cross-platform messaging migration and coexistence software, with products that provide for the analysis of and the coexistence and migration between on-premises and online enterprise messaging and collaboration environments based on IBM Lotus Notes and Domino and Microsoft Exchange and Microsoft SharePoint.
+- **[Binary Tree](https://binarytree.com/)**: Provider of cross-platform messaging migration and coexistence software, with products that provide for the analysis of and the coexistence and migration between on-premises and online enterprise messaging and collaboration environments based on IBM Lotus Notes and Domino and Microsoft Exchange and Microsoft SharePoint.
 
-- **[BitTitan](https://www.bittitan.com/)**: Provider of migration solutions to Exchange Online.
+- **[BitTitan](https://www.bittitan.com/)**: Provider of migration solutions to Exchange Online.
 
-- **[Quest](https://www.quest.com/)**: Provider of on-premises and hosted migration and coexistence software, including pre-migration analysis and complete user and application coexistence. Full-featured migrations from on-premises Microsoft Exchange, IBM Domino, Novell GroupWise, Zimbra and other environments to Microsoft 365, Office 365, Exchange Online, and SharePoint Online.
+- **[Quest](https://www.quest.com/)**: Provider of on-premises and hosted migration and coexistence software, including pre-migration analysis and complete user and application coexistence. Full-featured migrations from on-premises Microsoft Exchange, IBM Domino, Novell GroupWise, Zimbra and other environments to Microsoft 365, Office 365, Exchange Online, and SharePoint Online.
 
-- **[Transvault](https://www.transvault.com/cloud-office-migrations/email-archive-migrations/)**: Provider of cloud office migration solutions to Microsoft 365 from Exchange and Notes. Transvault supports 23 different sources for migration and has products that deliver any size of project, complex email archive migrations, and PST management. The enterprise migration solutions are secure, compliant, efficient, and user-focused, and can be run both on-premises and in the cloud.
+- **[Transvault](https://www.transvault.com/cloud-office-migrations/email-archive-migrations/)**: Provider of cloud office migration solutions to Microsoft 365 from Exchange and Notes. Transvault supports 23 different sources for migration and has products that deliver any size of project, complex email archive migrations, and PST management. The enterprise migration solutions are secure, compliant, efficient, and user-focused, and can be run both on-premises and in the cloud.
 
 ### Converting cloud users to mailbox-enabled users
 
 If you've already deployed a cross-premises mail routing environment as described in this topic, the users that you've created in the cloud with directory synchronization are mail-enabled users.
 
-To provision mailboxes for these users, license them for Exchange Online in the Microsoft 365 admin console. For more information, see [Sync with existing users in Azure AD](/azure/active-directory/hybrid/how-to-connect-install-existing-tenant#sync-with-existing-users-in-azure-ad)
+To provision mailboxes for these users, license them for Exchange Online in the Microsoft 365 admin console. For more information, see [Sync with existing users in Azure AD](/azure/active-directory/hybrid/how-to-connect-install-existing-tenant#sync-with-existing-users-in-azure-ad).

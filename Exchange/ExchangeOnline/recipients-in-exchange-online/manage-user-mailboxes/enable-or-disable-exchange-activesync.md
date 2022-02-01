@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft Exchange ActiveSync for a user mailbox. Exchange ActiveSync is a client protocol that lets users synchronize a mobile device with their Exchange mailbox. Exchange ActiveSync is enabled by default when a user mailbox is created. To learn more, see Exchange ActiveSync.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Enable or disable Exchange ActiveSync for a mailbox
+title: Enable or disable Exchange ActiveSync for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Enable or disable Exchange ActiveSync for a mailbox
+# Enable or disable Exchange ActiveSync for a mailbox in Exchange Online
 
 You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft Exchange ActiveSync for a user mailbox. Exchange ActiveSync is a client protocol that lets users synchronize a mobile device with their Exchange mailbox. Exchange ActiveSync is enabled by default when a user mailbox is created. To learn more, see [Exchange ActiveSync in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync.md).
 
@@ -105,4 +105,5 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync for a
   ```PowerShell
   Get-CASMailbox -Identity <MailboxIdentity>
   ```
+
   If Exchange ActiveSync is enabled, the value for the _ActiveSyncEnabled_ property is `True`. If Exchange ActiveSync is disabled, the value is `False`.

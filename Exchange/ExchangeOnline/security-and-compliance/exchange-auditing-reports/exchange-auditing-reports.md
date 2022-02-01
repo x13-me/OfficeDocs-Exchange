@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: Learn about the auditing reports that are available in the Exchange admin center (EAC) in Exchange Online.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Exchange Online auditing reports
+title: Auditing reports in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,6 +19,11 @@ manager: serdars
 ---
 
 # Auditing reports in the Exchange admin center in Exchange Online
+
+> [!NOTE]
+> Classic Exchange admin center is in the process of being deprecated in worldwide deployment. We recommend that you search the audit log in the Microsoft 365 compliance center. For more information, see [Deprecation of the classic Exchange admin center in WW service](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-the-classic-exchange-admin-center-in-ww-service/ba-p/2736358) and [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+
+Legacy Exchange Online data loss prevention in the Exchange admin center is in the process of being deprecated.
 
 Use audit logging to troubleshoot configuration issues by tracking specific changes made by admins and to help you meet regulatory, compliance, and litigation requirements. Exchange Online or standalone Exchange Online Protection (EOP) without Exchange Online mailboxes provides two types of audit logging:
 

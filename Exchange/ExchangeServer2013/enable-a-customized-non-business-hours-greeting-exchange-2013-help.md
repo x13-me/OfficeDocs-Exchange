@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable a customized non-business hours greeting in Exchange Server
 ms.assetid: d4743805-bab0-4735-a1e0-2cea4e088e8c
 f1.keywords:
 - NOCSH

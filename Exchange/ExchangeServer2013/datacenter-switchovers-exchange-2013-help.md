@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: About Datacenter Switchovers in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -129,8 +131,6 @@ When the DAG isn't in DAC mode, the steps to complete activation of the mailbox 
 ## Activating Client Access Servers
 
 Clients connect to service endpoints (for example Outlook Web App, Autodiscover, Exchange ActiveSync, Outlook Anywhere, POP3, IMAP4, and the RPC Client Access array) to access Exchange services and data. Therefore, activating Client Access servers involves changing the mapping of the DNS records for these service endpoints from IP addresses in the primary datacenter to the IP addresses in the second datacenter that are configured as the new service endpoints. Depending on your DNS configuration, the DNS records that need to be modified may or may not be in the same DNS zone.
-
-## Activating Client Access Servers
 
 Clients will then automatically connect to the new service endpoints in one of two ways:
 

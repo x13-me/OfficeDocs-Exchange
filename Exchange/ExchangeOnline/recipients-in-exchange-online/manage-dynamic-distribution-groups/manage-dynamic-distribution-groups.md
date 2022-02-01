@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 f1.keywords:
 - CSH
 ms.custom:
@@ -10,7 +10,7 @@ ms.custom:
 ms.author: jhendr
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.reviewer: 
-title: Manage dynamic distribution group
+title: Manage dynamic distribution group in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -20,7 +20,11 @@ manager: serdars
 
 ---
 
-# Manage dynamic distribution groups in Exchange Server
+# Manage dynamic distribution groups in Exchange Online
+
+
+>[!Note]
+> A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by March 2022. Learn more: [Modern dynamic distribution groups](modern-dynamic-distribution-groups.md).
 
 Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 
@@ -61,7 +65,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
    - **Only the following recipient types**: Messages that meet the criteria defined for this group will be sent to one or more of the following recipient types:
 
-     - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.
+     - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization. Note that resource mailboxes are also included.
 
      - **Mail users with external email addresses**: Select this check box if you want to include users that have external email addresses. Users that have external email accounts have user domain accounts in Active Directory, but use email accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.
 
@@ -122,7 +126,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
    - **Only the following recipient types**: Messages that meet the criteria defined for this group will be sent to one or more of the following recipient types:
 
-   - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.
+   - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization. Note that resource mailboxes are also included.
 
    - **Users with external email addresses**: Select this check box if you want to include users that have external email addresses. Users that have external email accounts have user domain accounts in Active Directory, but use email accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.
 

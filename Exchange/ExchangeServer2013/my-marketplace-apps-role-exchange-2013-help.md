@@ -5,6 +5,8 @@ ms:assetid: 5c208d2d-8f76-46a7-9d2e-7c616f21ee67
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657450(v=EXCHG.150)
 ms:contentKeyID: 49289263
 ms.reviewer: 
+ms.topic: article
+description: About the My Marketplace Apps role in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

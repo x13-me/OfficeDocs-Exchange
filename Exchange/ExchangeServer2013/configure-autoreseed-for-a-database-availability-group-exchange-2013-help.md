@@ -4,10 +4,12 @@ TOCTitle: Configure AutoReseed for a database availability group
 ms:assetid: 4a8bd779-b52a-40ed-8040-4d76eabeb41e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ619303(v=EXCHG.150)
 ms:contentKeyID: 49289245
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article 
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to configure AutoReseed for a database availability group in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -55,7 +57,7 @@ This example illustrates how to configure the root path for the storage volumes.
 Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully configured the root paths for databases and volumes, run the following command.
 
@@ -75,7 +77,7 @@ This example illustrates how to configure this AutoReseed setting for a DAG conf
 Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully configured the number of databases per volume, run the following command.
 
@@ -94,7 +96,7 @@ md C:\ExchangeDatabases
 md C:\ExchangeVolumes
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully configured the root directories for databases and volumes, run the following command.
 
@@ -116,7 +118,7 @@ For every volume that will be used for databases (including spare volumes), use 
 
 The names of the mounted folders can be any folder name, as long as the folders are mounted under the root volume's path.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully mounted the volume folders, run the following command.
 
@@ -146,7 +148,7 @@ md c:\ExchangeDatabases\db003
 md c:\ExchangeDatabases\db004
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully mounted the database folders, run the following command.
 
@@ -164,7 +166,7 @@ Create the mount points for each database and link the mount point to the correc
 Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully created the mount points for the database, run the following command.
 
@@ -218,7 +220,7 @@ md c:\ExchangeDatabases\db004\db004.log
 
 Repeat the preceding commands for databases on every volume.
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully created the database directory structure, run the following command.
 
@@ -236,7 +238,7 @@ Create databases with log and database paths configured with the appropriate fol
 New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you've successfully created databases in the appropriate folder, run the following command.
 
@@ -246,7 +248,7 @@ Get-MailboxDatabase db001 | Format List *path*
 
 Database properties that are returned should indicate that the database file and log files are being stored in the above folders.
 
-## How do you know this task worked?
+### How do you know this task worked?
 
 To verify that you've configured AutoReseed for a DAG, do the following:
 

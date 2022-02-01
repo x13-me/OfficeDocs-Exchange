@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: e1da5f2f-c732-4010-85c9-878b2cef3fb3
 ms.collection: 
@@ -14,11 +14,11 @@ f1.keywords:
 - NOCSH
 ms.reviewer:
 audience: ITPro
-title: Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)
+title: Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises Exchange) in Exchange Online
 
 ---
 
-# Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)
+# Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises Exchange)
 
  **Summary**: How to manage mail flow in an Exchange hybrid environment, which is when some mailboxes are on-premises and some are in Microsoft 365 or Office 365.
 

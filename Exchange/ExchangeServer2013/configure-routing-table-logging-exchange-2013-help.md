@@ -7,6 +7,8 @@ ms:contentKeyID: 49289301
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure routing table logging in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -59,7 +61,7 @@ Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -Rout
 > [!NOTE]
 > Setting the <EM>RoutingTableLogMaxAge</EM> parameter to the value <CODE>00:00:00</CODE> prevents the automatic removal of routing table log files because of their age.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured routing table logging, do the following:
 
@@ -99,7 +101,7 @@ To verify that you have successfully configured routing table logging, do the fo
    net stop MSExchangeTransport && net start MSExchangeTransport
    ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the interval for the automatic recalculation of the routing table, verify the routing table log is updated during the time interval you specified.
 

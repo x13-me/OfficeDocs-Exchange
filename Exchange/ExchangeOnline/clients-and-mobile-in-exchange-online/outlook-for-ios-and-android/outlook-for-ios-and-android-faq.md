@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Microsoft 365 or Office 365.
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
 title: "Outlook for iOS and Android in Exchange Online: FAQ"
@@ -211,7 +211,7 @@ The Google Play Store is not available in China. However, Microsoft has distribu
 
 - [Baidu](http://shouji.baidu.com/software/11483186.html)
 - [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.outlook)
-- [Tencent (QQ)](http://android.app.qq.com/myapp/detail.htm?apkName=com.microsoft.office.outlook)
+- [Tencent (QQ)](http://android.app.qq.com/myapp/detail.htm?apkName=com.microsoft.office.outlook)
 - [Huawei](http://appstore.huawei.com/app/C10351487)
 - [Lenovo](http://www.lenovomm.com/app/21140763.html)
 - [Wandoujia](http://www.wandoujia.com/apps/com.microsoft.office.outlook)

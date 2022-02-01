@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.delegat
 ms:contentKeyID: 46628932
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: Installation of first Exchange server in the organization can't be delegated  
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
