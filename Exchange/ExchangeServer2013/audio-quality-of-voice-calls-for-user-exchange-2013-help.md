@@ -4,7 +4,9 @@ TOCTitle: Investigate the audio quality of voice calls for a user
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article 
 ms.reviewer:
+description: Use the User Call Logs report to troubleshoot audio quality problems with Unified Messaging calls
 ms.assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145
 f1.keywords:
 - NOCSH
@@ -35,7 +37,7 @@ For additional tasks related to UM reports, see [UM reports procedures](um-repor
 
 ## Use the EAC to get call logs for a UM-enabled user
 
-1. In the EAC, navigate to **Unified Messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
+1. In the EAC, navigate to **Unified Messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
 
 2. Click **Select a user**, and then select the user you want data for.
 

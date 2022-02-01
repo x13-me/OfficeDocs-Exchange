@@ -1,13 +1,13 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d3856e24-9358-4957-a6d9-b7ec0d0e5fae
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to create a shared mailbox in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to add a new shared mailbox in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to create a shared mailbox in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to add a new shared mailbox in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to add a new shared mailbox in the Exchange admin center in Exchange Online
+# Use a screen reader to add a new shared mailbox in the Classic Exchange admin center in Exchange Online
 
-You can use your screen reader to create a shared mailbox in the Exchange admin center (EAC) in Exchange Online. Shared mailboxes make it easy for a group of people in your organization to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user. [Learn more about shared mailboxes](../collaboration-exo/shared-mailboxes.md).
+You can use your screen reader to create a shared mailbox in the Classic Exchange admin center (Classic EAC) in Exchange Online. Shared mailboxes make it easy for a group of people in your organization to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user. [Learn more about shared mailboxes](../collaboration-exo/shared-mailboxes.md).
 
 ## Get started
 

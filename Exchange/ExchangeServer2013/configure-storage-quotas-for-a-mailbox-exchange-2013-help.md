@@ -7,6 +7,8 @@ ms:contentKeyID: 50387717
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure storage quotas for a mailbox in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -43,7 +45,7 @@ This topic shows you how to customize storage settings for a specific mailbox in
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to change the storage quotas for, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of user mailboxes, click the mailbox that you want to change the storage quotas for, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the mailbox properties page, click **Mailbox Usage**, and then click **More options**.
 
@@ -85,7 +87,7 @@ To verify that you've successfully set the storage quotas for a mailbox, do one 
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to verify the storage quotas for, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of user mailboxes, click the mailbox that you want to verify the storage quotas for, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the mailbox properties page, click **Mailbox Usage**, and then click **More options**.
 

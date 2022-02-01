@@ -4,6 +4,7 @@ TOCTitle: Built-in management roles
 ms:assetid: 023f379a-40f6-43ef-b388-979f6dd85ec5
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638077(v=EXCHG.150)
 ms:contentKeyID: 49289149
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars

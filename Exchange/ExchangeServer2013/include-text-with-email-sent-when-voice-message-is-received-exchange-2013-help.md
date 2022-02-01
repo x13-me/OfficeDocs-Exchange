@@ -4,6 +4,8 @@ TOCTitle: Include text with the email message sent when a voice message Is recei
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to modify the email notice of a received voice mail in Exchange Server  
 ms.reviewer:
 ms.assetid: b2eec29c-e5eb-4263-80d8-0b9813dd56dc
 f1.keywords:
@@ -39,9 +41,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ## Use the EAC to change the text included with a voice message
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Mailbox Policy** page \> **Message text**, in the text box for **When a user receives a voice message**, enter the text you want to include in the email message that's sent when users receive a voice message.
 

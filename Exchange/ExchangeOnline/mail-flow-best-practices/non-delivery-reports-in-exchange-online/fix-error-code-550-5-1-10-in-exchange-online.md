@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 550 5.1.10 in Exchange Online"
 ms.author: jhendr
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 ms.reviewer: 
 audience: Admin
@@ -22,13 +22,13 @@ description: "Learn how to fix email issues for error code 550 5.1.10 in Exchang
 # Fix email delivery issues for error code 550 5.1.10 in Exchange Online
 
 > [!IMPORTANT]
-> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
+> Mail flow rules are now available in the new Exchange admin center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
 Problems sending and receiving email messages can be frustrating. If you get a non-delivery report (NDR), also called a bounce message, for error code 550 5.1.10, this article can help you fix the problem and get your message sent.
 
-![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png) [I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)
+![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png) [I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)
 
-![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png) [I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue)
+![Email admin icon.](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png) [I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue)
 
 ## Why did I get this bounce message?
 
@@ -66,7 +66,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
       ![Screenshot shows the Send Again option for an email message. In the Resend to field, the AutoComplete feature provides the email address for the recipient based on the first few letters typed of the recipient's name.](../../media/409b56f4-1a7f-417e-94cf-9a058ac851d4.png)
 
-   2. Use the Down Arrow key to select the recipient from the Auto-Complete drop-down list and then press the Delete key or choose the **Delete** icon ![Delete icon](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png) to the right of the email address.
+   2. Use the Down Arrow key to select the recipient from the Auto-Complete drop-down list and then press the Delete key or choose the **Delete** icon ![Delete icon.](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png) to the right of the email address.
 
 4. In the **To** box, continue typing the entire recipient email address. Be sure to spell the address correctly.
 
@@ -82,7 +82,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
    If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder.
 
-2. On the **To** line of the new copy of your message, choose the **Delete** icon ![Delete icon](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png) delete the recipient's email address.
+2. On the **To** line of the new copy of your message, choose the **Delete** icon ![Delete icon.](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png) delete the recipient's email address.
 
    ![Screenshot shows the To line of an email message with the option to delete the recipient's email address.](../../media/09ddb461-f132-48c0-b7b8-d856163f1820.png)
 
@@ -92,7 +92,7 @@ If the steps in this section don't fix the problem for you, contact your email a
 
       ![Screenshot shows the To line of an email message with the option to delete the recipient's email address from the Auto-Complete list.](../../media/dc67e6ed-35e1-4085-adc7-8997ea155070.png)
 
-   2. Use the Down Arrow key to select the recipient from the Auto-Complete list, and then press the Delete key. Or, hover over the recipient's name and click the **Delete** icon ![Delete icon](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png).
+   2. Use the Down Arrow key to select the recipient from the Auto-Complete list, and then press the Delete key. Or, hover over the recipient's name and click the **Delete** icon ![Delete icon.](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png).
 
 4. On the **To** line, continue typing the recipient's entire email address. Be sure to spell the address correctly.
 
@@ -190,7 +190,7 @@ Unlike Inbox rules that are associated with a user's mailbox, mail flow rules (a
 
 1. In the Microsoft 365 Admin center, select **Admin centers** \> **Exchange**.
 
-   :::image type="content" source="../../media/microsoft-365-admin-center.png" alt-text="The Microsoft 365 Admin center home screen":::
+   :::image type="content" source="../../media/microsoft-365-admin-center.png" alt-text="The Microsoft 365 Admin center home screen.":::
 
 2. In the Exchange admin center (EAC), that is, New EAC or Classic EAC, go to **Mail flow** \> **Rules**.
 
@@ -227,13 +227,13 @@ If you have a hybrid configuration with a Microsoft 365 or Office 365 connector 
 
 3. Select a recipient's domain and double-click it.
 
-   :::image type="content" source="../../media/choose-recipient-domain.png" alt-text="The screen on which the recipient domain is chosen":::
+   :::image type="content" source="../../media/choose-recipient-domain.png" alt-text="The screen on which the recipient domain is chosen.":::
 
    The accepted's domain details screen appears.
 
 4. Click the radio button for **Internal Relay**.
 
-   :::image type="content" source="../../media/choosing-internal-relay.png" alt-text="The screen on which the domain value is set to Internal Relay":::
+   :::image type="content" source="../../media/choosing-internal-relay.png" alt-text="The screen on which the domain value is set to Internal Relay.":::
  
 5. Click **Save**.
 
@@ -285,11 +285,11 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 ## Still need help with a 5.1.10 bounce message?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

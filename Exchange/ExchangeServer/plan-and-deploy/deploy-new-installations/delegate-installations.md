@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 description: "Summary: Learn how to configure Exchange 2016 or Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install Exchange."
-ms.topic: get-started-article
+ms.topic: how-to
 author: msdmaguire
 ms.author: serdars
 ms.assetid: f2fc8680-0c7c-4a29-b8f5-d77404fec280
@@ -54,8 +54,13 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 3. In the Command Prompt window, use the following syntax:
 
+    > [!NOTE]
+    > - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+    >
+    > - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
     ```console
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer[:<ServerName>]
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /NewProvisionedServer[:<ServerName>]
     ```
 
     If you run the command on the target server, you can use the _/NewProvisionedServer_ switch by itself. Otherwise, you need to specify the Name of the server to provision.
@@ -63,13 +68,13 @@ After an Exchange administrator provisions the Exchange server object, the only 
     This example uses the Exchange installation files on drive E: to provision the server Mailbox01:
 
     ```console
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer:Mailbox01
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /NewProvisionedServer:Mailbox01
     ```
 
     This example uses the Exchange installation files on drive E: to provision the local server where you're running the command:
 
     ```console
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /NewProvisionedServer
     ```
 
     **Note**: To remove a provisioned Exchange server object from Active Directory _before_ Exchange is installed on it, replace the _/NewProvisionedServer_ switch with _/RemoveProvisionedServer_.

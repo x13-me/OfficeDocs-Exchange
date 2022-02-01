@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+descripton: How to create a custom management scope for In-Place eDiscovery in Exchange Server
 ms.assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
 f1.keywords:
 - NOCSH
@@ -79,7 +81,7 @@ New-RoleGroup "Ottawa Discovery Management" -Roles "Mailbox Search","Legal Hold"
 
 ### Use the EAC to create a management role group
 
-1. In the EAC, go to **Permissions** \> **Admin roles**, and then click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Permissions** \> **Admin roles**, and then click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 2. In **New role group**, provide the following information:
 
@@ -87,15 +89,15 @@ New-RoleGroup "Ottawa Discovery Management" -Roles "Mailbox Search","Legal Hold"
 
    - **Write scope**: Select the custom management scope that you created in step 2. This scope will be applied to the new role group.
 
-   - **Roles**: Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif), and add the **Legal Hold** and **Mailbox Search** roles to the new role group.
+   - **Roles**: Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif), and add the **Legal Hold** and **Mailbox Search** roles to the new role group.
 
-   - **Members**: Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif), and select the users, security group, or role groups that you want add as members of the new role group. For this example, the members of the **Ottawa Users eDiscovery Managers** security group will be able to search only the mailboxes of users who are members of the **Ottawa Users** distribution group.
+   - **Members**: Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif), and select the users, security group, or role groups that you want add as members of the new role group. For this example, the members of the **Ottawa Users eDiscovery Managers** security group will be able to search only the mailboxes of users who are members of the **Ottawa Users** distribution group.
 
 3. Click **Save** to create the role group.
 
    Here's an example of what the **New role group** window will look like when you're done.
 
-   ![Create a new role group for a custom scope](images/TA_MRM_eDiscoveryCustomRoleGroup.gif)
+   ![Create a new role group for a custom scope.](images/TA_MRM_eDiscoveryCustomRoleGroup.gif)
 
 ## (Optional) Step 4: Add discovery managers as members of the distribution group used to create the custom management scope
 

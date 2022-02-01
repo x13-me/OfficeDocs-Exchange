@@ -5,7 +5,7 @@ description: Learn about the conditions and exceptions (predicates) that are ava
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: 7235e5ed-f7f4-41b1-b1a0-47bb96223a2f
 ms.collection: 
@@ -163,7 +163,10 @@ If you add a recipient condition from this section, that same message is rejecte
 
 Conversely, a recipient exception from this section *prevents* the rule action from being applied to *all* recipients of the message, not just for the detected recipients.
 
- **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
+> [!NOTE]
+> These conditions don't consider messages that are sent to recipient proxy addresses. They only match messages that are sent to the recipient's primary email address.
+>
+> These conditions are applied to all recipients in the current fork of the message only. If the message was bifurcated by any other action (for example, anti-malware or an erlier mail flow rule), the action will be applied on the matching fork only. 
 
 <br>
 

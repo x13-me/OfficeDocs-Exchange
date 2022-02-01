@@ -1,13 +1,13 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 848fdbc6-34f7-4c46-807b-7ac85a28f725
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to create an equipment mailbox in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to add a new equipment mailbox in the Exchange admin center
+description: Admins can learn how to use a screen reader to create an equipment mailbox in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to add a new equipment mailbox in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to add a new equipment mailbox in the Exchange admin center
+# Use a screen reader to add a new equipment mailbox in the Classic Exchange admin center in Exchange Online
 
-Create mailboxes in the Exchange admin center (EAC) for any printer, projector, or other device that's attached to your corporate network by using your keyboard and any screen reader.
+Create mailboxes in the Classic Exchange admin center (Classic EAC) for any printer, projector, or other device that's attached to your corporate network by using your keyboard and any screen reader.
 
 ## Get started
 
@@ -73,8 +73,8 @@ To add a new equipment mailbox, [Use a screen reader to open the Exchange admin 
 
 10. If the default selection in the domain drop-down menu is not the domain you want to choose, to access other available domains, press the Down Arrow key. As you move through the available options, you hear the domain name and suffix. When you find the domain you want to use, to select it, press Enter.
 
-   > [!TIP]
-   > You cannot type any values into the domain box. It is a prepopulated drop-down list. To add domains to that drop-down list, contact your Office admin.
+    > [!TIP]
+    > You cannot type any values into the domain box. It is a prepopulated drop-down list. To add domains to that drop-down list, contact your Office admin.
 
 11. To go to the **Save** button, press the Tab key. You hear "Save..
 

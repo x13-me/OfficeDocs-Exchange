@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create a shared mailbox in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -30,7 +32,7 @@ If your organization uses a hybrid Exchange environment, you should use the on-p
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "User mailboxes" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-1. Go to **Recipients** \> **Shared** \> **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. Go to **Recipients** \> **Shared** \> **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. Fill-in the required fields:
 
@@ -38,7 +40,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
    - **Email address**
 
-3. To grant Full Access or Send As permissions, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), and then select the users you want to grant permissions to. You can use the **CTRL** key to select multiple users. Confused about which permission to use? See Which permission should you use? later in this topic.
+3. To grant Full Access or Send As permissions, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), and then select the users you want to grant permissions to. You can use the **CTRL** key to select multiple users. Confused about which permission to use? See Which permission should you use? later in this topic.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
@@ -47,7 +49,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ## Use the EAC to edit shared mailbox delegation
 
-1. Go to **Recipients** \> **Shared** \> **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+1. Go to **Recipients** \> **Shared** \> **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 2. Click **Mailbox delegation**
 

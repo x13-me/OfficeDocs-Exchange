@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about the different types of address lists that are available in Exchange Online.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 ms.reviewer: 
@@ -30,7 +30,7 @@ An address list is a collection of mail-enabled recipient objects in Exchange On
 
 Users in your organization use address lists and the GAL to find recipients for email messages. Here's an example of what address lists look like in Outlook 2016:
 
-![Global Address List (GAL)](../../media/54c5aa4b-fbd3-4b37-8642-9a52b9558641.png)
+![Global Address List (GAL).](../../media/54c5aa4b-fbd3-4b37-8642-9a52b9558641.png)
 
 For procedures related to address lists, see [Address list procedures in Exchange Online](address-list-procedures.md).
 
@@ -48,7 +48,7 @@ By default, a new Exchange Online organization has a GAL named Default Global Ad
 
 - You can only use the Exchange Online PowerShell to create, modify, remove, and update GALs.
 
-- Users can only see a GAL that they belong to (the recipient filter of the GAL includes them). If a user belongs to multiple GALs, they'll still see only one GAL based on the following conditions:
+- If a user belongs to multiple GALs, they'll still see only one GAL based on the following conditions:
   - The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange Online](../address-book-policies/address-book-policies.md).
   - If a user is still eligible to see multiple GALs, only the largest GAL is used (the GAL that contains the most recipients).
   - Each GAL needs a corresponding offline address book (OAB) that includes the GAL. To create OABs, see [Create an offline address book in Exchange Online](../offline-address-books/create-offline-address-book.md).
@@ -96,4 +96,4 @@ Although address lists are useful tools for users, poorly planned address lists 
 - Avoid creating so many address lists that users can't tell which list to use.
 - Use a naming convention and location hierarchy for your address lists so users can immediately tell what the list is for (which recipients are included in the list). If you have difficulty naming your address lists, create fewer lists and remind users that they can find anyone in your organization by using the GAL.
 
-For detailed instructions about creating address lists in Exchange Server, see [Address list procedures in Exchange Online](address-list-procedures.md).
+For detailed instructions about creating address lists in Exchange Online, see [Address list procedures in Exchange Online](address-list-procedures.md).

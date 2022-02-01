@@ -41,7 +41,7 @@ If you want to customize the permissions that you can assign to a group of users
 
 ### Use the EAC to create a role group
 
-1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New role group** window, provide a name for the new role group.
 
@@ -76,7 +76,7 @@ If you have a role group that contains the permissions you want to grant to user
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to copy and then click **Copy** ![Copy icon](../media/ITPro_EAC_CopyIcon.png).
+2. Select the role group you want to copy and then click **Copy** ![Copy icon.](../media/ITPro_EAC_CopyIcon.png).
 
 3. In the **New role group** window, provide a name for the new role group.
 
@@ -124,7 +124,7 @@ For detailed syntax and parameter information, see [Get-RoleGroup](/powershell/m
 2. Create the new role group with a custom scope using the following syntax.
 
    ```powershell
-   New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+   New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name>
    ```
 
 For example, the following commands copy the Organization Management role group and create a new role group called Vancouver Organization Management with the Vancouver Users recipient scope and Vancouver Servers configuration scope.
@@ -185,7 +185,7 @@ If you no longer need a role group you created, you can remove it. When you remo
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to remove and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.png).
+2. Select the role group you want to remove and then click **Delete** ![Delete icon.](../media/ITPro_EAC_DeleteIcon.png).
 
 3. Verify that you want to remove the selected role group, and if so, respond **Yes** to the warning.
 
@@ -218,7 +218,7 @@ Adding a management role to a role group is the best and simplest way to grant p
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to add a role to, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to add a role to, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. In the **Roles** section, select the roles you want to add to the role group.
 
@@ -360,7 +360,7 @@ Removing a role from a management role group is the best and simplest way to rev
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to remove a role from, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to remove a role from, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. In the **Roles** section, select the roles you want to remove from the role group.
 
@@ -417,7 +417,7 @@ When you use the EAC to change the scope on a role group, you're actually changi
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to change the scope on, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the role group you want to change the scope on, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. Select one of the two following **Write scope** options:
 

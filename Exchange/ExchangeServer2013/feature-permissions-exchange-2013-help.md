@@ -5,6 +5,8 @@ ms:assetid: 48d06fa6-e4a2-4d5c-bdbd-718eeaade4be
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638127(v=EXCHG.150)
 ms:contentKeyID: 48385045
 ms.reviewer: 
+ms.topic: article
+description: Feature permissions in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire

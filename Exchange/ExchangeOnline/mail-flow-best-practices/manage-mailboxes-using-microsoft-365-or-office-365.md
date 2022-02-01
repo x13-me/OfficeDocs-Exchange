@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: How to use hosted mail flow with Microsoft 365 or Office 365.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
 ms.reviewer: 
@@ -24,7 +24,7 @@ manager: serdars
 
 For most organizations, we recommend using hosted mail flow because it's the simplest configuration, in which Microsoft 365 or Office 365 manages all mailboxes and filtering. This simple configuration makes it easy to set up and manage mail flow.
 
-## Manage all mailboxes and mail flow using Microsoft 365 or Office 365 (recommended).
+## Manage all mailboxes and mail flow using Microsoft 365 or Office 365 (recommended)
 <a name="BKMK_HostedMailFlow"> </a>
 
 ### Hosted mail flow scenarios
@@ -41,7 +41,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 To set up hosted mail flow, we recommend using the Microsoft 365 setup wizard. To get to the Microsoft 365 setup wizard, go to **Setup** in the Microsoft 365 admin center.
 
-:::image type="content" source="../media/ms-365-admin-center.png" alt-text="interface of Microsoft 365 Admin center":::
+:::image type="content" source="../media/ms-365-admin-center.png" alt-text="interface of Microsoft 365 Admin center.":::
 
 The Microsoft 365 setup wizard walks you through the following steps.
 

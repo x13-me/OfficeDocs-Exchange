@@ -7,7 +7,9 @@ ms:contentKeyID: 49288901
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: How to configure connectivity logging in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -36,7 +38,7 @@ Connectivity logging records the outbound connection activity that's used to tra
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **Transport Logs**.
 

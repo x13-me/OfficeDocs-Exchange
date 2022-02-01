@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 5.7.124 in Exchange Online"
 ms.author: jhendr
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 ms.reviewer: 
 audience: Admin
@@ -29,7 +29,7 @@ You'll see this automated notification when the sender isn't specified in the gr
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this issue?](#im-the-group-owner-or-email-admin-how-do-i-fix-this-issue)|
+|![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this issue?](#im-the-group-owner-or-email-admin-how-do-i-fix-this-issue)|
 |
 
 ## I got this bounce message. How do I fix it?
@@ -54,7 +54,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 3. Select a group from the list and click it. The group properties screen appears.
 
-   :::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
+   :::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group.":::
 
 4. Click the **Settings** tab.
 
@@ -62,25 +62,25 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 6. Under **Sender options**, choose the option **Only allow messages from people inside my organization**.
 
-   :::image type="content" source="../../media/delivery-management-specific-senders.png" alt-text="The Delivery management screen on which specific internal members of the organization are chosen as senders":::
+   :::image type="content" source="../../media/delivery-management-specific-senders.png" alt-text="The Delivery management screen on which specific internal members of the organization are chosen as senders.":::
 
 7. Under **Specified senders**, click on the text box. The list of senders is displayed.
    
-   :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a chosen sender is added to the group":::
+   :::image type="content" source="../../media/list-of-senders-on-dm-screen.png" alt-text="The screen on which a chosen sender is added to the group.":::
 
    Choose senders from the list. The chosen sender's name is displayed below the text box.
 
-   :::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members":::
+   :::image type="content" source="../../media/setting-sender-as-group-member.png" alt-text="The screen on senders are set as group members.":::
 
 8. Click **Save changes**.
 
 #### Classic EAC
 
-1. In the Classic EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. In the Classic EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-2. In the group properties dialog box that opens, go to **Delivery management** and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
+2. In the group properties dialog box that opens, go to **Delivery management** and then click **Add** ![Add icon.](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
 
-  ![Add an email address to the allowed senders list](../../media/bfa84c19-f972-4428-9001-47bebd8b9125.png)
+  ![Add an email address to the allowed senders list.](../../media/bfa84c19-f972-4428-9001-47bebd8b9125.png)
 
 3. In the **Select Allowed Senders** dialog box that opens, select the sender or a group that the sender is a member of.
 
@@ -103,7 +103,7 @@ If you decide that you don't need to restrict the message senders to this group,
 
 3. Select a group from the list and click it. The group properties screen appears.
 
-   :::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group":::
+   :::image type="content" source="../../media/distribution-list-group-details.png" alt-text="The screen displaying properties of the chosen distribution list group.":::
 
 4. Click the **Settings** tab.
 
@@ -111,21 +111,21 @@ If you decide that you don't need to restrict the message senders to this group,
 
 6. Under **Sender options**, choose **Allow messages from people inside and outside my organization**.
 
-   :::image type="content" source="../../media/delivery-management-all-senders.png" alt-text="The screen on which the user chooses the option to allow internal and external members to be set as senders":::
+   :::image type="content" source="../../media/delivery-management-all-senders.png" alt-text="The screen on which the user chooses the option to allow internal and external members to be set as senders.":::
 
 7. Click **Save changes**.
 
 #### Classic EAC
 
-1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+1. In the EAC, go to **Recipients** \> **Groups** \> select the group from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 2. In the group properties dialog box that opens, go to **Delivery management**.
 
 3. In the **Distribution Group** box, select **Delivery management** and configure the following settings:
 
-   - Remove any entries in the allowed senders list by selecting one entry, pressing CTRL + A to select all entries, and then clicking **Remove** ![Remove icon](../../media/adf01106-cc79-475c-8673-065371c1897b.gif).
+   - Remove any entries in the allowed senders list by selecting one entry, pressing CTRL + A to select all entries, and then clicking **Remove** ![Remove icon.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif).
 
-     ![Removing allowed senders from a distribution list](../../media/c135fe59-4c77-43e1-b514-da8dbe4b5fb6.png)
+     ![Removing allowed senders from a distribution list.](../../media/c135fe59-4c77-43e1-b514-da8dbe4b5fb6.png)
 
    - Select **Senders inside and outside of my organization**.
 
@@ -141,11 +141,11 @@ Groups with more than 5,000 members have the following restrictions automaticall
 
 ## Still need help with error code 550 5.7.124?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

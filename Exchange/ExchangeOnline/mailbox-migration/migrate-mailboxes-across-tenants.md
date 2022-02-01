@@ -1,7 +1,7 @@
 ---
 description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
 ms.reviewer: 
@@ -46,7 +46,7 @@ This scenario assumes that user, group and other objects from the Fabrikam Compa
 
 When complete, all Fabrikam accounts will exist in the Contoso.com Office 365 organization, and will all use @fabrikam.com for the UPN. The final addressing scheme was chosen for simplicity and brevity but can of course be modified to meet your requirements.
 
-![How mailbox data can be moved from one Microsoft 365 or Office 365 organization to another](media/e94f51fe-e53d-4036-a27e-18a48397ebc5.jpg)
+![How mailbox data can be moved from one Microsoft 365 or Office 365 organization to another.](media/e94f51fe-e53d-4036-a27e-18a48397ebc5.jpg)
 
 ### Planning: Two weeks before you migrate
 
@@ -113,7 +113,7 @@ To schedule the migration:
 
 2. Create mailbox mapping .CSV file for the third-party migration tool you are using. This mapping file will be used by the migration tool to match the source mailbox with the target tenant mailbox when migration occurs. *We recommend that you use the \*.onmicrosoft.com 'initial' domain for mapping the source accounts since the custom email domain will be constantly changing*.
 
-![CSV file used to migrate mailbox data from one Office 365 organization to another](media/54c3358b-1743-4104-b767-03aea0a29084.jpg)
+![CSV file used to migrate mailbox data from one Office 365 organization to another.](media/54c3358b-1743-4104-b767-03aea0a29084.jpg)
 
 #### Mail exchanger record (MX record) time to live (TTL) test
 
@@ -295,9 +295,9 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline
 $Global:ExchRemoteCmdlets = Get-PSSession -Name ExchangeOnlineInternalSession*
 }
-# Import the CSV file
+# Import the CSV file in Exchange Online
 $csv = Import-CSV $inputfile
-# Create Rooms contained in the CSV file
+# Create Rooms contained in the CSV file in Exchange Online
 $csv | foreach-object{
 New-Mailbox -Name $_.RoomName -Room -PrimarySmtpAddress $_.RoomSMTPAddress -ResourceCapacity $_.RoomCapacity
 }
@@ -349,10 +349,10 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline
 $Global:ExchRemoteCmdlets = Get-PSSession -Name ExchangeOnlineInternalSession*
 }
-# Import the CSV file and change primary smtp address
+# Import the CSV file and change primary smtp address in Exchange Online
 $csv = Import-CSV $inputfile
 $csv | foreach-object{
-# Set variable for email address to remove
+# Set variable for email address to remove in Exchange Online
 $removeaddr = $_.username + "@" + $_.emailsuffix
 Write-Host ("Processing User: " + $_.UserName +" - Removing " + $removeaddr)
 Set-Mailbox $_.Username -EmailAddresses @{Remove=$removeaddr}

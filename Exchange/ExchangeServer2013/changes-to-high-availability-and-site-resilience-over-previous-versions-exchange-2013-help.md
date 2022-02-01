@@ -4,6 +4,7 @@ TOCTitle: Changes to high availability and site resilience over previous version
 ms:assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms:mtpsurl: https://technet.microsoft.com/library/Dn789066(v=EXCHG.150)
 ms:contentKeyID: 62523708
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -29,9 +30,9 @@ Exchange 2013 uses DAGs and mailbox database copies, along with other features s
 
   - **AutoReseed**: Automatic reseeding capability enables you to quickly restore database redundancy after disk failure. If a disk fails, the database copy stored on that disk is copied from the active database copy to a spare disk on the same server. If multiple database copies were stored on the failed disk, they can all be automatically reseeded on a spare disk. This enables faster reseeds, as the active databases are likely to be on multiple servers and the data is copied in parallel.
 
-  - **Automatic recovery from storage failures**: This feature continues the innovation introduced in Exchange 2010 to allow the system to recover from failures that affect resiliency or redundancy. In addition to the Exchange 2010 bugcheck behaviors, Exchange 2013 includes additional recovery behaviors for long I/O times, excessive memory consumption by MSExchangeRepl.exe, and severe cases where the system is in such a bad state that threads can't be scheduled.
+  - **Automatic recovery from storage failures**: This feature continues the innovation introduced in Exchange 2010 to allow the system to recover from failures that affect resiliency or redundancy. In addition to the Exchange 2010 bug check behaviors, Exchange 2013 includes additional recovery behaviors for long I/O times, excessive memory consumption by MSExchangeRepl.exe, and severe cases where the system is in such a bad state that threads can't be scheduled.
 
-  - **Lagged copy enhancements**: Lagged copies can now care for themselves to a certain extent using automatic log play down. Lagged copies will automatically play down log files in a variety of situations, such as page patching and low disk space scenarios. If the system detects that page patching is required for a lagged copy, the logs will be automatically replayed into the lagged copy to perform page patching. Lagged copies will also invoke this auto replay feature when a low disk space threshold has been reached, and when the lagged copy has been detected as the only available copy for a specific period of time. In addition, lagged copies can leverage Safety Net, making recovery or activation much easier.
+  - **Lagged copy enhancements**: Lagged copies can now care for themselves to a certain extent using automatic log play down. Lagged copies will automatically play down log files in various situations, such as page patching and low disk space scenarios. If the system detects that page patching is required for a lagged copy, the logs will be automatically replayed into the lagged copy to perform page patching. Lagged copies will also invoke this auto replay feature when a low disk space threshold has been reached, and when the lagged copy has been detected as the only available copy for a specific period of time. In addition, lagged copies can use Safety Net, making recovery or activation much easier.
 
   - **Single copy alert enhancements**: The single copy alert introduced in Exchange 2010 is no longer a separate scheduled script. It's now integrated into the managed availability components within the system and is a native function within Exchange.
 
@@ -39,7 +40,7 @@ Exchange 2013 uses DAGs and mailbox database copies, along with other features s
 
 ## Reduction in IOPS over Exchange 2010
 
-In Exchange 2010, passive database copies have a very low checkpoint depth, which is required for fast failover. In addition, the passive copy performs aggressive pre-reading of data to keep up with a 5-megabyte (MB) checkpoint depth. As a result of using a low checkpoint depth and performing these aggressive pre-read operations, IOPS for a passive database copy was equal to IOPS for an active copy in Exchange 2010.
+In Exchange 2010, passive database copies have a low checkpoint depth, which is required for fast failover. In addition, the passive copy performs aggressive pre-reading of data to keep up with a 5-megabyte (MB) checkpoint depth. As a result of using a low checkpoint depth and performing these aggressive pre-read operations, IOPS for a passive database copy was equal to IOPS for an active copy in Exchange 2010.
 
 In Exchange 2013, the system is able to provide fast failover while using a high checkpoint depth on the passive copy (100 MB). Because passive copies have 100-MB checkpoint depth, they've been de-tuned to no longer be so aggressive. As a result of increasing the checkpoint depth and de-tuning the aggressive pre-reads, IOPS for a passive copy is about 50 percent of the active copy IOPS in Exchange 2013.
 
@@ -73,7 +74,7 @@ For more information about managed availability, see [Managed Availability](mana
 
 All previous versions of Exchange Server, from Exchange Server 4.0 to Exchange Server 2010, have supported running a single instance of the Information Store process (Store.exe) on the Mailbox server role. This single Store instance hosts all databases on the server: active, passive, lagged, and recovery. In the previous Exchange architectures, there is little, if any, isolation between the different databases hosted on a Mailbox server. An issue with a single mailbox database has the potential to negatively affect all other databases, and crashes resulting from a mailbox corruption can affect service for all users whose databases are hosted on that server.
 
-Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that, cross-processor communication and cache synchronization issues lead to negative scale. Given today's much larger servers, with 16+ core systems available, this would mean impose the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
+Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that, cross-processor communication and cache synchronization issues lead to negative scale. Given today's much larger servers, with 16+ core systems available, this would impose the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
 
 The Store.exe process has evolved considerably throughout the years as Exchange Server itself evolved, but as a single process, ultimately its scalability is limited, and it represents a single point of failure. Because of these limits, Store.exe is gone in Exchange 2013 and replaced by the Managed Store.
 
@@ -95,7 +96,7 @@ Although the storage improvements in Exchange 2013 are designed primarily for ju
 
   - Limited agility exists to recover from low disk space conditions.
 
-The trend of increasing storage capacity is continuing, with 8-terabyte drives expected to be available soon. When using 8-terabyte drives in conjunction with the Exchange maximum database size best practices guidelines (2 terabytes), you would waste more than 5 terabytes of disk space. One solution would be to simply grow the databases larger, but that inhibits manageability because it introduces long reseed times, including in some cases, operationally unmanageable reseed times, and the reliability of copying that amount of data over the network is compromised.
+The trend of increasing storage capacity is continuing, with 8-terabyte drives expected to be available soon. When using 8-terabyte drives in conjunction with the Exchange maximum database size best practices guidelines (2 terabytes), you would waste more than 5 terabytes of disk space. One solution would be to grow the databases larger, but that inhibits manageability because it introduces long reseed times, including in some cases, operationally unmanageable reseed times, and the reliability of copying that amount of data over the network is compromised.
 
 In addition, in the Exchange 2010 model, the disk storing a passive copy is underutilized in terms of IOPS. In the case of a lagged passive copy, not only is the disk underutilized in terms of IOPS, but it's also asymmetric in terms of its size, relative to the disks used to store the active and non-lagged passive copies.
 
@@ -105,13 +106,13 @@ An example of a configuration that uses multiple databases per volume is illustr
 
 **Configuration that uses multiple databases per volume**
 
-![Multiple databases per volume](images/Dn789066.c5e7d6c8-3e77-4f72-a873-5e9aaded9aa3(EXCHG.150).gif "Multiple databases per volume")
+![Multiple databases per volume.](images/Dn789066.c5e7d6c8-3e77-4f72-a873-5e9aaded9aa3(EXCHG.150).gif "Multiple databases per volume")
 
 The above configuration provides a symmetrical design. All four servers have the same four databases all hosted on a single disk per server. The key is that the number of copies of each database that you have should be equal to the number of database copies per disk. In the above example, there are four copies of each database: one active copy, two passive copies, and one lagged copy. Because there are four copies of each database, the proper configuration is one that has four copies per volume. In addition, activation preference is configured so that it's balanced across the DAG and across each server. For example, the active copy will have an activation preference value of 1, the first passive copy will have an activation preference value of 2, the second passive copy will have an activation preference value of 3, and the lagged copy will have an activation preference value of 4.
 
 In addition to having a better distribution of users across the existing volumes, another benefit of using multiple databases per disk is that it reduces the amount of time to restore data protection in the event of a failure that necessitates a reseed (for example, disk failure).
 
-As a database gets bigger, reseeding the database takes longer. For example, a 2-terabyte database could take 23 hours to reseed, whereas an 8-terabyte database could take as long as 93 hours (almost 4 days). Both seeds would occur at about 20 MB per second. This generally means that a very large database can't be seeded within an operationally reasonable amount of time.
+As a database gets bigger, reseeding the database takes longer. For example, a 2-terabyte database could take 23 hours to reseed, whereas an 8-terabyte database could take as long as 93 hours (almost four days). Both seeds would occur at about 20 MB per second. This generally means that a very large database can't be seeded within an operationally reasonable amount of time.
 
 In the case of a single database copy per disk scenario, the seeding operation is effectively source-bound, because it's always seeding the disk from a single source. By dividing the volume into multiple database copies, and by having the active copy of the passive databases on a specified volume stored on separate DAG members, the system is no longer source bound in the context of reseeding the disk. When a failed disk is replaced, it can be reseeded from multiple sources. This allows the system to reseed and restore data protection for these databases in a much shorter amount of time.
 
@@ -133,16 +134,16 @@ For more information, see [AutoReseed](autoreseed-exchange-2013-help.md). For de
 
 ## Automatic recovery from storage failures
 
-Automatic recovery from storage failures continues the innovation introduced in Exchange 2010 to allow the system to recover from failures that affect resiliency or redundancy. In addition to the Exchange 2010 bugcheck behaviors, Exchange 2013 includes additional recovery behaviors for long I/O times, excessive memory consumption by the Microsoft Exchange Replication service (MSExchangeRepl.exe), and severe cases where threads can't be scheduled.
+Automatic recovery from storage failures continues the innovation introduced in Exchange 2010 to allow the system to recover from failures that affect resiliency or redundancy. In addition to the Exchange 2010 bug check behaviors, Exchange 2013 includes additional recovery behaviors for long I/O times, excessive memory consumption by the Microsoft Exchange Replication service (MSExchangeRepl.exe), and severe cases where threads can't be scheduled.
 
 Even in JBOD environments, storage array controllers can have issues, such as crashing or hanging. Exchange 2010 included hung I/O detection and recovery features that provided enhanced resilience. These features are listed in the following table.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -178,10 +179,10 @@ Exchange 2013 enhances server and storage resilience by including new behaviors 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -311,7 +312,7 @@ Best copy selection (BCS) is an internal algorithm process for finding the best 
 
 In Exchange 2013, Active Manager performs the same BCS checks and phases to determine replication health, but it now also includes the use of a constraint of the decreasing order of health states. As a result of these changes, BCS is now called best copy and server selection (BCSS).
 
-BCSS includes several new health checks that are part of the built in managed availability monitoring components in Exchange 2013. There are four new additional checks performed by Active Manager (listed in the order in which they're performed):
+BCSS includes several new health checks that are part of the built-in managed availability monitoring components in Exchange 2013. There are four new additional checks performed by Active Manager (listed in the order in which they're performed):
 
 1. **All Healthy**: Checks for a server hosting a copy of the affected database that has all monitoring components in a healthy state.
 

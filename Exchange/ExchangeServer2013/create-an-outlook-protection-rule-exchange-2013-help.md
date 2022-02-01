@@ -7,6 +7,8 @@ ms:contentKeyID: 49319935
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create an Outlook Protection Rule in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -53,7 +55,7 @@ You can also use the `FromDepartment` and `SentToScope` predicates to apply IRM 
 
 For detailed syntax and parameter information, see [New-OutlookProtectionRule](/powershell/module/exchange/New-OutlookProtectionRule).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created an Outlook protection rule, do the following:
 

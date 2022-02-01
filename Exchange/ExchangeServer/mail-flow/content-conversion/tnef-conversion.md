@@ -45,7 +45,7 @@ Remote domains specify settings for messages sent to domains that are external t
 
 When you configure TNEF conversion options for a remote domain, the settings are applied to all messages sent to recipients in that domain. You can use the Exchange admin center (EAC) or the Exchange Management Shell to configure these options:
 
-- In the EAC, go to **Mail flow** \> **Remote domains** \> **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png), or select an existing remote domain, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Use rich-text format** section.
+- In the EAC, go to **Mail flow** \> **Remote domains** \> **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png), or select an existing remote domain, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) \> **Use rich-text format** section.
 
 - In the Exchange Management Shell, use the _TnefEnabled_ parameter on the **Set-RemoteDomain** cmdlet.
 

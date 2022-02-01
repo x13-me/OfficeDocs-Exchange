@@ -2,10 +2,10 @@
 ms.localizationpriority: medium
 description: 'How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
-title: Deploying Outlook for iOS and Android app configuration settings
+title: Deploying Outlook for iOS and Android app configuration settings in Exchange Online
 mms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Deploying Outlook for iOS and Android app configuration settings
+# Deploying Outlook for iOS and Android app configuration settings in Exchange Online
 
  **Summary**: How to customize the behavior of Outlook for iOS and Android in your Exchange organization.
 
@@ -38,9 +38,9 @@ App configuration can be delivered either through the mobile device management O
 Each configuration scenario highlights its specific requirements. For example, whether the configuration scenario requires device enrollment, and thus works with any UEM provider, or requires Intune App Protection Policies. The following flow chart outlines which channel needs to be used for the above configuration scenarios:
 
 > [!NOTE]
-> With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
+> With Microsoft Endpoint Manager, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy (APP) channel is referred to as a **Managed Apps** App Configuration Policy.
 
-![Flowchart of the process](../../media/acp_flowchart.png)
+![Flowchart of the process.](../../media/acp-flowchart-v2.png)
 
 ## Account configuration scenarios
 
@@ -104,7 +104,7 @@ The following conditions describe Outlook's behavior when implementing various a
 Users are alerted to configuration changes via a notification toast in the app:
 
 > [!div class="mx-imgBorder"]
-> ![notification toast in the app](../../media/outlook_mobile_Intune_1.png)
+> ![notification toast in the app.](../../media/outlook_mobile_Intune_1.png)
 
 This notification toast will automatically dismiss after 10 seconds. There are two scenarios where this notification toast will not appear:
 
@@ -125,22 +125,22 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
 1. The user is notified that the administrator has enabled contact synchronization. In Outlook for iOS, the notification occurs within the app, whereas in Outlook for Android, a persistent notification is delivered via the Android notification center.
 
    > [!div class="mx-imgBorder"]
-   > ![Contact sync notification](../../media/outlook_mobile_intune_2.png)
+   > ![Contact sync notification.](../../media/outlook_mobile_intune_2.png)
 
 2. If the user taps on the notification, the user is prompted to grant access:
 
    > [!div class="mx-imgBorder"]
-   > ![user is prompted for access to contacts](../../media/outlook_mobile_intune_3.png)
+   > ![user is prompted for access to contacts.](../../media/outlook_mobile_intune_3.png)
 
 3. If the user allows Outlook to access the native Contacts app, access is granted and contact synchronization is enabled. If the user denies Outlook access to the native Contacts app, then the user is prompted to go into the OS settings and enable contact synchronization:
 
    > [!div class="mx-imgBorder"]
-   > ![user is prompted to allow Outlook to access the native Contacts app](../../media/outlook_mobile_intune_4.png)
+   > ![user is prompted to allow Outlook to access the native Contacts app.](../../media/outlook_mobile_intune_4.png)
 
 4. In the event the user denies Outlook access to the native Contacts app and dismisses the previous prompt, the user may later enable access by navigating to the account configuration within Outlook and tapping **Open Settings**:
 
    > [!div class="mx-imgBorder"]
-   > ![Outlook account settings](../../media/outlook_mobile_intune_5.png)
+   > ![Outlook account settings.](../../media/outlook_mobile_intune_5.png)
 
 ### Calendar Sync
 
@@ -153,12 +153,6 @@ Like *Save Contacts*, the *Sync Calendars* setting is another special case scena
 
 > [!NOTE]
 > With Android Enterprise, administrators can configure the default permissions assigned to the managed app. Within the policy, you can define that Outlook for Android is granted READ\_CALENDAR and WRITE\_CALENDAR within the work profile; for more information on how to assign permissions, please see [Add app configuration policies for managed Android devices](/intune/app-configuration-policies-use-android). When assigning default permissions it is important to understand which [Android Enterprise deployment models](https://developers.google.com/android/work/overview) are in use, as the permissions may grant access to personal data. <p> When enabling Outlook for Android's Sync Calendar within Android Enterprise's work profile, Outlook for Android is limited in only being able to access the native Calendar app within the work profile context; this provides a clear separation between work and personal profile data.
-
-Organizations have several controls for managing *Sync Calendars* with the work or school account:
-
-- With Intune App Protection Policies, the setting **Sync policy managed app data with native apps** defines whether *Save Contacts* and *Sync Calendars* are available for use within the work or school account. By default, this setting is set to **Allow**. If this setting is set to **Blocked**, both *Save Contacts* and *Sync Calendars* are disabled for the work or school account.
-- Independent of the Intune App Protection Policy setting **Sync policy managed app data with native apps**, organizations can choose to define the availability of *Sync Calendars* through a managed apps App Configuration Policy. This allows for feature granularity control from a data protection perspective; for example, organizations can enable *Save Contacts* (by setting **Sync policy managed app data with native apps** to **Allow**) but disable *Sync Calendars* (by setting the **Allow Calendar Sync** setting within a managed apps App Configuration Policy to **Off**).
-- Finally, if organizations allow the availability of *Sync Calendars*, through an App Configuration Policy, organizations can define the default sync state of the setting. This setting removes the need for the user to enable calendar synchronization.
 
 ## S/MIME scenarios
 
@@ -212,7 +206,11 @@ The settings allow organizations to control the contact fields that synchronize 
 
 ### Configure Calendar Sync availability with Outlook for Android
 
-Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. This setting allows organizations to control whether calendar sync is available to the work or school account.
+Calendar sync enables users to synchronize their Outlook for Android calendar data with the native Android Calendar app. This setting allows organizations to control whether calendar sync is available to the work or school account:
+
+- With Intune App Protection Policies, the setting **Sync policy managed app data with native apps** defines whether *Save Contacts* and *Sync Calendars* are available for use within the work or school account. By default, this setting is set to **Allow**. If this setting is set to **Block**, both *Save Contacts* and *Sync Calendars* are disabled for the work or school account and their associated App Configuration Policy settings are ignored.
+- When the Intune App Protection Policy setting **Sync policy managed app data with native apps** is set to **Allow**, organizations can also choose to define the availability of *Sync Calendars* through a managed apps App Configuration Policy. This allows for feature granularity control from a data protection perspective; for example, organizations can enable *Save Contacts* (by setting **Sync policy managed app data with native apps** to **Allow**) but disable *Sync Calendars* (by setting the **Allow Calendar Sync** setting within a managed apps App Configuration Policy to **Off**).
+- Finally, if organizations allow the availability of *Sync Calendars*, through an App Configuration Policy, organizations can define the default sync state of the setting. This setting removes the need for the user to enable calendar synchronization manually.
 
 ## Deploying configuration scenarios with Microsoft Endpoint Manager for enrolled devices
 
@@ -348,6 +346,7 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 
     - Choose whether to **Encrypt all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
     - Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+    - If needed, deploy a **LDAP URL** for recipient certificate lookup. For more information on the URL format, see [LDAP support for certificate lookup](smime-outlook-for-ios-and-android.md#ldap-support-for-certificate-lookup).
 
 11. When you are finished configuring the settings, choose **Next**.
 
@@ -464,7 +463,7 @@ Outlook for iOS offers administrators the ability to customize the default S/MIM
 |com.microsoft.outlook.Mail.SMIMEEnabled.EncryptAllMail.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<p> **Value type**: Boolean <p> **Accepted values**: true, false <p> **Default if not specified**: true <p> **Required**: No <p> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail|This key specifies whether S/MIME signing is required to send messages. Use of S/MIME requires certificates available to Outlook for iOS and Android. <p> **Value type**: Boolean <p> **Accepted values**: true, false <p> **Default if not specified**: false <p> **Required**: No <p> **Example**: false|Managed Devices, Managed Apps|
 |com.microsoft.outlook.Mail.SMIMEEnabled.SignAllMail.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<p> **Value type**: Boolean <p> **Accepted values**: true, false <p> **Default if not specified**: true <p> **Required**: No <p> **Example**: false|Managed Devices, Managed Apps|
-|com.microsoft.outlook.Mail.SMIMEEnabled.LDAPHostName|This key specifies the LDAP directory endpoint to query for certificates.<p> **Value type**: String <p> **Accepted values**: ldaps://domainname:protocol, domainname:protocol <p> **Default if not specified**: N/A <p> **Required**: No <p> **Example**: `ldaps://contoso.com` <p> contoso.com <p> `ldaps://contoso.com:636` <p> contoso.com:636|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SMIMEEnabled.LDAPHostName|This key specifies the LDAP directory endpoint to query for certificates.<p> **Value type**: String <p> **Accepted values**: ldap://domainname:protocol, ldaps://domainname:protocol, domainname:protocol <p> **Default if not specified**: N/A <p> **Required**: No <p> **Example**: ldap://contoso.com <p> ldaps://contoso.com <p> contoso.com <p> ldaps://contoso.com:636 <p> contoso.com:636|Managed Devices, Managed Apps|
 |
 
 ### Data protection settings

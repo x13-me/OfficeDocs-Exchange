@@ -4,6 +4,8 @@ TOCTitle: Configure the number of sign-in failures before Outlook Voice Access u
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to set the number of sign-in failures before Outlook Voice Access users are disconnected in Exchange Server
 ms.reviewer:
 ms.assetid: 02f93888-168c-44bb-8cf6-17f5fcc3d733
 f1.keywords:
@@ -36,7 +38,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

@@ -7,6 +7,8 @@ ms:contentKeyID: 49319938
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: About Information Rights Management in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -57,9 +59,9 @@ When enabling IRM in Exchange ActiveSync, we recommend using the Exchange Active
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

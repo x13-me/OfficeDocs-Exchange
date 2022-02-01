@@ -1,13 +1,13 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 69a5beef-a6e7-4d2e-9446-e2a0de9514f4
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to open the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to open the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to open the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to open the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to open the Exchange admin center in Exchange Online
+# Use a screen reader to open the Classic Exchange admin center in Exchange Online
 
-The Exchange admin center (EAC) is a web-based app that lets you manage your Exchange Online organization in a web browser. Using a screen reader and keyboard shortcuts, you can open the EAC and perform administrative tasks (based on your permissions).
+The Classic Exchange admin center (Classic EAC) is a web-based app that lets you manage your Exchange Online organization in a web browser. Using a screen reader and keyboard shortcuts, you can open the EAC and perform administrative tasks (based on your permissions).
 
 > [!NOTE]
 > When you work in the EAC, we recommend that you use Internet Explorer as your web browser. For more information about the keyboard shortcuts you can use to navigate the EAC and about other accessibility features that are available for Exchange Online, see [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/15363/) and [Accessibility in Exchange Online](accessibility.md).

@@ -36,7 +36,7 @@ The following environments will take advantage of this Microsoft 365 or Office 3
 
 - When hybrid Modern Authentication hasn't been enabled between Exchange 2013, 2016, or 2019 on-premises and Microsoft 365 or Office 365
 
-![Basic authentication in Outlook for iOS and Android](../../media/outlook_mobile_basic_auth.png)
+![Basic authentication in Outlook for iOS and Android.](../../media/outlook_mobile_basic_auth.png)
 
 Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android utilizes the native Microsoft sync technology for data synchronization that is protected by TLS-secured connections end-to-end, between Microsoft 365 or Office 365 and the app.
 

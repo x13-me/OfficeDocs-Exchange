@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to test mail flow rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 ms.reviewer: 
@@ -38,7 +38,7 @@ You can evaluate the conditions for a rule without taking any actions that impac
 
 Here's what you'll see when a rule is matched if you include the incident report action:
 
-![Message sent when rule is detected](../../media/TA_EX_Rule_Detected.png)
+![Message sent when rule is detected.](../../media/TA_EX_Rule_Detected.png)
 
 ### Use a test mode with an incident report action
 
@@ -83,7 +83,7 @@ One way to test is to sign in as both the sender and recipient of a test message
 
 The message trace includes an entry for each rule that is matched for the message, and an entry for each action the rule takes. This is useful for tracking what happens to test messages, and also for tracking what happens to real messages going through your organization.
 
-![Message trace showing mail flow rule actions](../../media/TA_EX_Rule_Trace.png)
+![Message trace showing mail flow rule actions.](../../media/TA_EX_Rule_Trace.png)
 
 1. In the EAC, go to **Mail flow** \> **Message trace**.
 
@@ -137,7 +137,7 @@ To view a rules report, in the Microsoft 365 admin center, select **Reports**.
 > [!NOTE]
 > While most data is in the report within 24 hours, some data may take as long as 5 days to appear.
 
-![Report showing rule usage](../../media/TA_EX_RuleReport.png)
+![Report showing rule usage.](../../media/TA_EX_RuleReport.png)
 
 To learn more, see [View mail protection reports](../../monitoring/use-mail-protection-reports.md).
 

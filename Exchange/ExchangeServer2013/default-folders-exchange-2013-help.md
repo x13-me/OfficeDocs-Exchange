@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Default folders that support Retention Policy Tags in Exchange Server
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
 f1.keywords:
 - NOCSH
@@ -19,7 +21,7 @@ You can use [Retention tags and retention policies](retention-tags-and-policies-
 
 A Retention Policy Tag (RPT) is a type of retention tag that you can apply to default folders in a mailbox, such as **Inbox** and **Deleted Items**.
 
-![Create a Retention Policy Tag (RPT)](images/EXO_Retention_DefaultFolders_CreateRPT.png)
+![Create a Retention Policy Tag (RPT).](images/EXO_Retention_DefaultFolders_CreateRPT.png)
 
 ## Supported default folders
 

@@ -7,6 +7,7 @@ ms:contentKeyID: 49319907
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to create a Transport Protection Rule in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -45,7 +46,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 1. Navigate to **Mail flow** \> **Rules**.
 
-2. In the list view, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. In the list view, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. In **New Rule**, first click **More options**, and then complete the following fields:
 
@@ -87,7 +88,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 To verify that you have successfully created a transport protection rule, do one of the following:
 
-- Use the EAC to verify that the rule has been created, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the rule's properties.
+- Use the EAC to verify that the rule has been created, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the rule's properties.
 
 - Use the [Get-TransportRule](/powershell/module/exchange/Get-TransportRule) cmdlet to retrieve the rule. For an example of how to retrieve a rule, see [Examples](/powershell/module/exchange/Get-TransportRule#examples) in **Get-TransportRule**.
 

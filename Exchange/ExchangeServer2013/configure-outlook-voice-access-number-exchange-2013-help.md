@@ -4,6 +4,8 @@ TOCTitle: Configure an Outlook Voice Access number
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure an Outlook Voice Access number in Exchange Server
 ms.reviewer:
 ms.assetid: 443c838e-f266-4893-b6b2-e5fc96579b55
 f1.keywords:
@@ -52,11 +54,11 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to modify and on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify and on the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 
-4. In **Outlook Voice Access**, under **Outlook Voice Access numbers**, use the box to enter the number you want to use, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+4. In **Outlook Voice Access**, under **Outlook Voice Access numbers**, use the box to enter the number you want to use, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 5. Click **Save**.
 

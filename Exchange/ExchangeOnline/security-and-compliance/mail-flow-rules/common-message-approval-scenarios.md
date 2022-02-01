@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to use mail flow rules (transport rules) for message approval scenarios that won't work with regular moderated recipients.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 5c13a07e-c21d-4502-a9f9-fb801197e1dd
 ms.reviewer: 
@@ -43,7 +43,7 @@ To require that messages need to be sent to the sender's manager for approval, f
 
 1. Create a mail flow rule using the **Send messages to a moderator** template.
 
-   ![Use the Send messages to a moderator template to create a new rule](../../media/TA_Mod_Scenario2_Template.png)
+   ![Use the Send messages to a moderator template to create a new rule.](../../media/TA_Mod_Scenario2_Template.png)
 
 2. Configure the action to send messages to the sender's manager for approval: **Do the following** \> **Forward to the sender's manager for approval**.
 
@@ -58,7 +58,7 @@ Here's an example where all external messages sent by the trainee named Garth Fo
 - **Apply this rule if** \> **The recipient is located** \> **Outside the organization**
 - **Do the following** \> **Forward to the sender's manager for approval**
 
-![Rule that forwards messages to the user's manager](../../media/TA_Mod_Scenario2_rule.png)
+![Rule that forwards messages to the user's manager.](../../media/TA_Mod_Scenario2_rule.png)
 
 > [!NOTE]
 > Some rule settings, including the ability to add multiple conditions or exceptions to the rule as in this example, are hidden by default. To see them, click **More options**.
@@ -81,7 +81,7 @@ The following example assumes that you have a customer named Blue Yonder Airline
 
 As shown in the following screenshot, you create two rules. The first rule goes to the first-level approver. The second rule goes to the second-level approver.
 
-![Two rules used for two levels of approval](../../media/TA_Mod_Scenario3_2rules.png)
+![Two rules used for two levels of approval.](../../media/TA_Mod_Scenario3_2rules.png)
 
 The first rule identifies all messages with the company name Blue Yonder Airlines in the subject or message, and it sends these messages to the internal customer relationship manager named Garret Vargas.
 
@@ -94,7 +94,7 @@ The first rule identifies all messages with the company name Blue Yonder Airline
 - **Apply this rule if** \> **The subject or boy matches** > 'B.Y.A' or 'BYA' or 'Blue Yonder Airlines' or 'Blue Yonder'.
 - **Do the following** \> **Forward the message for approval to** \> Garret Vargas.
 
-![Rule for first-level approver](../../media/TA_Mod_Scenario3_Rule1.png)
+![Rule for first-level approver.](../../media/TA_Mod_Scenario3_Rule1.png)
 
 The second rule sends these messages to the compliance officer, Tony Krijnen for approval:
 
@@ -107,7 +107,7 @@ The second rule sends these messages to the compliance officer, Tony Krijnen for
 - **Apply this rule if** \> **The subject or boy matches** > 'B.Y.A' or 'BYA' or 'Blue Yonder Airlines' or 'Blue Yonder'.
 - **Do the following** \> **Forward the message for approval to** \> Tony Krijnen.
 
-![Second-level approval rule, with same criteria](../../media/TA_Mod_Scenario3_Rule2.png)
+![Second-level approval rule, with same criteria.](../../media/TA_Mod_Scenario3_Rule2.png)
 
 ## Forward messages that match one of several criteria
 
@@ -127,7 +127,7 @@ You need two rules. If the first rule checks the subject line or message body, t
 - **Do the following** \> **Forward to the sender's manager for approval**
 - **Except if** \> **The subject or body matches** \> Sales quote.
 
-![Use an exception for the second rule](../../media/TA_Mod_Scenario4.png)
+![Use an exception for the second rule.](../../media/TA_Mod_Scenario4.png)
 
 > [!NOTE]
 > As described previously, some rule settings, including the ability to add multiple conditions or exceptions to the rule as in this example, are hidden by default. To see them, click **More options**.
@@ -141,4 +141,4 @@ Here's an example where messages that contain a credit card number require appro
 - **Apply this rule if** \> **The message contains sensitive information** \> **Credit Card Number**
 - **Do the following** \> **Forward to the sender's manager for approval**
 
-![Rule that forwards mail with sensitive information](../../media/TA_Mod_Scenario5.png)
+![Rule that forwards mail with sensitive information.](../../media/TA_Mod_Scenario5.png)

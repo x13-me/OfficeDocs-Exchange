@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Create a new Sharing Policy to change how people in your organization share calendars with individual business associates, friends, or family members. Sharing policies control how your users share their calendars with people outside your organization. By default, all users can invite anyone with an email address to view their calendar. After you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. To apply a specific sharing policy to users, see Apply a sharing policy to mailboxes in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: f412ce6c-74dc-4d77-93ab-362c37414015
 ms.reviewer: 
@@ -36,11 +36,11 @@ Create a new Sharing Policy to change how people in your organization share cale
 
 2. Go to **organization** \> **sharing**.
 
-3. In the list view, under **Individual Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. In the list view, under **Individual Sharing**, click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. In **new sharing policy**, type a friendly name for the sharing policy in the **Policy name** box.
 
-5. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy.
+5. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy.
 
 6. In **sharing rule**, select one of the following options to specify the domains you want to share with:
 
@@ -69,7 +69,7 @@ Create a new Sharing Policy to change how people in your organization share cale
 - This example creates the sharing policy Contoso. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
 
   ```PowerShell
-  New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+  New-SharingPolicy -Name "Contoso" -Domains 'contoso.com: CalendarSharingFreeBusyDetail'
   ```
 
 - This example creates the sharing policy ContosoWoodgrove for two different domains (contoso.com and woodgrovebank.com) with different sharing settings configured for each domain. The policy is disabled.

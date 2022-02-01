@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Set up an organization relationship to share calendar information with an external business partner. Microsoft 365 and Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 8b9a1782-f6be-46bc-bec9-49633be0dc1f
 ms.reviewer: 
@@ -37,7 +37,7 @@ Set up an organization relationship to share calendar information with an extern
 
 2. Go to **organization** \> **sharing**.
 
-3. Under **Organization Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. Under **Organization Sharing**, click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
 
@@ -58,9 +58,6 @@ Set up an organization relationship to share calendar information with an extern
     Click **Browse** to pick the security group from a list, then click **OK**.
 
 7. Click **Save** to create the organization relationship.
-
-> [!NOTE]
-> Cross-tenant configurations do not support personal contacts for free/busy lookup. Contacts must be included in the global address list for free/busy lookup to work.
 
 ## Use Exchange Online PowerShell to create an organization relationship
 <a name="BKMK_Shell"> </a>

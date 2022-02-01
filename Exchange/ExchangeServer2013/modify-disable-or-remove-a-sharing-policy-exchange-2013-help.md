@@ -5,6 +5,8 @@ ms:assetid: 714af42d-ca29-4bb4-ac48-f0b3d4fd1c15
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657460(v=EXCHG.150)
 ms:contentKeyID: 49289300
 ms.reviewer: 
+ms.topic: article
+description: How to modify a sharing policy in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -38,9 +40,9 @@ For details about how to create a sharing policy, see [Create a sharing policy](
 
 1. Navigate to **organization** \> **sharing**.
 
-2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. In **sharing policy**, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. In **sharing policy**, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. In **sharing rule**, modify the sharing rules accordingly. You can change settings such as the domain you want to share information with and the sharing level for calendar appointments. When finished, click **rave** to close the **sharing rules** dialog box.
 
@@ -50,7 +52,7 @@ For details about how to create a sharing policy, see [Create a sharing policy](
 
 1. Navigate to **organization** \> **sharing**.
 
-2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In **sharing policy**, select the **Make this policy my default sharing policy** check box.
 
@@ -71,7 +73,7 @@ For details about how to create a sharing policy, see [Create a sharing policy](
 
 1. Navigate to **organization** \> **sharing**.
 
-2. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 3. In the warning, click **yes** to delete the sharing policy.
 

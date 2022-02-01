@@ -263,7 +263,7 @@ After you crate the batch migration request in the Exchange Management Shell, yo
 1. On the Exchange 2016 server, run the following command:
 
    ```PowerShell
-   New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications>
+   New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData ([System.IO.File]::ReadAllBytes('<Folder to mailbox map path>')) -NotificationEmails <email addresses for migration notifications>
    ```
 
    The `NotificationEmails` parameter is optional.

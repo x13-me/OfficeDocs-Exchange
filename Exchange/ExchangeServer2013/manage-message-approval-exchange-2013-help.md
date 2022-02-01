@@ -4,6 +4,8 @@ TOCTitle: Manage message approval
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to manage message approval in Exchange 2013
 ms.reviewer:
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 f1.keywords:
@@ -33,30 +35,35 @@ To learn how to implement common scenarios, see [Common message approval scenari
 
 Here's a comparison of the two approaches to message approval.
 
-|**What do you want to do?**|**Approach**|**First step**|
-|:-----|:-----|:-----|
-|Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.|
-|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a transport rule using the **Forward the message for approval** action.  <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
+<br>
+
+****
+
+|What do you want to do?|Approach|First step|
+|---|---|---|
+|Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \> **Groups**, edit the distribution group, and then select **Message approval**.|
+|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a transport rule using the **Forward the message for approval** action. <p> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
+|
 
 ## How the approval process works
 
 When someone sends a message to a person or group that requires approval, if they're using Outlook Web App, they're notified that their message might be delayed.
 
-![Message showing message approval notification](images/TA_Mod_Sender_Notification.png)
+![Message showing message approval notification.](images/TA_Mod_Sender_Notification.png)
 
 The moderator receives an email with a request to approve or reject the message. The text of the message includes buttons to approve or reject the message, and the attachment includes the original message to review.
 
-![Approval request message, including attachment](images/TA_Mod_Approval_Request.png)
+![Approval request message, including attachment.](images/TA_Mod_Approval_Request.png)
 
  The moderator can take one of three actions:
 
-![Workflow showing options for approving a message](images/TA_ModerationWorkflow.png)
+![Workflow showing options for approving a message.](images/TA_ModerationWorkflow.png)
 
 1. If approved, the message goes to the original intended recipients. The original sender isn't notified.
 
 2. If rejected, a rejection message is sent to the sender. The moderator can add an explanation:
 
-    ![Rejection notice, with comments from moderator](images/TA_Mod_Rejection.png)
+    ![Rejection notice, with comments from moderator.](images/TA_Mod_Rejection.png)
 
 3. If the approver either deletes or ignores the approval message, an expiration message is sent to the sender. This happens after five days in Exchange Server 2013. (you can change this time period).
 

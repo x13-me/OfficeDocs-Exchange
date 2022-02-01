@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Mt741981(v=EXCHG.150)
 ms:contentKeyID: 73225999
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: About Managed Store limits in Exchange 2013 
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
@@ -13,7 +15,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Managed Store Limits in Exchange 2013
+# Managed Store limits in Exchange 2013
 
 **Summary:** Administrators can learn about Managed Store connection limits in Exchange Server 2013 and how to configure them.
 
@@ -52,10 +54,10 @@ The following section, "Configure Session Limits," describes how to modify these
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -199,9 +201,9 @@ If you want to modify these limits, see "Configure Open Item Limits" immediately
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -319,8 +321,8 @@ Item size limits are the limits placed on items within a user's mailbox. They ar
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

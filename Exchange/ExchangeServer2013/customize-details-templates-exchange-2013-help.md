@@ -7,6 +7,8 @@ ms:contentKeyID: 49090993
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to customize details templates in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -49,7 +51,7 @@ Use the Details Templates Editor to customize the client-side graphical user int
 
    **Default details template as viewed from Outlook 2013**
 
-   ![Default details template in Outlook 2007](images/JJ673049.a0af8aca-663d-4702-ab2f-9a342f481cdf(EXCHG.150).gif "Default details template in Outlook 2007")
+   ![Default details template in Outlook 2007.](images/JJ673049.a0af8aca-663d-4702-ab2f-9a342f481cdf(EXCHG.150).gif "Default details template in Outlook 2007")
 
 4. After you click **Edit**, there are several tasks you can perform to customize a details template:
 

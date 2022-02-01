@@ -4,6 +4,8 @@ TOCTitle: Configure the group of users that Outlook Voice Access users can conta
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure the group of users that Outlook Voice Access users can contact in Exchange Server
 ms.reviewer:
 ms.assetid: a8dc0f9e-dc86-4128-af63-d4e550aed5bb
 f1.keywords:
@@ -36,7 +38,7 @@ For additional tasks related to UM dial plans, see [UM dial plan procedures in E
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

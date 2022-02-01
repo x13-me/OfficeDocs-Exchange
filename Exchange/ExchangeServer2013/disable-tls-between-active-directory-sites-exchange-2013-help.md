@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to disable TLS between Active Directory sites in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -58,7 +60,7 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 ## Use the EAC to create the Receive connector
 
-1. In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. On the first page of the **New Receive connector** wizard, enter the following values
 

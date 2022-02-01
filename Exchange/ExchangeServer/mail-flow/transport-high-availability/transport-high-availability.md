@@ -36,7 +36,7 @@ Key features that improve transport high availability in Exchange 2013, Exchange
 
 This diagram provides a high-level overview of how transport high availability works in Exchange Server.
 
-![Transport high availability overview](../../media/ITPro_Transport_TransportHAOverview.gif)
+![Transport high availability overview.](../../media/ITPro_Transport_TransportHAOverview.gif)
 
 1. An Exchange Mailbox server named Mailbox01 receives a message from an SMTP server that's outside the transport high availability boundary. The *transport high availability boundary* is a DAG or an Active Directory site in non-DAG environments. The message could come from:
 

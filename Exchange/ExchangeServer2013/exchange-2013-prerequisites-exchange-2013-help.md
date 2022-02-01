@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Prerequisites for Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -111,7 +113,7 @@ After you've installed the operating system roles and features, install the foll
   > [!NOTE]
   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
-## Edge Transport server role
+## Install the Edge Transport server role
 
 Follow the instructions in this section to install the prerequisites on Windows Server 2012 R2 or Windows Server 2012 computers where you want to install the Edge Transport server role on a computer.
 
@@ -143,7 +145,7 @@ Install the version of Microsoft .NET Framework that corresponds to the version 
 
 The prerequisites that are needed to install Exchange 2013 on a Windows Server 2008 R2 SP1 computer depends on which Exchange roles you want to install. Read the section below that matches the roles you want to install.
 
-## Mailbox or Client Access server roles
+## Client Access or Mailbox server roles
 
 Follow the instructions in this section to install the prerequisites on Windows Server 2008 R2 SP1 computers where you want to do one of the following:
 
@@ -196,7 +198,7 @@ After you've installed the operating system roles and features, install the foll
     > [!NOTE]
     > This hotfix may already be installed if you've configured Windows Update to install security updates on your computer.
 
-## Edge Transport server role
+## Edge Transport server role installation
 
 Follow the instructions in this section to install the prerequisites on Windows Server 2008 R2 SP1 computers where you want to install the Edge Transport server role on a computer.
 

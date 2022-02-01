@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to filter bulk email
+title: Use mail flow rules to filter bulk email in Exchange Online
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -57,7 +57,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add** ![Add icon.](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
 
 3. In the **New rule** page that opens, configure the following settings:
 
@@ -67,7 +67,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
    - **Apply this rule if**: Configure one of the following settings to look for content in messages using regular expressions (RegEx) or words or phrases:
 
-     - **The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
+     - **The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
        - `If you are unable to view the content of this email\, please`
        - `\>(safe )?unsubscribe( here)?\</a\>`
@@ -82,11 +82,11 @@ This topic explains how create these mail flow rules in the Exchange admin cente
        - `to change your (subscription preferences|preferences or unsubscribe)`
        - `click (here to|the) unsubscribe`
 
-      To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
+      To edit an entry, select it and click **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
 
        When you're finished, click **OK**.
 
-     - **The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
+     - **The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
        - `to change your preferences or unsubscribe`
        - `Modify email preferences or unsubscribe`
@@ -102,7 +102,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
        - `view this email as a webpage`
        - `You are receiving this email because you are subscribed`
 
-      To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
+      To edit an entry, select it and click **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
 
        When you're finished, click **OK**.
 
@@ -142,7 +142,7 @@ For detailed syntax and parameter information, see [New-TransportRule](/powershe
 
 To verify that you've configured mail flow rules to filter bulk email, do any of the following steps:
 
-- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
+- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
 
 - In PowerShell, replace \<Rule Name\> with the name of the rule, and run the following command to verify the settings:
 

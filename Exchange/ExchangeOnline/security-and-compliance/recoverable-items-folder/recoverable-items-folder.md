@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Admins can learn how deleted items in mailboxes are protected in Exchange Online.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms.reviewer:
@@ -20,7 +20,7 @@ manager: serdars
 # Recoverable Items folder in Exchange Online
 
 > [!IMPORTANT]
-> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
+> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange admin center](https://admin.exchange.microsoft.com).
 
 To protect from accidental or malicious deletion and to facilitate discovery efforts commonly undertaken before or during litigation or investigations, Exchange Online uses the Recoverable Items folder. The Recoverable Items folder replaces the feature that was known as *the dumpster* in earlier versions of Exchange. The following Exchange features use the Recoverable Items folder:
 
@@ -86,7 +86,7 @@ The Recoverable Items folder contains the following subfolders:
 
 The following illustration shows the subfolders in the Recoverable Items folders. It also shows the deleted item retention, single item recovery, and hold workflow processes that are described in the following sections.
 
-![Recoverable Items folder](../../media/ITPro_RecoverableItems.gif)
+![Recoverable Items folder.](../../media/ITPro_RecoverableItems.gif)
 
 ### Deleted item retention
 
@@ -100,7 +100,7 @@ Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items
 
 - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-- [Recover deleted items or email messages in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
+- [Recover deleted items or email messages in Outlook on the web](https://support.microsoft.com/office/cf06ab1b-ae0b-418c-a4d9-4e895f83ed50)
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this article.
 

@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: About the Mailbox server in Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -35,7 +37,7 @@ In Exchange 2013, the Mailbox server role interacts directly with Active Directo
 
 **Mailbox and Client Access server interaction and architecture**
 
-![Client Access and Mailbox server interaction](images/JJ150491.d14577bf-14f9-40fa-bd49-a92932eb003a(EXCHG.150).gif "Client Access and Mailbox server interaction")
+![Client Access and Mailbox server interaction.](images/JJ150491.d14577bf-14f9-40fa-bd49-a92932eb003a(EXCHG.150).gif "Client Access and Mailbox server interaction")
 
 For more details, see the "Exchange 2013 architecture" section in [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 

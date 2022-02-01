@@ -4,6 +4,8 @@ TOCTitle: Configure a fully qualified domain name
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: How to configure a fully qualified domain name in Exchange Server
+ms.topic: article
 ms.reviewer:
 ms.assetid: af093f87-59b7-44a8-a9a2-8f17f0cc7db8
 f1.keywords:
@@ -40,7 +42,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to configure an FQDN
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway that you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway that you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM IP gateway** page, in **Address**, enter the FQDN for the VoIP gateway, PBX enabled for SIP, IP PBX, or SBC.
 

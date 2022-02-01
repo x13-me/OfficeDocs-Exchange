@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: In Microsoft Exchange Server and Exchange Online, Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with e-mail and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Retention tags and retention policies
+title: Retention tags and retention policies in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,10 +18,10 @@ manager: serdars
 
 ---
 
-# Retention tags and retention policies
+# Retention tags and retention policies in Exchange Online
 
 > [!IMPORTANT]
-> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange Admin Center](https://admin.exchange.microsoft.com).
+> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange admin center](https://admin.exchange.microsoft.com).
 
 > [!NOTE]
 > To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
@@ -47,14 +47,14 @@ MRM in Exchange Server and Exchange Online is accomplished by using retention ta
 
 The following figure illustrates the tasks involved in implementing this strategy.
 
-![Using Retention Policies for Messaging Retention](../../media/ITPro_MRM_RetentionPolicyConcept.gif)
+![Using Retention Policies for Messaging Retention.](../../media/ITPro_MRM_RetentionPolicyConcept.gif)
 
 ## Retention tags
 <a name="RT"> </a>
 
 As illustrated in the preceding figure, retention tags are used to apply retention settings to folders and individual items such as e-mail messages and voice mail. These settings specify how long a message remains in a mailbox and the action to be taken when the message reaches the specified retention age. When a message reaches its retention age, it's moved to the user's In-Place Archive or deleted.
 
-![Settings in a retention tag](../../media/EXO_Retention_DPT_RetentionTags.png)
+![Settings in a retention tag.](../../media/EXO_Retention_DPT_RetentionTags.png)
 
 Retention tags allow users to tag their own mailbox folders and individual items for retention. Users no longer have to file items in managed folders provisioned by an administrator based on message retention requirements.
 
@@ -72,7 +72,7 @@ Retention tags are classified into the following three types based on who can ap
 
 Personal tags are available to Outlook and Outlook on the web (formerly known as Outlook Web App) users as part of their retention policy. In Outlook and Outlook on the web, personal tags with the **Move to Archive** action appear as **Archive Policy**, and personal tags with the **Delete and Allow Recovery** or **Permanently Delete** actions appear as **Retention Policy**, as shown in the following figure.
 
-![Personal tags in Outlook 2010 and Outlook on the web](../../media/ITPro_MRM_ArchiveAndRetentionPolicy.gif)
+![Personal tags in Outlook 2010 and Outlook on the web.](../../media/ITPro_MRM_ArchiveAndRetentionPolicy.gif)
 
 Users can apply personal tags to folders they create or to individual items. Messages that have a personal tag applied are always processed based on the personal tag's settings. Users can apply a personal tag to a message so that it's moved or deleted sooner or later than the settings specified in the DPT or RPTs applied to that user's mailbox. You can also create personal tags with retention disabled. This allows users to tag items so they're never moved to an archive or never expire.
 
@@ -192,3 +192,19 @@ During long absences from work, users may accrue a large amount of e-mail. Depen
 If your organization has never implemented MRM, and your users aren't familiar with its features, you can also use retention holds during the initial warm up and training phase of your MRM deployment. You can create and deploy retention policies and educate users about the policies without the risk of having items moved or deleted before users can tag them. A few days before the warm up and training period ends, you should remind users of the warm-up deadline. After the deadline, you can remove the retention hold from user mailboxes, allowing the Managed Folder Assistant to process mailbox items and take the specified retention action.
 
 For details about how to place a mailbox on retention hold, see [Place a mailbox on retention hold](mailbox-retention-hold.md).
+
+## Run diagnostics to check retention policy settings
+
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
+You can run an automated diagnostic check on a user's mailbox to check and validate the retention policy settings configured for the user.
+
+To run the diagnostic check, click the button below. 
+
+> [!div class="nextstepaction"]
+> [Run Tests: Retention Policy](https://aka.ms/PillarRetentionPolicy)
+
+A flyout page opens in the Microsoft 365 admin center. Enter the email address of the mailbox you want to check and click **Run Tests**.
+
+![Run diagnostics on retention policy settings.](https://user-images.githubusercontent.com/40893023/145092381-465d8490-5676-443b-ba07-84c09ef39d4b.png)

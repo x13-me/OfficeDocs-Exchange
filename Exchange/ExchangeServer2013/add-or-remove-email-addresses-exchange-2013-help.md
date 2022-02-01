@@ -3,7 +3,9 @@ title: 'Add or remove email addresses for a mailbox: Exchange 2013 Help'
 TOCTitle: Add or remove email addresses for a mailbox
 ms.author: serdars
 author: msdmaguire
+description: How to add or remove email addresses for a mailbox in Exchange Server
 manager: serdars
+ms.topic: article
 ms.reviewer:
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 f1.keywords:
@@ -35,14 +37,14 @@ For additional management tasks related to managing recipients, see the "Recipie
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to add an email address to, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to add an email address to, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Email Address**.
 
    > [!NOTE]
    > On the **Email Address** page, the primary SMTP address is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-4. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif), and then click **SMTP** to add an SMTP email address to this mailbox.
+4. Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif), and then click **SMTP** to add an SMTP email address to this mailbox.
 
    > [!NOTE]
    > SMTP is the default email address type. You can also add Unified Messaging (UM) addresses or custom addresses to a mailbox. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](manage-user-mailboxes-exchange-2013-help.md) topic.
@@ -83,7 +85,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 To verify that you've successfully added an email address to a mailbox, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 - On the mailbox properties page, click **Email Address**.
 
@@ -105,11 +107,11 @@ Or
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to remove an email address from, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to remove an email address from, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Email Address**.
 
-4. In the list of email addresses, select the address you want to remove, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+4. In the list of email addresses, select the address you want to remove, and then click **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 5. Click **Save** to save the change.
 
@@ -143,7 +145,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 To verify that you've successfully removed an email address from a mailbox, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 - On the mailbox properties page, click **Email Address**.
 
@@ -180,7 +182,7 @@ Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-M
 
 To verify that you've successfully added an email address to multiple mailboxes, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click a mailbox that you added the address to, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click a mailbox that you added the address to, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 - On the mailbox properties page, click **Email Address**.
 

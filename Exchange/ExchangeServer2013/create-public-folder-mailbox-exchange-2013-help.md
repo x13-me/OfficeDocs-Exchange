@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a public folder mailbox in Exchange Server
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
 f1.keywords:
 - NOCSH
@@ -36,7 +38,7 @@ For additional management tasks related to public folders in Exchange 2013, see 
 
 ## Use the EAC to create a public folder mailbox
 
-1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 2. In **Public Folder Mailbox**, provide a name for the public folder mailbox.
 

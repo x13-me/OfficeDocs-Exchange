@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to assign Full Access, Send As, and Send on Behalf permissions to mailboxes and groups in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 ms.reviewer:
@@ -21,7 +21,7 @@ manager: serdars
 # Manage permissions for recipients in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 In Exchange Online, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to assign permissions to a mailbox or group so that other users can access the mailbox (the Full Access permission), or send email messages that appear to come from the mailbox or group (the Send As or Send on Behalf permissions). The users that are assigned these permissions on other mailboxes or groups are called *delegates*.
 
@@ -35,7 +35,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 |Permission|Description|Recipient types in the EAC|Additional recipient types in PowerShell|**Available delegate types|
 |---|---|---|---|---|
-|**Full Access**|Allows the delegate to open the mailbox, and view, add and remove the contents of the mailbox. Doesn't allow the delegate to send messages from the mailbox. <p> If you assign the Full Access permission to a mailbox that's hidden from address lists, the delegate won't be able to open the mailbox. By default, discovery mailboxes are hidden from address lists. <p> By default, the mailbox auto-mapping feature uses Autodiscover to automatically open the mailbox in the delegate's Outlook profile (in addition to their own mailbox). Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group. If you don't want mailboxes to be auto-mapped, you need to take one of the following actions: <ui><li>Use the **Add-MailboxPermission** cmdlet in Exchange Online PowerShell to assign the Full Access permission with the `-AutoMapping $false` setting. For more information, see the [Use Exchange Online PowerShell to assign the Full Access permission to mailboxes](#use-exchange-online-powershell-to-assign-the-full-access-permission-to-mailboxes) section in this article.</li><li>Assign the Full Access permission to a mail-enabled security group. The mailbox won't open in the Outlook profile of each member.</li></ul>|User mailboxes <p> Resource mailboxes <p> Shared mailboxes|Discovery mailboxes|Mailboxes with user accounts <p> Mail users with accounts <p> Mail-enabled security groups|
+|**Full Access**|Allows the delegate to open the mailbox, and view, add and remove the contents of the mailbox. Doesn't allow the delegate to send messages from the mailbox. <p> If you assign the Full Access permission to a mailbox that's hidden from address lists, the delegate won't be able to open the mailbox. By default, discovery mailboxes are hidden from address lists. <p> By default, the mailbox auto-mapping feature uses Autodiscover to automatically open the mailbox in the delegate's Outlook profile (in addition to their own mailbox). Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group. If you don't want mailboxes to be auto-mapped, you need to take one of the following actions:<br/><br/>   - Use the **Add-MailboxPermission** cmdlet in Exchange Online PowerShell to assign the Full Access permission with the `-AutoMapping $false` setting. For more information, see the [Use Exchange Online PowerShell to assign the Full Access permission to mailboxes](#use-exchange-online-powershell-to-assign-the-full-access-permission-to-mailboxes) section in this article.<br/><br/>- Assign the Full Access permission to a mail-enabled security group. The mailbox won't open in the Outlook profile of each member.</li></ul>|User mailboxes <p> Resource mailboxes <p> Shared mailboxes|Discovery mailboxes|Mailboxes with user accounts <p> Mail users with accounts <p> Mail-enabled security groups|
 |**Send As**|Allows the delegate to send messages as if they came directly from the mailbox or group. There's no indication that the message was sent by the delegate. <p> Doesn't allow the delegate to read the contents of the mailbox. <p> If you assign the Send As permission to a mailbox that's hidden from address lists, the delegate won't be able to send messages from the mailbox.|User mailboxes <p> Resource mailboxes <p> Shared mailboxes <p> Distribution groups <p> Dynamic distribution groups <p> Mail-enabled security groups <p> Microsoft 365 groups|n/a|Mailboxes with user accounts <p> Mail users with accounts <p> Mail-enabled security groups|
 |**Send on Behalf**|Allows the delegate to send messages from the mailbox or group. The From address of these messages clearly shows that the message was sent by the delegate (" _\<Delegate\>_ on behalf of _\<MailboxOrGroup\>_"). However, replies to these messages are sent to the mailbox or group, not to the delegate. <p> Doesn't allow the delegate to read the contents of the mailbox. <p> If you assign the Send on Behalf permission to a mailbox that's hidden from address lists, the delegate won't be able to send messages from the mailbox. <p> |User mailboxes <p> Resource mailboxes <p> Distribution groups <p> Dynamic distribution groups <p> Mail-enabled security groups <p> Microsoft 365 groups|Shared mailboxes|Mailboxes with user accounts <p> Mail users with accounts <p> Mail-enabled security groups <p> Distribution groups|
 |
@@ -66,7 +66,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
    - **Resources**: Room or equipment mailboxes.
    - **Shared**: Shared mailboxes.
 
-2. In the list of mailboxes, select the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of mailboxes, select the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox properties page that opens, click **Mailbox delegation** and configure one or more of the following permissions:
 
@@ -74,9 +74,9 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
    - **Send on Behalf**: Messages sent by a delegate have " _\<Delegate\>_ on behalf of _\<Mailbox\>_" in the From address. Note that this permission isn't available in the EAC for shared mailboxes.
    - **Full Access**: The delegate can open the mailbox and do anything except send messages.
 
-   To assign permissions to delegates, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
+   To assign permissions to delegates, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
 
-   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 4. When you're finished, click **Save**.
 
@@ -86,26 +86,26 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 2. Select the mailboxes that you want to assign permissions for. Use click + Shift key + click to select a range of mailboxes, or Ctrl key + click to select multiple individual mailboxes. The title of the details pane changes to **Bulk Edit** as shown in the following diagram.
 
-   ![Bulk select mailboxes in the EAC](../media/ee6acd85-a6b8-44f4-8eb1-a6e84e4dfff1.png)
+   ![Bulk select mailboxes in the EAC.](../media/ee6acd85-a6b8-44f4-8eb1-a6e84e4dfff1.png)
 
 3. At the bottom of the details pane, click **More options**. Under the **Mailbox Delegation** option that appears, choose **Add** or **Remove**. Depending on your selection, do one of the following steps:
 
-   - **Add**: In the **Bulk Add Delegation** dialog box that appears, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to add as delegates, click **Save**.
-   - **Remove**: In the **Bulk Remove Delegation** dialog box that appears, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to remove from the existing delegates, click **Save**.
+   - **Add**: In the **Bulk Add Delegation** dialog box that appears, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to add as delegates, click **Save**.
+   - **Remove**: In the **Bulk Remove Delegation** dialog box that appears, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission (**Send As**, **Send on Behalf**, or **Full Access**). When you're finished selecting users or groups to remove from the existing delegates, click **Save**.
 
 ## Use the EAC to assign permissions to groups
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. In the list of groups, select the group that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of groups, select the group that you want to assign permissions for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the group properties page that opens, click **Group delegation** and configure one of the following permissions:
    - **Send As**: Messages sent by a delegate appear to come from the group.
    - **Send on Behalf**: Messages sent by a delegate have " _\<Delegate\>_ on behalf of _\<Group\>_" in the From address.
 
-4. To assign permissions to delegates, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
+4. To assign permissions to delegates, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) under the appropriate permission. A dialog box appears that lists the users or groups that can have the permission assigned to them. Select the user or group from the list, and then click **Add**. Repeat this process as many times as necessary. You can also search for users or groups in the search box by typing all or part of the name, and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png). When you're finished selecting delegates, click **OK**.
 
-   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+   To remove a permission from a delegate, select the delegate in the list under the appropriate permission, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 5. When you're finished, click **Save**.
 

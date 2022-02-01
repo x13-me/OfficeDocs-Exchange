@@ -26,7 +26,7 @@ Outlook for iOS and Android is a cloud-backed application. This characteristic i
 
 For Exchange Server mailboxes, Outlook for iOS and Android's architecture is built directly into the Microsoft Cloud, providing customers more benefits such as security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://microsoft.com/trustcenter) and [Azure Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure).
 
-![Hybrid modern authentication in Outlook for iOS and Android](../../media/outlook_mobile_hybrid_modern_auth.png)
+![Hybrid modern authentication in Outlook for iOS and Android.](../../media/outlook_mobile_hybrid_modern_auth.png)
 
 Within the Microsoft 365 or Office 365-based architecture, Outlook for iOS and Android uses the native Microsoft sync technology for data synchronization that is protected by a TLS-secured connection end-to-end, between Microsoft 365 or Office 365 and the app.
 
@@ -63,7 +63,7 @@ By default, Microsoft engineers have zero standing administrative privileges and
 
 When Outlook for iOS and Android is enabled with hybrid Modern Authentication, the connection flow is as follows.
 
-![Authentication flow in hybrid modern authentication](../../media/d4262a39-bf40-4bbb-b63e-c06306fd70e3.PNG)
+![Authentication flow in hybrid modern authentication.](../../media/d4262a39-bf40-4bbb-b63e-c06306fd70e3.PNG)
 
 1. After the user enters their email address, Outlook for iOS and Android connects to the AutoDetect service. AutoDetect determines the mailbox type by starting an AutoDiscover query to Exchange Online. Exchange Online determines that the user's mailbox is on-premises and returns a 302-redirect to AutoDetect with the on-premises Autodiscover URL. AutoDetect starts a query against the on-premises AutoDiscover service to determine the ActiveSync endpoint for the email address. The URL attempted on-premises is similar to this example: `<https://autodiscover.contoso.com/autodiscover/autodiscover.json?Email=test%40contoso.com&Protocol=activesync&RedirectCount=3>`.
 
@@ -103,7 +103,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
     > [!IMPORTANT]
     > Outlook for iOS and Android uses the tenant's Exchange Online Global Address List for on-premises mailboxes that leverage hybrid Modern Authentication. If all mail recipients are not synchronized into Azure Active Directory, users will experience mail flow issues.
-    
+
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
    - A hybrid Microsoft 365 or Office 365 organization is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is set up as specified in the [Exchange Deployment Assistant](https://assistants.microsoft.com/).
 
@@ -111,7 +111,7 @@ The hybrid Modern Authentication architecture has the following technical requir
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](../../../ExchangeHybrid/hybrid-deployment/hybrid-agent.md).
 
    - Requires a Microsoft 365 or Office 365 Enterprise, Business, or Education organization.
-   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up or to the datacenter region defined in the account's **PreferredDataLocation**. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter). For more information on **PreferredDataLocation**, see [Multi-Geo Capabilities](/office365/enterprise/multi-geo-capabilities-in-exchange-online)) 
+   - The on-premises mailbox data is synchronized in the same datacenter region where that Microsoft 365 or Office 365 organization is set up or to the datacenter region defined in the account's **PreferredDataLocation**. For more information about where Microsoft 365 and Office 365 data is located, visit the [Microsoft Trust Center](https://microsoft.com/trustcenter). For more information on **PreferredDataLocation**, see [Multi-Geo Capabilities](/office365/enterprise/multi-geo-capabilities-in-exchange-online). 
    - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
    - AutoDiscover and Exchange ActiveSync namespaces must be accessible from the Internet and cannot be fronted by a pre-authentication solution.
 
@@ -139,14 +139,14 @@ Enabling support for hybrid Modern Authentication in your organization requires 
 
 ### Create a conditional access policy
 
-When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. Outlook for iOS and Android authenticates via the Azure Active Directory identity object and then connects to Exchange Online. Therefore, you'll need to create Azure Active Directory conditional access policies to restrict mobile device connectivity to Exchange Online. To do this task, you'll need two conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. Outlook for iOS and Android authenticates via the Azure Active Directory identity object and then connects to Exchange Online. Therefore, you'll need to create Azure Active Directory conditional access policies to restrict mobile device connectivity to Exchange Online. To do this task, you'll need two conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Conditional Access: Require approved client apps or app protection policy](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365 or Office 365" in [Scenario 1: Microsoft 365 and Office 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow the steps in [Require approved client apps or app protection policy with mobile devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices). This policy allows Outlook for iOS and Android, but blocks OAuth and basic authentication capable Exchange ActiveSync mobile clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
 
-2. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Microsoft 365 and Office 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients using basic authentication from connecting to Exchange Online.
+2. Follow the steps in [Block Exchange ActiveSync on all devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices), which prevents Exchange ActiveSync clients using basic authentication on non-mobile devices from connecting to Exchange Online.
 
    The above policies use the grant control [Require app protection policy](/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
 
@@ -155,18 +155,16 @@ When an organization decides to standardize how users access Exchange data, usin
 > [!IMPORTANT]
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based conditional access with Intune](/intune/app-based-conditional-access-intune).
 
-To block other mobile device clients (such as the native mail client included in the mobile operating system) from connecting to your on-premises environment (which authenticate via basic authentication against on-premises Active Directory), you have two options:
+To block other mobile device clients (such as the native mail client included in the mobile operating system) from connecting to your on-premises environment (which authenticate via basic authentication against on-premises Active Directory):
 
-1. You can use the built-in Exchange mobile device access rules and block all mobile devices from connecting by setting the following command in the Exchange Management Shell:
+You can use the built-in Exchange mobile device access rules and block all mobile devices from connecting by setting the following command in the Exchange Management Shell:
 
-   ```powershell
-   Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
-   ```
+```powershell
+Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+```
 
-2. You can use an on-premises conditional access policy within Intune after installing the on-premises Exchange connector. For more information, see [Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated](/intune/conditional-access-exchange-create#configure-exchange-on-premises-access).
-
-   > [!NOTE]
-   > When implementing either of the above on-premises options, be aware that it may impact users connecting to Exchange on their mobile devices.
+> [!NOTE]
+> When implementing the above on-premises cmdlet, be aware that it may impact users connecting to Exchange on-premises with their mobile devices.
 
 ### Create an Intune app protection policy
 
@@ -220,6 +218,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 The following features aren't supported for on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
 
 - Draft folder and Draft messages synchronization
+- Viewing more than four weeks of email by using the "Load More Messages" link at the bottom of the message list
 - Shared calendar access and delegate calendar access
 - Shared and delegate mailbox data access
 - Cortana Time to Leave / Travel Time
@@ -272,7 +271,7 @@ With ExpressRoute, there's no private IP space for ExpressRoute connections, nor
 
 **A**: On-premises mailboxes that are added via hybrid Modern Authentication are labeled as **Exchange (Hybrid)** in the account settings in Outlook for iOS and Android, similar to the following example:
 
-![An example of an Outlook for iOS and Android account configured for hybrid Modern Authentication](../../media/e52fbbe2-ba9e-4357-8f48-f8fa7d62abc8.PNG)
+![An example of an Outlook for iOS and Android account configured for hybrid Modern Authentication.](../../media/e52fbbe2-ba9e-4357-8f48-f8fa7d62abc8.PNG)
 
 ## Authentication FAQ
 
@@ -320,17 +319,17 @@ Below are the most common issues or errors with on-premises mailboxes using hybr
 
 During profile creation, the user should be presented a Modern Authentication dialog similar to the one in the following screenshot:
 
-![Dialogs users should see during successful setup of hybrid Modern Authentication](../../media/90aa32ce-2053-43c4-a28b-5f122271aa63.png)
+![Dialogs users should see during successful setup of hybrid Modern Authentication.](../../media/90aa32ce-2053-43c4-a28b-5f122271aa63.png)
 
 If, instead, the user is presented with one of the following dialogs, then there's an issue with either the Autodiscover or ActiveSync on-premises endpoints.
 
 Here's an example of a user being presented with the legacy Basic authentication Exchange ActiveSync experience:
 
-![A dialog indicating a user is being presented with the legacy Basic authentication Exchange ActiveSync experience](../../media/c7791441-33fd-4db4-b654-daac3aa71f8b.png)
+![A dialog indicating a user is being presented with the legacy Basic authentication Exchange ActiveSync experience.](../../media/c7791441-33fd-4db4-b654-daac3aa71f8b.png)
 
 And here's an example of what users see when AutoDetect isn't able to discover the configuration for users' on-premises mailboxes.
 
-![A dialog that users see when AutoDetect is not able to discover the configuration of their on-premises mailboxes](../../media/035bb20d-c67b-4b7f-a5f9-fd15ffc29d3e.png)
+![A dialog that users see when AutoDetect is not able to discover the configuration of their on-premises mailboxes.](../../media/035bb20d-c67b-4b7f-a5f9-fd15ffc29d3e.png)
 
 In either scenario, verify that your on-premises environment is correctly configured. To do this task: from the TechNet Gallery, download and execute the script for [Validating Hybrid Modern Authentication setup for Outlook for iOS and Android](https://aka.ms/OLHMAScript).
 

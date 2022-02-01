@@ -83,7 +83,7 @@ From the Shell, verify that all your mailbox database information is represented
 
 2. Select **Databases**, and then click to select the mailbox database you want to configure.
 
-3. Click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")to configure the attributes of a mailbox database.
+3. Click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")to configure the attributes of a mailbox database.
 
 4. Use the **General** tab to view status about the mailbox database, including the mailbox database path, last backup, and mailbox database status:
 
@@ -97,8 +97,8 @@ From the Shell, verify that all your mailbox database information is represented
 
    - *Mounted on server*: This read-only field displays which server the database is mounted on.
 
-> [!NOTE]
-> This article contains references to the term **master**, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
+   > [!NOTE]
+   > This article contains references to the term **master**, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
 
    - *Master*: This read-only field displays the primary server for the mailbox database. The Mailbox server that hosts the active copy of a database is referred to as the mailbox database master.
 
@@ -210,7 +210,7 @@ To verify that you have successfully dismounted the database, implement the foll
 
 1. From the EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
-2. Click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon")to remove the mailbox database.
+2. Click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon")to remove the mailbox database.
 
 ## Use the Shell to remove a mailbox database
 
@@ -231,5 +231,4 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](/pow
 To verify that you have successfully removed the mailbox database, implement the following tasks:
 
 - From the EAC, select **Servers** \> **Databases**.
-
 - Verify that the mailbox database has been removed.

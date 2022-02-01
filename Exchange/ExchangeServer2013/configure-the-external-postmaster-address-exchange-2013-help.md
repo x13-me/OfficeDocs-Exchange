@@ -7,6 +7,8 @@ ms:contentKeyID: 49318579
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure the external postmaster address in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -39,7 +41,7 @@ By default, the value of the external postmaster address setting is blank. This 
 
 ## Use the EAC to configure the external postmaster address
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery** tab.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery** tab.
 
 2. In the **External postmaster address** field, enter the SMTP email address, for example, `postmaster@contoso.com`. If you want to return the external postmaster address to the default value, delete any existing value so the field is blank.
 

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to use connectors to route mail between Microsoft 365, Office 365, or Exchange Online and on-premises email servers.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
 ms.reviewer: 
@@ -22,8 +22,8 @@ This topic helps you set up the connectors you need for the following two scenar
 
 - You have your own email servers (also called on-premises servers), and you subscribe to Exchange Online Protection (EOP) for email protection services.
 - You have (or intend to have) mailboxes in two places; some of your mailboxes are in Microsoft 365 or Office 365, and some of your mailboxes are on your organization email servers (also called on-premises servers).
-> [!NOTE]
-> Before you get started, ensure you check on your specific scenario in [I have my own email servers](use-connectors-to-configure-mail-flow.md#i-have-my-own-email-servers).
+>[!Important]
+> Before you get started, make sure to check on your specific scenario in [**I have my own email servers**](use-connectors-to-configure-mail-flow.md#i-have-my-own-email-servers). </br></br>If you apply the steps described in this article to **partner email services**, you may have unintended consequences including *email delivery failure*. To learn more about partner scenarios, see [Set up connectors for secure mail flow with a partner organization](./set-up-connectors-for-secure-mail-flow-with-a-partner.md).
 
 ## How do connectors work with my on-premises email servers?
 
@@ -31,7 +31,7 @@ If you have EOP and your own email servers, or if some of your mailboxes are in 
 
 The diagram below shows how connectors in Microsoft 365 or Office 365 (including Exchange Online or EOP) work with your own email servers.
 
-![Connectors between Microsoft 365 or Office 365 and your e-mail server](../../media/0df5ec3d-29c1-4add-9e22-5b0c26bec750.png)
+![Connectors between Microsoft 365 or Office 365 and your e-mail server.](../../media/0df5ec3d-29c1-4add-9e22-5b0c26bec750.png)
 
 In this example, John and Bob are both employees at your company. John has a mailbox on an email server that you manage, and Bob has a mailbox in Office 365. John and Bob both exchange mail with Sun, a customer with an internet email account:
 
@@ -117,9 +117,9 @@ Make sure you have completed the following tasks in Microsoft 365 or Office 365:
 
 Before you set up a new connector, check for any connectors that are already listed here for your organization. For example, if you ran the Exchange [Hybrid Configuration wizard](../../../ExchangeHybrid/hybrid-configuration-wizard.md), connectors that deliver mail between Microsoft 365 or Office 365 and Exchange Server will be set up already and listed here, as shown in the following two screenshots, for New Exchange admin center (EAC) and Classic EAC, respectively.
 
-:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center":::
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Home page of the New Exchange admin center.":::
 
-:::image type="content" source="../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png" alt-text="The page that lists connectors already set up":::
+:::image type="content" source="../../media/62ed4acf-fa54-458f-9f38-f63e6bc89510.png" alt-text="The page that lists connectors already set up.":::
 
 If the connectors are already listed, you don't need to set them up again, but you can edit them if you need to. 
 
@@ -128,19 +128,19 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 > [!NOTE]
 > Before creating a connector, navigate to the new EAC from the Microsoft 365 admin center by clicking **Exchange** under the **Admin centers** pane.
 
-- **For New EAC**
+#### For New EAC
 
 1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
  
 2. Click **+ Add a connector**. The **New connector** screen appears.
 
-:::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
+:::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins.":::
 
 3. Under **Connection from**, choose **Office 365**.
 
 4. Under **Connection to**, choose **Your organization's email server**.
 
-:::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured":::
+:::image type="content" source="../../media/configuring-connector-new-eac.png" alt-text="A page on which new connector is configured.":::
 
 5. Click **Next**. The **Connector name** screen appears.
 
@@ -197,7 +197,7 @@ The connector is created.
 
 Click **+**. On the first screen, choose the options that are depicted in the following screenshot.
 
-![Microsoft 365 or Office 365 to your email server](../../media/e58262b7-f865-457b-b77a-32974813e271.png)
+![Microsoft 365 or Office 365 to your email server.](../../media/e58262b7-f865-457b-b77a-32974813e271.png)
 
 Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [Validate connectors](validate-connectors.md) for help resolving issues.
 
@@ -218,18 +218,18 @@ There are two steps for this configuration:
 
 1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
 
-:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors":::
+:::image type="content" source="../../media/new-exchange-admin-center.png" alt-text="Page displaying already created connectors.":::
 
 > [!NOTE]
 > If any connectors already exist for your organization, they are displayed on clicking **Connectors**.
  
 2. Click **+ Add a connector**. The **New connector** screen appears.
 
-:::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins":::
+:::image type="content" source="../../media/home-screen-to-add-a-new-connector.png" alt-text="The screen on which the process to create a connector begins.":::
 
 3. Under **Connection from**, choose **Your organization's email server**.
 
-:::image type="content" source="../../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server":::
+:::image type="content" source="../../media/from-your-server-to-365.png" alt-text="The screen on which you configure the sending server as your organization server and the destination server as Microsoft 365 server.":::
 
 > [!NOTE]
 > Once you select the **Your organization's email server** radio button under **Connection from**, the option under **Connection to** is greyed out, implying that it is the default option chosen.
@@ -256,7 +256,7 @@ The connector is created.
 
 To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot:
 
-![Choose from your organization's email server to Microsoft 365 or Office 365](../../media/5c187bd4-d387-4d9a-a6ff-86e591c0185a.png)
+![Choose from your organization's email server to Microsoft 365 or Office 365.](../../media/5c187bd4-d387-4d9a-a6ff-86e591c0185a.png)
 
 Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](/previous-versions/exchange-server/exchange-150/dn910993(v=exchg.150)) for help configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
 
@@ -289,7 +289,7 @@ New-SendConnector -Name "My company to Office 365" -AddressSpaces * -CloudServic
 
 To change settings for a connector, select the connector you want to edit and then select the **Edit** icon as shown in the following screen shots, for New EAC and Classic EAC, respectively.
 
-:::image type="content" source="../../media/editing-connector-new-eac.png" alt-text="The screen on which the option of editing connector details is chosen":::
+:::image type="content" source="../../media/editing-connector-new-eac.png" alt-text="The screen on which the option of editing connector details is chosen.":::
 
 ![Shows a screen shot with a connector selected and the edit (pencil) icon highlighted.](../../media/9654b36f-40d2-4791-ae5c-ce3afd9bb683.png)
 
@@ -311,19 +311,19 @@ In this example, your organization has four accepted domains, contoso.com, sales
 
  **Connector 1** is configured for all accepted domains in your organization. The following screenshot shows the connectors wizard screen where you define which domains the connector applies to. In this case, the setting chosen is **For email messages sent to all accepted domains in your organization**. The following two screenshots depict the chosen setting for New EAC and Classic EAC, respectively.
 
-:::image type="content" source="../../media/365-applying-connectors-1.png" alt-text="The connector wizard page for New EAC":::
+:::image type="content" source="../../media/365-applying-connectors-1.png" alt-text="The connector wizard page for New EAC.":::
 
 ![Shows the connector wizard page for Classic Exchange admin center: When do you want to use this connector? The second option is selected. This option is: For email messages sent to all accepted domains in your organization.](../../media/313c3a28-a6f4-46fb-8d12-850216ab5046.png)
 
  **Connector 2** is set up specifically for your company domain Contoso.com. The following screenshot shows the connectors wizard screen where you define which domains the connector applies to. In this case, the setting chosen is **Only when email messages are sent to these domains**. For **Connector 2**, your company domain Contoso.com is specified. The following two screenshots depict the chosen setting for New EAC and Classic EAC, respectively.
 
-:::image type="content" source="../../media/365-applying-connectors-2.png" alt-text="The connector wizard screen for the New EAC":::
+:::image type="content" source="../../media/365-applying-connectors-2.png" alt-text="The connector wizard screen for the New EAC.":::
 
 ![Shows the connector wizard page in the Classic Exchange admin center: When do you want to use this connector? The third option is selected. This option is: Only when email messages are sent to these domains. The domain Contoso.com has been added.](../../media/c68671c2-d8df-4791-a538-481eae397673.png)
 
  **Connector 3** is also set up by using the option **Only when email messages are sent to these domains**. But, instead of the specific domain Contoso.com, the connector uses a wildcard: \*.Contoso.com as shown in the following screenshot. The following two screenshots depict the chosen setting for New EAC and Classic EAC, respectively.
 
-:::image type="content" source="../../media/365-applying-connectors-3.png" alt-text="The connector wizard screen for the New Exchange Admin Center":::
+:::image type="content" source="../../media/365-applying-connectors-3.png" alt-text="The connector wizard screen for the New Exchange admin center.":::
 
 ![Shows the connector wizard page: When do you want to use this connector? The third option is selected. This option is: Only when email messages are sent to these domains. The domain specified includes a wildcard. \*.contoso.com has been added.](../../media/87f27555-e12c-4ad6-914a-d4439f405d43.png)
 

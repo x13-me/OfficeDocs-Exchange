@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ649094(v=EXCHG.150)
 ms:contentKeyID: 49317458
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to configure OAuth authentication with SharePoint 2013 and Lync 2013 in Exchange Server
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

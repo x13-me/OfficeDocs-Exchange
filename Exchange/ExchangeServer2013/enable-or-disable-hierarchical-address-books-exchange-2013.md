@@ -7,6 +7,8 @@ ms:contentKeyID:
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enable or disable hierarchical address books in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -212,7 +214,7 @@ To verify that you've successfully enabled and configured a hierarchical address
 
 - Open Outlook in a profile that's connected to a mailbox in your Exchange organization, and click **Address Book** or press Ctrl+Shift+B. The HAB is displayed on the **Organization** tab, similar to the following figure.
 
-   ![Hierarchical Address Book dialog](images/ITPro_Mailbox_HABDisplay.gif)
+   ![Hierarchical Address Book dialog.](images/ITPro_Mailbox_HABDisplay.gif)
 
 - In the Exchange Management Shell, run the following commands to verify the property values:
 

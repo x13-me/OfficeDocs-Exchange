@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to manage role group membership in Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -40,9 +42,9 @@ To give a user the permissions that are granted by a role group, you need to add
 
 1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to add members to, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the role group you want to add members to, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. In the **Members** section, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+3. In the **Members** section, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 4. Select the users, USGs, or other role groups you want to add to the role group, click **Add**, and then click **OK**.
 
@@ -54,7 +56,7 @@ To add a role group member, see the [Examples](/powershell/module/exchange/Add-R
 
 To add multiple role group members or to replace the role group membership entirely, see the [Examples](/powershell/module/exchange/Update-RoleGroupMember#examples) section in [Update-RoleGroupMember](/powershell/module/exchange/Update-RoleGroupMember).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully added one or more members to a role group, do the following:
 
@@ -72,9 +74,9 @@ To remove the permissions granted by a role group from a user, you need to remov
 
 1. In the EAC, navigate to **Permissions** \> **Admin Roles**.
 
-2. Select the role group you want to remove members from, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the role group you want to remove members from, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. In the **Members** section, select the members you want to remove, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Save**.
+3. In the **Members** section, select the members you want to remove, click **Remove** ![Remove icon.](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Save**.
 
 ## Use the Shell to remove members from a role group
 
@@ -82,7 +84,7 @@ To remove a role group member, see the [Examples](/powershell/module/exchange/Re
 
 To remove multiple role group members or to replace the role group membership entirely, see the [Examples](/powershell/module/exchange/Update-RoleGroupMember#examples) section in [Update-RoleGroupMember](/powershell/module/exchange/Update-RoleGroupMember).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully removed one or more members to a role group, do the following:
 

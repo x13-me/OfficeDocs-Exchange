@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable Exchange ActiveSync for a mailbox in Exchange Server
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 f1.keywords:
 - NOCSH
@@ -32,7 +34,7 @@ You can use the EAC or the Shell to enable or disable Microsoft Exchange ActiveS
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to enable or disable Exchange ActiveSync for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to enable or disable Exchange ActiveSync for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Features**.
 
@@ -69,7 +71,7 @@ For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/
 
 To verify that you've successfully enabled or disabled Exchange ActiveSync for a user mailbox, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 - On the mailbox properties page, click **Mailbox Features**.
 

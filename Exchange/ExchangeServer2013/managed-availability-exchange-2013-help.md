@@ -7,12 +7,12 @@ ms:contentKeyID: 59888992
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: Managed availability in Microsoft Exchange 2013
 author: serdars
 ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
-description: The manner in which administrators ensure availability of Exchange Server 2013 organization
 ---
 
 # Managed Availability
@@ -59,7 +59,7 @@ As illustrated in the following drawing, managed availability includes three mai
 
 **Managed Availability Components**
 
-![Managed Availability in Exchange Server 2013](images/Dn482056.7a54dcb5-1e28-4bd4-87e6-0d496b4ab796(EXCHG.150).gif "Managed Availability in Exchange Server 2013")
+![Managed Availability in Exchange Server 2013.](images/Dn482056.7a54dcb5-1e28-4bd4-87e6-0d496b4ab796(EXCHG.150).gif "Managed Availability in Exchange Server 2013")
 
 The first component is called a *Probe*. Probes are responsible for taking measurements on the server and collecting data. The results of those measurements flow into the second component, the *Monitor*. The monitor contains all of the business logic used by the system based on what is considered healthy on the data collected. Similar to a pattern recognition engine, the monitor looks for the various different patterns on all the collected measurements, and then it decides whether something is considered healthy. Finally, there are *Responders*, which are responsible for recovery and escalation actions. When something is unhealthy, the first action is to attempt to recover that component. This recovery effort could include multi-stage recovery actions; for example, the first attempt may be to restart the application pool, the second may be to restart the service, the third attempt may be to restart the server, and the subsequent attempt may be to take the server offline so that it no longer accepts traffic. If the recovery actions are unsuccessful, the system escalates the issue to a human through event log notifications.
 
@@ -196,8 +196,8 @@ There are 12 cmdlets used for managed availability, which are described in the f
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

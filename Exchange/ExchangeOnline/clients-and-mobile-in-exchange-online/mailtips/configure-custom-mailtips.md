@@ -2,11 +2,11 @@
 ms.localizationpriority: medium
 description: 'MailTips are informative messages displayed to users in the InfoBar in Outlook on the web and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 ms.reviewer: 
-title: Configure custom MailTips for recipients
+title: Configure custom MailTips for recipients in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Configure custom MailTips for recipients
+# Configure custom MailTips for recipients in Exchange Online
 
 MailTips are informative messages displayed to users in the InfoBar in Outlook on the web (formerly known as Outlook Web App) and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:
 
@@ -55,9 +55,9 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 ## Configure MailTips for recipients
 
-### Use the EAC to configure MailTips for recipients
+### Use the classic EAC to configure MailTips for recipients
 
-1. In the EAC, navigate to **Recipients**.
+1. In the classic EAC, navigate to **Recipients**.
 
 2. Select any of the following recipient tabs based on the recipient type:
 
@@ -71,7 +71,7 @@ In addition to the built-in MailTips that are available, you can create custom M
 
    - **Shared**
 
-3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 4. In the recipient properties page that appears, click **MailTips**.
 

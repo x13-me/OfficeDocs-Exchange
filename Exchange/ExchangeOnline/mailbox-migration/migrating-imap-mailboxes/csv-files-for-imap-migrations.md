@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 187ce085-9a83-4612-80a2-f562b3049fc2
 ms.reviewer: 
 description: The comma-separated values (CSV) file that you use to migrate the contents of users' mailboxes in an IMAP migration contains a row for each user. Each row contains information about the user's Office 365 mailbox and IMAP mailbox, and Office 365 uses this information to process the migration.
-title: CSV files for IMAP migration batches
+title: CSV files for IMAP migration batches in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -24,7 +24,7 @@ manager: serdars
 
 ---
 
-# CSV files for IMAP migration batches
+# CSV files for IMAP migration batches in Exchange Online
 
 The comma-separated values (CSV) file that you use to migrate the contents of users' mailboxes in an IMAP migration contains a row for each user. Each row contains information about the user's Office 365 mailbox and IMAP mailbox, and Office 365 uses this information to process the migration.
 

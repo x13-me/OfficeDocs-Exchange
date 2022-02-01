@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
 ms.reviewer: 
@@ -37,6 +37,9 @@ manager: serdars
 
 # Prepare your Gmail or Google Workspace (formerly G Suite) account for connecting to Outlook and Microsoft 365 or Office 365
 
+> [!IMPORTANT]
+> The ability to add new accounts to Outlook on the web using the Connected accounts feature was removed in September 2018.
+    
 Before you [connect to your Gmail](https://support.microsoft.com/office/d7012ff0-924f-4f78-8aca-c3912d886c4d) account from Outlook on the web, or [add a Gmail](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
 
 You will also have to do this if your admin is planning to migrate your [Gmail](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7) or [Google Workspace Gmail](migrate-g-suite-mailboxes.md) to Microsoft 365 or Office 365.
@@ -69,13 +72,13 @@ To use an app password with Gmail, you have to first turn on 2-step verification
 
 2. Select **Google apps** \> **My Account**.
 
-   ![Choose Goolge apps and  then My Account](../media/9f193437-3e31-46b3-8844-ed30d8f950fa.PNG)
+   ![Choose Goolge apps and  then My Account.](../media/9f193437-3e31-46b3-8844-ed30d8f950fa.PNG)
 
 3. On the **My Account** page choose **Sign-in &amp; security**.
 
 4. Under the **Password &amp; sign-in method**, choose the arrow next to the **2-Step verification**, and provide your password if asked.
 
-   ![Choose 2-step verification Off to start turning it on](../media/9c75b26b-e987-483b-af0a-82443801a428.PNG)
+   ![Choose 2-step verification Off to start turning it on.](../media/9c75b26b-e987-483b-af0a-82443801a428.PNG)
 
    > [!NOTE]
    > If you have a google apps account and you can't see this setting, your admin has to first turn it on. For instructions (for admin), see [Enable 2-step verification for your Google Workspace users](enable-2-step-verification-for-google-apps.md).
@@ -98,7 +101,7 @@ To use an app password with Gmail, you have to first turn on 2-step verification
 
 5. On the **App passwords** page, in the **Select app** drop-down choose **Other (custom name)**.
 
-   ![Choose Other (Custom name) in the Select app drop-down](../media/af7e9293-61a3-4c02-9507-68d529085db5.png)
+   ![Choose Other (Custom name) in the Select app drop-down.](../media/af7e9293-61a3-4c02-9507-68d529085db5.png)
 
 6. Type in a name, for example Myconnection \> **GENERATE**.
 

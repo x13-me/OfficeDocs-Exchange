@@ -57,7 +57,7 @@ These are the types of certificate files that you can import on an Exchange serv
 
 1. Open the EAC and navigate to **Servers** \> **Certificates**.
 
-2. In the **Select server** list, select the Exchange server where you want to install the certificate, click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Import Exchange certificate**.
+2. In the **Select server** list, select the Exchange server where you want to install the certificate, click **More options** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), and select **Import Exchange certificate**.
 
 3. The **Import Exchange certificate** wizard opens. On the **This wizard will import a certificate from a file** page, enter the following information:
 
@@ -67,7 +67,7 @@ These are the types of certificate files that you can import on an Exchange serv
 
    When you're finished, click **Next**.
 
-4. In the **Specify the servers you want to apply this certificate to** page, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png)
+4. In the **Specify the servers you want to apply this certificate to** page, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png)
 
    On the **Select a server** page that opens, select the Exchange server where you want to install the certificate, and click **Add - \>**. Repeat this step as many times as necessary. When you're finished selecting servers, click **OK**.
 
@@ -90,16 +90,16 @@ Import-ExchangeCertificate -FileName "\\FileServer01\Data\Fabrikam.pfx" -Passwor
 To import a chain of certificates file (PKCS #7 text files that have .p7b or .p7c filename extensions) that's associated with a certificate, use the following syntax:
 
 ```PowerShell
-Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))
+Import-ExchangeCertificate -FileData ([System.IO.File]::ReadAllBytes('<FilePathOrUNCPath>'))
 ```
 
 This example imports the chain of certificates file `\\FileServer01\Data\Chain of Certificates.p7b`.
 
 ```PowerShell
-Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))
+Import-ExchangeCertificate -FileData ([System.IO.File]::ReadAllBytes('\\FileServer01\Data\Chain of Certificates.p7b'))
 ```
 
- **Notes:**
+**Notes:**
 
 - You need to repeat this procedure on each Exchange server where you want to import the certificate (run the command on the server, or use the _Server_ parameter).
 

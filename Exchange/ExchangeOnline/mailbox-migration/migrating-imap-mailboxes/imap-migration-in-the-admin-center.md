@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 4682f2e4-f720-4868-91ab-207f5b0c325d
 ms.reviewer: 
@@ -47,7 +47,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
 2. Navigate to **Setup** and choose **Migrations** under **Featured Collections**.
 
-    ![Data migration dashboard](../../media/setup-migrations.png)
+    ![Data migration dashboard.](../../media/setup-migrations.png)
 
 3. In the **Migrations** page, choose **Email**.
 4. In the **Migrate your email** page, click the **Get started** button.
@@ -55,7 +55,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
     **Select your data service** dashboard opens.
 
-    ![Select your email service](../media/f0c92829-d849-4a26-9d38-1fce1bde616e.png)
+    ![Select your email service.](../media/f0c92829-d849-4a26-9d38-1fce1bde616e.png)
 
 6. Do one of the following steps:
 
@@ -68,7 +68,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
      - After you choose a provider, the **Select users to start migrating email messages** page will list all of your users with the source email pre-filled in.
 
-       ![All your users are listed with the email pre-filled in](../media/bbe69914-25da-4e26-880e-e0257f0ccba2.png)
+       ![All your users are listed with the email pre-filled in.](../media/bbe69914-25da-4e26-880e-e0257f0ccba2.png)
 
    - **Your provider is not listed:**
 
@@ -83,7 +83,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
         > [!IMPORTANT]
         > If you're migrating email from Google Apps where you own the domain, you need to ask your users to [create an app password](prepare-gmail-or-g-suite-accounts.md) you will have to use instead of their account password.
 
-        ![Fill in IMAP server information and account info to connect](../media/313a395b-0767-4433-be28-7db3caa7e4d5.png)
+        ![Fill in IMAP server information and account info to connect.](../media/313a395b-0767-4433-be28-7db3caa7e4d5.png)
 
      3. Click **Save** to test the connection. Once the connection is verified, the **Email Migration Status** page will list all your added users with the email address that you provided.
 
@@ -93,7 +93,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
 8. Choose **Start Migration** after you have entered the required information.
 
-    ![Choose Start Migration](../media/c820e755-42b4-4a78-9c09-6f2135d7d7da.png)
+    ![Choose Start Migration.](../media/c820e755-42b4-4a78-9c09-6f2135d7d7da.png)
 
 9. The migration status will be one of:
 
@@ -105,13 +105,13 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
    - **Synced**
 
-    When the status is **Synced** the IMAP migration will continue to synchronize with the source email periodically until you choose **Stop Migration**.
-
-    When you're done, choose **Close Connection**. This also allows you to start a new migration if you want to migrate emails from other providers as well.
+    When the status is **Synced**, the IMAP migration continues to periodically synchronize with the source email (once a day) until you select **Stop Migration**.
 
 10. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Microsoft 365 or Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
 
    If you have migrated as a part of the setup experience, you can return to the setup. The setup steps will guide you through updating the DNS records.
+   
+11. Let the migration batch run for at least 72 hours before you select **Stop Migration**. When you finish, select **Close Connection**. After you do this, you can start a new migration if you want to also migrate emails from other providers.
 
 ## Related Topics
 

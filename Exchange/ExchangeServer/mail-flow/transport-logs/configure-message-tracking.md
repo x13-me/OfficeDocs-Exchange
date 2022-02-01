@@ -52,7 +52,7 @@ You use the **Set-TransportService** cmdlet in the Exchange Management Shell on 
 
 ## Use the EAC to configure message tracking on Mailbox servers
 
-1. Open the EAC and navigate to **Servers** \> **Servers** \> select the Mailbox server that you want to configure \> and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. Open the EAC and navigate to **Servers** \> **Servers** \> select the Mailbox server that you want to configure \> and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. On the server properties page, click **Transport Logs**. In the **Message tracking log** section, change any of the following settings:
 
@@ -101,7 +101,7 @@ This example disables message tracking on the Mailbox server named Mailbox01:
 Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully configured message tracking, run the following command in the Exchange Management Shell:
 

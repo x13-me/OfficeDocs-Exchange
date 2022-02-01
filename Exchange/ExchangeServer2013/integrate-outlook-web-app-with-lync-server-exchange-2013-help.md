@@ -5,6 +5,8 @@ ms:assetid: 3aef7838-461b-4955-a62a-f30a9e02e20e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ983446(v=EXCHG.150)
 ms:contentKeyID: 51406090
 ms.reviewer: 
+ms.topic: article
+description: How to integrate Outlook Web App with Lync Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire

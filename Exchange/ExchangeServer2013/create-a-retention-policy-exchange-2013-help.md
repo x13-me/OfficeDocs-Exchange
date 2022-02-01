@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a Retention Policy in Exchange Server
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 f1.keywords:
 - NOCSH
@@ -35,7 +37,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the EAC to create a retention tag
 
-1. Navigate to **Compliance management** \> **Retention tags**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif)
+1. Navigate to **Compliance management** \> **Retention tags**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif)
 
 2. Select one of the following options:
 
@@ -116,13 +118,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the EAC to create a retention policy
 
-1. Navigate to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif)
+1. Navigate to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif)
 
 2. In **New Retention Policy**, complete the following fields:
 
    - **Name**: Enter a name for the retention policy.
 
-   - **Retention tags**: Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to select the tags you want to add to this retention policy.
+   - **Retention tags**: Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to select the tags you want to add to this retention policy.
 
      A retention policy can contain the following tags:
 

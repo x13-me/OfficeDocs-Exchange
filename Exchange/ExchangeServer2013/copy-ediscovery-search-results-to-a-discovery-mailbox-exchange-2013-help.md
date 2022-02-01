@@ -7,6 +7,8 @@ ms:contentKeyID: 61200239
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to copy eDiscovery search results to a discovery mailbox in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -40,7 +42,7 @@ After you create an In-Place eDiscovery search, you can use the EAC to copy the 
 
 2. In the list view, select an eDiscovery search.
 
-3. Click **Search** ![Search icon](images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "Search icon"), and then click **Copy search results** from the drop-down list.
+3. Click **Search** ![Search icon.](images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "Search icon"), and then click **Copy search results** from the drop-down list.
 
 4. In **Copy Search Results**, select from the following options:
 
@@ -54,11 +56,11 @@ After you create an In-Place eDiscovery search, you can use the EAC to copy the 
 
    - **Copy results to this discovery mailbox**: Click **Browse** to select the discovery mailbox where you want the search results copied to.
 
-        ![Copy Search Results](images/Dn624163.875e25ed-8308-408c-92c4-8c76fc9d9bfc(EXCHG.150).gif "Copy Search Results")
+        ![Copy Search Results.](images/Dn624163.875e25ed-8308-408c-92c4-8c76fc9d9bfc(EXCHG.150).gif "Copy Search Results")
 
 5. Click **Copy** to start the process to copy the search results to the specified discovery mailbox.
 
-6. Click **Refresh** ![Refresh Icon](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon") to update the information about the copying status that is displayed in the details pane.
+6. Click **Refresh** ![Refresh Icon.](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon") to update the information about the copying status that is displayed in the details pane.
 
 7. When copying is complete, click **Open** to open the discovery mailbox to view the search results.
 

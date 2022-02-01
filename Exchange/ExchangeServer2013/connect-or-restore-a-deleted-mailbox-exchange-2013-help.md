@@ -5,6 +5,8 @@ ms:assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863438(v=EXCHG.150)
 ms:contentKeyID: 50387719
 ms.reviewer: 
+ms.topic: article
+description: How to connect or restore a deleted mailbox in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -67,7 +69,7 @@ The following procedure shows how to connect a deleted user mailbox to a user ac
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Connect a mailbox**.
+2. Click **More** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Connect a mailbox**.
 
    A list of mailboxes that are disconnected on the selected Exchange server in your Exchange organization will be displayed.
 
@@ -129,11 +131,11 @@ Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printe
 
 For detailed syntax and parameter information, see [Connect-Mailbox](/powershell/module/exchange/Connect-Mailbox).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully connected a deleted mailbox to a user account, do one of the following:
 
-- In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you connected, click **Refresh** ![Refresh Icon](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon"), and verify that the mailbox is listed.
+- In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you connected, click **Refresh** ![Refresh Icon.](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon"), and verify that the mailbox is listed.
 
 - In Active Directory Users and Computers, right-click the user account that you connected to the mailbox, and then click **Properties**. On the **General** tab, notice that the **E-mail** box is populated with the email address for the connected mailbox.
 
@@ -225,7 +227,7 @@ When you know the deleted public folder mailbox GUID and the name or GUID of the
 
    As in Step 2, the `Identity` parameter will accept GUID, Display Name, or LegacyExchangeDN values for the public folder mailbox.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully restored a deleted public folder mailbox, run the **Get-PublicFolder -GetChildren -\<public folder mailbox GUID\>** cmdlet. If the restore was successful, this cmdlet will work.
 

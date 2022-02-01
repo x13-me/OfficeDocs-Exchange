@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to disable a UM auto attendant in Exchange Server
 ms.assetid: ad79f374-f68f-430b-8b9c-2c841e1c55ae
 f1.keywords:
 - NOCSH
@@ -36,9 +38,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to disable a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the dial plan you want to change, and on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the dial plan you want to change, and on the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to disable. On the toolbar, click **Down arrow** ![Down Arrow Icon](images/ITPro_EAC_DownArrowIcon.gif)
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to disable. On the toolbar, click **Down arrow** ![Down Arrow Icon.](images/ITPro_EAC_DownArrowIcon.gif)
 
 3. On the **Warning** page, click **Yes**.
 

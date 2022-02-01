@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: 828cf844-0f26-44f4-9a76-20bdbd58b992
 ms.collection: 
@@ -35,7 +35,7 @@ The following list describes the three message formats available in Exchange Onl
 |:-----|:-----|:-----|:-----|
 |**Plain text**|A plain text message uses only US-ASCII text as described in RFC 2822. The message can't contain different fonts or other text formatting.|Yes|Yes|
 |**HTML**|An HTML message supports text formatting, background images, tables, bullet points, and other graphical elements.|Yes|Yes|
-|**Rich text format (RTF)**|RTF supports text formatting and other graphical elements. <br/> Only Outlook, Outlook on the web, and a few other MAPI email clients understand RTF messages.|Yes|Can read messages formatted in RTF, but can't format or send this format|
+|**Rich text format (RTF)**|RTF supports text formatting and other graphical elements. <br/> Only Outlook, Outlook on the web, and a few other MAPI email clients understand RTF messages.<br/> Please note that RTF messages that are encrypted with S/MIME will face limitations and may be prone to face conversion issues (like journaling delivery). |Yes|Can read messages formatted in RTF, but can't format or send this format|
 
 ## Message transmission formats for mail sent to external recipients
 

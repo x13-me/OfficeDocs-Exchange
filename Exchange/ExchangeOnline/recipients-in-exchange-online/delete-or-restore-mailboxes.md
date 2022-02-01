@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about deleting and restoring mailboxes in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
 ms.reviewer: 
@@ -21,7 +21,7 @@ manager: serdars
 # Delete or restore user mailboxes in Exchange Online
 
 > [!IMPORTANT]
-> Check out the new Exchange Admin Center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
+> Check out the new Exchange admin center! The experience is modern, intelligent, accessible, and better. Personalize your dashboard, manage cross tenant migration, experience the improved Groups feature, and more. [Try it now](https://admin.exchange.microsoft.com)!
 
 There are several things you should consider before you decide to delete a user mailbox. There are different kinds of deletions that you can do on a user mailbox and some of them won't allow you to restore or recover the mailbox. This article walks you through the deleted mailbox scenarios, and how to delete, recover or permanently remove a mailbox from Exchange Online.
 
@@ -94,6 +94,16 @@ Remove-Mailbox -Identity "Walter Harp"
 ## Restore a user mailbox
 
 When you delete a mailbox, Exchange Online retains the mailbox and all its contents until the deleted mailbox retention period expires, which is 30 days. After 30 days, the mailbox is permanently deleted and can't be recovered. The method for restoring a mailbox depends on whether the mailbox was deleted by deleting the user account or removing the Exchange Online license.
+
+### To help understand the current status of a deleted mailbox
+
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
+To help you understand the current status of a recently deleted mailbox, we provide automated diagnostics in the Microsoft 365 admin center. To launch the diagnostics, select the following button:
+
+>[!div class="nextstepaction"]
+>[Run Tests: Deleted Mailbox](https://aka.ms/PillarDeletedMailBox)
 
 > [!NOTE]
 > We strongly recommend restoring the mailbox from the same source (Azure AD or Exchange Online) from where the user or mailbox was deleted. Failing to do so will result in a failed restore operation.

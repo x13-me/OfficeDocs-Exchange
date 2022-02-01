@@ -7,6 +7,8 @@ ms:contentKeyID: 50395401
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to configure IP addresses and ports for POP3 and IMAP4 access in Exchange Server
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -41,11 +43,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **POP3**.
 
-4. Under **TLS or unencrypted connections**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+4. Under **TLS or unencrypted connections**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 5. On the **Add IP address** page, under **IP address**, choose one of the following:
 
@@ -79,7 +81,7 @@ After you've set the IP address and port settings for POP3, you must restart the
 
 For more information about syntax and parameters, see [Set-PopSettings](/powershell/module/exchange/Set-PopSettings).
 
-## How do you know this worked?
+### How do you know this worked?
 
 Do the following to verify that you have changed POP3 IP address and port settings on a server.
 
@@ -97,7 +99,7 @@ Do the following to verify that you have changed POP3 IP address and port settin
 
 1. In the EAC, navigate to **Servers** **\>** **Servers**.
 
-2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list of servers, select the Client Access server, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the server properties page, click **IMAP4**.
 
@@ -135,7 +137,7 @@ After you've set the IP address and port settings for IMAP4, you must restart th
 
 For more information about syntax and parameters, see [Set-ImapSettings](/powershell/module/exchange/Set-ImapSettings).
 
-## How do you know this worked?
+### How do you know this worked?
 
 Do the following to verify that you have changed IMAP4 IP address and port settings on a server.
 

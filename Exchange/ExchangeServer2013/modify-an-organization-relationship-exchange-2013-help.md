@@ -5,6 +5,8 @@ ms:assetid: 3713ef83-f01a-41bb-b127-62ca242dd7a4
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673055(v=EXCHG.150)
 ms:contentKeyID: 49289228
 ms.reviewer: 
+ms.topic: article
+description: How to modify an organization relationship in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -47,11 +49,11 @@ For additional management tasks related to federation, see [Federation procedure
 
 1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
 
-2. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In **organization relationship**, **general** don't change the **Name** for the organization relationship
 
-4. In the **Domains to share with** box, enter the domain **service.contoso.com**, then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+4. In the **Domains to share with** box, enter the domain **service.contoso.com**, then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 5. Click **save** to update the organization relationship.
 
@@ -59,7 +61,7 @@ For additional management tasks related to federation, see [Federation procedure
 
 1. Go to **organization** \> **sharing**.
 
-2. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In **organization relationship**, click **sharing**
 
@@ -71,7 +73,7 @@ For additional management tasks related to federation, see [Federation procedure
 
 1. Go to **organization** \> **sharing**.
 
-2. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In **organization relationship**, click **sharing**
 

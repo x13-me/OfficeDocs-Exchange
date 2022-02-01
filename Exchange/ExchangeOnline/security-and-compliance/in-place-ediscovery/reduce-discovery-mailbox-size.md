@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: Have a discovery mailbox that's exceeded the 50 GB limit? You can fix this issue by creating new discovery mailboxes and copying the search results from the large discovery mailbox to the new ones.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Reduce the size of a discovery mailbox in Exchange
+title: Reduce the size of a discovery mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,7 +19,7 @@ manager: serdars
 
 ---
 
-# Reduce the size of a discovery mailbox in Exchange
+# Reduce the size of a discovery mailbox in Exchange Online
 
 Have a discovery mailbox that's exceeded the 50 GB limit? You can fix this issue by creating new discovery mailboxes and copying the search results from the large discovery mailbox to the new ones.
 
@@ -45,7 +45,7 @@ Here's a quick look at what you'll need to do to reduce the size of a discovery 
 
 The strategy presented here groups the search results from the original discovery mailbox into separate eDiscovery searches that are based on date ranges. This is a quick way to copy many search results to a new discovery mailbox. The following graphic illustrates this approach.
 
-![Reducing the size of a discovery mailbox](../../media/TA_MRM_ReduceDiscoveryMailbox.gif)
+![Reducing the size of a discovery mailbox.](../../media/TA_MRM_ReduceDiscoveryMailbox.gif)
 
 ## What do you need to know before you begin?
 
@@ -116,7 +116,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
    Start-MailboxSearch "Search results from 2010"
    ```
 
-   - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search created in the previous step, click **Search** ![Search icon](../../media/ITPro_EAC_.gif), and then click **Estimate search results**.
+   - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search created in the previous step, click **Search** ![Search icon.](../../media/ITPro_EAC_.gif), and then click **Estimate search results**.
 
 3. If necessary, adjust the date range to increase or decrease the amount of search results that are returned. If you change the date range, run the search again to get a new estimate of the results. Consider changing the name of the search to reflect the new date range.
 
@@ -132,7 +132,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
    Start-MailboxSearch "Search results from 2010"
    ```
 
-   - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search, click **Search** ![Search icon](../../media/ITPro_EAC_.gif), and then click **Copy search results**.
+   - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search, click **Search** ![Search icon.](../../media/ITPro_EAC_.gif), and then click **Copy search results**.
 
 5. Repeat steps 1 through 4 to create new searches for additional date ranges. Include the date range in the name of the new search to indicate the range of the results. To make sure none of the discovery mailboxes exceeds the 50 GB limit, use different discovery mailboxes as the target mailbox.
 
@@ -154,7 +154,7 @@ You can use Exchange Online PowerShell or the EAC to delete an eDiscovery search
   Remove-MailboxSearch -Identity <name of search>
   ```
 
-- **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search that you want to delete, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+- **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search that you want to delete, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 ## How do you know this worked?
 

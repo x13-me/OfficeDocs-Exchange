@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 550 4.4.7 in Exchange Online"
 ms.author: jhendr
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 ms.reviewer: 
 audience: Admin
@@ -28,7 +28,7 @@ description: "Learn how to fix email issues for error code 550 4.4.7 in Exchange
 # Fix email delivery issues for error code 550 4.4.7 in Exchange Online
 
 > [!IMPORTANT]
-> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
+> Mail flow rules are now available in the new Exchange admin center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
 It's frustrating when you get an error after sending an email message. This article describes what you can do if you see error code 550 4.4.7 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN).
 
@@ -40,7 +40,7 @@ Use the information in the NDR to help you decide how to fix the problem.
 
 |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 |---|---|---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this?](#im-an-email-admin-how-do-i-fix-this)|![Help symbol](../../media/5bf13e77-0400-4dda-a569-b99b8a918b48.png)|[Causes for error code 4.4.7](#causes-for-error-code-447)|
+|![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this?](#im-an-email-admin-how-do-i-fix-this)|![Help symbol](../../media/5bf13e77-0400-4dda-a569-b99b8a918b48.png)|[Causes for error code 4.4.7](#causes-for-error-code-447)|
 
 ## I got this bounce message. How do I fix it?
 
@@ -58,7 +58,7 @@ If you suspect a problem with the destination domain, notify the recipient (by p
 
 - The name of the email mail server in the destination domain, and the error message that's returned by the email server.
 
-- The number of delivery attempts made that were made by the datacenter server in Exchange online, and how long it tried to reach the remote server.
+- The number of delivery attempts made that were made by the datacenter server in Exchange Online, and how long it tried to reach the remote server.
 
 The email admins in the destination domain will need to investigate the issue. Possible solutions might include:
 
@@ -114,11 +114,11 @@ The NDR from Exchange Online for this specific error might contain some or all o
 
 ## Still need help with error code 4.4.7?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

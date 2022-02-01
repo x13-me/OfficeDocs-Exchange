@@ -6,6 +6,8 @@ author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638
+ms.topic: article
+description: Configure voice mail settings for a user.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -71,9 +73,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 5. On the **UM Mailbox** page, under **Other extensions**, you can add, change, and view extension numbers for the user.
 
-   - To add an extension number, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
+   - To add an extension number, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box.
 
-   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif).
+   - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif).
 
 6. If you make any changes, click **Save**.
 

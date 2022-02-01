@@ -4,6 +4,8 @@ TOCTitle: Convert a mailbox
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to convert a mailbox in Exchange Server
 ms.reviewer:
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 f1.keywords:

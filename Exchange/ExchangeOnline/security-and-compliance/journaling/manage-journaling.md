@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.reviewer: 
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Manage journaling
+# Manage journaling in Exchange Online
 
 Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. For more information about journaling, see [Journaling in Exchange Online](journaling.md).
 
@@ -41,9 +41,9 @@ This topic shows you how to perform basic tasks related to managing journaling i
 
 ## Create a journal rule
 
-### Use the EAC to create a journal rule
+### Use the classic EAC to create a journal rule
 
-1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Journal rules**, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 2. In **Journal rule**, provide a name for the journal rule and then compete the following fields:
 
@@ -80,7 +80,7 @@ To verify that you have successfully created the journal rule, do one of the fol
 
 ## View or modify a journal rule
 
-### Use the EAC to view or modify a journal rule
+### Use the classic EAC to view or modify a journal rule
 
 1. In the EAC, go to **Compliance management** \> **Journal rules**.
 
@@ -88,7 +88,7 @@ To verify that you have successfully created the journal rule, do one of the fol
 
 3. Double-click the rule you want to view or modify.
 
-4. In **Journal Rule**, modify the settings you want. For more information about the settings in this dialog box, see the procedure [Use the EAC to create a journal rule](#use-the-eac-to-create-a-journal-rule) earlier in this topic.
+4. In **Journal Rule**, modify the settings you want. For more information about the settings in this dialog box, see the procedure [Use the EAC to create a journal rule](#use-the-classic-eac-to-create-a-journal-rule) earlier in this topic.
 
 ### Use Exchange Online PowerShell to view or modify a journal rule
 
@@ -133,7 +133,7 @@ To verify that you have successfully modified a journal rule, do one of the foll
 > [!IMPORTANT]
 > When you disable a journal rule, the journaling agent will stop journaling messages targeted by that rule. While a journal rule is disabled, any messages that would have normally been journaled by the rule aren't journaled. Make sure that you don't compromise the regulatory or compliance requirements of your organization by disabling a journaling rule.
 
-### Use the EAC to enable or disable a journal rule
+### Use the classic EAC to enable or disable a journal rule
 
 1. In the EAC, go to **Compliance management** \> **Journal rules**.
 
@@ -167,11 +167,11 @@ To verify that you have successfully enabled or disabled a journal rule, do one 
 
 ## Remove a journal rule
 
-### Use the EAC to remove a journal rule
+### Use the classic EAC to remove a journal rule
 
 1. In the EAC, go to **Compliance management** \> **Journal rules**.
 
-2. In the list view, select the rule you want to remove, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+2. In the list view, select the rule you want to remove, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 ### Use Exchange Online PowerShell to remove a journal rule
 

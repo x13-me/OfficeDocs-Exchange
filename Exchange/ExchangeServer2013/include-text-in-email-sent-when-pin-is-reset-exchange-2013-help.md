@@ -4,6 +4,8 @@ TOCTitle: Include text with the email message sent when a PIN Is reset
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to add text to the email sent when a PIN is reset in Exchange Server
 ms.reviewer:
 ms.assetid: f7a4d775-a588-412f-ac2c-11ab1a5c67eb
 f1.keywords:
@@ -41,9 +43,9 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 ## Use the EAC to add text to the email message sent to users when their PIN is reset
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Mailbox Policy** page \> **Message text**, in the text box for **When a user's Outlook Voice Access PIN is reset**, enter the text you want to include in the email message that's sent when a user's PIN is reset.
 

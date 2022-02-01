@@ -1,13 +1,13 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 708c71d5-7d6a-40b8-966b-eed82bc0d186
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to configure mail flow rules in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online
+# Use a screen reader to configure mail flow rules in the Classic Exchange admin center in Exchange Online
 
-Using a screen reader and keyboard shortcuts, you can create mail flow rules (also known as transport rules) in Exchange Online in the Exchange admin center (EAC) to look for specific conditions in messages that pass through your organization and take action on them. The main difference between mail flow rules and Inbox rules you would set up in an email client application (such as Outlook) is that mail flow rules take action on messages while they're in transit as opposed to after the message is delivered. Mail flow rules also contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
+Using a screen reader and keyboard shortcuts, you can create mail flow rules (also known as transport rules) in Exchange Online in the Classic Exchange admin center ( Classic EAC) to look for specific conditions in messages that pass through your organization and take action on them. The main difference between mail flow rules and Inbox rules you would set up in an email client application (such as Outlook) is that mail flow rules take action on messages while they're in transit as opposed to after the message is delivered. Mail flow rules also contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
 
  **Note**: To learn more about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
 

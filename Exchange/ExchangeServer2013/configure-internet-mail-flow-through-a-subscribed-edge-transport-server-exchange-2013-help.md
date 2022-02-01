@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb738158(v=EXCHG.150)
 ms:contentKeyID: 61200301
 ms.reviewer: 
 manager: serdars
+description: How to configure internet mail flow through a subscribed Edge Transport server in Exchange
+ms.topic: article
 ms.author: serdars
 author: msdmaguire
 f1.keywords:
@@ -59,13 +61,13 @@ If you don't want to subscribe the Edge Transport server to an Active Directory 
 3. On the Mailbox server, to import the Edge Subscription file, use the following syntax.
 
     ```powershell
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    New-EdgeSubscription -FileData ([System.IO.File]::WriteAllBytes('<FileName>.xml', $file.FileData)) -Site <SiteName>
     ```
 
     This example imports the Edge Subscription file named EdgeSubscriptionInfo.xml from the folder D:\\Data, and subscribes the Edge Transport server to the Active Directory site named "Default-First-Site-Name".
 
     ```powershell
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    New-EdgeSubscription -FileData ([System.IO.File]::WriteAllBytes('D:\Data\EdgeSubscriptionInfo.xml', $file.FileData)) -Site "Default-First-Site-Name"
     ```
 
     > [!NOTE]

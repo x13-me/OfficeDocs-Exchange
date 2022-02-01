@@ -27,6 +27,10 @@ Exchange ActiveSync is an Exchange synchronization protocol that's optimized to 
 
 Standard encryption services add security to mobile communication with the server. You can configure Exchange ActiveSync to use Secure Sockets Layer (SSL) encryption for communications between the Exchange server and the mobile device.
 
+> [!NOTE]
+> 
+> Exchange ActiveSync does not support shared mailboxes or delegate access.
+
 ## Features in Exchange ActiveSync
 <a name="features"> </a>
 

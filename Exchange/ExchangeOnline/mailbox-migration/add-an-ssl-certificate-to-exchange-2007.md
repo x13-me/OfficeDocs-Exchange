@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d4524743-a63f-413f-b290-5f0d2f070392
 ms.reviewer: 
 description: Steps to add an SSL certificate to Exchange 2007,
-title: Add an SSL certificate to Exchange 2007
+title: Add an SSL certificate to Exchange 2007 for migration to Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -25,7 +25,7 @@ manager: serdars
 
 ---
 
-# Add an SSL certificate to Exchange 2007
+# Add an SSL certificate to Exchange 2007 for migration to Exchange Online
 
 Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or Office 365, and Exchange ActiveSync, require certificates to be configured on your Microsoft Exchange Server 2007 server. This article shows you how to configure an SSL certificate from a third-party certificate authority (CA).
 

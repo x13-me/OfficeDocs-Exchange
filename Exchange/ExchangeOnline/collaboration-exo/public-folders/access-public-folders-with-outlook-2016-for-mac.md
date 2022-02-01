@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: 'Summary: The most recent supported Exchange topologies that allow users to access public folders with Outlook 2016 for Mac.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: bc9b8226-bd8b-4edc-882b-4f19cfe118eb
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Accessing public folders with Outlook 2016 for Mac
+title: Accessing public folders with Outlook 2016 for Mac in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Accessing public folders with Outlook 2016 for Mac
+# Accessing public folders with Outlook 2016 for Mac in Exchange Online
 
  **Summary**: The most recent supported Exchange topologies that allow users to access public folders with Outlook 2016 for Mac.
 

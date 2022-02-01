@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to manage DLP policies in Microsoft Exchange 2013
 ms.assetid: ba81fabd-7f7f-4ef7-968f-ce851ada9d70
 f1.keywords:
 - NOCSH
@@ -50,7 +52,7 @@ You may need to view the rules and actions of an existing DLP policy that you ha
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
-2. Double-click one of the policies that appear in your list of policies, or highlight one item and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. Double-click one of the policies that appear in your list of policies, or highlight one item and click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **Edit DLP policy** page, click **Rules**.
 
@@ -75,17 +77,17 @@ You can change an existing DLP policy by modifying either the name of the policy
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
-2. Double-click one of the template-based policies that appear in your list of policies or highlight one item and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. Double-click one of the template-based policies that appear in your list of policies or highlight one item and click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **Edit DLP policy** page, click **Rules**.
 
-4. To change an existing rule, highlight the rule and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+4. To change an existing rule, highlight the rule and click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-5. To add a new blank rule that you can fully customize, click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+5. To add a new blank rule that you can fully customize, click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
-6. To add a rule about sender notification, blocking messages, or allowing overrides, click the arrow next to the **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) icon.
+6. To add a rule about sender notification, blocking messages, or allowing overrides, click the arrow next to the **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) icon.
 
-7. To remove a rule, highlight the rule and click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+7. To remove a rule, highlight the rule and click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 8. Click **Save** to finish modifying the policy and save your changes.
 
@@ -109,7 +111,7 @@ Alternatively, you can set the operational state or mode of a policy to **Test D
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
-2. Select the policy you want to remove in your list of policies, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+2. Select the policy you want to remove in your list of policies, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 ### Use the Shell to delete an existing DLP policy
 

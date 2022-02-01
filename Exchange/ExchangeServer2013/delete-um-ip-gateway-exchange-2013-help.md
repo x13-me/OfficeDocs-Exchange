@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to delete a Unified Messaging IP gateway in Exchange Server
 ms.assetid: 569d3741-67dd-4597-8d28-010011be0c12
 f1.keywords:
 - NOCSH
@@ -39,7 +41,7 @@ For additional tasks related to UM IP gateways, see [UM IP gateway procedures](u
 
 ## Use the EAC to delete a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to delete, and then click **Delete** ![Delete icon.](images/ITPro_EAC_DeleteIcon.gif).
 
 2. On the **Warning** page, click **Yes**.
 

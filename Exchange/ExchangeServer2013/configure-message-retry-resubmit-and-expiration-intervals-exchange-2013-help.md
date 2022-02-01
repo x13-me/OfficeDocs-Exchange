@@ -5,6 +5,8 @@ ms:assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998043(v=EXCHG.150)
 ms:contentKeyID: 50646232
 ms.reviewer: 
+ms.topic: article
+description: How to configure message retry, resubmit, and expiration intervals in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -78,7 +80,7 @@ The outbound connection failure retry interval specifies the retry interval for 
 
 ## Use the EAC to configure the transient failure retry attempts, the transient failure retry interval, or the outbound connection failure retry interval
 
-1. In the Exchange admin center (EAC), click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
+1. In the Exchange admin center (EAC), click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
 
 2. In the **Retries** section, enter a value for **Outbound connection failure retry interval (seconds)**, the **Transient failure retry interval (minutes)**, or the **Transient failure retry attempts**.
 
@@ -132,7 +134,7 @@ You can use the EAC or the Shell to configure the delay DSN notification timeout
 
 ## Use the EAC to configure the delay DSN message notification timeout interval
 
-1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
+1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
 
 2. In the **Notifications** section, enter a value for **Notify sender when message is delayed after (hours)**.
 
@@ -176,7 +178,7 @@ Set-TransportConfig -InternalDelayDSNEnabled $false
 
 ## Use the EAC to configure the message expiration timeout interval
 
-1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
+1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
 
 2. In the **Message expiration** section, enter a value for **Maximum time since submission (days)**.
 

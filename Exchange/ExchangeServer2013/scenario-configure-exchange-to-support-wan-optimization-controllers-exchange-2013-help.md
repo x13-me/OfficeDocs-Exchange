@@ -23,13 +23,13 @@ Consider the topology shown in the following figure. The assumption for this fou
 
 **Sample network topology with WOC devices**
 
-![Sample topology with WAN optimizers](images/Ee633456.52876869-52f1-4c0f-85b2-7a850643e8a1(EXCHG.150).gif "Sample topology with WAN optimizers")
+![Sample topology with WAN optimizers.](images/Ee633456.52876869-52f1-4c0f-85b2-7a850643e8a1(EXCHG.150).gif "Sample topology with WAN optimizers")
 
 In this topology, because Exchange 2013 uses TLS encryption for communication between Mailbox servers, the SMTP traffic that goes over the WAN link can't be compressed. Ideally, all SMTP traffic that goes over the WAN link should be unencrypted SMTP, while retaining TLS security within well-connected sites. Exchange 2013 gives you the option to disable TLS encryption for traffic between sites by configuring Receive connectors. Using this ability in Exchange 2013, you can configure an exception to the SMTP traffic between Central Office Site 1 and Branch Office 1, as shown in the following figure.
 
 **Preferred logical message flow**
 
-![Preferred logical message flow](images/Ee633456.e0fe62fa-1bad-4d43-9eaf-205a9b8d07e1(EXCHG.150).gif "Preferred logical message flow")
+![Preferred logical message flow.](images/Ee633456.e0fe62fa-1bad-4d43-9eaf-205a9b8d07e1(EXCHG.150).gif "Preferred logical message flow")
 
 The recommended configuration is to limit the non-encrypted SMTP traffic to only those messages that pass over the WAN link. Therefore, the intrasite Transport service communication between Mailbox servers in all sites, and the cross-site Transport service communication between Mailbox servers that don't involve Branch Office 1 should all be TLS encrypted.
 
@@ -75,7 +75,7 @@ The end result is shown in the following figure (with the remote IP address rang
 
 **Receive connector configuration**
 
-![Receive connector configuration](images/Ee633456.1821b3db-1f7a-4ae7-afbc-5c99e117f976(EXCHG.150).gif "Receive connector configuration")
+![Receive connector configuration.](images/Ee633456.1821b3db-1f7a-4ae7-afbc-5c99e117f976(EXCHG.150).gif "Receive connector configuration")
 
 ## Configure Hub sites
 
@@ -87,7 +87,7 @@ Configuring hub sites alone isn't sufficient to ensure that all traffic is unenc
 
 **IP site link costs for the sample topology**
 
-![IP site link costs for sample topology](images/Ee633456.099deb15-795a-417a-b6aa-925b3bedf8b4(EXCHG.150).gif "IP site link costs for sample topology")
+![IP site link costs for sample topology.](images/Ee633456.099deb15-795a-417a-b6aa-925b3bedf8b4(EXCHG.150).gif "IP site link costs for sample topology")
 
 In this case, the path from Branch Office 2 to Branch Office 1 that goes through the hub site has a total cost of 12 (6+6), whereas the cost of the direct path is 10. Therefore, none of the messages from Branch Office 2 to Branch Office 1 will go through Central Office Site 1 and therefore all of that traffic will still be TLS encrypted.
 
@@ -95,6 +95,6 @@ To avoid this issue, you need to designate an Exchange-specific cost that is hig
 
 **Sample topology configured with Exchange-specific IP site link costs**
 
-![Sample topology with Exchange costs](images/Ee633456.cd036fe0-c37d-479e-a4c1-235e17e90ca7(EXCHG.150).gif "Sample topology with Exchange costs")
+![Sample topology with Exchange costs.](images/Ee633456.cd036fe0-c37d-479e-a4c1-235e17e90ca7(EXCHG.150).gif "Sample topology with Exchange costs")
 
 For more information, see [Configure Exchange mail routing settings in Active Directory](configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help.md).

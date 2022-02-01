@@ -1,5 +1,5 @@
 ---
-title: "Completion of migration batch in Classic EAC"
+title: "Completion of migration batch in Classic EAC in Exchange Online"
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -14,7 +14,7 @@ description: Instructions for completion of migration batch in Classic EAC.
 ms.custom: seo-marvel-jun2021
 ---
 
-# Completion of migration batch in Classic EAC
+# Completion of migration batch in Classic EAC in Exchange Online
 
 In Classic EAC, when the migration batch has reached the state of **Synced**, it needs to be completed.
 
@@ -25,11 +25,11 @@ To complete the migration:
 
 1. Under **Start the batch**, fill in the names or aliases of anyone who should be notified about the batch progress. Then select how you want to begin and complete the batch. When done, click **new**.
 
-    ![start the batch](../media/gsuite-mig-17-eac-start.png)
+    ![start the batch.](../media/gsuite-mig-17-eac-start.png)
 
 1. After the batch status changes from **Syncing** to **Synced**, you need to complete the batch. 
 
-    ![batch syncing](../media/gsuite-mig-18-eac-syncing.png)
+    ![batch syncing.](../media/gsuite-mig-18-eac-syncing.png)
 
 The batch status will then be **Completed**.
 

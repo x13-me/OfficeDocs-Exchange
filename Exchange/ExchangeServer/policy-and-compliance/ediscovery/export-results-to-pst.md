@@ -48,7 +48,7 @@ manager: serdars
 
 2. In the list view, select the eDiscovery search you want to export the results of, and then click **Export to a PST file**.
 
-   ![Export to a PST File](../../media/ExportToPSTFile.gif)
+   ![Export to a PST File.](../../media/ExportToPSTFile.gif)
 
 3. In the **eDiscovery PST Export Tool** window, do the following:
 
@@ -84,4 +84,4 @@ manager: serdars
 
 - The name of the search is the first part of the filename for each file that is exported. Also, the date and time of the export request is appended to the filename of each PST file and the results log.
 
-- You can't use the PST export tool with accounts that require mult-factor authentication (MFA). Instead, you need to create an app password for the PST export tool. For instructions, see [Create an app password for Microsoft 365](https://support.microsoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183).
+- You can't use the PST export tool with accounts that require mult-factor authentication (MFA). Instead, you need to create an app password for the PST export tool. For instructions, see [Create an app password for Microsoft 365](https://support.microsoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183).

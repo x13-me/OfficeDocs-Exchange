@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: In-Place eDiscovery
+title: In-Place eDiscovery in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -17,7 +17,7 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# In-Place eDiscovery
+# In-Place eDiscovery in Exchange Online
 
 > [!IMPORTANT]
 >  As we continue to invest in different ways to search for mailbox content, we're announcing the retirement of In-Place eDiscovery in the Exchange admin center (EAC) in Exchange Online. Starting July 1, 2020, you won't be able to create new In-Place eDiscovery searches. But you'll still be able to manage In-Place eDiscovery searches in the EAC or by using the **Set-MailboxSearch** cmdlet in Exchange Online PowerShell. However, starting October 1, 2020, you won't be able to manage In-Place eDiscovery searches. You'll only be able to remove them in the EAC or by using the **Remove-MailboxSearch** cmdlet. Using In-Place eDiscovery in Exchange Server and Exchange hybrid deployments will still be supported. For more information about the retirement of In-Place eDiscovery in Exchange Online, see [Retirement of legacy eDiscovery tools](/microsoft-365/compliance/legacy-ediscovery-retirement).
@@ -42,7 +42,7 @@ Authorized users can perform an In-Place eDiscovery search by selecting the mail
 
 - **Export search results**: After search results are copied to a discovery mailbox, you can export them to a PST file.
 
-![Estimate, Preview, Copy, and Export Search Results](../../media/TA_Discovery_EstimatePreview.gif)
+![Estimate, Preview, Copy, and Export Search Results.](../../media/TA_Discovery_EstimatePreview.gif)
 
 ## Exchange Search
 <a name="search"> </a>
@@ -133,7 +133,7 @@ After you're satisfied with the quantity and quality of search results, you can 
 
 After search results are copied to a discovery mailbox, you can export the search results to a PST file.
 
-![Export eDiscovery Search Results to a PST File](../../media/TA_ExportSearchResullts.gif)
+![Export eDiscovery Search Results to a PST File.](../../media/TA_ExportSearchResullts.gif)
 
 After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. For more information, see [Export eDiscovery search results to a PST file](export-search-results.md).
 

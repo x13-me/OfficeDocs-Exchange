@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Use auditing reports to troubleshoot configuration issues in Exchange Server 
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 f1.keywords:
 - NOCSH
@@ -91,13 +93,13 @@ The easiest way to give users access is to add them to the Records Management ro
 
 1. Go to **Permissions** \> **Admin Roles**.
 
-2. In the list of role groups, click **Records Management**, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of role groups, click **Records Management**, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. Under **Members**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. Under **Members**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
-4. In the **Select Members** dialog box, select the user. You can search for a user by typing all or part of a display name, and then clicking **Search** ![Search icon](images/ITPro_EAC_.gif). You can also sort the list by clicking the **Name** or **Display Name** column headings.
+4. In the **Select Members** dialog box, select the user. You can search for a user by typing all or part of a display name, and then clicking **Search** ![Search icon.](images/ITPro_EAC_.gif). You can also sort the list by clicking the **Name** or **Display Name** column headings.
 
-5. Click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) and then click **OK** to return to the role group page.
+5. Click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) and then click **OK** to return to the role group page.
 
 6. Click **Save** to save the change to the role group.
 

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create an In-Place eDiscovery search in Exchange Server
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 f1.keywords:
 - NOCSH
@@ -44,7 +46,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
 1. Go to **Compliance management** \> **In-place eDiscovery & hold**.
 
-2. Click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+2. Click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 3. In **In-Place eDiscovery & Hold**, on the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
 
@@ -59,7 +61,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
    - **Filter based on criteria** Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types.
 
-     ![Configure eDiscovery Search Query](images/TA_MRM_SearchQuery.png)
+     ![Configure eDiscovery Search Query.](images/TA_MRM_SearchQuery.png)
 
      > [!NOTE]
      > The **From:** and **To/Cc/Bcc:** fields are connected by an **OR** operator in the search query that's created when you run the search. That means any message sent or received by any of the specified users (and matches the other search criteria) is included in the search results. > The dates are connected by an **AND** operator.
@@ -73,7 +75,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
      > [!IMPORTANT]
      > When placing mailboxes or items on In-Place Hold for legal purposes, it is generally recommended to hold items indefinitely and remove the hold when the case or investigation is completed.
 
-7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon](images/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane.
+7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon.](images/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane.
 
 ## Use the Shell to create an In-Place eDiscovery search
 
@@ -121,16 +123,16 @@ After you create an In-Place eDiscovery search, you can use the EAC to get an es
 
 2. In the list view, select the In-Place eDiscovery search, and then do one of the following:
 
-   - Click **Search** ![Search icon](images/ITPro_EAC_.gif) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
+   - Click **Search** ![Search icon.](images/ITPro_EAC_.gif) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
 
-     Search Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon](images/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane.
+     Search Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon.](images/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane.
 
   - Click **Preview search results** in the details pane to preview the results after the search estimate is completed. Selecting this option opens the **eDiscovery search preview** window. All messages returned from the mailboxes that were searched are displayed.
 
     > [!NOTE]
     > The mailboxes that were searched are listed in the right pane in the **eDiscovery search preview** window. For each mailbox, the number of items returned and the total size of these items is also displayed. All items returned by the search are listed in the right pane, and can be sorted by newest or oldest date. Items from each mailbox can't be displayed in the right pane by clicking a mailbox in the left pane. To view the items returned from a specific mailbox, you can copy the search results and view the items in the discovery mailbox.
 
-![Estimate or Preview Search Results](images/TA_Discovery_EstimatePreviewUI.gif)
+![Estimate or Preview Search Results.](images/TA_Discovery_EstimatePreviewUI.gif)
 
 ## Use the Shell to estimate search results
 

@@ -4,7 +4,9 @@ TOCTitle: Authorize calls for users in a dial plan
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
+description: How to enable dialing authorizations on a Unified Messaging dial plan
 ms.assetid: 7c7fd0c4-4001-408e-b352-c49bac9f78cc
 f1.keywords:
 - NOCSH
@@ -36,21 +38,21 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 ## Use the EAC to enable dialing authorizations on a UM dial plan for in-country/region dialing rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
+3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 
 ## Use the EAC to enable dialing authorizations on a UM dial plan for international dialing rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
+3. On the **UM Dial Plan** page \> **Dialing authorization**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 

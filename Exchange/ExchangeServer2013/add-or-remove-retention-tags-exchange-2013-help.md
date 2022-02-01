@@ -4,6 +4,8 @@ TOCTitle: Add retention tags to or remove retention tags from a retention policy
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to add or remove retention tags from a retention policy in Exchange
 ms.reviewer:
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 f1.keywords:
@@ -48,13 +50,13 @@ For more information about retention tags, see [Retention tags and retention pol
 
 1. Go to **Compliance management** \> **Retention policies**.
 
-2. In the list view, select the retention policy to which you want to add retention tags and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the retention policy to which you want to add retention tags and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. In **Retention Policy**, use the following settings:
 
-   - **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif): Click this button to add a retention tag to the policy.
+   - **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif): Click this button to add a retention tag to the policy.
 
-   - **Remove** ![Remove icon](images/ITPro_EAC_RemoveIcon.gif): Select a tag from the list, and then click this button to remove the tag from the policy.
+   - **Remove** ![Remove icon.](images/ITPro_EAC_RemoveIcon.gif): Select a tag from the list, and then click this button to remove the tag from the policy.
 
 ## Use the Shell to add or remove retention tags
 

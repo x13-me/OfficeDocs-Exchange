@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: how-to
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
 ms.reviewer: 
@@ -54,7 +54,7 @@ After you have setup two-step verification, you can also obtain an app password 
 
 5. On the **Set up your smart phone with an app password** page, under the **Update your Windows Phone 8 (or earlier) with an app password** list, note the 16-digit app password in the list:
 
-    ![Note the app password in step 4](../media/07b49868-71a5-48c4-856c-85ad7bff6625.png)
+    ![Note the app password in step 4.](../media/07b49868-71a5-48c4-856c-85ad7bff6625.png)
 
     > [!IMPORTANT]
     > Even though the page indicates this is for Windows Phone 8 (or earlier), **this list contains the app password your admin needs** to migrate you hotmail.com or outlook.com email to Office 365 for business. You will need this app password even if you set up two-step verification by using an Android or iPhone.
@@ -74,3 +74,5 @@ After you have setup two-step verification, you can also obtain an app password 
 9. You'll get a message that two-step verification is turned on. Print your new *recovery code* (this isn't your app password). If you ever need to recover, access to this account, this recovery code will help. It's a good idea to keep it tucked away in a safe place.
 
 10. Choose **Next**.
+
+After you turn on two-step verification and create an app password, continue with the [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md).

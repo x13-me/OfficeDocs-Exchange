@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: reference
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 76452210-0cee-409b-9bab-2d75e3cd572c
 ms.reviewer: 
@@ -46,31 +46,29 @@ For more information about the Exchange Online capabilities in your subscription
 **Notes**:
 
 - The shortcuts in this topic refer to the US keyboard layout. Keys for other layouts might not correspond exactly to the keys on a US keyboard.
-
 - If a shortcut requires pressing two or more keys at the same time, this topic separates the keys with a plus sign (+). If you have to press one key immediately after another, the keys are separated by a comma (,).
-
 - The EAC runs in your web browser, so it does not use accelerator keys or KeyTips. For example, pressing Alt moves the focus to the browser menu bar, and familiar shortcuts, like Ctrl+P (Print) and F1 (Help), run browser commands rather than EAC commands.
 
 To cycle through EAC regions on the screen, press Ctrl+F6 (forward) or Ctrl+Shift+F6 (backward). The Ctrl+F6 navigation cycle order is:
 
 - Left feature pane, or primary navigation links
-
 - Menu bar, or secondary navigation links
-
 - Toolbar
-
 - Main window list view
-
 - Details view in the right pane
-
 - Microsoft 365 or Office 365 app launcher
 
 ## Navigate in the EAC
 
-|**To do this**|**Press**|
-|:-----|:-----|
+<br>
+
+****
+
+|To do this|Press|
+|---|---|
 |Move among regions|Ctrl+F6 or Ctrl+Shift+F6|
 |Move among regions or individual controls|The Up Arrow key or the Down Arrow key **Note**: Tab and Shift+Tab aren't supported to move between EAC menu items.|
 |Move within lists from one item to another|The Up Arrow key, the Down Arrow key, Home, End, Page Up, or Page Down<br/> **Note**: You can also use the Up Arrow key, the Down Arrow key, the Left Arrow key, or the Right Arrow key to move between option buttons or within a group of check boxes.|
 |Select an item|Enter or the Spacebar|
 |Exit a menu or mode|Esc|
+|

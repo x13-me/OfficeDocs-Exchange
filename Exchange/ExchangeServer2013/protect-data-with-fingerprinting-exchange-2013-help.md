@@ -21,17 +21,17 @@ If your organization uses forms to collect sensitive information, users might tr
 
 ## Use the EAC to create a document fingerprint
 
-![Path to Document Fingerprinting in EAC highlighted](images/EAC_Compliance_Management_DLP.png)
+![Path to Document Fingerprinting in EAC highlighted.](images/EAC_Compliance_Management_DLP.png)
 
 1. In the Exchange admin center EAC, go to **compliance management** \> **data loss prevention**.
 
 2. Click **Manage document fingerprints**.
 
-3. On the document fingerprints page, click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif) to create a new document fingerprint.
+3. On the document fingerprints page, click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) to create a new document fingerprint.
 
 4. Give the document fingerprint a **Name** and **Description**. (The name you choose will appear in the sensitive information types list.)
 
-5. To upload a form, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+5. To upload a form, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 6. Choose a form, and click **Open**. (Make sure that the file you upload contains text, isn't password protected, and is in one of the file types that are supported in transport rules. For a list of supported file types, see [Use transport rules to inspect message attachments](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md#supported-file-types-for-transport-rule-content-inspection). Otherwise, you'll get an error when you try creating the fingerprint.) Repeat for any additional files you want to add to the document list for this document fingerprint. You can also add or remove files from this document fingerprint later if you want.
 
@@ -51,14 +51,14 @@ For more information about adding rules to a DLP policy, see the "Change a DLP p
 DLP uses classification rule packages to detect sensitive content in messages. To create a classification rule package based on a document fingerprint, use the **New-Fingerprint** and **New-DataClassification** cmdlets. Because the results of **New-Fingerprint** aren't stored outside the data classification rule, you always run **New-Fingerprint** and **New-DataClassification** or **Set-DataClassification** in the same PowerShell session. The following example creates a new document fingerprint based on the file C:\My Documents\Contoso Employee Template.docx. You store the new fingerprint as a variable so you can use it with the **New-DataClassification** cmdlet in the same PowerShell session.
 
 ```powershell
-$Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte
+$Employee_Template = [System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Employee Template.docx')
 $Employee_Fingerprint = New-Fingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
 ```
 
 Now, let's create a new data classification rule named "Contoso Employee Confidential" that uses the document fingerprint of the file C:\My Documents\Contoso Customer Information Form.docx.
 
 ```powershell
-$Employee_Template = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte
+$Customer_Form = [System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Customer Information Form.docx')
 $Customer_Fingerprint = New-Fingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
 New-DataClassification -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information."
 ```

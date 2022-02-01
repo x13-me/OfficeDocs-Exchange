@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can add specific prefix and suffix to the name of a distribution group when it's created. And you can also block specific words from being used. This helps you minimize the use of inappropriate words in group names.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Create a distribution group naming policy
+title: Create a distribution group naming policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Create a distribution group naming policy
+# Create a distribution group naming policy in Exchange Online
 
 A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can add specific prefix and suffix to the name of a distribution group when it's created. And you can also block specific words from being used. This helps you minimize the use of inappropriate words in group names.
 
@@ -101,7 +101,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
  
 ## Use the Classic EAC to create a group naming policy
 
-1. In the Classic EAC, select **Groups** \> **More** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
+1. In the Classic EAC, select **Groups** \> **More** ![More Options Icon.](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
 
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu.
 
@@ -119,11 +119,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
    After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
 
-6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif).
 
 7. Click **Blocked Words** to add or remove blocked words.
 
-   - To add a word to the list, type the word to block and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+   - To add a word to the list, type the word to block and click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
    - To remove a word from the list, select it and click **Remove**.
 

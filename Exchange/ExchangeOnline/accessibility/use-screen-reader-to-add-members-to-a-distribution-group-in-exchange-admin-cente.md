@@ -1,13 +1,13 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 86de703c-5c8e-477e-9a52-f466e5f66778
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to add members to a distribution group in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to add members to a distribution group in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to add members to a distribution group in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to add members to a distribution group in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to add members to a distribution group in the Exchange admin center in Exchange Online
+# Use a screen reader to add members to a distribution group in the Classic Exchange admin center in Exchange Online
 
-Using a screen reader with the Exchange admin center (EAC) in Exchange Online, you can add and remove members of a distribution group.
+Using a screen reader with the Classic Exchange admin center (Classic EAC) in Exchange Online, you can add and remove members of a distribution group.
 
 ## Get started
 

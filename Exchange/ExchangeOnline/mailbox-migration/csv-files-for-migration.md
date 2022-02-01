@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b79fb81d-d6f4-4385-867e-7bdd0238366e
 ms.reviewer: 
 description: 'You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the New-MigrationBatch cmdlet in Exchange Online PowerShell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:'
-title: CSV files for mailbox migration
+title: CSV files for mailbox migration in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -24,7 +24,7 @@ manager: serdars
 
 ---
 
-# CSV files for Mailbox migration
+# CSV files for Mailbox migration in Exchange Online
 
 You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the [New-MigrationBatch](/powershell/module/exchange/New-MigrationBatch) cmdlet in Exchange Online PowerShell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:
 

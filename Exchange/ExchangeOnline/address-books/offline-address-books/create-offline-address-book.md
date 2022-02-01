@@ -2,11 +2,11 @@
 ms.localizationpriority: medium
 description: Admins can learn how to create offline address books (OABs) in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b57bb4ce-5b6e-4702-a2f8-04bf3898a861
 ms.reviewer: 
-title: Create an offline address book
+title: Create an offline address book in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Create an offline address book
+# Create an offline address book in Exchange Online
 
 An offline address book (OAB) is a downloadable address list collection that Outlook users can access while disconnected from Exchange Online. An OAB allows Outlook users to access the information within the specified address lists while disconnected from Exchange Online. Admins can decide which address lists are made available to users who work offline.
 

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Dial codes, number prefixes, and number formats in Exchange Server 
 ms.assetid: 26d61e55-f8dd-4d25-81f1-78a87cf88bad
 f1.keywords:
 - NOCSH

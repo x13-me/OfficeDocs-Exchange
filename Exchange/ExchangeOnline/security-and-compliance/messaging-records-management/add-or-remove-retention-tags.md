@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 description: You can add retention tags to a retention policy when the policy is created or any time thereafter. For details about how to create a retention policy, including how to simultaneously add retention tags, see Create a Retention Policy.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Add retention tags to or remove retention tags from a retention policy
+title: Add retention tags to or remove retention tags from a retention policy in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,10 @@ manager: serdars
 
 ---
 
-# Add retention tags to or remove retention tags from a retention policy
+# Add retention tags to or remove retention tags from a retention policy in Exchange Online
+
+> [!IMPORTANT]
+> Please refer to the [Microsoft 365 security center](https://security.microsoft.com/homepage) and the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) for Exchange security and compliance features. They are no longer available in the new [Exchange admin center](https://admin.exchange.microsoft.com).
 
 > [!NOTE]
 > To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use [retention policies and retention labels](/microsoft-365/compliance/retention) from the [Microsoft 365 compliance center](https://compliance.microsoft.com), instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.
@@ -58,13 +61,13 @@ For more information about retention tags, see [Retention tags and retention pol
 
 1. Go to **Compliance management** \> **Retention policies**.
 
-2. In the list view, select the retention policy to which you want to add retention tags and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the retention policy to which you want to add retention tags and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. In **Retention Policy**, use the following settings:
 
-   - **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) Click this button to add a retention tag to the policy.
+   - **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) Click this button to add a retention tag to the policy.
 
-   - **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif) Select a tag from the list, and then click this button to remove the tag from the policy.
+   - **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif) Select a tag from the list, and then click this button to remove the tag from the policy.
 
 ## Use Exchange Online PowerShell to add or remove retention tags
 

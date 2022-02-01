@@ -23,7 +23,7 @@ You can specify whether Transport Neutral Encapsulation Format (TNEF) should be 
 
 When you configure TNEF conversion options for a remote domain, those TNEF conversion options are applied to all messages sent to that domain.
 
-- For Exchange Online Dedicated, you use the Exchange admin center (EAC) to set TNEF conversion options for a remote domain at **Mail flow** \> **Remote domains** \> **Edit** (![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")) \> **Use Exchange rich-text format**.
+- For Exchange Online Dedicated, you use the Exchange admin center (EAC) to set TNEF conversion options for a remote domain at **Mail flow** \> **Remote domains** \> **Edit** (![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon")) \> **Use Exchange rich-text format**.
 
 - For Exchange Online and Exchange 2013, you use the *TnefEnabled* parameter on the **Set-RemoteDomain** cmdlet to set TNEF conversion options for a remote domain.
 

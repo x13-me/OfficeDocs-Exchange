@@ -4,7 +4,9 @@ TOCTitle: Configure OAuth authentication between Exchange and Exchange Online or
 ms:assetid: f703e153-98e2-4268-8a6e-07a86b0a1d22
 ms:mtpsurl: https://technet.microsoft.com/library/Dn594521(v=EXCHG.150)
 ms:contentKeyID: 61200240
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: How to configure OAuth authentication between Exchange and Exchange Online organizations in Exchange Server 
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -106,7 +108,13 @@ In this step, you have to run a PowerShell script on the Exchange server directl
 
 ### Step 4: Upload the on-premises authorization certificate to Azure Active Directory Access Control Service (ACS)
 
-Next, you have to use Windows PowerShell to upload the on-premises authorization certificate that you exported in the previous step to Azure Active Directory Access Control Services (ACS). To do this, the Azure Active Directory Module for Windows PowerShell cmdlets has to be installed. If it's not installed, go to <https://aka.ms/aadposh> to install the Azure Active Directory Module for Windows PowerShell. Complete the following steps after the Azure Active Directory Module for Windows PowerShell is installed.
+Next, you have to use Windows PowerShell to upload the on-premises authorization certificate that you exported in the previous step to Azure Active Directory Access Control Services (ACS). To do this, the Azure Active Directory Module for Windows PowerShell cmdlets has to be installed. If it's not installed, execute the following command in a Powershell executed as adminsitrator to install the Azure Active Directory Module for Windows PowerShell. 
+   
+   ```powershell
+   Install-Module -Name MSOnline
+   ```   
+   
+Complete the following steps after the Azure Active Directory Module for Windows PowerShell is installed.
 
 1. Click the **Azure Active Directory Module for Windows PowerShell** shortcut to open a Windows PowerShell workspace that has the Azure AD cmdlets installed. All commands in this step will be run using the Windows PowerShell for Azure Active Directory console.
 

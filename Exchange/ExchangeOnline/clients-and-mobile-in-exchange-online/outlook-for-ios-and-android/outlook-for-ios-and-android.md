@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android.'
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b5cf21f4-57d2-4bfc-abc6-1f0689826af8
 title: Outlook for iOS and Android in Exchange Online
@@ -40,7 +40,7 @@ The Microsoft 365- or Office 365-based architecture provides the following benef
 
 Within the Microsoft 365- or Office 365-based architecture, Outlook for iOS and Android uses the native Microsoft sync technology as the protocol for data synchronization.
 
-![new synch image](../../media/newsync.png)
+![new synch image.](../../media/newsync.png)
 
 The native Microsoft sync technology offers several benefits:
 

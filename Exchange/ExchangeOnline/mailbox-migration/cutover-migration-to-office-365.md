@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 9496e93c-1e59-41a8-9bb3-6e8df0cd81b4
 ms.reviewer: 
 description: "As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:"
-title: Migrate email using the Exchange cutover method
+title: Migrate email to Exchange Online using the Exchange cutover method in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -25,7 +25,7 @@ manager: serdars
 
 ---
 
-# Migrate email using the Exchange cutover method
+# Migrate email to Exchange Online using the Exchange cutover method
 
 As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:
 
@@ -63,7 +63,7 @@ After your on-premises and Microsoft 365 or Office 365 organizations are set up 
 
 The main steps you perform for a cutover migration are shown in the following illustration.
 
-![Process for performing a cutover email migration to Microsoft 365 or Office 365](media/a607954b-1ab6-40e6-becc-d61ad5a35d69.png)
+![Process for performing a cutover email migration to Microsoft 365 or Office 365.](media/a607954b-1ab6-40e6-becc-d61ad5a35d69.png)
 
 1. The administrator communicates upcoming changes to users and verifies domain ownership with the domain registrar.
 
@@ -147,7 +147,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 3. On the **Domains-** page, click **Add domain** to start the domain wizard.
 
-    ![Choose Add domain](media/b0267b62-3f20-4c76-be75-40f9c2274433.png)
+    ![Choose Add domain.](media/b0267b62-3f20-4c76-be75-40f9c2274433.png)
 
 4. On the **Add a domain** page, type in the domain name (for example, Contoso.com) you use for your on-premises Exchange organization, and then choose **Next**.
 
@@ -173,11 +173,11 @@ A migration endpoint contains the settings and credentials needed to connect the
 
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
-3. Choose **More** ![More icon](media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+3. Choose **More** ![More icon.](media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
    ![Select Migration endpoint.](media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
 
-4. On the **Migration endpoints** page, choose **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. On the **Migration endpoints** page, choose **New** ![New icon.](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
 
 5. On the **Select the migration endpoint type** page, choose **Outlook Anywhere** \> **Next**.
 
@@ -215,9 +215,9 @@ In a cutover migration, on-premises mailboxes are migrated to Microsoft 365 or O
 
 1. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
-2. Choose **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+2. Choose **New** ![New icon.](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
 
-   ![Select Migrate to Exchange Online](media/d5af665e-498d-4f18-8761-fc69897b389d.png)
+   ![Select Migrate to Exchange Online.](media/d5af665e-498d-4f18-8761-fc69897b389d.png)
 
 3. On the **Select a migration type** page, choose **Cutover migration** \> **next**.
 
@@ -247,7 +247,7 @@ If you created a migration batch and configured it to be started manually, you c
 
 3. If a migration batch starts successfully, its status on the migration dashboard changes to **Syncing**.
 
-   ![Migration batch is syncing](media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
+   ![Migration batch is syncing.](media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 ### Verify the synchronization worked
 

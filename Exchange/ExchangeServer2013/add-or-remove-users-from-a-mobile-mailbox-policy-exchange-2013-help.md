@@ -5,9 +5,11 @@ ms:assetid: 4ca8e395-c074-4165-b788-16fae3e2ccab
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997929(v=EXCHG.150)
 ms:contentKeyID: 49318497
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to add or remove users from a mobile mailbox policy in Exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -63,7 +65,7 @@ In the Shell, run the following command.
 Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales"
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully changed a user's mobile device mailbox policy, do one of the following:
 
@@ -106,7 +108,7 @@ Get-Mailbox | where {$_.CustomAttribute1 -match "Manager"} | Set-CASMailbox -act
 > [!NOTE]
 > You can substitute <CODE>CustomAttribute1</CODE> for any of the properties on the <STRONG>Get-Mailbox</STRONG> object. To view the full list, type: <CODE>Get-Mailbox username |fl</CODE>.
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you've successfully changed a user's mobile device mailbox policy, do one of the following:
 

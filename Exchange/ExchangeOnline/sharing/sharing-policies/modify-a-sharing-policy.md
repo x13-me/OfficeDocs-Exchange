@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Sharing policies control how your users share their calendars with people outside your organization. You may want to change some sharing policy properties, such as changing sharing rules, changing the free/busy access level, temporarily disabling a sharing policy, or removing a sharing policy entirely.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: a494c4d2-9316-44ce-9a39-268398378f08
 ms.reviewer: 
@@ -37,9 +37,9 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 
 2. Go to **organization** \> **sharing**.
 
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
-4. In **sharing policy**, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+4. In **sharing policy**, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 5. In **sharing rule**, change the settings such as the domain you want to share information with and the sharing level for calendars. Click **save** to update the rule.
 
@@ -52,7 +52,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 
 2. Go to **organization** \> **sharing**.
 
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 4. In **sharing policy**, select the **Make this policy my default sharing policy** check box.
 
@@ -79,7 +79,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
 
 2. Go to **organization** \> **sharing**.
 
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 4. In the warning, click **yes** to delete the sharing policy.
 
