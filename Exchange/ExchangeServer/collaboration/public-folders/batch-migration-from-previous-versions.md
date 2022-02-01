@@ -1,25 +1,25 @@
 ---
+title: Use batch migration to migrate Exchange 2010 public folders to Exchange 2016 or Exchange 2019
 ms.localizationpriority: medium
 monikerRange: exchserver-2016
-ms.author: serdars
+ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: joannehendrickson
 ms.prod: exchange-server-it-pro
-ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms.reviewer:
 ms.collection: exchange-server
-description: 'Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016.'
+description: 'Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016 or Exchange 2019.'
 f1.keywords:
 - NOCSH
 audience: ITPro
-title: Use batch migration to migrate Exchange 2010 public folders to Exchange 2016
+
 
 ---
 
-# Use batch migration to migrate Exchange 2010 public folders to Exchange 2016
+# Use batch migration to migrate Exchange 2010 public folders to Exchange 2016 or Exchange 2019
 
-Migrate your public folders from Exchange Server 2010 SP3 RU8 to Exchange Server 2016 within the same forest.
+Migrate your public folders from Exchange Server 2010 SP3 RU8 to Exchange Server 2016or Exchange 2019 within the same forest.
 
 We refer to the Exchange 2010 SP3 RU8 or later server as the *legacy Exchange server*.
 
