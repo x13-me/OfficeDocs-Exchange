@@ -19,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Email messages and attachments increasingly contain business critical information such as product specifications, business strategy documents, and financial data, or personally identifiable information (PII) such as contact details, social security numbers, credit card numbers, and employee records. There are a number of industry-specific and local regulations in many parts of the world that govern the collection, storage, and disclosure of PII.
+Email messages and attachments increasingly contain business-critical information such as product specifications, business strategy documents, and financial data, or personal information, such as contact details, social security numbers, credit card numbers, and employee records. There are a number of industry-specific and local regulations in many parts of the world that govern the collection, storage, and disclosure of personal information.
 
 To help protect sensitive information, organizations create messaging policies that provide guidelines about how to handle this information. In Microsoft Exchange Server 2013, you can use transport protection rules to implement these messaging policies by inspecting message content, encrypting sensitive email content, and using rights management to control access to the content.
 
@@ -45,13 +45,13 @@ For more information about creating AD RMS templates, see [AD RMS Rights Policy
 
 ## Automatic protection using transport protection rules
 
-Messages containing business critical information or PII can be identified by using a combination of transport rule conditions, including regular expressions to identify text patterns such as social security numbers. Organizations require different levels of protection for sensitive information. Some information may be restricted to employees, contractors, or partners; while other information may be restricted only to full-time employees. The desired level of protection can be applied to messages by applying an appropriate rights policy template. For example, users may mark messages or email attachments as Company Confidential. As illustrated in the following figure, you can create a transport protection rule to inspect message content for the words "Company Confidential", and automatically IRM-protect the message.
+Messages containing business-critical information or personal information can be identified by using a combination of transport rule conditions, including regular expressions to identify text patterns such as social security numbers. Organizations require different levels of protection for sensitive information. Some information may be restricted to employees, contractors, or partners; while other information may be restricted only to full-time employees. The desired level of protection can be applied to messages by applying an appropriate rights policy template. For example, users may mark messages or email attachments as Company Confidential. As illustrated in the following figure, you can create a transport protection rule to inspect message content for the words "Company Confidential", and automatically IRM-protect the message.
 
 For more information about creating transport rules to enforce rights protection, see [Create a Transport Protection Rule](create-a-transport-protection-rule-exchange-2013-help.md).
 
 ## Persistent protection of email attachments
 
-Users send business critical information and PII in email attachments using common Microsoft Office file formats such as Microsoft Office Word, Excel, and PowerPoint. All of these file formats support persistent protection via IRM, and you can make sure that the business critical information and PII in these documents are properly protected. Transport protection rules apply the same protection to email messages and attachments in supported file formats.
+Users send business-critical information and personal information in email attachments using common Microsoft Office file formats such as Microsoft Office Word, Excel, and PowerPoint. All of these file formats support persistent protection via IRM, and you can make sure that the business-critical information and personal information in these documents are properly protected. Transport protection rules apply the same protection to email messages and attachments in supported file formats.
 
 ## Transport rules agent and encryption agent
 
