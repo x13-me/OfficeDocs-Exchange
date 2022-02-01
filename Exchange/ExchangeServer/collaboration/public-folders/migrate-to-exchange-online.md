@@ -1,8 +1,9 @@
 ---
+title: Batch migrate Exchange Server public folders to Microsoft 365 or Office 365
 ms.localizationpriority: medium
-ms.author: serdars
+ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 ms.prod: exchange-server-it-pro
 ms.collection:
@@ -12,7 +13,6 @@ description: 'Summary: This article tells you how to move modern public folders 
 f1.keywords:
 - NOCSH
 audience: ITPro
-title: Batch migrate Exchange Server public folders to Microsoft 365 or Office 365
 
 ---
 
