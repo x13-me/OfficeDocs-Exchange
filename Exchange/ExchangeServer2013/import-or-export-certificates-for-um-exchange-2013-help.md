@@ -95,5 +95,5 @@ This example does the following:
 This example imports a certificate from the d:\\certificates\\exchange\\SelfSignedUMCert.pfx certificate file after you enter a username and password.
 
 ```powershell
-Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
+Import-ExchangeCertificate -FileData ([System.IO.File]::ReadAllBytes('D:\certificates\exchange\SelfSignedUMCert.pfx')) -Password:(Get-Credential).password
 ```

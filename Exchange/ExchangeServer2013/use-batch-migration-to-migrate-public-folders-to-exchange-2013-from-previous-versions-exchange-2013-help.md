@@ -320,7 +320,7 @@ The steps for migrating Exchange 2007 public folders are different from the step
 2. On the Exchange 2013 server, run the following command:
 
    ```powershell
-   New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount
+   New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData ([System.IO.File]::ReadAllBytes('<Folder to mailbox map path>')) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount
    ```
 
 3. Start the migration using the following command:
@@ -334,7 +334,7 @@ The steps for migrating Exchange 2007 public folders are different from the step
 1. On the Exchange 2013 server, run the following command.
 
    ```powershell
-   New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications>
+   New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData ([System.IO.File]::ReadAllBytes('<Folder to mailbox map path>')) -NotificationEmails <email addresses for migration notifications>
    ```
 
    The *NotificationEmails* parameter is optional.

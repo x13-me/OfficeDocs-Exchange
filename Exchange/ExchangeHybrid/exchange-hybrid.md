@@ -79,7 +79,7 @@ A hybrid deployment involves several different services and components:
    > We don't support the installation of Exchange servers running the Mailbox or Client Access server roles in a perimeter network.
 
    > [!IMPORTANT]
-   > We recommend using the Exchange Server with the latest CU and SU for configuring Hybrid.
+   > Hybrid deployments require the latest Cumulative Update (CU) or Update Rollup (RU) that's available for your version of Exchange. We recommend using the Exchange Server with the latest CU and SU for configuring Hybrid. If you can't install the latest update, the immediately previous release is also supported.
 
 - **Office 365 or Microsoft 365**: Several Office 365 and Microsoft 365 service subscriptions include an Exchange Online organization. Organizations configuring a hybrid deployment need to purchase a license for each mailbox that's migrated to or created in the Exchange Online organization.
 
