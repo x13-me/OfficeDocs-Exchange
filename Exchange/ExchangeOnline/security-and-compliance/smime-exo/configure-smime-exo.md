@@ -69,7 +69,7 @@ The virtual certificate collection is responsible for validating S/MIME certific
 2. Import the certificates from the SST file into Exchange Online by running the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
    ```PowerShell
-   Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
+   Set-SmimeConfig -SMIMECertificateIssuingCA ([System.IO.File]::ReadAllBytes('C:\My Documents\Exported Certificate Store.sst'))
    ```
 
    For detailed syntax and parameter information, see [Set-SmimeConfig](/powershell/module/exchange/set-smimeconfig).
