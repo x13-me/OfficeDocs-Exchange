@@ -22,6 +22,9 @@ manager: serdars
 
 In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your organization.
 
+> [!NOTE]
+> System-generated messages such as non-delivery reports (NDRs) do not get processed by your organization's mail flow rules (or transport rules).
+
 Mail flow rules are similar to the Inbox rules that are available in Outlook and Outlook on the web (formerly known as Outlook Web App). The main difference is mail flow rules take action on messages while they're in transit, not after the message is delivered to the mailbox. Mail flow rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
 
 This article explains the [components](#mail-flow-rule-components) of mail flow rules, and [how they work](#how-mail-flow-rules-are-applied-to-messages).
@@ -89,7 +92,7 @@ The following table describes the rule properties that are available in mail flo
 
 ## How mail flow rules are applied to messages
 
-All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. Rules are processed in the order listed on the **Mail flow** \> **Rules** page in EAC, or based on the corresponding _Priority_ parameter value in the PowerShell.
+All messages (except NDRs) that flow through your organization are evaluated against the enabled mail flow rules in your organization. Rules are processed in the order listed on the **Mail flow** \> **Rules** page in EAC, or based on the corresponding _Priority_ parameter value in the PowerShell.
 
 Each rule also offers the option of stopping processing more rules when the rule is matched. This setting is important for messages that match the conditions in multiple mail flow rules (which rule do you want applied to the message? All? Just one?).
 
