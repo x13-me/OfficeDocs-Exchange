@@ -19,8 +19,8 @@ ms.custom: seo-marvel-jun2021
 The following procedures must be performed before you start the process of Google Workspace migration in the order mentioned:
 
 1. [Create a subdomain for mail routing to Microsoft 365 or Office 365](#create-a-subdomain-for-mail-routing-to-microsoft-365-or-office-365)
-1. [Create a subdomain for mail routing to your Google Workspace domain](#create-a-subdomain-for-mail-routing-to-your-google-workspace-domain)
-1. [Provision users in Microsoft 365 or Office 365](#provision-users-in-microsoft-365-or-office-365)
+2. [Create a subdomain for mail routing to your Google Workspace domain](#create-a-subdomain-for-mail-routing-to-your-google-workspace-domain)
+3. [Provision users in Microsoft 365 or Office 365](#provision-users-in-microsoft-365-or-office-365)
 
 ## Create a subdomain for mail routing to Microsoft 365 or Office 365
 
@@ -68,6 +68,43 @@ The following procedures must be performed before you start the process of Googl
 
    > [!IMPORTANT]
    > If you are using non-default Transport settings in your Microsoft 365 or Office 365 organization, you should check that mail flow will work from Office 365 to Google Workspace. Be sure that either your default Remote Domain ("\*") has Automatic Forwarding enabled, or that there is a new Remote Domain for your Google Workspace routing domain (e.g. "gsuite.fabrikaminc.net") that has Automatic Forwarding enabled.
+
+## Check Google Cloud Platform Permissions
+
+[Automated scenario](https://docs.microsoft.com/en-us/exchange/mailbox-migration/automated-migration-neweac) requires the Google Migration Admin be able to perform the steps below:
+ 1. Create a Google Workspace project
+ 2. Create a Google Workspace service account in the project
+ 3. Create a service key
+ 4. Enable all APIs - Gmail, Calendar, Contacts
+
+Google Admin needs the following permissions to complete these steps:
+- resourcemanager.projects.create
+- iam.ServiceAccounts.create
+
+The most secure way to achive this is to assign the following roles to the Migration Admin:
+- Projector Creator
+- Create Service Accounts
+
+Here is how you do it:
+1. Navigate to https://console.developers.google.com 
+2. Expand humburger menu on the upper right hand corner 
+   
+   ![image](https://user-images.githubusercontent.com/5260172/152607089-76d8f272-3bd5-4f19-9e23-4fca882a789d.png)
+   
+3. Press **IAM & Admin**
+4. Click **ADD** button on the top of the page
+   
+   ![image](https://user-images.githubusercontent.com/5260172/152607681-7a2f22b3-f606-4188-a9c4-c9922d244b0a.png) 
+   
+5. Enter your Google Migration Admin login followed by roles as per the screenshot below:
+   
+   ![image](https://user-images.githubusercontent.com/5260172/152609652-c2402f5a-2538-48d5-89a5-d8877f45af43.png)
+
+6. Save changes
+
+ > [!NOTE]
+ > Please note it might take up to 15 minutes to propagate role assignment changes accross thhe Globe
+
 
 ## Provision users in Microsoft 365 or Office 365
 
