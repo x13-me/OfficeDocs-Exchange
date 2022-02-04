@@ -22,19 +22,6 @@ description: "Admins can learn about non-delivery reports (also known as NDRs or
 
 When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email to let you know. The email you receive is a delivery status notification, also known as a DSN or bounce message. The most common type is called a non-delivery report (NDR) and they tell you that a message wasn't delivered. Non-delivery can be caused by something as simple as a typo in an email address. NDRs include an error code that indicates why your email wasn't delivered, solutions to help you get your email delivered, a link to more help on the web, and technical details for administrators. Find out [What's included in an NDR?](#whats-included-in-an-ndr).
 
-## Run non-delivery report diagnostics
-
-> [!NOTE]
-> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
-
-To learn more about the description of the non-delivery report (NDR), possible cause, and solution by running the following NDR diagnostic, you can run an automated diagnostic. Make sure you get the NDR code or status code from the undeliverable/non-delivery report. 
-
-To run the diagnostic check, select the following button: 
-
-> [!div class="nextstepaction"]
-> [Run Tests: NDR diagnostics](https://aka.ms/PillarEmailNDR)
-
-A flyout page opens in the Microsoft 365 admin center. Paste the NDR code or error message, and then select **Run Tests**.
 
 ## Find my NDR code and get help delivering my email
 
@@ -100,7 +87,7 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |5.7.508|`Access denied, [$SenderIPAddress] has exceeded permitted limits within $range range`|The sender's IPv6 range has attempted to send too many messages in too short a time period.|Not applicable|
 |5.7.509|`Access denied, sending domain [$SenderDomain] does not pass DMARC verification`|The sender's domain in the **5322.From** address does not pass DMARC.|Not applicable|
 |5.7.510|`Access denied, [contoso.com] does not accept email over IPv6`|The sender is attempting to transmit a message to the recipient over IPv6, but the recipient does not accept email messages over IPv6.|Not applicable|
-|5.7.511|`Access denied, banned sender`|The account you are attempting to send from has been banned.|For more information, see [Removing a user from the Restricted Users portal after sending spam email](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).|
+|5.7.511|`Access denied, banned sender`|The IP that you are attempting to send from has been banned.|To delist the address, email delist@messaging.microsoft.com and provide the full NDR code and IP address to delist.|
 |5.7.512|`Access denied, message must be RFC 5322 section 3.6.2 compliant`|Message was sent without a valid "From" email address.|Office 365 only. Each message must contain a valid email address in the "From" header field. Proper formatting of this address includes angle brackets around the email address, for example, \<security@contoso.com\>. Without this address Microsoft 365 or Office 365 will reject the message.|
 |5.7.513|`Service unavailable, Client host [$ConnectingIP] blocked by $recipientDomain using Customer Block list (AS16012607)`|The recipient domain has added your sending IP address to its custom blocklist.|The domain that received the email has blocked your sender's IP address. If you think your IP address has been added to the recipient domain's custom blocklist in error, you need to contact them directly and ask them to remove it from the blocklist.|
 |5.7.606-649|`Access denied, banned sending IP [IP1.IP2.IP3.IP4]`|The IP that you are attempting to send from has been banned.|Verify that you are following the [best practices for email deliverability](/dynamics365/marketing/get-ready-email-marketing), and ensure your IPs' reputations have not been degraded as a result of compromise or malicious traffic. If you believe you are receiving this message in error, you can use the self-service portal to request to be removed from this list. <p> For more information, see [Use the delist portal to remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).|
@@ -108,6 +95,19 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |5.7.750|`Service unavailable. Client blocked from sending from unregistered domains`|A suspicious number of messages from unprovisioned domains is coming from this tenant.|Add and validate any and all domains that you use to send email from Microsoft 365 or Office 365. <p> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
 |n/a|`The message can't be submitted because the sender's submission quota was exceeded`|The user account has exceeded the recipient rate limit (10,000 recipients per day).|The account has likely been compromised. For more information, see [Fix email delivery issues for error 'the sender's submission quota was exceeded' in Exchange Online](fix-error-for-submission-quota-exceeded-in-exchange-online.md).|
 
+## Run non-delivery report diagnostics
+
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
+To learn more about the description of the non-delivery report (NDR), possible cause, and solution by running the following NDR diagnostic, you can run an automated diagnostic. Make sure you get the NDR code or status code from the undeliverable/non-delivery report. 
+
+To run the diagnostic check, select the following button: 
+
+> [!div class="nextstepaction"]
+> [Run Tests: NDR diagnostics](https://aka.ms/PillarEmailNDR)
+
+A flyout page opens in the Microsoft 365 admin center. Paste the NDR code or error message, and then select **Run Tests**.          
 
 ## What's included in an NDR?
 
