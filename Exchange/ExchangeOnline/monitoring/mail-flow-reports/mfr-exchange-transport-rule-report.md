@@ -16,7 +16,7 @@ description: "Admins can learn how to use the Exchange transport rule report to 
 # Exchange transport rule report in the new Exchange admin center in Exchange Online
 
 > [!NOTE]
-> This article describes features that are currently in Preview, are not available in all organizations, and are subject to change.
+> Currently, the Exchange transport rule report is not available in Microsoft 365 GCC or GCC High.
 
 The **Exchange transport rule** report in the new Exchange admin center (new EAC) displays information on messages that were affected by mail flow rules (also known as transport rules).
 
