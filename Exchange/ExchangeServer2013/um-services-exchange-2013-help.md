@@ -5,6 +5,8 @@ ms:assetid: f36835f2-1e5f-4e5a-88bc-0672af1e3498
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125191(v=EXCHG.150)
 ms:contentKeyID: 49315560
 ms.reviewer: 
+ms.topic: article
+description: Unified Messaging services in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
