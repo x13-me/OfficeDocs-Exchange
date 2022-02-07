@@ -33,33 +33,33 @@ There are two sections to this report:
 
 1. A heatmap that indicates:
 
-    - When a mailbox exceeded their receiving limit and can no longer receive mail until the limit is reset to 1 hour after the threshold is exceeded.
+    - When a mailbox exceeded their receiving limit and can no longer receive mail until the limit is reset, which occurs 1 hour after the threshold is exceeded.
 
       1. **Hot limit**: Mailboxes won't receive any mail from the Internet or on-premises senders if the overall receiving limit is exceeded.
 
-      2. **Sender-recipient pair limit**: Mailboxes won't receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
+      2. **Sender-recipient pair (SRP) limit**: Mailboxes won't receive any mail from a specific sender, if the mailbox has received too many messages from the sender.
 
-    - **Warm limit**: When a mailbox is at risk, which means they haven't exceeded their limit but are receiving large volumes of messages regularly.
+    - **Warm limit**: When a mailbox is at risk, which means they haven't exceeded their limit yet but are receiving large volumes of messages regularly.
 
 2. A table that shows, in the selected time window:
 
+   - The date
+   
    - The impacted mailbox
    
-   - Whether the mailbox has exceeded the limit or is at risk
+   - The limit type (Hot, SRP, or Warm) based on the user’s filter selection
    
-   - The limit type (**Hot**, **Sender-recipient pair**, or **Warm**)
+   - The number of hours a mailbox has exceeded the limit
+   
+   - The number of hours a mailbox is at risk (Warm)
    
    - The limit value, based on limit type
-
-   - The number of hours a mailbox has exceeded the limit
-
-   - The number of hours a mailbox is at risk
-
+   
    - The maximum number of messages they received per hour
-
+   
    - The top sender
-
-Changing the filters or searching for a mailbox will change both the heatmap and table.
+   
+  The report includes a filter on Limit type, allowing the user to display mailboxes that hit the Hot, SRP, or Warm limit separately. 
 
 > [!NOTE]
 > The default view is for the last 24 hours for all types. If no data is showing, that means you had no mailboxes exceeding the limit (or at risk) in the last 24 hours.
