@@ -1,4 +1,6 @@
 ---
+ms.topic: article
+description: This article describes the queues new to Mailbox and Edge Transport servers in Microsoft Exchange Server 2013.
 title: 'Use the Exchange Management Shell to manage queues: Exchange 2013 Help'
 TOCTitle: Use the Exchange Management Shell to manage queues
 ms:assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
