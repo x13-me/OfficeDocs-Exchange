@@ -5,9 +5,11 @@ ms:assetid: 7840d172-071e-4f13-9379-2fe1eee1a7cc
 ms:mtpsurl: https://technet.microsoft.com/library/JJ945053(v=EXCHG.150)
 ms:contentKeyID: 51423387
 ms.reviewer: 
+ms.topic: article
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+description: How to configure a cross-forest Send connector
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

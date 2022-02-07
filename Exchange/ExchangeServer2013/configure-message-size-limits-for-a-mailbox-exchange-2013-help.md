@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124708(v=EXCHG.150)
 ms:contentKeyID: 50383002
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to configure message size limits for a mailbox in Exchange Server
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

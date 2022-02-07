@@ -5,7 +5,9 @@ ms:assetid: 1d5ca19e-696e-4054-a634-15dd34d952b7
 ms:mtpsurl: https://technet.microsoft.com/library/Dn690134(v=EXCHG.150)
 ms:contentKeyID: 62380198
 ms.reviewer: 
+ms.topic: article
 manager: serdars
+description: How to configure legacy public folders for user mailboxes on Exchange 2013 servers
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

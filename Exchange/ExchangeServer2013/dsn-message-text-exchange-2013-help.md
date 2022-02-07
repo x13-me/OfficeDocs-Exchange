@@ -4,6 +4,8 @@ TOCTitle: DSN message text
 ms:assetid: eae4a050-5ecb-4c87-b377-74edb93a5995
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125135(v=EXCHG.150)
 ms:contentKeyID: 49286855
+ms.topic: article
+description: You can include text in a customized delivery status notification (DSN) message in Microsoft Exchange Server 2013.
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -27,8 +29,8 @@ Because DSN messages can be displayed in HTML, you can embed HTML formatting tag
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -97,8 +99,8 @@ For example, if you want to display the message `"Please contact the Help Desk a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

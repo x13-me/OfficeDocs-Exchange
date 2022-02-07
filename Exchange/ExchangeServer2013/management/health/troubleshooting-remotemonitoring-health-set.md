@@ -5,6 +5,8 @@ ms:assetid: 693d84bf-23bc-4130-aba5-4ab3f80a5c5d
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.remotemonitoring(v=EXCHG.150)
 ms:contentKeyID: 49720817
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the RemoteMonitoring health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

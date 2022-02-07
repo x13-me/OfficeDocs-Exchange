@@ -6,6 +6,7 @@ author: msdmaguire
 manager: serdars
 ms.reviewer:
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: In Exchange Online, you can use archive policies to automatically move mailbox items to personal (on-premises) or cloud-based archives. Archive policies are retention tags that use the Move to Archive retention action.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
 ms.reviewer: 
@@ -42,9 +42,9 @@ For additional management tasks related to archives, see [Enable archive mailbox
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the EAC to modify the default archive policy
+## Use the classic EAC to modify the default archive policy
 
-1. Navigate to **Compliance management** \> **Retention tags** and then.
+1. Navigate to **Compliance management** \> **Retention tags**.
 
 2. In the list view, select the tag **Default 2 year move to archive** and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.gif).
 

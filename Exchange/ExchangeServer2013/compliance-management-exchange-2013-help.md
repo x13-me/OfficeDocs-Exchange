@@ -4,9 +4,11 @@ TOCTitle: Compliance Management
 ms:assetid: b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657489(v=EXCHG.150)
 ms:contentKeyID: 49289388
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
 manager: serdars
 ms.author: serdars
+description: The Compliance Management management role group in Exchange Server.
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -77,15 +79,15 @@ For more information about role assignments and management scopes, see the follo
 
 ### Management roles assigned to this role group
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

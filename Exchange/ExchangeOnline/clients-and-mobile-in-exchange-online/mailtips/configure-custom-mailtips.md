@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'MailTips are informative messages displayed to users in the InfoBar in Outlook on the web and Microsoft Outlook 2010 or later when a user does any of the following while composing an e-mail message:'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 ms.reviewer: 
@@ -55,9 +55,9 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 ## Configure MailTips for recipients
 
-### Use the EAC to configure MailTips for recipients
+### Use the classic EAC to configure MailTips for recipients
 
-1. In the EAC, navigate to **Recipients**.
+1. In the classic EAC, navigate to **Recipients**.
 
 2. Select any of the following recipient tabs based on the recipient type:
 

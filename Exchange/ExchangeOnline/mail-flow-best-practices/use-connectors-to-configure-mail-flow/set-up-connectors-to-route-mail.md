@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to use connectors to route mail between Microsoft 365, Office 365, or Exchange Online and on-premises email servers.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
 ms.reviewer: 
@@ -128,7 +128,7 @@ If you don't plan to use the hybrid configuration wizard, or if you're running E
 > [!NOTE]
 > Before creating a connector, navigate to the new EAC from the Microsoft 365 admin center by clicking **Exchange** under the **Admin centers** pane.
 
-- **For New EAC**
+#### For New EAC
 
 1. Navigate to **Mail flow > Connectors**. The **Connectors** screen appears.
  

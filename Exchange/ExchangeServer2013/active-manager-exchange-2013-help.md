@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd776123(v=EXCHG.150)
 ms:contentKeyID: 48385718
 ms.reviewer: 
 manager: serdars
+description: About Active Manager in Exchange Server.
+ms.topic: article 
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

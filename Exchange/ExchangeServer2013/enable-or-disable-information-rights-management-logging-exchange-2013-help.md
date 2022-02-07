@@ -7,6 +7,8 @@ ms:contentKeyID: 49319919
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enable or Disable Information Rights Management Logging in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

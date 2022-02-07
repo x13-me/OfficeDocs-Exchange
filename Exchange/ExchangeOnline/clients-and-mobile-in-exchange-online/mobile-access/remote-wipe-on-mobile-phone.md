@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to remote wipe a mobile phone in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 ms.reviewer: 

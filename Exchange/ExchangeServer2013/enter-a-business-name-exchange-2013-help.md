@@ -4,6 +4,8 @@ TOCTitle: Enter a business name
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: 'Enter "business name" for a Unified Messaging auto attendant in Exchange Server'
 ms.reviewer:
 ms.assetid: a0e7cb24-0f55-442d-8ae2-21b177940b78
 f1.keywords:

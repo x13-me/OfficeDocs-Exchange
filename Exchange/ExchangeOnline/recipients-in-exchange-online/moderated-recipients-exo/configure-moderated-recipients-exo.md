@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admin can learn how to configure the moderation settings on all recipient types in the Exchange admin center (EAC) and in PowerShell in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: f0c3db25-653f-4252-acb1-2b5ba940ab80
 ms.reviewer: 
@@ -51,7 +51,9 @@ This article described how to configure moderated groups in the Exchange admin c
 ## Use the EAC to configure a moderated distribution group
 
 > [!NOTE]
-> The folowing steps are basically the same for all group types: distribution groups, mail-enabled security groups, dynamic distribution groups, and Microsoft 365 Groups.
+> You can configure moderation for Microsoft 365 Groups only in Exchange Online PowerShell using the **Set-UnifiedGroup** command.
+> 
+> The folowing steps are basically the same for all other group types: distribution groups, mail-enabled security groups, and dynamic distribution groups.
 
 A common scenario for moderation is to control email replies to large groups. In fact, groups with more than 5,000 members automatically have moderation configured.
 

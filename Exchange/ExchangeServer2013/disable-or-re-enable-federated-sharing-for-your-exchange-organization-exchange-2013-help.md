@@ -7,6 +7,8 @@ ms:contentKeyID: 49289421
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to disable or re-enable federated sharing for your Exchange organization
 author: msdmaguire
 f1.keywords:
 - NOCSH

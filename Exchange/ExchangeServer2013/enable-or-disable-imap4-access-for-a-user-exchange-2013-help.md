@@ -7,6 +7,8 @@ ms:contentKeyID: 49315252
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to enable or disable IMAP4 access for a user in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

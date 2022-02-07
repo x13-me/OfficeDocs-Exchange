@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to manage role group membership in Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -54,7 +56,7 @@ To add a role group member, see the [Examples](/powershell/module/exchange/Add-R
 
 To add multiple role group members or to replace the role group membership entirely, see the [Examples](/powershell/module/exchange/Update-RoleGroupMember#examples) section in [Update-RoleGroupMember](/powershell/module/exchange/Update-RoleGroupMember).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully added one or more members to a role group, do the following:
 
@@ -82,7 +84,7 @@ To remove a role group member, see the [Examples](/powershell/module/exchange/Re
 
 To remove multiple role group members or to replace the role group membership entirely, see the [Examples](/powershell/module/exchange/Update-RoleGroupMember#examples) section in [Update-RoleGroupMember](/powershell/module/exchange/Update-RoleGroupMember).
 
-## How do you know this worked?
+### How you know this worked?
 
 To verify that you have successfully removed one or more members to a role group, do the following:
 

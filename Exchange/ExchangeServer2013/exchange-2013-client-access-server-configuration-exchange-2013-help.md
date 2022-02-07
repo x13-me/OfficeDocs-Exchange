@@ -7,6 +7,8 @@ ms:contentKeyID: 49668969
 ms.reviewer:
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to configure Client Access servers in Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH

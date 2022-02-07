@@ -4,6 +4,8 @@ TOCTitle: Include text with the email message sent when a voice message Is recei
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to modify the email notice of a received voice mail in Exchange Server  
 ms.reviewer:
 ms.assetid: b2eec29c-e5eb-4263-80d8-0b9813dd56dc
 f1.keywords:

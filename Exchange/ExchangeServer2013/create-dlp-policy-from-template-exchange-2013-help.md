@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a DLP policy from a template in Exchange Server
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 f1.keywords:
 - NOCSH

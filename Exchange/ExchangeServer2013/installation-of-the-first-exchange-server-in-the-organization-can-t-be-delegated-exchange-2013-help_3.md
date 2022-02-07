@@ -5,6 +5,8 @@ ms:assetid: d451581b-6161-4e95-99f1-03dac8313fae
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.delegatedmailboxfirstinstall(v=EXCHG.150)
 ms:contentKeyID: 46629138
 ms.reviewer: 
+ms.topic: article
+description: Can't delegate installation of the first Exchange server in the organization
 manager: serdars
 ms.author: serdars
 author: msdmaguire

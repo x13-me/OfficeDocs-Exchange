@@ -7,6 +7,8 @@ ms:contentKeyID: 64568563
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Considerations for deploying public folders in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

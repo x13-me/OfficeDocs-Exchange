@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to modify an In-Place eDiscovery search in Exchange 2013
 ms.assetid: 3162743c-cc12-4997-91e0-bcbfea8bcb17
 f1.keywords:
 - NOCSH

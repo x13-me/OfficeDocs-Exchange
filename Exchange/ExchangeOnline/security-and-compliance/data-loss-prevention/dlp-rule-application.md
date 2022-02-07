@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how data loss prevention (DLP) rules evaluate messages
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 ms.reviewer: 
@@ -36,7 +36,7 @@ Let's also make it clear that the following information should not be classified
 
 The following XML snippet shows how the needs expressed earlier are currently defined in a sensitive information rule that is provided with Exchange and it is embedded within one of the supplied DLP policy templates.
 
-```
+```xml
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_credit_card" />
@@ -79,15 +79,20 @@ In the credit card rule, there is a section of XML code for patterns, which incl
 
 The five steps here represent actions that Exchange takes to compare your rule with email messages. For our credit card rule example, the following steps are taken.
 
-|**Step**|**Action**|
-|:-----|:-----|
-|1. Get Content|Spencer Badillo <br/><br/> Visa: 4111 1111 1111 1111 <br/><br/> Expires: 2/2012|
+<br>
+
+****
+
+|Step|Action|
+|---|---|
+|1. Get Content|Spencer Badillo p> Visa: 4111 1111 1111 1111 <p> Expires: 2/2012|
 |2. Regular Expression Analysis|4111 1111 1111 1111 -\> a 16-digit number is detected|
-|3. Function Analysis|4111 1111 1111 1111 -\> matches checksum <br/><br/> 1234 1234 1234 1234 -\> doesn't match|
+|3. Function Analysis|4111 1111 1111 1111 -\> matches checksum <p> 1234 1234 1234 1234 -\> doesn't match|
 |4. Additional Evidence|
 Keyword Visa is near the number. A regular expression for a date (2/2012) is near the number.|
 |5. Verdict|
 There is a regular expression that matches a checksum. Additional evidence increases confidence.|
+|
 
 The way this rule is set up by Microsoft makes it mandatory that corroborating evidence such as keywords are a part of the email message content in order to match the rule. So the following email content would not be detected as containing a credit card:
 
@@ -95,7 +100,7 @@ The way this rule is set up by Microsoft makes it mandatory that corroborating e
 
 You can use a custom rule that defines a pattern without extra evidence, as shown in the next example. This would detect messages with only credit card number and no corroborating evidence.
 
-```
+```xml
       <Pattern confidenceLevel="85">
          <IdMatch idRef="Func_credit_card" />
       </Pattern>
@@ -104,12 +109,9 @@ You can use a custom rule that defines a pattern without extra evidence, as show
 
 The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](/powershell/module/exchange/get-classificationrulecollection) cmdlet in Exchange Online PowerShell in the following manner:
 
-```
+```powershell
 $rule_collection = Get-ClassificationRuleCollection
-```
-
-```
-$rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+$rule_collection[0].SerializedClassificationRuleCollection | [System.IO.File]::WriteAllBytes('oob_classifications.xml', $file.FileData)
 ```
 
 ## For more information

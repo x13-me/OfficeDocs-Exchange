@@ -5,6 +5,8 @@ ms:assetid: ef8dfb26-cfe4-4bcc-b18a-5f15f1f8c99e
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pushnotifications.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720919
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the PushNotifications.Protocol health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

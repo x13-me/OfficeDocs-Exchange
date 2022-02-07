@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about MailTips that are presented to users in Outlook and Outlook on the web.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
 ms.reviewer: 
@@ -87,3 +87,7 @@ MailTips are subject to the following restrictions:
 - While older versions of Exchange Server would populate MailTips in their entirety, Exchange Online will only display up to 1000 characters.
 
 - If the sender starts composing a message and leaves it open for an extended period of time, the Automatic Replies and Mailbox Full MailTips are evaluated every two hours.
+
+## For more information
+
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)

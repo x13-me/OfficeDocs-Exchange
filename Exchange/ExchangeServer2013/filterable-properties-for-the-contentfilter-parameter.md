@@ -7,6 +7,8 @@ ms:contentKeyID: 49895015
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Filterable properties for the -ContentFilter parameter in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,10 +29,10 @@ The following table contains a list of the filterable properties for the *Conten
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

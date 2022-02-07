@@ -5,6 +5,8 @@ ms:assetid: 1eaa26ad-b489-402a-ad2d-bfae3b083f42
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.owa.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720734
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the OWA.Proxy health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -27,10 +29,10 @@ The Outlook Web App service is monitored by using the following probes and monit
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

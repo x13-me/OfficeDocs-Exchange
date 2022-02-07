@@ -7,6 +7,8 @@ ms:contentKeyID: 61200285
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: Using Edge Subscriptions in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -110,7 +112,7 @@ For more information about ESRA accounts and how they're used to help secure the
 This example subscribes an Edge Transport server to the specified site and automatically creates the Internet Send connector and the Send connector from the Edge Transport server to the Mailbox servers.
 
 ```powershell
-New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name"
+New-EdgeSubscription -FileData ([System.IO.File]::ReadAllBytes('C:\EdgeSubscriptionInfo.xml')) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name"
 ```
 
 > [!NOTE]
@@ -147,8 +149,8 @@ By default, when you run the **New-EdgeSubscription** cmdlet on the Mailbox serv
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -196,8 +198,8 @@ By default, when you run the **New-EdgeSubscription** cmdlet on the Mailbox serv
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -312,9 +314,9 @@ The following table lists the EdgeSync properties related to locking and leasing
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
