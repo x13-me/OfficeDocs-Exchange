@@ -22,19 +22,6 @@ description: "Admins can learn about non-delivery reports (also known as NDRs or
 
 When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email to let you know. The email you receive is a delivery status notification, also known as a DSN or bounce message. The most common type is called a non-delivery report (NDR) and they tell you that a message wasn't delivered. Non-delivery can be caused by something as simple as a typo in an email address. NDRs include an error code that indicates why your email wasn't delivered, solutions to help you get your email delivered, a link to more help on the web, and technical details for administrators. Find out [What's included in an NDR?](#whats-included-in-an-ndr).
 
-## Run non-delivery report diagnostics
-
-> [!NOTE]
-> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
-
-To learn more about the description of the non-delivery report (NDR), possible cause, and solution by running the following NDR diagnostic, you can run an automated diagnostic. Make sure you get the NDR code or status code from the undeliverable/non-delivery report. 
-
-To run the diagnostic check, select the following button: 
-
-> [!div class="nextstepaction"]
-> [Run Tests: NDR diagnostics](https://aka.ms/PillarEmailNDR)
-
-A flyout page opens in the Microsoft 365 admin center. Paste the NDR code or error message, and then select **Run Tests**.
 
 ## Find my NDR code and get help delivering my email
 
@@ -51,6 +38,10 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |4.4.7|`Message expired`|The message in the queue has expired. The sending server tried to relay or deliver the message, but the action was not completed before the message expiration time occurred. This message can also indicate that a message header limit has been reached on a remote server, or some other protocol time-out occurred while communicating with the remote server.|This message usually indicates an issue on the receiving server. Check the validity of the recipient address, and determine if the receiving server is configured correctly to receive messages. <p> You might have to reduce the number of recipients in the message header for the host about which you are receiving this error. If you send the message again, it is placed in the queue again. If the receiving server is available, the message is delivered. <p> For more information, see [Fix email delivery issues for error code 4.4.7 in Exchange Online](fix-error-code-550-4-4-7-in-exchange-online.md).|
 |4.5.3|`Too many recipients`|The message has more than 200 SMTP envelope recipients from the same domain.|An envelope recipient is the original, unexpanded recipient that's used in the **RCPT TO** command to transmit the message between SMTP servers. When this error is returned by Microsoft 365 or Office 365, the sending server must break up the number of envelope recipients into smaller chunks (chunking) and resend the message.|
 |4.7.26|`Access denied, a message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation, this message is not signed`|The sending message sent over IPv6 must pass either SPF or DKIM.|For more information, see [Support for anonymous inbound email messages over IPv6](/microsoft-365/security/office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6).|
+|4.7.321|`starttls-not-supported: Destination mail server must support TLS to receive mail.`|DNSSEC checks have passed, yet upon connection, destination mail server does not respond to the STARTTLS command. <li> The destination server responds to the STARTTLS command, but the TLS handshake fails.</ol>|This message usually indicates an issue on the destination email server. Check the validity of the recipient address. Determine if the destination server is configured correctly to receive the messages.|
+|4.7.322|`certificate-expired: Destination mail server's certificate is expired.`|DNSSEC checks have passed, yet upon establishing the connection, the destination mail server provides a certificate that is expired.|A valid X.509 certificate that isn't expired must be presented. X.509 certificates must be renewed after their expiration, commonly annually.|
+|4.7.323|`tlsa-invalid: The domain failed DANE validation.`|Records are DNSSEC authentic, but one or multiple of these scenarios occurred: <ul><li> The destination mail server's certificate does not match with what is expected per the authentic TLSA record. <li> Authentic TLSA record is misconfigured. <li> Destination domain is being attacked. <li> Any other DANE failure.</ul>|This message usually indicates an issue on the destination email server. Check the validity of recipient address and determine if the destination server is configured correctly to receive messages. For more information, see [DANE protocol: updates and operational guidance](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdatatracker.ietf.org%2Fdoc%2Fhtml%2Frfc7671&data=04%7C01%7CKevin.Shaughnessy%40microsoft.com%7Ce67cdc9cf57f490bdbdc08d9a571ba03%7C72f988bf86f141af91ab2d7cd011db47%7C0%7C0%7C637722730168845443%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=bTA%2Bz4GRGMuAcebwN3gfCceKCpn4Nw0XzD5G%2BZlHdww%3D&reserved=0)|
+|4.7.324|`dnssec-invalid: Destination domain returned invalid DNSSEC records`|The destination domain indicated it was DNSSEC-authentic, but Exchange Online was not able to verify it as DNSSEC-authentic.|For more information, see [Overview of DNSSEC.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11))|
 |4.7.500-699|`Access denied, please try again later`|Suspicious activity has been detected and sending has been temporarily restricted for further evaluation.|If this activity is valid, this restriction will be lifted shortly.|
 |4.7.850-899|`Access denied, please try again later`|Suspicious activity has been detected on the IP in question, and it has been temporarily restricted while it is being further evaluated.|If this activity is valid, this restriction will be lifted shortly.|
 |5.0.350|Generic error, `x-dg-ref header is too long`, or `Requested action not taken: policy violation detected (AS345)`|5.0.350 is a generic catch-all error code for a wide variety of non-specific errors from the recipient's email organization. The specific `x-dg-ref header is too long` message is related to Rich Text formatted messages. The specific `Requested action not taken: policy violation detected (AS345)` message is related to nested attachments.|For more information, see [Fix email delivery issues for error code 550 5.0.350 in Exchange Online](fix-error-code-550-5-0-350-in-exchange-online.md).|
@@ -96,7 +87,7 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |5.7.508|`Access denied, [$SenderIPAddress] has exceeded permitted limits within $range range`|The sender's IPv6 range has attempted to send too many messages in too short a time period.|Not applicable|
 |5.7.509|`Access denied, sending domain [$SenderDomain] does not pass DMARC verification`|The sender's domain in the **5322.From** address does not pass DMARC.|Not applicable|
 |5.7.510|`Access denied, [contoso.com] does not accept email over IPv6`|The sender is attempting to transmit a message to the recipient over IPv6, but the recipient does not accept email messages over IPv6.|Not applicable|
-|5.7.511|`Access denied, banned sender`|The account you are attempting to send from has been banned.|For more information, see [Removing a user from the Restricted Users portal after sending spam email](/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).|
+|5.7.511|`Access denied, banned sender`|The IP that you are attempting to send from has been banned.|To delist the address, email delist@messaging.microsoft.com and provide the full NDR code and IP address to delist.|
 |5.7.512|`Access denied, message must be RFC 5322 section 3.6.2 compliant`|Message was sent without a valid "From" email address.|Office 365 only. Each message must contain a valid email address in the "From" header field. Proper formatting of this address includes angle brackets around the email address, for example, \<security@contoso.com\>. Without this address Microsoft 365 or Office 365 will reject the message.|
 |5.7.513|`Service unavailable, Client host [$ConnectingIP] blocked by $recipientDomain using Customer Block list (AS16012607)`|The recipient domain has added your sending IP address to its custom blocklist.|The domain that received the email has blocked your sender's IP address. If you think your IP address has been added to the recipient domain's custom blocklist in error, you need to contact them directly and ask them to remove it from the blocklist.|
 |5.7.606-649|`Access denied, banned sending IP [IP1.IP2.IP3.IP4]`|The IP that you are attempting to send from has been banned.|Verify that you are following the [best practices for email deliverability](/dynamics365/marketing/get-ready-email-marketing), and ensure your IPs' reputations have not been degraded as a result of compromise or malicious traffic. If you believe you are receiving this message in error, you can use the self-service portal to request to be removed from this list. <p> For more information, see [Use the delist portal to remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).|
@@ -104,6 +95,19 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |5.7.750|`Service unavailable. Client blocked from sending from unregistered domains`|A suspicious number of messages from unprovisioned domains is coming from this tenant.|Add and validate any and all domains that you use to send email from Microsoft 365 or Office 365. <p> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
 |n/a|`The message can't be submitted because the sender's submission quota was exceeded`|The user account has exceeded the recipient rate limit (10,000 recipients per day).|The account has likely been compromised. For more information, see [Fix email delivery issues for error 'the sender's submission quota was exceeded' in Exchange Online](fix-error-for-submission-quota-exceeded-in-exchange-online.md).|
 
+## Run non-delivery report diagnostics
+
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
+To learn more about the description of the non-delivery report (NDR), possible cause, and solution by running the following NDR diagnostic, you can run an automated diagnostic. Make sure you get the NDR code or status code from the undeliverable/non-delivery report. 
+
+To run the diagnostic check, select the following button: 
+
+> [!div class="nextstepaction"]
+> [Run Tests: NDR diagnostics](https://aka.ms/PillarEmailNDR)
+
+A flyout page opens in the Microsoft 365 admin center. Paste the NDR code or error message, and then select **Run Tests**.          
 
 ## What's included in an NDR?
 

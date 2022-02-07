@@ -5,6 +5,8 @@ ms:assetid: 79935528-1a8c-4f22-826c-8f9a60f4f6f4
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673535(v=EXCHG.150)
 ms:contentKeyID: 49315446
 ms.reviewer: 
+ms.topic: article
+description: How to stop the Unified Messaging Call Router service in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
