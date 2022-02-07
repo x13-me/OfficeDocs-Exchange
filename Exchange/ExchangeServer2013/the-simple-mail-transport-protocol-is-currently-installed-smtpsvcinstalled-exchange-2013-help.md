@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Setup requires that the SMTP service not be installed on servers that are used for Exchange 2007.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
