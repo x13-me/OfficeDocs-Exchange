@@ -4,7 +4,9 @@ TOCTitle: UM protocols, ports, and services
 ms:assetid: 5997ce29-1755-48bb-8ff4-b08da549482a
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998265(v=EXCHG.150)
 ms:contentKeyID: 49315424
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: Unified messaging protocols, ports, and services in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -74,10 +76,10 @@ The following table summarizes the Exchange 2013 ports and protocols, and whethe
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
