@@ -5,6 +5,8 @@ ms:assetid: 642c922d-7e85-40f0-bb9b-0f20da692be3
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169227(v=EXCHG.150)
 ms:contentKeyID: 53382781
 ms.reviewer: 
+ms.topic: article
+description: How to upgrade Microsoft Exchange 2007 Unified Messaging to Exchange 2013 Unified Messaging
 manager: serdars
 ms.author: serdars
 author: msdmaguire
