@@ -9,7 +9,6 @@ manager: serdars
 ms.author: serdars
 author: serdars
 ms.topic: article
-description: Use Windows Server Backup to back up and to restore data in Microsoft Exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
