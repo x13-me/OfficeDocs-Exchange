@@ -543,7 +543,7 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 > [!NOTE]
 > The preceding Exchange Management Shell commands configure the OWA and ECP virtual directories on every Client Access server in your organization. If you don't want to apply these settings to all Client Access servers, use the <EM>-Identity</EM> parameter and specify the Client Access server. It's likely you will want to apply these settings only to the Client Access servers in your organization that are Internet facing.
 
-For details and syntax, see [Get-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-OwaVirtualDirectory) and [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-OwaVirtualDirectory) or [Get-EcpVirtualDirectory](/powershell/module/exchange/Get-EcpVirtualDirectory) and [Set-EcpVirtualDirectory](/powershell/module/exchange/Set-EcpVirtualDirectory).
+For details and syntax, see [Get-OwaVirtualDirectory](/powershell/module/exchange/Get-OwaVirtualDirectory) and [Set-OwaVirtualDirectory](/powershell/module/exchange/Set-OwaVirtualDirectory) or [Get-EcpVirtualDirectory](/powershell/module/exchange/Get-EcpVirtualDirectory) and [Set-EcpVirtualDirectory](/powershell/module/exchange/Set-EcpVirtualDirectory).
 
 ## Step 9 - Restart or recycle Internet Information Services (IIS)
 
