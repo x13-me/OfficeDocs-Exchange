@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about dynamic distribution groups and how to create and manage them.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
 ms.author:jhendr

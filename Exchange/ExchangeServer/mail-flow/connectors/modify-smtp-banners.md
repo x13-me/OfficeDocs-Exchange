@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to modify the connection response that messaging servers receive after connecting to an Exchange server 2016 or 2019.
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: d667704e-fd69-4aca-9c35-eef7006944b2
 ms.reviewer: 

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Exchange Server 2016 or Exchange 2019 Setup can't continue because the local computer needs to be restarted to complete the installation of other programs or Windows updates.
 ms.topic: reference
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.PendingRebootWindowsComponents
 ms.author:jhendr

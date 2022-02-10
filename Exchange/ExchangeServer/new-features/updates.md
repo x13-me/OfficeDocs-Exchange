@@ -2,7 +2,7 @@
 ms.localizationpriority: high
 description: 'Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server.'
 ms.topic: overview
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
 ms.reviewer: 

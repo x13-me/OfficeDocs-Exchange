@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
 ms.reviewer:

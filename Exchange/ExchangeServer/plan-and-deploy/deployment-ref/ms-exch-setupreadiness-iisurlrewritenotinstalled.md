@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: IIS URL Rewrite Module not installed
 ms.topic: reference
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.ForestLevelNotWin2003Native
 ms.author:jhendr

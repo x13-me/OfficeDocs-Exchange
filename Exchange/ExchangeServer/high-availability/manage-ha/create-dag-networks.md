@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Create additional networks, if needed, for use in a database availability group (DAG).'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 6caec7be-788a-4058-87a7-f31c575b870c
 ms.reviewer:

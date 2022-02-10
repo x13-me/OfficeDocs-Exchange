@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
 ms.reviewer: 

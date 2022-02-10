@@ -2,7 +2,7 @@
 ms.localizationpriority: high
 description: 'Summary: Guidance for planning and deploying Exchange 2016 or Exchange 2019.'
 ms.topic: hub-page
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
 ms.reviewer:

@@ -3,7 +3,7 @@ description: "Summary: Learn how administrators can enable the MRS Proxy endpoin
 ms.localizationpriority: medium
 ms.author:jhendr
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms.collection: exchange-server

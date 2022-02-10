@@ -2,7 +2,7 @@
 ms.localizationpriority: high
 description: Diagnostic Data collected for Exchange Server
 ms.topic: overview
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.reviewer:
 title: Diagnostic Data collected for Exchange Server

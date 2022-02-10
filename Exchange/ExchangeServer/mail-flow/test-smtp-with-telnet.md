@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
 ms.reviewer: 

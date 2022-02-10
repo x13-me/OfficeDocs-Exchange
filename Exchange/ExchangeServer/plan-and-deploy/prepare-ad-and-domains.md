@@ -3,7 +3,7 @@ localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.'
 ms.topic: conceptual
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 ms.reviewer: 

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Exchange Server 2016 Setup can't continue because the Unified Communications Managed API 4.0 Runtime update is required on servers before you install the Mailbox server role.
 ms.topic: reference
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.UcmaRedistMsi
 ms.author:jhendr

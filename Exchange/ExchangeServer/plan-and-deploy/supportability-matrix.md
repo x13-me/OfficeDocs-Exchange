@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about the support life cycle for Exchange
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.reviewer: 
 title: Exchange Server supportability matrix

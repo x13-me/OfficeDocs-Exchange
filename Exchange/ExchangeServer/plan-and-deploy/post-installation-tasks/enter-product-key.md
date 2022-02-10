@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: how-to
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage
 ms.author:jhendr

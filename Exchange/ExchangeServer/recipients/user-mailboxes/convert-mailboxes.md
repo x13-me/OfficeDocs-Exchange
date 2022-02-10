@@ -3,7 +3,7 @@ description: 'Summary: Learn about changing a mailbox from one type to another i
 ms.localizationpriority: medium
 ms.author:jhendr
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.reviewer:
 manager: serdars
 ms.prod: exchange-server-it-pro

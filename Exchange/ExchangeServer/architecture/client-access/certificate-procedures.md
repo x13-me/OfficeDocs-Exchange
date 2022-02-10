@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: A list of certificate management tasks in Exchange Server.'
 ms.topic: overview
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 8975848d-07f0-4643-9eac-20aece69945f
 ms.reviewer:

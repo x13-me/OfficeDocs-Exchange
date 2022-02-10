@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages.'
 ms.topic: overview
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
 ms.reviewer: 

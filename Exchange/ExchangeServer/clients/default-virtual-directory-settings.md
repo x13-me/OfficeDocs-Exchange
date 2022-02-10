@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about the default virtual directory settings on Mailbox servers in Exchange 2016 and Exchange 2019.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: d2d89ce6-4721-4737-a325-fba5ad9422e0
 ms.reviewer: 

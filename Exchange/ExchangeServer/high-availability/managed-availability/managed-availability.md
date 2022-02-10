@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about monitoring your Exchange Server 2016 or Exchange Server 2019 organization to quickly resolve issues for greater availability and reliability.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
 ms.reviewer:

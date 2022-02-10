@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about queue properties to use in filters in Exchange Server.
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
 ms.reviewer:

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: "Summary: Learn about tasks you'll need to do after you install Exchange 2016 or Exchange 2019."
 ms.topic: how-to
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: bd99aaa4-b82c-427c-ab65-b9230ff63fb2
 ms.reviewer: 

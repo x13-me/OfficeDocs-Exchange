@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how Exchange Server selects connectors (Send connectors, Delivery Agent connectors, or Foreign connectors) to deliver messages to external recipients.'
 ms.topic: overview
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 579c6dc1-ece3-442a-bb8c-f55bcb543119
 ms.reviewer: 

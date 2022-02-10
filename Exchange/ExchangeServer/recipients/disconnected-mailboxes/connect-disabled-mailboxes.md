@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how you can use the Exchange admin center(EAC) or the Exchange Management Shell in Exchange to connect a disabled mailbox to an Active Directory user account.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: a8abd399-75fd-4ee2-b2e4-634b55e4f79f
 ms.reviewer:

@@ -3,7 +3,7 @@ description: 'Summary: Learn about administrative tasks for managing Outlook on 
 ms.localizationpriority: medium
 ms.author:jhendr
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: 3814b665-01e8-4881-9a44-163f14789ee4
 ms.collection: exchange-server

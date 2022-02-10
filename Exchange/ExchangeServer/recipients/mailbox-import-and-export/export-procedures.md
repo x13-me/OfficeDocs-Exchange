@@ -3,7 +3,7 @@ description: 'Summary: Learn how administrators can view, create, modify, delete
 ms.localizationpriority: medium
 ms.author:jhendr
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
 ms.collection: exchange-server

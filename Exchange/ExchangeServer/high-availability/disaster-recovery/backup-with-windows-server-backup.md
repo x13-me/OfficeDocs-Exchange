@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Step-by-step guidance for backing up your Exchange Server 2016 and Exchange Server 2019 Sdata.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
 ms.reviewer: 

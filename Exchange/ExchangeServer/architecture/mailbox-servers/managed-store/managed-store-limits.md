@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about the Managed Store limits in Exchange Server 2016 and 2019 and how to change them.'
 ms.topic: overview
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: bea9ec15-bfb5-4716-b14e-010e389c9f9e
 ms.reviewer: 

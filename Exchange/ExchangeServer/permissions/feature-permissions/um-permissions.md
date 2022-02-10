@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about permissions that are required to manage Unified Messaging services and features in Exchange Server 2016.'
 ms.topic: reference
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: d326c3bc-8f33-434a-bf02-a83cc26a5498
 ms.reviewer:

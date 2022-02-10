@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.author:jhendr
 manager: serdars
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
 ms.reviewer:

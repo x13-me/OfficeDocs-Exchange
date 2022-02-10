@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Create and manage public folders with one or more of these articles.'
 ms.topic: hub-page
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
 ms.reviewer:

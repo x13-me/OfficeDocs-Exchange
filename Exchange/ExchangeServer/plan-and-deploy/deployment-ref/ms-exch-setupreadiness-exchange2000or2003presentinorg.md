@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 monikerRange: exchserver-2016 || exchserver-2019
 description: Setup can't continue because the organization contains one or more Exchange servers that are too old.
 ms.topic: reference
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.Exchange2000or2003PresentInOrg
 ms.author:jhendr

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to configure a virtual machine (VM) as an Exchange Server DAG witness server in Azure.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
 ms.reviewer: 

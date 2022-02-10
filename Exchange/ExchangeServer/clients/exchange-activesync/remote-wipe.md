@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: "Summary: Learn how to clear all data on a user's mobile phone in the Exchange admin center."
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 ms.reviewer: 

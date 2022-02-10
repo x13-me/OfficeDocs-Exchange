@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about managed availability and workload management in Exchange Server.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 9d1fdec8-8273-4c71-88f1-b4edfd542c4f
 ms.reviewer: 

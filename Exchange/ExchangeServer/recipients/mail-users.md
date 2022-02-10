@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to create mail users and how to change mail user properties.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: c72f46dc-8db3-486d-a998-0f01ffc1a843
 ms.reviewer:

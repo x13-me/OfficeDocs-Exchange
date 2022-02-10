@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms.reviewer:

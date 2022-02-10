@@ -1,7 +1,7 @@
 ---
 title: "Feature availability for Exchange Server"
 ms.author:jhendr
-author:JoanneHendrickson
+author: JoanneHendrickson
 manager: gailw
 audience: ITPro
 ms.topic: reference

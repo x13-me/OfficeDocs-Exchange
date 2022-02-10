@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange Server.'
 ms.topic: article
-author:JoanneHendrickson
+author: JoanneHendrickson
 ms.author:jhendr
 ms.assetid: f9677392-88d2-457f-a488-245771a8c1f2
 ms.reviewer:
