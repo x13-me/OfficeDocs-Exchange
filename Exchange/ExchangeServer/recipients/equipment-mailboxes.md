@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: "Summary: Learn how to create an Exchange equipment mailbox, which is a resource mailbox assigned to a resource that isn't location-specific."
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 ms.reviewer:

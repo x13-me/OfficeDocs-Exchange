@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Exchange Server 2016 or Exchange 2019 Setup can't continue because your account isn't logged on to Active Directory.
 ms.topic: reference
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.LoggedOntoDomain
 ms.author:jhendr

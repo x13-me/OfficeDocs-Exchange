@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: How users in your Exchange 2016 or Exchange 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 013dbe8c-30de-4c9c-baa9-75081b9229e8
 title: Account setup in Outlook for iOS and Android using Basic authentication

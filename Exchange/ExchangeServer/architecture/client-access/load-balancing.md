@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about the ways load balancing in Exchange Server handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
 ms.reviewer: 

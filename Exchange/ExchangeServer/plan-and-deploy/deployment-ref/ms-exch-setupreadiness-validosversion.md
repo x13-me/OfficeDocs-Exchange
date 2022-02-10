@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Microsoft Exchange Server 2016 Setup can't continue because it detected an incompatible operating system. You must install a compatible operating system on this computer before you install Exchange 2016. The following table shows the operating systems that are compatible with Exchange 2016.
 ms.topic: reference
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.ValidOSVersion
 ms.author:jhendr

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Setup can't continue because the organization contains one or more Exchange 2007 servers.
 ms.topic: reference
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement
 ms.author:jhendr

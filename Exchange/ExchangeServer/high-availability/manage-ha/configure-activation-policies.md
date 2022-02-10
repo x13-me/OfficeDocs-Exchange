@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: About activation policies in Exchange Server, and how to configure them on mailbox database copies.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms.reviewer:

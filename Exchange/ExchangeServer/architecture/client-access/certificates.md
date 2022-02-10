@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server.'
 ms.topic: overview
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
 title: Digital certificates and encryption in Exchange Server

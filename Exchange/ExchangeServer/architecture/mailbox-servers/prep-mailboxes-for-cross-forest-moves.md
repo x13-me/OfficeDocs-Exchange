@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about preparing mailboxes for cross-forest moves in Exchange 2016 and Exchange 2019.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: fdbed4fc-a77e-40d5-a211-863b05d74784
 ms.reviewer: 

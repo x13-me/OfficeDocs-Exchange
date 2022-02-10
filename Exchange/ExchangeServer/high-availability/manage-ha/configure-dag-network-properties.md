@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Each database availability group (DAG) network has several properties that you can configure.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms.reviewer:

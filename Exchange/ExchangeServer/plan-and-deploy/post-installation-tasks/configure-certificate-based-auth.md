@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to configure Exchange 2016 CU1 or later to use certificate based authentication for Outlook on the web and ActiveSync.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 158fb77e-e238-4c22-9d85-a8c3109f78ec
 ms.reviewer:

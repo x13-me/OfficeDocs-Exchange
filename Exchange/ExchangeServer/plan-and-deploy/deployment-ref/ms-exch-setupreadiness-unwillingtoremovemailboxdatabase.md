@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Exchange Server 2016 or Exchange 2019 Setup can't remove the Mailbox server role from the server because the server contains active mailboxes.
 ms.topic: reference
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.UnwillingToRemoveMailboxDatabase
 ms.author:jhendr

@@ -3,7 +3,7 @@ description: 'Summary: Learn the tasks that administrators need to know to manag
 ms.localizationpriority: medium
 ms.author:jhendr
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
 ms.collection: exchange-server

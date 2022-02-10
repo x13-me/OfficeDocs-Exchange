@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to create and manage mail-enabled security groups in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 ms.reviewer:

@@ -1,7 +1,7 @@
 ---
 title: "Exchange Deployment Assistant"
 ms.author:jhendr
-author: JoanneHendrickson
+author:JoanneHendrickson
 manager: serdars
 f1.keywords:
 - NOCSH

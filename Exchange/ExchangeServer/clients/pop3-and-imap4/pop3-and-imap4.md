@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about support for POP3 and IMAP4 in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
 ms.reviewer:

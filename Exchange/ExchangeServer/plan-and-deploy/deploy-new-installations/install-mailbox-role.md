@@ -1,7 +1,7 @@
 ---
 localization_priority: Critical
 ms.topic: how-to
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.custom:
 - Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage
 ms.author:jhendr

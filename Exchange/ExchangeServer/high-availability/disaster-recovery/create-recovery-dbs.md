@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Step-by-step guidance for creating a recovery database in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 34d87491-b7b7-44a9-8d69-e1a9c1fe5852
 ms.reviewer:

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Setup can't continue because the organization contains one or more Exchange 2013 servers that aren't running the minimum required version of Exchange.
 ms.topic: reference
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.E16E15CoexistenceMinVersionRequirement
 ms.author:jhendr

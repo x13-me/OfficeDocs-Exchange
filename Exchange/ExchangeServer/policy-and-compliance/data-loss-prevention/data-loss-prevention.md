@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about DLP policies in on-premises Exchange Server 2016 and Exchange Server 2019, including what they contain and how to test them.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 ms.reviewer:

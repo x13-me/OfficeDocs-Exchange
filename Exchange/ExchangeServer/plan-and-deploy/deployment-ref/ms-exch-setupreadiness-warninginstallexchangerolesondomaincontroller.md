@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Microsoft Exchange Server 2016 Setup has detected that the computer you're attempting to install Exchange 2016 on is an Active Directory domain controller. Installing Exchange 2016 on a domain controller isn't recommended.
 ms.topic: reference
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.WarningInstallExchangeRolesOnDomainController
 ms.author:jhendr

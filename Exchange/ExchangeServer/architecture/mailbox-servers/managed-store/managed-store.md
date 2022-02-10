@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about the Managed Store in Exchange Server 2016 and 2019'
 ms.topic: overview
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: efdaf80b-335c-491c-8eb5-1fafd297e8a2
 ms.reviewer: 

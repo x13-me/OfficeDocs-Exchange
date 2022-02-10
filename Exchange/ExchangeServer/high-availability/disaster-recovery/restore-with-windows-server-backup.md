@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Step-by-step guidance for restoring Exchange data from a previous back up.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 2d0f31dc-eb32-451a-8852-591269026506
 ms.reviewer:

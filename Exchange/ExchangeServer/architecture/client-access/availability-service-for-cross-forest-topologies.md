@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms.reviewer:

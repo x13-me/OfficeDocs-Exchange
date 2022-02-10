@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: What you should know about mailbox database copies in Exchange Server 2016 and Exchange Server 2019, and your options when creating them.'
 ms.topic: article
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
 ms.reviewer:

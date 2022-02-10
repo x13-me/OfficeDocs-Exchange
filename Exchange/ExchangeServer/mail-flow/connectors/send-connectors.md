@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization.
 ms.topic: overview
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
 ms.reviewer:

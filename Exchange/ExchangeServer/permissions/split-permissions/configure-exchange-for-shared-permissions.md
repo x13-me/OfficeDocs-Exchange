@@ -1,7 +1,7 @@
 ﻿---
 title: "Configure Exchange Server for shared permissions"
 ms.author:jhendr
-author: JoanneHendrickson
+author:JoanneHendrickson
 manager: serdars
 ms.date:
 ms.audience: ITPro

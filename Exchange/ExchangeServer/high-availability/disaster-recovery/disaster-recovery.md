@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: 'Summary: An overview of Exchange features you can use to protect your data.'
 ms.topic: overview
-author: JoanneHendrickson
+author:JoanneHendrickson
 ms.author:jhendr
 ms.assetid: 34351f2f-ab6c-4267-91be-4f9649338275
 ms.reviewer:
