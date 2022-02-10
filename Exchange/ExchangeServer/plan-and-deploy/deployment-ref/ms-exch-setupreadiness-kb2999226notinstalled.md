@@ -3,10 +3,10 @@ ms.localizationpriority: medium
 monikerRange: exchserver-2016
 description: Update for Universal C Runtime in Windows (KB2999226) not installed
 ms.topic: reference
-author: joannehendrickson
+author: JoanneHendrickson
 ms.custom:
 - ms-exch-setupreadiness-KB2999226NotInstalled
-ms.author: jhendr
+ms.author:jhendr
 ms.reviewer:
 title: Update for Universal C Runtime in Windows (KB2999226) not installed
 ms.collection: exchange-server

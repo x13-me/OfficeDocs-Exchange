@@ -2,8 +2,8 @@
 ms.localizationpriority: high
 description: Exchange Emergency Mitigation Service (Exchange EM Service)
 ms.topic: overview
-author: joannehendrickson
-ms.author: jhendr
+author: JoanneHendrickson
+ms.author:jhendr
 ms.reviewer:
 title: Exchange Emergency Mitigation Service (Exchange EM Service)
 ms.collection:
