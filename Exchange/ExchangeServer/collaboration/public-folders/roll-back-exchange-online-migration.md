@@ -1,7 +1,7 @@
 ---
 description: 'Summary: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange Server on-premises organization.'
 ms.localizationpriority: medium
-ms.author:jhendr
+ms.author: jhendr
 ms.topic: article
 author: JoanneHendrickson
 ms.prod: exchange-server-it-pro

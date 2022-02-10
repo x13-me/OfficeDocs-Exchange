@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: 'Summary: Learn how to complete a pending certificate request in Exchange Server after you receive the certificate from the certification authority.'
 ms.topic: article
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 3d2a8747-4afa-4db8-94d7-dcce6d90d21f
 ms.reviewer:
 title: Complete a pending Exchange Server certificate request

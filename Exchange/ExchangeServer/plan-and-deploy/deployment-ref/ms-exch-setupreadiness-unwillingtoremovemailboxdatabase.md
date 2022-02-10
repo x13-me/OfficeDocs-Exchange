@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.UnwillingToRemoveMailboxDatabase
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 5881e4c0-c2e2-48db-84b4-7f9ce3cf46a7
 ms.reviewer:
 title: Cannot remove mailbox database [UnwillingToRemoveMailboxDatabase]

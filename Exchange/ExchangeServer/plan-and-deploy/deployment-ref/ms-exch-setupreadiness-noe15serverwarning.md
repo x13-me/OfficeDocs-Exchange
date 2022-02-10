@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.NoE15ServerWarning
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 55274feb-e683-4447-a053-8650ef174667
 ms.reviewer: 
 title: No Exchange 2013 servers detected [NoE15ServerWarning]

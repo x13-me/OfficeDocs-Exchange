@@ -1,7 +1,7 @@
 ---
 description: 'Summary: Learn about administrative tasks for managing Outlook on the web (Outlook Web App) in Exchange Server 2016 or Exchange Server 2019.'
 ms.localizationpriority: medium
-ms.author:jhendr
+ms.author: jhendr
 ms.topic: article
 author: JoanneHendrickson
 ms.prod: exchange-server-it-pro

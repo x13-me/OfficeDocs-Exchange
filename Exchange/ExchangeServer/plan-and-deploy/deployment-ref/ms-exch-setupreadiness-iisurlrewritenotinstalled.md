@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.ForestLevelNotWin2003Native
-ms.author:jhendr
+ms.author: jhendr
 ms.reviewer:
 title: IIS URL Rewrite Module not installed
 ms.collection: exchange-server

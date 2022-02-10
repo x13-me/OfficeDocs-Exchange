@@ -1,6 +1,6 @@
 ﻿---
 title: "Configure Exchange Server for shared permissions"
-ms.author:jhendr
+ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
 ms.date:

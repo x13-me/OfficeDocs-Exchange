@@ -1,6 +1,6 @@
 ---
 title: "Exchange Deployment Assistant release notes"
-ms.author:jhendr
+ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
 f1.keywords:

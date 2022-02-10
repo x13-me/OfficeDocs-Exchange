@@ -5,7 +5,7 @@ ms.topic: article
 author: JoanneHendrickson
 ms.custom:
 - Microsoft.Exchange.Management.Edge.SystemManager.MessagePropertyPage
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
 ms.reviewer: 
 title: View queued message properties in Queue Viewer

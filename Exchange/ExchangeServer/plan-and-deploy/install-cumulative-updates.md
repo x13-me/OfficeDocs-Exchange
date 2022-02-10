@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: 'Summary: Learn about installing Cumulative Updates (CUs) in Exchange 2016 or Exchange 2019.'
 ms.topic: how-to
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
 ms.reviewer: 
 title: Upgrade Exchange to the latest Cumulative Update

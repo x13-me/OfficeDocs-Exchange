@@ -2,7 +2,7 @@
 title: Use batch migration to migrate Exchange 2010 public folders to Exchange 2016 or Exchange 2019
 ms.localizationpriority: medium
 monikerRange: exchserver-2016
-ms.author:jhendr
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: JoanneHendrickson

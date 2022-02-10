@@ -6,7 +6,7 @@ monikerRange: exchserver-2016 || exchserver-2019
 ms.reviewer:
 ms.topic: article
 manager: serdars
-ms.author:jhendr
+ms.author: jhendr
 author: JoanneHendrickson
 f1.keywords:
 - NOCSH

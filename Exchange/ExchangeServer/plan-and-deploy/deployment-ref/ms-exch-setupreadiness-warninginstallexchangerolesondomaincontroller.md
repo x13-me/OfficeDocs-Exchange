@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.WarningInstallExchangeRolesOnDomainController
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 48922de2-a68c-4092-96a5-d38c8e5f49f5
 ms.reviewer: 
 title: Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]

@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.FqdnMissing
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
 ms.reviewer: 
 title: Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]

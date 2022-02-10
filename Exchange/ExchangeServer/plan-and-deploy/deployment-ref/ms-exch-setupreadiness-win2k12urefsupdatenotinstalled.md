@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.Win2k12UrefsUpdateNotInstalled
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 0a540b1a-c9e3-4c99-99d9-5e093ef1b2b4
 ms.reviewer: 
 title: Disks formatted as ReFS may not perform reliably [Win2k12UrefsUpdateNotInstalled]

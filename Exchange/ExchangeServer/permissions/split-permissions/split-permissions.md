@@ -1,6 +1,6 @@
 ﻿---
 title: "Split permissions in Exchange Server"
-ms.author:jhendr
+ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
 ms.date:

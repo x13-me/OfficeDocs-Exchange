@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: 'Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange 2019.'
 ms.topic: article
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 monikerRange: exchserver-2019
 title: Procedures for Client Access Rules in Exchange 2019
 ms.collection: exchange-server

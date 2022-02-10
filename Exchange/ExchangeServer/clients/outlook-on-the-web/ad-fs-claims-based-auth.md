@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms.reviewer: 
 title: Use AD FS claims-based authentication with Outlook on the web

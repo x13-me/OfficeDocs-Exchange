@@ -4,7 +4,7 @@ monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about the new and modified schema classes and attributes that are added to Active Directory by Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: conceptual
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
 ms.reviewer: 
 title: Active Directory schema changes in Exchange Server

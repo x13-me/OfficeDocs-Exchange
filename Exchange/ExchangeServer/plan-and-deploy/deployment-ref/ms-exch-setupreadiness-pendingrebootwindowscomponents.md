@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.PendingRebootWindowsComponents
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: f2d8e504-18c1-4b86-9b97-7654d0391b19
 ms.reviewer: 
 title: The computer needs to be restarted before Setup can continue [PendingRebootWindowsComponents]

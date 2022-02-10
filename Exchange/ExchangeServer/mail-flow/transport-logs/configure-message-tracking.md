@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: 'Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms.reviewer: 
 title: Configure message tracking

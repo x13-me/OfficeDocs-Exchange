@@ -1,7 +1,7 @@
 ---
 description: 'Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange Server 2016 and Exchange Server 2019.'
 ms.localizationpriority: medium
-ms.author:jhendr
+ms.author: jhendr
 ms.topic: article
 author: JoanneHendrickson
 ms.prod: exchange-server-it-pro

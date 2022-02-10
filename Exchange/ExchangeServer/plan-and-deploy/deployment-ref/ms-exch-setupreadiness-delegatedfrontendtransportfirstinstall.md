@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.DelegatedFrontendTransportFirstInstall
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 0f4c5b2f-85ae-4160-9a53-f4b890d8ccdb
 ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedFrontendTransportFirstInstall]

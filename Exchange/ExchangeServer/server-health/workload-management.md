@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: 'Summary: Learn about user workload management and throttling in Exchange 2016 and Exchange 2019.'
 ms.topic: article
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
 ms.reviewer:
 title: User workload management in Exchange Server

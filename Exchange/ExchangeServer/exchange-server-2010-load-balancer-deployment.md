@@ -3,7 +3,7 @@ f1.keywords:
 - NOCSH
 audience: ITPro
 ms.localizationpriority: high
-ms.author:jhendr
+ms.author: jhendr
 manager: serdars
 ms.topic: reference
 author: JoanneHendrickson

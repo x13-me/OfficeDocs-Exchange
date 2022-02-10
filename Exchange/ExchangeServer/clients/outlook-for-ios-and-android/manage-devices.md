@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: 'Summary: This article describes how to manage mobile devices with Outlook for iOS and Android in your Exchange on-premises organization when using Basic authentication with the Exchange ActiveSync protocol.'
 ms.topic: overview
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 title: Managing devices for Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4

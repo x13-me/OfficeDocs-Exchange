@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.WarnMapiHttpNotEnabled
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 8c7e2b60-2973-47b1-ac1c-3c3e96824aee
 ms.reviewer: 
 title: MAPI over HTTP isn't enabled [WarnMapiHttpNotEnabled]

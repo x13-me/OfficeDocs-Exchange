@@ -5,7 +5,7 @@ ms.topic: reference
 author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.AdInitErrorRule
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
 ms.reviewer: 
 title: Duplicate Microsoft Exchange System Objects container exists in Active Directory [AdInitErrorRule]

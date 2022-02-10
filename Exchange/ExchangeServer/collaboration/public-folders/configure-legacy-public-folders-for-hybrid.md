@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-ms.author:jhendr
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: JoanneHendrickson

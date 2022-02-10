@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: Learn about how to manage transport agents in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 
 title: Manage transport agents in Exchange Server

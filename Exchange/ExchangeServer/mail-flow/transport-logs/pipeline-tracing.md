@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 description: Learn about pipeline tracing in Exchange 2016 and Exchange 2019.
 ms.topic: article
 author: JoanneHendrickson
-ms.author:jhendr
+ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 
 title: Pipeline tracing
