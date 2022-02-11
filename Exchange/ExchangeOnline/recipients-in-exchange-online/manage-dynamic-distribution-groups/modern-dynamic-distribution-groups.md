@@ -53,7 +53,7 @@ Get-DynamicDistributionGroupMember -Identity <DDGIdentity>
 For detailed parameter and syntax information, see [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember).
 
 > [!NOTE]
-> Do not use the [old procedure](/exchange/recipients/dynamic-distribution-groups/view-dynamic-distribution-group-members) for viewing members of a DDG. The old procedure only evaluates the users that satisfy the DDG filters at the time you run the old procedure. The old procedure doesn't return the calculated list of members that's stored on the DDG object.
+> Do not use the [old procedure](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members) for viewing members of a DDG. The old procedure only evaluates the users that satisfy the DDG filters at the time you run the old procedure. The old procedure doesn't return the calculated list of members that's stored on the DDG object.
 
 ## Refresh the membership of a DDG
 
