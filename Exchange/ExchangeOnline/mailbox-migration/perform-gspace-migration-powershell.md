@@ -73,4 +73,4 @@ ms.custom: seo-marvel-jun2021
 To learn more about:
 
 - Completion of migration batch, see [Completion of migration batch in PowerShell](completion-gspae-migration-batch-powershell.md)
-- How the migration happens in backend, see [Overview of the process](how-it-all-works-in-the-backend.md)
+- How the migration happens in the backend, see [Overview of the process](how-it-all-works-in-the-backend.md)
