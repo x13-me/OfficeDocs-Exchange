@@ -1,6 +1,7 @@
 ---
 title: 'Unified Messaging: Exchange 2013 Help'
 TOCTitle: Unified Messaging
+ms.topic: article
 ms:assetid: 004b5d1a-cae8-4034-ab65-db41bd2f7b97
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150478(v=EXCHG.150)
 ms:contentKeyID: 47559933
@@ -205,8 +206,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
