@@ -399,7 +399,7 @@ If you still need help to set up applications or devices sending email using Mic
 To run the diagnostic check, select the following button: 
 
 > [!div class="nextstepaction"]
-> [Run Tests: NDR diagnostics](https://aka.ms/smtprelay)
+> [Run Tests: Send email using Microsoft 365](https://aka.ms/smtprelay)
 
 A flyout page opens in the Microsoft 365 admin center. Select the appropriate option that you are looking for, eg. new setup or troubleshooting existing setup. 
 
