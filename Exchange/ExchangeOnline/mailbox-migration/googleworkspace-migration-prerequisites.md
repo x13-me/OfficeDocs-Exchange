@@ -91,8 +91,8 @@ Here is how you do it:
    
    ![image](https://user-images.githubusercontent.com/5260172/152607089-76d8f272-3bd5-4f19-9e23-4fca882a789d.png)
    
-3. Press **IAM & Admin**
-4. Click **ADD** button on the top of the page
+3. Select **IAM & Admin**.
+4. Select **ADD** at the top of the page.
    
    ![image](https://user-images.githubusercontent.com/5260172/152607681-7a2f22b3-f606-4188-a9c4-c9922d244b0a.png) 
    
