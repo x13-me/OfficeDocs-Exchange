@@ -1,4 +1,6 @@
 ---
+ms.topic: troubleshooting
+description: This content may or may not apply to Exchange Server 2013, but may help users identify issues with uninstalling Unified Messaging Language Packs.
 title: 'Uninstall Unified Messaging Language Packs'
 TOCTitle: Uninstall Unified Messaging Language Packs_AdditionalUMLangPackExists
 ms:assetid: 3a7e2621-0553-44f5-8029-c72fea25af3c
