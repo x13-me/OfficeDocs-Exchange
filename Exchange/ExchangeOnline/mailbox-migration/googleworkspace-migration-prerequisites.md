@@ -77,7 +77,7 @@ An [automated scenario](/exchange/mailbox-migration/automated-migration-neweac) 
  3. Create a service key
  4. Enable all APIs - Gmail, Calendar, Contacts
 
-Google Admin needs the following permissions to complete these steps:
+The Google Migration admin needs the following permissions to complete these steps:
 - resourcemanager.projects.create
 - iam.ServiceAccounts.create
 
