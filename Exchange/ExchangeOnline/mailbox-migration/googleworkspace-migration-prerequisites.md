@@ -103,7 +103,7 @@ Here is how you do it:
 6. Save changes
 
  > [!NOTE]
- > Please note it might take up to 15 minutes to propagate role assignment changes accross thhe Globe
+ > It might take up to 15 minutes to propagate role assignment changes across the globe.
 
 
 ## Provision users in Microsoft 365 or Office 365
