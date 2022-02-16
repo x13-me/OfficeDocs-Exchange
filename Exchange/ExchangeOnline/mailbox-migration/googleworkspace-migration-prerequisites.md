@@ -86,8 +86,8 @@ The most secure way to achieve this is to assign the following roles to the Goog
 - Service Accounts Creator
 
 Here is how you do it:
-1. Navigate to https://console.developers.google.com 
-2. Expand humburger menu on the upper right hand corner 
+1. Navigate to https://console.developers.google.com.
+2. Expand the hamburger menu in the upper right-hand corner.
    
    ![image](https://user-images.githubusercontent.com/5260172/152607089-76d8f272-3bd5-4f19-9e23-4fca882a789d.png)
    
