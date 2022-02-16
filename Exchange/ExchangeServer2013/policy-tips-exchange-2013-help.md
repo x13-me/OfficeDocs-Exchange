@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: About Policy Tip notification messages in Microsoft Exchange
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
 f1.keywords:
 - NOCSH

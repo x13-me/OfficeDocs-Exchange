@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Verify that the COM+ Event System service status is started on the local computer.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

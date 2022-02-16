@@ -5,8 +5,10 @@ ms:assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
 ms:mtpsurl: https://technet.microsoft.com/library/JJ907309(v=EXCHG.150)
 ms:contentKeyID: 50639772
 ms.reviewer: 
+ms.topic: article
+description: Updates for Microsoft Exchange 2013
 manager: serdars
-ms.author: serdars
+ms.author: serdars 
 author: msdmaguire
 f1.keywords:
 - NOCSH

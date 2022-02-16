@@ -5,6 +5,8 @@ ms:assetid: 887b0a64-84b1-4b8c-9547-e456ea6f5dbd
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298116(v=EXCHG.150)
 ms:contentKeyID: 49289340
 ms.reviewer: 
+ms.topic: article
+description: Understand management roles in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -141,8 +143,8 @@ The wildcard character (\*) can be used in the role entry name to return all of 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -206,10 +208,10 @@ The following table lists all of the administrative management role types in Exc
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -665,9 +667,9 @@ The following table lists all of the user-focused management role types and thei
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

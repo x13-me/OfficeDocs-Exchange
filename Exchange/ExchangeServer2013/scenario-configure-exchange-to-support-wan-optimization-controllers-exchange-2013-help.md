@@ -5,6 +5,8 @@ ms:assetid: 1f407698-0b71-45a3-867a-640ccf7351da
 ms:mtpsurl: https://technet.microsoft.com/library/Ee633456(v=EXCHG.150)
 ms:contentKeyID: 50934213
 ms.reviewer: 
+ms.topic: article
+description: Configure Microsoft Exchange to support WAN Optimization Controllers
 manager: serdars
 ms.author: serdars
 author: msdmaguire

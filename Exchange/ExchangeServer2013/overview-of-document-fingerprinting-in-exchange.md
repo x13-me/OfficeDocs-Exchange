@@ -5,6 +5,8 @@ ms:assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
 ms:mtpsurl: https://technet.microsoft.com/library/Dn635176(v=EXCHG.150)
 ms:contentKeyID: 61218308
 ms.reviewer: 
+ms.topic: article
+description: About Document Fingerprinting in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire

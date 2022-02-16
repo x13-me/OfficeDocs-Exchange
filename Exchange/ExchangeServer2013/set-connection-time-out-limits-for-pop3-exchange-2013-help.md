@@ -5,6 +5,8 @@ ms:assetid: 40003115-be4e-4cf1-97b4-f5ca05b314dc
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997604(v=EXCHG.150)
 ms:contentKeyID: 50395396
 ms.reviewer: 
+ms.topic: how-to
+description: How to set connection time-out limits for POP3 in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
