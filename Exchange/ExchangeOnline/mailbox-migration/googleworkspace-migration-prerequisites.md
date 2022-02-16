@@ -96,7 +96,7 @@ Here is how you do it:
    
    ![image](https://user-images.githubusercontent.com/5260172/152607681-7a2f22b3-f606-4188-a9c4-c9922d244b0a.png) 
    
-5. Enter your Google Migration Admin login followed by roles as per the screenshot below:
+5. Enter your Google Migration admin login followed by roles as per the screenshot below:
    
    ![image](https://user-images.githubusercontent.com/5260172/152609652-c2402f5a-2538-48d5-89a5-d8877f45af43.png)
 
