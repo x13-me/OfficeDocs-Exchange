@@ -5,7 +5,6 @@ ms.author: jhendr
 ms.topic: article
 author: JoanneHendrickson
 manager: serdars
-author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.collection:
 - Strat_EX_EXOBlocker
