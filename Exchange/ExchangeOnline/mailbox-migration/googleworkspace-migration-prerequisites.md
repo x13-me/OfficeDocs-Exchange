@@ -69,7 +69,7 @@ The following procedures must be performed before you start the process of Googl
    > [!IMPORTANT]
    > If you are using non-default Transport settings in your Microsoft 365 or Office 365 organization, you should check that mail flow will work from Office 365 to Google Workspace. Be sure that either your default Remote Domain ("\*") has Automatic Forwarding enabled, or that there is a new Remote Domain for your Google Workspace routing domain (e.g. "gsuite.fabrikaminc.net") that has Automatic Forwarding enabled.
 
-## Check Google Cloud Platform Permissions
+## Check Google Cloud platform permissions
 
 [Automated scenario](https://docs.microsoft.com/en-us/exchange/mailbox-migration/automated-migration-neweac) requires the Google Migration Admin be able to perform the steps below:
  1. Create a Google Workspace project
