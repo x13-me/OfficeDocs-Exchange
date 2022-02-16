@@ -81,9 +81,9 @@ Google Admin needs the following permissions to complete these steps:
 - resourcemanager.projects.create
 - iam.ServiceAccounts.create
 
-The most secure way to achive this is to assign the following roles to the Migration Admin:
+The most secure way to achieve this is to assign the following roles to the Google Migration admin:
 - Projector Creator
-- Create Service Accounts
+- Service Accounts Creator
 
 Here is how you do it:
 1. Navigate to https://console.developers.google.com 
