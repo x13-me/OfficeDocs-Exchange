@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Setup cannot continue because the logged on user does not have the account permissions required for domain preparation.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -5,6 +5,8 @@ ms:assetid: 3d543921-d8c9-4d4b-99a1-82446b585ceb
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997475(v=EXCHG.150)
 ms:contentKeyID: 49300479
 ms.reviewer: 
+ms.topic: article
+description: How to start and stop the POP3 services in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
