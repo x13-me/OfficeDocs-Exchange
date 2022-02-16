@@ -100,7 +100,7 @@ Here is how you do it:
    
    ![image](https://user-images.githubusercontent.com/5260172/152609652-c2402f5a-2538-48d5-89a5-d8877f45af43.png)
 
-6. Save changes
+6. Select **Save**.
 
  > [!NOTE]
  > It might take up to 15 minutes to propagate role assignment changes across the globe.
