@@ -71,7 +71,7 @@ The following procedures must be performed before you start the process of Googl
 
 ## Check Google Cloud platform permissions
 
-[Automated scenario](https://docs.microsoft.com/en-us/exchange/mailbox-migration/automated-migration-neweac) requires the Google Migration Admin be able to perform the steps below:
+An [automated scenario](/exchange/mailbox-migration/automated-migration-neweac) requires the Google Migration admin to be able to perform the following steps:
  1. Create a Google Workspace project
  2. Create a Google Workspace service account in the project
  3. Create a service key
