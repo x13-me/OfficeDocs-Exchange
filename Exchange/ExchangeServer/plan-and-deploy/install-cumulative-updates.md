@@ -36,7 +36,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 - Verify the target server meets the potentially new system requirements and prerequisites for the CU. For more information, see [Exchange Server system requirements](system-requirements.md) and [Exchange Server prerequisites](prerequisites.md).
 
   > [!CAUTION]
-  > Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
+  > Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file), customizations done to the operating system's TLS/Cipher settings **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
 
 - After you install an Exchange CU, you need to restart the computer so that changes can be made to the registry and operating system.
 
