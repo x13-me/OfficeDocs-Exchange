@@ -162,3 +162,65 @@ For other mailbox restoring scenarios related to hybrid infrastructures, refer t
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
+
+## Restoring On-premises disconnected mailbox to O365 mailbox
+
+There may be a scenario where you need to restore an On-Premises disconnected mailbox to an O365 Exchange Online mailbox.  These steps will outline how to perform the mentioned scenario restoral procedure.
+
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+
+2. Run the following command to show the required MailboxGuid of the disconnected mailbox:
+
+   ```PowerShell
+   Get-MailboxDatabase | Get-MailboxStatistics | ?{$_.DisconnectReason -eq “Disabled”} | ft DisplayName, MailboxGuid, LegacyDN, Database
+   ```
+    
+3. Note MailboxGuid.
+
+4. Run the following command to show the required MailboxDatabase Guid associated with the disconnected mailbox:
+
+   ```PowerShell
+   Get-MailboxDatabase | fl Identity, Guid
+   ```
+    
+5. Note MailboxDatabase Guid
+
+6. [Connect to Exchange Online PowerShell](connect-to-exchange-online-powershell.md)
+
+7. Run the following command to show the required target Exchange Online Mailbox ExchangeGuid
+
+   ```PowerShell
+   Get-Mailbox “Target Exchange Online MailboxGuid” | fl Name,ExchangeGuid,LegacyExchangeDN
+   ```
+
+   - If performing restore to archive, you will run the following command with -TargetIsArchive Parameter:
+
+   ```PowerShell
+   Get-Mailbox “Target Exchange Online Archive MailboxGuid” -TargetIsArchive | fl Name,LegacyExchangeDn,ExchangeGuid,ArchiveGuid
+   ```
+    
+8. Take note of Target Exchange Online Mailbox ExchangeGuid or Target Exchange Online ArchiveGuid
+
+9. Now that we have all the required details, proceed by running the following commands to start restore request of target mailbox and be sure to specify credentials for an On-Premises Exchange administrator account:
+
+   ```PowerShell
+   $cred = Get-Credential
+   New-MailboxRestoreRequest -RemoteHostName “Mail.Contoso.com” -RemoteCredential $cred -SourceStoreMailbox “On-Premises MailboxGuid” -TargetMailbox “Exchange Online              MailboxGuid” -RemoteDatabaseGuid “On-Premises Mailbox DatabaseGuid” -RemoteRestoreType DisconnectedMailbox
+   ```
+    
+   - If restoring to archive you will run the following command with -TargetIsArchive Parameter:
+
+   ```PowerShell
+   New-MailboxRestoreRequest -RemoteHostName “Mail.Contoso.com” -RemoteCredential $cred -SourceStoreMailbox “On-Premises MailboxGuid” -TargetMailbox “Target Exchange Online        ArchiveGuid” -RemoteDatabaseGuid “On-Premises Mailbox DatabaseGuid” -RemoteRestoreType DisconnectedMailbox -TargetIsArchive
+   ```
+
+   > [!NOTE]
+   > Restoring into a Large Archive is not supported.
+
+10. You can check the of the restore request by running the following command
+
+    ```PowerShell
+    Get-MailboxRestoreRequestStatistics -Identity "Mailbox Restore RequestID" -IncludeReport | ft
+    ```
+    
+11. Once restore request has reached 100 PercentComplete you have successfully restored the disconnected On-premises mailbox to O365 Exchange Online mailbox
