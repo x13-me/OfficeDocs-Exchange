@@ -181,7 +181,7 @@ If you need to restore a disconnected on-premises mailbox to an Exchange Online 
    Get-MailboxDatabase | Format-List Identity,GUID
    ```
 
-4. [Connect to Exchange Online PowerShell](connect-to-exchange-online-powershell.md)
+4. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md)
 
 5. Replace \<MailboxIdentity\> with the name, alias, or email address of the target Exchange Online mailbox, and then run one of the the following commands:
 
