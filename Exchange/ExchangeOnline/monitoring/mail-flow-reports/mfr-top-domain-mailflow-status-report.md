@@ -26,7 +26,7 @@ The Top domain mailflow status report in the new EAC contains two tabs provi
 
 ## Inbound page
 
-(image)
+![inbound-page](../media/top-domain-inbound-page.png)
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days.
@@ -70,7 +70,7 @@ If you select a row, a details pane for the domain appears based on the value of
 
 ## Outbound page
 
-(image)
+![outbound-page](../media/top-domain-outbound-page.png)
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days.
@@ -101,9 +101,8 @@ This page shows the following information for each domain:
   
 Click **Export** to export the displayed results to a .csv file.
   
-For more information on the outbound pools, see [Outbound delivery pools](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages?view=o365-worldwide).   
+For more information on the outbound pools, see [Outbound delivery pools](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).   
 
 
-  
   
   
