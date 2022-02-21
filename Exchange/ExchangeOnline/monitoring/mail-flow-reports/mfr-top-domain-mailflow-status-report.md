@@ -26,7 +26,7 @@ The Top domain mailflow status report in the new EAC contains two tabs provi
 
 ## Inbound page
 
-![inbound-page](../media/top-domain-inbound-page.png)
+![inbound-page](../../media/top-domain-inbound-page.png)
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days.
@@ -59,18 +59,18 @@ For more advanced filters that you can also save and use later, click **Filter**
 
   When you're finished, click **Save**. The new filter is automatically loaded, and the results are changed based on the filter. This is the same result as clicking **Filter** and selecting the customer filter from the list.
 
-  To clear a existing filter (return to the default list), click **Filter** ![Active filter icon.](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
+  To clear an existing filter (return to the default list), click **Filter** ![Active filter icon.](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
 
 Click **Export** to export the displayed results to a .csv file.
 
 If you select a row, a details pane for the domain appears based on the value of **Domain status**:
 
 - **Healthy**: An explanation about MX records and the same information from the main report is displayed.
-- **Error**: Additional information about the the cause of the error and how to fix it are available in the **Reason** and **How to fix** sections.
+- **Error**: Additional information about the cause of the error and how to fix, it's available in the **Reason** and **How to fix** sections.
 
 ## Outbound page
 
-![outbound-page](../media/top-domain-outbound-page.png)
+![outbound-page](../../media/top-domain-outbound-page.png)
 
 > [!NOTE]
 > By default, the report shows data for the last 7 days.
