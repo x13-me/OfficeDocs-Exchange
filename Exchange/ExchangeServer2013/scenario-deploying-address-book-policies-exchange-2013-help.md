@@ -5,6 +5,8 @@ ms:assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657455(v=EXCHG.150)
 ms:contentKeyID: 49289287
 ms.reviewer: 
+ms.topic: article
+description: Deploy address book policies in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -31,9 +33,9 @@ The Contoso and Humungous Insurance ABPs were created using the following addres
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -86,10 +88,10 @@ In this scenario, Fabrikam and Tailspin Toys share the same Exchange organizatio
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -148,10 +150,10 @@ This scenario is applicable to schools or universities where a division of class
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

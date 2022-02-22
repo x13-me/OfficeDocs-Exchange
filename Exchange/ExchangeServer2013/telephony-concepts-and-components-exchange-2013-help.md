@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Overview of telephony infrastructure concepts to help you plan and deploy servers with Exchange 2013 Unified Messaging.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

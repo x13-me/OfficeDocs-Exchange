@@ -5,6 +5,8 @@ ms:assetid: ff211394-f58b-4da7-bb3a-df6abcb5950e
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657513(v=EXCHG.150)
 ms:contentKeyID: 49289477
 ms.reviewer: 
+ms.topic: how-to
+description: How to remove an organization relationship in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire

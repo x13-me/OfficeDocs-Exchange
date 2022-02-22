@@ -5,6 +5,8 @@ ms:assetid: c4c34235-d545-41e7-ac2f-1dd43aaa3708
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124512(v=EXCHG.150)
 ms:contentKeyID: 49248689
 ms.reviewer: 
+ms.topic: article
+description: Sender reputation is Microsoft Exchange anti-spam functionality that blocks messages according to characteristics of the sender
 manager: serdars
 ms.author: serdars
 author: msdmaguire

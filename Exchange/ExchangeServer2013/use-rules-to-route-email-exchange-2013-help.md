@@ -2,8 +2,11 @@
 title: 'Use transport rules to route email based on a list of words, phrases, or patterns: Exchange 2013 Help'
 TOCTitle: Use transport rules to route email based on a list of words, phrases, or patterns
 ms.author: serdars
+manager: serdars
 author: msdmaguire
 ms.reviewer: 
+ms.topic: article
+description: Use transport rules to route email based on a list of words, phrases, or patterns in Microsoft Exchange
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 f1.keywords:
 - NOCSH
