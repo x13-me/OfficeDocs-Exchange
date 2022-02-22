@@ -119,7 +119,7 @@ Information provided in the newest style NDRs is designed to help the typical em
 
 <br>
 
-****
+
 
 |Field|Description|
 |---|---|
@@ -156,9 +156,9 @@ Original message headers
 <message header fields>
 ```
 
-<br>
 
-****
+
+
 
 |Field|Description|
 |---|---|

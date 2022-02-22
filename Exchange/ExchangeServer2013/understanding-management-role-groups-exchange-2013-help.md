@@ -5,6 +5,8 @@ ms:assetid: 2a92e06c-523e-4fd4-a937-152562b7741d
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638105(v=EXCHG.150)
 ms:contentKeyID: 49289206
 ms.reviewer: 
+ms.topic: article
+description: About management role groups in Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -58,8 +60,8 @@ The following table lists the role group layer and the procedural topics that yo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -110,8 +112,8 @@ The following table lists all the built-in role groups included with Exchange 20
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ673576(v=EXCHG.150)
 ms:contentKeyID: 49315561
 ms.reviewer: 
 manager: serdars
+ms.topic: how-to
+description: How to set the TLS listening port on a Client Access server in Microsoft Exchange Server
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

@@ -5,6 +5,8 @@ ms:assetid: fdd20a2a-c8c1-4d17-b813-3c05d88a4411
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125254(v=EXCHG.150)
 ms:contentKeyID: 48289471
 ms.reviewer: 
+ms.topic: article
+description: Verify a Microsoft Exchange 2013 installation
 manager: serdars
 ms.author: serdars
 author: msdmaguire

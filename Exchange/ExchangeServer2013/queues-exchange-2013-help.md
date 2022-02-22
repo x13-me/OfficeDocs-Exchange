@@ -5,6 +5,8 @@ ms:assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125022(v=EXCHG.150)
 ms:contentKeyID: 50646240
 ms.reviewer: 
+ms.topic: article
+description: About queues in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -65,8 +67,8 @@ The following table lists the files that constitute the queue database.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -111,9 +113,9 @@ The keys for the queue database that are available in the EdgeTransport.exe.conf
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -209,14 +211,14 @@ Exchange 2013 also adds the **NextHopCategory** property to the queue based on t
 
 The values of **DeliveryType**, **NextHopCategory**, **NextHopDomain** and **NextHopConnector** are described in the following table.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -459,10 +461,10 @@ The following table describes the management tasks you can perform on queues or 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

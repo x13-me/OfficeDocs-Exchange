@@ -5,6 +5,8 @@ ms:assetid: a604b96d-2a51-480f-937f-45ad753c2cad
 ms:mtpsurl: https://technet.microsoft.com/library/JJ898581(v=EXCHG.150)
 ms:contentKeyID: 50874005
 ms.reviewer: 
+ms.topic: article
+description: How to upgrade from Microsoft Exchange 2007 to Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -38,8 +40,8 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -94,8 +96,8 @@ To help you get an overview of the Exchange 2007 to Exchange 2013 upgrade proces
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Time to Upgrade from Exchange 2003.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
