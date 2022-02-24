@@ -213,3 +213,17 @@ This error indicates that email sent from your application or device is not corr
 ### Email from my device is marked as junk by Microsoft 365 or Office 365
 
 Microsoft 365 or Office 365 SMTP relay requires your device to send email from a static IP address. Check that your SPF record is set up with your static IP address. A network or ISP change could change your static IP address. Update your SPF record to reflect this change. If you aren't sending from your own static IP address, consider SMTP client submission instead.
+
+## Run diagnostic to Set up applications or devices sending email using Microsoft 365 
+
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account.
+
+If you still need help to fix issues with applications or devices sending email using Microsoft 365, you can run an automated diagnostic. 
+
+To run the diagnostic check, select the following button: 
+
+> [!div class="nextstepaction"]
+> [Run Tests: Send email using Microsoft 365](https://aka.ms/smtprelay)
+
+A flyout page opens in the Microsoft 365 admin center. Select the appropriate option that you are looking for, eg. new setup or troubleshooting existing setup. 
