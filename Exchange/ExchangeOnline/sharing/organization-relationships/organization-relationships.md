@@ -27,7 +27,7 @@ Set up an organization relationship to share calendar information with an extern
 
 An organization relationship is a one-to-one relationship between businesses to allow users in each organization to view calendar availability information. When you set up the organization relationship, you're responsible for setting up your side of the relationship. You specify the level of information that users in the external organization can view in your organization. The external organization is reponsible for setting up their side of the relationship and specifying their level of information that's visible to users in your organization (which might be different than yours). The point is: the organization relationship must be set up at both ends for calendar availability information to be shared.
 
-For example, if the Contoso admin creates an organization relationship with Tailspin Toys, and the Tailspin Toys admin creates an organization relationship with Contoso. As a result, Tailsping Toys users will be able to schedule meetings and view the availability of Contoso users Contoso by adding Contoso email addresses to meeting invitations. Likewise, Contoso users will also see the availability of Tailspin Toys users when scheduling meetings.
+For example, a Contoso admin creates an organization relationship with Tailspin Toys, and a Tailspin Toys admin creates an organization relationship with Contoso. As a result, Tailsping Toys users will be able to schedule meetings and view the availability of Contoso users Contoso by adding Contoso email addresses to meeting invitations. Likewise, Contoso users will also see the availability of Tailspin Toys users when scheduling meetings.
 
 There are three levels of access that you can specify:
 
