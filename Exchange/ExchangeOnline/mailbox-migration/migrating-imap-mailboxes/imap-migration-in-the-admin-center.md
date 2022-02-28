@@ -36,8 +36,7 @@ After you've added your users to Microsoft 365 or Office 365, you can use Intern
 Before you migrate, read [What you need to know about migrating your IMAP mailboxes to Microsoft 365 or Office 365](migrating-imap-mailboxes.md).
 
 > [!IMPORTANT]
-> IMAP migration in the Microsoft 365 admin center has been replaced by IMAP migration by using the Exchange admin center (EAC).
-> To perform an IMAP migration by using the Exchange admin center (EAC), see [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md).
+> IMAP migration in the Microsoft 365 admin center has been replaced by IMAP migration by using the Exchange admin center (EAC). To perform an IMAP migration by using the EAC, see [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md).
 
 To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migration to migrate Exchange mailboxes to Microsoft 365 or Office 365](../use-minimal-hybrid-to-quickly-migrate.md)
 
