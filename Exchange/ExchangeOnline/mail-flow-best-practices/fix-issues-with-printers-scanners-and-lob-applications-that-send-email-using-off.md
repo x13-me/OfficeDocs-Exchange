@@ -96,9 +96,18 @@ The following list describes the available configuration options:
 
    5. If you can't connect to Microsoft 365 or Office 365, your network firewall or Internet Service Provider (ISP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
 
-6. If none of these issues apply to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.2 or above. Update the firmware on the device or try one of the other configuration options where TLS is optional.
+6. If none of these issues apply to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. 
 
-   For more information about TLS, see [How Exchange Online uses TLS to secure email connections](/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
+Recently, we started rejecting a percentage of connections to smtp.office365.com that uses TLS1.0/1.1 for SMTP AUTH.
+
+Your device must support TLS version 1.2 or above. Update the firmware on the device or try one of the other configuration options where TLS is optional. If you need to utilize TLS 1.0/1.1 for SMTP AUTH to retain legacy clients and devices, you must opt-in by:
+
+   -Set the AllowLegacyTLSClients parameter on the Set-TransportConfig cmdlet to True. Or from Exchange admin center, go to Settings > Mail Flow and (under Security) check “Turn on use of legacy TLS clients” and click on Save.
+   -Also legacy clients and devices need to be configured to submit to the new endpoint smtp-legacy.office365.com
+
+To know more, please refer to - [New opt-in endpoint available for SMTP AUTH clients still needing legacy TLS](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-opt-in-endpoint-available-for-smtp-auth-clients-still/ba-p/2659652)
+
+For more information about TLS, see [How Exchange Online uses TLS to secure email connections](/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://www.microsoft.com/microsoft-365/blog/2015/06/29/enhancing-mail-flow-security-for-exchange-online/).
 
 ### I receive an authentication error when my device tries to send email
 
