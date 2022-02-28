@@ -38,7 +38,7 @@ The overview section shows these two charts:
  - **Detected reply-all storm messages**
  - **Messages blocked**
 
-**Detected reply-all storm messages** shows the number of reply-all messages for a particular message thread that were detected during the preceding time-interval. For example, in the chart above the five reply-all messages for the "Happy Thanksgiving" thread shown at 3pm were detected between 2:45 and 3pm. Reply-all messages sent before a reply-all storm is identified, won't get blocked. Yet, they are included as part of the **Detected reply-all storm messages** chart values, as are the blocked messages.
+**Detected reply-all storm messages** shows the number of reply-all messages for a particular message thread that were detected during the preceding time-interval. For example, in the chart above the five reply-all messages for the "Happy Thanksgiving" thread shown at 3pm were detected between 2:45 and 3pm. Reply-all messages sent before a reply-all storm are identified and won't get blocked. Yet, they're included as part of the **Detected reply-all storm messages** chart values, as are the blocked messages.
 
 > [!NOTE]
 > This chart displays data only for declared reply-all storms where at least one reply-all message has been blocked. It can't be used to track potential storms before they're declared a reply-all storm.
