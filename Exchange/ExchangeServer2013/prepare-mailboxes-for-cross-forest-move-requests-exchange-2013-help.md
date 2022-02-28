@@ -7,6 +7,8 @@ ms:contentKeyID: 49360516
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to prepare mailboxes for cross-forest move requests in Microsoft Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -69,8 +71,8 @@ The following table lists the minimum set of attributes that need to be configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -157,8 +159,8 @@ It isn't mandatory that the following attributes are configured for the **New-Mo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -278,8 +280,8 @@ A linked attribute is an Active Directory attribute that references other Active
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -319,8 +321,8 @@ If you want to move a mailbox to an Exchange 2013 resource forest, the mailbox i
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -361,8 +363,8 @@ If you want to move a resource mailbox to an Exchange 2013 forest, you need to s
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -409,8 +411,8 @@ In Exchange 2007, the **Move-Mailbox** cmdlet also copied the attributes shown i
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

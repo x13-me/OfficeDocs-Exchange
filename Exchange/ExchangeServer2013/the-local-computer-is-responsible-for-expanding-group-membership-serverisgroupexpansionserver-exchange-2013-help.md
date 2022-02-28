@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Setup requires distribution list expansion be removed from the current Bridgehead server before the Hub Transport role can be uninstalled.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -5,6 +5,8 @@ ms:assetid: b8b55917-d81f-4c0a-ad65-7bb10ac58df8
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.smtpaddressliteral(v=EXCHG.150)
 ms:contentKeyID: 46629094
 ms.reviewer: 
+ms.topic: article
+description: Microsoft Exchange Server setup can't continue because the specified recipient policy uses an unsupported SMTP address format
 manager: serdars
 ms.author: serdars
 author: msdmaguire
