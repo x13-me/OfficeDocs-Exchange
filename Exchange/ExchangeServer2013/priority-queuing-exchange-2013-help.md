@@ -5,9 +5,11 @@ ms:assetid: 6edbd826-fe55-435b-9c63-48e6365c3d09
 ms:mtpsurl: https://technet.microsoft.com/library/Bb691107(v=EXCHG.150)
 ms:contentKeyID: 50646236
 ms.reviewer: 
+ms.topic: article
+description: Priority queuing in Exchange Server 2013 enables the sender-defined priority of a message to influence the message processing by the Transport service on the Mailbox server
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -45,9 +47,9 @@ The following table explains each key in more detail.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -118,9 +120,9 @@ Some message limits available in the **Set-TransportService** cmdlet have corres
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How retention age is calculated in Exchange 2013.
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
 f1.keywords:
 - NOCSH

@@ -5,6 +5,8 @@ ms:assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms:mtpsurl: https://technet.microsoft.com/library/Dn750898(v=EXCHG.150)
 ms:contentKeyID: 62380197
 ms.reviewer: 
+ms.topic: article
+description: Changes in Active Directory when Microsoft Exchange 2013 is installed
 manager: serdars
 ms.author: serdars
 author: msdmaguire

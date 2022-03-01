@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Supported character sets for remote domains in Microsoft Exchange Server
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
 f1.keywords:
 - NOCSH

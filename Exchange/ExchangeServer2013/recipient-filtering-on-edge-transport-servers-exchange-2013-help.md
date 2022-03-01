@@ -7,6 +7,8 @@ ms:contentKeyID: 49248685
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: About recipient filtering on Edge Transport servers in Microsoft Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

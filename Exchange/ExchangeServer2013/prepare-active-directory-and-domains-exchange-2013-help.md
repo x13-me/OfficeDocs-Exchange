@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb125224(v=EXCHG.150)
 ms:contentKeyID: 48385726
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: How to prepare Active Directory and domains before you install Microsoft Exchange Server
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

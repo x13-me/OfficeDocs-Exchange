@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Unified Messaging (UM) requires that you integrate Microsoft Exchange with the existing telephony system for your organization.
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
 
 f1.keywords:

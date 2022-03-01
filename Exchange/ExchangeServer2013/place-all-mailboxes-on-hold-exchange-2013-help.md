@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to place all mailboxes on hold in Microsoft Exchange
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8
 f1.keywords:
 - NOCSH
