@@ -157,6 +157,16 @@ Exporting logs for analysis requires a premium license for your Azure AD tenant.
 - **Graph APIs**: We recommend that you use MS Graph paging logic to ensure you can pull in all of the logs. For more information, see [Access Azure AD logs with the Microsoft Graph API](/azure/active-directory/reports-monitoring/quickstart-access-log-with-graph-api).
 - **Direct download from web browser**: For large customers, the amount of data can cause browser timeouts.
 
+## Re-enabling and Opting Out of Proactive Protection
+
+We have already started to disable Basic authentication in those tenants that don't use it, and for individual protocols that have no usage, within tenants that still do. Any time we plan to make a change to your tenant we will send a Message Center post describing the change. If you receive a message notifying you that we will be disabling something, and you do not want us to take that step, you can opt out. You can do this up until October 2022, at which point it will not be possible to opt out. 
+
+You can find details on this opt-out process here: [Basic Authentication and Exchange Online – September 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210)
+
+If you didn't see the message in time and we disabled something, and then you discover you still need Basic authentication enabled, you can also go back and re-enable that protocol. But again, you can only do that until October 2022. 
+
+You can find details on this re-enablement process here: [Basic Authentication and Exchange Online – June 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-june-2021-update/ba-p/2454827)
+
 ## Client options
 
 Some of the options available for each of the impacted protocols are listed below.
@@ -178,7 +188,7 @@ For Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exch
 |Exchange Web Services (EWS)|Third-party applications not supporting OAuth|Modify app to use modern auth.  Migrate app to use Graph API and modern auth|No EWS feature updates starting July 2018|
 |Remote PowerShell (RPS)|- Exchange Administrators</br>- [Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</br>-  Automated management tools|Use either:</br>- [PowerShell V2 Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.5) </br>- [PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269)|Learn more about [Automation and cert auth support for Remote PowerShell MFA](/powershell/exchange/app-only-auth-powershell-v2).|
 |POP and IMAP|Third party mobile clients such as Thunderbird first party clients configured to use POP or IMAP|Recommend moving away from these protocols as they don't enable full features.  </br>- Move to OAuth 2.0 for POP/IMAP when your client app supports it|IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out April 2020.|
-|Exchange ActiveSync (EAS)|Mobile email clients from Apple, Samsung etc.|Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth Update the app settings if it can do OAuth but the device is still using Basic (remove and readd the account) Switch to Outlook on the web or another mobile browser app that supports modern auth|Mobile devices that use a native app to connect to Exchange Online generally use this protocol.|
+|Exchange ActiveSync (EAS)|Mobile email clients from Apple, Samsung etc.|Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth Update the app settings if it can do OAuth but the device is still using Basic Switch to Outlook on the web or another mobile browser app that supports modern auth. </br></br>Popular Apps;</br>Apple iPhone/iPad/macOS - All up to date iOS/macOS devices are capable of using modern authentication, just remove and add back the account. </br>Microsoft Windows 10 Mail client - remove and add back the account, choosing Office 365 as the account type|Mobile devices that use a native app to connect to Exchange Online generally use this protocol.|
 |
 
 ## What if I want to block Basic authentication now?
