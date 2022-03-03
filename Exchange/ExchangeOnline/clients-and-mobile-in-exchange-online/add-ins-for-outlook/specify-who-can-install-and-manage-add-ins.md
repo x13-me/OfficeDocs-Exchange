@@ -70,7 +70,7 @@ You can use the new Exchange admin center (EAC) to assign administrators the per
 1. Log in to the new EAC as a global administrator.
 2. Go to **Roles**, and then select **Admin Roles**. 
 3. Select an existing group or create a new one.
-4. If you are modifying an existing role, go to **Permissions**, add the permissions required to install and manage add-ins and click **Save**. If you are creating a new group, follow the wizard.
+4. If you are modifying an existing role, go to **Permissions**, add the permissions required to install and manage add-ins, and then click **Save**. If you are creating a new group, follow the wizard.
 
 For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
@@ -83,8 +83,9 @@ You can use the classic EAC to assign users the permissions required to view and
 1. Log in to the classic EAC as a global administrator.
 2. Go to **Permissions**, and then select **User Roles**. 
 3. Select an existing role assignment policy or create a new one.
-4. Select some or all of the roles: **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps**.
-5. Click **Save**.
+4. Type a name for the policy if you are creating a new one.
+5. Select some or all of the roles: **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps**.
+6. Click **Save**.
 
 For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
