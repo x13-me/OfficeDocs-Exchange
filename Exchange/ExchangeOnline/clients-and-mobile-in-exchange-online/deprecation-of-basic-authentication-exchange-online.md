@@ -157,15 +157,20 @@ Exporting logs for analysis requires a premium license for your Azure AD tenant.
 - **Graph APIs**: We recommend that you use MS Graph paging logic to ensure you can pull in all of the logs. For more information, see [Access Azure AD logs with the Microsoft Graph API](/azure/active-directory/reports-monitoring/quickstart-access-log-with-graph-api).
 - **Direct download from web browser**: For large customers, the amount of data can cause browser timeouts.
 
-## Re-enabling and Opting Out of Proactive Protection
+## Re-enabling and opting out of Proactive Protection
 
-We have already started to disable Basic authentication in those tenants that don't use it, and for individual protocols that have no usage, within tenants that still do. Any time we plan to make a change to your tenant we will send a Message Center post describing the change. If you receive a message notifying you that we will be disabling something, and you do not want us to take that step, you can opt out. You can do this up until October 2022, at which point it will not be possible to opt out. 
+We've already started to disable Basic authentication in following environments:
 
-You can find details on this opt-out process here: [Basic Authentication and Exchange Online – September 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210)
+- Organizations that don't use Basic authentication for any protocols.
+- In organizations that still use Basic authentication, we'll disable Basic authentication on individual protocols that have no recorded usage.
 
-If you didn't see the message in time and we disabled something, and then you discover you still need Basic authentication enabled, you can also go back and re-enable that protocol. But again, you can only do that until October 2022. 
+Before we make any changes to your organization, we'll notify you about the change in a Message Center post. You can opt-out of the change if you act before the date that's specified in the Message Center post. You can do this until October 2022, at which point you can no longer opt-out of the changes.
 
-You can find details on this re-enablement process here: [Basic Authentication and Exchange Online – June 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-june-2021-update/ba-p/2454827)
+For more informaiton about the opt-out process, see [Basic Authentication and Exchange Online – September 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210).
+
+If we already disabled something before you saw the Message Center post, you can re-enable it at any time before October 2022. 
+
+For more information about the re-enablement process, see [Basic Authentication and Exchange Online – June 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-june-2021-update/ba-p/2454827).
 
 ## Client options
 
@@ -184,11 +189,11 @@ For Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exch
 
 |Key Protocol Service|Impacted Clients|Client specific Recommendation|Protocol Info / Notes|
 |---|---|---|---|
-|Outlook|All versions of Outlook for Windows and Mac|- Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac </br>- If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication)|[Enabling Modern Auth for Outlook – How Hard Can It Be?](https://techcommunity.microsoft.com/t5/exchange-team-blog/enabling-modern-auth-for-outlook-how-hard-can-it-be/ba-p/2278411)|
-|Exchange Web Services (EWS)|Third-party applications not supporting OAuth|Modify app to use modern auth.  Migrate app to use Graph API and modern auth|No EWS feature updates starting July 2018|
-|Remote PowerShell (RPS)|- Exchange Administrators</br>- [Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</br>-  Automated management tools|Use either:</br>- [PowerShell V2 Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.5) </br>- [PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269)|Learn more about [Automation and cert auth support for Remote PowerShell MFA](/powershell/exchange/app-only-auth-powershell-v2).|
-|POP and IMAP|Third party mobile clients such as Thunderbird first party clients configured to use POP or IMAP|Recommend moving away from these protocols as they don't enable full features.  </br>- Move to OAuth 2.0 for POP/IMAP when your client app supports it|IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out April 2020.|
-|Exchange ActiveSync (EAS)|Mobile email clients from Apple, Samsung etc.|Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth Update the app settings if it can do OAuth but the device is still using Basic Switch to Outlook on the web or another mobile browser app that supports modern auth. </br></br>Popular Apps;</br>Apple iPhone/iPad/macOS - All up to date iOS/macOS devices are capable of using modern authentication, just remove and add back the account. </br>Microsoft Windows 10 Mail client - remove and add back the account, choosing Office 365 as the account type|Mobile devices that use a native app to connect to Exchange Online generally use this protocol.|
+|Outlook|All versions of Outlook for Windows and Mac|<ul><li>Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac</li><li>If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication)</li></ul>|[Enabling Modern Auth for Outlook – How Hard Can It Be?](https://techcommunity.microsoft.com/t5/exchange-team-blog/enabling-modern-auth-for-outlook-how-hard-can-it-be/ba-p/2278411)|
+|Exchange Web Services (EWS)|Third-party applications not supporting OAuth|<ul><li>Modify app to use modern auth.</li><li>Migrate app to use Graph API and modern auth.</li></ul>|No EWS feature updates starting July 2018|
+|Remote PowerShell (RPS)|<ul><li>Exchange administrators</li><li>[Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</li><li>Automated management tools</li></ul>|Use either: <ul><li>[Exchange Online PowerShell V2 Module](/powershell/exchange/exchange-online-powershell).</li><li>[PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269).</li></ul>|Learn more about [Automation and certificate-based authentication support for the EXO V2 Module](/powershell/exchange/app-only-auth-powershell-v2).|
+|POP and IMAP|Third party mobile clients such as Thunderbird first party clients configured to use POP or IMAP|Recommendations: <ul><li>Move away from these protocols as they don't enable full features.</li><li>Move to OAuth 2.0 for POP/IMAP when your client app supports it.</li></ul>|IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out in April 2020.|
+|Exchange ActiveSync (EAS)|Mobile email clients from Apple, Samsung etc.|<ul><li>Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth</li><li>Update the app settings if it can do OAuth but the device is still using Basic</li><li>Switch to Outlook on the web or another mobile browser app that supports modern auth.</li></ul> <p> Popular Apps: <ul><li>Apple iPhone/iPad/macOS: All up to date iOS/macOS devices are capable of using modern authentication, just remove and add back the account.</li><li>Microsoft Windows 10 Mail client: Remove and add back the account, choosing Office 365 as the account type</li></ul>|Mobile devices that use a native app to connect to Exchange Online generally use this protocol.|
 |
 
 ## What if I want to block Basic authentication now?
