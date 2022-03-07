@@ -5,6 +5,8 @@ ms:assetid: ad89ebd5-f9bb-40c1-8811-09b145c2b341
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.installwatermark(v=EXCHG.150)
 ms:contentKeyID: 46629079
 ms.reviewer: 
+ms.topic: article
+description: Microsoft Exchange Server setup can't continue because a previous setup failure occurred while installing a server role
 manager: serdars
 ms.author: serdars
 author: msdmaguire

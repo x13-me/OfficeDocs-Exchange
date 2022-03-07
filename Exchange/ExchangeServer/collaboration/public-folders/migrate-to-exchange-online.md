@@ -464,7 +464,7 @@ The expected result if public folders are locked is:
 
 You need to check the following items before you can complete your public folder migration:
 
-1. Confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange environment. To do this, use the **Get-MoveRequest** and **Get-PublicFolderMoveRequest** cmdlets to list any existing public folder moves. If there are any moves in progress, or in the **Completed** state, remove them.
+1. Confirm that there are no other public folder mailbox moves or public folder moves going on in your on-premises Exchange environment. To do this, use the **Get-MoveRequest** and **Get-PublicFolderMoveRequest** cmdlets to list any existing public folder moves. If there are any moves [i](/exchange/troubleshoot/public-folders/migrationbatch-fails-no-public-folder-mailboxes)n progress, or in the **Completed** state, remove them.
 
 2. At this point, we recommend re-running the following script to ensure that any new mail-enabled public folders are synchronized with Exchange Online:
 

@@ -5,6 +5,8 @@ ms:assetid: 8241033f-e201-4799-b17c-4f120c6e6445
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298099(v=EXCHG.150)
 ms:contentKeyID: 49289329
 ms.reviewer: 
+ms.topic: article
+description: Multiple-forest permissions in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -113,9 +115,9 @@ Linked role groups and linked mailboxes both have advantages and disadvantages w
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
