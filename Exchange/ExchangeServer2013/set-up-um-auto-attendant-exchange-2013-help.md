@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: how-to
+description: How to set up up a Unified Messaging auto attendant in Microsoft Exchange Server
 ms.assetid: 0a3492f8-8aba-4904-96fd-6e023175012a
 f1.keywords:
 - NOCSH

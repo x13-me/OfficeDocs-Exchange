@@ -29,9 +29,9 @@ All procedures in this article assume that your Microsoft 365 or Office 365 doma
    > [!NOTE]
    > Google Workspace migration is not currently available for Office 365 US Government GCC High or DoD.
 
-## Migration modalities
+## Select your method of migration
 
-You can migrate from Google Workspace using the following modalities:
+You can migrate from Google Workspace using any of the following methods:
 
 - [Automated - through the New Exchange admin center](automated-migration-neweac.md)
 - [Manual - through the New Exchange admin center as well as Classic Exchange admin center](manual-gspace-migration-overview.md)

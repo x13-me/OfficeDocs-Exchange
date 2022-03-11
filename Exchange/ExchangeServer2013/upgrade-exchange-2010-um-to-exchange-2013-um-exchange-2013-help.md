@@ -5,6 +5,8 @@ ms:assetid: 01aa5dab-689b-4738-afab-0d2f11a60b39
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169226(v=EXCHG.150)
 ms:contentKeyID: 53382778
 ms.reviewer: 
+ms.topic: how-to
+description: How to upgrade Exchange 2010 Unified Messaging to Exchange 2013 Unified Messaging
 manager: serdars
 ms.author: serdars
 author: msdmaguire

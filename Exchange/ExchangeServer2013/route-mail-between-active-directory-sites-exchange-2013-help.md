@@ -5,6 +5,8 @@ ms:assetid: 86b423e3-7bec-4430-9a5a-4f84ce9d82ea
 ms:mtpsurl: https://technet.microsoft.com/library/JJ916681(v=EXCHG.150)
 ms:contentKeyID: 50934220
 ms.reviewer: 
+ms.topic: article
+description: Route mail between Active Directory sites in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -39,8 +41,8 @@ The following table shows how an organization might define Active Directory site
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

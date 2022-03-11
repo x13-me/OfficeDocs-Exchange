@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Set up Outlook Voice Access in Microsoft Exchange Server
 ms.assetid: 5ce8c877-35f3-4e55-a65e-5ca469aeae99
 f1.keywords:
 - NOCSH

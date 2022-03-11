@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998561(v=EXCHG.150)
 ms:contentKeyID: 49289272
 ms.reviewer: 
 manager: serdars
+ms.topic: article
 ms.author: serdars
+description: About access to Active Directory for Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH

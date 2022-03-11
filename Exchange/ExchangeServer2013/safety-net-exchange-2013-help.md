@@ -5,6 +5,8 @@ ms:assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657495(v=EXCHG.150)
 ms:contentKeyID: 49289415
 ms.reviewer: 
+ms.topic: article
+description: Safety Net is the transport dumpster in Microsoft Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -49,9 +51,9 @@ The parameters used by Safety Net are described in the following table.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

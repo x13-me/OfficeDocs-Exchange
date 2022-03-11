@@ -27,9 +27,6 @@ manager: serdars
 
 There are many paths to migrate data from an on-premises email organization to Microsoft 365 or Office 365. When planning a migration to Microsoft 365 or Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
 
-> [!NOTE]
-> The performance information listed in this topic doesn't apply to Microsoft 365 or Office 365 service for dedicated subscription plans. For more information about Dedicated Plans, see [Microsoft 365 and Office 365 Dedicated Plans Service Descriptions](/previous-versions//mt422899(v=technet.10)).
-
 ## Overview of migrating email to Microsoft 365 or Office 365
 
 Microsoft 365 or Office 365 supports several methods to migrate email, calendar, and contact data from your existing messaging environment to Microsoft 365 or Office 365 as described in [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](mailbox-migration.md).

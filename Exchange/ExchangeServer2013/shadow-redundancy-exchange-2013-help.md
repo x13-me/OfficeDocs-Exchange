@@ -5,6 +5,8 @@ ms:assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351027(v=EXCHG.150)
 ms:contentKeyID: 49289359
 ms.reviewer: 
+ms.topic: article
+description: Shadow redundancy provides redundant copies of messages before they're delivered to mailboxes in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -27,8 +29,8 @@ The following table describes the components of shadow redundancy. These terms a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -118,9 +120,9 @@ The following table describes the parameters that enable shadow redundancy.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -215,9 +217,9 @@ The following table describes the parameters that control the creation of shadow
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -328,9 +330,9 @@ The following table describes the parameters that control how shadow messages ar
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -382,8 +384,8 @@ The following table summarizes how shadow redundancy reacts to these two scenari
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
