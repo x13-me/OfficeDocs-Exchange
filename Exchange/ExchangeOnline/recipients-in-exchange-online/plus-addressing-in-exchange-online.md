@@ -16,6 +16,9 @@ description: You use plus addressing to support dynamic, disposable recipient (n
 
 # Plus Addressing in Exchange Online
 
+> [!NOTE]
+> A change is coming to make plus addressing enabled by default. This change is planned for late April 2022. When the change occurs, the allow setting AllowPlusAddressInRecipients below will not longer work. Customers who do not want to allow their users to use plus addressing, can disable the feature with a new setting which has been documented below.    
+
 From September 2020, plus addressing, also known as subaddressing, is available in Exchange Online. Subaddressing is a defined way to support dynamic, disposable recipient (not sender) email addresses for mailboxes.
 
 An SMTP email address uses the basic syntax: `<local-part>@<domain>`. For example, sean@contoso.com. 
@@ -28,7 +31,25 @@ Plus addressing is available in [Outlook](https://outlook.live.com/owa/). By def
 
 If your organization's email is routed through Exchange Online to your on-premises servers, mailboxes hosted on-premises will also be able to use plus addresses.  
 
-## Use the new Exchange admin center to enable plus addressing
+## Use PowerShell to disable plus addressing (New Setting)
+
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+
+2. The command uses the following syntax:
+
+   ```PowerShell
+   Set-OrganizationConfig -DisablePlusAddressingInRecipients <$true | $false>
+   ```
+
+3. To disable plus addressing in your organization, run the following command:
+
+   ```PowerShell
+   Set-OrganizationConfig -DisablePlusAddressInRecipients $true
+   ```
+   
+4. This setting will only take effect when plus addressing is turned on by default. That change should roll out in late April. Before then, customers just need to ensure the setting AllowPlusAddressInRecipients below is not set to True for plus addressing to be disabled. 
+
+## Use the new Exchange admin center to enable plus addressing (Setting to be deprecation)
 
 1. In the new [Exchange admin center](https://admin.exchange.microsoft.com), go to **Settings** \> **Mail flow**.
 
@@ -49,6 +70,7 @@ If your organization's email is routed through Exchange Online to your on-premis
    ```PowerShell
    Set-OrganizationConfig -AllowPlusAddressInRecipients $true
    ```
+
 
 > [!NOTE]
 > This feature was rolled out behind a setting because, historically, customers have been able to use plusses in addresses for mailboxes in Exchange Online and on-premises servers. When this feature is enabled, Exchange Online will first check if the full address can resolve to a mailbox that the service is aware of. It is only when that resolution fails, that a plus is looked for and a second attempt to resolve the address without the plus and tag is done. This means that the feature is compatible with addresses containing plusses that Exchange Online knows about. If you relay messages to a mailbox on-premises that does not resolve in Exchange Online, message delivery will be affected. The messages will be parsed and addressed to the parsed address for example, sean@contoso.com instead of the full sean+newsletter@contoso.com, using the example above.  
