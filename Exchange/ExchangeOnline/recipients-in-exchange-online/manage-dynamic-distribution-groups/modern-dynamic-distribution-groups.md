@@ -67,7 +67,3 @@ For detailed syntax and parameter information, see [Set-DynamicDistributionGroup
 
 > [!NOTE]
 > You can run the refresh command only after more than one hour has passed since the last membership refresh.
-
-## Support
-
-If you need further assistance, contact the [Modern DDG Support team](mailto:modernddgsupport@service.microsoft.com).
