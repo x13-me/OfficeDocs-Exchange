@@ -31,10 +31,8 @@ The following table describes the mailbox plans that you're likely to see in Exc
 |Subscription or license|Mailbox plan display name|
 |---|---|
 |Exchange Online Kiosk <p> Microsoft 365 or Office 365 Enterprise F3|ExchangeOnlineDeskless|
-|Microsoft 365 or Office 365 Enterprise E1 <p> Exchange Online Plan 1|ExchangeOnline|
+|Microsoft 365 Business Basic <p> Microsoft 365 or Office 365 Enterprise E1 <p> Exchange Online Plan 1|ExchangeOnline|
 |Microsoft 365 or Office 365 Enterprise E3 <p> Microsoft 365 or Office 365 Enterprise E5 <p> Exchange Online Plan 2|ExchangeOnlineEnterprise|
-|Microsoft 365 Business Basic|ExchangeOnlineEssentials|
-|
 
 **Notes**:
 
