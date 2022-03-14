@@ -27,7 +27,7 @@ manager: serdars
 > - Starting **August 1, 2022**, DLP policy management experience in the classic Exchange admin center will be retired. Administrators will still be able to view associated rules in read only mode using the mail flow rule experience.
 >
 > You can easily migrate your legacy Exchange Online DLP policies using the migration wizard. For more information, see [Migrate Exchange Online data loss prevention policies to the Microsoft 365 compliance center](/microsoft-365/compliance/dlp-migrate-exo-policy-to-unified-dlp).
-
+>
 > Detailed timelines for GCC-H and DoD special clouds will be communicated separately.
 
 Learn about DLP policies in Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
