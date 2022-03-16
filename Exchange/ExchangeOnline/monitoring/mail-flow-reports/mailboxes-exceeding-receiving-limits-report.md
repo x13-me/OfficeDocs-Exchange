@@ -74,4 +74,4 @@ There are two sections to this report:
 
 2. Click **Export** to download the data as a csv.
 
-3. Select a mailbox address to view in detail the mailbox owner's contact information. Contact the mailbox owner to understand why their receiving so much email, so they can reduce their mail volume and have a better experience.
+3. Select a mailbox address to view in detail the mailbox owner's contact information. Contact the mailbox owner to understand why they're receiving so much email, so they can reduce their mail volume and have a better experience.
