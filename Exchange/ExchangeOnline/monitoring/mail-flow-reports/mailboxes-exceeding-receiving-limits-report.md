@@ -23,7 +23,7 @@ This report shows details on three categories of the Exchange Online receiving l
   
   2. **Sender-recipient pair limit**: The receiving limit per sender-recipient pair. When a mailbox exceeds the SRP limit, they won’t receive any mail from that sender, if the sender is from the Internet or on-premises.
   
-  3. **Warm limit**: The logging-only limit that indicates when messages are ‘At risk’ of being blocked, set to 1000 messages per rolling hour. When a mailbox exceeds the warm limit, they are not yet impacted but will be displayed in reporting for admin awareness. 
+  3. **Warm limit**: The logging-only limit that indicates when messages are ‘At risk’ of being blocked, set to 1000 messages per rolling hour. When a mailbox exceeds the warm limit, they aren't yet impacted but will be displayed in reporting for admin awareness. 
 
 
 > [!NOTE]
@@ -37,11 +37,11 @@ There are two sections to this report:
 
        - **Hot limit**: Mailboxes won't receive any mail from the Internet or on-premises senders if the overall receiving limit is exceeded.
 
-    2. When a mailbox is at risk, which means they have exceeded one or both of the below limits. This mailbox has not exceeded the receiving (Hot) limit yet but is receiving large volumes of messages regularly.
+    2. When a mailbox is at risk, which means they've exceeded one or both of the below limits. This mailbox hasn't exceeded the receiving (Hot) limit yet but is receiving large volumes of messages regularly.
     
        - **Sender-recipient pair (SRP) limit**: Mailboxes won't receive any mail from a specific sender if the mailbox has received too many messages from the sender. High volumes from specific senders should be paid attention to, as they can put the mailbox at risk of exceeding the receiving (Hot) limit.
        
-       - **Warm limit**: When a mailbox has not exceeded their limit yet but is receiving large volumes of messages regularly.
+       - **Warm limit**: When a mailbox hasn't exceeded their limit yet but is receiving large volumes of messages regularly.
 
 2. A table that shows, in the selected time window:
 
