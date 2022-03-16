@@ -23,8 +23,8 @@ manager: serdars
 > [!NOTE]
 > Legacy Exchange Online data loss prevention in the Exchange admin center is in the process of being deprecated. We recommend that you create DLP policies in the Microsoft 365 compliance center. For more information about this DLP, see [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
 >
-> - Starting **April 1, 2022**, administrators will no longer be able to make configuration changes to DLP policies in the classic Exchange admin center.
-> - Starting **August 1, 2022**, DLP policy management experience in the classic Exchange admin center will be retired. Administrators will still be able to view associated rules in read only mode using the mail flow rule experience.
+> - Starting **April 1, 2022**, admins will no longer be able to make configuration changes to DLP policies in the classic Exchange admin center.
+> - Starting **August 1, 2022**, the DLP policy management experience in the classic Exchange admin center will be retired. Admins will still be able to view the associated rules in read-only mode using the mail flow rule (transport rule) experience.
 >
 > You can easily migrate your legacy Exchange Online DLP policies using the migration wizard. For more information, see [Migrate Exchange Online data loss prevention policies to the Microsoft 365 compliance center](/microsoft-365/compliance/dlp-migrate-exo-policy-to-unified-dlp).
 >
