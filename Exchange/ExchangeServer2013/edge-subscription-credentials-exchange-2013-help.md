@@ -5,6 +5,8 @@ ms:assetid: 1d291bc1-9c00-4d1b-8da0-cb81f63d8305
 ms:mtpsurl: https://technet.microsoft.com/library/Bb266959(v=EXCHG.150)
 ms:contentKeyID: 61200277
 ms.reviewer: 
+ms.topic: article
+description: About Edge Subscription credentials in Microsoft Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -31,8 +33,8 @@ The Edge Subscription XML file contains the data shown in the following table.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -103,9 +105,9 @@ Each EdgeSync replication account is assigned the properties shown in the follow
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

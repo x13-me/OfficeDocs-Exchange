@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Messaging records management helps organizations manage email lifecycle and reduce legal risks for e-mail and other communications.
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 
 f1.keywords:

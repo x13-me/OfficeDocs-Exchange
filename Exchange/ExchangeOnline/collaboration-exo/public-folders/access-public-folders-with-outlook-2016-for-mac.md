@@ -24,11 +24,6 @@ manager: serdars
 
 Users of Outlook 2016 for Mac can now access public folders in Exchange Online in a number of different topologies.
 
-## Outlook for Mac limitations
-
-All versions of Outlook for Mac can access Exchange public folders, but until recently these clients could not access public folders in the following deployment scenario:
-
-- **Hybrid topologies**: On-premises users with a mailbox based in Exchange Online could not use Outlook for Mac to access on-premises modern public folders. Similarly, users with an Exchange 2013 or Exchange 2016 mailbox on-premises could not use Outlook for Mac to access public folders deployed in Exchange Online.
 
 ## Outlook 2016 or 2019 for Mac
 

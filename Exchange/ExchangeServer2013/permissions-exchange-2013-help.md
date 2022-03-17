@@ -7,6 +7,8 @@ ms:contentKeyID: 48385617
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: About predefined permissions in Microsoft Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -67,8 +69,8 @@ Exchange 2013 includes several built-in role groups, each one providing permissi
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -237,8 +239,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

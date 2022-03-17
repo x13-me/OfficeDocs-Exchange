@@ -72,6 +72,7 @@ To convert a mailbox, use the following syntax:
 
 ```PowerShell
 Set-Mailbox -Identity <MailboxIdentity> -Type <Regular | Room | Equipment | Shared>
+```
 
 This example converts the shared mailbox named MarketingDept1 to a user mailbox.
 

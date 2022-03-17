@@ -7,7 +7,9 @@ ms:contentKeyID: 49315484
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+ms.topic: article
+description: How to prevent voice messages marked private from being exposed to unintended listeners in Microsoft Exchange
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -71,8 +73,8 @@ Before you can implement IRM in Exchange, you must first deploy and configure yo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -119,8 +121,8 @@ The email client software that's used to listen to a Protected Voice Mail messag
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -211,9 +213,9 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
