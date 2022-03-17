@@ -34,7 +34,7 @@ Looking for other management tasks related to remote move requests? Check out [M
 
 ## What do you need to know before you begin?
 
-- Locate the Prepare-MoveRequest.ps1 script in %ExchangeInstallPath%Scripts. By default, %ExcangeInstallPath% is C:\Program Files\Microsoft\Exchange Server\V15\ (note the trailing '\\').
+- Locate the Prepare-MoveRequest.ps1 script in %ExchangeInstallPath%Scripts. By default, %ExchangeInstallPath% is C:\Program Files\Microsoft\Exchange Server\V15\ (note the trailing '\\').
 
 - To run the sample script, you need the following:
 
