@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 description: The list of Outlook on the web mailbox policy procedure topics in Exchange Online
-ms.topic: hub-page
+ms.topic: landing-page
 author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 2f9fc960-6d0b-472a-a81a-6d8b629b4d5d
