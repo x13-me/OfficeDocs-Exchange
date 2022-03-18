@@ -58,8 +58,8 @@ For example, you might want to prevent emails from being sent if they contain a 
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-|**Expression**|**Matches**|
-|:-----|:-----|
+|Expression|Matches|
+|---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|

@@ -79,8 +79,8 @@ For you to successfully configure outdialing for your organization, you first ne
 
 **Outdialing components**
 
-|**Component**|**Description**|
-|:-----|:-----|
+|Component|Description|
+|---|---|
 |Dial codes, number prefixes, and number formats|UM uses dial codes, number prefixes, and number formats to determine the correct number to dial when placing an outgoing call. You can configure dial codes, number prefixes, and number formats to restrict outgoing calls for users who dial in to a UM auto attendant associated with a UM dial plan or for users who dial in to an Outlook Voice Access number configured on the dial plan.|
 |Dialing rule groups|Dialing rule groups are created to enable telephone numbers to be modified before they're sent to the PBX for outgoing calls. Dialing rule groups remove numbers from or add numbers to telephone numbers being called by UM. For example, you can create a dialing rule group that automatically adds a 9 as a prefix to a 7-digit telephone number to provide access to an outside line. In this example, users who place outgoing calls don't have to dial the 9 before the telephone number to reach someone external to the organization.  <br/> Each dialing rule group contains dialing rules that determine the types of in-country/region and international calls that users within a dialing rule group can make. Dialing rule groups apply to the users who are associated with a UM dial plan or to UM auto attendants and UM mailbox policies associated with the UM dial plan. Each dialing rule group must contain at least one dialing rule.|
 |Dialing rule entries|A dialing rule is used to determine the types of calls that users within a dialing rule group can make. When you create a dialing rule group, you configure one or more dialing rules.  <br/> When you configure each dialing rule, you must enter the dialing rule name, number pattern to transform (number mask), and dialed number. You can also enter a comment. Comments can be used to describe how the dialing rule will be used or to describe a group of users to whom the dialing rule will apply. When you add a number mask and the dialed number to a dialing rule, you can substitute the letter x for a digit in a telephone number, for example, 91425xxxxxxx. You can also use an asterisk (\*) symbol as a wildcard character, for example, 91425\*.|
@@ -101,8 +101,8 @@ The following table shows an example of dialing rule groups and dialing rules. I
 
 **Dialing rule groups and dialing rules**
 
-|**Name**|**NumberMask**|**DialedNumber**|**Comment**|
-|:-----|:-----|:-----|:-----|
+|Name|NumberMask|DialedNumber|Comment|
+|---|---|---|---|
 |Local-Calls-Only|91425\*|91\*|Local calls|
 |Local-Calls-Only|91206\*|91\*|Local calls|
 |Low-Rate|91509\*|9\*|In-state calls|
@@ -175,8 +175,8 @@ The following table summarizes the way that dialing rule groups are applied in U
 
 **Applying outdialing rules**
 
-|**Caller type**|**Scope**|**Outdialing settings applied**|
-|:-----|:-----|:-----|
+|Caller type|Scope|Outdialing settings applied|
+|---|---|---|
 |Outlook Voice Access number|User calls a dial plan Outlook Voice Access number and signs in to the mailbox|UM mailbox policy|
 |Anonymous caller|User calls a dial plan Outlook Voice Access number|UM dial plan|
 |Anonymous caller|User calls an auto attendant pilot or extension number|UM auto attendant|
