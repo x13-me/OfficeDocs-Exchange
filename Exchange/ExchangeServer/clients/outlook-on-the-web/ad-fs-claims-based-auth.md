@@ -23,13 +23,9 @@ Installing and configuring Active Directory Federation Services (AD FS) in Excha
 AD FS claims-based authentication replaces the traditional authentication methods that are available for Outlook on the web and the EAC. For example:
 
 - Active Directory client certificate authentication
-
 - Basic authentication
-
 - Digest authentication
-
 - Forms authentication
-
 - Windows authentication
 
 Setting up AD FS claims-based authentication for Outlook on the web and the EAC in Exchange Server involves the following additional servers:
@@ -114,7 +110,7 @@ To use Server Manager to install AD FS, follow these steps:
 
 6. On the **Select features** page, click **Next** (accept the default feature selections).
 
-   ![The 'Select features' page in the Add Roles and Features Wizard.](../../media/7b1f1f2a-b96e-4107-afb6-fb4a51ed04b7.png)
+   ![Click Next on the 'Select features' page in the Add Roles and Features Wizard.](../../media/7b1f1f2a-b96e-4107-afb6-fb4a51ed04b7.png)
 
 7. On the **Active Directory Federation Services (AD FS)** page, click **Next**.
 
@@ -128,7 +124,7 @@ To use Server Manager to install AD FS, follow these steps:
 
 10. On the **Installation progress** page, you can watch the progress bar to verify that the installation was successful. When the installation is finished, leave the wizard open so you can click **Configure the federation service on this server** in [Step 3b: Configure the AD FS server](#step-3b-configure-the-ad-fs-server).
 
-   ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
+   ![Watch progress on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
 
 To use Windows PowerShell to install AD FS, run the following command:
 
@@ -174,7 +170,7 @@ To use Server Manager, following these steps:
 
 1. If you left the **Add Roles and Features Wizard** open on the AD FS server from [Step 2: Deploy an AD FS server](#step-2-deploy-an-ad-fs-server), you can click the **Configure the federation service on this server** link on the **Installation progress** page.
 
-   ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
+   ![Click 'Configure the federation service on this server' on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
 
    If you closed the **Add Roles and Features Wizard** or you used Windows PowerShell to install AD FS, you can get to the same place in Server Manager by clicking **Notifications**, and then clicking **Configure the federation service on this server** in the **Post-deployment Configuration** warning.
 
@@ -544,7 +540,7 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 7. On the **Remote Access** page, read the information, and then click **Next**.
 
-   ![The 'Remote Access' page in the Add Roles and Features Wizard.](../../media/d6c51f88-6dfe-49f1-b8c7-e93bad1ed0c6.png)
+   ![Read the information on the 'Remote Access' page in the Add Roles and Features Wizard.](../../media/d6c51f88-6dfe-49f1-b8c7-e93bad1ed0c6.png)
 
 8. On the **Select role services** page, select **Web Application Proxy**. In the add features dialog box that opens, click **Add Features** to accept the default values and close the dialog box. Back on the **Select role services** page, click **Next**.
 
@@ -558,7 +554,7 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 10. On the **Installation progress** page, watch the progress bar to verify that the installation was successful. When the installation is finished, leave the wizard open so you can click **Open the Web Application Proxy Wizard** in the next step (5b).
 
-    ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
+    ![Click 'Open the Web Application Proxy Wizard' on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
 
 To use Windows PowerShell to install Web Application Proxy, run the following command:
 
@@ -582,7 +578,7 @@ To use Server Manager to configure Web Application Proxy, follow these steps:
 
 1. If you left the **Add Roles and Features Wizard** open on the Web Application Proxy server from the previous step, you can click the **Open the Web Application Proxy Wizard** link on the **Installation progress** page.
 
-   ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
+   ![Select 'Open the Web Application Proxy Wizard' on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
 
    If you closed the **Add Roles and Features Wizard** or you used Windows PowerShell to install Web Application Proxy, you can get to the same place by clicking **Notifications**, and then clicking **Open the Web Application Proxy Wizard** in the **Post-deployment Configuration** warning.
 
