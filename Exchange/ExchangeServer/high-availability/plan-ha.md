@@ -130,8 +130,8 @@ Each network adapter must be configured properly based on its intended use. A ne
 
 A network adapter intended for use by a MAPI network should be configured as described in the following table.
 
-|**Networking features**|**Settings**|
-|:-----|:-----|
+|Networking features|Settings|
+|---|---|
 |Client for Microsoft Networks|Enabled|
 |QoS Packet Scheduler|Optionally enabled|
 |File and Printer Sharing for Microsoft Networks|Enabled|
@@ -154,8 +154,8 @@ The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
 A network adapter intended for use by a Replication network should be configured as described in the following table.
 
-|**Networking features**|**Settings**|
-|:-----|:-----|
+|Networking features|Settings|
+|---|---|
 |Client for Microsoft Networks|Disabled|
 |QoS Packet Scheduler|Optionally enabled|
 |File and Printer Sharing for Microsoft Networks|Disabled|

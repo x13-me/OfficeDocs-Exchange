@@ -40,7 +40,7 @@ When configuring your organization for a hybrid deployment, configuring shared f
 
 The hybrid deployment features shown in the following table have a dependency on federation trusts and organization relationships.
 
-|**Messaging area**|**Feature**|
-|:-----|:-----|
+|Messaging area|Feature|
+|---|---|
 |Email client|Message tracking  <br/>  MailTips  <br/>  Multi-mailbox search|
 |Compliance|Exchange Online Archiving  <br/>  Exchange In-place eDiscovery|

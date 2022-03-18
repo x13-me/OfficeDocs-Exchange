@@ -141,6 +141,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 ## Supported clients (with latest updates) in Exchange 2019
 
 - Microsoft 365 Apps for enterprise
+- Outlook 2021
 - Outlook 2019
 - Outlook 2016
 - Outlook 2013
