@@ -225,7 +225,7 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |DI=SJ|The message was sent to the recipient's Junk Email folder.|
 |DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 |DI=SO|The message was routed through the normal outbound delivery pool.|
-|SFS=[a]|SFS=[b]|This denotes that spam rules were matched.|
+|SFS=[a] <br> SFS=[b]|This denotes that spam rules were matched.|
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |H=[helostring]|The HELO or EHLO string of the connecting mail server.|
 |PTR=[ReverseDNS]|The PTR record of the sending IP address, also known as the reverse DNS address.|
