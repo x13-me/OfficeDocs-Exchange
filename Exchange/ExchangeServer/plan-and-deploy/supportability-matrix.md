@@ -133,14 +133,10 @@ The following table identifies the web browsers supported for use together with 
 |Internet Explorer 8|Not supported|Not supported|Supported|Supported|
 |Internet Explorer 7|Not supported|Not supported|Not supported|Supported|
 |Firefox|Current release of Firefox<sup>\*</sup>|Current release of Firefox<sup>\*</sup>|Not supported|Not supported|
-|Firefox 3.0.1 or later|Not supported|Not supported|Not supported|Supported|
-|Firefox 12 or later|Not supported|Not supported|Supported|Supported|
 |Safari|Current release of Safari|Current release of Safari|Not supported|Not supported|
 |Safari 3.1 or later|Not supported|Not supported|Not supported|Supported|
 |Safari 5.0 or later|Not supported|Not supported|Supported|Supported|
 |Chrome|Current release of Chrome<sup>\*</sup>|Current release of Chrome<sup>\*</sup>|Not supported|Not supported|
-|Chrome 3.0.195 or later|Not supported|Not supported|Not supported|Supported|
-|Chrome 18 or later|Not supported|Not supported|Supported|Supported|
 |
 
 <sup>\*</sup> Current release of Firefox or Chrome refers to the latest version or the immediately previous version.
