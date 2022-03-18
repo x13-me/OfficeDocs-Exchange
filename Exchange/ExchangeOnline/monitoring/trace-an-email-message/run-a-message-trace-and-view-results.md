@@ -229,7 +229,6 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |H=[helostring]|The HELO or EHLO string of the connecting mail server.|
 |PTR=[ReverseDNS]|The PTR record of the sending IP address, also known as the reverse DNS address.|
-|
 
 When a message is filtered for spam, a sample custom_data entry would look similar to the following:
 
@@ -238,10 +237,6 @@ When a message is filtered for spam, a sample custom_data entry would look simil
 #### Malware Filter Agent (S:AMA)
 
 A string beginning with S:AMA is an entry from the anti-malware agent and provides the following key details:
-
-<br>
-
-****
 
 |Log Information|Description|
 |---|---|
@@ -257,7 +252,6 @@ A string beginning with S:AMA is an entry from the anti-malware agent and provid
 |Action=b|The message was blocked.|
 |Name=\<*malware*\>|The name of the malware that was detected.|
 |File=\<*filename*\>|The name of the file that contained the malware.|
-|
 
 When a message contains malware, a sample custom_data entry would look similar to the following:
 
@@ -267,17 +261,12 @@ When a message contains malware, a sample custom_data entry would look similar t
 
 A string beginning with S:TRA is an entry from the Transport Rule agent and provides the following key details:
 
-<br>
-
-****
-
 |Log Information|Description|
 |---|---|
 |ETR\|ruleId=[guid]|The rule ID that was matched.|
 |St=[datetime]|The date and time (in UTC) when the rule match occurred.|
 |Action=[ActionDefinition]|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
 |Mode=Enforce|The mode of the rule. Possible values are: <ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li></ul>|
-|
 
 When a message matches a mail flow rule, a sample custom_data entry would look similar to the following:
 
