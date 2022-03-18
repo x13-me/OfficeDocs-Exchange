@@ -10,6 +10,7 @@ ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+description: "Admins can learn about best practices for transport rules in Exchange Server 2013."
 ---
 
 # Best practices for configuring transport rules in Exchange 2013
