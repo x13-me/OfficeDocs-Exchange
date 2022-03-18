@@ -37,13 +37,8 @@ The functionality to check and download mitigations requires outbound connectivi
 
 For the EM service to function correctly, admins needs to enable connectivity with the following endpoint from the computer on which Exchange Server is installed.
 
-<br>
-
-****
-
 |Required|Address|Port|
 |---|---|---|---|
 |Yes|officeclient.microsoft.com/*|443|
-|
 
 **Having problems?** Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
