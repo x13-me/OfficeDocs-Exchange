@@ -26,12 +26,12 @@ The following procedures must be performed before you start the process of Googl
 
 1. Go to the [Google Workspace Admin page](https://admin.google.com/AdminHome) and sign in as a Google Workspace admin for your tenant.
 
-2. Click **Add a domain**.
+2. Select **Add a domain**.
 
    > [!NOTE]
    > The option _Add a domain_ will not be available if using the legacy free edition of G Suite.
 
-3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, select **User alias domain**, and then click **ADD DOMAIN & START VERIFICATION**. A subdomain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](perform-gspace-migration-powershell.md#create-a-migration-batch-in-microsoft-365-or-office-365).
+3. Enter the domain that you will use for routing mails to Microsoft 365 or Office 365, select **User alias domain**, and then select **ADD DOMAIN & START VERIFICATION**. A subdomain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Microsoft 365 or Office 365](perform-gspace-migration-powershell.md#create-a-migration-batch-in-microsoft-365-or-office-365).
 
    > [!NOTE]
    > A sub-domain of your primary domain is recommended. If another domain (such as "fabrikaminc.onmicrosoft.com") is set, Google will send emails to each individual address with a link to verify the permission to route mail. Migration won't complete until the verification is completed.
@@ -51,9 +51,9 @@ The following procedures must be performed before you start the process of Googl
 
 1. Go to the [Google Workspace Admin page](https://admin.google.com/AdminHome) and sign in as a Google Workspace admin for your tenant.
 
-2. Click **Add a domain**.
+2. Select **Add a domain**.
 
-3. Enter the domain that you will use for routing mails to Google Workspace, select **User alias domain**, and then click **ADD DOMAIN & START VERIFICATION**. A subdomain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
+3. Enter the domain that you will use for routing mails to Google Workspace, select **User alias domain**, and then select **ADD DOMAIN & START VERIFICATION**. A subdomain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
 
    ![Add domain alias.](../media/add-a-new-domain-alias-im10.png)
 
