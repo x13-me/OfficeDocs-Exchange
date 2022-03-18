@@ -60,17 +60,12 @@ The following list describes the available configuration options:
 
 1. Check the settings that were entered directly into the printer:
 
-   <br>
-
-   ****
-
    |Printer setting|Value|
    |---|---|
    |Server/smart host|smtp.office365.com|
    |Port|Port 587 (recommended) or port 25|
    |TLS/StartTLS|Enabled|
    |Username/email address and password|Sign in credentials of Microsoft 365 or Office 365 mailbox the printer uses|
-   |
 
 2. If your printer didn't require a password for the username/email address that you entered, then your printer is trying to send email without logging on to Microsoft 365 or Office 365. SMTP client submission requires your printer to sign in to Microsoft 365 or Office 365. Direct send and Microsoft 365 or Office 365 SMTP relay don't require a logon; consider one of these options instead.
 
