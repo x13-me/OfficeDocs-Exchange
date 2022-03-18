@@ -211,7 +211,7 @@ Additionally, the **custom_data** field may contain values that are specific to 
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
-| Log information | Description |
+|Log information|Description|
 |---|---|
 |SFV=NSPM|The message was marked as non-spam and was sent to the intended recipients.|
 |SFV=SPM|The message was marked as spam by the content filter.|
