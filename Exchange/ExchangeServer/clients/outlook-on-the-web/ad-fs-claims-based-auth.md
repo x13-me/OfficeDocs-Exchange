@@ -75,16 +75,11 @@ For more information about creating and importing SSL certificates in Windows, s
 
 Here's a summary of the certificates that we'll be using in this scenario:
 
-<br>
-
-****
-
 |Common name (CN) in the certificate (in the Subject, Subject Alternative Name, or a wildcard certificate match)|Type|Required on servers|Comments|
 |---|---|---|---|
 |`adfs.contoso.com`|Issued by a CA|AD FS server <p> Web Application Proxy server|This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.|
 |`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <p> Exchange servers <p> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <p> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <p> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](/powershell/module/adfs/set-adfsproperties). <p> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
 | `mail.contoso.com`|Issued by a CA|Exchange servers <p> Web Application Proxy server|This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).|
-|
 
 For more information, see the "Certificate requirements" section in [AD FS Requirements](/windows-server/identity/ad-fs/overview/ad-fs-requirements).
 
