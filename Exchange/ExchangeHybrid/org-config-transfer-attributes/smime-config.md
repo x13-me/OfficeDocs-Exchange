@@ -21,10 +21,6 @@ description: "Organization configuration transfer attributes can be copied by th
 
 The following attributes of Smime Config are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-<br>
-
-****
-
 |Smime Config|Available In|
 |---|---|
 |Identity|Exchange 2010, 2013, 2016, 2019|
@@ -53,4 +49,3 @@ The following attributes of Smime Config are copied from an on-premises Exchange
 |OWAForceSMIMEClientUpgrade|Exchange 2010, 2013, 2016, 2019|
 |OWASenderCertificateAttributesToDisplay|Exchange 2010, 2013, 2016, 2019|
 |OWAAllowUserChoiceOfSigningCertificate|Exchange 2010, 2013, 2016, 2019|
-|

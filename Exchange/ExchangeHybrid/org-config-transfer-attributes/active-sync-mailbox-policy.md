@@ -21,8 +21,8 @@ description: "Organization configuration transfer attributes can be copied by th
 
 The following attributes of Active Sync Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-|**ActiveSyncMailboxPolicy**|**Available In**|
-|:-----|:-----|
+|ActiveSyncMailboxPolicy|Available In|
+|---|---|
 |AllowApplePushNotifications|Exchange 2013, 2016, 2019|
 |AllowBluetooth|Exchange 2010, 2013, 2016, 2019|
 |AllowBrowser|Exchange 2010, 2013, 2016, 2019|

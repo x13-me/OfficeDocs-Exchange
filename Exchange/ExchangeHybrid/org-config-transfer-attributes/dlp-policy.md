@@ -21,8 +21,8 @@ description: Organization configuration transfer attributes can be copied by the
 
 The following attributes of Dlp Policy are copied from an on-premises Exchange organization to Exchange Online as soon as the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-|**DlpPolicy**|**Available In**|
-|:-----|:-----|
+|DlpPolicy|Available In|
+|---|---|
 |Description|Exchange 2013, 2016, 2019|
 |Identity|Exchange 2013, 2016, 2019|
 |Mode|Exchange 2013, 2016, 2019|

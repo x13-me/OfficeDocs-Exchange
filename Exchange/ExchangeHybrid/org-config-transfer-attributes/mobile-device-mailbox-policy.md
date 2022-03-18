@@ -21,8 +21,8 @@ description: "Organization configuration transfer attributes can be copied by th
 
  The following attributes of Mobile Device Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-|**MobileDeviceMailboxPolicy**|**Available In**|
-|:-----|:-----|
+|MobileDeviceMailboxPolicy|Available In|
+|---|---|
 |AllowBluetooth|Exchange 2010, 2013, 2016, 2019|
 |AllowBrowser|Exchange 2010, 2013, 2016, 2019|
 |AllowCamera|Exchange 2010, 2013, 2016, 2019|

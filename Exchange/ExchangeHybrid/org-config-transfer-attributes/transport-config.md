@@ -21,8 +21,8 @@ description: "Organization configuration transfer attributes can be copied by th
 
 The following attributes of Transport Config are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-|**Transport Config**|**Available In**|
-|:-----|:-----|
+|Transport Config|Available In|
+|---|---|
 |AddressBookPolicyRoutingEnabled|Exchange 2013, 2016, 2019|
 |ClearCategories|Exchange 2010, 2013, 2016, 2019|
 |ConvertDisclaimerWrapperToEml|Exchange 2010, 2013, 2016, 2019|

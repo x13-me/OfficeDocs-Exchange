@@ -21,8 +21,8 @@ description: "Organization configuration transfer attributes can be copied by th
 
 The following attributes of Retention Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-|**Retention Policy**|**Available In**|
-|:-----|:-----|
+|Retention Policy|Available In|
+|---|---|
 |Identity|Exchange 2010, 2013, 2016, 2019|
 |IsDefault|Exchange 2013, 2016, 2019|
 |IsDefaultArbitrationMailbox|Exchange 2013, 2016, 2019|

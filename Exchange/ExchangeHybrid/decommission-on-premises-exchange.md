@@ -44,19 +44,14 @@ A hybrid deployment is not for everyone; in fact there are usually better option
 
 Use the following table to decide what type of migration works for your organization. (For more information, see [Ways to migrate multiple email accounts to Microsoft 365 or Office 365](../ExchangeOnline/mailbox-migration/mailbox-migration.md).)
 
-<br>
-
-****
-
 |Existing organization|Number of mailboxes to migrate|Do you want to manage user accounts in your on-premises organization?|Migration type|
-|:-----|:-----|:-----|:-----|
+|---|---|---|---|
 |Exchange 2003 or later|Less than 2,000 mailboxes|No|Cutover Exchange migration|
 |Exchange 2007 or Exchange 2003|Less than 2,000 mailboxes|No|Staged Exchange migration|
 |Exchange 2007 or Exchange 2003|More than 2,000 mailboxes<sup>\*</sup>|Yes|Staged Exchange migration or remote move migration in an Exchange hybrid deployment|
 |Exchange 2010 or later|More than 2,000 mailboxes<sup>\*</sup>|Yes|Remote move migration in an Exchange hybrid deployment|
 |Exchange 2000 Server or earlier versions|No maximum|Yes|IMAP migration|
 |Non-Exchange on-premises messaging system|No maximum|Yes|IMAP migration|
-|
 
 <sup>\*</sup>Some organizations with fewer than 2,000 mailboxes may benefit from features and capabilities that are only available with a hybrid deployment. It's important to carefully consider the benefits of a hybrid deployment with the complexity that introduces. We strongly recommend that customers with fewer than 2,000 mailboxes consider cutover or staged migration before proceeding with a hybrid deployment.
 
