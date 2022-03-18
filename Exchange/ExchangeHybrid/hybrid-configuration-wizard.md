@@ -16,7 +16,7 @@ ms.collection:
 - M365-email-calendar
 ms.assetid: 2e6ed294-ee74-4038-8b71-b61786372ba4
 ms.reviewer:
-description: ""
+description: "Admins can learn about Exchange Hybrid configuration and the Hybrid Configuration wizard."
 ---
 
 # Hybrid Configuration wizard

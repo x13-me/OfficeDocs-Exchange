@@ -14,7 +14,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
 - M365-email-calendar
-description: "ActiveSync device access rule attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
+description: "The available ActiveSync device access rule attributes that are copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online."
 ---
 
 # Active sync device access rule attributes
