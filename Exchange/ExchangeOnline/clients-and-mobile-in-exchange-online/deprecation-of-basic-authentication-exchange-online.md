@@ -45,6 +45,9 @@ Beginning in early 2021, we started to disable Basic authentication for existing
 
 In September 2021, we announced that effective **October 1, 2022**, we will begin disabling Basic authentication for Outlook, EWS, RPS, POP, IMAP, and EAS protocols in Exchange Online. SMTP Auth will also be disabled if it is not being used. See full announcement: [Basic Authentication and Exchange Online – September 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210).
 
+> [!NOTE]
+> In Office 365 Operated by 21Vianet, we will begin disabling Basic authentiction on March 31, 2023. All other cloud environments are subject to the October 1, 2022 date. 
+
 ## Impact to messaging protocols and existing applications
 
 This change affects the applications and scripts you might use in different ways.
