@@ -19,9 +19,9 @@ description: The available DLP policy attributes that are copied by the Hybrid C
 
 # Dlp Policy attributes
 
-The following attributes of Dlp Policy are copied from an on-premises Exchange organization to Exchange Online as soon as the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+As soon as you select **Organization Configuration Transfer** in the Hybrid Configuration Wizard, the following data loss prevention (DLP) policy attributes are copied from the on-premises Exchange organization to Exchange Online:
 
-|DlpPolicy|Available In|
+|DLPPolicy|Available In|
 |---|---|
 |Description|Exchange 2013, 2016, 2019|
 |Identity|Exchange 2013, 2016, 2019|
