@@ -70,8 +70,8 @@ The placement of a DAG's witness server will depend on your business requirement
 
 The following table lists general witness server placement recommendations for different deployment scenarios.
 
-|**Deployment Scenario**|**Recommendations**|
-|:-----|:-----|
+|Deployment Scenario|Recommendations|
+|---|---|
 |Single DAG deployed in a single datacenter|Locate witness server in the same datacenter as DAG members|
 |Single DAG deployed across two datacenters; no additional locations available|Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or <br/> Locate witness server in primary datacenter|
 |Multiple DAGs deployed in a single datacenter|Locate witness server in the same datacenter as DAG members. Additional options include: <br/> • Using the same witness server for multiple DAGs <br/> • Using a DAG member to act as a witness server for a different DAG|
@@ -212,8 +212,8 @@ DAGs support the use of encryption by leveraging the encryption capabilities of 
 
 Network encryption is a property of the DAG and not a DAG network. You can configure DAG network encryption using the **Set-DatabaseAvailabilityGroup** cmdlet in the Exchange Management Shell. The possible encryption settings for DAG network communications are shown in the following table.
 
-|**Setting**|**Description**|
-|:-----|:-----|
+|Setting|Description|
+|---|---|
 |Disabled|Network encryption isn't used.|
 |Enabled|Network encryption is used on all DAG networks for replication and seeding.|
 |InterSubnetOnly|Network encryption is used on DAG networks when replicating across different subnets. This is the default setting.|
@@ -225,8 +225,8 @@ DAGs support built-in compression. When compression is enabled, DAG network comm
 
 As with network encryption, network compression is also a property of the DAG and not a DAG network. You configure DAG network compression by using the [Set-DatabaseAvailabilityGroup](/powershell/module/exchange/set-databaseavailabilitygroup) cmdlet in the Exchange Management Shell. The possible compression settings for DAG network communications are shown in the following table.
 
-|**Setting**|**Description**|
-|:-----|:-----|
+|Setting|Description|
+|---|---|
 |Disabled|Network compression isn't used.|
 |Enabled|Network compression is used on all DAG networks for replication and seeding.|
 |InterSubnetOnly|Network compression is used on DAG networks when replicating across different subnets. This is the default setting.|
@@ -266,8 +266,8 @@ For example, consider DAG1, a two-member DAG where each member has two network a
 
 **Example network adapter settings**
 
-|**Server-network adapter**|**IP address/subnet mask**|**Default gateway**|
-|:-----|:-----|:-----|
+|Server-network adapter|IP address/subnet mask|Default gateway|
+|---|---|---|
 |EX1-MAPI|192.168.1.15/24|192.168.1.1|
 |EX1-Replication|10.0.0.15/24|Not applicable|
 |EX2-MAPI|192.168.1.16|192.168.1.1|
@@ -277,8 +277,8 @@ In the following configuration, there are two subnets configured in the DAG: 192
 
 **Enumerated DAG network settings for a single-subnet DAG**
 
-|**Name**|**Subnets**|**Interfaces**|**MAPI access enabled**|**Replication enabled**|
-|:-----|:-----|:-----|:-----|:-----|
+|Name|Subnets|Interfaces|MAPI access enabled|Replication enabled|
+|---|---|---|---|---|
 |MapiDagNetwork|192.168.1.0/24|EX1 (192.168.1.15) <br/> EX2 (192.168.1.16)|True|True|
 |ReplicationDagNetwork01|10.0.0.0/24|EX1 (10.0.0.15) <br/> EX2 (10.0.0.16)|False|True|
 
@@ -298,8 +298,8 @@ For example, consider DAG2, a two-member DAG where each member has two network a
 
 **Example network adapter settings for a multi-subnet DAG**
 
-|**Server-network adapter**|**IP address/subnet mask**|**Default gateway**|
-|:-----|:-----|:-----|
+|Server-network adapter|IP address/subnet mask|Default gateway|
+|---|---|---|
 |EX1-MAPI|192.168.0.15/24|192.168.0.1|
 |EX1-Replication|10.0.0.15/24|Not applicable|
 |EX2-MAPI|192.168.1.15|192.168.1.1|
@@ -309,8 +309,8 @@ In the following configuration, there are four subnets configured in the DAG: 19
 
 **Enumerated DAG network settings for a multi-subnet DAG**
 
-|**Name**|**Subnets**|**Interfaces**|**MAPI access enabled**|**Replication enabled**|
-|:-----|:-----|:-----|:-----|:-----|
+|Name|Subnets|Interfaces|MAPI access enabled|Replication enabled|
+|---|---|---|---|---|
 |MapiDagNetwork|192.168.0.0/24 <br/> 192.168.1.0/24|EX1 (192.168.0.15) <br/> EX2 (192.168.1.15)|True|True|
 |ReplicationDagNetwork01|10.0.0.0/24 <br/> 10.0.1.0/24|EX1 (10.0.0.15) <br/> EX2 (10.0.1.15)|False|True|
 
