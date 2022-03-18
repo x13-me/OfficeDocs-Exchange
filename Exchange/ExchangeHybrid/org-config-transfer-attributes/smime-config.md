@@ -17,11 +17,11 @@ ms.collection:
 description: "The available S/MIME Config attributes that are copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online."
 ---
 
-# Smime Config attributes
+# S/MIME Config attributes
 
-The following attributes of Smime Config are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+As soon as you select **Organization Configuration Transfer** in the Hybrid Configuration Wizard, the following S/MIME Config attributes are copied from the on-premises Exchange organization to Exchange Online:
 
-|Smime Config|Available In|
+|SMIMEConfig|Available In|
 |---|---|
 |Identity|Exchange 2010, 2013, 2016, 2019|
 |Name|Exchange 2010, 2013, 2016, 2019|
