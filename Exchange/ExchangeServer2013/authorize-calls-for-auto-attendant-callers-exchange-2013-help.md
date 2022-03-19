@@ -1,10 +1,12 @@
 ---
 title: 'Authorize calls for auto attendant callers: Exchange 2013 Help'
 TOCTitle: Authorize calls for auto attendant callers
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable dialing authorizations on a Unified Messaging auto-attendant
 ms.assetid: c6c94fad-64df-44aa-a198-980f017ef716
 f1.keywords:
 - NOCSH
@@ -38,21 +40,21 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 ## Use the EAC to enable dialing authorizations on a UM auto attendant for in-country/region rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a dialing authorization, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a dialing authorization, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Auto Attendant** page \> **Dialing authorization**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
+3. On the **UM Auto Attendant** page \> **Dialing authorization**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **Authorized in-country/region dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 
 ## Use the EAC to enable dialing authorizations on a UM auto attendant for international rule groups
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a dialing authorization, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create a dialing authorization, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Auto Attendant** page \> **Dialing authorization**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
+3. On the **UM Auto Attendant** page \> **Dialing authorization**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **Authorized international dialing rule groups**.
 
 4. On the **Select Dialing Rule Groups to Allow** page, select the dialing rule group, click **OK**, and then click **Save**.
 

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657494(v=EXCHG.150)
 ms:contentKeyID: 49289410
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create a sharing policy in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -58,11 +60,11 @@ For additional management tasks related to federation, see [Federation procedure
 
 1. Navigate to **organization**\> **sharing**.
 
-2. In the list view, under **Individual Sharing**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. In the list view, under **Individual Sharing**, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. In **new sharing policy**, type a friendly name for the sharing policy in the **Policy name** box.
 
-4. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to specify the sharing rules for the sharing policy.
+4. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to specify the sharing rules for the sharing policy.
 
 5. In **sharing rule**, select one of the following options to specify the domains you want to share with:
 
@@ -92,9 +94,9 @@ You can edit the default sharing policy to allow all of your users to share full
 
 1. Navigate to **organization**\> **sharing**.
 
-2. In the list view, under **Individual Sharing**, select **the Default Sharing Policy**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, under **Individual Sharing**, select **the Default Sharing Policy**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3. In the **Sharing Policy** dialog box, select **Sharing with all domains**, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. In the **Sharing Policy** dialog box, select **Sharing with all domains**, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. In the **Sharing Rule** dialog box, under **Specify what information you want to share**, select **All calendar appointment information, including time, subject, location and title**, and then click **save**.
 

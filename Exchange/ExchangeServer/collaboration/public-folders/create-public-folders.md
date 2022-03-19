@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.custom:
 - Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.reviewer:
-title: Create a public folder
+title: Create a public folder in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - CSH
@@ -45,7 +45,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
 
 2. If you want to create this public folder as a child of an existing public folder, click the existing public folder in the list view. If you want to create a top-level public folder, skip this step.
 
-3. Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+3. Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 4. In **Public Folder**, type the name of the public folder.
 

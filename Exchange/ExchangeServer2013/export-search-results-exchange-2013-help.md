@@ -1,10 +1,12 @@
 ---
 title: 'Export eDiscovery search results to a PST file: Exchange 2013 Help'
 TOCTitle: Export eDiscovery search results to a PST file
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to export eDiscovery search results to a PST file in Exchange Server
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 f1.keywords:
 - NOCSH
@@ -60,7 +62,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 2. In the list view, select the In-Place eDiscovery search you want to export the results of, and then click **Export to a PST file**.
 
-    ![Export to a PST File](images/ExportToPSTFile.gif)
+    ![Export to a PST File.](images/ExportToPSTFile.gif)
 
 3. In the **eDiscovery PST Export Tool** window, do the following:
 
@@ -101,8 +103,8 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 ## Troubleshooting
 
-|**Symptom**|**Possible cause**|
-|:-----|:-----|
+|Symptom|Possible cause|
+|---|---|
 |Cannot export to a PST file.| There is no active mailbox attached to the account. To export the PST, you must have an active account.  <br/>  Your version of Internet Explorer is out of date. Try updating IE to version 10 or later. Or try a different browser.  <br/>  Search criteria entered in the **Filter based on criteria** query is incorrect. For example, a username is entered instead of an email address. For more information about how to filter based on criteria, see [Modify an In-Place eDiscovery search](modify-an-in-place-ediscovery-search-exchange-2013-help.md).|
 |Unable to export search results on a specific machine. Export works as expected on a different machine.|The wrong Windows credentials were saved in the **Credential Manager**. Clear your credentials and log in again.|
 |eDiscovery PST Export Tool won't start.|Local intranet zone settings aren't set up correctly in Internet Explorer. Make sure that \*.outlook.com, \*.office365.com, \*.sharepoint.com and \*.onmicrosoft.com are added to the Local intranet zone trusted sites.  <br/> To add these sites to the Trusted zone in IE, see [Security zones: adding or removing websites](https://windows.microsoft.com/windows/security-zones-adding-removing-websites#1TC=windows-7).|

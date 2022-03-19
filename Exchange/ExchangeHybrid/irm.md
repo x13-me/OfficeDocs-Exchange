@@ -1,6 +1,6 @@
 ---
 title: "IRM in Exchange hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -38,8 +38,8 @@ IRM functionality that's available in your on-premises Exchange organization may
 
 **Available IRM features**
 
-|**Feature**|**Available in Exchange 2007 and earlier**|**Available in Exchange 2010**|**Available in Exchange Online and Exchange 2013 and later**|
-|:-----|:-----|:-----|:-----|
+|Feature|Available in Exchange 2007 and earlier|Available in Exchange 2010|Available in Exchange Online and Exchange 2013 and later|
+|---|---|---|---|
 |Manual protection of messages in Outlook|Yes|Yes|Yes|
 |Manual protection of messages in Outlook Web App|No|Yes|Yes|
 |View IRM-protected messages in Outlook|Yes|Yes|Yes|
@@ -64,8 +64,8 @@ The IRM configuration that's applied to a user depends on the client the user us
 
 **Active AD RMS server**
 
-|**Client**|**On-premises mailbox**|**Exchange Online mailbox**|
-|:-----|:-----|:-----|
+|Client|On-premises mailbox|Exchange Online mailbox|
+|---|---|---|
 |Outlook desktop clients|On-premises AD RMS|On-premises AD RMS|
 |Outlook on the web|On-premises AD RMS|Exchange Online AD RMS|
 |ActiveSync device|On-premises AD RMS|Exchange Online AD RMS|
@@ -126,7 +126,7 @@ After you export the TPD data from your on-premises AD RMS servers, you need to 
 1. In the Exchange Online organization, import the TPD data.
 
    ```PowerShell
-   Import-RMSTrustedPublishingDomain -FileData $( [Byte[]] (Get-Content -Encoding Byte -Path "<Path to exported TPD file>" -ReadCount 0))
+   Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<Path to exported TPD file>'))
    ```
 
 2. Enable IRM in the Exchange Online organization.

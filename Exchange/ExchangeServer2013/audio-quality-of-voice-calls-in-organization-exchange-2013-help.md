@@ -1,10 +1,12 @@
 ---
 title: 'Investigate the audio quality of voice calls in your organization: Exchange 2013 Help'
 TOCTitle: Investigate the audio quality of voice calls in your organization
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
+description: Use the Call Statistics report to assess the audio quality of voice calls in Exchange Server.
 ms.assetid: 8a87694b-1678-4a01-859f-5ad3b2c73db5
 f1.keywords:
 - NOCSH
@@ -35,7 +37,7 @@ For additional tasks related to call statistics see [UM reports procedures](um-r
 
 ## Use the EAC to get audio quality statistics for your organization
 
-1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
 
 2. Choose the call statistics to include in the report. The report automatically updates as you select any of the following options.
 

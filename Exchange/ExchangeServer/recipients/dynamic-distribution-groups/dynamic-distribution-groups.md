@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about dynamic distribution groups and how to create and manage them.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.reviewer:
 title: Manage dynamic distribution groups
@@ -83,8 +83,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 5. Select one of the following recipient attributes from the drop-down list and provide a value. If the value for the selected attribute matches that value you define, the recipient receives a message sent to this group.
 
-    |**Attribute**|**Send message to a recipient if...**|
-    |:-----|:-----|
+    |Attribute|Send message to a recipient if...|
+    |---|---|
     |**Recipient container**|The recipient object resides in the specified domain or OU.|
     |**State or province**|The specified value matches the recipient's State or province property.|
     |**Company**|The specified value matches the recipient's Company property.|
@@ -149,7 +149,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
 
-2. In the list of groups, click the dynamic distribution group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list of groups, click the dynamic distribution group that you want to view or change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the group's properties page, click one of the following sections to view or change properties.
 
@@ -201,9 +201,9 @@ Use this section to manage who can send email to this group.
 
 - **Senders inside and outside of my organization**: Select this option to allow anyone to send messages to the group.
 
-   You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
+   You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
 
-   To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
+   To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png).
 
     > [!IMPORTANT]
     > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
@@ -214,9 +214,9 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 - **Messages sent to this group have to be approved by a moderator**: This check box isn't selected by default. If you select this check box, incoming messages are reviewed by the group moderators before delivery. Group moderators can approve or reject incoming messages.
 
-- **Group moderators**: To add group moderators, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). To remove a moderator, select the moderator, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group are sent to the group owners for approval.
+- **Group moderators**: To add group moderators, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). To remove a moderator, select the moderator, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group are sent to the group owners for approval.
 
-- **Senders who don't require message approval**: To add people or groups that can bypass moderation for this group, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). To remove a person or a group, select the item, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
+- **Senders who don't require message approval**: To add people or groups that can bypass moderation for this group, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). To remove a person or a group, select the item, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
 
 - **Select moderation notifications**: Use this section to set how users are notified about message approval.
 
@@ -230,7 +230,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
+- **Add**: Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -242,7 +242,7 @@ Use this section to view or change the email addresses associated with the group
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for proper formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
 
-- **Edit**: To change an email address associated with the group, select it from the list, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+- **Edit**: To change an email address associated with the group, select it from the list, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
     > [!NOTE]
     > To make an existing address the primary SMTP address for the group, select the **Make this the reply address** check box.
@@ -302,7 +302,7 @@ Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.
 
 To verify that you've successfully changed properties for a dynamic distribution group, do the following:
 
-- In the EAC, select the group and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected group.
+- In the EAC, select the group and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected group.
 
 - In the Exchange Management Shell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values.
 

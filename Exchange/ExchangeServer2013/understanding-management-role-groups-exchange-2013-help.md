@@ -5,8 +5,10 @@ ms:assetid: 2a92e06c-523e-4fd4-a937-152562b7741d
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638105(v=EXCHG.150)
 ms:contentKeyID: 49289206
 ms.reviewer: 
+ms.topic: article
+description: About management role groups in Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -42,7 +44,7 @@ The following figure shows each of the role group layers in the preceding list a
 
 **Management role group layers**
 
-![Management role group layers](images/Dd638105.a98c237c-7bdb-434b-8c98-22509e46cccf(EXCHG.150).gif "Management role group layers")
+![Management role group layers.](images/Dd638105.a98c237c-7bdb-434b-8c98-22509e46cccf(EXCHG.150).gif "Management role group layers")
 
 For more information about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
@@ -58,8 +60,8 @@ The following table lists the role group layer and the procedural topics that yo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -110,8 +112,8 @@ The following table lists all the built-in role groups included with Exchange 20
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

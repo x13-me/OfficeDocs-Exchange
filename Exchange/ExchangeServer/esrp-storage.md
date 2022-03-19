@@ -1,9 +1,9 @@
 ---
-localization_priority: Priority
+ms.localizationpriority: high
 description: The Exchange Solution Reviewed Program (ESRP) Storage is a Microsoft Exchange Server program designed to facilitate third-party storage testing and solution publishing for Exchange Server.
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 title: Exchange Solution Reviewed Program (ESRP) Storage
 ms.collection: exchange-server
 ms.reviewer: mattgos

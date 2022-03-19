@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn635115(v=EXCHG.150)
 ms:contentKeyID: 61200287
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure SSL offloading in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -324,7 +326,7 @@ The reason for this is that the MRSProxy service expects traffic to be signed/en
 
 **Reverse SSL or SSL Bridging**: If you enable reverse SSL or SSL bridging on hardware load balancers, you won't need to perform the preceding steps on each CAS server. However, enabling reverse SSL on your hardware load balancers means that SSL encryption and decryption will stay with the Client Access servers. In this case, the SSL encryption and decryption will occur on both the hardware load balancers and the Client Access servers. Choosing to use Exchange 2013 SSL offloading or reverse SSL (SSL bridging) is dependent on the organizational goals and the security practices that must be implemented. The following picture shows client connectivity with SSL bridging (reverse SSL) enabled.
 
-![SSL Bridging](images/Dn635115.a08aacc1-0ab4-46b3-bdae-b9518a3f5748(EXCHG.150).jpg "SSL Bridging")
+![SSL Bridging.](images/Dn635115.a08aacc1-0ab4-46b3-bdae-b9518a3f5748(EXCHG.150).jpg "SSL Bridging")
 
 ## Configuring SSL offloading for Outlook clients (MAPI virtual directory)
 

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn195905(v=EXCHG.150)
 ms:contentKeyID: 53181781
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: References for common tasks associated with System Center management pack
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

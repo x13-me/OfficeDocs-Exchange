@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.custom:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms.reviewer:
 title: Procedures for email address policies in Exchange Server
@@ -47,15 +47,15 @@ After you create an email address policy, you need to apply the policy to recipi
 
 ### Use the EAC to create email address policies
 
-1. In the EAC, go to **Mail flow** \> **Email address policies**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. In the EAC, go to **Mail flow** \> **Email address policies**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. In **New Email address policy** windows that opens, configure the following settings:
 
    - **Policy name**: Enter a unique, descriptive name for the policy.
 
-   - **Email address format**: Click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)) to configure an email address template. After you add the first template to define the primary SMTP email address, you can add additional templates for proxy email addresses (SMTP or otherwise), or you can click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) to modify an existing template. For details about the settings that are available, see the [Email address format window in the EAC](#email-address-format-window-in-the-eac) section in this topic.
+   - **Email address format**: Click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)) to configure an email address template. After you add the first template to define the primary SMTP email address, you can add additional templates for proxy email addresses (SMTP or otherwise), or you can click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) to modify an existing template. For details about the settings that are available, see the [Email address format window in the EAC](#email-address-format-window-in-the-eac) section in this topic.
 
-     You can also click **Remove** (![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)) to delete existing templates.
+     You can also click **Remove** (![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png)) to delete existing templates.
 
    **Notes**:
 
@@ -129,7 +129,7 @@ For detailed syntax and parameter information, see [New-EmailAddressPolicy](/pow
 
 To verify that you've successfully created an email address policy, use either of the following procedures:
 
-- In the EAC, go to **Mail flow** \> **Email address policies**, verify that the policy is listed, and the details are correct. Select the policy and click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) to view details that aren't displayed in the list view.
+- In the EAC, go to **Mail flow** \> **Email address policies**, verify that the policy is listed, and the details are correct. Select the policy and click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) to view details that aren't displayed in the list view.
 
 - In the Exchange Management Shell, run the following command to verify the property values:
 
@@ -153,7 +153,7 @@ To verify that you've successfully created an email address policy, use either o
 
  The same settings are available as when you created the policy, although the settings are now located on separate tabs.
 
-1. In the EAC, go to **Mail flow** \> **Email address policies**, select the policy from the list, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+1. In the EAC, go to **Mail flow** \> **Email address policies**, select the policy from the list, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 2. Configure the settings on the following tabs:
 
@@ -163,9 +163,9 @@ To verify that you've successfully created an email address policy, use either o
 
    - **Run this policy in this sequence with other policies**: Remember, the first email address policy that identifies a recipient configures the recipient's email addresses. All other policies are ignored, even if the first policy is unapplied and can't configure the recipient's email addresses.
 
-   - **Email address format**: For details about the settings that are available when you click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)) or **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)), see the [Email address format window in the EAC](#email-address-format-window-in-the-eac) section in this topic.
+   - **Email address format**: For details about the settings that are available when you click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)) or **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)), see the [Email address format window in the EAC](#email-address-format-window-in-the-eac) section in this topic.
 
-     You can also click **Remove** (![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)) to delete existing email address templates.
+     You can also click **Remove** (![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png)) to delete existing email address templates.
 
    **Notes**:
 
@@ -235,11 +235,11 @@ After you create or modify an email address policy in the EAC or the Exchange Ma
 
 3. In the details pane, click **Apply**.
 
-   ![The Apply link in the details pane for an email address policy](../../media/1642c312-0d7b-490c-b2de-b6f5da873a57.png)
+   ![The Apply link in the details pane for an email address policy.](../../media/1642c312-0d7b-490c-b2de-b6f5da873a57.png)
 
 4. After you click **Apply**, a warning message that appears. Click **Yes** to apply the policy by using the EAC. A progress bar allows you to monitor the recipient update process. When updates are complete, click **Close**.
 
-   ![Warning that appears after you apply or remove an email address policy](../../media/138623d1-1275-4a84-b244-72ed7d5c7742.png)
+   ![Warning that appears after you apply or remove an email address policy.](../../media/138623d1-1275-4a84-b244-72ed7d5c7742.png)
 
 ### Use the Exchange Management Shell to apply email address policies to recipients
 
@@ -279,7 +279,7 @@ To verify that you've successfully applied an email address policy, use either o
 
 1. In the EAC, go to **Mail flow** \> **Email address policies**.
 
-2. Select the email address policy that you want to delete, and then click **Remove** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+2. Select the email address policy that you want to delete, and then click **Remove** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. Click **Yes** in the warning message that appears. A progress bar allows you to monitor the recipient update process. When updates are complete, click **Close**.
 
@@ -315,7 +315,7 @@ To verify that you've successfully removed an email address policy, use either o
 
 ### Email address format window in the EAC
 
-As you create or modify an email address policy in the EAC, in the **Email address format** section, an **Email address format** window appears when you click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)) or **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). The following settings are available in this window:
+As you create or modify an email address policy in the EAC, in the **Email address format** section, an **Email address format** window appears when you click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)) or **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). The following settings are available in this window:
 
 - Precanned SMTP email addresses:
 

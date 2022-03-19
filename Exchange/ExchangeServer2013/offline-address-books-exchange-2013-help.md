@@ -5,8 +5,10 @@ ms:assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232155(v=EXCHG.150)
 ms:contentKeyID: 49289363
 ms.reviewer: 
+ms.topic: article
+description: About offline address books in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

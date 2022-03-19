@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about message approval in Exchange Online
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 ms.reviewer: 
@@ -34,24 +34,27 @@ The rest of this article describes how moderation works in Exchange Online.
 
 When you send a message to a moderated recipient in Outlook on the web (formerly known as Outlook Web App), you're notified that your message might be delayed as shown in the following screenshot:
 
-![Message showing message approval notification](../../media/TA_Mod_Sender_Notification.png)
+![Message showing message approval notification.](../../media/TA_Mod_Sender_Notification.png)
 
 The moderator receives an email notification to approve or reject the delivery of the message. The text of the notification includes buttons to approve or reject the message, and the attachment includes the original message to review.
 
-![Approval request message, including attachment](../../media/TA_Mod_Approval_Request.png)
+![Approval request message, including attachment.](../../media/TA_Mod_Approval_Request.png)
 
 A message that's waiting for approval is temporarily stored in a system mailbox called the _arbitration mailbox_. The original message is kept in the arbitration mailbox until a moderator takes action on the message. The moderator can take one of the following actions:
 
 - **Approve**: The message goes to the original intended recipients. The original sender isn't notified.
 - **Reject**: A rejection message is sent to the sender. The moderator can add an explanation as shown in the following screenshot:
 
-  ![Rejection notice, with comments from moderator](../../media/TA_Mod_Rejection.png)
+  ![Rejection notice, with comments from moderator.](../../media/TA_Mod_Rejection.png)
 
 - **Ignore or delete the approval message** An expiration message is sent to the sender. In Exchange Online, the approval request expires after two days.
 
+  > [!NOTE]
+  > The processing of expired moderated messages runs every seven days. This means that a moderated message can expire at any time between two and nine days.
+
 The message flow and result of a moderator's actions are described in the following diagram:
 
-![Workflow showing options for approving a message](../../media/TA_ModerationWorkflow.png)
+![Workflow showing options for approving a message.](../../media/TA_ModerationWorkflow.png)
 
 ## Moderated recipient FAQ
 

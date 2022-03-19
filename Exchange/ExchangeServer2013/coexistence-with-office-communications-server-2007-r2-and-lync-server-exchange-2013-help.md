@@ -5,9 +5,11 @@ ms:assetid: f12d65c7-0b2c-46a1-a14a-802a76296fa1
 ms:mtpsurl: https://technet.microsoft.com/library/JJ851069(v=EXCHG.150)
 ms:contentKeyID: 50067637
 ms.reviewer: 
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: Coexistence of Exchange Unified Messaging (UM) with Office Communications Server 2007 R2 and Lync Server.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -29,8 +31,8 @@ The following table shows the fixes that are required for each version of the pr
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">

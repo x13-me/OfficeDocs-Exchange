@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the actions that are available for mail flow rules in Exchange Online and Exchange Online Protection.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
 ms.reviewer: 
@@ -40,10 +40,6 @@ The actions that are available in mail flow rules in Exchange Online and standal
 
 - The names of some of the actions that are returned by the **Get-TransportRuleAction** cmdlet are different than the corresponding parameter names, and multiple parameters might be required for an action.
 
-<br>
-
-****
-
 |Action in the EAC|Action parameter in PowerShell|Property|Description|
 |---|---|---|---|
 |**Forward the message for approval to** <p> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Use mail flow rules for message approval scenarios in Exchange Online](common-message-approval-scenarios.md). You can't use a distribution group as a moderator. <p> **Note**: This action isn't available in standalone Exchange Online Protection (EOP) environments.|
@@ -75,15 +71,10 @@ The actions that are available in mail flow rules in Exchange Online and standal
 |**Notify the recipient with a message**|_GenerateNotification_|`NotificationMessageText`|Specifies the text, HTML tags, and message keywords to include in the notification message that's sent to the message's recipients. For example, you can notify recipients that the message was rejected by the rule, or marked as spam and delivered to their Junk Email folder.|
 |**Properties of this rule** section \> **Audit this rule with severity level**|_SetAuditSeverity_|`AuditSeverityLevel`|Specifies whether to: <ul><li>Prevent the generation of an incident report and the corresponding entry in the message tracking log.</li><li>Generate an incident report and the corresponding entry in the message tracking log with the specified severity level (low, medium, or high).</li></ul>|
 |**Properties of this rule** section \> **Stop processing more rules** <p> **More options** \> **Properties of this rule** section \> **Stop processing more rules**|_StopRuleProcessing_|n/a|Specifies that after the message is affected by the rule, the message is exempt from processing by other rules.|
-|
 
 ## Property values
 
 The property values that are used for actions in mail flow rules are described in the following table.
-
-<br>
-
-****
 
 |Property|Valid values|Description|
 |---|---|---|
@@ -103,7 +94,6 @@ The property values that are used for actions in mail flow rules are described i
 |`RMSTemplate`|Single Azure RMS template object|Specifies the Azure Rights Management (Azure RMS) template that's applied to the message. <p> In the EAC, you select the RMS template from a list. <p> In PowerShell, use the **Get-RMSTemplate** cmdlet to see the RMS templates that are available. <p> For more information about RMS in Microsoft 365 or Office 365, see [What is Azure Information Protection?](/azure/information-protection/what-is-information-protection).|
 |`SCLValue`|One of the following values: <ul><li>**Bypass spam filtering** (`-1`)</li><li>Integers 0 through 9</li></ul>|Specifies the spam confidence level (SCL) that's assigned to the message. A higher SCL value indicates that a message is more likely to be spam.|
 |`String`|Single string|Specifies the text that's applied to the specified message header field, NDR, or event log entry. <p> In PowerShell, if the value contains spaces, enclose the value in quotation marks (").|
-|
 
 ## For more information
 

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee423544(v=EXCHG.150)
 ms:contentKeyID: 49315402
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: How to configure the startup mode on a Mailbox server in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -41,7 +43,7 @@ For additional management tasks related to Unified Messaging and Mailbox servers
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Exchange server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Exchange server you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 

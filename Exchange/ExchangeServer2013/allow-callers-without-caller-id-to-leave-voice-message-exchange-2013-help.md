@@ -1,10 +1,12 @@
 ---
 title: 'Allow callers without a caller ID to leave a voice message: Exchange 2013 Help'
 TOCTitle: Allow callers without a caller ID to leave a voice message
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description:  How to enable callers without a caller ID to leave a voice message in Exchange Server
 ms.assetid: 51367d98-e17c-4bcf-8b14-208bd1ac3af0
 f1.keywords:
 - NOCSH

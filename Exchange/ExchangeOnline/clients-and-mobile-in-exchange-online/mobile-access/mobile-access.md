@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Your users can access their Microsoft 365 or Office 365 mailbox from a wide variety of devices: mobile phones, tablets, laptops, and even devices such as e-readers. These devices can use Exchange ActiveSync, POP3, or IMAP4 to access mailbox data.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: a7b29cdb-457f-4877-bad2-6343dd15413e
 ms.reviewer: 

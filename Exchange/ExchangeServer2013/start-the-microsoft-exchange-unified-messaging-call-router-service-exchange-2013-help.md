@@ -5,8 +5,10 @@ ms:assetid: 8b7e1a4c-87b3-4477-a95f-6b41cf2d38f0
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673542(v=EXCHG.150)
 ms:contentKeyID: 49315458
 ms.reviewer: 
+ms.topic: how-to
+description: How to start the Microsoft Exchange Unified Messaging Call Router service
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

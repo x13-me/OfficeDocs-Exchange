@@ -5,8 +5,10 @@ ms:assetid: 4219fe4b-6757-409a-9065-d81d07d144b2
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.mailboxmigration(v=EXCHG.150)
 ms:contentKeyID: 49720772
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the MailboxMigration health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

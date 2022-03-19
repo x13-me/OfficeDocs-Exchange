@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996416(v=EXCHG.150)
 ms:contentKeyID: 51407260
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to enable or disable Exchange Search
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

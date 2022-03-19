@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.localdo
 ms:contentKeyID: 46629174
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Setup cannot continue because the logged on user does not have the account permissions required for domain preparation.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

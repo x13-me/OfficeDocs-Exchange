@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Online.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.reviewer: 
@@ -44,7 +44,7 @@ For procedures involving ABPs, see [Address book policy procedures in Exchange O
 
 The following diagram shows how ABPs work. The user is assigned Address Book Policy A that contains a subset of address lists that are available in the organization. When the ABP is created and assigned to the user, the ABP becomes the scope of the address lists that the user is able to view.
 
-![Overview of Address Book Policies](../../media/ITPro_Mailbox_ABPOverall.gif)
+![Overview of Address Book Policies.](../../media/ITPro_Mailbox_ABPOverall.gif)
 
 To turn on ABP email routing in your Exchange Online organization, see [Turn on address book policy routing in Exchange Online](turn-on-address-book-policy-routing.md).
 
@@ -56,7 +56,7 @@ ABPs take effect when a user connects to their Exchange Online Mailbox. If you c
 
 In the following diagram, Fabrikam and Tailspin Toys share the same Exchange Online organization and the same CEO. The CEO is the only employee common to both companies.
 
-![Two Companies One CEO](../../media/ITPro_.gif)
+![Two Companies One CEO.](../../media/ITPro_.gif)
 
 The suggested configuration includes three ABPs:
 

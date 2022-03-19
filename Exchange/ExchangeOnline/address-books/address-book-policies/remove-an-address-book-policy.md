@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to remove address book policies (ABPs) from Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c20c6f82-2f75-4116-9be1-c5af10113f71
 ms.reviewer:
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Remove an address book policy
+# Remove an address book policy in Exchange Online
 
 Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange Online](address-book-policies.md).
 

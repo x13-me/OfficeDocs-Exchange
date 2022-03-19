@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996779(v=EXCHG.150)
 ms:contentKeyID: 49300447
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Foreign connectors in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

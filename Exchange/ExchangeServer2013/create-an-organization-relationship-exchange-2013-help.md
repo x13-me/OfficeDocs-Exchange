@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657451(v=EXCHG.150)
 ms:contentKeyID: 49289267
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to create an organization relationship in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -40,7 +42,7 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
 
-2. Under **Organization Sharing**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. Under **Organization Sharing**, click **New** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
 

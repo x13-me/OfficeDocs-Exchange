@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee633453(v=EXCHG.150)
 ms:contentKeyID: 50396598
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: test for end-to-end client Outlook Anywhere connectivity by using either the Shell or the Exchange Remote Connectivity Analyzer (ExRCA).
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -5,8 +5,10 @@ ms:assetid: 96e33c94-348e-4a0b-9585-9bee81be4355
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.msdtcstopped(v=EXCHG.150)
 ms:contentKeyID: 46629047
 ms.reviewer: 
+ms.topic: article
+description: Exchange Setup needs the Distributed Transaction Coordinator Service started
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

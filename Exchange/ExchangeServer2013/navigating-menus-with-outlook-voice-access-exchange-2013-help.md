@@ -1,10 +1,12 @@
 ---
 title: 'Navigating menus with Outlook Voice Access: Exchange 2013 Help'
 TOCTitle: Navigating menus with Outlook Voice Access
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Use Outlook Voice Access to nagivate menus in Exchange Server
 ms.assetid: dc6a74f2-85fd-43d3-a324-b236b4d2eb3b
 f1.keywords:
 - NOCSH
@@ -61,7 +63,7 @@ To listen to email messages using their voice, the user must dial an Outlook Voi
 
 This process is shown in the following figure.
 
-![Listen to email messages VUI](images/ListentoEmailMessagesVUI.gif)
+![Listen to email messages VUI.](images/ListentoEmailMessagesVUI.gif)
 
 To listen to email messages using the telephone keypad, users must dial an Outlook Voice Access number, enter their extension number and PIN, and then do the following:
 
@@ -81,7 +83,7 @@ To listen to email messages using the telephone keypad, users must dial an Outlo
 
 This process is shown in the following figure.
 
-![Listening to email with the Touchtone Interface](images/ListentoEmailMessagesTUI.gif)
+![Listening to email with the Touchtone Interface.](images/ListentoEmailMessagesTUI.gif)
 
 ### Reply to email messages
 
@@ -105,7 +107,7 @@ To listen to email messages and then reply using their voice, users must do the 
 
 This process is shown in the following figure.
 
-![Replying to E-mail with the VUI](images/ReplyingtoEmailVUI.gif)
+![Replying to E-mail with the VUI.](images/ReplyingtoEmailVUI.gif)
 
 To listen to email messages and then reply using the telephone keypad, users must do the following:
 
@@ -127,7 +129,7 @@ To listen to email messages and then reply using the telephone keypad, users mus
 
 This process is shown in the following figure.
 
-![Replying to E-mail with the Touchtone Interface](images/ReplyingtoEmailTUI.gif)
+![Replying to E-mail with the Touchtone Interface.](images/ReplyingtoEmailTUI.gif)
 
 ### Listen to the next unread email message
 
@@ -139,7 +141,7 @@ To listen to an email message and then go to the next unread message using their
 
 This process is shown in the following figure.
 
-![Read the Next Unread E-mail](images/ReadNextUnreadEmailVUI.gif)
+![Read the Next Unread E-mail.](images/ReadNextUnreadEmailVUI.gif)
 
 To listen to an email message and then go to the next unread message using the telephone keypad, users must do the following:
 
@@ -149,7 +151,7 @@ To listen to an email message and then go to the next unread message using the t
 
 This process is shown in the following figure.
 
-![Read the Next Unread Email](images/ReadNextUnreadEmailTUI.gif)
+![Read the Next Unread Email.](images/ReadNextUnreadEmailTUI.gif)
 
 ### Flag an email message for follow-up
 
@@ -165,7 +167,7 @@ To listen to email messages and flag messages for follow-up using their voice, u
 
 This process is shown in the following figure.
 
-![Flag email for follow up](images/FlagEmailForFollowUpVUI.gif)
+![Flag email for follow up.](images/FlagEmailForFollowUpVUI.gif)
 
 To listen to email messages and flag messages for follow-up using the telephone keypad, users must do the following:
 
@@ -181,7 +183,7 @@ To listen to email messages and flag messages for follow-up using the telephone 
 
 This process is shown in the following figure.
 
-![Flag email for follow up](images/FlagEmailForFollowUpTUI.gif)
+![Flag email for follow up.](images/FlagEmailForFollowUpTUI.gif)
 
 ### Hide a conversation
 
@@ -197,7 +199,7 @@ To listen to email messages and hide a conversation so that the voice mail syste
 
 This process is shown in the following figure.
 
-![Hide an email conversation](images/HideConversationVUI.gif)
+![Hide an email conversation.](images/HideConversationVUI.gif)
 
 To listen to email messages and hide a conversation so that the voice mail system will not continue to read other email messages that are in the same email conversation using the telephone keypad, users must do the following:
 
@@ -211,7 +213,7 @@ To listen to email messages and hide a conversation so that the voice mail syste
 
 This process is shown in the following figure.
 
-![Hide email conversation](images/HideConversationTUI.gif)
+![Hide email conversation.](images/HideConversationTUI.gif)
 
 > [!NOTE]
 > When a conversation is hidden, it is hidden only for the current session. If users sign out and then sign in to their mailbox again, the voice mail system will read email messages that are in the same conversation.
@@ -241,7 +243,7 @@ To send an I'll be late message to meeting participants using their voice, users
 
 This process is shown in the following figure.
 
-![Send an I'll BeLate](images/SendAnIllBeLateVUI.gif)
+![Send an I'll BeLate.](images/SendAnIllBeLateVUI.gif)
 
 To send an I'll be late message to meeting participants using the telephone keypad, users must dial an Outlook Voice Access number, enter their extension number and PIN, and then do the following:
 
@@ -253,7 +255,7 @@ To send an I'll be late message to meeting participants using the telephone keyp
 
 4. The voice mail system asks, "How late?" Enter 10 on the telephone key pad.
 
-![Send an I'll Be Late Message](images/SendAnIllBeLateTUI.gif)
+![Send an I'll Be Late Message.](images/SendAnIllBeLateTUI.gif)
 
 ### Cancel a meeting
 
@@ -271,7 +273,7 @@ To cancel a meeting, the user must be the meeting organizer. To cancel the meeti
 
 This process is shown in the following figure.
 
-![Cancel a Meeting](images/CancelMeetingVUI.gif)
+![Cancel a Meeting.](images/CancelMeetingVUI.gif)
 
 To cancel a meeting, the user must be the meeting organizer. To cancel the meeting using the telephone keypad, meeting organizers must do the following:
 
@@ -289,7 +291,7 @@ To cancel a meeting, the user must be the meeting organizer. To cancel the meeti
 
 This process is shown in the following figure.
 
-![Cancel a Meeting](images/CancelMeetingTUI.gif)
+![Cancel a Meeting.](images/CancelMeetingTUI.gif)
 
 ### Clear a calendar
 
@@ -305,7 +307,7 @@ To clear their calendar using their voice, users must do the following:
 
 This process is shown in the following figure.
 
-![Clear My Calendar](images/ClearMyCalendarVUI.gif)
+![Clear My Calendar.](images/ClearMyCalendarVUI.gif)
 
 To clear their calendar using the telephone keypad, users must do the following:
 
@@ -325,7 +327,7 @@ To clear their calendar using the telephone keypad, users must do the following:
 
 This process is shown in the following figure.
 
-![Clear My Calendar](images/ClearMyCalendarTUI.gif)
+![Clear My Calendar.](images/ClearMyCalendarTUI.gif)
 
 ### Accept a meeting request
 
@@ -339,7 +341,7 @@ To accept a meeting request using their voice, users must do the following:
 
 This process is shown in the following figure.
 
-![Accept a Meeting Request](images/AcceptAMeetingVUI.gif)
+![Accepting a Meeting Request.](images/AcceptAMeetingVUI.gif)
 
 To accept a meeting request using the telephone keypad, users must do the following:
 
@@ -351,7 +353,7 @@ To accept a meeting request using the telephone keypad, users must do the follow
 
 This process is shown in the following figure.
 
-![Accept a Meeting Request](images/AcceptAMeetingTUI.gif)
+![Accept a Meeting Request.](images/AcceptAMeetingTUI.gif)
 
 ### Reply to a meeting request
 
@@ -371,7 +373,7 @@ To reply to a meeting request using their voice, users must do the following:
 
 This process is shown in the following figure.
 
-![Replying to a Meeting Request](images/ReplyToAMeetingRequestVUI.gif)
+![Reply to to a Meeting Request.](images/ReplyToAMeetingRequestVUI.gif)
 
 To reply to a meeting request using the telephone keypad, users must do the following:
 
@@ -389,7 +391,7 @@ To reply to a meeting request using the telephone keypad, users must do the foll
 
 This process is shown in the following figure.
 
-![Replying to a Meeting Request](images/ReplyToAMeetingRequestTUI.gif)
+![Replying to a Meeting Request.](images/ReplyToAMeetingRequestTUI.gif)
 
 ## Managing personal options and contacts
 <a name="managepersonaloptionscontacts"> </a>
@@ -425,7 +427,7 @@ To record a personal greeting using their voice, users must dial an Outlook Voic
 
 This process is shown in the following figure.
 
-![Record Your Personal Greeting](images/RecordPersonalGreetingVUI.gif)
+![Record a personal greeting.](images/RecordPersonalGreetingVUI.gif)
 
 To record a personal greeting using the telephone keypad, users must dial an Outlook Voice Access number, enter their extension number and PIN, and then do the following:
 
@@ -441,7 +443,7 @@ To record a personal greeting using the telephone keypad, users must dial an Out
 
 This process is shown in the following figure.
 
-![Record Your Personal Greeting](images/RecordPersonalGreetingTUI.gif)
+![Record Your Personal Greeting.](images/RecordPersonalGreetingTUI.gif)
 
 > [!NOTE]
 > When users change their telephone greeting, they are also given the option to turn on or off their email automatic reply message.
@@ -462,7 +464,7 @@ To locate and send a voice message to another UM-enabled user using their voice,
 
 This process is shown in the following figure.
 
-![Send a Voice Message to a User](images/SendaVoiceMessageVUI.gif)
+![Send a voice message.](images/SendaVoiceMessageVUI.gif)
 
 To locate and send a voice message to another UM-enabled user using the telephone keypad, users must do the following:
 
@@ -482,7 +484,7 @@ To locate and send a voice message to another UM-enabled user using the telephon
 
 This process is shown in the following figure.
 
-![Send a Voice Message to a User](images/SendaVoiceMessageTUI.gif)
+![Send a Voice Message to a User.](images/SendaVoiceMessageTUI.gif)
 
 ### Change a PIN
 
@@ -498,7 +500,7 @@ To change their PIN using their voice, users must do the following:
 
 This process is shown in the following figure.
 
-![Change PIN](images/ChangePinVUI.gif)
+![Change the PIN.](images/ChangePinVUI.gif)
 
 To change their PIN using the telephone keypad, users must do the following:
 
@@ -512,4 +514,4 @@ To change their PIN using the telephone keypad, users must do the following:
 
 This process is shown in the following figure.
 
-![Change PIN](images/ChangePinTUI.gif)
+![Change PIN.](images/ChangePinTUI.gif)

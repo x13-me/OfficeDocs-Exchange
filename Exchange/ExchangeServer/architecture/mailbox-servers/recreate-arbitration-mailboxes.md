@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Lean about the built-in arbitration mailboxes in Exchange 2016 and Exchange 2019 and how to recreate them.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
 ms.reviewer: 
 title: Recreate missing arbitration mailboxes
@@ -20,10 +20,6 @@ manager: serdars
 
 Exchange 2016 CU8 or later contains seven special system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
 
-<br>
-
-****
-
 |Arbitration mailbox Name|Display name|Persisted capabilities|Function|
 |---|---|---|---|
 |FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042|Microsoft Exchange Federation Mailbox|none|This mailbox stores data used to maintain federation between different Exchange organizations. This includes Rights Management Services, cross-premises mail-flow monitoring probes and responses, notifications, online archives, messaging records management, and cross-premises free/busy information.|
@@ -31,9 +27,8 @@ Exchange 2016 CU8 or later contains seven special system mailboxes known as *arb
 |SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXXXXXXXXX} <p> (for example, SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}; most of the mailbox name is unique to your organization)|Microsoft Exchange Approval Assistant|none|This mailbox is provisioned for use by the Exchange approval framework for recipient moderation and auto group approval requests.|
 |SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}|Microsoft Exchange|ClientExtensions <p> GMGen <p> MailRouting <p> MessageTracking <p> OABGen <p> PstProvider <p> UMGrammar <p> UMGrammarReady (Exchange 2016 only)|This is known as an organization mailbox. It is used for creating offline address books (OABs). To load-balance OAB generation across your organization, including across geographically separate sites, you can create additional organization mailboxes.|
 |SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}|Microsoft Exchange|UMDataStorage|Discovery system mailbox. <p> Provisioned for use by the e-Discovery feature, which is used by compliance officers to locate messages that match specified selection criteria. This mailbox is also used by Unified Messaging in Exchange 2016 for storing UM console attending files and other information.|
-|SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201} <p> (Exchange 2016 CU8 and later)|Microsoft Exchange|none||
-|SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA} <p> (Exchange 2016 CU8 and later)|Microsoft Exchange|none||
-|
+|SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201} <p> (Exchange 2016 CU8 and later)|Microsoft Exchange|none| Used for temporarily storing encrypted mails so that external users may read it in OWA.|
+|SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA} <p> (Exchange 2016 CU8 and later)|Microsoft Exchange|none|This mailbox contain relevancy features of each shard in an organization.|
 
 If you need to re-create one of more of these arbitration mailboxes, use the instructions in this article.
 
@@ -56,6 +51,11 @@ If you need to re-create one of more of these arbitration mailboxes, use the ins
 
 - For more information about running Exchange Setup in unattended mode, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
 ## Re-create an arbitration mailbox
 
 Use the following instructions to re-create a particular type of arbitration mailbox.
@@ -67,13 +67,13 @@ To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a9
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management Shell, run the following command:
@@ -89,13 +89,13 @@ To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management shell, run the following command:
@@ -117,13 +117,13 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management Shell, run the following command:
@@ -139,13 +139,13 @@ To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d5374
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management Shell, run the following command:
@@ -173,13 +173,13 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
 1. If the mailbox is missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management shell, run the following command:
@@ -201,13 +201,13 @@ To re-create the arbitration mailbox SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC86
 1. If the mailboxes are missing, run the following command from a Windows Command Prompt window:
 
    ```dos
-   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
    For example:
 
    ```dos
-   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD
    ```
 
 2. In the Exchange Management shell, run the following command:

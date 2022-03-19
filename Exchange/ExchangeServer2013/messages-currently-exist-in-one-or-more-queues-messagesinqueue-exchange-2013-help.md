@@ -5,8 +5,10 @@ ms:assetid: 3ffcdc7e-c1b7-49a7-8e5f-b30c0397908d
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.messagesinqueue(v=EXCHG.150)
 ms:contentKeyID: 46628874
 ms.reviewer: 
+ms.topic: article
+description: '"Messages currently exist in one or more queues" warning in Microsoft Exchange'
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

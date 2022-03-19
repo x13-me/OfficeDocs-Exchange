@@ -5,8 +5,10 @@ ms:assetid: 39a313f3-41d4-4c8f-af67-df2316f3687f
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997294(v=EXCHG.150)
 ms:contentKeyID: 49289233
 ms.reviewer: 
+ms.topic: how-to
+description: How to remove an address list in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -38,7 +40,7 @@ For additional management tasks related to address lists, see [Address list proc
 
 1. Navigate to **Organization** \> **Address lists**.
 
-2. In the list view, select the address list you want to remove, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. In the list view, select the address list you want to remove, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 3. In the warning, click **Yes** to remove the address list.
 

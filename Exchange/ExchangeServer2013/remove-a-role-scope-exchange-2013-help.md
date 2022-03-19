@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd351051(v=EXCHG.150)
 ms:contentKeyID: 49289375
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: If you're no longer using a scope, it can be removed.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

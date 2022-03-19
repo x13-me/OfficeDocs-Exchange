@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
 ms.reviewer:
 title: Mail flow rule conditions and exceptions (predicates) in Exchange Server
@@ -79,8 +79,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 - **Header or envelope** (`HeaderOrEnvelope`): Examine senders in the message header and the message envelope.
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**The sender is** <br/><br/> **The sender** \> **is this person**|_From_ <br/> _ExceptIfFrom_|`Addresses`|Messages that are sent by the specified mailboxes, mail users, or mail contacts in the Exchange organization.|Exchange 2010 or later|
 |**The sender is located** <br/><br/> **The sender** \> **is external/internal**|_FromScope_ <br/> _ExceptIfFromScope_|`UserScopeFrom`|Messages that are sent by either internal senders or external senders.|Exchange 2010 or later|
 |**The sender is a member of** <br/><br/> **The sender** \> **is a member of this group**|_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|`Addresses`|Messages that are sent by a member of the specified group.|Exchange 2010 or later|
@@ -94,8 +94,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 ### Recipients
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**The recipient is** <br/><br/> **The recipient** \> **is this person**|_SentTo_ <br/> _ExceptIfSentTo_|`Addresses`|Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the Exchange organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message. <br/><br/> **Note**: You can't specify distribution groups or mail-enabled security groups. If you need to take action on messages that are sent to a group, use the **To box contains** (_AnyOfToHeader_) condition instead.|Exchange 2010 or later|
 |**The recipient is located** <br/><br/> **The recipient** \> **is external/external**|_SentToScope_ <br/> _ExceptIfSentToScope_|`UserScopeTo`|Messages that are sent to internal recipients, external recipients, external recipients in partner organizations, or external recipients in non-partner organizations.|Exchange 2010 or later|
 |**The recipient is a member of** <br/><br/> **The recipient** \> **is a member of this group**|_SentToMemberOf_ <br/> _ExceptIfSentToMemberOf_|`Addresses`|Messages that contain recipients who are members of the specified group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|Exchange 2010 or later|
@@ -110,8 +110,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**The subject or body includes** <br/><br/> **The subject or body** \> **subject or body includes any of these words**|_SubjectOrBodyContainsWords_ <br/> _ExceptIfSubjectOrBodyContainsWords_|`Words`|Messages that have the specified words in the **Subject** field or message body.|Exchange 2010 or later|
 |**The subject or body matches** <br/><br/> **The subject or body** \> **subject or body matches these text patterns**|_SubjectOrBodyMatchesPatterns_ <br/> _ExceptIfSubjectOrBodyMatchesPatterns_|`Patterns`|Messages where the **Subject** field or message body contain text patterns that match the specified regular expressions.|Exchange 2010 or later|
 |**The subject includes** <br/><br/> **The subject or body** \> **subject includes any of these words**|_SubjectContainsWords_ <br/> _ExceptIfSubjectContainsWords_|`Words`|Messages that have the specified words in the **Subject** field.|Exchange 2010 or later|
@@ -121,8 +121,8 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 For more information about how mail flow rules inspect message attachments, see [Using mail flow rules to inspect message attachments](../../../ExchangeServer2013/use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**Any attachment's content includes** <br/><br/> **Any attachment** \> **content includes any of these words**|_AttachmentContainsWords_ <br/> _ExceptIfAttachmentContainsWords_|`Words`|Messages where an attachment contains the specified words.|Exchange 2010 or later|
 |**Any attachments content matches** <br/><br/> **Any attachment** \> **content matches these text patterns**|_AttachmentMatchesPatterns_ <br/> _ExceptIfAttachmentMatchesPatterns_|`Patterns`|Messages where an attachment contains text patterns that match the specified regular expressions. <br/><br/> **Note**: Only the first 150 kilobytes (KB) of the attachments are scanned.|Exchange 2010 or later|
 |**Any attachment's content can't be inspected** <br/><br/> **Any attachment** \> **content can't be inspected**|_AttachmentIsUnsupported_ <br/> _ExceptIfAttachmentIsUnsupported_|n/a|Messages where an attachment isn't natively recognized by Exchange, and the required IFilter isn't installed on the Mailbox server. For more information, see [Register Filter Pack IFilters with Exchange Server](../../../ExchangeServer2013/register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md).|Exchange 2010 or later|
@@ -145,8 +145,8 @@ Conversely, a recipient exception from this section *prevents* the rule action f
 > [!NOTE]
 > This condition or exception doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**Any recipient address includes** <br/><br/> **Any recipient** \> **address includes any of these words**|_AnyOfRecipientAddressContainsWords_ <br/> _ExceptIfAnyOfRecipientAddressContainsWords_|`Words`|Messages that contain the specified words in the **To**, **Cc**, or **Bcc** fields of the message.|Exchange 2013 or later|
 |**Any recipient address matches** <br/><br/> **Any recipient** \> **address matches any of these text patterns**|_AnyOfRecipientAddressMatchesPatterns_ <br/> _ExceptIfAnyOfRecipientAddressMatchesPatterns_|`Patterns`|Messages where the **To**, **Cc**, or **Bcc** fields contain text patterns that match the specified regular expressions.|Exchange 2013 or later|
 
@@ -157,8 +157,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 > [!NOTE]
 > The recipient conditions in this section do not consider messages that are sent to recipient proxy addresses. They only match messages that are sent to the recipient's primary email address.
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**The message contains sensitive information** <br/><br/> **The message** \> **contains any of these types of sensitive information**|_MessageContainsDataClassifications_ <br/> _ExceptIfMessageContainsDataClassifications_|`SensitiveInformationTypes`|Messages that contain sensitive information as defined by data loss prevention (DLP) policies. <br/><br/> This condition is required for rules that use the **Notify the sender with a Policy Tip** (_NotifySender_) action.|Exchange 2013 or later|
 |**The To box contains** <br/><br/> **The message** \> **To box contains this person**|_AnyOfToHeader_ <br/> _ExceptIfAnyOfToHeader_|`Addresses`|Messages where the **To** field includes any of the specified recipients.|Exchange 2010 or later|
 |**The To box contains a member of** <br/><br/> **The message** \> **To box contains a member of this group**|_AnyOfToHeaderMemberOf_ <br/> _ExceptIfAnyOfToHeaderMemberOf_|`Addresses`|Messages where the **To** field contains a recipient who is a member of the specified group.|Exchange 2010 or later|
@@ -171,8 +171,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 ### Sender and recipient
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**The sender is one of the recipient's** <br/><br/> **The sender and the recipient** \> **the sender's relationship to a recipient is**|_SenderManagementRelationship_ <br/> _ExceptIfSenderManagementRelationship_|`ManagementRelationship`|Messages where the either sender is the manager of a recipient, or the sender is managed by a recipient.|Exchange 2010 or later|
 |**The message is between members of these groups** <br/><br/> **The sender and the recipient** \> **the message is between members of these groups**|_BetweenMemberOf1_ and _BetweenMemberOf2_ <br/> _ExceptIfBetweenMemberOf1_ and _ExceptIfBetweenMemberOf2_|`Addresses`|Messages that are sent between members of the specified groups.|Exchange 2010 or later|
 |**The manager of the sender or recipient is** <br/><br/> **The sender and the recipient** \> **the manager of the sender or recipient is this person**|_ManagerForEvaluatedUser_ and _ManagerAddress_ <br/> _ExceptIfManagerForEvaluatedUser_ and _ExceptIfManagerAddress_|First property: `EvaluatedUser` <br/><br/> Second property: `Addresses`|Messages where either a specified user is the manager of the sender, or a specified user is the manager of a recipient.|Exchange 2010 or later|
@@ -180,8 +180,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 ### Message properties
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**The message type is** <br/><br/> **The message properties** \> **include the message type**|_MessageTypeMatches_ <br/> _ExceptIfMessageTypeMatches_|`MessageType`|Messages of the specified type. <br/><br/> **Note**: When Outlook or Outlook on the web is configured to forward a message, the **ForwardingSmtpAddress** property is added to the message. The message type isn't changed to `AutoForward`.|Exchange 2010 or later|
 |**The message is classified as** <br/><br/> **The message properties** \> **include this classification**|_HasClassification_ <br/> _ExceptIfHasClassification_|`MessageClassification`|Messages that have the specified message classification. This is a custom message classification that you can create in your organization by using the **New-MessageClassification** cmdlet.|Exchange 2010 or later|
 |**The message isn't marked with any classifications** <br/><br/> **The message properties** \> **don't include any classification**|_HasNoClassification_ <br/> _ExceptIfHasNoClassification_|n/a|Messages that don't have a message classification.|Exchange 2010 or later|
@@ -193,8 +193,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 > [!NOTE]
 > The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
 
-| Condition or exception in the EAC | Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|:-----|
+|Condition or exception in the EAC|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|---|
 |**A message header includes** <br/><br/> **A message header** \> **includes any of these words**|_HeaderContainsMessageHeader_ and _HeaderContainsWords_ <br/> _ExceptIfHeaderContainsMessageHeader_ and _ExceptIfHeaderContainsWords_|First property: `MessageHeaderField` <br/><br/> Second property: `Words`|Messages that contain the specified header field, and the value of that header field contains the specified words. <br/><br/> The name of the header field and the value of the header field are always used together.|Exchange 2010 or later|
 |**A message header matches** <br/><br/> **A message header** \> **matches these text patterns**|_HeaderMatchesMessageHeader_ and _HeaderMatchesPatterns_ <br/> _ExceptIfHeaderMatchesMessageHeader_ and _ExceptIfHeaderMatchesPatterns_|First property: `MessageHeaderField` <br/><br/> Second property: `Patterns`|Messages that contain the specified header field, and the value of that header field contains the specified regular expressions. <br/><br/> The name of the header field and the value of the header field are always used together.|Exchange 2010 or later|
 
@@ -202,8 +202,8 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 
 The conditions and exceptions that are available in mail flow rules on Edge Transport servers are a small subset of what's available on Mailbox servers. There's no EAC on Edge Transport servers, so you can only manage mail flow rules in the Exchange Management Shell on the local Edge Transport server. The conditions and exceptions are described in the following table. The properties types are described in the [Property types](#property-types) section.
 
-| Condition and exception parameters in the Exchange Management Shell | Property type | Description | Available in |
-|:-----|:-----|:-----|:-----|
+|Condition and exception parameters in the Exchange Management Shell|Property type|Description|Available in|
+|---|---|---|---|
 |_AnyOfRecipientAddressContainsWords_ <br/> _ExceptIfAnyOfRecipientAddressContainsWords_|`Words`|Messages that contain the specified words in the **To**, **Cc**, or **Bcc** fields. <br/><br/> When a message contains the specified recipient, the rule action is applied (or not applied) to *all* recipients of the message. For example, the message is rejected for all recipients of the message, not just for the specified recipient.|Exchange 2013 or later|
 |_AnyOfRecipientAddressMatchesPatterns_ <br/> _ExceptIfAnyOfRecipientAddressMatchesPatterns_|`Patterns`|Messages where the **To**, **Cc**, or **Bcc** fields contain text patterns that match the specified regular expressions. <br/><br/> When a message contains the specified recipient, the rule action is applied (or not applied) to *all* recipients of the message. For example, the message is rejected for all recipients of the message, not just for the specified recipient.|Exchange 2013 or later|
 |_AttachmentSizeOver_ <br/> _ExceptIfAttachmentSizeOver_|`Size`|Messages with attachments where any attachment is greater than or equal to the specified value.|Exchange 2010 or later|
@@ -226,8 +226,8 @@ The property types that are used in conditions and exceptions are described in t
 > [!NOTE]
 > If the property is a string, trailing spaces are not allowed.
 
-| Property type | Valid values | Description |
-|:-----|:-----|:-----|
+|Property type|Valid values|Description|
+|---|---|---|
 |`ADAttribute`|Select from a predefined list of Active Directory attributes|You can check against any of the following Active Directory attributes: <br/> **City** <br/> **Company** <br/> **Country** <br/> **CustomAttribute1 - CustomAttribute15** <br/> **Department** <br/> **DisplayName** <br/> **Email** <br/> **FaxNumber** <br/> **FirstName** <br/> **HomePhoneNumber** <br/> **Initials** <br/> **LastName** <br/> **Manager** <br/> **MobileNumber** <br/> **Notes** <br/> **Office** <br/> **OtherFaxNumber** <br/> **OtherHomePhoneNumber** <br/> **OtherPhoneNumber** <br/> **PagerNumber** <br/> **PhoneNumber** <br/> **POBox** <br/> **State** <br/> **Street** <br/> **Title** <br/> **UserLogonName** <br/> **ZipCode** <br/><br/> In the EAC, to specify multiple words or text patterns for the same attribute, separate the values with commas. For example, the value `San Francisco,Palo Alto` for the **City** attribute looks for "City equals San Francisco" or City equals Palo Alto". <br/><br/> In the Exchange Management Shell, use the syntax `"AttributeName1:Value1,Value 2 with spaces,Value3...","AttributeName2:Word4,Value 5 with spaces,Value6..."`, where `Value` is the word or text pattern that you want to match. <br/><br/> For example, `"City:San Francisco,Palo Alto"` or `"City:San Francisco,Palo Alto"`, `"Department:Sales,Finance"`. <br/><br/> When you specify multiple attributes, or multiple values for the same attribute, the **or** operator is used. Don't use values with leading or trailing spaces. <br/><br/> Note that the **Country** attribute requires the ISO 3166-1 two-letter country code value (for example, DE for Germany). For more information, see [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html).|
 |`Addresses`|Exchange recipients|Depending on the nature of the condition or exception, you might be able to specify any mail-enabled object in the organization (for example, recipient-related conditions), or you might be limited to a specific object type (for example, groups for group membership conditions). And, the condition or exception might require one value, or allow multiple values. <br/><br/> In the Exchange Management Shell, separate multiple values by commas. <br/><br/> **Note**: This condition or exception doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |`CharacterSets`|Array of character set names|One or more content character sets that exist in a message. For example: <br/> `Arabic/iso-8859-6` <br/> `Chinese/big5` <br/> `Chinese/euc-cn` <br/> `Chinese/euc-tw` <br/> `Chinese/gb2312` <br/> `Chinese/iso-2022-cn` <br/> `Cyrillic/iso-8859-5` <br/> `Cyrillic/koi8-r` <br/> `Cyrillic/windows-1251` <br/> `Greek/iso-8859-7` <br/> `Hebrew/iso-8859-8` <br/> `Japanese/euc-jp` <br/> `Japanese/iso-022-jp` <br/> `Japanese/shift-jis` <br/> `Korean/euc-kr` <br/> `Korean/johab` <br/> `Korean/ks_c_5601-1987` <br/> `Turkish/windows-1254` <br/> `Turkish/iso-8859-9` <br/> `Vietnamese/tcvn`|

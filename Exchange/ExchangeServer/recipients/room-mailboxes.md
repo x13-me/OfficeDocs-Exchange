@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to create a resource mailbox called a room mailbox, a room list, and how to change room mailbox properties.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 ms.reviewer:
 title: Create and manage room mailboxes
@@ -26,9 +26,9 @@ To create a room mailbox, you need to be an administrator who's a member of eith
 
 If you want to grant someone access to a room mailbox so they can directly manage its calendar (for example, an assistant who needs to make room for an executive meeting), you can do so using the instructions in [Manage permissions for recipients](mailbox-permissions.md). After a user's been granted permissions to access a room mailbox, they can open the mailbox using the instructions in [Open and use a shared mailbox in Outlook for Windows](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
-**IMPORTANT** Room mailboxes should never be set as the organizer of a meeting. Rooms should only be added to meetings by including them in the Attendee or Location fields.  
+**IMPORTANT** Room mailboxes should never be set as the organizer of a meeting. Rooms should only be added to meetings by including them in the Attendee or Location fields.
 
-It is also not recommended to use Full Access permissions to directly manage resource calendars’ response to a meeting invite. In cases where a user needs to manage a resource calendar, the calendar should be directly shared to the user as a shared calendar. The user can accept the sharing invitation to add the calendar to begin managing the room’s meetings. If the room calendar is shared with Delegate permissions, the user will also receive copies of all meeting invitations sent to the room in their own inbox.
+It is also not recommended to use Full Access permissions to directly manage resource calendars' response to a meeting invite. In cases where a user needs to manage a resource calendar, the calendar should be directly shared to the user as a shared calendar. The user can accept the sharing invitation to add the calendar to begin managing the room's meetings. If the room calendar is shared with Delegate permissions, the user will also receive copies of all meeting invitations sent to the room in their own inbox.
 
 Sharing a room calendar to a user does not prevent a room from having the *Auto-accept* setting enabled. If the room calendar is shared and *Auto-accept* is enabled, requests will be accepted by default but the response can always be changed by any user with Editor or Delegate permissions to the room calendar. If your organization wants to use a room mailbox like a team calendar, consider using Exchange's shared calendar features.
 
@@ -54,7 +54,7 @@ If you want to learn about the types of recipients that are available in Exchang
 
 1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
-2. To create a room mailbox, click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Room mailbox**.
+2. To create a room mailbox, click **New** ![Add icon.](../media/ITPro_EAC_AddIcon.png) \> **Room mailbox**.
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
@@ -77,7 +77,7 @@ For information on how to create a room mailbox using the Exchange Management sh
 
 1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
-2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the room mailbox properties page, click **Booking Delegates** (allow automatic responses or not) or **Booking Options** (allow repeating meetings, decline meetings that are scheduled too far out, etc).
 
@@ -189,7 +189,7 @@ After you create a room mailbox, you can make changes and set additional propert
 
 1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
-2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the room mailbox properties page, click one of the following sections to view or change properties (for booking options, see [Change how a room mailbox handles meeting requests](#change-how-a-room-mailbox-handles-meeting-requests).
 
@@ -229,7 +229,7 @@ Click **More options** to view or change these additional properties:
 
    In the drop-down list, select the policy that you want associated with this mailbox.
 
-- **Custom attributes**: This section displays the custom attributes defined for the room mailbox. To specify custom attribute values, click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). You can specify up to 15 custom attributes for the recipient.
+- **Custom attributes**: This section displays the custom attributes defined for the room mailbox. To specify custom attribute values, click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png). You can specify up to 15 custom attributes for the recipient.
 
 #### Contact Information
 
@@ -242,7 +242,7 @@ Use the **Contact Information** section to view or change the contact informatio
 
 Use the **Email Address** section to view or change the email addresses associated with the room mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the *reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
+- **Add**: Click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **Email address** box.
 
@@ -346,7 +346,7 @@ Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 
 To verify that you've successfully changed properties for a room mailbox, do the following:
 
-- In the Exchange admin center, select the mailbox and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
+- In the Exchange admin center, select the mailbox and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox.
 
 - In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values.
 

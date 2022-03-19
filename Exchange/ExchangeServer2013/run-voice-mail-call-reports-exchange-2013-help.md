@@ -1,10 +1,12 @@
 ---
 title: 'Run reports for voice mail calls: Exchange 2013 Help'
 TOCTitle: Run reports for voice mail calls
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: how-to
+description: How to run voice mail call reports in Microsoft Exchange Server
 ms.assetid: 3a292d85-ce0f-4c15-b8f2-d1fc92965437
 f1.keywords:
 - NOCSH

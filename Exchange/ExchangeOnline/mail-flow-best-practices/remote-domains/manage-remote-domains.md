@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to add, modify, and remove remote domains (message formatting settings for external domains) in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d3dca7b0-c84c-429a-9698-0e92a95a0985
 ms.reviewer: 
@@ -24,10 +24,6 @@ Remote domains define settings based on the destination domain of each email mes
 
 The following table shows the default values for common settings:
 
-<br>
-
-****
-
 | Setting | Default |
 |---|---|
 |Out of office replies|Send external out-of-office replies to people on the remote domain.|
@@ -36,7 +32,6 @@ The following table shows the default values for common settings:
 |Meeting forward notifications|Don't allow meeting forward notifications to be sent to people on the remote domain.|
 |Rich Text format (RTF)|Follow settings created by each user in Outlook or Outlook on the web (formerly known as Outlook Web App) when a message is sent to people on the remote domain.|
 |Supported character set|Do not specify a MIME or non-MIME character set if the character set isn't specified in the message sent to the remote domain.|
-|
 
 For information about when to configure remote domains, descriptions of the available settings, and information about how remote domain settings override per-user settings, see [Remote domains in Exchange Online](remote-domains.md).
 
@@ -101,7 +96,7 @@ The new remote domain is created and added to the list.
 1. Go to **Mail flow** \> **Remote domains**.
 
 2. To create a new domain:
-   1. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
+   1. Click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.png).
    2. In the **Name** box, enter a descriptive name for the domain.
    3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
 
@@ -132,7 +127,7 @@ The new remote domain is created and added to the list.
 
 1. Go to **Mail flow** \> **Remote domains**. The **Remote domain** screen appears.
 
-2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+2. Select a remote domain, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. In the warning dialog box, click **Confirm**. The remote domain is deleted.
 
@@ -140,7 +135,7 @@ The new remote domain is created and added to the list.
 
 1. Go to **Mail flow** \> **Remote domains**.
 
-2. Select a remote domain, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
+2. Select a remote domain, and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png).
 
 3. In the warning dialog box, select **Yes**.
 

@@ -1,10 +1,12 @@
 ---
 title: 'Create menu navigation: Exchange 2013 Help'
 TOCTitle: Create menu navigation
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to ceate menu navigation in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantKeyMappingControl'
 ms.assetid: 3cfc9a01-0a61-4d15-9561-621568dc30d9
@@ -13,7 +15,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Create menu navigation in Exchange Server
+# Create menu navigation mapping in Exchange Server
 
 _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
@@ -38,11 +40,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to configure UM auto attendant navigation menus
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create menu navigation. On the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to create menu navigation. On the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Auto Attendant** page, click **Menu navigation**, select either **Enable business hours menu navigation** or **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. On the **UM Auto Attendant** page, click **Menu navigation**, select either **Enable business hours menu navigation** or **Enable non-business hours menu navigation**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 4. On the **New menu navigation entry** page, configure the following:
 

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996803(v=EXCHG.150)
 ms:contentKeyID: 49315373
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to manage delivery status notifications in Microsoft Exchange 2013
 author: msdmaguire
 f1.keywords:
 - CSH
@@ -83,7 +85,7 @@ This example creates a custom HTML DSN message for the DSN code 5.1.2 that's sen
 New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a custom DNS message, do the following:
 
@@ -111,7 +113,7 @@ This example changes the text assigned to the custom DSN message for DSN code 5.
 Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully changed the text of a custom DNS message, do the following:
 
@@ -137,7 +139,7 @@ This example removes the custom DSN message for the DSN code 5.1.2 that's sent t
 Remove-SystemMessage En\Internal\5.1.2
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed a custom DNS message, do the following:
 
@@ -171,7 +173,7 @@ To assign a mailbox to the Exchange recipient, perform the following steps:
 
 ## Use the EAC to specify the DSN codes
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
 
 2. In the **DNS codes** section, type the DSN codes you want to monitor using the format *\<x.y.z\>*, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Select an existing entry and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to modify it, or click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. When you are finished, click **Save**.
 
@@ -201,6 +203,6 @@ This example adds the DSN code 5.7.5 and removes the DSN code 5.7.1 from the exi
 Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured copies of DNS messages to be sent to the mailbox of the Exchange recipient, monitor the mailbox that's associated with the Exchange recipient, and verify the DSN messages contain the DSN codes you specified.

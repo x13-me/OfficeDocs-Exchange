@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638155(v=EXCHG.150)
 ms:contentKeyID: 49289342
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+description: How to configure Exchange Server for split permissions
+ms.author: serdars
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH

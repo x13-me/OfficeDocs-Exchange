@@ -1,10 +1,12 @@
 ---
 title: 'Messaging Records Management Procedures: Exchange 2013 Help'
 TOCTitle: Messaging Records Management Procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Learn Messaging Records Management procedures.
 ms.assetid: bc2ff408-4a2b-4202-9515-e3e922a6320d
 f1.keywords:
 - NOCSH

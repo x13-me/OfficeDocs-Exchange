@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn201759(v=EXCHG.150)
 ms:contentKeyID: 53892777
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange Server 2013 Technical Articles.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

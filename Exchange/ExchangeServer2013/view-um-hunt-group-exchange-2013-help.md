@@ -1,10 +1,12 @@
 ---
 title: 'View a UM hunt group: Exchange 2013 Help'
 TOCTitle: View a UM hunt group
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: how-to
+description: How to view a UM hunt group in Microsoft Exchange Server
 ms.assetid: f038f7b4-4de9-4373-bd58-09d49e37a3ed
 f1.keywords:
 - NOCSH

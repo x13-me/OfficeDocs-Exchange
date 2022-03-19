@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to set up public folders, including assigning permissions to them in the EAC.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Set up public folders in a new organization
+title: Set up public folders in a new organization in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Set up public folders in a new organization
+# Set up public folders in a new organization in Exchange Online
 
  **Summary**: How to set up public folders, including assigning permissions to them in the EAC.
 
@@ -63,7 +63,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 3. In the details pane, under **Folder permissions**, click **Manage**.
 
-4. In **Public Folder Permissions**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+4. In **Public Folder Permissions**, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 5. Click **Browse** to select a user.
 
@@ -71,7 +71,7 @@ After you create the public folder, you'll need to assign the **Owner** permissi
 
 7. Click **Save**.
 
-8. You can add multiple users by clicking **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
+8. You can add multiple users by clicking **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and assigning the appropriate permissions using the steps above. You can also customize the permission level by selecting or clearing the check boxes. When you edit a predefined permission level such as **Owner**, the permission level will change to **Custom**.
 
 For information about how to use Exchange Online PowerShell to assign permissions to a public folder, see [Add-PublicFolderClientPermission](/powershell/module/exchange/add-publicfolderclientpermission).
 

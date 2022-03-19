@@ -5,8 +5,10 @@ ms:assetid: f3ea61f8-1788-4cbf-814e-f7c088c1ac47
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.serverfqdnmatchessmtppolicy(v=EXCHG.150)
 ms:contentKeyID: 46629176
 ms.reviewer:
+ms.topic: article
+description: Microsoft Exchange Server Setup can't continue because the FQDN of the local computer matches the SMTP address of a recipient policy
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

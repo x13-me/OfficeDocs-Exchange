@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 4de33fbd-00e8-4071-8d2c-2c1a696a8454
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to create distribution groups in the Exchange admin center (EAC) in Exchange Online.
+description: Admins can learn how to use a screen reader to create distribution groups in the Classic Exchange admin center (Classic EAC) in Exchange Online.
 title: Use a screen reader to create a new distribution group in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to create a new distribution group in the Exchange admin center
+# Use a screen reader to create a new distribution group in the Classic Exchange admin center in Exchange Online
 
-Using a screen reader and keyboard shortcuts, you can create a new distribution group in the Exchange admin center (EAC) in Exchange Online. This topic explains how to create a new distribution group in your Exchange organization and how to mail-enable an existing group in Active Directory.
+Using a screen reader and keyboard shortcuts, you can create a new distribution group in the Classic Exchange admin center (Classic EAC) in Exchange Online. This topic explains how to create a new distribution group in your Exchange organization and how to mail-enable an existing group in Active Directory.
 
 ## Get started
 

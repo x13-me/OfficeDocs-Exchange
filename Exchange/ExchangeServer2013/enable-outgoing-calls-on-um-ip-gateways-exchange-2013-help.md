@@ -1,9 +1,11 @@
 ---
 title: 'Enable outgoing calls on UM IP gateways: Exchange 2013 Help'
 TOCTitle: Enable outgoing calls on UM IP gateways
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Enable outgoing calls on Unified Messaging IP gateways in Exchange Server
 ms.reviewer:
 ms.assetid: c3ad8e53-d37e-499e-b1f1-defb0ba1bd12
 f1.keywords:
@@ -46,7 +48,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to enable outgoing calls for a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM IP Gateway** page, select the check box next to **Allow outgoing calls through this UM IP gateway**.
 

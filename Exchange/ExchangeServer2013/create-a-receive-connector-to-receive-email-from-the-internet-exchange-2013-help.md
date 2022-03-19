@@ -5,15 +5,17 @@ ms:assetid: 534bbd32-a0db-4d50-9579-4933b156d7b3
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657447(v=EXCHG.150)
 ms:contentKeyID: 49289253
 ms.reviewer: 
+ms.topic: article
+description: How to create a receive connector to receive email from the internet in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Create a Receive connector to receive email from the Internet
+# Create a Receive connector to receive email from the internet
 
 _**Applies to:** Exchange Server 2013_
 
@@ -41,7 +43,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 ## Use the EAC to Create a Receive Connector to Receive Messages from the Internet
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a Receive connector.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a Receive connector.
 
 2. On the **New receive connector** page, specify a name for the Receive connector and then select **Frontend transport** for the **Role**. Since you are receiving mail from the Internet in this case, we recommend that you initially route mail to your Front End server or servers, to simplify and consolidate your mail flow.
 

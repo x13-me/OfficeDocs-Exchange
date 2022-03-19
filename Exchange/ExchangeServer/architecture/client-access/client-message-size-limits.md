@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms.reviewer: 
 title: Configure client-specific message size limits
@@ -16,19 +16,19 @@ manager: serdars
 
 ---
 
-# Configure client-specific message size limits
+# Configure client-specific message size limits in Exchange Server
 
 In Exchange Server, there are several different message size limits that apply to messages as they travel through your organization. For more information, see [Message size and recipient limits in Exchange Server](../../mail-flow/message-size-limits.md).
 
-However, there are client-specific message size limits you can configure for Outlook on the web (fornerly known as Outlook Web App) and email clients that use Exchange ActiveSync or Exchange Web Services (EWS). If you change the Exchange organizational, connector, or user message size limits, you likely need change the limits for Outlook on the web, ActiveSync, and EWS. These limits are described in the following tables. To change the message size limit for a specific client type, you need to change **all** the values that are described in the table.
+However, there are client-specific message size limits you can configure for Outlook on the web (formerly known as Outlook Web App) and email clients that use Exchange ActiveSync or Exchange Web Services (EWS). If you change the Exchange organizational, connector, or user message size limits, you likely need to change the limits for Outlook on the web, ActiveSync, and EWS. These limits are described in the following tables. To change the message size limit for a specific client type, you need to change **all** the values that are described in the table.
 
 > [!NOTE]
 > For any message size limit, you need to set a value that's larger than the actual size you want enforced. This accounts for the Base64 encoding of attachments and other binary data. Base64 encoding increases the size of the message by approximately 33%, so the value you specify should be approximately 33% larger than the actual message size you want enforced. For example, if you specify a maximum message size value of 64 MB, you can expect a realistic maximum message size of approximately 48 MB.
 
 ## ActiveSync
 
-|**Services**|**Configuration file**|**Keys and default values**|**Size**|
-|:-----|:-----|:-----|:-----|
+|Services|Configuration file|Keys and default values|Size|
+|---|---|---|---|
 |Client Access (frontend)|`%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config`|`maxAllowedContentLength="30000000"` (not present by default; see comments)|bytes|
 |Client Access (frontend)|`%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config`|`maxRequestLength="10240"`|kilobytes|
 |Backend|`%ExchangeInstallPath%ClientAccess\Sync\web.config`|`maxAllowedContentLength="30000000 bytes"` (not present by default; see comments)|bytes|
@@ -59,8 +59,8 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
 ## Exchange Web Services
 
-|**Service**|**Configuration file**|**Keys and default values**|**Size**|
-|:-----|:-----|:-----|:-----|
+|Service|Configuration file|Keys and default values|Size|
+|---|---|---|---|
 |Client Access (frontend)|`%ExchangeInstallPath%FrontEnd\HttpProxy\ews\web.config`|`maxAllowedContentLength="67108864"`|bytes|
 |Backend|`%ExchangeInstallPath%ClientAccess\exchweb\ews\web.config`|`maxAllowedContentLength="67108864"`|bytes|
 |Backend|`%ExchangeInstallPath%ClientAccess\exchweb\ews\web.config`|14 instances of `maxReceivedMessageSize="67108864"` (for different combinations of http/https bindings and authentication methods)|bytes|
@@ -73,8 +73,8 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
 ## Outlook on the web
 
-|**Service**|**Configuration file**|**Keys and default values**|**Size**|
-|:-----|:-----|:-----|:-----|
+|Service|Configuration file|Keys and default values|Size|
+|---|---|---|---|
 |Client Access (frontend)|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\web.config`|`maxAllowedContentLength="35000000"`|bytes|
 |Client Access (frontend)|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\web.config`|`maxRequestLength="35000"`|kilobytes|
 |Backend|`%ExchangeInstallPath%ClientAccess\Owa\web.config`|`maxAllowedContentLength="35000000"`|bytes|
@@ -135,7 +135,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
    - Open IIS Manager, select the server, and in the **Actions** pane, click **Restart**.
 
-     ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+     ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
    - Run the following commands from an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**):
 

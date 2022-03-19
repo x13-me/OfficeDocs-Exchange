@@ -5,8 +5,10 @@ ms:assetid: 4e579f69-0de9-421c-ba31-4e63a25e6a45
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.noe12serverwarning(v=EXCHG.150)
 ms:contentKeyID: 46628900
 ms.reviewer:
+ms.topic: article
+description: Can't install Exchange 2007 roles after you prepare Active Directory for Exchange 2010\_NoE12ServerWarning
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,7 +27,7 @@ When you run Microsoft Exchange Server 2010 **Setup /PrepareAD**, the Microsoft 
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -42,7 +44,7 @@ Before deploying Exchange Server 2010, consider the following factors that may r
 
 In addition, when evaluating the options for your organization, make sure you have considered the following questions:
 
-- Do you have a strategy in place to move the dependent applications to Exchange 2010 before Exchange 2003 reaches end of support? For more information, visit the Microsoft Support Lifecycle Web page (<https://docs.microsoft.com/lifecycle/>).
+- Do you have a strategy in place to move the dependent applications to Exchange 2010 before Exchange 2003 reaches end of support? For more information, visit the [Microsoft Support Lifecycle Web page](/lifecycle/).
 
 - Does your strategy require WebDAV and Web Services coexistence (Exchange 2007)?
 

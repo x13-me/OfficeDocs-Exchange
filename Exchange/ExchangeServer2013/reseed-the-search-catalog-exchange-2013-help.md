@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee633475(v=EXCHG.150)
 ms:contentKeyID: 51407270
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: If the content index catalog for a mailbox database copy gets corrupted, you may need to reseed the catalog.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -21,10 +23,10 @@ If the content index catalog for a mailbox database copy gets corrupted, you may
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

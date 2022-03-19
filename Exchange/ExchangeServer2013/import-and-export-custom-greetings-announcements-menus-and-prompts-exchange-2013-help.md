@@ -5,8 +5,10 @@ ms:assetid: e82da5d5-625f-4d8b-8d31-ac45513aacfd
 ms:mtpsurl: https://technet.microsoft.com/library/Ee681667(v=EXCHG.150)
 ms:contentKeyID: 53366393
 ms.reviewer: 
+ms.topic: article
+description: Import export custom greetings, announcements, menus, and prompts in Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -59,15 +61,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 This example imports the welcome greeting file named welcomegreeting.wav from d:\\UMPrompts into the UM dial plan `MyUMDialPlan`.
 
 ```powershell
-[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData ([System.IO.File]::ReadAllBytes('D:\UMPrompts\welcomegreeting.wav'))
 ```
 
-This example imports the welcome greeting file named welcomegreeting.wav from d:\\UMPrompts into the UM auto attendant `MyUMAutoAttendant`.
+This example imports the welcome greeting file named welcomegreeting.wav from D:\\UMPrompts into the UM auto attendant `MyUMAutoAttendant`.
 
 ```powershell
-[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData ([System.IO.File]::ReadAllBytes('D:\UMPrompts\welcomegreeting.wav'))
 ```
 
 ## Use the Shell to export custom greetings, announcements, menus, and prompts from UM dial plans and auto attendants
@@ -76,12 +76,12 @@ This example exports the welcome greeting for the UM dial plan `MyUMDialPlan` an
 
 ```powershell
 $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
-set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+[System.IO.File]::WriteAllBytes('D:\DialPlanPrompts\welcomegreeting.wav', $prompt.AudioData)
 ```
 
 This example exports the business hours welcome greeting for the UM auto attendant `MYUMAutoAttendant` and saves it as the file named BusinessHoursWelcomeGreeting.wav.
 
 ```powershell
 $prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
-set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
+[System.IO.File]::WriteAllBytes('D:\UMPrompts\BusinessHoursWelcomeGreeting.wav', $prompt.AudioData)
 ```

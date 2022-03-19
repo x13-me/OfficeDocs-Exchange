@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124701(v=EXCHG.150)
 ms:contentKeyID: 61200300
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Edge Transport servers in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

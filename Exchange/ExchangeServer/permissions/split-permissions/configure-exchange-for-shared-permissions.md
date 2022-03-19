@@ -1,13 +1,13 @@
 ﻿---
 title: "Configure Exchange Server for shared permissions"
-ms.author: dstrome
-author: dstrome
+ms.author: jhendr
+author: JoanneHendrickson
 manager: serdars
 ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms:assetid: 7d119977-b420-4b66-acf0-0a978b188cdd
 description: "Learn how to leave the split permissions model and configure your organization back to the shared permissions model in Exchange Server 2016 and Exchange Server 2019."
 ---
@@ -24,9 +24,9 @@ You can configure your Exchange organization for shared permissions if you've pr
 
 - The Microsoft Exchange Protected Groups organizational unit (OU) exists.
 
-- The Exchange Windows Permissions security group is located in the Microsoft Exchange Protected Groups OU.
+- The Exchange Windows Permissions security group is located in the Microsoft Exchange Protected Groups OU.
 
-- The Exchange Trusted Subsystem security group is a member of the Exchange Windows Permissions security group.
+- The Exchange Trusted Subsystem security group is a member of the Exchange Windows Permissions security group.
 
 - There are no regular management role assignments to the Mail Recipient Creation role or Security Group Creation and Membership role.
 
@@ -140,8 +140,13 @@ To switch from Active Directory split permissions to shared permissions, do the 
 
 3. In the Command Prompt window, run the following command:
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the Exchange Server 2016 and Exchange Server 2019 September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
    ```powershell
-   Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /ActiveDirectorySplitPermissions:false
+   Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD /ActiveDirectorySplitPermissions:false
    ```
 
 4. In the Exchange Management Shell, run the following commands to add regular role assignments between the Mail Recipient Creation role and Security Group Creation and Management role and the Organization Management and Recipient Management role groups.

@@ -1,9 +1,11 @@
 ---
 title: 'Create a UM hunt group: Exchange 2013 Help'
 TOCTitle: Create a UM hunt group
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to create a Unified Messaging hunt group in Exchange Server 
 ms.reviewer:
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMHuntGroupWizardForm.CreateUMHuntGroupWizardPage1'
@@ -44,9 +46,9 @@ For additional management tasks related to UM hunt groups, see [UM hunt group pr
 
 ## Use the EAC to create a UM hunt group
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 3. On the **New UM hunt group** page, enter the following information:
 

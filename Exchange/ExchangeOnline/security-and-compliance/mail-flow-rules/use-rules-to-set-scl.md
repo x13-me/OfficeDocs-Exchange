@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to the SCL in messages
+title: Use mail flow rules to the SCL in messages in Exchange Online
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
@@ -50,7 +50,7 @@ If you want to mark specific messages as spam before they're even scanned by spa
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click **Add** ![Add icon.](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
 
 3. In the **New rule** page that opens, configure the following settings:
 
@@ -62,10 +62,12 @@ If you want to mark specific messages as spam before they're even scanned by spa
 
    - **Do the following**: Select **Modify the message properties** \> **set the spam confidence level (SCL)**. In the **Specify SCL** dialog that appears, configure one of the following values:
 
-   - **Bypass spam filtering**: The messages will skip spam filtering.
+   - **Bypass spam filtering**: The messages will skip spam filtering. High confidence phishing messages are still filtered. Other features in EOP are not affected (for example, messages are always scanned for malware).
+
+     If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. See [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](/microsoft-365/security/office-365-security/configure-advanced-delivery).
 
      > [!CAUTION]
-     > Be very careful about allowing messages to skip spam filtering. Attackers can use this vulnerability to send phishing and other malicious messages into your organization. The mail flow rules requires more than just the sender's email address or domain. For more information, see [Create safe sender lists in EOP](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365.md).
+     > Be very careful about allowing messages to skip spam filtering. The mail flow rule should use more conditions than just the sender's email address or domain. For more information, see [Create safe sender lists in EOP](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365#recommended-use-mail-flow-rules).
 
    - **0 to 4**: The message is sent through spam filtering for additional processing.
 
@@ -77,4 +79,4 @@ If you want to mark specific messages as spam before they're even scanned by spa
 
 ## How do you know this worked?
 
-To verify that this procedure is working correctly, send an email message to someone inside your organization, and verify that the action performed on the message is as expected. For example, if you **set the spam confidence level (SCL)** to **Bypass spam filtering**, then the message should be sent to the specified recipient's inbox. However, if you **set the spam confidence level (SCL)** to **9**, and the **High confidence spam** action for your applicable anti-spam policies is to move the message to the Junk Email folder, then the message should be sent to the specified recipient's Junk Email folder.
+To verify that you've correctly set the SCL in messages, send an email message to someone inside your organization, and verify that the action performed on the message is as expected. For example, if you **set the spam confidence level (SCL)** to **Bypass spam filtering**, then the message should be sent to the specified recipient's Inbox. However, if you **set the spam confidence level (SCL)** to **9**, and the **High confidence spam** action for your applicable anti-spam policies is to move the message to the Junk Email folder, then the message should be sent to the specified recipient's Junk Email folder.

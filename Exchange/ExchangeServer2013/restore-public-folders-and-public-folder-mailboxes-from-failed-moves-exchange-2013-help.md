@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ983802(v=EXCHG.150)
 ms:contentKeyID: 51407261
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to restore public folders and public folder mailboxes from failed moves.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

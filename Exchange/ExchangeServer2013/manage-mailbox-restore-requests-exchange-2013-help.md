@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ863437(v=EXCHG.150)
 ms:contentKeyID: 50387723
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to manage mailbox restore requests in Microsoft Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -106,8 +108,8 @@ By default, the **Get-MailboxRestoreRequest** cmdlet returns the name of the req
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -147,7 +149,7 @@ By default, the **Get-MailboxRestoreRequest** cmdlet returns the name of the req
 </tbody>
 </table>
 
-## How do you know this worked?
+### How do you know this worked?
 
 Run the **Get-MailboxRestoreRequest** cmdlet to verify that you can view properties for mailbox restore requests. If the cmdlet returns an error, verify that you're using the correct syntax and identity. In some cases, the cmdlet may be successful and not return any results. For example, if you've submitted a mailbox restore request and run the command `Get-MailboxRestoreRequest -Status InProgress` and no results are returned, then none of the restore requests are currently running.
 
@@ -187,8 +189,8 @@ By default, the [Get-MailboxRestoreRequestStatistics](/powershell/module/exchang
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -404,7 +406,7 @@ By default, the [Get-MailboxRestoreRequestStatistics](/powershell/module/exchang
 </tbody>
 </table>
 
-## How do you know this worked?
+### How do you know this worked?
 
 Run the **Get-MailboxRestoreRequestStatistics** cmdlet to verify that you can view the statistics for mailbox restore requests. If the cmdlet returns an error, verify that you're using the correct identity for the restore request.
 
@@ -426,7 +428,7 @@ Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLim
 
 For detailed syntax and parameter information, see [Set-MailboxRestoreRequest](/powershell/module/exchange/Set-MailboxRestoreRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed the properties of a restore request, run the **Get-MailboxRestoreRequestStatistics** cmdlet to display the revised properties for the restore request. If the restore request was successfully created, the *Status* property will have a value of `Queued`, `InProgress`, or `Completed`. After the restore request is completed, the contents of the soft-deleted mailbox will appear in the target mailbox.
 
@@ -450,7 +452,7 @@ Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -Su
 
 For detailed syntax and parameter information, see [Suspend-MailboxRestoreRequest](/powershell/module/exchange/Suspend-MailboxRestoreRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully suspended a mailbox restore request, run the following command.
 
@@ -478,7 +480,7 @@ Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
 
 For detailed syntax and parameter information, see [Resume-MailboxRestoreRequest](/powershell/module/exchange/Resume-MailboxRestoreRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that a restore request has resumed, run the following command.
 
@@ -515,7 +517,7 @@ Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-43
 
 For detailed syntax and parameter information, see [Remove-MailboxRestoreRequest](/powershell/module/exchange/Remove-MailboxRestoreRequest).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully removed a mailbox restore request, run the following command.
 

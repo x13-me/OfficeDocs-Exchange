@@ -5,8 +5,10 @@ ms:assetid: 419e1de9-2bf8-48a8-824d-2a536b0a6d90
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997637(v=EXCHG.150)
 ms:contentKeyID: 49315399
 ms.reviewer: 
+ms.topic: article
+description: How to configure the number of incoming calls on a Mailbox server in Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -38,7 +40,7 @@ For additional tasks related to Unified Messaging and Mailbox servers, see [UM s
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Exchange server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Exchange server you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 

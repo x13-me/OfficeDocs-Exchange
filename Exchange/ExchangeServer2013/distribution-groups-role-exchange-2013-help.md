@@ -4,9 +4,11 @@ TOCTitle: Distribution Groups role
 ms:assetid: 0c3667b6-529b-4bb2-85bf-e24fae82d082
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876848(v=EXCHG.150)
 ms:contentKeyID: 49289161
+ms.topic: article
+description: The Distribution Groups management role lets administrators create, modify, view, and remove distribution groups
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table >
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

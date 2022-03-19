@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150562(v=EXCHG.150)
 ms:contentKeyID: 47560086
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: About the Exchange admin center in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -41,7 +43,7 @@ If you're in a coexistence scenario, where you're running Exchange 2010 and Exch
 
 The section describes the user interface elements that are common across the EAC.
 
-![Exchange admin center](images/JJ150562.cd617bc0-19ef-47d2-bba1-4e9546b12e0c(EXCHG.150).gif "Exchange admin center")
+![Exchange admin center.](images/JJ150562.cd617bc0-19ef-47d2-bba1-4e9546b12e0c(EXCHG.150).gif "Exchange admin center")
 
 ## Cross-premises navigation
 
@@ -83,9 +85,9 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -157,9 +159,9 @@ The EAC includes a notification viewer that displays the status of long-running 
 
 ## Me tile and Help
 
-The *Me tile* allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") drop-down menu, you can perform the following actions:
+The *Me tile* allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon.](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") drop-down menu, you can perform the following actions:
 
-- **Help**: Click ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
+- **Help**: Click ![Help Icon.](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
 
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
 
@@ -178,15 +180,15 @@ For the best experience with the EAC, use one of the operating system and browse
 
 - **Unsupported:**: The browser and operating system isn't supported or tested.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

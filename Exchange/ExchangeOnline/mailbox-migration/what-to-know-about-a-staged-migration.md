@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7e2c82be-5f3d-4e36-bc6b-e5b4d411e207
 ms.reviewer: 
 description: "As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this over time, it's called a staged migration. A staged migration is recommended when:"
-title: What you need to know about a staged email migration
+title: What you need to know about a staged email migration in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -24,7 +24,7 @@ ms.service: exchange-online
 manager: serdars
 ---
 
-# What you need to know about a staged email migration
+# What you need to know about a staged email migration in Exchange Online
 
 As part of a Microsoft 365 or Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Microsoft 365 or Office 365. When you do this over time, it's called a staged migration. A staged migration is recommended when:
 
@@ -63,7 +63,7 @@ Here are a few items to be aware of:
 
 The main steps you perform for a staged migration, and the results for your users, are shown in the following illustration.
 
-![Process for performing a staged email migration](media/fcf22570-1d36-49d4-bfed-6ccddec7205f.png)
+![Process for performing a staged email migration.](media/fcf22570-1d36-49d4-bfed-6ccddec7205f.png)
 
 Here's a description of the staged migration shown in the illustration.
 

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.outlook.proxy(v=E
 ms:contentKeyID: 49720847
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the Outlook.Proxy health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,10 +29,10 @@ The Outlook.Proxy service is monitored by using the following probes and monitor
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

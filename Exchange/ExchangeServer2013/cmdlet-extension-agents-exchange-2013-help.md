@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd335054(v=EXCHG.150)
 ms:contentKeyID: 50117637
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: Description and use of cmdlet extension agents.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -59,10 +61,10 @@ The configuration for agents is stored at the organization level. When you enabl
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -152,9 +154,9 @@ The `Scripting agent` configuration file contains all the scripts that you want 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

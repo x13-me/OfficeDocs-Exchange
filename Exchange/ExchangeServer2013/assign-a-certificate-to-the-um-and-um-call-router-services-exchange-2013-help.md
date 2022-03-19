@@ -5,8 +5,10 @@ ms:assetid: 8a900e5f-9779-4213-92d7-ec157b15fbc5
 ms:mtpsurl: https://technet.microsoft.com/library/Dn205140(v=EXCHG.150)
 ms:contentKeyID: 53908378
 ms.reviewer: 
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+description: How to assign a certificate to the UM and UM Call Router services in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -41,7 +43,7 @@ For additional management tasks related to managing certificates for Unified Mes
 
 1. In the EAC, navigate to **Servers** \> **Certificates**.
 
-2. In the list view, select the certificate that you want to assign to the Unified Messaging and UM Call Router services, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the certificate that you want to assign to the Unified Messaging and UM Call Router services, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the *\<Certificate name\>* page, select **Services**, and then select **UM** and **UM call router**.
 

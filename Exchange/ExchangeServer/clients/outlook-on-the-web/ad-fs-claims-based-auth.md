@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms.reviewer: 
 title: Use AD FS claims-based authentication with Outlook on the web
@@ -23,13 +23,9 @@ Installing and configuring Active Directory Federation Services (AD FS) in Excha
 AD FS claims-based authentication replaces the traditional authentication methods that are available for Outlook on the web and the EAC. For example:
 
 - Active Directory client certificate authentication
-
 - Basic authentication
-
 - Digest authentication
-
 - Forms authentication
-
 - Windows authentication
 
 Setting up AD FS claims-based authentication for Outlook on the web and the EAC in Exchange Server involves the following additional servers:
@@ -75,16 +71,11 @@ For more information about creating and importing SSL certificates in Windows, s
 
 Here's a summary of the certificates that we'll be using in this scenario:
 
-<br>
-
-****
-
 |Common name (CN) in the certificate (in the Subject, Subject Alternative Name, or a wildcard certificate match)|Type|Required on servers|Comments|
 |---|---|---|---|
 |`adfs.contoso.com`|Issued by a CA|AD FS server <p> Web Application Proxy server|This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.|
 |`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <p> Exchange servers <p> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <p> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <p> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](/powershell/module/adfs/set-adfsproperties). <p> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
 | `mail.contoso.com`|Issued by a CA|Exchange servers <p> Web Application Proxy server|This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).|
-|
 
 For more information, see the "Certificate requirements" section in [AD FS Requirements](/windows-server/identity/ad-fs/overview/ad-fs-requirements).
 
@@ -99,19 +90,19 @@ To use Server Manager to install AD FS, follow these steps:
 
 1. On the target server, open **Server Manager**, click **Manage**, and then select **Add Roles and Features**.
 
-   ![In Server Manager, click Manage to get to Add Roles and Features](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
+   ![In Server Manager, click Manage to get to Add Roles and Features.](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
 
 2. The **Add Roles and Features Wizard** opens. You'll start on the **Before you begin** page unless you previously selected **Skip this page by default**. Click **Next**.
 
-   ![The 'Before you begin' page in the Add Roles and Features Wizard](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
+   ![The 'Before you begin' page in the Add Roles and Features Wizard.](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
 
 3. On the **Select installation type** page, verify that **Role-based or feature-based installation** is selected, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 4. On the **Select destination server** page, verify the server selection, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 5. On the **Select server roles** page, select **Active Directory Federation Services** from the list, and then click **Next**.
 
@@ -119,7 +110,7 @@ To use Server Manager to install AD FS, follow these steps:
 
 6. On the **Select features** page, click **Next** (accept the default feature selections).
 
-   ![The 'Select features' page in the Add Roles and Features Wizard.](../../media/7b1f1f2a-b96e-4107-afb6-fb4a51ed04b7.png)
+   ![Click Next on the 'Select features' page in the Add Roles and Features Wizard.](../../media/7b1f1f2a-b96e-4107-afb6-fb4a51ed04b7.png)
 
 7. On the **Active Directory Federation Services (AD FS)** page, click **Next**.
 
@@ -133,7 +124,7 @@ To use Server Manager to install AD FS, follow these steps:
 
 10. On the **Installation progress** page, you can watch the progress bar to verify that the installation was successful. When the installation is finished, leave the wizard open so you can click **Configure the federation service on this server** in [Step 3b: Configure the AD FS server](#step-3b-configure-the-ad-fs-server).
 
-   ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
+   ![Watch progress on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
 
 To use Windows PowerShell to install AD FS, run the following command:
 
@@ -179,7 +170,7 @@ To use Server Manager, following these steps:
 
 1. If you left the **Add Roles and Features Wizard** open on the AD FS server from [Step 2: Deploy an AD FS server](#step-2-deploy-an-ad-fs-server), you can click the **Configure the federation service on this server** link on the **Installation progress** page.
 
-   ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
+   ![Click 'Configure the federation service on this server' on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
 
    If you closed the **Add Roles and Features Wizard** or you used Windows PowerShell to install AD FS, you can get to the same place in Server Manager by clicking **Notifications**, and then clicking **Configure the federation service on this server** in the **Post-deployment Configuration** warning.
 
@@ -187,11 +178,11 @@ To use Server Manager, following these steps:
 
 2. The **Active Directory Federation Services Wizard** opens. On the **Welcome** page, verify **Create the first federation server in a federation server farm** is selected, and then click **Next**.
 
-   ![The Welcome page in the Active Directory Federation Services Configuration Wizard](../../media/652518d2-52a2-474a-9b21-fdd6db0b1515.png)
+   ![The Welcome page in the Active Directory Federation Services Configuration Wizard.](../../media/652518d2-52a2-474a-9b21-fdd6db0b1515.png)
 
 3. On the **Connect to Active Directory Federation Services** page, select a domain administrator account in the domain where the AD FS server resides (your current credentials are selected by default). If you need to select a different user, click **Change**. When you're finished, click **Next**.
 
-   ![The Connect to AD DS page in the Active Directory Federation Services Configuration Wizard](../../media/d2490de9-d3fd-4ef5-af3d-c239158bf7bb.png)
+   ![The Connect to AD DS page in the Active Directory Federation Services Configuration Wizard.](../../media/d2490de9-d3fd-4ef5-af3d-c239158bf7bb.png)
 
 4. On the **Specify Service Properties** page, configure the following settings:
 
@@ -213,7 +204,7 @@ To use Server Manager, following these steps:
 
    When you're finished, click **Next**.
 
-   ![The Specify Service Properties page in the Active Directory Federation Services Configuration Wizard](../../media/c2cce27c-4ea3-47e5-9385-fe96b573af14.png)
+   ![The Specify Service Properties page in the Active Directory Federation Services Configuration Wizard.](../../media/c2cce27c-4ea3-47e5-9385-fe96b573af14.png)
 
 5. On the **Specify Service Account** page, configure the following settings:
 
@@ -223,23 +214,23 @@ To use Server Manager, following these steps:
 
    When you're finished, click **Next**.
 
-   ![The Specify Service Account page in the Active Directory Federation Services Configuration Wizard](../../media/0d10c20d-382b-4534-9e68-3f801b811e7d.png)
+   ![The Specify Service Account page in the Active Directory Federation Services Configuration Wizard.](../../media/0d10c20d-382b-4534-9e68-3f801b811e7d.png)
 
 6. On the **Specify Configuration Database** page, verify that **Create a database on this server using Windows Internal Database** is selected, and then click **Next**.
 
-   ![The Specify Configuration Database page in the Active Directory Federation Services Configuration Wizard](../../media/d3709617-5377-40b5-bb83-3995587c251f.png)
+   ![The Specify Configuration Database page in the Active Directory Federation Services Configuration Wizard.](../../media/d3709617-5377-40b5-bb83-3995587c251f.png)
 
 7. On the **Review Options** page, verify your selections. You can click **View Script** button to copy the Windows PowerShell equivalent of the selections that you made for future use. When you're finished, click **Next**.
 
-   ![The Review Options page in the Active Directory Federation Services Configuration Wizard](../../media/a8978201-1d88-4200-a726-5705f1c6c152.png)
+   ![The Review Options page in the Active Directory Federation Services Configuration Wizard.](../../media/a8978201-1d88-4200-a726-5705f1c6c152.png)
 
 8. On the **Pre-requisite Checks** page, verify that all the prerequisite checks were successfully completed, and then click **Configure**.
 
-   ![The Pre-requisite Check page in the Active Directory Federation Services Configuration Wizard](../../media/55892765-8350-4a19-9d98-8566a04b586f.png)
+   ![The Pre-requisite Check page in the Active Directory Federation Services Configuration Wizard.](../../media/55892765-8350-4a19-9d98-8566a04b586f.png)
 
 9. On the **Results** page, review the results, verify that the configuration completed successfully. You can click **Next steps required for completing your federation service deployment** if you want to read about the next steps (for example, configuring DNS). When you're finished, click **Close**.
 
-   ![The Results page in the Active Directory Federation Services Configuration Wizard](../../media/0a291de0-ff4e-45a2-830d-20054e56947c.png)
+   ![The Results page in the Active Directory Federation Services Configuration Wizard.](../../media/0a291de0-ff4e-45a2-830d-20054e56947c.png)
 
 To use Windows PowerShell to configure AD FS, follow these steps:
 
@@ -305,7 +296,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
 1. In **Server Manager**, click **Tools**, and then select **AD FS Management**.
 
-   ![In Server Manager, select Tools \> AD FS Management](../../media/3139998a-422a-4aab-9f52-10a1ba7fa547.png)
+   ![In Server Manager, select Tools \> AD FS Management.](../../media/3139998a-422a-4aab-9f52-10a1ba7fa547.png)
 
 2. In the AD FS Management console, expand **Trust Relationships** and then select **Relying Party Trusts**. In the **Actions** pane, select **Add Relying Party Trust**.
 
@@ -341,7 +332,7 @@ To use the AD FS Management console to create the relying party trusts, follow t
 
 6. On the **Choose Profile** page, verify **AD FS profile** is selected, and then click **Next**.
 
-   ![The Choose Profile page in the Add Relying Party Trust Wizard](../../media/d82f8346-19f7-472e-916c-838fe399b1f0.png)
+   ![The Choose Profile page in the Add Relying Party Trust Wizard.](../../media/d82f8346-19f7-472e-916c-838fe399b1f0.png)
 
 7. On the **Configure Certificate** page, click **Next** (don't specify an optional token encryption certificate).
 
@@ -437,7 +428,7 @@ To add the required claims rules:
 
 2. In the **Edit Claim Rules for \<RuleName\>** window that opens, verify that the **Issuance Transform Rules** tab is selected, and then click **Add Rule**.
 
-   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
+   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab.](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
 
 3. The **Add Transform Claim Rule Wizard** opens. On the **Select Rule Template** page, click the **Claim rule template** drop down, and then select **Send Claims Using a Custom Rule**. When you're finished, click **Next**.
 
@@ -459,7 +450,7 @@ To add the required claims rules:
 
 5. Back on the **Edit Claim Rules for \<RuleName\>** window, verify that the **Issuance Transform Rules** tab is selected, and then click **Add Rule**.
 
-   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
+   ![In the Edit Claim Rules window, select Add Rule on the Issuance Transform Rules tab.](../../media/38d6b05a-1def-4d94-8320-3ed333fff30d.png)
 
 6. The **Add Transform Claim Rule Wizard** opens. On the **Select Rule Template** page, click the **Claim rule template** drop down, and then select **Send Claims Using a Custom Rule**. When you're finished, click **Next**.
 
@@ -525,19 +516,19 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 1. On the target server, open **Server Manager**, click **Manage**, and then select **Add Roles and Features**.
 
-   ![In Server Manager, click Manage to get to Add Roles and Features](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
+   ![In Server Manager, click Manage to get to Add Roles and Features.](../../media/71158f8e-08fa-409d-b8cf-70c57851bbb4.png)
 
 2. The **Add Roles and Features Wizard** opens. You'll start on the **Before you begin** page unless you previously selected **Skip this page by default**. Click **Next**.
 
-   ![The 'Before you begin' page in the Add Roles and Features Wizard](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
+   ![The 'Before you begin' page in the Add Roles and Features Wizard.](../../media/9e44ea22-6404-45a5-a35f-f7fedfc080c9.png)
 
 3. On the **Select installation type** page, verify that **Role-based or feature-based installation** is selected, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 4. On the **Select destination server** page, verify the server selection, and then click **Next**.
 
-   ![The 'Select destination server' page in the Add Roles and Features Wizard](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
+   ![The 'Select destination server' page in the Add Roles and Features Wizard.](../../media/7e19f1dd-a2f0-4399-9cf5-0d31373145cd.png)
 
 5. On the **Select server roles** page, select **Remote Access** in the list of roles, and then click **Next**.
 
@@ -549,21 +540,21 @@ To use Server Manager to install Web Application Proxy, follow these steps:
 
 7. On the **Remote Access** page, read the information, and then click **Next**.
 
-   ![The 'Remote Access' page in the Add Roles and Features Wizard.](../../media/d6c51f88-6dfe-49f1-b8c7-e93bad1ed0c6.png)
+   ![Read the information on the 'Remote Access' page in the Add Roles and Features Wizard.](../../media/d6c51f88-6dfe-49f1-b8c7-e93bad1ed0c6.png)
 
 8. On the **Select role services** page, select **Web Application Proxy**. In the add features dialog box that opens, click **Add Features** to accept the default values and close the dialog box. Back on the **Select role services** page, click **Next**.
 
-   ![After you select Web Application Proxy, the 'Add features that are required for Web Applicaiton Proxy?' dialog appears](../../media/2764ce5c-a450-4638-9141-4f0f0fa5f84a.png)
+   ![After you select Web Application Proxy, the 'Add features that are required for Web Applicaiton Proxy?' dialog appears.](../../media/2764ce5c-a450-4638-9141-4f0f0fa5f84a.png)
 
-   ![Select Web Application Proxy on the 'Select role services' page](../../media/88cf5938-eb42-4405-9f3b-5789c95cec6c.png)
+   ![Select Web Application Proxy on the 'Select role services' page.](../../media/88cf5938-eb42-4405-9f3b-5789c95cec6c.png)
 
 9. On the **Confirm installation selections** page, click **Install**.
 
-   ![x](../../media/a9944299-8ea8-4157-9531-0697f6597757.png)
+   ![x.](../../media/a9944299-8ea8-4157-9531-0697f6597757.png)
 
 10. On the **Installation progress** page, watch the progress bar to verify that the installation was successful. When the installation is finished, leave the wizard open so you can click **Open the Web Application Proxy Wizard** in the next step (5b).
 
-    ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
+    ![Click 'Open the Web Application Proxy Wizard' on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
 
 To use Windows PowerShell to install Web Application Proxy, run the following command:
 
@@ -587,7 +578,7 @@ To use Server Manager to configure Web Application Proxy, follow these steps:
 
 1. If you left the **Add Roles and Features Wizard** open on the Web Application Proxy server from the previous step, you can click the **Open the Web Application Proxy Wizard** link on the **Installation progress** page.
 
-   ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
+   ![Select 'Open the Web Application Proxy Wizard' on the 'Installation progress' page in the Add Roles and Features Wizard.](../../media/a3e97e16-430c-4240-bcce-a0b89958aad2.png)
 
    If you closed the **Add Roles and Features Wizard** or you used Windows PowerShell to install Web Application Proxy, you can get to the same place by clicking **Notifications**, and then clicking **Open the Web Application Proxy Wizard** in the **Post-deployment Configuration** warning.
 
@@ -595,7 +586,7 @@ To use Server Manager to configure Web Application Proxy, follow these steps:
 
 2. The **Web Application Proxy Configuration Wizard** opens. On the **Welcome** page, click **Next**.
 
-   ![The Welcome page in the Web Application Proxy Configuration Wizard](../../media/68ea0e1b-f71b-407f-92f3-410654442e49.png)
+   ![The Welcome page in the Web Application Proxy Configuration Wizard.](../../media/68ea0e1b-f71b-407f-92f3-410654442e49.png)
 
 3. On the **Federation Server** page, enter the following information:
 
@@ -605,19 +596,19 @@ To use Server Manager to configure Web Application Proxy, follow these steps:
 
    When you're finished, click **Next**.
 
-   ![Enter the credentials for the AD FS server on the Federation Server  page in the Web Application Proxy Configuration Wizard](../../media/75b3c62a-986d-453d-ada1-68a23a50acac.png)
+   ![Enter the credentials for the AD FS server on the Federation Server  page in the Web Application Proxy Configuration Wizard.](../../media/75b3c62a-986d-453d-ada1-68a23a50acac.png)
 
 4. On the **AD FS Proxy Certificate** page, select an installed certificate that contains the federation service name (for example `adfs.contoso.com`). You can select a certificate in the drop down list, and then click **View** \> **Details** to see more information about the certificate. When you're finished, click **Next**.
 
-   ![Select the AD FS proxy certificate on the AD FS Proxy Certificate page in the AD FS Proxy Configuration Wizard](../../media/c2a5ef5e-2f70-413a-9589-d0f8776de0f9.png)
+   ![Select the AD FS proxy certificate on the AD FS Proxy Certificate page in the AD FS Proxy Configuration Wizard.](../../media/c2a5ef5e-2f70-413a-9589-d0f8776de0f9.png)
 
 5. On the **Confirmation** page, review the settings. You can copy the Windows PowerShell command to automate additional installations (in particular, the certificate thumbprint value). When you're finished, click **Configure**.
 
-   ![The Confirmation page in the Web Application Proxy Configuration Wizard](../../media/a7da27b0-f289-44ca-b0bb-6815561d8bd4.png)
+   ![The Confirmation page in the Web Application Proxy Configuration Wizard.](../../media/a7da27b0-f289-44ca-b0bb-6815561d8bd4.png)
 
 6. On the **Results** page, verify that the configuration was successful, and then click **Close**.
 
-   ![The Results page in the Web Application Proxy Configuration Wizard](../../media/8b146267-0063-425d-a8c3-f5d0440f9bbc.png)
+   ![The Results page in the Web Application Proxy Configuration Wizard.](../../media/8b146267-0063-425d-a8c3-f5d0440f9bbc.png)
 
 To use Windows PowerShell to configure Web Application Proxy, follow these steps:
 
@@ -661,7 +652,7 @@ To use the Remote Access Management console, follow these steps:
 
 2. In the Remote Access Management console, under **Configuration**, click **Web Application Proxy**, and then in the **Tasks** pane, click **Publish**.
 
-   ![Select Publish in the Tasks pane in the Remote Access Management Console](../../media/b2c6bd81-b5af-4f02-a985-9e16c0352a7e.png)
+   ![Select Publish in the Tasks pane in the Remote Access Management Console.](../../media/b2c6bd81-b5af-4f02-a985-9e16c0352a7e.png)
 
 3. The **Publish New Application Wizard** opens. On the **Welcome** page, click **Next**.
 
@@ -838,7 +829,7 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 
 3. In the **Actions** pane, click **Restart**.
 
-   ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+   ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
 

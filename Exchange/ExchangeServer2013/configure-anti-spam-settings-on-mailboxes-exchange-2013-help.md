@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123559(v=EXCHG.150)
 ms:contentKeyID: 49345051
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: How to configure anti-spam settings on mailboxes in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -53,7 +55,7 @@ This example configures the mailbox of a user named Jeff Phillips to bypass all 
 Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the anti-spam features on a single mailbox, do the following:
 
@@ -79,7 +81,7 @@ This example enables the SCL quarantine threshold with a value of 7 on all mailb
 Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the anti-spam features on multiple mailboxes, do the following:
 
@@ -105,7 +107,7 @@ This example sets the organization's junk email threshold to 5.
 Set-OrganizationConfig -SCLJunkThreshold 5
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the junk email threshold for all mailboxes in your organization, do the following:
 

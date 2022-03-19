@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about public folders and how they work in Exchange 2016 and Exchange 2019.
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 9ca7a32d-2436-462f-b71a-94129d05b6fa
 ms.reviewer:
 title: Public folders
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Public folders
+# Public folders in Exchange Server
 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help make content in a deep hierarchy easier to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to find the content they're interested in.
 

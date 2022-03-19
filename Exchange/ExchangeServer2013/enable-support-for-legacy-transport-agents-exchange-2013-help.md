@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ591524(v=EXCHG.150)
 ms:contentKeyID: 49084757
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to enable support for legacy transport agents in Exchange Server 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -21,9 +23,9 @@ In Microsoft Exchange Server 2013, transport agents that were created using the 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -53,8 +55,8 @@ Support for legacy transport agents is controlled by keys in the application con
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

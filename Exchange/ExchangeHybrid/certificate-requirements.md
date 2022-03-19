@@ -1,6 +1,6 @@
 ---
 title: "Certificate requirements for hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 ms.reviewer:
 manager: serdars
@@ -9,7 +9,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -61,8 +61,8 @@ The services that are installed on a single server may require that you configur
 
 The following table outlines the minimum suggested FQDNs that should be included on certificates configured for use in a hybrid deployment.
 
-|**Service**|**Suggested FQDN**|**Field**|
-|:-----|:-----|:-----|
+|Service|Suggested FQDN|Field|
+|---|---|---|
 |Primary shared SMTP domain|contoso.com|Subject name|
 |Autodiscover|Label that matches the external Autodiscover FQDN of your Exchange 2013 Client Access server, such as autodiscover.contoso.com|Subject alternative name|
 |Transport|Label that matches the external FQDN of your Edge Transport servers, such as edge.contoso.com|Subject alternative name|

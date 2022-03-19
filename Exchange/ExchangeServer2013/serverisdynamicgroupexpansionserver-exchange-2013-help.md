@@ -1,12 +1,14 @@
 ---
-title: 'Local computer is responsible for expanding group membership'
+title: 'Exchange Server: Local computer is responsible for expanding group membership'
 TOCTitle: The local computer is responsible for expanding group membership_ServerIsDynamicGroupExpansionServer
 ms:assetid: f6fdd8e1-fda1-45be-b8a2-0d356dbe7d83
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.serverisdynamicgroupexpansionserver(v=EXCHG.150)
 ms:contentKeyID: 46629180
 ms.reviewer: 
+ms.topic: article
+description: Microsoft® Exchange Server setup can't continue because its attempt to uninstall a Hub Transport role responsible for expanding group membership failed
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

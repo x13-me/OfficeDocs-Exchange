@@ -4,9 +4,11 @@ TOCTitle: Change user throttling settings for all users in your organization
 ms:assetid: c45cacfc-768d-4605-9bb0-53e30273fe4d
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863578(v=EXCHG.150)
 ms:contentKeyID: 50395406
+ms.topic: article
+description: Change user throttling settings for all users in your organization.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

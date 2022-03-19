@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd351041(v=EXCHG.150)
 ms:contentKeyID: 49315484
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+ms.topic: article
+description: How to prevent voice messages marked private from being exposed to unintended listeners in Microsoft Exchange
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -71,8 +73,8 @@ Before you can implement IRM in Exchange, you must first deploy and configure yo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -119,8 +121,8 @@ The email client software that's used to listen to a Protected Voice Mail messag
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -184,7 +186,7 @@ There are two situations in which protected voice messages can be created:
 
   **Create a Protected Voice Mail message using Call Answering**
 
-  ![Create protected voice mail using call answering](images/Dd351041.4e9f50bf-5066-4d0a-b3eb-0515a2fc4560(EXCHG.150).jpg "Create protected voice mail using call answering")
+  ![Create protected voice mail using call answering.](images/Dd351041.4e9f50bf-5066-4d0a-b3eb-0515a2fc4560(EXCHG.150).jpg "Create protected voice mail using call answering")
 
 - **Outlook Voice Access**: Outlook Voice Access lets UM-enabled users access their mailbox using analog, digital, or cellular telephones by dialing their Outlook Voice Access number. There are two Unified Messaging user interfaces available to UM-enabled users: the telephone user interface (TUI) and the voice user interface (VUI).
 
@@ -195,11 +197,11 @@ There are two situations in which protected voice messages can be created:
 
   **Create a Protected Voice Mail message using the voice user interface**
 
-  ![Create protected voice mail using voice interface](images/Dd351041.6b425ee4-5171-4a63-961f-bdbc6c79e1be(EXCHG.150).jpg "Create protected voice mail using voice interface")
+  ![Create protected voice mail using voice interface.](images/Dd351041.6b425ee4-5171-4a63-961f-bdbc6c79e1be(EXCHG.150).jpg "Create protected voice mail using voice interface")
 
   **Create a Protected Voice Mail message using the telephone user interface**
 
-  ![Create protected voice mail using touchtone input](images/Dd351041.dd58fd38-c4c3-437c-adc1-497deb3c8a9f(EXCHG.150).jpg "Create protected voice mail using touchtone input")
+  ![Create protected voice mail using touchtone input.](images/Dd351041.dd58fd38-c4c3-437c-adc1-497deb3c8a9f(EXCHG.150).jpg "Create protected voice mail using touchtone input")
 
 ## UM mailbox policies
 
@@ -211,9 +213,9 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,10 +1,12 @@
 ---
 title: 'Enable or disable MAPI for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable MAPI for a mailbox
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable MAPI for a mailbox in Exchange Server
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 f1.keywords:
 - NOCSH
@@ -43,7 +45,7 @@ For additional management tasks related to managing email client access to a mai
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to enable or disable MAPI, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to enable or disable MAPI, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Features**.
 
@@ -77,7 +79,7 @@ For detailed syntax and parameter information, see [Set-CASMailbox](/powershell/
 
 To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 - On the mailbox properties page, click **Mailbox Features**.
 

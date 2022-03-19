@@ -1,10 +1,12 @@
 ---
 title: 'Set the partner fax server URI to allow faxing: Exchange 2013 Help'
 TOCTitle: Set the partner fax server URI to allow faxing
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: how-to
+description: How to set the partner fax server URI to allow faxing in Microsoft Exchange Server
 ms.assetid: 77a9013b-d76b-4af2-8b2c-cef435cf67af
 f1.keywords:
 - NOCSH
@@ -36,9 +38,9 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 ## Use the EAC to set the fax partner URI
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the policy you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, select the policy you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM mailbox policy** page \> **General**, in the **Partner fax server URI** box, enter the TCP or TLS URI. For example: _sip:faxserver1.contoso.com:5060;transport=tcp_ or _sip:faxserver2.contoso.com:5061;transport=tls_
 

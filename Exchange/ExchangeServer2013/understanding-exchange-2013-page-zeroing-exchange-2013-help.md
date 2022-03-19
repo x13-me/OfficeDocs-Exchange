@@ -5,8 +5,10 @@ ms:assetid: 0ca7b188-efbc-4c0d-bcfe-5138cffc803c
 ms:mtpsurl: https://technet.microsoft.com/library/Gg549096(v=EXCHG.150)
 ms:contentKeyID: 62279321
 ms.reviewer: 
+ms.topic: article
+description: Page zeroing in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -38,8 +40,8 @@ Page zeroing writes a binary pattern over a hard-deleted record. The page-zeroin
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -69,8 +71,8 @@ The following table lists the fill patterns that correspond to specific operatio
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -116,8 +118,8 @@ The following table discusses database delete scenarios, and when page zeroing f
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

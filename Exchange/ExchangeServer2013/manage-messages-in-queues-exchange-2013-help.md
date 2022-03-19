@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123535(v=EXCHG.150)
 ms:contentKeyID: 50646238
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+description: How to manage messages in queues in Exchange 2013
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -69,7 +71,7 @@ This example removes the message with the message ID 3 from the unreachable queu
 Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed messages from queues, do one of the following:
 
@@ -123,7 +125,7 @@ Resume-Message -Identity Hub01\Unreachable\3
 
 To resubmit messages from the poison message queue, perform the following steps:
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully resume messages in queues, do one of the following:
 
@@ -169,7 +171,7 @@ This example suspends the message with the message ID 3 in the unreachable queue
 Suspend-Message -Identity Mailbox01\Unreachable\3
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully suspended messages in queues, do one of the following:
 

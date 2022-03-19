@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn170437(v=EXCHG.150)
 ms:contentKeyID: 53890559
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to use CSV files for mailbox migration 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -64,10 +66,10 @@ The following table describes the supported attributes for a CSV file for local 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -134,10 +136,10 @@ The following table describes the supported attributes for a CSV file for onboar
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -199,10 +201,10 @@ The following table describes the supported attributes for a CSV file for cross-
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -274,10 +276,10 @@ The following table describes the supported attributes for a CSV file for a stag
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -301,7 +303,7 @@ The following table describes the supported attributes for a CSV file for a stag
 <td><p>This password is set on the user account when the corresponding mail-enabled user in Exchange Online is converted to a mailbox during the migration.</p></td>
 </tr>
 <tr class="odd">
-<t[CSV files for mailbox migration](csv-files-for-mailbox-migration-exchange-2013-help.md)d><p>ForceChangePassword</p></td>
+<td>[CSV files for mailbox migration](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)<p>ForceChangePassword</p></td>
 <td><p>Optional</p></td>
 <td><p><code>True</code> or <code>False</code></p></td>
 <td><p>Specifies whether a user must change the password the first time they sign in to their Exchange Online mailbox.</p>
@@ -326,10 +328,10 @@ The following table describes the supported attributes for a CSV file for an IMA
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

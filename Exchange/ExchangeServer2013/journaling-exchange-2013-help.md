@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998649(v=EXCHG.150)
 ms:contentKeyID: 49354855
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Journaling records inbound and outbound email in Exchange Server 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

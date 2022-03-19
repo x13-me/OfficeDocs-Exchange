@@ -1,9 +1,11 @@
 ---
 title: 'In-Place eDiscovery: Exchange 2013 Help'
 TOCTitle: In-Place eDiscovery
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Using In-Place eDiscovery for to search for content within mailboxes in Microsoft Exchange
 ms.reviewer:
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 f1.keywords:
@@ -34,7 +36,7 @@ Authorized users can perform an In-Place eDiscovery search by selecting the mail
 
 - **Export search results** After search results are copied to a discovery mailbox, you can export them to a PST file.
 
-![Estimate, Preview, Copy, and Export Search Results](images/TA_Discovery_EstimatePreview.gif)
+![Estimate, Preview, Copy, and Export Search Results.](images/TA_Discovery_EstimatePreview.gif)
 
 ## Exchange Search
 
@@ -145,7 +147,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
 The following screenshot shows an example of a search query in the EAC.
 
-![Configure eDiscovery Search Query](images/TA_MRM_SearchQuery.png)
+![Configure eDiscovery Search Query.](images/TA_MRM_SearchQuery.png)
 
 When using In-Place eDiscovery, also consider the following:
 
@@ -193,7 +195,7 @@ For more information, see [Copy eDiscovery search results to a discovery mailbox
 
 After search results are copied to a discovery mailbox, you can export the search results to a PST file.
 
-![Export eDiscovery Search Results to a PST File](images/TA_ExportSearchResullts.gif)
+![Export eDiscovery Search Results to a PST File.](images/TA_ExportSearchResullts.gif)
 
 After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. For more information, see [Export eDiscovery search results to a PST file](export-search-results-exchange-2013-help.md).
 
@@ -258,8 +260,8 @@ In Exchange 2013, the resources In-Place eDiscovery can consume are controlled u
 
 The default throttling policy contains the following throttling parameters.
 
-|**Parameter**|**Description**|**Default value**|
-|:-----|:-----|:-----|
+|Parameter|Description|Default value|
+|---|---|---|
 |DiscoveryMaxConcurrency|The maximum number of In-Place eDiscovery searches that can run at the same time in your organization.|2  <br/> **Note**: If an eDiscovery search is started while two previous searches are still running, the third search won't be queued and will instead fail. You have to wait until one of the previous searches finishes before you can successfully start a new search.|
 |DiscoveryMaxMailboxes|The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search.|5,000|
 |DiscoveryMaxStatsSearchMailboxes|The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search that still allows you to view keyword statistics.|100  <br/> **Note**: After you run an eDiscovery search estimate, you can view keyword statistics. These statistics show details about the number of items returned for each keyword used in the search query. If more than 100 source mailboxes are included in the search, an error will be returned if you try to view keyword statistics.|
@@ -275,8 +277,8 @@ The following table contains links to topics that will help you learn about and 
 
 
 
-|**Topic**|**Description**|
-|:-----|:-----|
+|Topic|Description|
+|---|---|
 |[Assign eDiscovery permissions in Exchange](assign-ediscovery-permissions-exchange-2013-help.md)|Learn how to give a user access to use In-Place eDiscovery in the EAC to search Exchange mailboxes. Adding a user to the Discovery Management role group also allows the person to use the eDiscovery Center in SharePoint 2013 to search Exchange mailboxes.|
 |[Create a discovery mailbox](create-a-discovery-mailbox-exchange-2013-help.md)|Learn how to use the Shell to create a discovery mailbox and assign access permissions.|
 |[Create an In-Place eDiscovery search](create-in-place-ediscovery-search-exchange-2013-help.md)|Learn how to create an In-Place eDiscovery search, and how to estimate and preview eDiscovery search results.|

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Hybrid Agent"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
@@ -145,7 +145,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
       The output of the command looks like this:
 
-      ![Sample output of Test-HybridConnectivity](../media/test-hybridconnectivity-results.png)
+      ![Sample output of Test-HybridConnectivity.](../media/test-hybridconnectivity-results.png)
 
 2. To allow installation of the Hybrid Agent and perform mailbox migrations to and from your Microsoft 365 or Office 365 organization, enable the Mailbox Replication service (MRS) proxy on the EWS virtual directory by running the following command:
 
@@ -176,7 +176,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 7. Select **Use Exchange Modern Hybrid Topology**
 
-   ![Hybrid Topology page in the Hybrid Configuration Wizard](../media/08b9b1933233cf4348506a629d1a6f22.png)
+   ![Hybrid Topology page in the Hybrid Configuration Wizard.](../media/08b9b1933233cf4348506a629d1a6f22.png)
 
    Click **Next**.
 
@@ -237,7 +237,7 @@ Additional Hybrid Agents can be installed for redundancy, simply download the la
 
    Example:
 
-   ![Sample of registered Hybrid Agents in the HCW](../media/hcw-registered-hybrid-agents.png)
+   ![Sample of registered Hybrid Agents in the HCW.](../media/hcw-registered-hybrid-agents.png)
 
 The HCW will install the additional Hybrid Agent. When the installation is complete, you can open the Microsoft Windows Services console from the computer and verify the service or agent is installed and running (look for **Microsoft Hybrid Service - mshybridsvc**). At that point, you can either re-run HCW if you wish to make further changes to your hybrid config, or simply cancel the wizard.
 
@@ -281,7 +281,7 @@ You can repeat this step on each computer where you would like an additional Hyb
 
    A page will be shown that will provide you with the status of your existing installed agents.
 
-   ![Agent status in the HCW](../media/hcw-agent-status.png)
+   ![Agent status in the HCW.](../media/hcw-agent-status.png)
 
 7. Click **Cancel** when you're finished.
 
@@ -303,7 +303,7 @@ Get-HybridAgent -Credential (Get-Credential)
 
 The output of the command looks like this:
 
-![Get-HybridAgent results](../media/get-hybridagent-output.png)
+![Get-HybridAgent results.](../media/get-hybridagent-output.png)
 
 > [!NOTE]
 > The **id** value in the results is the agent identity and not your unique tenant guid assigned to the route.
@@ -350,7 +350,7 @@ You can use the Hybrid Management PowerShell module to configure your Hybrid Age
 
    Example:
 
-   ![Update-HybridConfiguration command output](../media/update-hybridconfiguration-output.png)
+   ![Update-HybridConfiguration command output.](../media/update-hybridconfiguration-output.png)
 
 ## Additional Information
 
@@ -358,19 +358,19 @@ You can view installation details of the Hybrid Agent in the following locations
 
 - In the Services console:
 
-  ![The Microsoft Hybrid Service in the list of Windows Services](../media/183c42b7f780c0f11399ad84d5b794ca.png)
+  ![The Microsoft Hybrid Service in the list of Windows Services.](../media/183c42b7f780c0f11399ad84d5b794ca.png)
 
 - In the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Hybrid Service`:
 
-  ![HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Hybrid Service](../media/3d0ea73be12c78a759c3e6947dbfcea6.png)
+  ![HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Hybrid Service.](../media/3d0ea73be12c78a759c3e6947dbfcea6.png)
 
 - On the hard drive:
 
-  ![Location of the Microsoft Hybrid Service on the hard drive](../media/cc0348c42c337d0dd313272aed0bfd89.png)
+  ![Location of the Microsoft Hybrid Service on the hard drive.](../media/cc0348c42c337d0dd313272aed0bfd89.png)
 
 - In **Programs and Features** in Control Panel:
 
-  ![The Microsoft Hybrid Service in Programs and Features](../media/f06cc90d380e6f23cedc43d38a7fc075.png)
+  ![The Microsoft Hybrid Service in Programs and Features.](../media/f06cc90d380e6f23cedc43d38a7fc075.png)
 
 ## Testing and validation of the Hybrid Agent
 
@@ -380,7 +380,7 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 2. Add the object **Microsoft AD App Proxy Connector** and the **\# requests** counter to your view.
 
-    ![The Hybrid Agent in Performance Monitor](../media/d67d36919447785a56ab2b3759e12e74.png)
+    ![The Hybrid Agent in Performance Monitor.](../media/d67d36919447785a56ab2b3759e12e74.png)
     
 
 ### Migration

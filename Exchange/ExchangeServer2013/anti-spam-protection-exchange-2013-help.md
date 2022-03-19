@@ -4,9 +4,10 @@ TOCTitle: Anti-spam protection
 ms:assetid: 6af88a08-687d-40b1-8b22-80704184403d
 ms:mtpsurl: https://technet.microsoft.com/library/JJ218660(v=EXCHG.150)
 ms:contentKeyID: 48385197
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb847901(v=EXCHG.150)
 ms:contentKeyID: 49289414
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure the DNS suffix search list for a disjoint namespace in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

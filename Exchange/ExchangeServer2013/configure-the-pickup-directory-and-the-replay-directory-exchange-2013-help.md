@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124549(v=EXCHG.150)
 ms:contentKeyID: 49382862
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure the Pickup directory and the Replay directory in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

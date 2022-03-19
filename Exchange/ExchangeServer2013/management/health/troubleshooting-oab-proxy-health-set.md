@@ -5,8 +5,10 @@ ms:assetid: b717fc00-a787-44d6-8ccb-0eb4b2ea9e73
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.oab.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720877
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the OAB.Proxy health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,10 +29,10 @@ The OAB service is monitored by using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

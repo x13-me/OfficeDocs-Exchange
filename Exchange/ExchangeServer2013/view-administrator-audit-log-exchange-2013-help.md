@@ -1,10 +1,12 @@
 ---
 title: 'View the administrator audit log: Exchange 2013 Help'
 TOCTitle: View the administrator audit log
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: how-to
+description: How to view the administrator audit log in Microsoft Exchange Server
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
 f1.keywords:
 - NOCSH

@@ -4,9 +4,11 @@ TOCTitle: Organization relationships
 ms:assetid: 4c48db61-3370-462b-a3f8-2a6311c6e4ee
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657445(v=EXCHG.150)
 ms:contentKeyID: 49289247
+ms.topic: article
+description: Set up an organization relationship to share calendar information with an external business partner.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

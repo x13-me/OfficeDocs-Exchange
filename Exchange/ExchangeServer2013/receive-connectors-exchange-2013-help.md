@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996395(v=EXCHG.150)
 ms:contentKeyID: 49289180
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+ms.topic: article
+description: Receive connectors control the flow of inbound messages to a Microsoft Exchange organization
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

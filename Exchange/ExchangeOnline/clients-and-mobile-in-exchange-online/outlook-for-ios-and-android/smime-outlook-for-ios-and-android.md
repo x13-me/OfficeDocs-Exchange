@@ -1,10 +1,10 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Admins can learn how to configure the S/MIME infrastructure in Exchange Online for use with Outlook for iOS and Android.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
-title: S/MIME for Outlook for iOS and Android
+title: S/MIME for Outlook for iOS and Android in Exchange Online
 ms.reviewer: smithre4
 audience: ITPro
 ms.service: exchange-online
@@ -14,7 +14,7 @@ manager: serdars
 
 ---
 
-# S/MIME for Outlook for iOS and Android
+# S/MIME for Outlook for iOS and Android in Exchange Online
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) is a widely accepted protocol for sending digitally signed and encrypted messages. For more information, see [S/MIME for message signing and encryption in Exchange Online](../../security-and-compliance/smime-exo/smime-exo.md).
 
@@ -30,10 +30,9 @@ This article describes how to configure Exchange Online for S/MIME using Outlook
 Ensure S/MIME has been properly configured in Exchange Online by following the steps outlined in [Configure S/MIME in Exchange Online](../../security-and-compliance/smime-exo/configure-smime-exo.md). Specifically, this includes:
 
 1. Setting up the [virtual certificate collection](../../security-and-compliance/smime-exo/configure-smime-exo.md#step-2-set-up-a-virtual-certificate-collection-in-exchange-online).
-
 2. Publishing the certificate revocation list to the internet.
 
-In manual and automated certificate delivery solutions, it is expected that the certificate's trusted root chain is available and discoverable within Exchange Online. Trust verification is performed on all digital certificates. Exchange Online validates the certificate by validating each certificate in the certificate chain until it reaches a trusted root certificate. In most cases, this is done by obtaining the intermediate certificates through the authority information access path in the certificate until a trusted root certificate is located. Intermediate certificates can also be included with digitally signed email messages. If Exchange Online locates a trusted root certificate and can query the certificate revocation list for the certificate authority, the digital certificate's chain for that digital certificate is considered valid and trusted and can be used. If Exchange Online fails to locate a trusted root certificate or fails to contact the certificate revocation list for the certificate authority, that certificate is considered invalid and not trusted.
+In manual and automated certificate delivery solutions, it's expected that the certificate's trusted root chain is available and discoverable within your Exchange Online tenant's virtual certificate collection. Trust verification is performed on all digital certificates. Exchange Online validates the certificate by validating each certificate in the certificate chain until it reaches a trusted root certificate. This verification is done by obtaining the intermediate certificates through the authority information access attribute in the certificate until a trusted root certificate is located. Intermediate certificates can also be included with digitally signed email messages. If Exchange Online locates a trusted root certificate and can query the certificate revocation list for the certificate authority, the digital certificate's chain for that digital certificate is considered valid and trusted and can be used. If Exchange Online fails to locate a trusted root certificate or fails to contact the certificate revocation list for the certificate authority, that certificate is considered invalid and is not trusted.
 
 Outlook for iOS and Android leverages the user's primary SMTP address for mail flow activities, which is configured during account profile setup. The S/MIME certificate used by Outlook for iOS and Android is calculated by comparing the user's primary SMTP address as defined in the account profile with the certificate's subject value or the subject alternative name value; if these do not match, then Outlook for iOS and Android will report that a certificate is not available (see Figure 7) and will not allow the user to sign and/or encrypt messages.
 
@@ -86,7 +85,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
     Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md).
 
 8. Click **S/MIME** to display the **Outlook S/MIME settings**.
-    ![Screenshot showing Outlook S/MIME settings.](../../media/outlook-mobile-smime-settings-v2.png)
+    ![Screenshot showing Outlook S/MIME settings.](../../media/outlook-mobile-smime-settings-v3.png)
 
 9. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
@@ -94,18 +93,20 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
 
 11. Choose whether to **Sign all emails** by selecting **Yes** or **No**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
-12. Set **Deploy S/MIME certificates from Intune** to **Yes**.
+12. If needed, deploy a **LDAP URL** for recipient certificate lookup. For more information on the URL format, see [LDAP support for certificate lookup](#ldap-support-for-certificate-lookup).
 
-13. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
+13. Set **Deploy S/MIME certificates from Intune** to **Yes**.
+
+14. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
     - **SCEP**: Creates a certificate that is unique for the device and user that can be used by Microsoft Outlook for signing. For information on what is required to use SCEP certificate profiles, see [Configure infrastructure to support SCEP with Intune](/intune/protect/certificates-scep-configure).
-    - **PKCS imported certificates**: Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device the corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](/mem/intune/protect/certficates-pfx-configure).
+    - **PKCS imported certificates**: Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device that corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](/mem/intune/protect/certficates-pfx-configure).
     - **Derived credentials**: Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
 
-14. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
+15. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
     - **PKCS imported certificates**: Delivers any encryption certificates that have been imported to Endpoint Manager by the administrator across any device a user enrolls. Endpoint Manager will automatically pick the imported certificate or certificates that support encryption and deliver to the enrolled user's devices.
     - **Derived credentials**: Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
 
-15. Next to **End-user notifications**, choose how to notify end users to retrieve the certificates by selecting **Company Portal** or **Email**.
+16. Next to **End-user notifications**, choose how to notify end users to retrieve the certificates by selecting **Company Portal** or **Email**.
 
     On iOS, users must use the Company Portal app to retrieve their S/MIME certificates. Endpoint Manager will inform the user that they need to launch the Company Portal to retrieve their S/MIME certificates via the Notifications section of Company Portal, a push notification, and/or an email. Clicking one of the notifications will take the user to a landing page that informs them of progress retrieving the certificates. Once the certificates are retrieved, the user can use S/MIME from within Microsoft Outlook for iOS to sign and encrypt email.
 
@@ -116,7 +117,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
     End-users will see an experience similar to the following for automated certificate delivery:
     ![Screenshot showing automated certificate delivery.](../../media/all-in-one-certificate-delivery.png)
 
-16. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
+17. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
 
 ### Outlook for Android automated certificate delivery
 
@@ -151,30 +152,32 @@ End users will need to enable S/MIME functionality manually by accessing their a
 
 ![Screenshots showing Outlook for iOS S/MIME security settings.](../../media/sensitive-s-mime-setting.png)
 
-When the S/MIME setting is enabled, Outlook for iOS and Android will automatically disable the **Organize By Thread** setting. This is because S/MIME encryption becomes more complex as a conversation thread grows. By removing the threaded conversation view, Outlook for iOS and Android reduces the opportunity for issues with certificates across recipients during signing and encryption. As this is an app-level setting, this change affects all accounts added to the app. This threaded conversation dialog is rendered in iOS as follows:
+When the S/MIME setting is enabled, Outlook for iOS and Android will automatically disable the **Organize By Thread** setting. This is because S/MIME encryption becomes more complex as a conversation thread grows. By removing the threaded conversation view, Outlook for iOS and Android reduces the opportunity for issues with certificates across recipients during signing and encryption. As this is an app-level setting, this change affects all accounts added to the app. This threaded conversation dialog is rendered in iOS as follows:
 
 ![Screenshot showing the Outlook for iOS threaded conversation dialog.](../../media/sensitive-ios-threaded-con.png)
 
-Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security.  Furthermore, users can tap on each individual S/MIME certificate and view the certificate's details, including information like key usage and the validity period.
+Once S/MIME is enabled and the S/MIME certificates are installed, users can view the installed certificates by accessing their account settings and tapping Security. Furthermore, users can tap on each individual S/MIME certificate and view the certificate's details, including information like key usage and the validity period.
 
 ![Screenshot showing the Outlook for iOS certificate details screen.](../../media/certdetails.png)
 
 Users can configure Outlook to automatically sign or encrypt messages. This allows users to save time sending email while being confident that their emails are being signed/encrypted.
 
-### LDAP support for certificate delivery
+### LDAP support for certificate lookup
 
-Outlook for iOS and Android supports accessing public user certificate keys from secure LDAP directory endpoints. In order to utilize an LDAP endpoint, the following requirements must be met:
+Outlook for iOS and Android supports accessing public user certificate keys from secure LDAP directory endpoints during recipient resolution. In order to utilize an LDAP endpoint, the following requirements must be met:
 
-- The LDAP protocol connection is secured through TLS as connections using unsecure LDAP is not supported.
 - The LDAP endpoint does not require authentication.
 - The LDAP endpoint configuration is delivered to Outlook for iOS and ANdroid through an app configuration policy. For more information, see [S/MIME settings](outlook-for-ios-and-android-configuration-with-microsoft-intune.md#smime-settings).
 - The LDAP endpoint configuration is supported using the following formats:
-    - <ldaps://contoso.com>
-    - <ldaps://contoso.com:636>
-    - contoso.com
-    - contoso.com:636
+  - `ldaps://contoso.com`
+  - `ldap://contoso.com`
+  - `ldap://contoso.com:389`
+  - `ldaps://contoso.com:636`
+  - `contoso.com`
+  - `contoso.com:389`
+  - `contoso.com:636`
 
-When Outlook for iOS and Android performs a certificate lookup, the app will search the local device first, then query Azure Active Directory, and then evaluate any LDAP directory endpoint. When Outlook for iOS and Android connects to the LDAP directory endpoint to search for a user public certificate, certificate validation is performed to ensure that the certificate is not revoked. The certificate is only returned to the app if certificate validation completes successfully.
+When Outlook for iOS and Android performs a certificate lookup for a recipient, the app will search the local device first, then query Azure Active Directory, and then evaluate any LDAP directory endpoint. When Outlook for iOS and Android connects to the LDAP directory endpoint to search for a recipient's public certificate, certificate validation is performed to ensure that the certificate is not revoked. The certificate is only considered valid by the app if certificate validation completes successfully.
 
 ## Using S/MIME in Outlook for iOS and Android
 
@@ -191,7 +194,7 @@ In the message view, users can view messages that are S/MIME signed or encrypted
 
 Users can install a sender's public certificate key by tapping the S/MIME status bar. The certificate will be installed on the user's device, specifically in the Microsoft publisher [keychain in iOS](https://support.apple.com/guide/security/welcome/web) or the system [KeyStore in Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf). The Android version appears similar to the following:
 
-![Screenshots of Outlook for Android public key installation](../../media/sensitive-android-key-install.png)
+![Screenshots of Outlook for Android public key installation.](../../media/sensitive-android-key-install.png)
 
 If there are certificate errors, Outlook for iOS and Android will warn the user. The user can tap the S/MIME status bar notification to view more information about the certificate error, such as in the following example.
 
@@ -210,7 +213,6 @@ Outlook for iOS and Android can send S/MIME signed and encrypted messages to dis
 > [!IMPORTANT]
 >
 > - Outlook for iOS and Android only supports sending clear-signed messages.
->
 > - In order to compose an encrypted message, the target recipient's public certificate key must be available either in the Global Address List or stored on the local device. In order to compose a signed message, the sender's private certificate key must be available on the device.
 
 Here is how S/MIME options appear in Outlook for Android:

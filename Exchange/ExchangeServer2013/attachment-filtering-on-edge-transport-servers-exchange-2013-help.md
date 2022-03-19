@@ -1,19 +1,21 @@
 ---
-title: 'Attachment filtering on Edge Transport servers: Exchange 2013 Help'
+title: 'Exchange: Attachment filtering on Edge Transport servers in Exchange'
 TOCTitle: Attachment filtering on Edge Transport servers
 ms:assetid: be39a181-c82e-41f5-8846-085bf1f84164
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124399(v=EXCHG.150)
 ms:contentKeyID: 61200298
-ms.reviewer: 
+ms.reviewer:
+description: In Exchange Server, you can use attachment filtering on Edge Transport servers to control the attachments that users receive in email messages.
+ms.topic: article 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Attachment filtering on Edge Transport servers
+# Attachment filtering on Edge Transport servers in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 

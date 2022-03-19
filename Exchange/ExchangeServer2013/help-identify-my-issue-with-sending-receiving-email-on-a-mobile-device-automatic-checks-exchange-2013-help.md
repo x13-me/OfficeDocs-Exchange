@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn793610(v=EXCHG.150)
 ms:contentKeyID: 62629953
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Use automatic checks to identify Exchange email issues on mobile devices
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -30,9 +32,9 @@ We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">

@@ -5,8 +5,10 @@ ms:assetid: fba87902-2a79-42ac-b394-46a9016f667e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232205(v=EXCHG.150)
 ms:contentKeyID: 49318513
 ms.reviewer: 
+ms.topic: article
+description: About message throttling in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -94,10 +96,10 @@ The following table shows the message throttling options that are available on t
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -161,10 +163,10 @@ The following table shows the message throttling option that's available on Send
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -192,10 +194,10 @@ The following table shows the message throttling options that are available on R
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

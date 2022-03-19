@@ -5,8 +5,10 @@ ms:assetid: 67601d45-4824-4ae6-9a7e-b645ec3af4d3
 ms:mtpsurl: https://technet.microsoft.com/library/JJ906434(v=EXCHG.150)
 ms:contentKeyID: 50630967
 ms.reviewer: 
+ms.topic: article
+description: Move a public folder mailbox to a different mailbox database in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

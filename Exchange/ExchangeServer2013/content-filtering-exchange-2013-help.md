@@ -6,14 +6,16 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124739(v=EXCHG.150)
 ms:contentKeyID: 49248690
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Content filtering in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Content filtering
+# Content filtering in Exchange Server
 
 _**Applies to:** Exchange Server 2013_
 

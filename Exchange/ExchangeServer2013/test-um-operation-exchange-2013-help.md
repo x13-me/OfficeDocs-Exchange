@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa995957(v=EXCHG.150)
 ms:contentKeyID: 55129206
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to use the Shell to test the operation of your voice mail system.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

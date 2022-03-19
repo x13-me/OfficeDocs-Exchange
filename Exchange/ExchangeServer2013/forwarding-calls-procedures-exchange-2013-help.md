@@ -1,10 +1,12 @@
 ---
 title: 'Forwarding calls procedures: Exchange 2013 Help'
 TOCTitle: Forwarding calls procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Forwarding calls procedures in Exchange Server 
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2
 f1.keywords:
 - NOCSH

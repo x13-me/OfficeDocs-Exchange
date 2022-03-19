@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ad(v=EXCHG.150)
 ms:contentKeyID: 49720744
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to troubleshooti the AD health set in Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

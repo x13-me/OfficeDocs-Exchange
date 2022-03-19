@@ -1,10 +1,12 @@
 ---
 title: 'Configure custom MailTips for recipients: Exchange 2013 Help'
 TOCTitle: Configure custom MailTips for recipients
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: How to configure custom MailTips for recipients in Microsoft Exchange
 ms.reviewer:
+ms.topic: article
 ms.assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 f1.keywords:
 - NOCSH
@@ -66,7 +68,7 @@ In addition to the built-in MailTips that are available, you can create custom M
 
    - **Shared**
 
-3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 4. In the recipient properties page that appears, click **MailTips**.
 

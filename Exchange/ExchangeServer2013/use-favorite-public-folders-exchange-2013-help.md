@@ -1,9 +1,11 @@
 ---
 title: 'Use favorite public folders in Outlook Web App: Exchange 2013 Help'
 TOCTitle: Use favorite public folders in Outlook Web App
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to use favorite public folders in Outlook Web App in Microsoft Exchange 2013
 ms.reviewer: 
 ms.assetid: f6f1db72-4465-4eb8-b525-ac2c1fa10a69
 f1.keywords:
@@ -26,9 +28,9 @@ In order for users to perform certain tasks on public folders in their **Favorit
 
 1. In Outlook, go to the **Folders** view. Click the three dots on the Navigation Bar, and the click **Folders**.
 
-   ![Elipses in the Outlook 2013 Navigation Bar](images/7a949ccd-f0e0-4d20-aa4d-f97ae5c6fdff.png)
+   ![Elipses in the Outlook 2013 Navigation Bar.](images/7a949ccd-f0e0-4d20-aa4d-f97ae5c6fdff.png)
 
-   ![Outlook 2013 Navigation Bar menu to access Folders](images/aaedd8fa-8a30-4e96-b4de-9625cd62e2b9.png)
+   ![Outlook 2013 Navigation Bar menu to access Folders.](images/aaedd8fa-8a30-4e96-b4de-9625cd62e2b9.png)
 
    Users with Outlook 2010 clients can click **Folders** at the bottom of the Navigation Pane.
 
@@ -50,7 +52,7 @@ In order for users to access their Outlook favorite public folders, they must al
 
 - To add a public folder in Outlook Web App, right-click **Folders**, and then choose **Add public folder to Favorites**. Locate the folder and click **Add**.
 
-  ![Add public folder to Favorites](images/dc2af75b-d1c3-4024-8759-00558799d34a.png)
+  ![Add public folder to Favorites.](images/dc2af75b-d1c3-4024-8759-00558799d34a.png)
 
 Your users can now use Outlook Web App to perform the following tasks in their favorite Calendar, Contact, or Mail and Post public folders:
 

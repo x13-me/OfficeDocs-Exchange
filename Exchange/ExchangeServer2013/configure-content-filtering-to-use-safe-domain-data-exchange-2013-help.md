@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn467930(v=EXCHG.150)
 ms:contentKeyID: 58899940
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to configure Content Filtering to Use Safe Domain Data in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

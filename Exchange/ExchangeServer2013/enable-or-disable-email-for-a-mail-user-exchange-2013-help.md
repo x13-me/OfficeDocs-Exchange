@@ -5,8 +5,10 @@ ms:assetid: 1e2571d4-ff84-4fda-bb1d-825e96e1bd26
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996598(v=EXCHG.150)
 ms:contentKeyID: 50382995
 ms.reviewer: 
+ms.topic: article
+description: How to enable or disable email for a mail user in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -47,7 +49,7 @@ As previously stated, when you disable email for a mail user, the Exchange attri
 
 2. In the list of contacts, click the mail user you want to disable email for.
 
-3. Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
+3. Click **More** ![More Options Icon.](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
 
 4. A warning will appear asking if you're sure you want to disable the selected mail user. Click **Yes** to disable it.
 
@@ -63,7 +65,7 @@ Disable-MailUser -Identity "Yan Li"
 
 For detailed syntax and parameter information, see [Disable-MailUser](/powershell/module/exchange/Disable-MailUser).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully disabled email for a mail user, do one of the following:
 
@@ -155,7 +157,7 @@ When you're mail-enabling users in bulk, you first export the list of users that
 
     The command results display information about the new mail-enabled users.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully mail-enabled Active Directory users, do one of the following:
 

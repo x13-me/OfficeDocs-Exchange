@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can apply an Outlook on the web mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 ms.reviewer: 
@@ -43,7 +43,7 @@ Assigning an Outlook on the web mailbox policy to a mailbox controls the Outlook
 
 2. Do one of the following steps:
 
-   - Select a mailbox and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+   - Select a mailbox and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
      1. In the properties of the mailbox window that opens, click **Mailbox features**.
 
@@ -135,7 +135,7 @@ To verify that you've applied an Outlook on the web mailbox policy to a mailbox,
 
 - In the EAC, go to **Recipients** \> **Mailboxes** and select the mailbox. In the Details pane, go to **Email Connectivity**, click **View details**, and verify the name of the policy in the **Outlook Web App mailbox policy** window that appears.
 
-- In the EAC, go to **Recipients** \> **Mailboxes**, select the mailbox, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the properties of the mailbox window that opens, click **Mailbox features**. In the **Email connectivity** section under **Outlook on the web: Enabled**, click **View details**, and verify the name of the policy in the **Outlook Web App mailbox policy** window that appears.
+- In the EAC, go to **Recipients** \> **Mailboxes**, select the mailbox, and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). In the properties of the mailbox window that opens, click **Mailbox features**. In the **Email connectivity** section under **Outlook on the web: Enabled**, click **View details**, and verify the name of the policy in the **Outlook Web App mailbox policy** window that appears.
 
 - In Exchange Online PowerShell, replace \<MailboxIdentity\> with the name, alias, email address, or account name of the mailbox, and run the following command to verify the value of the **OwaMailboxPolicy** property:
 

@@ -1,13 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c95dd3ac-27e3-47ac-9130-5314a72ab4bd
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to run a message trace in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to trace an email message in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to run a message trace in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to trace an email message in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to trace an email message in the Exchange admin center in Exchange Online
+# Use a screen reader to trace an email message in the Classic Exchange admin center in Exchange Online
 
-You can trace email messages by using your screen reader in the Exchange admin center (EAC) in Exchange Online. This is helpful if users are wondering whether their messages are delayed or possibly lost in delivery. With message tracing, you can follow messages as they pass through Exchange Online and determine whether a targeted email message was received, rejected, deferred, or delivered.
+You can trace email messages by using your screen reader in the Classic Exchange admin center (Classic EAC) in Exchange Online. This is helpful if users are wondering whether their messages are delayed or possibly lost in delivery. With message tracing, you can follow messages as they pass through Exchange Online and determine whether a targeted email message was received, rejected, deferred, or delivered.
 
 ## Get started
 

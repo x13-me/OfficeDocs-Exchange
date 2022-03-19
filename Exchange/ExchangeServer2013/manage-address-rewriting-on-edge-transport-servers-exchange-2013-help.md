@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa997185(v=EXCHG.150)
 ms:contentKeyID: 61200282
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to Manage address rewriting on Edge Transport servers in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -66,7 +68,7 @@ Enable-TransportAgent "Address Rewriting Inbound Agent"
 Enable-TransportAgent "Address Rewriting Outbound Agent"
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled address rewriting, do the following:
 
@@ -154,7 +156,7 @@ The following example is just like the previous example, except now messages sen
 New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created address rewrite entries, do the following:
 
@@ -234,7 +236,7 @@ The following example adds finanace.contoso.com and removes marketing.contoso.co
 Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully modified an address rewrite entry, do the following:
 
@@ -282,7 +284,7 @@ If you are satisfied with the result, run the command again without the *WhatIf*
 Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed an address rewrite entry, do the following:
 

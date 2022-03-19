@@ -5,8 +5,10 @@ ms:assetid: 7272e3ab-430c-4d6c-8621-9535236ce463
 ms:mtpsurl: https://technet.microsoft.com/library/Mt574711(v=EXCHG.150)
 ms:contentKeyID: 70319891
 ms.reviewer: 
+ms.topic: article
+description: Use Microsoft Office Outlook Web App Web Parts in Microsoft Exchange to specify the mailbox to open, the folder within that mailbox to open, and the content view to use
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -45,9 +47,9 @@ The following table lists the parameters of a Web Part and examples of how they'
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

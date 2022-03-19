@@ -4,9 +4,11 @@ TOCTitle: DNS query failure sensitivity
 ms:assetid: a3c3980c-20ca-4b54-a2e6-76d49af620b4
 ms:mtpsurl: https://technet.microsoft.com/library/Bb676467(v=EXCHG.150)
 ms:contentKeyID: 50934223
+ms.topic: article
+description: In Microsoft Exchange Server 2013, you can adjust the DNS query sensitivity for slightly faster message delivery.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

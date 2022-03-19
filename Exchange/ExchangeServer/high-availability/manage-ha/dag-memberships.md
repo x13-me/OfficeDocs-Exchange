@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Add Exchange Server 2016 or Exchange Server 2019 to, or remove them from, a database availability group (DAG).'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms.reviewer:
 title: Manage database availability group membership
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage database availability group membership
+# Manage database availability group membership in Exchange Server
 
 When you add a server to a DAG, the server works with the other DAG members to provide automatic database-level recovery from database, server, or network failures. When you remove a server from a DAG, the server is no longer automatically protected from failures.
 
@@ -47,9 +47,9 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Select the DAG you want to configure, and then click ![Manage DAG members](../../media/ITPro_EAC_ManageDagMembersIcon.png).
+2. Select the DAG you want to configure, and then click ![Manage DAG members.](../../media/ITPro_EAC_ManageDagMembersIcon.png).
 
-   - To add one or more Mailbox servers to the DAG, click ![Add icon](../../media/ITPro_EAC_AddIcon.png), select the servers from the list, click **Add**, and then click **OK**.
+   - To add one or more Mailbox servers to the DAG, click ![Add icon.](../../media/ITPro_EAC_AddIcon.png), select the servers from the list, click **Add**, and then click **OK**.
 
    - To remove one or more Mailbox servers from the DAG, select the servers, and then click the minus (-) icon.
 

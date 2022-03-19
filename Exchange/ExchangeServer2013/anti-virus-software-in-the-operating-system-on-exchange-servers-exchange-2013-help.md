@@ -4,9 +4,10 @@ TOCTitle: Anti-Virus Software in the Operating System on Exchange Servers
 ms:assetid: 7cef6017-7a55-41f3-a636-1ca4fce575b1
 ms:mtpsurl: https://technet.microsoft.com/library/Bb332342(v=EXCHG.150)
 ms:contentKeyID: 48385271
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -135,10 +136,10 @@ Many file-level scanners now support the scanning of processes, which can advers
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

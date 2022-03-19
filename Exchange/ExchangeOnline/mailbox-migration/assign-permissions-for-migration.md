@@ -1,7 +1,7 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: eb39cfa7-7c76-4403-a2f5-403354ebb7ae
 ms.reviewer: 

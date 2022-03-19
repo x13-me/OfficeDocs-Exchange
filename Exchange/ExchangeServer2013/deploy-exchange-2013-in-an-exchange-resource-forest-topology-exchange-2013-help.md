@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998031(v=EXCHG.150)
 ms:contentKeyID: 50406263
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to deploy Exchange 2013 in an Exchange resource forest topology
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -23,7 +25,7 @@ The following figure shows an Exchange organization with a resource forest.
 
 **Example of an Exchange organization with an Exchange resource forest**
 
-![Complex Exchange organization with resource forest](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
+![Complex Exchange organization with resource forest.](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")
 
 ## What do you need to know before you begin?
 

@@ -5,8 +5,10 @@ ms:assetid: 4934d755-65be-47e2-86b0-6ea1ab148a96
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.computerrodc(v=EXCHG.150)
 ms:contentKeyID: 46628890
 ms.reviewer: 
+ms.topic: article
+description: Microsoft Exchange Server Setup can't continue the installation because the target computer is a Read-Only Domain Controller
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

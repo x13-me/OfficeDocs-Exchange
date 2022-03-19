@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ff628332(v=EXCHG.150)
 ms:contentKeyID: 49289347
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to use database scopes to control automatic mailbox distribution in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

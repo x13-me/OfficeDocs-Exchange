@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Delivery reports was a feature in Microsoft 365 and Office 365 that allowed users and administrators to discover and view delivery information about messages.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: f7efced3-6964-41da-bd54-e14620e8a0de
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: What happened to delivery reports?
+title: What happened to delivery reports? in Exchange Online
 search.appverid:
 - BCS160
 - MET150
@@ -22,7 +22,7 @@ manager: serdars
 
 ---
 
-# What happened to delivery reports?
+# What happened to delivery reports? in Exchange Online
 
 Delivery reports in Microsoft 365 and Office 365 allowed users and administrators to discover and view delivery information about mail messages. Delivery reports for users have been discontinued and there is currently no direct replacement. Delivery reports for administrators have been replaced by the **Message Trace** feature.
 

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn635117(v=EXCHG.150)
 ms:contentKeyID: 61200304
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Use the Exchange Server Setup wizard to install the Edge Transport server role
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

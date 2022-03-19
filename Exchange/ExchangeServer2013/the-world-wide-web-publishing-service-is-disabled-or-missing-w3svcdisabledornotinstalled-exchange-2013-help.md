@@ -1,12 +1,12 @@
 ---
-title: 'World Wide Web Publishing Service is disabled or missing'
+title: 'Exchange Online: World Wide Web Publishing Service is disabled or missing'
 TOCTitle: The World Wide Web Publishing Service is disabled or missing_W3SVCDisabledOrNotInstalled
 ms:assetid: 2d26d778-ddf1-4225-b5e2-f6b49d819c94
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.w3svcdisabledornotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46628847
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

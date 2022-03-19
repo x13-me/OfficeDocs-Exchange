@@ -1,6 +1,6 @@
 ---
 title: "Shared free/busy in Exchange hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -24,7 +24,7 @@ Sharing free/busy (calendar availability) information between users located on-p
 
 Several components in a hybrid deployment are required to enable the shared free/busy feature between your on-premises Exchange organization and Exchange Online.
 
-- **Federation trust**: Both the on-premises and Microsoft 365 or Office 365 service organizations need to have a federation trust established with the Azure AD authentication system. A federation trust is a one-to-one relationship with the Azure AD authentication system that defines parameters for your Exchange organization. The system uses these parameters when acting as a trust broker between your on-premises and Microsoft 365 or Office 365 service organization to exchange free/busy information between on-premises and Exchange Online organization users.
+- **Federation trust** (For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments only): Both the on-premises and Microsoft 365 or Office 365 service organizations need to have a federation trust established with the Azure AD authentication system. A federation trust is a one-to-one relationship with the Azure AD authentication system that defines parameters for your Exchange organization. The system uses these parameters when acting as a trust broker between your on-premises and Microsoft 365 or Office 365 service organization to exchange free/busy information between on-premises and Exchange Online organization users.
 
     A federation trust with the system is automatically configured for your Microsoft 365 or Office 365 service organization when the account is created. The Hybrid Configuration wizard automatically checks to see if there is an existing federation trust with the Azure AD authentication system for the on-premises organization. If present, the existing federation trust is used to support the hybrid deployment. If not present, the wizard creates a federation trust for the on-premises organization with the Azure AD authentication system. The wizard also adds any domains selected within the Hybrid Configuration wizard to the on-premises organization federation trust.
 
@@ -40,7 +40,7 @@ When configuring your organization for a hybrid deployment, configuring shared f
 
 The hybrid deployment features shown in the following table have a dependency on federation trusts and organization relationships.
 
-|**Messaging area**|**Feature**|
-|:-----|:-----|
+|Messaging area|Feature|
+|---|---|
 |Email client|Message tracking  <br/>  MailTips  <br/>  Multi-mailbox search|
 |Compliance|Exchange Online Archiving  <br/>  Exchange In-place eDiscovery|

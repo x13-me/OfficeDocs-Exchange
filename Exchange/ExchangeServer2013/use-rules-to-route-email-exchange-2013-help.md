@@ -1,9 +1,12 @@
 ---
 title: 'Use transport rules to route email based on a list of words, phrases, or patterns: Exchange 2013 Help'
 TOCTitle: Use transport rules to route email based on a list of words, phrases, or patterns
-ms.author: dmaguire
+ms.author: serdars
+manager: serdars
 author: msdmaguire
 ms.reviewer: 
+ms.topic: article
+description: Use transport rules to route email based on a list of words, phrases, or patterns in Microsoft Exchange
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 f1.keywords:
 - NOCSH
@@ -25,7 +28,7 @@ If your list of words or phrases is short, you can create a rule using the Excha
 
 This example blocks messages with common typos.
 
-![Rule showing blocking a message based on text patterns](images/a8489cbb-be59-4890-ae30-1431703eeb88.png)
+![Rule showing blocking a message based on text patterns.](images/a8489cbb-be59-4890-ae30-1431703eeb88.png)
 
 ## Example 2: Use a long list of unacceptable words
 <a name="longlist"> </a>
@@ -41,15 +44,12 @@ New-TransportRule -Name "Block messages with unacceptable words" -SubjectOrBodyC
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-****
-
 |Expression|Matches|
 |---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|
 |[*character_group* ]|Any single character in *character_group*.|
-|
 
 For example, this text file contains common misspellings of Microsoft.
 

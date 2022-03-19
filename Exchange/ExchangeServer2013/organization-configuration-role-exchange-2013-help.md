@@ -5,9 +5,11 @@ ms:assetid: db952cc5-ef70-4366-acbb-0e292d4cbdd0
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876946(v=EXCHG.150)
 ms:contentKeyID: 49289430
 ms.reviewer: 
+ms.topic: article
+description: About the organization Configuration role in Exchange 2013
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -49,15 +51,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

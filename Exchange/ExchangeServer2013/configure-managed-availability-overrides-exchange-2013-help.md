@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn482055(v=EXCHG.150)
 ms:contentKeyID: 59888994
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure managed availability overrides in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -60,7 +62,7 @@ This example adds a local override that disables the responder `ActiveDirectoryC
 Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a local override, use the **Get-ServerMonitoringOverride** cmdlet to view the list of local overrides:
 
@@ -84,7 +86,7 @@ This example removes the existing local override of the `ActiveDirectoryConnecti
 Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed a local override, use the **Get-ServerMonitoringOverride** cmdlet to view the list of local overrides:
 
@@ -123,7 +125,7 @@ This example adds a global override that disables the `StorageLogicalDriveSpaceE
 Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created a global override, use the **Get-GlobalMonitoringOverride** cmdlet to view the list of global overrides:
 
@@ -147,7 +149,7 @@ This example removes the existing global override of the `ExtensionAttributes` p
 Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed a global override, use the **Get-GlobalMonitoringOverride** cmdlet to view the list of global overrides:
 

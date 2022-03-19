@@ -1,10 +1,12 @@
 ---
 title: 'Assign an address book policy to mail users: Exchange 2013 Help'
 TOCTitle: Assign an address book policy to mail users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: After you create an address book policy, you must assign it to mailbox users in Exchange Server.
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 f1.keywords:
 - NOCSH
@@ -34,7 +36,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying addres
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the user that you want to assign the policy to, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the user that you want to assign the policy to, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. Click **Mailbox features**.
 

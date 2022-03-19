@@ -1,10 +1,13 @@
 ---
 title: 'Enable an informational announcement for Outlook Voice Access users: Exchange 2013 Help'
 TOCTitle: Enable an informational announcement for Outlook Voice Access users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: How to enable an informational announcement for Outlook Voice Access users in Microsoft Exchange Server
 manager: serdars
 ms.reviewer:
+ms.topic: article
+
 ms.assetid: b69ed0e1-f978-498a-963e-42a047678db4
 f1.keywords:
 - NOCSH
@@ -42,7 +45,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan that you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

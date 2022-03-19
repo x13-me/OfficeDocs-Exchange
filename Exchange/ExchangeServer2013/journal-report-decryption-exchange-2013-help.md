@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd876936(v=EXCHG.150)
 ms:contentKeyID: 49319930
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Journal report decryption in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -4,9 +4,11 @@ TOCTitle: Change user throttling settings for specific users
 ms:assetid: c5f834d6-189d-485e-9800-5e0066815ecf
 ms:mtpsurl: https://technet.microsoft.com/library/JJ863577(v=EXCHG.150)
 ms:contentKeyID: 50395404
+ms.topic: article
+description: Control how resources are consumed by individual users in your Exchange organization by changing the default throttling settings.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -80,7 +82,7 @@ To verify that you've successfully created the Regular throttling policy, do the
    Get-ThrottlingPolicy | select *
    ```
 
-   ![Details On Throttling Policy](images/DetailsOnThrottlingPolicy.png)
+   ![Details On Throttling Policy.](images/DetailsOnThrottlingPolicy.png)
 
 4. Verify that the properties for the new Regular policy match the value or values you configured.
 

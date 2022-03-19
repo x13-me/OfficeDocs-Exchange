@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.dataprotection(v=
 ms:contentKeyID: 49720873
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the DataProtection Health Set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,10 +29,10 @@ The DataProtection Health service is monitored by using the following probes and
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -146,10 +148,10 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
       <table>
       <colgroup>
-      <col style="width: 25%" />
-      <col style="width: 25%" />
-      <col style="width: 25%" />
-      <col style="width: 25%" />
+      <col/>
+      <col/>
+      <col/>
+      <col/>
       </colgroup>
       <tbody>
       <tr class="odd">
@@ -207,9 +209,9 @@ The returned results will resemble the following:
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

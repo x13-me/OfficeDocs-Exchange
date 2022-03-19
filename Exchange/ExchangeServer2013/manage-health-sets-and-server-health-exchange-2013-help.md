@@ -4,9 +4,11 @@ TOCTitle: Manage health sets and server health
 ms:assetid: a4f84312-6cfa-4f17-9707-676aadab1143
 ms:mtpsurl: https://technet.microsoft.com/library/Dn482054(v=EXCHG.150)
 ms:contentKeyID: 59888995
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: How to manage health sets and server health in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

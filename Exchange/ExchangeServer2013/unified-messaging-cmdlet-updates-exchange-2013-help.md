@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150557(v=EXCHG.150)
 ms:contentKeyID: 47560083
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,8 +25,8 @@ The following is a list of the updated parameters and new cmdlets for Exchange 2
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

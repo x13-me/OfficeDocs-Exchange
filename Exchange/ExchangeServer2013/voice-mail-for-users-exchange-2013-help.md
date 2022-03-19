@@ -1,10 +1,12 @@
 ---
 title: 'Voice mail for users: Exchange 2013 Help'
 TOCTitle: Voice mail for users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Voice mail for users in Microsoft Exchange Server
 ms.assetid: 48e1f43b-fb7e-4a52-a2cb-0fb5da6ca65f
 f1.keywords:
 - NOCSH

@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange Online.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: a0e11307-3577-499f-b407-6fcfae576844
 ms.reviewer: 

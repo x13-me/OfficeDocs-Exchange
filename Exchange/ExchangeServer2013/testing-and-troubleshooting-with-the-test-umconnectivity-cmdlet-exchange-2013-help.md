@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa995978(v=EXCHG.150)
 ms:contentKeyID: 55129207
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Use Test-UMConnectivity cmdlet to test telephony connectivity and operation of the UM services.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

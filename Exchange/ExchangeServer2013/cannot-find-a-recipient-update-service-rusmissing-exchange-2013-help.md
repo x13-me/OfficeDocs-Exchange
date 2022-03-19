@@ -4,9 +4,10 @@ TOCTitle: Cannot find a recipient update service_RUSMissing
 ms:assetid: 920fbf51-d5e4-4ac6-869f-7f1c5d9a3024
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.rusmissing(v=EXCHG.150)
 ms:contentKeyID: 46629034
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -31,7 +32,7 @@ To resolve this issue, verify that an instance of the Recipient Update Service e
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">

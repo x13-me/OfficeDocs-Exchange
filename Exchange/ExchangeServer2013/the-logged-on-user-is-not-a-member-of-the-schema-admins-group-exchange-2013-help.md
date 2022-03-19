@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.schemau
 ms:contentKeyID: 46629064
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Setup requires that the user logged on when Exchange 2013 is installed has permission to create and modify objects in Active Directory.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

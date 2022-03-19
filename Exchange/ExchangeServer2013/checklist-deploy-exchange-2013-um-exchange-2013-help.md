@@ -4,9 +4,11 @@ TOCTitle: 'Checklist: Deploy Exchange 2013 UM'
 ms:assetid: 41b666a2-0d0d-471f-90a3-07c3c562af85
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673520(v=EXCHG.150)
 ms:contentKeyID: 49315398
+ms.topic: article
+description: Checklist to help you install and deploy Unified Messaging (UM) in your organization.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -33,9 +35,9 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

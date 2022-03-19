@@ -1,10 +1,12 @@
 ---
 title: 'Developing DLP policy template files: Exchange 2013 Help'
 TOCTitle: Developing DLP policy template files
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to develop data loss prevention policy template files in Exchange Server 
 ms.assetid: 4b263547-aef4-4ee8-aa4f-fa64a5863189
 f1.keywords:
 - NOCSH
@@ -17,20 +19,20 @@ _**Applies to:** Exchange Server 2013_
 
 This overview explains the components of an XML schema definition for data loss prevention (DLP) policy template files and also provides an XML-format example policy file. It will be helpful to understand the overall DLP architecture and rule-development process before you begin. For more information, see [Data loss prevention](data-loss-prevention-exchange-2013-help.md) and [Define your own DLP templates and information types](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 
-In order to make data loss prevention solutions easy to adopt and manage, a conceptual model known as DLP policies and policy templates is introduced in Microsoft Exchange Server 2013. DLP policy templates provide a preliminary design for your intended DLP policy. In order to be valuable, a DLP policy template must encapsulate all the directives and data objects that are required to meet a specific policy objective, such as a regulation or business need. The template is not environment-specific. It is simply a definition or model of a policy that can be provided as part of the product configuration or supplied by independent software vendors and partners. DLP policies on the other hand, are run-time instantiations of the templates that are specific to the deployment environment. Your existing messaging policy framework can incorporate DLP policies through the use of transport rules. Transport rules provide great flexibility in adapting and expressing the richness of your DLP solutions.
+In order to make data loss prevention solutions easy to adopt and manage, a conceptual model known as DLP policies and policy templates is introduced in Microsoft Exchange Server 2013. DLP policy templates provide a preliminary design for your intended DLP policy. In order to be valuable, a DLP policy template must encapsulate all the directives and data objects that are required to meet a specific policy objective, such as a regulation or business need. The template is not environment-specific. It is simply a definition or model of a policy that can be provided as part of the product configuration or supplied by independent software publishers and partners. DLP policies on the other hand, are run-time instantiations of the templates that are specific to the deployment environment. Your existing messaging policy framework can incorporate DLP policies through the use of transport rules. Transport rules provide great flexibility in adapting and expressing the richness of your DLP solutions.
 
 ## Policy template sources and structure
 
 DLP policy templates are typically influenced from multiple sources such as server-based processing directives, client computer policies, or other policy constructs as shown in the following image:
 
-![Factors that influence policy templates](images/ITPro_MRM_DlpPolicy_TempInputs.gif)
+![Factors that influence policy templates.](images/ITPro_MRM_DlpPolicy_TempInputs.gif)
 
 Simple management operations are available for DLP policy templates though both the Exchange Management Shell and Internet-based interfaces, such as the Exchange admin center, which include Import, Export, Deletion and Query capabilities. A DLP policy is created by referencing a DLP policy template as part of the creation process. These referenced DLP policy templates may be references to ones installed in the system, which are stored in active directory domain services, or be provided as input directly from externally supplied policies.
 
-DLP policy templates are represented as XML documents. A single XML schema is used for policies provided within Exchange and externally also. The conceptual structure of the XML document is represented in the table below, which shows the major elements. The set of policy component definitions help you achieve a specific policy objective such as a regulation or business need.
+DLP policy templates are represented as XML documents. A single XML schema is used for policies provided within Exchange and externally also. The conceptual structure of the XML document is represented in the table below, which shows the major elements. The set of policy component definitions helps you achieve a specific policy objective such as a regulation or business need.
 
-|**Structural Element**|**Meaning or Example**|
-|:-----|:-----|
+|Structural Element|Meaning or Example|
+|---|---|
 |Publisher|Microsoft or Partner|
 |Version|15.0.1.0|
 |Policy Name|PCI-DSS|
@@ -80,18 +82,18 @@ If a parameter you include in your XML file for any element includes a space, th
 
 ### localizedString Element
 
-The template format offers the capability to localize strings in the template which may be presented to the end-user, for example as part of selecting which DLP policy templates are installed. The localizedString element can be used to supply multiple definitions for the Name and Description fields.
+The template format offers the capability to localize strings in the template which may be presented to the end user, for example as part of selecting which DLP policy templates are installed. The localizedString element can be used to supply multiple definitions for the Name and Description fields.
 
 ### ruleParameters Node
 
-This is an optional set of parameters that need to be supplied during the template instantiation phase when creating a DLP policy to map to deployment specific objects. For example an actual distribution group that is available in the deployment.
+This is an optional set of parameters that need to be supplied during the template instantiation phase when creating a DLP policy to map to deployment-specific objects. For example an actual distribution group that is available in the deployment.
 
 ### dlpPolicyTemplate Element
 
 This is the root element for the DLP policy template and is required for every template. Available attributes are shown in the following table:
 
-|**Attribute Name**|**Required?**|**Description**|
-|:-----|:-----|:-----|
+|Attribute Name|Required?|Description|
+|---|---|---|
 |Version|Yes|The version number used in this DLP policy template document.|
 |State|No|Optional default configuration for the state of the policy.|
 |Mode|No|Optional default configuration for the mode of the policy.|
@@ -99,8 +101,8 @@ This is the root element for the DLP policy template and is required for every t
 
 Child elements include the following sequence of elements.
 
-|**Child Element**|**(minimum, maximum)**|**Description**|
-|:-----|:-----|:-----|
+|Child Element|(minimum, maximum)|Description|
+|---|---|---|
 |PublisherName|(1, 1)|Meta data for the template's publisher|
 |Name|(1, 1)|Localizable name for this template.|
 |Description|(1, 1)|Localizable description for this template.|
@@ -171,8 +173,8 @@ New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToSco
 
 Child elements include the following ordered sequence of elements.
 
-|**Child Element**|**(Minimum, Maximum)**|**Description**|
-|:-----|:-----|:-----|
+|Child Element|(Minimum, Maximum)|Description|
+|---|---|---|
 |CommandBlock|(1, n)|A command block that is executed in the PowerShell. The command blocks are each executed in sequence.|
 
 ## For more information

@@ -1,12 +1,14 @@
 ---
-title: 'Insufficient permissions to prepare Active Directory'
+title: 'Exchange Server: Insufficient permissions to prepare Active Directory'
 TOCTitle: Insufficient permissions to prepare Active Directory_ADUpdateRequired
 ms:assetid: 1412d8a1-605a-4b1e-bee3-0c97f2cc9e65
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.adupdaterequired(v=EXCHG.150)
 ms:contentKeyID: 46628816
 ms.reviewer: 
+ms.topic: article
+description: 'Exchange setup fails: insufficient permissions to prepare Active Directory' 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

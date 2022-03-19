@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
 ms.reviewer: 
 description: "For consumers who want to migrate their Gmail mailboxes to Microsoft 365 or Office 365 with IMAP and app passwords."
-title: Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365 
+title: Migrate consumer Google Workspace (formerly G Suite) mailboxes to Microsoft 365 or Office 365
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -86,7 +86,7 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
 3. Select each user to identify each user's email address. Write down the address.
 
-    ![User details in the Google apps admin center](../../media/google-users-account-im12.png)
+    ![User details in the Google apps admin center.](../../media/google-users-account-im12.png)
 
 4. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and go to **Users** \> **Active users**. Keep an eye on the **Username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
 
@@ -118,11 +118,11 @@ To migrate Gmail mailboxes successfully, Microsoft 365 or Office 365 needs to co
 
 1. Go to the Classic Exchange admin center.
 
-2. In the EAC, go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+2. In the EAC, go to **Recipients** \> **Migration** \> **More** ![More icon.](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
 
    ![Select Migration endpoint.](../media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
 
-3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint.
+3. Click **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint.
 
 4. On the **Select the migration endpoint type** page, choose **IMAP**.
 
@@ -155,9 +155,9 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
-3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+3. Click **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
 
-    ![Select Migrate to Exchange Online](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
+    ![Select Migrate to Exchange Online.](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
 
 4. Choose **IMAP migration** \> **Next**.
 
@@ -172,7 +172,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 
 6. After Microsoft 365 or Office 365 validates the migration file, it displays the number of users listed in the file as the number of Gmail mailboxes to migrate.
 
-   ![New migration batch with CSV file](../media/6cf72bfd-899b-40c1-9604-fb20d600685a.png)
+   ![New migration batch with CSV file.](../media/6cf72bfd-899b-40c1-9604-fb20d600685a.png)
 
 7. Click **Next**.
 
@@ -182,9 +182,9 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 
 10. On the **Move configuration** page, type the *name* (no spaces or special characters) of the migration batch in the box (for example, Test5-migration). The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
 
-    You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also click **Edit** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and **Delete** ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name.
+    You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add** ![Add icon.](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also click **Edit** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and **Delete** ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name.
 
-    ![Move configuration dialog](../media/0633521d-b0f9-44a1-8729-b40b1793d10e.png)
+    ![Move configuration dialog.](../media/0633521d-b0f9-44a1-8729-b40b1793d10e.png)
 
 11. Click **Next**
 
@@ -194,7 +194,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Microsoft 365 
 
     - Choose **Automatically start the batch** \> **new**. The migration starts immediately with the status **Syncing**.
 
-    ![Migration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
+    ![Migration batch is syncing.](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 > [!NOTE]
 > If you have large user mailboxes and the status shows **Syncing** for a long time, you may be experiencing bandwidth limits set by Google. For more information, see [Bandwidth limits](https://support.google.com/a/answer/1071518) and [Sync limits](https://support.google.com/a/answer/2751577). You can try to unlock the Gmail user or use alternative method to migrate the users. For more information, see [Use network upload to import your organization PST files to Microsoft 365 or Office 365](/microsoft-365/compliance/use-network-upload-to-import-pst-files) and [Third-party tools for Microsoft 365 or Office 365 migrations](../office-365-migration-best-practices.md#third-party-tools-for-microsoft-365-or-office-365-migrations).

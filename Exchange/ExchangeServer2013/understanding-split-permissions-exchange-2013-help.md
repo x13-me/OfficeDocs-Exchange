@@ -1,12 +1,13 @@
 ---
 title: 'Understanding split permissions: Exchange 2013 Help'
 TOCTitle: Understanding split permissions
+ms:topic: article
 ms:assetid: 2b709e15-63a2-4841-94bc-b289b71166d0
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638106(v=EXCHG.150)
 ms:contentKeyID: 49289207
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -63,8 +64,8 @@ The following table shows the roles that enable the creation of security princip
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -146,8 +147,8 @@ Switching from shared permissions to RBAC split permissions is a manual process 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -251,8 +252,8 @@ For a list of changes that occur to the Exchange Windows Permissions security g
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

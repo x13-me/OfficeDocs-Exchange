@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124934(v=EXCHG.150)
 ms:contentKeyID: 49300732
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+description: How to enable POP3 in Exchange Server
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

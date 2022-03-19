@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123741(v=EXCHG.150)
 ms:contentKeyID: 48385337
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: About Outlook Anywhere and Microsoft Exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

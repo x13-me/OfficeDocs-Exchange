@@ -1,8 +1,10 @@
 ---
 title: 'Add an address list to or remove an address list from an offline address book: Exchange 2013 Help'
 TOCTitle: Add an address list to or remove an address list from an offline address book
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: How to add or remove an address list from an offline address book in Exchange Server.
+ms.topic: article
 manager: serdars
 ms.reviewer:
 ms.assetid: 86bd5651-ad41-4516-bf23-6579f4e4da03

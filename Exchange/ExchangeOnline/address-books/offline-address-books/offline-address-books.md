@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about offline address books (OABs) in Exchange Online.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3f4b2c64-6cbc-445f-bf65-05b8fdfe9a0b
 ms.reviewer: 

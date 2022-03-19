@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996589(v=EXCHG.150)
 ms:contentKeyID: 49352361
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Use of cmdlets in Exchange Management Shell.
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -33,8 +35,8 @@ All cmdlets in the Shell are presented in verb-noun pairs. The verb-noun pair is
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

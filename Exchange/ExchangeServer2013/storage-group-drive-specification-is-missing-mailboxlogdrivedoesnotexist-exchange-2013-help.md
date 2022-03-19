@@ -5,8 +5,10 @@ ms:assetid: fe210f29-60cb-4d34-877e-1356a21dc02a
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.mailboxlogdrivedoesnotexist(v=EXCHG.150)
 ms:contentKeyID: 46629193
 ms.reviewer: 
+ms.topic: article
+description: Microsoft Exchange Server Disaster Recovery setup can't continue because it can't access the storage group database drive specification that was used in the previous installation of the server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

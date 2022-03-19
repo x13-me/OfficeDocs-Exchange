@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Microsoft Exchange Server 2016 Setup displayed this warning because no Exchange Server 2013 server roles exist in the organization.
 ms.topic: reference
-author: msdmaguire
+author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.NoE15ServerWarning
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 55274feb-e683-4447-a053-8650ef174667
 ms.reviewer: 
 title: No Exchange 2013 servers detected [NoE15ServerWarning]

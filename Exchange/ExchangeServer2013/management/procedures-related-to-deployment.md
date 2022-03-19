@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn195909(v=EXCHG.150)
 ms:contentKeyID: 53181784
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Deployment-related procedures in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -31,7 +33,7 @@ Your user account needs to be a member of the Operations Manager Administrators 
 
 3. Make sure that all of your Exchange servers show **Healthy**.
 
-   ![Healthy agents in SCOM console](images/Dn195909.7d1ff0bb-419e-40dc-babf-5fa2fb7229a8(EXCHG.150).png "Healthy agents in SCOM console")
+   ![Healthy agents in SCOM console.](images/Dn195909.7d1ff0bb-419e-40dc-babf-5fa2fb7229a8(EXCHG.150).png "Healthy agents in SCOM console")
 
 ## Verify agent proxy configuration
 

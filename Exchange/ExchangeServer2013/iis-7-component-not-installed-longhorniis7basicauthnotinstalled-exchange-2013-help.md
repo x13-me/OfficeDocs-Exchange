@@ -1,12 +1,14 @@
 ---
-title: 'IIS 7 component not installed'
+title: 'Exchange Server - IIS 7 component not installed'
 TOCTitle: IIS 7 component not installed_LonghornIIS7BasicAuthNotInstalled
 ms:assetid: 2eb3290c-9ce2-4c01-ad47-a26ef60bddb5
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhorniis7basicauthnotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46628851
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Exchange Server Setup can't complete with IIS 7 component not installed
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,7 +29,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -87,7 +89,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Mt779252(v=EXCHG.150)
 ms:contentKeyID: 74429166
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to update the self-signed federation certificate that's used in a federation trust.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -20,6 +22,9 @@ This topic explains how to update the self-signed federation certificate that's 
 - If the federation certificate hasn't expired, follow the steps in the Update a working federation certificate section.
 
 - If the federation certificate has already expired, follow the steps in the Replace an expired federation certificate section.
+
+> [!NOTE]
+> By design, after renewing the certificate, the expired certificate associated with the federation trust cannot be removed from the federation trust object. 
 
 For more information about federation trusts and federation, see [Federation](federation-exchange-2013-help.md).
 

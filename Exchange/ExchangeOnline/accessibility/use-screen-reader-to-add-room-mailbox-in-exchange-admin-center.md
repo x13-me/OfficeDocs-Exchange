@@ -1,13 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: ea55a30a-14b7-41ca-bfa3-4b7f0441f9a7
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to create a room mailbox in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to add a new room mailbox in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to create a room mailbox in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to add a new room mailbox in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to add a new room mailbox in the Exchange admin center in Exchange Online
+# Use a screen reader to add a new room mailbox in the Classic Exchange admin center in Exchange Online
 
-Add a mailbox for conference rooms in the Exchange admin center (EAC), by using keyboard shortcuts and your screen reader.
+Add a mailbox for conference rooms in the Exchange admin center (Classic EAC) in Exchange Online by using keyboard shortcuts and your screen reader.
 
 ## Get started
 

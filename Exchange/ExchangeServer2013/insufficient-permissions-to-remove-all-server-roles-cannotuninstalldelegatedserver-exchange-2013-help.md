@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.cannotu
 ms:contentKeyID: 46628832
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Exchange Server setup failed because uninstalling all server roles failed
 author: msdmaguire
 f1.keywords:
 - NOCSH

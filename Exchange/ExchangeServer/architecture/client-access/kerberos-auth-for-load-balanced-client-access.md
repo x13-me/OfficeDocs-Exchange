@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms.reviewer:
 title: Configure Kerberos authentication for load-balanced Client Access services
@@ -104,7 +104,7 @@ In each of these scenarios, assume that the load-balanced, fully-qualified domai
 
 If you have a single Active Directory site, your environment may resemble the one in the following figure:
 
-![multiple AD sites](../../media/e6587b30-d39f-48b0-8afe-4e20691f8489.png)
+![multiple AD sites.](../../media/e6587b30-d39f-48b0-8afe-4e20691f8489.png)
 
 Based on the FQDNs that are used by the internal Outlook clients in the preceding figure, you have to associate the following SPNs with the ASA credential:
 
@@ -115,7 +115,7 @@ Based on the FQDNs that are used by the internal Outlook clients in the precedin
 
 If you have multiple Active Directory sites, your environment may resemble the one in the following figure:
 
-![multiple AD sites](../../media/1d8d1a5a-1612-4d22-98e8-2e144c053829.png)
+![multiple AD sites.](../../media/1d8d1a5a-1612-4d22-98e8-2e144c053829.png)
 
 Based on the FQDNs that are used by the Outlook clients in the preceding figure, you would have to associate the following SPNs with the ASA credential that is used by the Mailbox servers running Client Access services in ADSite 1:
 
@@ -136,7 +136,7 @@ You configure the ASA credential by using the Exchange Management Shell as descr
 - Deploy the ASA credential to the first Exchange server running Client Access services
 - Deploy the ASA credential to subsequent Exchange servers running Client Access services
 
-The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](../../../ExchangeServer2013/using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
+The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information and required permissions to run the script, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](../../../ExchangeServer2013/using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ### Deploy the ASA Credential to the first Exchange server running Client Access services
 

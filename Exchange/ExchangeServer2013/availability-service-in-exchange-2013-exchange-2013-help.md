@@ -5,9 +5,11 @@ ms:assetid: 9722dea2-2bf8-437c-85c0-3ab65b8a07b9
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232134(v=EXCHG.150)
 ms:contentKeyID: 51492808
 ms.reviewer: 
+ms.topic: article 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: The Exchange Availability service makes free/busy information available to Microsoft Outlook and Outlook Web App clients.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -64,10 +66,10 @@ The following table lists the different methods used to retrieve free/busy infor
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

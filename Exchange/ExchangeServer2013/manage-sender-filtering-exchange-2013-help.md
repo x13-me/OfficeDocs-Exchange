@@ -5,8 +5,10 @@ ms:assetid: a7f4b3e1-2970-45ad-911e-a9f46d880d3d
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124087(v=EXCHG.150)
 ms:contentKeyID: 49287406
 ms.reviewer: 
+ms.topic: article
+description: How to manage sender filtering in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -53,7 +55,7 @@ Set-SenderFilterConfig -Enabled $true
 > [!NOTE]
 > When you disable sender filtering, the underlying Sender Filter agent is still enabled. To disable the Sender Filter agent, run the command: <CODE>Disable-TransportAgent "Sender Filter Agent"</CODE>.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled sender filtering, do the following:
 
@@ -97,7 +99,7 @@ This example configures the Sender Filter agent with the following information:
 Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured blocked senders, do the following:
 
@@ -123,7 +125,7 @@ This example configures the Sender Filter agent to block messages that don't spe
 Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled blocking messages with blank senders, do the following:
 

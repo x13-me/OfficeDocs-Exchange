@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
 ms.reviewer:
 title: Recover a database availability group member server, recover Exchange DAG member, Exchange DAG server recovery, DAG server recovery, Exchange DAG failover
@@ -16,11 +16,11 @@ manager: serdars
 
 ---
 
-# Recover a database availability group member server
+# Recover a database availability group member server in Exchange Server
 
-If a Mailbox server that's a member of a database availability group (DAG) is lost or fails, and is unrecoverable and needs replacement, you can perform a server recovery operation.
+If a Mailbox server that's a member of a database availability group (DAG) is lost or fails, and is unrecoverable and needs replacement, you can run a server recovery operation.
 
-Microsoft Exchange Server Setup includes the switch _/m:RecoverServer_ that can be used to perform the server recovery operation. Running Setup with the _/m:RecoverServer_ switch causes Setup to read the server's configuration information from Active Directory for a server with the same name as the server from which you're running Setup.
+Microsoft Exchange Server Setup includes the switch _/m:RecoverServer_ that can be used to run the server recovery operation. Running Setup with the _/m:RecoverServer_ switch causes Setup to read the server's configuration information from Active Directory for a server with the same name as the server from which you're running Setup.
 
 After the server's configuration information is gathered from Active Directory, the original Exchange files and services are then installed on the server, and the roles and settings that were stored in Active Directory are then applied to the server.
 
@@ -30,7 +30,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 - Estimated time to complete: 30 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](../../permissions/feature-permissions/ha-permissions.md) topic.
+- You need to be assigned permissions before you can do this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](../../permissions/feature-permissions/ha-permissions.md) topic.
 
 - If Exchange is installed in a location other than the default location, you must use the _/TargetDir_ Setup switch to specify the location of the Exchange program files. If you don't use the _/TargetDir_ switch, the Exchange program files will be installed in the default location (%programfiles%\Microsoft\Exchange Server\V15).
 
@@ -94,9 +94,9 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
    ```
 
-## How do you know this worked?
+## How do you know this fix worked?
 
-To verify that you've successfully recovered the DAG member, do the following:
+To verify that you've successfully recovered the DAG member, use the following method:
 
 - In the Exchange Management Shell, run the following command to verify the health and status of the recovered DAG member.
 

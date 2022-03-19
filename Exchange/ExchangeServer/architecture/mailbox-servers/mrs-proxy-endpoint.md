@@ -1,9 +1,9 @@
 ---
 description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange Server mailbox moves between Active Directory forests, Microsoft 365, or Office 365."
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms.collection: exchange-server
@@ -16,9 +16,9 @@ title: Enable the MRS Proxy endpoint for remote moves
 
 ---
 
-# Enable the MRS Proxy endpoint for remote moves
+# Enable the MRS Proxy endpoint for remote moves in Exchange Server
 
-The Mailbox Replication service (MRS) has a proxy endpoint that's required for cross-forest mailbox moves and remote move migrations between your on-premises Exchange organization and Microsoft 365 or Office 365. You enable the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory settings in the Client Access (frontend) services on Exchange 2016 or Exchange 2019 Mailbox servers.
+The Mailbox Replication Service (MRS) has a proxy endpoint that's required for cross-forest mailbox moves and remote move migrations between your on-premises Exchange organization and Microsoft 365 or Office 365. You need to enable the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory settings on Exchange 2016 or Exchange 2019 Mailbox servers.
 
 Where you enable the MRS Proxy endpoint depends on the type and direction of the mailbox move:
 
@@ -26,7 +26,7 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
 - **Remote move migrations between an on-premises Exchange organization and Microsoft 365 or Office 365**. For both onboarding and offboarding remote move migrations, you need to enable the MRS Proxy endpoint on Mailbox servers in your on-premises Exchange organization.
 
- **Note**: If you use theExchange admin center (EAC) to move mailboxes, cross-forest moves and onboarding remote move migrations are pull move types, because you initiate the request from the target environment. Offboarding remote move migrations are push move types because you initiate the request from the source environment.
+ **Note**: If you use the Exchange admin center (EAC) to move mailboxes, cross-forest moves and onboarding remote move migrations are pull move types, because you initiate the request from the target environment. Offboarding remote move migrations are push move types because you initiate the request from the source environment.
 
 ## What do you need to know before you begin?
 
@@ -34,11 +34,11 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Web Services permissions" section in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
-- If you've deployed multiple Mailbox servers in your Exchange organization, you should enable the MRS Proxy endpoint in the Client Access services on each Mailbox server. If you add additional Mailbox servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn't enabled on all Mailbox servers.
+- If you've deployed multiple Mailbox servers in your Exchange organization, you should enable the MRS Proxy endpoint on each Mailbox server. If you add additional Mailbox servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn't enabled on all Mailbox servers.
 
-- If you don't perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled in the Client Access services on Mailbox servers to reduce the attack surface of your organization.
+- If you don't perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled on Mailbox servers to reduce the attack surface of your organization.
 
-- Exchange Online requires Windows authentication for the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory in the Client Access (front end) services.
+- Exchange Online requires Windows authentication for the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directories.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -55,13 +55,13 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
 
    - To only display EWS virtual directories, select **EWS** in the **Select type** drop-down list.
 
-   After you've selected the EWS virtual directory that you want to configure, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+   After you've selected the EWS virtual directory that you want to configure, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
-   ![In the EAC, go to Servers \> Virtual Directories, and select the EWS virtual directory](../../media/2d65b172-eadd-49d5-ab70-9500b2e2e6f6.png)
+   ![In the EAC, go to Servers \> Virtual Directories, and select the EWS virtual directory.](../../media/2d65b172-eadd-49d5-ab70-9500b2e2e6f6.png)
 
 3. On the properties page that opens, on the **General** tab, select the **Enable MRS Proxy endpoint** check box, and then click **Save**.
 
-   ![In the EAC, on the General tab in the properties of the EWS virtual directory, select Enable MRS Proxy endpoint](../../media/ddbcbe12-9b97-4bb4-8015-1e5eb229a191.png)
+   ![In the EAC, on the General tab in the properties of the EWS virtual directory, select Enable MRS Proxy endpoint.](../../media/ddbcbe12-9b97-4bb4-8015-1e5eb229a191.png)
 
 ## Use the Exchange Management Shell to enable the MRS Proxy endpoint
 
@@ -71,13 +71,13 @@ To enable the MRS Proxy endpoint, use this syntax:
 Set-WebServicesVirtualDirectory -Identity "[<Server>\]EWS (Default Web Site)" -MRSProxyEnabled $true
 ```
 
-This example enables the MRS Proxy endpoint in Client Access services on the Mailbox server named EXCH-SRV-01.
+This example enables the MRS Proxy endpoint of the EWS virtual directories on the Mailbox server named EXCH-SRV-01.
 
 ```PowerShell
 Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
 ```
 
-This example enables the MRS Proxy endpoint in Client Access services on all Mailbox servers in your Exchange organization.
+This example enables the MRS Proxy endpoint of the EWS virtual directories on all Mailbox servers in your Exchange organization.
 
 ```PowerShell
 Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true

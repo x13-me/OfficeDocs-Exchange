@@ -1,10 +1,12 @@
 ---
 title: 'Disable Voice Mail Preview for users: Exchange 2013 Help'
 TOCTitle: Disable Voice Mail Preview for users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: You can disable the Voice Mail Preview feature for users associated with a Unified Messaging mailbox policy.
 ms.assetid: 362fed13-3a9c-4111-bfa4-8c45ab6a3a01
 f1.keywords:
 - NOCSH
@@ -36,9 +38,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ## Use the EAC to disable Voice Mail Preview
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM Dial plans**, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM Dial plans**, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to manage, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Mailbox Policy** page \> **General**, clear the check box next to **Allow voice mail preview**.
 

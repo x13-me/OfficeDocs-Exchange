@@ -1,10 +1,12 @@
 ---
 title: 'Set the default language on a dial plan: Exchange 2013 Help'
 TOCTitle: Set the default language on a dial plan
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: how-to
+description: How to set the default language on a dial plan in Microsoft Exchange Server
 ms.assetid: 7a1d2e7e-4053-40af-9ec1-ec714df12ad4
 f1.keywords:
 - NOCSH
@@ -36,7 +38,7 @@ If you want to select another language as the default language, for example, Ger
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan that you want to modify, and then, on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan that you want to modify, and then, on the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

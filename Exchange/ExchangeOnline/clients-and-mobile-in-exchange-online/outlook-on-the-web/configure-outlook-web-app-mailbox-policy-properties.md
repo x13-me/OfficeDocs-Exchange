@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to view and modify Outlook on the web mailbox policies (formerly known as Outlook Web App mailbox policies) in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms.reviewer: 
@@ -41,7 +41,7 @@ For more information about Outlook on the web mailbox policies, see [Outlook on 
 
 1. In the EAC, go to **Permissions** \> **Outlook Web App policies** and select the policy that you want to view or configure.
 
-2. The Details pane show the enabled features in the policy. To see more information, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the properties window that opens you can view and configure the following settings:
+2. The Details pane show the enabled features in the policy. To see more information, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). In the properties window that opens you can view and configure the following settings:
 
    - On the **General** tab, you can view and edit the name of the policy.
 
@@ -99,7 +99,7 @@ For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](/power
 
 To verify that you've successfully modified an Outlook on the web mailbox policy, do either of the following steps:
 
-- In the EAC, click **Permissions** \> **Outlook Web App Policies**, select the policy, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png), and verify the properties of the policy.
+- In the EAC, click **Permissions** \> **Outlook Web App Policies**, select the policy, click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png), and verify the properties of the policy.
 
 - In Exchange Online PowerShell, replace \<Policy Name\> with the name of the policy, and run the following command to verify the settings:
 

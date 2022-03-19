@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 f1.keywords:
 - CSH
 ms.custom:
@@ -10,7 +10,7 @@ ms.custom:
 ms.author: jhendr
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.reviewer: 
-title: Manage dynamic distribution group
+title: Manage dynamic distribution group in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -20,13 +20,17 @@ manager: serdars
 
 ---
 
-# Manage dynamic distribution groups
+# Manage dynamic distribution groups in Exchange Online
+
+> [!NOTE]
+> A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by March 2022. Learn more: [Modern dynamic distribution groups](modern-dynamic-distribution-groups.md).
 
 Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 
 Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
 
 > [!IMPORTANT]
+>
 > - A dynamic distribution group includes any recipient in Active Directory with attribute values that match its filter. If a recipient's properties are modified to match the filter, the recipient could inadvertently become a group member and start receiving messages that are sent to the group. Well-defined, consistent account provisioning processes will reduce the chances of this issue occurring.
 > - Dynamic distribution groups are not synced from Exchange Online to Azure Active Directory or to your on-premises Active Directory. Therefore, features such as Azure Conditional Access do not support being scoped to an Exchange Online dynamic distribution group.
 
@@ -50,9 +54,9 @@ Unlike regular distribution groups that contain a defined set of members, the me
 2. Click **Add a group** and follow the instructions in the details pane.
 
    - Under **Choose a group type** section, select **Dynamic distribution group** and click **Next**.
-   
+
    - Under **Set up the basics** section, enter the details and click **Next**.
-   
+
 3. In **Assign Users** section, select the group owner from the drop-down list.
 
 4. Use the **Members** section to specify the types of recipients for the group and set up rules that will determine membership. Select one of the following boxes:
@@ -61,7 +65,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
    - **Only the following recipient types**: Messages that meet the criteria defined for this group will be sent to one or more of the following recipient types:
 
-     - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.
+     - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization. Note that resource mailboxes are also included.
 
      - **Mail users with external email addresses**: Select this check box if you want to include users that have external email addresses. Users that have external email accounts have user domain accounts in Active Directory, but use email accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.
 
@@ -73,8 +77,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 5. Select one of the following attributes from the drop-down list and provide a value to define the criteria for membership in this group.
 
-   |**Attribute**|**Send message to a recipient if...**|
-   |:-----|:-----|
+   |Attribute|Send message to a recipient if...|
+   |---|---|
    |**State or province**|The specified value matches the recipient's State or province property.|
    |**Company**|The specified value matches the recipient's Company property.|
    |**Department**|The specified value matches the recipient's Department property.|
@@ -102,27 +106,27 @@ Unlike regular distribution groups that contain a defined set of members, the me
 2. On the **New dynamic distribution group** page, complete the following boxes:
 
    - **Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the Classic EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
-   
+
    > [!NOTE]
    > Group naming policy isn't applied to dynamic distribution groups.
-   
+
    - **Alias**: Use this box to type the name of the alias for the group. The alias cannot exceed 64 characters and must be unique in the forest. When a user types the alias in the To: line of an email message, it resolves to the group's display name.
-   
+
    - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the shared address book.
-   
+
    - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the Classic EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
-   
+
    To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
-   
+
    - **Owner**: An owner for a dynamic distribution group is optional. You can add owners by clicking **Browse** and then selecting users from the list.
-   
+
 3. Use the **Members** section to specify the types of recipients for the group and set up rules that will determine membership. Select one of the following boxes:
 
    - **All recipient types**: Choose this option to send messages that meet the criteria defined for this group to all recipient types.
 
    - **Only the following recipient types**: Messages that meet the criteria defined for this group will be sent to one or more of the following recipient types:
 
-   - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.
+   - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization. Note that resource mailboxes are also included.
 
    - **Users with external email addresses**: Select this check box if you want to include users that have external email addresses. Users that have external email accounts have user domain accounts in Active Directory, but use email accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.
 
@@ -136,8 +140,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 5. Select one of the following recipient attributes from the drop-down list and provide a value. If the value for the selected attribute matches that value you define, the recipient receives a message sent to this group.
 
-   |**Attribute**|**Send message to a recipient if...**|
-   |:-----|:-----|
+   |Attribute|Send message to a recipient if...|
+   |---|---|
    |**Recipient container**|The recipient object resides in the specified domain or OU.|
    |**State or province**|The specified value matches the recipient's State or province property.|
    |**Company**|The specified value matches the recipient's Company property.|
@@ -194,6 +198,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
   ```PowerShell
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
+
 ## Change dynamic distribution group properties
 
 ### Use the new EAC to change dynamic distribution group properties
@@ -237,7 +242,7 @@ Use this section to manage who can send email to this group.
 - **Sender options**
 
   By default, only people inside your organization can send message to this group. You can also allow people outside the organization to send to this group.
- 
+
   - **Only allow messages from people inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
 
   - **Allow messages from people inside and outside my organization**: Select this option to allow anyone to send messages to the group.
@@ -281,7 +286,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 1. In the Classic EAC, navigate to **Recipients** \> **Groups**.
 
-2. In the list of groups, click the dynamic distribution group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of groups, click the dynamic distribution group that you want to view or change, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the group's properties page, click one of the following sections to view or change properties.
 
@@ -303,7 +308,7 @@ Use this section to view or change basic information about the group.
 
 Use this section to assign a group owner. A dynamic distribution group can have only one owner. The group owner appears on the **Managed by** tab of the object in Active Directory Users and Computers.
 
-You can add owners by clicking **Browse** and selecting the owner from the list. To remove the owner, click **Clear** and then click **Save**.![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+You can add owners by clicking **Browse** and selecting the owner from the list. To remove the owner, click **Clear** and then click **Save**.![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif).
 
 #### Membership
 
@@ -317,22 +322,22 @@ Use this section to manage who can send email to this group.
 
 - **Senders inside and outside of my organization**: Select this option to allow anyone to send messages to the group.
 
-  You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
+  You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
 
-  To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+  To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif).
 
   > [!IMPORTANT]
   > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
 
-#### Message approval 
+#### Message approval for membership
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
 - **Messages sent to this group have to be approved by a moderator**: This check box isn't selected by default. If you select this check box, incoming messages are reviewed by the group moderators before delivery. Group moderators can approve or reject incoming messages.
 
-- **Group moderators**: To add group moderators, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove a moderator, select the moderator, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group are sent to the group owners for approval.
+- **Group moderators**: To add group moderators, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). To remove a moderator, select the moderator, and then click **Remove** ![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group are sent to the group owners for approval.
 
-- **Senders who don't require message approval**: To add people or groups that can bypass moderation for this group, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove a person or a group, select the item, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+- **Senders who don't require message approval**: To add people or groups that can bypass moderation for this group, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif). To remove a person or a group, select the item, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
 
 - **Select moderation notifications**: Use this section to set how users are notified about message approval.
 
@@ -342,11 +347,11 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **Don't notify anyone when a message isn't approved**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
 
-#### Email options 
+#### Email options
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
+- **Add**: Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -358,7 +363,7 @@ Use this section to view or change the email addresses associated with the group
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for proper formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
 
-- **Edit**: To change an email address associated with the group, select it from the list, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+- **Edit**: To change an email address associated with the group, select it from the list, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
     > [!NOTE]
     > To make an existing address the primary SMTP address for the group, select the **Make this the reply address** check box.
@@ -420,7 +425,7 @@ To verify that you've successfully changed properties for a dynamic distribution
 
 - In the new EAC, select the group to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
 
-- In the Classic EAC, select the group and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
+- In the Classic EAC, select the group and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
 
 - In Exchange Online PowerShell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values.
 

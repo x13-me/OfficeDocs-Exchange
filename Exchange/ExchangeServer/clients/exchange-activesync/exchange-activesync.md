@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 5fafaff3-eb37-4fdb-95f0-e56c45ea5884
 ms.reviewer: 
 title: Exchange ActiveSync
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Exchange ActiveSync
+# Exchange ActiveSync in Exchange Server
 
 Exchange ActiveSync is an Exchange synchronization protocol that's optimized to work together with high-latency and low-bandwidth networks. The protocol, based on HTTP and XML, lets mobile phones access an organization's information on a server that's running Microsoft Exchange.
 
@@ -26,6 +26,10 @@ Exchange ActiveSync is an Exchange synchronization protocol that's optimized to 
  Exchange ActiveSync lets mobile phone users access their email, calendar, contacts, and tasks, and lets them continue to access this information when they're working offline.
 
 Standard encryption services add security to mobile communication with the server. You can configure Exchange ActiveSync to use Secure Sockets Layer (SSL) encryption for communications between the Exchange server and the mobile device.
+
+> [!NOTE]
+> 
+> Exchange ActiveSync does not support shared mailboxes or delegate access.
 
 ## Features in Exchange ActiveSync
 <a name="features"> </a>

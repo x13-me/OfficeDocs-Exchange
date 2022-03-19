@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about how to view transport agents in the transport pipeline in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: dariomws
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 
 title: View transport agents in the transport pipeline in Exchange Server

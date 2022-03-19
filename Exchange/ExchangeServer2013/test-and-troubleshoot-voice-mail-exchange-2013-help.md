@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd351227(v=EXCHG.150)
 ms:contentKeyID: 55129215
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: After installing Client Access and Mailbox servers, you may have to test the functionality of Unified Messaging (UM).
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

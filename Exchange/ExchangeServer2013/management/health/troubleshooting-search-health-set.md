@@ -5,8 +5,10 @@ ms:assetid: 4e4402b4-2cb7-4057-be41-45f01d31641f
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.search(v=EXCHG.150)
 ms:contentKeyID: 49720788
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the Search health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

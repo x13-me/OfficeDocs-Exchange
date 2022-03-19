@@ -1,6 +1,6 @@
 ---
 title: "Simplify the Outlook Web App URL for Microsoft 365 or Office 365 Hybrid"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-email-calendar
@@ -83,8 +83,8 @@ Users may receive multiple authentication prompts depending on:
 
 The authentication prompt experience that users can expect is described in the following table.
 
-|**Authentication method**|**Client computer**|**Authentication prompt experience**|
-|:-----|:-----|:-----|
+|Authentication method|Client computer|Authentication prompt experience|
+|---|---|---|
 |Identity federation|Internal Internet connection|Single prompt|
 |Identity Federation|External Internet connection|Double prompt|
 |No Identity federation|Domain joined (internal or external)|Double prompt|

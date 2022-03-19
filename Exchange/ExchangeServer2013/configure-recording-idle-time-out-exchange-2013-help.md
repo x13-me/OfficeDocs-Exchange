@@ -1,10 +1,12 @@
 ---
 title: 'Configure the recording idle time-out value: Exchange 2013 Help'
 TOCTitle: Configure the recording idle time-out value
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the recording idle time-out value in Exchange Server
 ms.assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
 f1.keywords:
 - NOCSH
@@ -38,7 +40,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM dial plan** page, click **Configure**.
 

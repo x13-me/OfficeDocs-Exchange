@@ -1,4 +1,6 @@
 ---
+ms.topic: article
+description: This topic explains how to use Telnet to test Simple Mail Transfer Protocol (SMTP) communication between messaging servers.
 title: 'Use Telnet to test SMTP communication: Exchange 2013 Help'
 TOCTitle: Use Telnet to test SMTP communication
 ms:assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
@@ -6,7 +8,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123686(v=EXCHG.150)
 ms:contentKeyID: 50934219
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

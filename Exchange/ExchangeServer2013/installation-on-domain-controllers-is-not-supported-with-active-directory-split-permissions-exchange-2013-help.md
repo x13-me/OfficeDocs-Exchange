@@ -5,8 +5,10 @@ ms:assetid: 977e3758-5e09-40a2-80c1-fe344b1d8a2a
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.installondcinadsplitpermissionmode(v=EXCHG.150)
 ms:contentKeyID: 46629039
 ms.reviewer: 
+ms.topic: article
+description: Exchange Server Setup can't run with Active Directory split permissions
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
