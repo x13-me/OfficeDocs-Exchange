@@ -29,7 +29,7 @@ The top of the report shows the current settings used by Reply-all Storm Protect
  - Block duration hours
  
 > [!NOTE]
-> The current settings might not reflect the settings used for past reply-all storms if the current settings were changed during or after those storms occurred. Changing the settings while a storm is happening, might not apply those settings to that specific storm, but will apply to future storms.
+> The current settings might not reflect the settings used for past reply-all storms if the current settings were changed during or after those storms occurred. Changing the settings while a storm is happening might not apply those settings to that specific storm, but will apply to future storms.
 
 Beneath the current settings, is the time/date range drop-down from which you can select to view from 3 hours to 90 days of data (with the last 3 hours as default). 
 
@@ -51,13 +51,13 @@ Selecting any one of the reply-all storm names in either chart will pop up a sid
 
 The reply-all storm details panel includes the following information about the storm:
 
-|**Item**|**Description**|
-|:-----|:-----|
+|Item|Description|
+|---|---|
 |**Subject**|The message subject of the initial message.|
 |**Original Sender**|The sender of the first message in the conversation thread.|
 |**Start Date/Time**|When the first reply-all message was sent.|
 |**Total Messages**|The total number of messages in the conversation thread (includes the first message).|
-|**Blocked Messages**|The total number of messages blocked by the feature. This is always lower than the total messages in the storm, and in some cases it might be lower than expected based on the feature settings. It can take from a few seconds to a few minutes to synchronize the block enforcement notification to all relevant servers in the service, and during that time a few reply-alls could still get through before blocking kicks-in.|
+|**Blocked Messages**|The total number of messages blocked by the feature. This is always lower than the total messages in the storm, and in some cases it might be lower than expected based on the feature settings. It can take from a few seconds to a few minutes to synchronize the block enforcement notification to all relevant servers in the service. During that time, a few reply-alls could still get through before blocking kicks-in.|
 |**Block Start Time**|Time when message blocking started.|
 |**Message ID**|The Message ID of the first message in the conversation thread.|
 |**Reply-all senders**|Users who sent (or tried to send) a reply-all to the thread. Includes whether or not the message they sent was allowed through or blocked.|
