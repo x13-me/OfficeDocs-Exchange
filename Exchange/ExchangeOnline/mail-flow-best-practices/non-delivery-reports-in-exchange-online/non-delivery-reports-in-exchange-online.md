@@ -22,7 +22,6 @@ description: "Admins can learn about non-delivery reports (also known as NDRs or
 
 When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email to let you know. The email you receive is a delivery status notification, also known as a DSN or bounce message. The most common type is called a non-delivery report (NDR) and they tell you that a message wasn't delivered. Non-delivery can be caused by something as simple as a typo in an email address. NDRs include an error code that indicates why your email wasn't delivered, solutions to help you get your email delivered, a link to more help on the web, and technical details for administrators. Find out [What's included in an NDR?](#whats-included-in-an-ndr).
 
-
 ## Find my NDR code and get help delivering my email
 
 The following table contains the NDR codes (also called enhanced status codes) for the most common bounce messages and NDRs that you might encounter in Exchange Online.
@@ -89,13 +88,14 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |5.7.508|`Access denied, [$SenderIPAddress] has exceeded permitted limits within $range range`|The sender's IPv6 range has attempted to send too many messages in too short a time period.|Not applicable|
 |5.7.509|`Access denied, sending domain [$SenderDomain] does not pass DMARC verification`|The sender's domain in the **5322.From** address doesn't pass DMARC.|Not applicable|
 |5.7.510|`Access denied, [contoso.com] does not accept email over IPv6`|The sender is attempting to transmit a message to the recipient over IPv6, but the recipient doesn't accept email messages over IPv6.|Not applicable|
-|5.7.511|`Access denied, banned sender`|The IP that you're attempting to send from has been banned.|To delist the address, email delist@messaging.microsoft.com and provide the full NDR code and IP address to delist.|
+|5.7.511|`Access denied, banned sender`|The IP that you're attempting to send from has been banned.|To delist the address, email delist@messaging.microsoft.com and provide the full NDR code and IP address to delist. <p> For more information, see [Use the delist portal to remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).|
 |5.7.512|`Access denied, message must be RFC 5322 section 3.6.2 compliant`|Message was sent without a valid "From" email address.|Office 365 only. Each message must contain a valid email address in the "From" header field. Proper formatting of this address includes angle brackets around the email address, for example, \<security@contoso.com\>. Without this address Microsoft 365 or Office 365 will reject the message.|
 |5.7.513|`Service unavailable, Client host [$ConnectingIP] blocked by $recipientDomain using Customer Block list (AS16012607)`|The recipient domain has added your sending IP address to its custom blocklist.|The domain that received the email has blocked your sender's IP address. If you think your IP address has been added to the recipient domain's custom blocklist in error, you need to contact them directly and ask them to remove it from the blocklist.|
 |5.7.606-649|`Access denied, banned sending IP [IP1.IP2.IP3.IP4]`|The IP that you're attempting to send from has been banned.|Verify that you're following the [best practices for email deliverability](/dynamics365/marketing/get-ready-email-marketing), and ensure your IPs' reputations haven't been degraded as a result of compromise or malicious traffic. If you believe you're receiving this message in error, you can use the self-service portal to request to be removed from this list. <p> For more information, see [Use the delist portal to remove yourself from the blocked senders list](/microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis).|
 |5.7.700-749|`5.7.705 Access denied, tenant has exceeded threshold`, `5.7.708 Access denied, traffic not accepted from this IP`|The majority of traffic from this tenant has been detected as suspicious and has resulted in a ban on sending ability for the tenant.|Ensure that any compromises or open relays have been resolved, and then contact support through your regular channel. <p> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
 |5.7.750|`Service unavailable. Client blocked from sending from unregistered domains`|A suspicious number of messages from unprovisioned domains is coming from this tenant.|Add and validate any and all domains that you use to send email from Microsoft 365 or Office 365. <p> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
 |n/a|`The message can't be submitted because the sender's submission quota was exceeded`|The user account has exceeded the recipient rate limit (10,000 recipients per day).|The account has likely been compromised. For more information, see [Fix email delivery issues for error 'the sender's submission quota was exceeded' in Exchange Online](fix-error-for-submission-quota-exceeded-in-exchange-online.md).|
+|
 
 ## Run non-delivery report diagnostics
 
@@ -121,7 +121,7 @@ Information provided in the newest style NDRs is designed to help the typical em
 
 <br>
 
-
+****
 
 |Field|Description|
 |---|---|
@@ -131,6 +131,7 @@ Information provided in the newest style NDRs is designed to help the typical em
 |**How to fix it**|This section is designed for the end-user or the email sender who receives the NDR. It explains how to fix the issue.|
 |**More info for email admins**|This section provides a detailed explanation of the problem and solution along with technical details and a link to a web-based article that has detailed reference information.|
 |**Message hops**|This section contains times and system references for the message, which allows an admin to follow the message's hops or server-to-server path. With this info, an admin might quickly spot problems between message hops.|
+|
 
 For NDRs that don't have the latest format, the information might be separated into two sections: User information, and Diagnostic information for administrators. The following figure shows the format for one type of Exchange Online NDR.
 
@@ -158,9 +159,9 @@ Original message headers
 <message header fields>
 ```
 
+<br>
 
-
-
+****
 
 |Field|Description|
 |---|---|
@@ -170,6 +171,7 @@ Original message headers
 |**\<Enhanced status code\>**|This value is assigned by the mail server that rejected the original message and indicates why the message was rejected. These codes are defined in RFC 3463, and use the format _abc x.y.z_, where the placeholder values are integers. For example, a 5._x.x_ code indicates a permanent error, and a 4._x.x_ code indicates a temporary error. Although the enhanced status code is often generated by an external mail server, Exchange Online uses the enhanced status code value to determine the text to display in the user information section.|
 |**\<SMTP response\>**|This value is returned by the mail server that rejected the original message. This text provides an explanation for the enhanced status code value. The text is always presented in US-ASCII format.|
 |**Original message headers**|This section contains the message header fields of the rejected message. These header fields can provide useful diagnostic information, such as the path that the message took before it was rejected, or whether the `To` field value matches the rejected recipient value.|
+|
 
 ## How to interpret an Exchange NDR
 
