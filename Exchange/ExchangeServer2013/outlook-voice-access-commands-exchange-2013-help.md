@@ -27,8 +27,8 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 **Email and voice mail commands**
 
-|**Voice command**|**Touchtone command**|**Description**|
-|:-----|:-----|:-----|
+|Voice command|Touchtone command|Description|
+|---|---|---|
 |"Play"||Plays the current email or voice mail message.|
 |"Next"|#|Reads the next email or voice mail message.|
 |"Next unread"|00 followed by ##|Reads the next unread email message. Available only for email.|
@@ -67,8 +67,8 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 **Calendar commands**
 
-|**Voice command**|**Touchtone command**|**Description**|
-|:-----|:-----|:-----|
+|Voice command|Touchtone command|Description|
+|---|---|---|
 |"Next"|#|Reads the next calendar appointment.|
 |"Next day"|##|Opens and reads the calendar appointments for the next day.|
 |"Repeat"|0|Repeats the menu options that are available. Or, if you're using the VUI, the system reads the calendar appointment again.|
@@ -103,8 +103,8 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 **Contact commands**
 
-|**Voice command**|**Touchtone command**|**Description**|
-|:-----|:-----|:-----|
+|Voice command|Touchtone command|Description|
+|---|---|---|
 |"Directory"|00|Searches the directory for a user.|
 |"Play details"|1|Plays the details of the personal contact, such as the telephone numbers that are listed for the personal contact.|
 |"Send a message"|3|Sends a message to the personal contact that's selected.|
@@ -121,8 +121,8 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 **Personal options commands**
 
-|**Voice command**|**Touchtone command**|**Description**|
-|:-----|:-----|:-----|
+|Voice command|Touchtone command|Description|
+|---|---|---|
 ||1|Turns on or off the telephone Out of Office greeting.|
 ||2|Records the personal voice mail or Out of Office voice mail greeting.|
 ||3|Changes the PIN that's used for Outlook Voice Access.|
