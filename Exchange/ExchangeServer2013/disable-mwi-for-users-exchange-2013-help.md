@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to disable Message Waiting Indicator for Exchange Server users
 ms.assetid: 51cd6dc4-11d1-4eb9-a6c6-1965fcd24267
 f1.keywords:
 - NOCSH

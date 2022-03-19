@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: acbc7b28-6a20-4390-a6b0-107e4cddb999
 ms.reviewer: 
@@ -42,21 +42,12 @@ To access the migration users report for a migration batch, go to new [Exchange 
 
 The name of the migration batch and the following commands are displayed at the top of the window.
 
-<br>
-
-****
-
 |Command|Description|
 |---|---|
 |**Delete**|Delete the selected user from the list of migration users.|
 |**Refresh**|Refresh the list of migration users to update the information displayed for the users in the migration batch.|
-|
 
 ### Columns in the list of migration users
-
-<br>
-
-****
 
 |Column|Description|
 |---|---|
@@ -64,15 +55,10 @@ The name of the migration batch and the following commands are displayed at the 
 |**Status**|The user's migration status. See the status descriptions in the table in the next section.|
 |**Items Synced**|The number of items in the user's on-premises mailbox that were successfully migrated to the Microsoft 365 or Office 365 mailbox.|
 |**Items Skipped**|The number of items in the user's on-premises mailbox that weren't migrated to the Microsoft 365 or Office 365 mailbox.|
-|
 
 ## Migration user statistics for a specific user in new Exchange admin center (New EAC)
 
 To view status information (also called migration user statistics) for a specific mailbox, mail contact, or distribution group, click the mailbox, contact, or distribution group in the list. Status information for the selected mail object is displayed in the details pane. The following table describes each field displayed in the details pane.
-
-<br>
-
-****
 
 |Field|Description|
 |---|---|
@@ -83,7 +69,6 @@ To view status information (also called migration user statistics) for a specifi
 |**Error**|If the migration for the user failed, this field displays a description of the error. This error description is also included in the Migration Errors report.|
 |**Report**|Click **Download the report for this user** to open or save a detailed migration report that contains diagnostic information about the migration status of the user. You or Microsoft Support can use the information in this report to troubleshoot failed migrations.|
 |**Last successful sync date**|The last time that any new items in the on-premises mailbox were copied to the cloud-based mailbox.|
-|
 
 ## Migration users report in Classic Exchange admin center (Classic EAC)
 <a name="bk_userReports"> </a>
@@ -94,21 +79,12 @@ To access the migration users report for a migration batch, select **Recipients*
 
 The name of the migration batch and the following commands are displayed at the top of the window.
 
-<br>
-
-****
-
 |Command|Description|
 |---|---|
 |**Delete** ![Delete icon.](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete the selected user from the list of migration users.|
 |**Refresh** ![Refresh icon.](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the list of migration users to update the information displayed for the users in the migration batch.|
-|
 
 ### Columns in the list of migration users
-
-<br>
-
-****
 
 |Column|Description|
 |---|---|
@@ -116,16 +92,11 @@ The name of the migration batch and the following commands are displayed at the 
 |**Status**|The user's migration status. See the status descriptions in the table in the next section.|
 |**Items Synced**|The number of items in the user's on-premises mailbox that were successfully migrated to the Microsoft 365 or Office 365 mailbox.|
 |**Items Skipped**|The number of items in the user's on-premises mailbox that weren't migrated to the Microsoft 365 or Office 365 mailbox.|
-|
 
 ## Migration user statistics for a specific user in Classic Exchange admin center (Classic EAC)
 <a name="BK_Userstats"> </a>
 
 To view status information (also called migration user statistics) for a specific mailbox, mail contact, or distribution group, click the mailbox, contact, or distribution group in the list. Status information for the selected mail object is displayed in the details pane. The following table describes each field displayed in the details pane.
-
-<br>
-
-****
 
 |Field|Description|
 |---|---|
@@ -136,13 +107,8 @@ To view status information (also called migration user statistics) for a specifi
 |**Error**|If the migration for the user failed, this field displays a description of the error. This error description is also included in the Migration Errors report.|
 |**Report**|Click **Download the report for this user** to open or save a detailed migration report that contains diagnostic information about the migration status of the user. You or Microsoft Support can use the information in this report to troubleshoot failed migrations.|
 |**Last successful sync date**|The last time that any new items in the on-premises mailbox were copied to the cloud-based mailbox.|
-|
 
 Click **More details** to display the following additional information about the selected migration user.
-
-<br>
-
-****
 
 |Field|Description|
 |---|---|
@@ -150,20 +116,14 @@ Click **More details** to display the following additional information about the
 |**In-progress duration**|The length of time the user was actively being migrated.|
 |**Synced duration**|The length of time the migration user had a status of Synced.|
 |**Stalled duration**|The length of time the migration process was stalled for the user.|
-|
 
 ## Migration phases
 <a name="BK_Phases"> </a>
 
 To help you understand the migration status states described in the previous sections, it's helpful to be familiar with the phases of the migration process. The following table describes these phases and indicates whether the phase is included in each type of migration.
 
-<br>
-
-****
-
 |Migration phase|Cutover Exchange migration|Staged Exchange migration|IMAP migration|
 |---|---|---|---|
 |**Provisioning**: The migration process creates the new Microsoft 365 or Office 365 mailbox.|Yes (includes distribution groups and mail contacts)|Yes (includes mail contacts)|No|
 |**Initial synchronization**: After Microsoft 365 or Office 365 mailboxes are provisioned, the migration process migrates mailbox items to the newly provisioned cloud-based mailboxes.|Yes (includes calendar times and contacts)|Yes (includes calendar times and contacts)|Yes|
 |**Incremental synchronization**: The migration process synchronizes the on-premises and the corresponding Microsoft 365 or Office 365 mailbox every 24 hours.|Yes|No|Yes|
-|

@@ -1,7 +1,7 @@
 ---
 title: Fix email delivery issues for error code 5.4.6 or 5.4.14 in Exchange Online
 ms.author: jhendr
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 ms.reviewer: 
 audience: Admin
@@ -33,10 +33,9 @@ The most likely cause is the message hop count being exceeded or the route throu
 
  The information here applies to a range of error codes 5.4.6 through 5.4.20. Use the information in the NDR to help you decide how to fix the problem.
 
-|Icon|Description|Icon|Description|
-| :------------ | :------------ | :------------ | :------------ |
+|Icon|Message|Icon|Message|
+|---|---|---|---|
 |![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this issue?](#im-an-email-admin-how-do-i-fix-this-issue)|
-|
 
 ## I got this bounce message. How do I fix it?
 

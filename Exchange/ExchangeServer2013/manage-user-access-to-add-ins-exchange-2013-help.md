@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Configure user access to add-ins in Outlook.
 ms.assetid: e5833dec-a23a-439e-ac03-92671817bff8
 f1.keywords:
 - NOCSH

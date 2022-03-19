@@ -1,7 +1,7 @@
 ---
 title: "Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online"
 ms.author: jhendr
-author: msdmaguire
+author: JoanneHendrickson
 manager: dansimp
 ms.reviewer: 
 audience: Admin
@@ -28,7 +28,6 @@ Use the information in the NDR to help you decide how to fix the problem.
 |&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 |---|---|---|---|
 |![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. What can I do to fix this?](#im-an-email-admin-what-can-i-do-to-fix-this)|
-|
 
 ## Why did I get this bounce message?
 

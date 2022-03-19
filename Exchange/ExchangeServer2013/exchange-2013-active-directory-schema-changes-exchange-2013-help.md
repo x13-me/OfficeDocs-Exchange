@@ -4,7 +4,9 @@ TOCTitle: Exchange 2013 Active Directory schema changes
 ms:assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
 ms:mtpsurl: https://technet.microsoft.com/library/Bb738144(v=EXCHG.150)
 ms:contentKeyID: 49289322
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: Active Directory schema changes in Exchange Server 2013 
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -21,14 +23,16 @@ Microsoft Exchange Server 2013 adds new and modifies existing Active Directory s
 
 Exchange 2013 schema updates are cumulative. Each release includes all of the changes included in previous releases. This means that if you skip a release, you may still need to apply schema updates even if the release you're installing doesn't include its own changes. The following table gives examples of when your Active Directory will be updated, and when it's already up-to-date.
 
-|**Current Exchange 2013 release installed**|**New Exchange 2013 release being installed**|**Are schema updates required?**|
-|:-----|:-----|:-----|
+|Current Exchange 2013 release installed|New Exchange 2013 release being installed|Are schema updates required?|
+|---|---|---|
 |Service Pack 1|Cumulative Update 8 <br> through <br> Cumulative Update 21|**Yes**, schema updates are required. <br> You need to apply the CU5, CU6, and CU7 schema updates.|
 |Cumulative Update 6|Cumulative Update 8 <br> through <br> Cumulative Update 21|**Yes**, schema updates are required. <br> You need to apply the CU7 schema updates.|
 |Cumulative Update 7|Cumulative Update 8 <br> through <br> Cumulative Update 21|**No**, no schema updates are required. <br> No schema changes are made in CU7 through CU21.|
 
 > [!NOTE]
-> The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.<BR>To verify that Active Directory has been successfully prepared, see the "How do you know this worked?" section in <A href="prepare-active-directory-and-domains-exchange-2013-help.md">Prepare Active Directory and domains</A>.
+> The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.
+>
+> To verify that Active Directory has been successfully prepared, see the "How do you know this worked?" section in [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md).
 
 ## Exchange 2013 CU23 Active Directory schema changes
 
@@ -110,9 +114,9 @@ This section contains the classes modified in Exchange 2013 CU7.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -171,9 +175,9 @@ This section contains the classes modified in Exchange 2013 CU6.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -210,9 +214,9 @@ This section contains the attributes modified in Exchange 2013 CU6.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,8 +250,8 @@ This section contains the classes added in Exchange 2013 CU5.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -281,9 +285,9 @@ This section contains the attributes modified in Exchange 2013 CU5.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -331,8 +335,8 @@ This section contains the classes added in Exchange 2013 SP1.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -358,9 +362,9 @@ This section contains the attributes added in Exchange 2013 SP1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -415,9 +419,9 @@ This section contains the attributes modified in Exchange 2013 SP1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -451,8 +455,8 @@ This section contains the classes added in Exchange 2013 CU3.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -480,9 +484,9 @@ This section contains the attributes modified in Exchange 2013 CU3.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -518,8 +522,8 @@ This section contains the classes added in Exchange 2013 CU2.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -545,9 +549,9 @@ This section contains the classes modified in Exchange 2013 CU2.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -587,9 +591,9 @@ This section contains the attributes modified in Exchange 2013 CU2.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -648,9 +652,9 @@ This section contains the classes modified in Exchange 2013 CU1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -759,8 +763,8 @@ This section contains the classes modified in Exchange 2013 CU1.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -786,9 +790,9 @@ This section contains the attributes modified in Exchange 2013 CU1.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -839,8 +843,8 @@ The following table lists the attributes that are added to the list of indexed a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -900,9 +904,9 @@ This section contains the classes modified in Exchange 2013 RTM.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -1686,9 +1690,9 @@ This section contains the attributes modified in Exchange 2013 RTM.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -2244,8 +2248,8 @@ The following table lists the extended rights that are added when you install Ex
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -2687,8 +2691,8 @@ The following table lists the attributes that are added to the list of indexed a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

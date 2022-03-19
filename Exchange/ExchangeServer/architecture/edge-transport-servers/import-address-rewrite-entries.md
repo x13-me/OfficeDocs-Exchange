@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to create or import email address rewriting in bulk in Exchange Server.'
 ms.topic: article
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms.reviewer:
 title: Import address rewrite entries on Edge Transport servers
@@ -30,8 +30,8 @@ You can use a spreadsheet application like Microsoft Excel to create the CSV fil
 
 The first row, or *header row*, of the CSV file lists the names of the parameters. Each parameter is separated by a comma. The required and optional parameters are described in the following table.
 
-|**Parameter**|**Required or optional**|**Description**|
-|:-----|:-----|:-----|
+|Parameter|Required or optional|Description|
+|---|---|---|
 | _Name_|Required|A unique, descriptive name for the address rewrites entry.|
 | _InternalAddress_|Required|The address you want to change. You can use the following values:  <br/> • A single email address (chris@contoso.com)  <br/> • A single domain or subdomain (contoso.com or sales.contoso.com)  <br/> • A domain and all subdomains (\*.contoso.com)|
 | _ExternalAddress_|Required|The final email address you want. You can use the following values:  <br/> • A single email address if you specified a single email address for _InternalAddress_ <br/> • A single domain or subdomain for all other values of _InternalAddress_|

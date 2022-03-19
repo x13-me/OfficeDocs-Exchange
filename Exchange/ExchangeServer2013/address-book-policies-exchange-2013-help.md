@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: HOw to segment your global address list into groups to create customized GALs in Outlook and Outlook Web App
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 f1.keywords:
 - NOCSH
@@ -40,8 +42,8 @@ In the following figure, Address Book Policy A consists of a subset of the vario
 
  You can use the following methods to assign ABPs to individual mailbox users:
 
-|**New or existing mailbox?**|**Shell**|
-|:-----|:-----|
+|New or existing mailbox?|Shell|
+|---|---|
 |New|[New-Mailbox](/powershell/module/exchange/new-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
 |Existing|[Set-Mailbox](/powershell/module/exchange/set-mailbox) cmdlet with the _AddressBookPolicy_ parameter|
 

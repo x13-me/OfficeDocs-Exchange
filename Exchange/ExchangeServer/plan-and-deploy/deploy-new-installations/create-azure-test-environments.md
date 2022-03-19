@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to create a single-server Exchange 2016 or Exchange 2019 dev/test environment in Microsoft Azure infrastructure services.'
 ms.topic: article
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
 ms.reviewer: 
 title: Exchange dev/test environment in Azure
@@ -242,7 +242,7 @@ $saName=(Get-AZStorageaccount | Where {$_.ResourceGroupName -eq $rgName}).Storag
 New-AZAvailabilitySet -ResourceGroupName $rgName -Name exAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 # Specify the virtual machine name and size
 $vmName="exVM"
-$vmSize="Standard_D3_v2"
+$vmSize="standard_d8s_v3"
 $vnet=Get-AZVirtualNetwork -Name "EXSrvrVnet" -ResourceGroupName $rgName
 $avSet=Get-AZAvailabilitySet -Name exAvailabilitySet -ResourceGroupName $rgName
 $vm=New-AZVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avSet.Id

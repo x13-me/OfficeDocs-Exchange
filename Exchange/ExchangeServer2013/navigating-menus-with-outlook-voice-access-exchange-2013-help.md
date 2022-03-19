@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Use Outlook Voice Access to nagivate menus in Exchange Server
 ms.assetid: dc6a74f2-85fd-43d3-a324-b236b4d2eb3b
 f1.keywords:
 - NOCSH
@@ -339,7 +341,7 @@ To accept a meeting request using their voice, users must do the following:
 
 This process is shown in the following figure.
 
-![Accept a Meeting Request.](images/AcceptAMeetingVUI.gif)
+![Accepting a Meeting Request.](images/AcceptAMeetingVUI.gif)
 
 To accept a meeting request using the telephone keypad, users must do the following:
 
@@ -371,7 +373,7 @@ To reply to a meeting request using their voice, users must do the following:
 
 This process is shown in the following figure.
 
-![Replying to a Meeting Request.](images/ReplyToAMeetingRequestVUI.gif)
+![Reply to to a Meeting Request.](images/ReplyToAMeetingRequestVUI.gif)
 
 To reply to a meeting request using the telephone keypad, users must do the following:
 
@@ -425,7 +427,7 @@ To record a personal greeting using their voice, users must dial an Outlook Voic
 
 This process is shown in the following figure.
 
-![Record Your Personal Greeting.](images/RecordPersonalGreetingVUI.gif)
+![Record a personal greeting.](images/RecordPersonalGreetingVUI.gif)
 
 To record a personal greeting using the telephone keypad, users must dial an Outlook Voice Access number, enter their extension number and PIN, and then do the following:
 
@@ -462,7 +464,7 @@ To locate and send a voice message to another UM-enabled user using their voice,
 
 This process is shown in the following figure.
 
-![Send a Voice Message to a User.](images/SendaVoiceMessageVUI.gif)
+![Send a voice message.](images/SendaVoiceMessageVUI.gif)
 
 To locate and send a voice message to another UM-enabled user using the telephone keypad, users must do the following:
 
@@ -498,7 +500,7 @@ To change their PIN using their voice, users must do the following:
 
 This process is shown in the following figure.
 
-![Change PIN.](images/ChangePinVUI.gif)
+![Change the PIN.](images/ChangePinVUI.gif)
 
 To change their PIN using the telephone keypad, users must do the following:
 

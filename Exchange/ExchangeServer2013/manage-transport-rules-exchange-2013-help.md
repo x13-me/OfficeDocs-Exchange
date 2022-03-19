@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Use transport rules to look for specific conditions on messages.
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 f1.keywords:
 - NOCSH
@@ -210,11 +212,11 @@ To verify that you have successfully modified a transport rule, do the following
 
 You can also use the **Set-TransportRule** cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](/powershell/module/exchange/set-transportrule)
 
-|**Condition Name in the EAC**|**Condition name in Exchange Management Shell**|**Properties**|**Description**|
-|:-----|:-----|:-----|:-----|
+|Condition Name in the EAC|Condition name in Exchange Management Shell|Properties|Description|
+|---|---|---|---|
 |**Stop Processing Rules**| `StopRuleProcessing`| ` Not applicable `|Enables you to stop processing additional rules|
 |**Header/Envelope matching**| `SenderAddressLocation`|Not applicable|Enables you to examine the SMTP message envelope to ensure the header and envelop match|
-|**Audit severity **| `SetAuditSeverity`| `Not applicable`|Enables you to select a severity level for the audit|
+|**Audit severity**| `SetAuditSeverity`| `Not applicable`|Enables you to select a severity level for the audit|
 |**Rule modes**| `Mode`| `Not applicable`|Enables you to set the mode for the rule|
 
 ## Set the priority of a transport rule

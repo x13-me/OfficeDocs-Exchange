@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638091(v=EXCHG.150)
 ms:contentKeyID: 49289189
 ms.reviewer: 
 manager: serdars
+ms.topic: article
+description: Advanced permissions management Exchange 2013
 ms.author: serdars
 author: msdmaguire
 f1.keywords:

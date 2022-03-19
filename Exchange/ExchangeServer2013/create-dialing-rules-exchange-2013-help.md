@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create dialing rules for users in Exchange Server
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 f1.keywords:
 - NOCSH
@@ -30,15 +32,12 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 ## Examples of commonly used dialing rules
 
-****
-
-|**Number pattern**|**Dialed number**|**When would you use this dialing rule?**|
+|Number pattern|Dialed number|When would you use this dialing rule?|
 |---|---|---|
 |\*|\*|Allow all outgoing calls.|
 |1425xxxxxxx|91425xxxxxxx|Prevent users from getting an internal extension or an error when they forget to dial the outside access line number.|
 |1xxxxxxxxxx|1xxxxxxxxxx|Allow all numbers that start with 1.|
 |xxxxxxx|1425xxxxxxx|Add 1 and the local area code 425 to 7-digit numbers.|
-|
 
 ## What do you need to know before you begin?
 

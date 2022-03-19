@@ -33,7 +33,9 @@
 ### [Manage distribution groups](../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md)
 #### [Create group naming policy](../recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy.md)
 #### [Override group naming policy](../recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy.md)
-### [Manage dynamic distribution groups](../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md)
+###  Dynamic distribution groups
+#### [Manage dynamic distribution groups](../recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md)
+#### [Modern dynamic distribution groups in Exchange Online](../recipients-in-exchange-online/manage-dynamic-distribution-groups/modern-dynamic-distribution-groups.md)
 #### [View group members](../recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members.md)
 ### [Moderated recipients](../recipients-in-exchange-online/moderated-recipients-exo/moderated-recipients-exo.md)
 #### [Configure moderated recipients](../recipients-in-exchange-online/moderated-recipients-exo/configure-moderated-recipients-exo.md)
@@ -251,6 +253,7 @@
 ### [Mail flow reports in the new EAC](../monitoring/mail-flow-reports/mail-flow-reports.md)
 #### [Auto forwarded messages report in the new EAC](../monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report.md)
 #### [Email issues for priority accounts report in the new EAC](../monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report.md)
+#### [Exchange transport rule report in the new EAC](../monitoring/mail-flow-reports/mfr-exchange-transport-rule-report.md)
 #### [Inbound messages report in the new EAC](../monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports.md)
 #### [Non-accepted domain report in the new EAC](../monitoring/mail-flow-reports/mfr-non-accepted-domain-report.md)
 #### [Non-delivery details report in the new EAC](../monitoring/mail-flow-reports/mfr-non-delivery-details-report.md)

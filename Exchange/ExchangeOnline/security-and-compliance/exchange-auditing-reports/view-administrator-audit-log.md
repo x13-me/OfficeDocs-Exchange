@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Learn how to view the admin audit log in Exchange Online
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
 ms.reviewer: 
@@ -131,10 +131,6 @@ To view the contents of the **CmdletParameters** and **ModifiedProperties** fiel
 
 Each audit log entry contains the information described in the following table. The audit log contains one or more audit log entries.
 
-<br>
-
-****
-
 |Field|Description|
 |---|---|
 |`RunspaceId`|This field is used internally.|
@@ -155,4 +151,3 @@ Each audit log entry contains the information described in the following table. 
 |`Identity`|This field is used internally.|
 |`IsValid`|This field is used internally.|
 |`ObjectState`|This field is used internally.|
-|

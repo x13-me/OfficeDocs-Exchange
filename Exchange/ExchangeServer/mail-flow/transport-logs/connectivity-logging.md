@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: c31fd710-4ae4-4d9a-8936-d056e7ca2748
 ms.reviewer: 
 title: Connectivity logging in Exchange Server
@@ -82,8 +82,8 @@ The connectivity log files are text files that contain data in the comma-separat
 
 Connectivity logging stores each outbound connection event on a single line in the log. The information on each line is organized by fields, and these fields are separated by commas. The following table describes the fields that are used to classify each outgoing connection event.
 
-|**Field name**|**Description**|
-|:-----|:-----|
+|Field name|Description|
+|---|---|
 |**date-time**|UTC date-time of the connection event. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where _yyyy_ = year, _mm_ = month, _dd_ = day, T indicates the beginning of the time component, _hh_ = hour, _mm_ = minute, _ss_ = second, _fff_ = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.|
 |**session**|A GUID value. The value is the same for every event that's associated with the session, but different for each session.|
 |**source**|One of these values:  <br/> **SMTP** for SMTP connections.  <br/> **MapiDelivery** for connections from the local mailbox database by the Mailbox Transport Delivery service.  <br/> **MapiSubmission** for connections from the local mailbox database by the Mailbox Transport Submission service.|

@@ -5,6 +5,8 @@ ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms:mtpsurl: https://technet.microsoft.com/library/Ff808312(v=EXCHG.150)
 ms:contentKeyID: 62853455
 ms.reviewer: 
+ms.topic: article
+description: How to configure Kerberos authentication for load-balanced Client Access servers in Exchange
 manager: serdars
 ms.author: serdars
 author: msdmaguire

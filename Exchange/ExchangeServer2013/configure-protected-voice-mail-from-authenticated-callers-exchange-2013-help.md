@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure Protected Voice Mail from authenticated callers in Exchange Server
 ms.assetid: f69e94a7-9768-4445-9ded-e78d732bd623
 f1.keywords:
 - NOCSH

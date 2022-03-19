@@ -5,9 +5,11 @@ ms:assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
 ms:mtpsurl: https://technet.microsoft.com/library/Bb430743(v=EXCHG.150)
 ms:contentKeyID: 50934209
 ms.reviewer: 
+ms.topic: article
+description: About recipient resolution in Microsoft Exchange
 manager: serdars
 ms.author: serdars
-author: msdmaguire
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -70,8 +72,8 @@ The following table describes the recipient objects that are found in Active Dir
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -234,9 +236,9 @@ The expansion process also enforces any message restrictions that are configured
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -344,9 +346,9 @@ The following table describes the performance counters that are available for re
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -412,8 +414,8 @@ The following table describes the recipient resolution events that are written i
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

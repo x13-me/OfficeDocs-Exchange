@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: Learn how shadow redundancy in Exchange 2016 and Exchange 2019 improves high availability for messages in the transport pipeline.
 ms.topic: article
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
 ms.reviewer: 
 title: Shadow redundancy in Exchange Server
@@ -28,8 +28,8 @@ For more information about transport high availability features in Exchange Serv
 
 This table describes the components of shadow redundancy in the Transport service on Mailbox servers. These terms are used throughout the topic.
 
-|**Term**|**Description**|
-|:-----|:-----|
+|Term|Description|
+|---|---|
 |Transport high availability boundary|A database availability group (DAG) in DAG environments, or an Active Directory site in non-DAG environments. For DAGs that span multiple Active Directory sites, the DAG itself is still the boundary (not the site). <br/><br/> When a message arrives on a Mailbox server in the transport high availability boundary, Exchange tries to maintain two redundant copies of the message on Mailbox servers within the boundary. When a message leaves the transport high availability boundary, Exchange stops maintaining redundant copies of the message.|
 |Primary message|The message submitted into the transport pipeline for delivery.|
 |Shadow message|The redundant copy of the message that the shadow server retains until it confirms the primary message was successfully processed by the primary server.|
@@ -62,8 +62,8 @@ These are the situations where shadow redundancy can't protect messages in trans
 
 By default, shadow redundancy is enabled globally in the Transport service on all Mailbox servers. This table describes the parameters that enable shadow redundancy.
 
-|**Parameter**|**Default value**|**Description**|
-|:-----|:-----|:-----|
+|Parameter|Default value|Description|
+|---|---|---|
 | _ShadowRedundancyEnabled_ on **Set-TransportConfig**| `$true`| `$true`: Shadow redundancy is enabled on all Mailbox servers in the organization. <br/><br/> `$false`: Shadow redundancy is disabled on all Mailbox servers in the organization.|
 | _RejectMessageOnShadowFailure_ on **Set-TransportConfig**| `$false`| `$false`: When a shadow copy of the message can't be created, the primary message is accepted anyway by Mailbox servers in the organization. These messages aren't redundantly persisted while they're in transit. <br/><br/> `$true`: No message is accepted or acknowledged by any Mailbox server in the organization until a shadow copy of the message is successfully created. If a shadow copy of the message can't be created, the primary message is rejected with a transient error, but the sending server can transmit the message again. The SMTP response code is `451 4.4.0 Message failed to be made redundant`. All messages in the organization are redundantly persisted while they're in transit. <br/><br/> **Note**: Use `$true` only if you have multiple Mailbox servers in the same DAG or Active Directory site so a shadow copy of the message can be created. <br/><br/> This parameter is only meaningful when _ShadowRedundancyEnabled_ is `$true`.|
 
@@ -121,8 +121,8 @@ If the shadow copy of a message is successfully created, but the SMTP session be
 
 The following table describes the parameters that control the creation of shadow messages
 
-|**Source**|**Default value**|**Description**|
-|:-----|:-----|:-----|
+|Source|Default value|Description|
+|---|---|---|
 | _ShadowMessagePreferenceSetting_ on **Set-TransportConfig**|`PreferRemote`|This parameter is only used when the primary server that's trying to make a shadow copy of the message is a member of a DAG that spans multiple Active Directory sites. <br/>• `PreferRemote`: Try to make a shadow copy of the message on a DAG member in a different Active Directory site based on the number of attempts specified by the _MaxRetriesForRemoteSiteShadow_ parameter. If the operation fails, try make a shadow copy of the message on a DAG member in the local Active Directory site based on the number of attempts specified by the _MaxRetriesForLocalSiteShadow_ parameter. <br/>• `LocalOnly`: Try to make a shadow copy of the message only on a DAG member in the local Active Directory site based on the number of attempts specified by the _MaxRetriesForLocalSiteShadow_ parameter. <br/>• `RemoteOnly`: Try to make shadow copy of the message only on a DAG member in a different Active Directory site based on the number of attempts specified by the _MaxRetriesForRemoteSiteShadow_ parameter.|
 | _MaxRetriesForRemoteSiteShadow_ on **Set-TransportConfig**|4|This parameter specifies the maximum number of attempts to create a shadow copy of the message on another server in the DAG when the value of the _ShadowMessagePreferenceSetting_ parameter is `PreferRemote` (the default value) or `RemoteOnly`. <br/><br/> This parameter is only used when the Mailbox server is a member of a DAG that spans multiple Active Directory sites. <br/><br/> If a shadow copy of the message isn't successfully created after the specified number of attempts, the result depends of the value of the _RejectMessageOnShadowFailure_ parameter: <br/>• `$true`: The primary message is rejected with a transient error. <br/>• `$false`: The primary message is accepted anyway, but isn't redundantly persisted.|
 | _MaxRetriesForLocalSiteShadow_ on **Set-TransportConfig**|2|This parameter specifies the maximum number of attempts to create a shadow copy of the message on another Mailbox server in the local Active Directory site when: <br/> • The Mailbox server is a member of a DAG that spans multiple Active Directory sites, and the value of the _ShadowMessagePreferenceSetting_ parameter is `PreferRemote` (the default value) or `LocalOnly`. <br/> • The Mailbox server is a member of a DAG that's in one Active Directory site. <br/> • The Mailbox server isn't a member of a DAG. <br/><br/> If a shadow copy of the message isn't successfully created after the specified number of attempts, the result depends of the value of the _RejectMessageOnShadowFailure_ parameter: <br/>• `$true`: The primary message is rejected with a transient error. <br/>ò `$false`: The primary message is accepted anyway, but isn't redundantly persisted.|
@@ -166,8 +166,8 @@ Shadow Redundancy Manager is responsible for the following actions for all the s
 
 This table describes the parameters that control how shadow messages are maintained.
 
-|**Parameter**|**Default value**|**Description**|
-|:-----|:-----|:-----|
+|Parameter|Default value|Description|
+|---|---|---|
 | _ShadowHeartbeatFrequency_ on **Set-TransportConfig**|2 minutes|The maximum amount of time a shadow server waits before opening an SMTP connection to the primary server to check the discard status of messages.|
 | _ShadowResubmitTimeSpan_ on **Set-TransportConfig**|3 hours|How long a server waits before deciding that a primary server has failed and assumes ownership of shadow messages in the shadow queue for the primary server that's unreachable. <br/><br/> Note that a shadow server can also promote itself as the primary server before the value of this parameter when the queue database of the primary server is found to have a different database ID.|
 | _ShadowMessageAutoDiscardInterval_ on **Set-TransportConfig**|2 days|How long a server retains discard events for successfully delivered messages. A primary server queues discard events until it's queried by the shadow server. However, if the shadow server doesn't query the primary server for the duration specified in this parameter, the primary server deletes the queued discard events.|
@@ -178,7 +178,7 @@ This table describes the parameters that control how shadow messages are maintai
 
 This table summarizes how shadow redundancy minimizes message loss due to server outages. For clarity, the server that had an outage is named Mailbox01.
 
-|**Recovery scenario**|**Actions taken**|
-|:-----|:-----|
+|Recovery scenario|Actions taken|
+|---|---|
 |Mailbox01 comes back online with a new queue database before the value of the _ShadowResubmitTimeSpan_ parameter has passed (by default, 3 hours). <br/><br/> This scenario can occur when the queue database is unrecoverable due to data corruption or hardware failure.|When the new queue database ID is detected on Mailbox01, each server that has shadow messages queued for Mailbox01 will assume ownership of those messages and resubmit them. The messages are then delivered to their destinations. <br/><br/> The maximum delay for message submission after the new queue database is detected is the value of the _ShadowHeartbeatFrequency_ parameter (by default, 2 minutes).|
 |Mailbox01 comes back online with the same database after the value of the _ShadowResubmitTimeSpan_ parameter has passed (by default, 3 hours). <br/><br/> This scenario can occur after a network card failure, or time-consuming maintenance on the server.|After Mailbox01 comes back online, it will deliver the messages in its queues, which have already been delivered by the servers that hold shadow copies of messages for Mailbox01. This will result in duplicate delivery of these messages. Exchange mailbox users won't see duplicate messages due to duplicate message detection. However, recipients on other messaging systems might see duplicate copies of messages. <br/><br/> The maximum delay for message submission is the value of the _ShadowResubmitTimeSpan_ parameter.|

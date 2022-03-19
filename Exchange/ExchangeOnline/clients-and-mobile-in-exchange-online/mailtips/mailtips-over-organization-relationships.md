@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Microsoft Exchange Server allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 1784256f-abe1-4503-b8c4-26d544b73452
 ms.reviewer: 
@@ -25,10 +25,6 @@ Exchange Online allows you to configure organization relationships with other Ex
 ## Controlling the MailTips access level
 
 You may want to restrict certain types of MailTips. You can either allow all MailTips to be returned or allow only a limited set that would prevent NDRs. You can configure this setting with the _MailTipsAccessLevel_ parameter on the **Set-OrganizationRelationship** cmdlet. The following table shows which MailTips are returned over the organization relationship.
-
-<br>
-
-****
 
 |MailTip|Is the MailTip available when the access level is set to All?|Is the MailTip available when the access level is set to Limited?|
 |---|---|---|

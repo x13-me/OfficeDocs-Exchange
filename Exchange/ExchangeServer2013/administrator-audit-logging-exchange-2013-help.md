@@ -4,7 +4,9 @@ TOCTitle: Administrator audit logging
 ms:assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335144(v=EXCHG.150)
 ms:contentKeyID: 50117641
+ms.topic: article
 ms.reviewer: 
+description: About administrator audit logging in Microsoft Exchange Server
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -92,8 +94,8 @@ Each audit log entry contains the information described in the following table. 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

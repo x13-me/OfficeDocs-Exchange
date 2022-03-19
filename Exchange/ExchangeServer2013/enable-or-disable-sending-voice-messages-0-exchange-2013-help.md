@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable or disable sending voice messages to users in Exchange Server
 ms.assetid: faa300d8-2534-40db-8ef9-428be8bb7934
 f1.keywords:
 - NOCSH

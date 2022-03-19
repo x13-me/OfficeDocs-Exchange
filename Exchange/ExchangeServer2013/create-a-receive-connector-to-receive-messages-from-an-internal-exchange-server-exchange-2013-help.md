@@ -7,6 +7,8 @@ ms:contentKeyID: 49289255
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+ms.topic: article
+description: How to create a Receive connector to receive messages from an internal Exchange server
 author: msdmaguire
 f1.keywords:
 - NOCSH

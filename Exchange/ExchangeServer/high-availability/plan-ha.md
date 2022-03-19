@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server 2016 or Exchange Server 2019 deployment plan.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms.reviewer: 
 title: Plan for high availability and site resilience
@@ -130,8 +130,8 @@ Each network adapter must be configured properly based on its intended use. A ne
 
 A network adapter intended for use by a MAPI network should be configured as described in the following table.
 
-|**Networking features**|**Settings**|
-|:-----|:-----|
+|Networking features|Settings|
+|---|---|
 |Client for Microsoft Networks|Enabled|
 |QoS Packet Scheduler|Optionally enabled|
 |File and Printer Sharing for Microsoft Networks|Enabled|
@@ -154,8 +154,8 @@ The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
 A network adapter intended for use by a Replication network should be configured as described in the following table.
 
-|**Networking features**|**Settings**|
-|:-----|:-----|
+|Networking features|Settings|
+|---|---|
 |Client for Microsoft Networks|Disabled|
 |QoS Packet Scheduler|Optionally enabled|
 |File and Printer Sharing for Microsoft Networks|Disabled|

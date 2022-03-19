@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Exchange creates the retention policy Default MRM Policy in your Exchange Online and on-premises Exchange organization. The policy is automatically applied to new users in Exchange Online. In on-premises organizations, the policy is applied when you create an archive for the mailbox. You can change the retention policy applied to a user at any time.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
 ms.reviewer: 
@@ -37,10 +37,6 @@ You can modify tags included in the Default MRM Policy, for example by changing 
 
 The following table lists the default retention tags linked to the Default MRM Policy.
 
-<br>
-
-****
-
 |Name|Type|Retention age (days)|Retention action|
 |---|---|---|---|
 |Default 2 years move to archive|Default Policy Tag (DPT)|730|Move to Archive|
@@ -54,23 +50,17 @@ The following table lists the default retention tags linked to the Default MRM P
 |1 Year Delete|Personal tag|365|Delete and Allow Recovery|
 |5 Year Delete|Personal tag|1,825|Delete and Allow Recovery|
 |Never Delete|Personal tag|Not applicable|Delete and Allow Recovery|
-|
 
 ## What you can do with the Default MRM Policy
 
-<br>
-
-****
-
 |You can...|In Exchange Online...|In Exchange Server...|
-|:-----|:-----|:-----|
+|---|---|---|
 |Apply the Default MRM Policy automatically to new users|Yes, applied by default. No action is required.|Yes, applied by default if you also create an archive for the new user. <p> If you create an archive for the user later, the policy is applied automatically only if the user doesn't have an existing Retention Policy.|
 |Modify the retention age or retention action of a retention tag linked to the policy|Yes|Yes|
 |Disable a retention tag linked to the policy|Yes|Yes|
 |Add a retention tag to the policy|Yes|Yes|
 |Remove a retention tag from the policy|Yes|Yes|
 |Set another policy as the default retention policy to be applied automatically to new users|No|No|
-|
 
 ## More information
 

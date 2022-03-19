@@ -5,6 +5,8 @@ ms:assetid: 2d29c28c-91e6-4055-a177-7b76fc23f10a
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.oab(v=EXCHG.150)
 ms:contentKeyID: 49720750
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the OAB health set in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.reviewer: 
@@ -179,17 +179,12 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 You can also use the Set-TransportRule cmdlet to modify existing mail flow rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](/powershell/module/exchange/set-transportrule)
 
-<br>
-
-****
-
 |Condition Name in the EAC|Condition name in Exchange Online PowerShell|Description|
 |---|---|---|---|
 |**Stop Processing Rules**|_StopRuleProcessing_|Enables you to stop processing additional rules|
 |**Header/Envelope matching**|_SenderAddressLocation_|Enables you to examine the SMTP message envelope to ensure the header and envelop match|
 |**Audit severity**|_SetAuditSeverity_|Enables you to select a severity level for the audit|
 |**Rule modes**|_Mode_|Enables you to set the mode for the rule|
-|
 
 ## Set the priority of a mail flow rule
 

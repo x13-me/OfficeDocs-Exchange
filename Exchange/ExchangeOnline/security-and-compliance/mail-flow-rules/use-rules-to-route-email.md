@@ -3,7 +3,7 @@ description: Learn how to use mail flow rules to route email messages based on t
 ms.localizationpriority: medium
 ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 ms.collection: 
@@ -47,17 +47,12 @@ New-TransportRule -Name "Block messages with unacceptable words" -SubjectOrBodyC
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-<br>
-
-****
-
 |Expression|Matches|
 |---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|
 |[*character_group*]|Any single character in *character_group*.|
-|
 
 For example, this text file contains common misspellings of Microsoft.
 

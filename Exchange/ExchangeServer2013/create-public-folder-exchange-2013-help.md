@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a public folder in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage'
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab

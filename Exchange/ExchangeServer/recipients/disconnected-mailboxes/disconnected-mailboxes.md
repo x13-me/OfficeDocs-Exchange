@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about different disconnected mailboxes and how to work with them.'
 ms.topic: article
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 85ff95d4-0aa4-4964-ac4b-5b07a5a1039f
 ms.reviewer:
 title: Disconnected mailboxes
@@ -125,8 +125,8 @@ The procedures for restoring and permanently deleting a soft-deleted mailbox are
 
 The following table summarizes the information about disconnected mailboxes, including how the mailbox was disconnected, what happens to the corresponding Active Directory user account when a mailbox is disconnected, and the options and tools you have to connect or restore disconnected mailboxes.
 
-|**How mailbox was disabled**|**Value of _DisconnectReason_ property**|**Is Active Directory user account retained?**|**Connect or restore options**|**Tools**|
-|:-----|:-----|:-----|:-----|:-----|
+|How mailbox was disabled|Value of _DisconnectReason_ property|Is Active Directory user account retained?|Connect or restore options|Tools|
+|---|---|---|---|---|
 |The EAC: **Recipients** \> **Mailboxes** \> **Disable** <br/><br/> The Exchange Management Shell: **Disable-Mailbox** cmdlet|Disabled|Yes|Connect to same user account|The EAC: **Recipients** \> **Mailboxes** \> **Connect a Mailbox** <br/><br/> The Exchange Management Shell: **Connect-Mailbox** cmdlet|
 |The EAC: **Recipients** \> **Mailboxes** \> **Delete** <br/><br/> The Exchange Management Shell: **Remove-Mailbox** cmdlet|Disabled|No|Connect to a different user account <br/><br/> Restore to a different mailbox|The EAC: **Recipients** \> **Mailboxes** \> **Connect a Mailbox** <br/><br/> The Exchange Management Shell: <br/>• **Connect-Mailbox** cmdlet <br/>• **Enable-Mailbox** cmdlet <br/>• **New-MailboxRestore** cmdlet|
 |Moved to a different mailbox database|SoftDeleted|Yes|Connect to a different user account <br/><br/> Restore to a different mailbox|The EAC: **Recipients** \> **Mailboxes** \> **Connect a Mailbox** <br/><br/> The Exchange Management Shell: <br/>• **Connect-Mailbox** cmdlet  <br/>• **Enable-Mailbox** cmdlet <br/>• **New-MailboxRestore** cmdlet|
@@ -136,8 +136,8 @@ The following table summarizes the information about disconnected mailboxes, inc
 
 The following table contains links to topics that will help you manage disconnected mailboxes. This includes managing disconnected user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes.
 
-|**Topic**|**Description**|
-|:-----|:-----|
+|Topic|Description|
+|---|---|
 |[Disable or delete a mailbox in Exchange Server](disable-or-delete-mailboxes.md)|Learn how to disable or delete mailboxes.|
 |[Connect a disabled mailbox](connect-disabled-mailboxes.md)|Learn how to connect a disabled mailbox to an existing user account.|
 |[Connect or restore a deleted mailbox](restore-deleted-mailboxes.md)|Learn how to connect a deleted mailbox to a user account or restore the contents of a deleted mailbox to an existing mailbox.|

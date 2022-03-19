@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
 ms.reviewer:
 title: Mail flow rule actions in Exchange Server
@@ -36,8 +36,8 @@ The actions that are available in mail flow rules on Mailbox servers are describ
 
 - The names of some of the actions that are returned by the **Get-TransportRuleAction** cmdlet are different than the corresponding parameter names, and multiple parameters might be required for an action.
 
-|**Action in the EAC**|**Action parameter in the Exchange Management Shell**|**Property**|**Description**|**Available in**|
-|:-----|:-----|:-----|:-----|:-----|
+|Action in the EAC|Action parameter in the Exchange Management Shell|Property|Description|Available in|
+|---|---|---|---|---|
 |**Forward the message for approval to these people** <br/><br/> **Forward the message for approval** \> **to these people**|_ModerateMessageByUser_|`Addresses`|Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios](../../../ExchangeServer2013/common-message-approval-scenarios-exchange-2013-help.md). You can't use a distribution group as a moderator.|Exchange 2010 or later|
 |**Forward the message for approval to the sender's manager** <br/><br/> **Forward the message for approval** \> **to the sender's manager**|_ModerateMessageByManager_|n/a|Forwards the message to the sender's manager for approval. <br/><br/> This action only works if the sender's **Manager** attribute is defined in Active Directory. Otherwise, the message is delivered to the recipients without moderation.|Exchange 2010 or later|
 |**Redirect the message to these recipients** <br/><br/> **Redirect the message to** \> **these recipients**|_RedirectMessageTo_|`Addresses`|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|Exchange 2010 or later|
@@ -67,8 +67,8 @@ The actions that are available in mail flow rules on Mailbox servers are describ
 
 A small subset of actions that are available on Mailbox servers are also available on Edge Transport servers, but there are also some actions that are only available on Edge Transport servers. There's no EAC on Edge Transport servers, so you can only manage mail flow rules in the Exchange Management Shell on the local Edge Transport server. The actions are described in the following table. The properties types are described in the [Property values](#property-values) section.
 
-|**Action parameter in the Exchange Management Shell**|**Property**|**Description**|**Available on**|**Available in**|
-|:-----|:-----|:-----|:-----|:-----|
+|Action parameter in the Exchange Management Shell|Property|Description|Available on|Available in|
+|---|---|---|---|---|
 |_AddToRecipients_|`Addresses`|Adds one or more recipients to the **To** field of the message. The original recipients can see the additional addresses.|Mailbox servers and Edge Transport servers|Exchange 2010 or later|
 |_BlindCopyTo_|`Addresses`|Adds one or more recipients to the **Bcc** field of the message. The original recipients aren't notified, and they can't see the additional addresses.|Mailbox servers and Edge Transport servers|Exchange 2010 or later|
 |_CopyTo_|`Addresses`|Adds one or more recipients to the **Cc** field of the message. The original recipients can see the additional address.|Mailbox servers and Edge Transport servers|Exchange 2010 or later|
@@ -88,8 +88,8 @@ A small subset of actions that are available on Mailbox servers are also availab
 
 The property values that are used for actions in mail flow rules are described in the following table.
 
-|**Property**|**Valid values**|**Description**|
-|:-----|:-----|:-----|
+|Property|Valid values|Description|
+|---|---|---|
 |`AddedManagerAction`|One of the following values: <br/>• **To** <br/>• **Cc** <br/>• **Bcc** <br/>• **Redirect**|Specifies how to include the sender's manager in messages. <br/><br/> If you select **To**, **Cc**, or **Bcc**, the sender's manager is added as a recipient in the specified field. <br/><br/> If you select **Redirect**, the message is only delivered to the sender's manager without notifying the sender or the recipient. <br/><br/> This action only works if the sender's **Manager** attribute is defined in Active Directory.|
 |`Addresses`|Exchange recipients|Depending on the action, you might be able to specify any mail-enabled object in the organization, or you might be limited to a specific object type. Typically, you can select multiple recipients, but you can only send an incident report to one recipient.|
 |`AuditSeverityLevel`|One of the following values: <br/>• Uncheck **Audit this rule with severity level**, or select **Audit this rule with severity level** with the value **Not specified** (`DoNotAudit`) <br/>• **Low** <br/>• **Medium** <br/>• **High**|The values **Low**, **Medium**, or **High** specify the severity level that's assigned to the incident report and to the corresponding entry in the message tracking log. <br/><br/> The other value prevents an incident report from being generated, and prevents the corresponding entry from being written to the message tracking log.|

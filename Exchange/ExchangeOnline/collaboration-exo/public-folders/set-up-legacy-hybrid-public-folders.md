@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
 ms.collection:
@@ -42,14 +42,11 @@ When you complete this procedure your on-premises and Microsoft 365 or Office 36
 
 The following table describes the version and location combinations of user mailboxes and public folders that are supported. "Hybrid not applicable" is still a supported scenario, but is not considered a hybrid scenario since both the public folders and the users are residing in the same location.
 
-****
-
 |Version|On-Premises Exchange 2010 User Mailbox|On-Premises Exchange 2013 User Mailbox|Exchange Online User Mailbox|
-|----|----|----|----|
+|---|---|---|---|
 |On-Premises Exchange 2010 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
 |On-Premises Exchange 2013 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
 |Exchange Online Public Folders|Not supported|Supported|Hybrid not applicable|
-|
 
 > [!NOTE]
 > Outlook 2016 does not support accessing Exchange 2007 legacy public folders. If you have users who are using Outlook 2016, you must move your public folders to a more recent version of Exchange Server. More information about Outlook 2016 and Office 2016 compatibility with Exchange 2007 and earlier versions can be found in [this article](https://support.microsoft.com/office/2ab9e8ef-4cd9-4041-9426-73e8f6c5aacc).

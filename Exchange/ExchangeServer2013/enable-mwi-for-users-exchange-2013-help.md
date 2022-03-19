@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable Message Waiting Indicator for users in Exchange Server
 ms.assetid: 3d0ca657-00b6-4108-a850-b092fede1f75
 f1.keywords:
 - NOCSH

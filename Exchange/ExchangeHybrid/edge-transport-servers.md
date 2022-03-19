@@ -37,6 +37,16 @@ When you add an Edge Transport server to your hybrid deployment, it communicates
 
 If you add an Edge Transport server to your hybrid deployment, you don't need to route mail sent between on-premises users and internet recipients through it. Only messages sent between the on-premises and Exchange Online organizations will be routed through the Edge Transport server.
 
+After running the HCW, ensure to update the Receive Connector on the Edge to ensure it will accept mail from EOP securely:
+
+For Commercical Office 365 Tenant use:
+
+Set-ReceiveConnector -Identity "<Edge server name>\Default internal receive connector <Edge server name>" -TlsDomainCapabilities mail.protection.outlook.com:AcceptOorgProtocol -Fqdn "subject name on the public cert on Edge"
+
+For US Government Office 365 Tenant use:
+
+Set-ReceiveConnector -Identity "<Edge server name>\Default internal receive connector <Edge server name>" -TlsDomainCapabilities mail.protection.office365.us:AcceptOorgProtocol -Fqdn "subject name on the public cert on Edge"
+
 > [!IMPORTANT]
 > If you need to delete and recreate an Edge subscription that's used to communicate between your on-premises organization and Exchange Online, make sure to run the Hybrid Configuration wizard again. Recreating an Edge subscription removes configuration changes that are needed for your on-premises organization to talk to Exchange Online. Re-running the Hybrid Configuration wizard applies those changes again.
 

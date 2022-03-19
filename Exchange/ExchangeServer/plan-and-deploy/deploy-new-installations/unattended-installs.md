@@ -2,8 +2,8 @@
 ms.localizationpriority: high
 description: 'Summary: Learn how to install, uninstall, upgrade, and recover Exchange 2016 or Exchange 2019 from the command line.'
 ms.topic: article
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
 ms.reviewer: 
 title: Use unattended mode in Exchange Setup
@@ -32,8 +32,8 @@ For information about tasks to complete after installation, see [Exchange Server
 
 The primary (top-level, scenario-defining) command line switches that are available in unattended Setup mode in Exchange 2016 or Exchange 2019 are described in the following table:
 
-|**Switch**|**Description**|
-|:-----|:-----|
+|Switch|Description|
+|---|---|
 |_/IAcceptExchangeServerLicenseTerms_|This switch is required in all unattended setup commands (whenever you run Setup.exe with any additional switches). If you don't use this switch, you'll get an error. To read the license terms, visit [Microsoft License Terms](https://www.microsoft.com/useterms). </br></br> **Note:** Beginning with the September 2021 Cumulative Updates, this switch is no longer available in Exchange Server 2016 or Exchange Server 2019.|
 |/IAcceptExchangeServerLicenseTerms_DiagnosticDataON</br>/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF|This switch is required in all unattended setup commands (whenever you run Setup.exe with any additional switches). If you don't use this switch, you'll get an error. To read the license terms, visit [Microsoft License Terms](https://www.microsoft.com/useterms).</br>To accept the license terms and send diagnostic data to Microsoft use the switch with suffix *DiagnosticDataON*.</br>To accept the license terms but not send diagnostic data to Microsoft use the switch with suffix *DiagnosticDataOFF*.</br></br>**Note:** These switches are available beginning with the September 2021 Cumulative Updates for Exchange Server 2016 and Exchange Server 2019.|
 |_/Mode:\<InstallationMode\>_ <br/> (or _/m:\<InstallationMode\>_)|Valid values are: <br/>• **Install**: Installs Exchange on a new server using the Exchange server roles specified by the _/Roles_ switch. This is the default value if the command doesn't use the _/Mode_ switch. <br/>• **Uninstall**: Uninstalls Exchange from a working server. <br/>• **Upgrade**: Installs a Cumulative Update (CU) on an Exchange server. <br/>• **RecoverServer**: Recovers an Exchange server using the existing Exchange server object in Active Directory after a catastrophic hardware or software failure on the server. For instructions, see [Recover Exchange servers](../../high-availability/disaster-recovery/recover-exchange-servers.md).|
@@ -46,8 +46,8 @@ The primary (top-level, scenario-defining) command line switches that are availa
 
 The optional (supporting) command line switches that are available in unattended Setup mode in Exchange 2016 or Exchange 2019 are described in the following table:
 
-|**Switch**|**Valid values**|**Default value**|**Available with|Description**|
-|:-----|:-----|:-----|:-----|:-----|
+|Switch|Valid values|Default value|Available with|Description
+|---|---|---|---|---|
 |_/ActiveDirectorySplitPermissions:\<TrueOrFalse\>_|True or False|False|`/Mode:Install /Roles:Mailbox` or _/PrepareAD_ commands for the first Exchange server in the organization.|Specifies the Active Directory split permissions model when preparing Active Directory. For more information, see the "Active Directory split permissions" section in [Understanding split permissions](../../../ExchangeServer2013/understanding-split-permissions-exchange-2013-help.md).|
 |_/AdamLdapPort:\<TCPPortNumber\>_|A valid TCP port number|50389|`/Mode:Install /Roles:EdgeTransport` commands|Specifies a custom LDAP port to use for the Active Directory Lightweight Directory Services (AD LDS) instance on Edge Transport servers. The value is stored in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\EdgeTransportRole\AdamSettings\MSExchange\LdapPort`.|
 |_/AdamSslPort:\<TCPPortNumber\>_|A valid TCP port number|50636|`/Mode:Install /Roles:EdgeTransport` commands|Specifies a custom SSL (TLS) port to use for the AD LDS instance on Edge Transport servers. The value is stored in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\EdgeTransportRole\AdamSettings\MSExchange\SslPort`.|

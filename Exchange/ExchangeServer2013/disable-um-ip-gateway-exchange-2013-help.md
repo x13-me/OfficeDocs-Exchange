@@ -4,6 +4,8 @@ TOCTitle: Disable a UM IP gateway
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: Disable a UM IP gateway in Exchange Server
 ms.reviewer:
 ms.assetid: fe3a8797-1230-49cb-a839-ccec238266b6
 f1.keywords:

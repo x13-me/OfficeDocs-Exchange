@@ -7,6 +7,8 @@ ms:contentKeyID: 50395401
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
+description: How to configure IP addresses and ports for POP3 and IMAP4 access in Exchange Server
+ms.topic: article
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -79,7 +81,7 @@ After you've set the IP address and port settings for POP3, you must restart the
 
 For more information about syntax and parameters, see [Set-PopSettings](/powershell/module/exchange/Set-PopSettings).
 
-## How do you know this worked?
+### How do you know this worked?
 
 Do the following to verify that you have changed POP3 IP address and port settings on a server.
 
@@ -135,7 +137,7 @@ After you've set the IP address and port settings for IMAP4, you must restart th
 
 For more information about syntax and parameters, see [Set-ImapSettings](/powershell/module/exchange/Set-ImapSettings).
 
-## How do you know this worked?
+### How do you know this worked?
 
 Do the following to verify that you have changed IMAP4 IP address and port settings on a server.
 

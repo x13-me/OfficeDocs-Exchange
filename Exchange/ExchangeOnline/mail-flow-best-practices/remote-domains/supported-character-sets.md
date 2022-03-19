@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: MIME and non-MIME character sets that admins can configure in remote domains (message formatting settings for external domains) in Exchange Online
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
 ms.reviewer: 
@@ -74,10 +74,6 @@ The following table describes the character sets that you can configure in remot
 
 - In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](/powershell/module/exchange/set-remotedomain) cmdlet.
 
-  <br>
-
-  ****
-
   |Name|Description|
   |---|---|
   |big5|Chinese Traditional (Big5)|
@@ -117,4 +113,3 @@ The following table describes the character sets that you can configure in remot
   |windows-1257|Baltic (Windows)|
   |windows-1258|Vietnamese (Windows)|
   |windows-874|Thai (Windows)|
-  |

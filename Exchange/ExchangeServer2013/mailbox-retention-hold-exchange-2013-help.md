@@ -4,6 +4,8 @@ TOCTitle: Place a mailbox on retention hold
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to place a mailbox on retention hold in Exchange
 ms.reviewer:
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 f1.keywords:

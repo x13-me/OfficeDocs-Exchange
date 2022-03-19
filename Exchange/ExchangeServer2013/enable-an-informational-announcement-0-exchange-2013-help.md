@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable an informational announcement in Exchange Server
 ms.assetid: 07f6c13e-3781-4127-9321-f0f85f054259
 f1.keywords:
 - NOCSH

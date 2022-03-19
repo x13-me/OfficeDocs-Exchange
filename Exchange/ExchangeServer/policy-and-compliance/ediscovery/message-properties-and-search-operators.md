@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: This topic describes the properties of Exchange email messages that you can search by using In-Place eDiscovery & Hold in Exchange Server. The topic also describes Boolean search operators and other search query techniques that you can use to refine eDiscovery search results.
 ms.topic: reference
-author: serdars
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
 ms.reviewer: 
 title: Message properties and search operators for In-Place eDiscovery in Exchange Server
@@ -26,8 +26,8 @@ In-Place eDiscovery uses Keyword Query Language (KQL). For more information, see
 
 The following table lists email message properties that can be searched using an In-Place eDiscovery search or by using the **New-MailboxSearch** or the **Set-MailboxSearch** cmdlet. The table includes an example of the _property:value_ syntax for each property and a description of the search results returned by the examples.
 
-|**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
-|:-----|:-----|:-----|:-----|
+|Property|Property description|Examples|Search results returned by the examples|
+|---|---|---|---|
 |Attachment|The names of files attached to an email message.|attachment: annualreport.ppt <br/><br/> attachment: annual\*|Messages that have an attached file with a name matching annualreport.ppt, for example, "annualreport.ppt" or "2017 annualreport.ppt". <br/><br/> In the second example, using the wildcard returns messages with the word "annual" in the file name of an attachment.|
 |Bcc|The BCC field of an email message.<sup>1</sup>|bcc: pilarp@contoso.com <br/><br/> bcc:pilarp <br/><br/> bcc:"Pilar Pinilla"|All examples return messages with Pilar Pinilla included in the Bcc field.|
 |Category|The categories to search. Categories can be defined by users by using Outlook or Outlook on the web (formerly known as Outlook Web App). Valid values are: <br/>• blue <br/>• green <br/>• orange <br/>• purple <br/>• red <br/>• yellow|category:"Red Category"|Messages that have been assigned the red category in the source mailboxes.|
@@ -49,8 +49,8 @@ The following table lists email message properties that can be searched using an
 
 Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define more-precise mailbox searches by including or excluding specific words in the search query. Other techniques, such as using property operators (such as \>= or ..), quotation marks, parentheses, and wildcards, help you refine eDiscovery search queries. The following table lists the operators that you can use to narrow or broaden search results.
 
-|**Operator**|**Usage**|**Description**|
-|:-----|:-----|:-----|
+|Operator|Usage|Description|
+|---|---|---|
 |AND|keyword1 AND keyword2|Returns messages that include all of the specified keywords or `property: value` expressions.|
 |+|keyword1 +keyword2 +keyword3|Returns items that contain *either* `keyword2` or `keyword3` *and* that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`. <br/><br/> The query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns messages that include one or more of the specified keywords or `property: value` expressions.|

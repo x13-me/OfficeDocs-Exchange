@@ -5,6 +5,8 @@ ms:assetid: 01aa5dab-689b-4738-afab-0d2f11a60b39
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169226(v=EXCHG.150)
 ms:contentKeyID: 53382778
 ms.reviewer: 
+ms.topic: how-to
+description: How to upgrade Exchange 2010 Unified Messaging to Exchange 2013 Unified Messaging
 manager: serdars
 ms.author: serdars
 author: msdmaguire
@@ -86,31 +88,31 @@ Custom greetings, announcements, menus, and prompts are audio files (in .wav or 
 
 When you're exporting and importing custom greetings, announcements, menus, and prompts from Exchange 2010 to Exchange 2013, you must use the **Export-UMPrompt** and **Import-UMPrompt** cmdlets. You can't use the EAC to export or import custom prompts. On an Exchange 2010 server, use the **Export-UMPrompt** cmdlet to export the Exchange 2010 dial plan and auto attendant prompts. After you've exported the prompts, you can import them to the Exchange 2013 Mailbox server. When you run the **Export-UMPrompt** cmdlet from your Exchange 2010 server, the command performs a GUID or object identifier lookup for the dial plan or auto attendant in Active Directory and queries it to determine if there are any custom greetings, announcements, menus, or prompts. If found, the custom greetings, announcements, menus, or prompts will be saved to the directory that you specify. After you've exported all custom greetings, announcements, menus, and prompts, use the **Import-UMPrompt** cmdlet to import the prompts into your Exchange 2013 system mailbox.
 
-This example exports the welcome greeting for the UM dial plan `MyUMDialPlan` and saves it as the file `welcomegreeting.wav`.
+This example exports the welcome greeting for the UM dial plan `MyUMDialPlan` and saves it as the file `welcomegreeting.wav` in D:\\DialPlanPrompts.
 
 ```powershell
 $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
-set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+[System.IO.File]::WriteAllBytes('D:\DialPlanPrompts\welcomegreeting.wav', $prompt.AudioData)
 ```
 
-This example imports the welcome greeting `welcomegreeting.wav` from d:\\UMPrompts into the UM dial plan `MyUMDialPlan`.
+This example imports the welcome greeting `welcomegreeting.wav` from D:\\UMPrompts into the UM dial plan `MyUMDialPlan`.
 
 ```powershell
-[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+$c = [System.IO.File]::ReadAllBytes('D:\UMPrompts\welcomegreeting.wav')
 Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
 ```
 
-This example exports a custom greeting for the UM auto attendant `MyUMAutoAttendant` and saves it to the file `welcomegreetingbackup.wav`.
+This example exports a custom greeting for the UM auto attendant `MyUMAutoAttendant` and saves it to the file `welcomegreetingbackup.wav` in E:\UMPromptsBackup.
 
 ```powershell
-Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
-set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+$prompt = Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
+[System.IO.File]::WriteAllBytes('E:\UMPromptsBackup\welcomegreeting.wav', $prompt.AudioData)
 ```
 
-This example imports the welcome greeting `welcomegreeting.wav` from d:\\UMPrompts into the UM auto attendant `MyUMAutoAttendant`.
+This example imports the welcome greeting `welcomegreeting.wav` from D:\\UMPrompts into the UM auto attendant `MyUMAutoAttendant`.
 
 ```powershell
-[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+$c = [System.IO.File]::ReadAllBytes('D:\UMPrompts\welcomegreeting.wav')
 Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
 ```
 

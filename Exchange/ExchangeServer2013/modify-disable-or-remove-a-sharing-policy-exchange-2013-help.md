@@ -5,6 +5,8 @@ ms:assetid: 714af42d-ca29-4bb4-ac48-f0b3d4fd1c15
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657460(v=EXCHG.150)
 ms:contentKeyID: 49289300
 ms.reviewer: 
+ms.topic: article
+description: How to modify a sharing policy in Exchange 2013
 manager: serdars
 ms.author: serdars
 author: msdmaguire

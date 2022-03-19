@@ -4,6 +4,8 @@ TOCTitle: In-Place Hold and Litigation Hold
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: In-Place Hold and Litigation Hold in Exchange Server
 ms.reviewer:
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 f1.keywords:
@@ -111,8 +113,8 @@ The Recoverable Items folder contains the following subfolders used to store del
 
 - **Versions**: When a user placed on In-Place Hold or Litigation Hold, mailbox items must be protected from tampering or modification by the user or a process. This is accomplished using a copy-on-write process. When a user or a process changes specific properties of a mailbox item, a copy of the original item is saved in the Versions folder before the change is committed. The process is repeated for subsequent changes. Items captured in the Versions folder are also indexed and returned in In-Place eDiscovery searches. After the hold is removed, copies in the Versions folder are removed by the Managed Folder Assistant.
 
-|**Item type**|**Properties that trigger copy-on-write**|
-|:-----|:-----|
+|Item type|Properties that trigger copy-on-write|
+|---|---|
 |Messages (IPM.Note\*)  <br/> Posts (IPM.Post\*)| Subject  <br/>  Body  <br/>  Attachments  <br/>  Senders/Recipients  <br/>  Sent/Received Dates|
 |Items other than messages and posts| Any change to a visible property, except the following:  <br/>  Item location (when an item is moved between folders)  <br/>  Item status change (read or unread)  <br/>  Changes to retention tag applied to an item|
 |Items in the default folder Drafts|None (items in the Drafts folder are exempt from copy on write)|

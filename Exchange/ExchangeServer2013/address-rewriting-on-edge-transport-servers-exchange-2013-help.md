@@ -4,6 +4,7 @@ TOCTitle: Address rewriting on Edge Transport servers
 ms:assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996806(v=EXCHG.150)
 ms:contentKeyID: 61200279
+ms.topic: article
 ms.reviewer: 
 manager: serdars
 ms.author: serdars
@@ -66,10 +67,10 @@ Address rewriting changes an email address by rewriting specific fields in the m
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

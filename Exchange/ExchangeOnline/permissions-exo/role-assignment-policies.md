@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn about role assignment policies, and how to view, create, modify, remove, and assign them in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 
@@ -45,8 +45,8 @@ Role assignment policies are how end-user roles (as opposed to management roles)
 
 The available end-user roles that you can assign to mailbox plans are described in the following table:
 
-|**Role**|**Assigned to Default Role Assignment Policy by default?**|**Description**|
-|:-----|:-----|:-----|
+|Role|Assigned to Default Role Assignment Policy by default?|Description|
+|---|---|---|
 |My Custom Apps|Yes|Install custom apps.|
 |My Marketplace Apps|Yes|Install marketplace apps.|
 |My ReadWriteMailbox Apps|Yes|Install apps with ReadWriteMailbox permissions.|

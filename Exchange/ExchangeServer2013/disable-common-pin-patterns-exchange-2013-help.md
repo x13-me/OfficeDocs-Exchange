@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to disable common PIN patterns for voice mail in Exchange Server
 ms.assetid: eecc40ae-fac7-41e4-a1e1-16330f4462a3
 f1.keywords:
 - NOCSH

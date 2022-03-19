@@ -5,6 +5,8 @@ ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create and manage room mailboxes in Microsoft Exchange
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
 f1.keywords:
 - NOCSH

@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
 ms.reviewer: 
 title: Allow anonymous relay on Exchange servers
@@ -48,8 +48,8 @@ In Exchange Server, you can create a dedicated Receive connector in the Front En
 
     There are two different methods that you can use to configure the permissions that are required for anonymous relay on a Receive connector. These methods are described in the following table.
 
-|**Method**|**Permissions granted**|**Pros**|**Cons**|
-|:-----|:-----|:-----|:-----|
+|Method|Permissions granted|Pros|Cons|
+|---|---|---|---|
 |Add the **Anonymous users** (`Anonymous`) permission group to the Receive connector and add the `Ms-Exch-SMTP-Accept-Any-Recipient` permission to the `NT AUTHORITY\ANONYMOUS LOGON` security principal on the Receive connector.|Connections use the `NT AUTHORITY\ANONYMOUS LOGON` security principal with the following permissions: <br/>• `ms-Exch-Accept-Headers-Routing` <br/>• `ms-Exch-SMTP-Accept-Any-Recipient` <br/>• `ms-Exch-SMTP-Accept-Any-Sender` <br/>• `ms-Exch-SMTP-Accept-Authoritative-Domain-Sender` <br/>• `ms-Exch-SMTP-Submit`|Grants the minimum required permissions to allow anonymous relay.|More difficult to configure (must use the Exchange Management Shell). <br/><br/> The network hosts are considered anonymous senders. Messages don't bypass antispam or message size limit checks, and the sender's email address can't be resolved to the corresponding display name (if any) in the global address list.|
 |Add the **Exchange servers** (`ExchangeServers`) permission group and the **Externally secured** (`ExternalAuthoritative`) authentication mechanism to the Receive connector.|Connections use the `MS Exchange\Externally Secured Servers` security principal with the following permissions: <br/>• `ms-Exch-Accept-Headers-Routing` <br/>• `ms-Exch-Bypass-Anti-Spam` <br/>• `ms-Exch-Bypass-Message-Size-Limit` <br/>• `ms-Exch-SMTP-Accept-Any-Recipient` <br/>• `ms-Exch-SMTP-Accept-Any-Sender` <br/>• `ms-Exch-SMTP-Accept-Authentication-Flag` <br/>• `ms-Exch-SMTP-Accept-Authoritative-Domain-Sender` <br/>• `ms-Exch-SMTP-Accept-Exch50` <br/>• `ms-Exch-SMTP-Submit`|Easier to configure (can do everything in the Exchange admin center). <br/><br/> The network hosts are considered authenticated senders. Messages bypass antispam and message size limit checks, and the sender's email address can be resolved to a corresponding display name in the global address list.|Grants the permissions to submit messages as if they originated from internal senders within your Exchange organization. The network hosts are considered completely trustworthy, regardless of the volume, size, or content of the messages that they send.|
 

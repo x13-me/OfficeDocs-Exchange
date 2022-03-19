@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: In Microsoft 365 or Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: fa618cd2-29d0-42b3-a7a0-0ecd1aee6c20
 ms.reviewer: 
@@ -49,7 +49,7 @@ Android 9.0 and earlier versions utilize Android's device admin functionality to
 With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity using the [getPasswordComplexity](https://developer.android.com/reference/android/app/admin/DevicePolicyManager#getPasswordComplexity()) API. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
 
 |Password complexity level |Password requirements  |
-|---------|---------|
+|---|---|
 |None     |No password requirements are configured         |
 |Low     |Password can be a pattern or a PIN with either repeating (4444) or ordered (1234, 4321, 2468) sequences         |
 |Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
@@ -58,7 +58,7 @@ With Android 10.0 and later, Android has removed device admin functionality. Ins
 Android's password complexity levels are mapped to the following Exchange mobile device mailbox policy settings:
 
 |Mobile device mailbox policy setting  |Android password complexity level  |
-|---------|---------|
+|---|---|
 |Password enabled = false     | None        |
 |Allow simple password = true<br/>Min password length < 4      |Low         |
 |Alphanumeric password required = false<br/>Min password length >= 4<br/>Min password length < 8      |Medium         |
@@ -72,8 +72,8 @@ The following table summarizes the settings you can specify using mobile device 
 
 **Mobile device mailbox policy settings**
 
-|**Setting**|**Description**|
-|:-----|:-----|
+|Setting|Description|
+|---|---|
 |Allow Bluetooth|This setting specifies whether a mobile device allows Bluetooth connections. The available options are Disable, HandsFree Only, and Allow. The default value is Allow.|
 |Allow Browser|This setting specifies whether Pocket Internet Explorer is allowed on the mobile device. This setting doesn't affect third-party browsers installed on the mobile device. The default value is `$true`.|
 |Allow Camera|This setting specifies whether the mobile device camera can be used. The default value is `$true`.|

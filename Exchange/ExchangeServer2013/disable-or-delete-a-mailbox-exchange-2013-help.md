@@ -8,6 +8,8 @@ ms.reviewer:
 manager: serdars
 ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to disable or delete a mailbox in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -30,9 +32,9 @@ The following table shows which types of Exchange mailboxes you can disable and 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -143,7 +145,7 @@ Disable-Mailbox "Conf Room 31/1234 (12)"
 Disable-Mailbox sharedmbx@contoso.com
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully disabled a mailbox, do one of the following:
 
@@ -211,7 +213,7 @@ Remove-Mailbox "Fleet Van (16)"
 Remove-Mailbox corpprint
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully deleted a mailbox, do one of the following sets of verification procedures.
 

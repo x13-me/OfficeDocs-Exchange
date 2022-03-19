@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 description: 'Summary: Learn how address rewriting on Edge Transport servers in Exchange Server can modify sender and recipient email addresses on email messages in transit.'
 ms.topic: overview
-author: msdmaguire
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
 ms.reviewer: 
 title: "Exchange Server: Address rewriting on Edge Transport servers"
@@ -69,8 +69,8 @@ Address rewriting changes an email address by rewriting specific fields in the m
 
 **Message fields rewritten on outbound and inbound messages**
 
-|**Field name**|**Location**|**Outbound messages**|**Inbound messages**|
-|:-----|:-----|:-----|:-----|
+|Field name|Location|Outbound messages|Inbound messages|
+|---|---|---|---|
 |**MAIL FROM**|Message envelope|Rewritten|Not rewritten|
 |**RCPT TO**|Message envelope|Not rewritten|Rewritten|
 |**To**|Message header|Not Rewritten|Rewritten|

@@ -4,7 +4,9 @@ TOCTitle: Common attachment blocking scenarios for transport rules
 ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
+description: Attachment blocking scenarios for transport rules in Exchange 2013.
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 f1.keywords:
 - NOCSH
@@ -53,8 +55,8 @@ If you want to reject a message but let the intended recipient know what happene
 
 You can include placeholders in the notification message so that it includes information about the original message. The placeholders must be enclosed in two percent signs (%%), and when the notification message is sent, the placeholders are replaced with information from the original message. You can also use basic HTML such as \<br\>, \<b\>, \<i\>, and \<img\> in the message.
 
-|**Type of information**|**Placeholder**|
-|:-----|:-----|
+|Type of information|Placeholder|
+|---|---|
 |Sender of the message.|%%From%%|
 |Recipients listed on the "To" line.|%%To%%|
 |Recipients listed on the "Cc" line.|%%Cc%%|

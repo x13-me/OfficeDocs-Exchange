@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-ms.author: serdars
+ms.author: jhendr
 manager: serdars
 ms.topic: article
 author: cichur

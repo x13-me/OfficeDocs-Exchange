@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 description: Admins can learn how to use the Exchange admin center (EAC) to export mailbox audit logs in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
 ms.reviewer: 
@@ -112,10 +112,6 @@ The following example shows an entry from the mailbox audit log contained in the
 
 Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox.
 
-<br>
-
-****
-
 |Field|Description|
 |---|---|
 |Owner|The owner of the mailbox that was accessed by a non-owner.|
@@ -130,4 +126,3 @@ Here's a description of useful fields in the mailbox audit log. They can help yo
 |MailboxOwnerUPN|The email address of the mailbox owner.|
 |LogonUserDN|The display name of the non-owner.|
 |Subject|The subject line of the email message that was affected by the non-owner.|
-|
