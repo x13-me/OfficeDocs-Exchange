@@ -9,6 +9,8 @@ ms.assetid: 8fe9247c-695f-47d8-827e-c79d0426854b
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+ms.topic: article
+description: Outlook Voice Access commands in Exchange Server 2013.
 ---
 
 # Outlook Voice Access commands in Exchange Server
@@ -25,7 +27,7 @@ Outlook Voice Access consists of two user interfaces: the Telephone User Interfa
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox and manage your email and voice mail. The following table lists the commands that are available for managing your email and voice mail.
 
-**Email and voice mail commands**
+**Email and voice mail commands**:
 
 |Voice command|Touchtone command|Description|
 |---|---|---|
@@ -65,7 +67,7 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox and manage your calendar. The following table lists the commands that are available for managing your calendar.
 
-**Calendar commands**
+**Calendar commands**:
 
 |Voice command|Touchtone command|Description|
 |---|---|---|
@@ -101,7 +103,7 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox, change personal options, or call or send a message to a contact. If you choose to use your voice, which is selected by default, and select the contacts menu option, the voice mail system you to use the telephone keypad to navigate the find a contact options. You can also locate a user in the directory or a contact by using the telephone keypad. The following table lists the commands that are available for managing your contacts or searching for a user.
 
-**Contact commands**
+**Contact commands**:
 
 |Voice command|Touchtone command|Description|
 |---|---|---|
@@ -119,7 +121,7 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox and manage your personal options. When you configure personal options using Outlook Voice Access, you can only use the telephone keypad to navigate the menus. Using your voice to navigate the menus is not available for configuring personal options. The following table lists the commands that are available for managing your personal options.
 
-**Personal options commands**
+**Personal options commands**:
 
 |Voice command|Touchtone command|Description|
 |---|---|---|
