@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd876886(v=EXCHG.150)
 ms:contentKeyID: 49289258
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: How to create an unscoped role in Exchange Server
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -52,7 +54,7 @@ If you want to make scripts or non-Exchange cmdlets available to administrators 
 
 Here are the steps to create an unscoped top-level role:
 
-## Step 1: Create the unscoped top-level role
+### Step 1: Create the unscoped top-level role
 
 Unscoped top-level roles don't have a parent role. You need to specify the *UnscopedTopLevel* switch to create a role without a parent. Use the following syntax to create the new role.
 
@@ -70,7 +72,7 @@ After it's created, the role is empty until you add scripts or non-Exchange cmdl
 
 For detailed syntax and parameter information, see [New-ManagementRole](/powershell/module/exchange/New-ManagementRole).
 
-## Step 2a: Add script management role entries
+### Step 2a: Add script management role entries
 
 If you want to add a script to the new unscoped role, use this step. If you want to add a non-Exchange cmdlet to the new unscoped role, use Step 2b.
 
@@ -93,7 +95,7 @@ Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Lo
 > [!NOTE]
 > The <STRONG>Add-ManagementRoleEntry</STRONG> cmdlet performs basic validation to make sure that you add only the parameters that exist in the script. However, no further validation is done after the role entry is added. If parameters are later added or removed, you must manually update the role entries that contain the script.
 
-## Step 2b: Add non-Exchange cmdlet role entries
+### Step 2b: Add non-Exchange cmdlet role entries
 
 If you want to add a non-Exchange cmdlet to the new unscoped role, use this step. If you want to add a script to the new unscoped role, use Step 2a.
 
@@ -116,7 +118,7 @@ Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName C
 > [!NOTE]
 > The <STRONG>Add-ManagementRoleEntry</STRONG> cmdlet performs basic validation to make sure that you add only the parameters that exist in the cmdlet. However, no further validation is done after the role entry is added. If the cmdlet is later changed, and parameters are added or removed, you must manually update the role entries that contain the cmdlet.
 
-## Step 3: Assign the management role
+### Step 3: Assign the management role
 
 The final step when you create and configure a role is to assign it to a role assignee.
 
@@ -135,7 +137,7 @@ If you have an existing, unscoped top-level role or other unscoped roles that yo
 
 Here are the steps to create an unscoped child role:
 
-## Step 1: Create the unscoped child role
+### Step 1: Create the unscoped child role
 
 New, unscoped child roles can be based on existing unscoped roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. If you create an unscoped role that's based on another unscoped role, you must choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child unscoped roles can't have management role entries that don't exist in the parent role.
 
@@ -156,7 +158,7 @@ New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
 
 For detailed syntax and parameter information, see [New-ManagementRole](/powershell/module/exchange/New-ManagementRole).
 
-## Step 2: Change the role's management role entries
+### Step 2: Change the role's management role entries
 
 After you create your role, you need to change the role's entries. You can remove an entire role entry, which removes access to the associated script or non-Exchange cmdlet completely. Or, you can remove parameters from a role entry to remove access to those specific parameters on the associated script or non-Exchange cmdlet.
 
@@ -172,7 +174,7 @@ When you change a role entry on a role, you can do one of the following:
 
 To remove role entries from your new role, see [Remove a role entry from a role](remove-a-role-entry-from-a-role-exchange-2013-help.md).
 
-## Step 3: Assign the management role
+### Step 3: Assign the management role
 
 The final step when you create and configure a role is to assign it to a role assignee.
 

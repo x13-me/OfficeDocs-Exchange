@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ673519(v=EXCHG.150)
 ms:contentKeyID: 49315394
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to deploy voice mail and Unified Messaging in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

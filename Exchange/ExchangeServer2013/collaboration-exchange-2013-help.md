@@ -5,9 +5,11 @@ ms:assetid: f45c1be1-2a66-4610-a28d-4adc6d212769
 ms:mtpsurl: https://technet.microsoft.com/library/JJ218725(v=EXCHG.150)
 ms:contentKeyID: 48385713
 ms.reviewer: 
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: About Exchange Server features that help your end users easily collaborate in email.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -63,11 +65,11 @@ The following table gives you a quick glance at each of the collaboration featur
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

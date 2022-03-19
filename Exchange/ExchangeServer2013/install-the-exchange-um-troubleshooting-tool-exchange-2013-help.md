@@ -5,8 +5,10 @@ ms:assetid: 84223af0-a717-49ee-add6-86313bb30d17
 ms:mtpsurl: https://technet.microsoft.com/library/Ff844714(v=EXCHG.150)
 ms:contentKeyID: 55129211
 ms.reviewer:
+ms.topic: article
+description: How to install the Exchange UM Troubleshooting Tool
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

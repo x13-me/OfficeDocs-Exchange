@@ -1,13 +1,13 @@
 ---
 title: "Fix email delivery issues for error code 550 5.7.1 in Exchange Online"
 ms.author: jhendr
-author: msdmaguire
+author: JoanneHendrickson
 manager: serdars
 ms.reviewer: 
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom: MiniMaven
@@ -22,13 +22,13 @@ description: "Learn how to fix email issues for error code 5.7.1 (and also 5.7.0
 # Fix email delivery issues for error code 550 5.7.1 in Exchange Online
 
 > [!IMPORTANT]
-> Mail flow rules are now available in the new Exchange Admin Center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
+> Mail flow rules are now available in the new Exchange admin center. [Try it now](https://admin.exchange.microsoft.com/#/transportrules)!
 
 It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 5.7.1 in a non-delivery report (also known as an NDR, bounce message, delivery status notification, or DSN). This information also applies to error codes 5.7.0 through 5.7.999.
 
 |Icon|Message|Icon|Message|
 |---|---|---|---|
-|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue)|
+|![Email user icon.](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do I fix this issue?](#i-got-this-bounce-message-how-do-i-fix-this-issue)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How can I fix this issue?](#im-an-email-admin-how-can-i-fix-this-issue)|
 
 This information also applies to error codes 5.7.0 through 5.7.999 in Exchange Online and Microsoft 365 or Office 365. There can be several causes for dsn error code 5.7.1, for which solutions are provided later in this topic.
 
@@ -101,9 +101,9 @@ To configure the public folder to accept messages from external senders, follow 
 
 2. Go to **Public folders** \> **Public folders**.
 
-3. Choose a public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+3. Choose a public folder from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-   :::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited":::
+   :::image type="content" source="../../media/editing-a-public-folder.png" alt-text="The screen on which the details of a public folder can be edited.":::
 
 4. Click **Mail flow settings**.
 
@@ -111,7 +111,7 @@ To configure the public folder to accept messages from external senders, follow 
    - Clear the check box for **Require that all senders are authenticated**.
    - Select **All senders**.
 
-   :::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configure all the senders to send messages to the public folder":::
+   :::image type="content" source="../../media/allow-all-senders-public-folder.png" alt-text="The screen on which the users configure all the senders to send messages to the public folder.":::
 
 6. Click **Save**.
 
@@ -119,15 +119,15 @@ To configure the public folder to accept messages from external senders, follow 
 
 1. Open the Exchange admin center (EAC). For more information, see [exchange admin center in exchange online](../../exchange-admin-center.md).
 
-2. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
+2. In the EAC, go to **Public folders** \> **Public folders** \> select the public folder from the list, and then click **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
-   ![View public folders to help fix DSN 5.7.135](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
+   ![View public folders to help fix DSN 5.7.135.](../../media/fcffe06b-0f7d-4370-b4be-519982aaf5b3.png)
 
 3. In the public folder properties dialog box that opens, go to **Mail flow settings**, and configure the following settings in the **Accept messages from** section:
     - Clear the check box for **Require that all senders are authenticated**.
     - Select **All senders**.
 
-   ![Public folder delivery restrictions to help fix DSN 5.7.135](../../media/0b1eed9e-0da4-4c75-a0e5-17ce93ae0663.png)
+   ![Public folder delivery restrictions to help fix DSN 5.7.135.](../../media/0b1eed9e-0da4-4c75-a0e5-17ce93ae0663.png)
 
 4. Click **Save**.
 
@@ -192,11 +192,11 @@ For more information, see DSN 5.7.129 Errors in Exchange Online and Microsoft 36
 
 ## Still need help?
 
-[![Get help from the community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
+[![Get help from the community forums.](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://answers.microsoft.com/)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
+[![Admins: Sign in and create a service request.](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support)
 
-[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
+[![Admins: Call Support.](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](/microsoft-365/Admin/contact-support-for-business-products)
 
 ## See also
 

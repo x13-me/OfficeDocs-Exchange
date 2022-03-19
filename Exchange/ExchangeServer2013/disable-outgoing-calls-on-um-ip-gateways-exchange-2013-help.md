@@ -1,10 +1,12 @@
 ---
 title: 'Disable outgoing calls on UM IP gateways: Exchange 2013 Help'
 TOCTitle: Disable outgoing calls on UM IP gateways
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Disable outgoing calls on Unified Messaging IP gateways in Exchange Server
 ms.assetid: a3777cc6-37e4-4359-ada3-a962ac0ef0c3
 f1.keywords:
 - NOCSH
@@ -36,7 +38,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to disable outgoing calls for a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM IP Gateway** page, clear the check box next to **Allow outgoing calls through this UM IP gateway**.
 

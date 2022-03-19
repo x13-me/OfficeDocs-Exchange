@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: e6e4b0d0-4c3d-4826-a818-8aeab06b9b76
 ms.reviewer: 
 description: When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Microsoft 365 or Office 365, you have a few choices for optimizing the migration performance.
-title: Tips for optimizing IMAP migrations
+title: Tips for optimizing IMAP migrations in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -24,7 +24,7 @@ manager: serdars
 
 ---
 
-# Tips for optimizing IMAP migrations
+# Tips for optimizing IMAP migrations in Exchange Online
 
 When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Microsoft 365 or Office 365, you have a few choices for optimizing the migration performance.
 

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124004(v=EXCHG.150)
 ms:contentKeyID: 49315473
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to remove a UM language pack in Exchange Server.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

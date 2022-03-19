@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create and manage mail-enabled security groups in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 ms.reviewer:
 title: Manage mail-enabled security groups in Exchange Server
@@ -53,9 +53,9 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) and then select **Security group** in the drop down list that appears.
+2. Click **New** ![Add icon.](../media/ITPro_EAC_AddIcon.png) and then select **Security group** in the drop down list that appears.
 
-   ![In the EAC, click Recipients, Groups, New, Security Group](../media/36d5bb51-b232-410a-886a-7326aecec78b.png)
+   ![In the EAC, click Recipients, Groups, New, Security Group.](../media/36d5bb51-b232-410a-886a-7326aecec78b.png)
 
 3. On the **New security group** page that opens, configure these settings (values marked with an **\*** are required):
 
@@ -88,15 +88,15 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
      - Approve messages sent to the group (if moderation is enabled)
 
-     To add owners, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Owners** dialog that appears, select one or more owners, click **Add**, and then click **OK**.
+     To add owners, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **Select Owners** dialog that appears, select one or more owners, click **Add**, and then click **OK**.
 
-     To remove owners, select the owner in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+     To remove owners, select the owner in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
    - **Members**
 
-     To add members to the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Members** dialog that appears, select one or more members, click **Add**, and then click **OK**.
+     To add members to the group, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **Select Members** dialog that appears, select one or more members, click **Add**, and then click **OK**.
 
-     To remove members, select the member in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+     To remove members, select the member in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
    - **Add group owners as members**: When this check box is selected, you don't need to manually include group owners in the list of members. If you don't want the group owners to be members of the group, clear this check box.
 
@@ -168,13 +168,13 @@ To verify that you've successfully created a mail-enabled security group, do any
 
    - Scroll through the list of groups.
 
-   - Click **Search** ![Search icon](../media/ITPro_EAC_.png) and enter part of the group's name, email address, or alias.
+   - Click **Search** ![Search icon.](../media/ITPro_EAC_.png) and enter part of the group's name, email address, or alias.
 
-   - Click **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the group.
+   - Click **More options** ![More Options icon.](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the group.
 
    - Click the **Group Type** column header to sort the groups by **Security group**.
 
-     Once you've found the mail-enabled security group that you want to modify, select it, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+     Once you've found the mail-enabled security group that you want to modify, select it, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the **Edit Security Group** page that opens, click one of the tabs to view or change the settings of the group:
 
@@ -196,7 +196,7 @@ To verify that you've successfully created a mail-enabled security group, do any
 
    - [Group delegation](#group-delegation)
 
-   ![In the EAC, click Recipients, Groups, select the Security Group, and then click Edit](../media/27065433-0942-43cd-88c2-65f635972376.png)
+   ![In the EAC, click Recipients, Groups, select the Security Group, and then click Edit.](../media/27065433-0942-43cd-88c2-65f635972376.png)
 
     When you're finished, click **Save** or **Cancel**.
 
@@ -230,17 +230,17 @@ Use this section to assign group owners. All groups must have at least one owner
 
 - Approve messages sent to the group (if moderation is enabled)
 
-To add owners, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Owners** dialog that appears, select one or more owners, click **Add**, and then click **OK**.
+To add owners, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **Select Owners** dialog that appears, select one or more owners, click **Add**, and then click **OK**.
 
-To remove owners, select the owner in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+To remove owners, select the owner in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 #### Membership
 
 Use this tab to add or remove group members. Group owners aren't required to be members of the group.
 
-To add members to the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Members** dialog that opens, select one or more members, click **Add**, and then click **OK**.
+To add members to the group, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **Select Members** dialog that opens, select one or more members, click **Add**, and then click **OK**.
 
-To remove members, select the member in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+To remove members, select the member in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 #### Membership approval
 
@@ -254,9 +254,9 @@ Use this tab to control who's allowed to send messages to the group.
 
 - **Senders inside and outside of my organization**: The group accepts messages from authenticated and unauthenticated (internal and external) senders.
 
-- Restrict the internal senders who can send messages to the group by clicking **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Allowed Senders** dialog that appears, select one or more senders, click **Add**, and then click **OK**. Only the specified senders can send messages to the group.
+- Restrict the internal senders who can send messages to the group by clicking **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **Select Allowed Senders** dialog that appears, select one or more senders, click **Add**, and then click **OK**. Only the specified senders can send messages to the group.
 
-  To remove internal senders that are allowed to send messages to the group, select the sender in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+  To remove internal senders that are allowed to send messages to the group, select the sender in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 > [!IMPORTANT]
 > Mail contacts are always considered unauthenticated (external) senders. If you select **Only senders inside my organization** and add the mail contact to the list of approved internal senders, messages sent to the group by the mail contact will be rejected.
@@ -269,13 +269,13 @@ Use this tab to configure the moderation settings for messages that are sent to 
 
   - **Group moderators**: For mail-enabled security groups, the group owners aren't automatically used as moderators. You need to specify at least one moderator here when moderation is enabled.
 
-    To add moderators, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Group Moderators** dialog that appears, select one or more moderators (which can include any of the group owners), click **Add**, and then click **OK**.
+    To add moderators, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **Select Group Moderators** dialog that appears, select one or more moderators (which can include any of the group owners), click **Add**, and then click **OK**.
 
-    To remove moderators, select the moderator in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+    To remove moderators, select the moderator in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
-  - **Senders who don't require message approval**: To configure senders who can bypass moderation for the group (send messages directly to the group members), click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Senders** dialog that appears, select one or more senders, click **Add**, and then click **OK**.
+  - **Senders who don't require message approval**: To configure senders who can bypass moderation for the group (send messages directly to the group members), click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **Select Senders** dialog that appears, select one or more senders, click **Add**, and then click **OK**.
 
-    To remove senders, select the sender in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+    To remove senders, select the sender in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
     You don't need to include moderators in the list of senders who bypass moderation. Messages that are sent to the group by a moderator aren't moderated.
 
@@ -297,7 +297,7 @@ Use this tab to view or change the email addresses that are configured for the g
 
   To manually specify the group's primary email address here, you need to clear the check box **Automatically update email addresses based on the email address policy applied to this recipient**. Note that clearing this check box prevents automatic updates to the email addresses of the group by email address policies.
 
-  - To add a new email address for the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **New email address** page that opens, select one of these options:
+  - To add a new email address for the group, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png). In the **New email address** page that opens, select one of these options:
 
   - **Email address type**: Select **SMTP**. In the **Email address** box, type the email address (for example, helpdesk@contoso.com). The domain must be an accepted domain that's configured for your organization. For more information, see [Accepted domains in Exchange Server](../mail-flow/accepted-domains/accepted-domains.md).
 
@@ -311,9 +311,9 @@ Use this tab to view or change the email addresses that are configured for the g
 
     When you're finished, click **OK**.
 
-  - To modify an existing email address for the group, select it in the list, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). Note that you can't change the email address type, just the email address.
+  - To modify an existing email address for the group, select it in the list, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png). Note that you can't change the email address type, just the email address.
 
-  - To remove an existing email address from the group, select it in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png). Note that you can't remove the primary email address.
+  - To remove an existing email address from the group, select it in the list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png). Note that you can't remove the primary email address.
 
 #### MailTip
 
@@ -330,11 +330,11 @@ Use this tab to assign permissions to the group for a user (called a *delegate*)
 
 - **Send on Behalf**: The specified users can send on behalf of the group. Although messages send on behalf of the group clearly show the sender in the From line (_\<Sender\>_ on behalf of _\<Group\>_), replies to these messages are delivered to the group, not the sender.
 
-To add delegates, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) for the appropriate permission. In the resulting dialog that appears, select one or more delegates, click **Add**, and then click **OK**.
+To add delegates, click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png) for the appropriate permission. In the resulting dialog that appears, select one or more delegates, click **Add**, and then click **OK**.
 
 After you assign one of these permissions, the delegate can select the group for the **From** line in Outlook or Outlook on the web (formerly known as Outlook Web App).
 
-To remove delegates, select the delegate in the appropriate list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+To remove delegates, select the delegate in the appropriate list, and then click **Remove** ![Remove icon.](../media/ITPro_EAC_RemoveIcon.png).
 
 ### Use the Exchange Management Shell to modify a mail-enabled security group
 
@@ -366,7 +366,7 @@ Set-DistributionGroup -Identity events@contoso.com -MailTipTranslations @{Add="E
 
 To verify that you've successfully modified a mail-enabled security group, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Groups** \> select the mail-enabled security group (the **Group Type** value is **Security group**) \> click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) and verify the property values.
+- In the EAC, go to **Recipients** \> **Groups** \> select the mail-enabled security group (the **Group Type** value is **Security group**) \> click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) and verify the property values.
 
 - In the Exchange Management Shell, replace _\<GroupIdentity\>_ with the identity of the group (for example, name, alias, or email address), and run this command to verify the property values:
 
@@ -402,13 +402,13 @@ For detailed syntax and parameter information, see [Get-DistributionGroup](/powe
 
    - Scroll through the list of groups.
 
-   - Click **Search** ![Search icon](../media/ITPro_EAC_.png) and enter part of the group's name, email address, or alias.
+   - Click **Search** ![Search icon.](../media/ITPro_EAC_.png) and enter part of the group's name, email address, or alias.
 
-   - Click **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the group.
+   - Click **More options** ![More Options icon.](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the group.
 
    - Click the **Group Type** column header to sort the groups by **Security group**.
 
-   Once you've found the security group that you want to remove, select it, click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.png), and then click **Yes** in the warning message that appears.
+   Once you've found the security group that you want to remove, select it, click **Delete** ![Delete icon.](../media/ITPro_EAC_DeleteIcon.png), and then click **Yes** in the warning message that appears.
 
 ### Use the Exchange Management Shell to remove a mail-enabled security group
 
@@ -428,7 +428,7 @@ Remove-DistributionGroup -Identity contractors
 
 To verify that you've successfully removed a mail-enabled security group, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Groups**, and verify that the group isn't listed. Note that you might need to click **Refresh** ![Refresh icon](../media/ITPro_EAC_RefreshIcon.png).
+- In the EAC, go to **Recipients** \> **Groups**, and verify that the group isn't listed. Note that you might need to click **Refresh** ![Refresh icon.](../media/ITPro_EAC_RefreshIcon.png).
 
 - In the Exchange Management Shell, run this command and verify that the group isn't listed:
 
@@ -480,7 +480,7 @@ For detailed syntax and parameter information, see [Enable-DistributionGroup](/p
 
 To verify that you've successfully mail-enabled an existing security group, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Groups**. Verify that the group is listed, and the **Group Type** value is **Security group**. Note that you might need to click **Refresh** ![Refresh icon](../media/ITPro_EAC_RefreshIcon.png) if the EAC was already open.
+- In the EAC, go to **Recipients** \> **Groups**. Verify that the group is listed, and the **Group Type** value is **Security group**. Note that you might need to click **Refresh** ![Refresh icon.](../media/ITPro_EAC_RefreshIcon.png) if the EAC was already open.
 
 - In the Exchange Management Shell, run this command and verify that the group is listed:
 
@@ -520,7 +520,7 @@ For detailed syntax and parameter information, see [Disable-DistributionGroup](/
 
 To verify that you've successfully mail-disabled an existing mail-enabled universal security group, do any of these steps:
 
-- In the EAC, go to **Recipients** \> **Groups**, and verify that the group isn't listed. Note that you might need to click **Refresh** ![Refresh icon](../media/ITPro_EAC_RefreshIcon.png) if the EAC was already open.
+- In the EAC, go to **Recipients** \> **Groups**, and verify that the group isn't listed. Note that you might need to click **Refresh** ![Refresh icon.](../media/ITPro_EAC_RefreshIcon.png) if the EAC was already open.
 
 - In the Exchange Management Shell, run this command and verify that the group isn't listed:
 

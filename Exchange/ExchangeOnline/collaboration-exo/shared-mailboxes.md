@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: About shared mailboxes in Exchange Online, and how to create them.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: fdce3587-ed95-4433-9931-4cf74b52e8e0
 ms.reviewer: 
@@ -38,7 +38,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 1. Open the EAC [Exchange admin center](../exchange-admin-center.md).
 
-2. Go to **Recipients** \> **Mailboxes** and then click **Add a shared mailbox** ![Add Icon](../media/new-eac-add-shared-mailbox.png).
+2. Go to **Recipients** \> **Mailboxes** and then click **Add a shared mailbox** ![Add Icon.](../media/new-eac-add-shared-mailbox.png).
 
 3. Fill-in the required fields:
 
@@ -59,7 +59,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the EAC to edit shared mailbox delegation
 
-1. In the EAC, go to **Recipients** \> **Mailboxes**. Select the shared mailbox, and then click **Manage mailbox delegation** ![Delegation icon](../media/new-eac-shared-mailbox-delegation.png).
+1. In the EAC, go to **Recipients** \> **Mailboxes**. Select the shared mailbox, and then click **Manage mailbox delegation** ![Delegation icon.](../media/new-eac-shared-mailbox-delegation.png).
 
 2. To grant or remove Full Access (Read and manage) and Send As permissions, click **Edit** next to the permission type.
 

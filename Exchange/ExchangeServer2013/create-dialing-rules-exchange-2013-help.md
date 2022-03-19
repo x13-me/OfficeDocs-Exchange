@@ -1,10 +1,12 @@
 ---
 title: 'Create dialing rules for users: Exchange 2013 Help'
 TOCTitle: Create dialing rules for users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create dialing rules for users in Exchange Server
 ms.assetid: c11e3d62-3eb1-4d7e-8741-9bede593e2df
 f1.keywords:
 - NOCSH
@@ -30,15 +32,12 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 ## Examples of commonly used dialing rules
 
-****
-
-|**Number pattern**|**Dialed number**|**When would you use this dialing rule?**|
+|Number pattern|Dialed number|When would you use this dialing rule?|
 |---|---|---|
 |\*|\*|Allow all outgoing calls.|
 |1425xxxxxxx|91425xxxxxxx|Prevent users from getting an internal extension or an error when they forget to dial the outside access line number.|
 |1xxxxxxxxxx|1xxxxxxxxxx|Allow all numbers that start with 1.|
 |xxxxxxx|1425xxxxxxx|Add 1 and the local area code 425 to 7-digit numbers.|
-|
 
 ## What do you need to know before you begin?
 
@@ -59,11 +58,11 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 
 ## Use the EAC to create a dialing rule
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM Dial Plan** page, click **Configure**.
 
-3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
+3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
 
 4. On the **New Dialing Rule** page, enter the following information:
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: d8d9f735-7181-428f-9049-b9886dce5159
 ms.reviewer: 
 title: Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
@@ -53,7 +53,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 3. When you're finished, save and close the file.
 
-   ![Outlook on the Web sign-in page with element call-outs](../../media/04da354c-d1fd-43fb-9fd3-6114cdb64314.png)
+   ![Outlook on the Web sign-in page with element call-outs.](../../media/04da354c-d1fd-43fb-9fd3-6114cdb64314.png)
 
 ## Customize the color of the Outlook on the web error page
 
@@ -63,7 +63,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 3. When you're finished, save and close the file.
 
-   ![Outlook on the web error page with element call-outs](../../media/fcf95834-6c41-42f4-915d-a6593bccd9f6.png)
+   ![Outlook on the web error page with element call-outs.](../../media/fcf95834-6c41-42f4-915d-a6593bccd9f6.png)
 
 ## Customize the color of the Outlook on the web language selection page
 
@@ -73,15 +73,11 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 3. When you're finished, save and close the file.
 
-   ![Outlook on the web language selection page with element call-outs](../../media/6876eb09-a53b-441c-ad76-01bfb9676c53.png)
+   ![Outlook on the web language selection page with element call-outs.](../../media/6876eb09-a53b-441c-ad76-01bfb9676c53.png)
 
 ## Customize the images on the Outlook on the web sign-in, language selection, and error pages
 
 You can edit the existing image files, or replace the files with new files that have the same names and dimensions. The images are described in the following table:
-
-<br>
-
-****
 
 |Image|File name|Location|Dimensions (width x height in pixels)|Bit depth|
 |---|---|---|---|---|
@@ -91,7 +87,6 @@ You can edit the existing image files, or replace the files with new files that 
 |4|Sign_in_arrow.png (for left-to-right languages) <p> Sign_in_arrow_rtl.png (for right-to-left languages)|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|22 x 22|32|
 |5|olk_logo_white_cropped.png|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|265 x 310|32|
 |6|office_logo_white_small.png|`%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\0` (for left-to-right languages) <p> `%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\rtl`(for right-to-left languages)|81 x 26|8|
-|
 
 ## How do you know this worked?
 

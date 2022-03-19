@@ -1,10 +1,12 @@
 ---
 title: 'Voice Mail Preview procedures: Exchange 2013 Help'
 TOCTitle: Voice Mail Preview procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Voice Mail Preview procedures in Microsoft Exchange Server
 ms.assetid: 3154be11-1a9d-4e51-a2d0-592ddbcca7b1
 f1.keywords:
 - NOCSH

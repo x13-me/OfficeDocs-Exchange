@@ -4,9 +4,10 @@ TOCTitle: ArchiveApplication role
 ms:assetid: 22d673cf-d3a3-43f0-be1e-e4fc74546e64
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673046(v=EXCHG.150)
 ms:contentKeyID: 49289194
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -37,15 +38,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table >
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

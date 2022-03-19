@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb676409(v=EXCHG.150)
 ms:contentKeyID: 49315469
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: 'Overview: Deploy Exchange 2013 Unified Messaging and Lync Server' 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -77,8 +79,8 @@ The following table shows the certificate requirements for installing and config
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -132,8 +134,8 @@ You must complete the following steps to configure Unified Messaging to work wit
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col>
+    <col>
     </colgroup>
     <thead>
     <tr class="header">

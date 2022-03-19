@@ -5,8 +5,10 @@ ms:assetid: 44c87349-964b-4700-9ce9-87bd4cb2249e
 ms:mtpsurl: https://technet.microsoft.com/library/Aa997686(v=EXCHG.150)
 ms:contentKeyID: 49289241
 ms.reviewer: 
+ms.topic: article 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+description: Links to Address list procedure articles
 author: msdmaguire
 f1.keywords:
 - NOCSH

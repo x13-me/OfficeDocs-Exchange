@@ -1,6 +1,6 @@
 ---
 title: "Permissions in Exchange hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -60,37 +60,36 @@ Not all mailbox permissions are fully supported in an Exchange hybrid environmen
 
   1. Go to **File** > **Account Settings** > **Delegate Access**
 
-     ![Delegate Access setting in Outlook](media/Private_Item_Menu1.png)
+     ![Delegate Access setting in Outlook.](media/Private_Item_Menu1.png)
 
   2. On the next window, click on **Add**. A new menu appears to list the people in your organization. Select a delegate and click **OK**.
 
   3. The following image will appear, where you can select the related checkbox to share private items with a delegate.
 
-     ![Delegate can see my private items setting in Outlook](media/Private_Item_Menu2.png)
+     ![Delegate can see my private items setting in Outlook.](media/Private_Item_Menu2.png)
      
 For more information, see [Overview of delegation in an Office 365 hybrid environment](/exchange/troubleshoot/delegates/overview-delegation-office-365-hybrid).
 
 #### Mailbox permissions and capabilities NOT supported in hybrid environments
 
-**Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Azure AD Connect doesn't automatically synchronize Send As permission between on-premises Exchange and Microsoft 365 or Office 365, so cross-premises Send As permissions aren't supported. However, Send As will work in most scenarios if you manually add the Send As permissions in both environments, using Exchange Management Shell for on-premises Exchange and Exchange Online PowerShell for Microsoft 365 or Office 365.
+- **Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Azure AD Connect doesn't automatically synchronize Send As permission between on-premises Exchange and Microsoft 365 or Office 365, so cross-premises Send As permissions aren't supported. However, Send As will work in most scenarios if you manually add the Send As permissions in both environments, using Exchange Management Shell for on-premises Exchange and Exchange Online PowerShell for Microsoft 365 or Office 365.
 
-For example, you want to grant Send As permission for an on-premises mailbox named ONPREM1 to a cloud mailbox name EXO1.
+  For example, you want to grant Send As permission for an on-premises mailbox named ONPREM1 to a cloud mailbox name EXO1.
   
-Run the following command in the Exchange Management Shell on your on-premises Exchange server:
+  Run the following command in the Exchange Management Shell on your on-premises Exchange server:
 
-```PowerShell
-Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
-```
+  ```PowerShell
+  Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
+  ```
 
-Then run the corresponding command in Exchange Online PowerShell:
+  Then run the corresponding command in Exchange Online PowerShell:
 
-```PowerShell
-Add-RecipientPermission -Identity EXO1 -Trustee ONPREM1 -AccessRights SendAs
-```
+  ```PowerShell
+  Add-RecipientPermission -Identity EXO1 -Trustee ONPREM1 -AccessRights SendAs
+  ```
 
-**Note**:
-
-Send As permission is also needed to comply with the following capabilities:
+  > [!NOTE]
+  > Send As permission is also needed to comply with the on-premises Exchange server and AAD Connect requirements in the next two sections.
 
 - **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup. (Note that auto-mapping will only work for individual users granted the proper permissions and will not work for any kind of group.)
 
@@ -101,8 +100,6 @@ Any mailboxes that receive these permissions from another mailbox need to be mov
 ### Configuring your on-premises Exchange servers to support hybrid mailbox permissions
 
 To enable Full Access and Send on Behalf permissions in a hybrid deployment, more configuration changes might be necessary depending on the version of Exchange you have installed. The following table shows which versions of Exchange support delegated mailbox permissions in a hybrid deployment with Microsoft 365 or Office 365 and what additional configuration is needed. For steps on how to configure Exchange 2013 and 2010 servers and mailboxes to support ACLs, see [Configure Exchange to support delegated mailbox permissions in a hybrid deployment](hybrid-deployment/set-up-delegated-mailbox-permissions.md).
-
-****
 
 |Exchange version|Prerequisites|
 |---|---|
@@ -132,8 +129,6 @@ For more information, see [Manage Role Assignment Policies](../ExchangeServer/pe
 
 The following table lists the permissions granted by the default role assignment policies in the Exchange Online organization.
 
-****
-
 |Management role|Description|
 |---|---|
 |MyTeamMailboxes|The `MyTeamMailboxes` management role enables individual users to create site mailboxes and connect them to Microsoft SharePoint sites.|
@@ -149,4 +144,3 @@ The following table lists the permissions granted by the default role assignment
 |MyVoiceMail|The `MyVoiceMail` management role enables individual users to view and modify their voice mail settings.|
 |My ReadWriteMailbox Apps|The `My ReadWriteMailbox Apps` management role enables users to install apps with ReadWriteMailbox permissions.|
 |My Custom Apps|The `My Custom Apps` management role enables users to view and modify their custom apps.|
-|

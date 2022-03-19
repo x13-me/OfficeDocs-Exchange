@@ -1,21 +1,23 @@
 ---
 title: 'Delete and re-create the default discovery mailbox in Exchange: Exchange 2013 Help'
 TOCTitle: Delete and re-create the default discovery mailbox in Exchange
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to delete and recreate the default discovery mailbox in Exchange Server
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Delete and re-create the default discovery mailbox in Exchange 2013
+# Delete and recreate the default discovery mailbox in Exchange 2013
 
 _**Applies to:** Exchange Server 2013_
 
-You can use the Exchange Management Shell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
+You can use the Exchange Management Shell to delete the default discovery mailbox, recreate it, and then assign permissions to it.
 
 ## Why would I want to do this?
 
@@ -29,8 +31,8 @@ In Exchange Server 2013, the maximum size of the default discovery mailbox is 50
 
 How you resolve this depends on whether you want to save the search results from a default discovery mailbox that's exceeded 50 GB.
 
-|**Do you want to save the search results?**|**Do this**|
-|:-----|:-----|
+|Do you want to save the search results?|Do this|
+|---|---|
 |No|Follow the steps in this topic to delete, and then re-create the default discovery mailbox.|
 |Yes|Follow the steps in [Reduce the size of a discovery mailbox in Exchange](reduce-discovery-mailbox-size-exchange-2013-help.md).|
 

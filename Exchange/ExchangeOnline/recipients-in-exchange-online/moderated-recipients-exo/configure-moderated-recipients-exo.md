@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admin can learn how to configure the moderation settings on all recipient types in the Exchange admin center (EAC) and in PowerShell in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: f0c3db25-653f-4252-acb1-2b5ba940ab80
 ms.reviewer: 
@@ -51,7 +51,9 @@ This article described how to configure moderated groups in the Exchange admin c
 ## Use the EAC to configure a moderated distribution group
 
 > [!NOTE]
-> The folowing steps are basically the same for all group types: distribution groups, mail-enabled security groups, dynamic distribution groups, and Microsoft 365 Groups.
+> You can configure moderation for Microsoft 365 Groups only in Exchange Online PowerShell using the **Set-UnifiedGroup** command.
+> 
+> The folowing steps are basically the same for all other group types: distribution groups, mail-enabled security groups, and dynamic distribution groups.
 
 A common scenario for moderation is to control email replies to large groups. In fact, groups with more than 5,000 members automatically have moderation configured.
 
@@ -64,17 +66,17 @@ This example configures moderation for the distribution group named All Employee
 To accomplish the tasks in this example scenario, perform the following procedure:
 
 1. In the EAC, go to **Recipients** \> **Groups**.
-2. In the result pane, select the **All employees** distribution group and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the result pane, select the **All employees** distribution group and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 3. On the properties page that opens, select the **Message approval** tab and configure the following settings:
    - Select the **Messages sent to this group have to be approved by a moderator** check box. You need to do this to make the remaining settings available.
-   - In the **Group moderators** list, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+   - In the **Group moderators** list, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
    - In the **Select group moderators** dialog that opens, find and select Bonnie Kearney, click **Add**, find and select Rob Young, and click **Add**. When you're finished, click **OK**.
-   - In the **Senders who don't require message approval** list, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+   - In the **Senders who don't require message approval** list, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
    - In the **Select senders** dialog that opens, find and select Legal Team from the list and click **Add**. When you're finished, click **OK**.
    - In the **Select moderation notifications** section, select **Notify senders in your organization when their messages aren't approved**.
 4. When you're finished, click **Save**.
 
-![Message approval settings for a distribution group](../../media/TA_Mod_Scenario1_AllEmployes.png)
+![Message approval settings for a distribution group.](../../media/TA_Mod_Scenario1_AllEmployes.png)
 
 ## Use Exchange Online PowerShell to configure a moderated recipient
 

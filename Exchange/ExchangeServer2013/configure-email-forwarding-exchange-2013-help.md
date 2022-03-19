@@ -1,9 +1,11 @@
 ---
 title: 'Configure email forwarding for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure email forwarding for a mailbox
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to configure email forwarding for a mailbox in Exchange Server
 ms.reviewer:
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 f1.keywords:
@@ -27,7 +29,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click or tap the mailbox that you want to configure mail forwarding for, and then click or tap **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click or tap the mailbox that you want to configure mail forwarding for, and then click or tap **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Features**.
 
@@ -51,7 +53,7 @@ To make sure that you've successfully configured email forwarding, do one of the
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click or tap the mailbox that you configured email forwarding for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click or tap **Mailbox Features**.
 

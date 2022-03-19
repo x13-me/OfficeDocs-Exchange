@@ -1,10 +1,12 @@
 ---
 title: 'UM mailbox policy procedures: Exchange 2013 Help'
 TOCTitle: UM mailbox policy procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Unified Message mailbox policy procedures in Microsoft Exchange Server
 ms.assetid: 37db12de-109f-4e81-9e6a-effab2c2171d
 f1.keywords:
 - NOCSH

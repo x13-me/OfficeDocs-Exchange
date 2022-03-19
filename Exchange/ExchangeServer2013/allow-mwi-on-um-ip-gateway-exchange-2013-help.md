@@ -1,10 +1,12 @@
 ---
 title: 'Allow Message Waiting Indicator (MWI) on a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Allow Message Waiting Indicator (MWI) on a UM IP gateway
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
+description: How to allow or prevent voice mail notifications to users for calls received by a Unified Messaging IP gateway in Exchange
 ms.assetid: 5667e37c-48c6-4659-9dc9-94b1dd8ba232
 f1.keywords:
 - NOCSH
@@ -41,7 +43,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to allow Message Waiting Indicator
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM IP Gateway** page, select the check box next to **Allow message waiting indicator**.
 

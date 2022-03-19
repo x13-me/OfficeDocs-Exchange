@@ -1,10 +1,12 @@
 ---
 title: 'Mail-enable or mail-disable a public folder: Exchange 2013 Help'
 TOCTitle: Mail-enable or mail-disable a public folder
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to mail-enable or disable a public folder in Exchange Server
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 f1.keywords:
 - NOCSH

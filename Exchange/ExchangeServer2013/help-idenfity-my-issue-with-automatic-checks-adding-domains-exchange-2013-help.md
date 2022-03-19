@@ -6,15 +6,17 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn793981(v=EXCHG.150)
 ms:contentKeyID: 62632395
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to use domain checks to troubleshoot Exchange configuration issues
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ms.custom: SaRA-Download_ExRCA
 ---
 
-# Help Idenfity My Issue with Automatic Checks - Adding Domains
+# Help Identify My Issue with Automatic Checks - Adding Domains
 
 _**Applies to:** Exchange Server 2013_
 
@@ -26,9 +28,9 @@ If you already have an user account, select **Sign In**. You don't need an Azure
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col>
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr class="odd">

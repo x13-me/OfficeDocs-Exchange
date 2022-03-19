@@ -4,9 +4,11 @@ TOCTitle: 'Checklist: Upgrade Exchange 2007 UM to Exchange 2013 UM'
 ms:assetid: 99b1a081-4052-4516-b63c-77622cbdf962
 ms:mtpsurl: https://technet.microsoft.com/library/Dn169229(v=EXCHG.150)
 ms:contentKeyID: 53382780
+ms.topic: article
+description: Use this checklist to help you upgrade Exchange 2007 Unified Messaging (UM) to Exchange 2013 UM.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -33,9 +35,9 @@ For step-by-step guidance about how to upgrade from Exchange 2010 UM to Exchange
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

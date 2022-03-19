@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd876891(v=EXCHG.150)
 ms:contentKeyID: 49319918
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Information Rights Management for Outlook Web App users in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,7 +27,7 @@ The following IRM functionality is available in Outlook Web App:
 
 - **Send IRM-protected messages**: As shown in the following figure, Outlook Web App users can use the permissions drop-down list and select a rights policy template to apply to the message. This allows users to send IRM-protected messages from within Outlook Web App. Messages are IRM-protected by Client Access servers.
 
-  ![Sending an IRM-protected message from OWA](images/Dd876891.fa8cabb5-c049-46dc-8b29-9d9957dbfd3e(EXCHG.150).gif "Sending an IRM-protected message from OWA")
+  ![Sending an IRM-protected message from OWA.](images/Dd876891.fa8cabb5-c049-46dc-8b29-9d9957dbfd3e(EXCHG.150).gif "Sending an IRM-protected message from OWA")
 
 - **IRM-protected attachments**: When users send an IRM-protected message from Outlook Web App, any files attached to the message also receive the same IRM protection and are protected by using the same rights policy template as the message. In Exchange 2013, IRM protection is applied to files associated with Microsoft Office Word, Excel, and PowerPoint, as well as .xps files and e-mail messages. IRM protection is applied to an attachment only if it's not already IRM-protected. To learn more about Active Directory Rights Management Services (AD RMS) rights policy templates, see [Information Rights Management](information-rights-management-exchange-2013-help.md).
 

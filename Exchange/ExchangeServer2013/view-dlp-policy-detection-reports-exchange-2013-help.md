@@ -4,9 +4,11 @@ TOCTitle: View DLP policy detection reports
 ms:assetid: 5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150520(v=EXCHG.150)
 ms:contentKeyID: 47560019
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: View DLP policy detection reports in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -64,11 +66,11 @@ The following is a complete list of the data fields. All data in the MTL is type
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

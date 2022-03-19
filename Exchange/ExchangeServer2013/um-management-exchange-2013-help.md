@@ -5,8 +5,10 @@ ms:assetid: c91f0387-615c-4a1d-87d4-133ddac1e407
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351142(v=EXCHG.150)
 ms:contentKeyID: 49289406
 ms.reviewer: 
+ms.topic: article
+description: Administrators who are members of the UM Management role group in Microsoft Exchange Server can manage UM features in the Exchange organization such as service configuration, properties on mailboxes, prompts, and auto attendant configuration  
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -79,15 +81,15 @@ For more information about role assignments and management scopes, see the follo
 
 ### Management roles assigned to this role group
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

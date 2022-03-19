@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the Mailbox server role in Exchange Server'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: b6403e43-d263-46b6-bfeb-f70f13c32ff1
 ms.reviewer: 
 title: Mailbox servers

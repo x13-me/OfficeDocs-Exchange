@@ -1,9 +1,9 @@
 ---
 description: 'Summary: Learn how to disable or delete a mailbox in Exchange Server 2016 or Exchange Server 2019.'
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
 ms.collection: exchange-server
@@ -57,7 +57,7 @@ When you disable a mailbox, all Exchange attributes are removed from the associa
 
    - Select multiple mailboxes by selecting a mailbox, holding the Shift key, and selecting a mailbox farther down in the list, or by holding down the CTRL key as you select each mailbox.
 
-3. After you've selected the mailbox or mailboxes that you want to disable, click **More** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), select **Disable**, and then click **Yes** in the warning message that appears.
+3. After you've selected the mailbox or mailboxes that you want to disable, click **More** ![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png), select **Disable**, and then click **Yes** in the warning message that appears.
 
 ### Use the Exchange Management Shell to disable a mailbox
 
@@ -91,7 +91,7 @@ For detailed syntax and parameter information, see [Disable-Mailbox](/powershell
 
 To verify that you've successfully disabled a mailbox, do any of these steps:
 
-- In the EAC, click **Recipients**, go to the appropriate tab for the type of mailbox that you disabled, and verify that the mailbox is no longer listed. Note that you might need to click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png).
+- In the EAC, click **Recipients**, go to the appropriate tab for the type of mailbox that you disabled, and verify that the mailbox is no longer listed. Note that you might need to click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png).
 
 - In Active Directory Users and Computers, right-click the user account whose mailbox you disabled, and then click **Properties**. On the **General** tab, verify that the **E-mail** field is blank.
 
@@ -148,7 +148,7 @@ When you delete a mailbox, the mailbox is disconnected from the associated user 
 
    - Select multiple mailboxes by selecting a mailbox, holding the Shift key, and selecting a mailbox farther down in the list, or by holding down the CTRL key as you select each mailbox.
 
-3. After you've selected the mailbox or mailboxes that you want to delete, click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png), and then click **Yes** in the warning message that appears.
+3. After you've selected the mailbox or mailboxes that you want to delete, click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png), and then click **Yes** in the warning message that appears.
 
 ### Use the Exchange Management Shell to delete a mailbox
 
@@ -184,7 +184,7 @@ For detailed syntax and parameter information, see [Remove-Mailbox](/powershell/
 
 To verify that you've successfully deleted a mailbox, do any of these steps:
 
-- In the EAC, click **Recipients**, go to the appropriate tab for the type of mailbox that you deleted, and verify that the mailbox is no longer listed. Note that you might need to click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png).
+- In the EAC, click **Recipients**, go to the appropriate tab for the type of mailbox that you deleted, and verify that the mailbox is no longer listed. Note that you might need to click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png).
 
 - In Active Directory Users and Computers, verify that the associated account is no longer listed. Note that mailbox types other than user and linked mailboxes also have associated user accounts that are disabled (for example, room, equipment, arbitration, shared, and public folder mailboxes).
 

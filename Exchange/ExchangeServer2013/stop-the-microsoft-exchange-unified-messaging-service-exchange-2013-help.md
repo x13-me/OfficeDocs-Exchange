@@ -5,8 +5,10 @@ ms:assetid: 64fa5535-8150-45c6-82e6-d2346892a031
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998595(v=EXCHG.150)
 ms:contentKeyID: 49315438
 ms.reviewer: 
+ms.topic: how-to
+description: How to stop the Microsoft Exchange Unified Messaging service in Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

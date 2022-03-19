@@ -1,10 +1,12 @@
 ---
 title: 'Prevent callers without a caller ID from leaving a voice message: Exchange 2013 Help'
 TOCTitle: Prevent callers without a caller ID from leaving a voice message
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to prevent callers who don't have a caller ID from leaving a voice message in Microsoft Exchange Server
 ms.assetid: dd5dad32-2f69-4bf4-8ff0-545c413d395a
 f1.keywords:
 - NOCSH

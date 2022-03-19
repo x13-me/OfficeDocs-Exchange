@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.powersh
 ms:contentKeyID: 61200286
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: About the ExecutionPolicy Group Policy Object
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

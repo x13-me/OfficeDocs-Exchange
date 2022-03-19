@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in.
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: bf65842b-a4db-49a8-bb3a-d0bafb7d3e45
 ms.reviewer: 

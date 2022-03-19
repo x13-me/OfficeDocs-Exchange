@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.exchang
 ms:contentKeyID: 46628873
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange 2007 setup requires that the local computer not have existing Microsoft Exchange components installed.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

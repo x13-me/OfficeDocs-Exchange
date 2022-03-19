@@ -5,8 +5,10 @@ ms:assetid: 2f083d29-b3be-4955-95f6-cd7e4931bc61
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.powershelldataprovider(v=EXCHG.150)
 ms:contentKeyID: 49720751
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the PowershellDataProvider health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

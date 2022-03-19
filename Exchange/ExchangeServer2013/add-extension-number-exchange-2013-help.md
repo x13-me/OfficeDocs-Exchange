@@ -1,9 +1,11 @@
 ---
 title: 'Add an extension number: Exchange 2013 Help'
 TOCTitle: Add an extension number
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: How to add an extension number in Exchange Server
+ms.topic: article
 ms.reviewer:
 ms.assetid: 1a73c9c8-cb50-4bd7-a101-dadd20e28031
 f1.keywords:
@@ -52,7 +54,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 3. In the details pane, **Phone and Voice Features**, under **Unified Messaging**, click **View details**.
 
-4. On the **UM Mailbox** page, click **Other Extensions**, and then click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+4. On the **UM Mailbox** page, click **Other Extensions**, and then click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 5. On the **Other extensions** page, next to the **UM dial plan** box, click **Browse** and locate the dial plan for the user.
 
@@ -64,9 +66,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox to which you want to add an extension number, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox to which you want to add an extension number, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 4. On the **New email address** page, select **EUM** and, in the **Address/Extension** box, enter the extension number for the user.
 

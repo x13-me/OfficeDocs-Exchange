@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ673059(v=EXCHG.150)
 ms:contentKeyID: 49289246
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Create a Send connector to route outbound email through a smart host in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -41,18 +43,18 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 ## Use the EAC to create a Send connector to route outbound email through a smart host
 
-1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the **New send connector** wizard, specify a name for the send connector and then select **Custom** for the **Type**. You typically choose this selection when you want to route messages to computers not running Microsoft Exchange Server 2013. Click **Next**.
 
-3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add smart host** window, specify the IP address, such as 192.168.100.1, or the fully qualified domain name (FQDN), such as contoso.com. Click **Save**.
+3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add smart host** window, specify the IP address, such as 192.168.100.1, or the fully qualified domain name (FQDN), such as contoso.com. Click **Save**.
 
    For **Smart host authentication**, choose the type of authentication required by the smart host. If you choose **Basic authentication**, you must provide a username and password.
 
    > [!NOTE]
    > If you choose Basic authentication, we recommend that you use an encrypted connection because the username and password are sent in clear text.
 
-4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \* to specify that this send connector applies to messages sent to any domain. Click **Save**.
+4. Under **Address space**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \* to specify that this send connector applies to messages sent to any domain. Click **Save**.
 
 5. For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, choose a server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
 

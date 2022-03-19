@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124582(v=EXCHG.150)
 ms:contentKeyID: 50643913
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to enter your Exchange 2013 product key 
 author: msdmaguire
 f1.keywords:
 - CSH
@@ -54,7 +56,7 @@ If you don't enter a product key, your server is automatically licensed as a tri
 
 2. Enter your username and password in **Domain\\user name** and **Password**, and then click **Sign in**.
 
-3. Go to **Servers** \> **Servers**. Select the server you want to license, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+3. Go to **Servers** \> **Servers**. Select the server you want to license, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 4. (Optional) If you want to upgrade the server from a Standard Edition license to an Enterprise Edition license, on the **General** page, select **Change product key**. You'll only see this option if the server is already licensed.
 

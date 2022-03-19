@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Gg144562(v=EXCHG.150)
 ms:contentKeyID: 49318587
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: How to configure content transfer encoding
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -31,9 +33,9 @@ The following table lists the values that you can use to set the transfer encodi
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

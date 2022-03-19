@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996349(v=EXCHG.150)
 ms:contentKeyID: 48384840
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: In Exchange Server, mail flow occurs through the transport pipeline
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -39,7 +41,7 @@ The following figure shows the relationships among the components in the Exchang
 
 **Overview of the transport pipeline in Exchange 2013.**
 
-![Transport pipeline overview diagram](images/Aa996349.6f548b64-6ac2-4e98-9098-69ad6cd9f569(EXCHG.150).gif "Transport pipeline overview diagram")
+![Transport pipeline overview diagram.](images/Aa996349.6f548b64-6ac2-4e98-9098-69ad6cd9f569(EXCHG.150).gif "Transport pipeline overview diagram")
 
 ## Messages from external senders
 
@@ -126,8 +128,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

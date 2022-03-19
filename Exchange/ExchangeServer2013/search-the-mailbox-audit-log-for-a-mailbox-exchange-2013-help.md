@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ff461930(v=EXCHG.150)
 ms:contentKeyID: 49300503
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to search the mailbox audit log for a mailbox in Microsoft Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

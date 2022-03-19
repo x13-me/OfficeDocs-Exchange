@@ -4,9 +4,10 @@ TOCTitle: Change a role entry
 ms:assetid: 5aa4f39c-16a4-4815-ac4f-2cdcfa2b3ee1
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298005(v=EXCHG.150)
 ms:contentKeyID: 49289260
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

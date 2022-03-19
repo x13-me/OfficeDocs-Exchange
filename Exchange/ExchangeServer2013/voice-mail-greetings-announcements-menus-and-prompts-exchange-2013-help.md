@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124902(v=EXCHG.150)
 ms:contentKeyID: 49315544
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+description: Voice mail greetings, announcements, menus, and prompts in Microsoft Exchange Server
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -31,8 +33,8 @@ The following table summarizes the prompts and greetings used with UM dial plans
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -62,8 +64,8 @@ The following table summarizes the prompts and greetings used with UM auto atten
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -136,9 +138,9 @@ The following table describes the UM dial plan greetings and informational annou
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -177,9 +179,9 @@ The following table describes the UM auto attendant greetings and informational 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

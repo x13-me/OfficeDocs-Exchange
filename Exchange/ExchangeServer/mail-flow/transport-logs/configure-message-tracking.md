@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms.reviewer: 
 title: Configure message tracking
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure message tracking
+# Configure message tracking in Exchange Server
 
 Message tracking records the message activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use message tracking logs for message forensics, mail flow analysis, reporting, and troubleshooting.
 
@@ -52,7 +52,7 @@ You use the **Set-TransportService** cmdlet in the Exchange Management Shell on 
 
 ## Use the EAC to configure message tracking on Mailbox servers
 
-1. Open the EAC and navigate to **Servers** \> **Servers** \> select the Mailbox server that you want to configure \> and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. Open the EAC and navigate to **Servers** \> **Servers** \> select the Mailbox server that you want to configure \> and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. On the server properties page, click **Transport Logs**. In the **Message tracking log** section, change any of the following settings:
 
@@ -101,7 +101,7 @@ This example disables message tracking on the Mailbox server named Mailbox01:
 Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully configured message tracking, run the following command in the Exchange Management Shell:
 

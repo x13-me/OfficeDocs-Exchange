@@ -1,9 +1,11 @@
 ---
 title: 'Specify the administrators and users who can install and manage add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Specify the administrators and users who can install and manage add-ins for Outlook
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: how-to
+description: How to specify the administrators and users who can install and manage add-ins for Outlook in Microsoft Exchange
 ms.reviewer:
 ms.assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb
 f1.keywords:
@@ -45,7 +47,7 @@ For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook-exc
 
 - You need to be assigned permissions before you can run this cmdlet. Although all parameters for this cmdlet are listed in this topic, you may not have access to some parameters if they're not included in the permissions assigned to you. To see what permissions you need, see the "Role assignments" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-- Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> ![Add Icon](images/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
+- Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> ![Add Icon.](images/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

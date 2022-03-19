@@ -1,10 +1,12 @@
 ---
 title: 'Configure mobile phones to access email: Exchange 2013 Help'
 TOCTitle: Configure mobile phones to access email
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure mobile phones to access email in Exchange 2013 
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 f1.keywords:
 - NOCSH

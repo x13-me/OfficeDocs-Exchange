@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to configure connectivity logging for the transport services in Exchange 2016 and Exchange 2019
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 ms.reviewer:
 title: Configure connectivity logging in Exchange Server
@@ -47,7 +47,7 @@ Connectivity logging records outbound connection activity (source, destination, 
 
 1. In the EAC, go to **Servers** \> **Servers**.
 
-2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the server properties page that opens, click **Transport Logs**.
 

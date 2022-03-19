@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
 ms.reviewer:
 title: Message tracking
@@ -36,10 +36,8 @@ Message tracking logs contain vast amounts of data as messages move through a Ma
 
 By default, the message tracking log files exist in `%ExchangeInstallPath%TransportRoles\Logs\MessageTracking`. The folder contains log files that have different names, but they all follow the naming convention `MSGTRKServiceyyyymmdd-nnnn.log`. The different log file names are described in the following table.
 
-****
-
-|**File name**|**Servers**|**Description**|
-|:-----|:-----|:-----|
+|File name|Servers|Description|
+|---|---|---|
 | `MSGTRK`|Mailbox servers and Edge Transport servers|Log files for the Transport service.|
 | `MSGTRKMA`|Mailbox servers|Log files for the approvals and rejections in moderated transport. For more information, see [Manage message approval](../../../ExchangeServer2013/manage-message-approval-exchange-2013-help.md).|
 | `MSGTRKMD`|Mailbox servers|Log files for messages delivered to mailboxes by the Mailbox Transport Delivery service.|
@@ -80,8 +78,8 @@ The message tracking log files are text files that contain data in the comma-sep
 
 The message tracking log stores each message event on a single line in the log. The message event information is organized by fields, and these fields are separated by commas. The field name is generally descriptive enough to determine the type of information that it contains. However, some fields may be blank, or the type of information in the field may change based on the message event type and the service that recorded the event. General descriptions of the fields that are used to classify each message tracking event are explained in the following table.
 
-|**Field name**|**Description**|
-|:-----|:-----|
+|Field name|Description|
+|---|---|
 |**date-time**|The UTC date-time of the message tracking event. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where _yyyy_ = year, _mm_ = month, _dd_ = day, T indicates the beginning of the time component, _hh_ = hour, _mm_ = minute, _ss_ = second, _fff_ = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.|
 |**client-ip**|The IPv4 or IPv6 address of the messaging server or messaging client that submitted the message.|
 |**client-hostname**|The host name or FQDN of the messaging server or messaging client that submitted the message.|
@@ -118,8 +116,8 @@ The message tracking log stores each message event on a single line in the log. 
 
 Various event types in the **event-id** field are used to classify the message events in the message tracking log. Some message events appear in only one type of message tracking log file, and some message events appear in all types of message tracking log files. The events types that are used to classify each message event are explained in the following table.
 
-|**Event name**|**Description**|
-|:-----|:-----|
+|Event name|Description|
+|---|---|
 |**AGENTINFO**|This event is used by transport agents to log custom data.|
 |**BADMAIL**|A message submitted by the Pickup directory or the Replay directory that can't be delivered or returned.|
 |**CLIENTSUBMISSION**|A message was submitted from the Outbox of a mailbox.|
@@ -167,8 +165,8 @@ Various event types in the **event-id** field are used to classify the message e
 
 The values in the **source** field in the message tracking log indicate the transport component that's responsible for the message tracking event. The following table describes the values of the **source** field.
 
-|**Source value**|**Description**|
-|:-----|:-----|
+|Source value|Description|
+|---|---|
 |**ADMIN**|The event source was human intervention. For example, an administrator used Queue Viewer to delete a message, or submitted message files using the Replay directory.|
 |**AGENT**|The event source was a transport agent.|
 |**APPROVAL**|The event source was the approval framework that's used with moderated recipients. For more information, see [Manage message approval](../../../ExchangeServer2013/manage-message-approval-exchange-2013-help.md).|

@@ -1,10 +1,12 @@
 ---
 title: 'Review the voice mail calls in your organization: Exchange 2013 Help'
 TOCTitle: Review the voice mail calls in your organization
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: You can use the Call Statistics report to view information about the type and status of incoming calls handled by the Exchange servers.
 ms.assetid: f6fdbe17-d1d2-442a-aa13-06b908d9c33a
 f1.keywords:
 - NOCSH
@@ -26,7 +28,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 ## How do I get call statistics for UM?
 
-1. In the Exchange admin center (EAC), click **Unified messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the Exchange admin center (EAC), click **Unified messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
 
 2. Choose the information you want to include in the report. The report automatically updates as you select any of the following options:
 

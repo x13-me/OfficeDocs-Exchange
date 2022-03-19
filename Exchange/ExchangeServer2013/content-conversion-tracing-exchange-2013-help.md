@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb397226(v=EXCHG.150)
 ms:contentKeyID: 49345062
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Content conversion tracing in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -4,9 +4,10 @@ TOCTitle: Back pressure
 ms:assetid: 03003544-e802-4988-9427-5fc4da64dcb8
 ms:mtpsurl: https://technet.microsoft.com/library/Bb201658(v=EXCHG.150)
 ms:contentKeyID: 50934208
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -118,9 +119,9 @@ The following table summarizes the actions taken by Exchange transport when a sp
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -283,8 +284,8 @@ All configuration options for back pressure are available in the %ExchangeInstal
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

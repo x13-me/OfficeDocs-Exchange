@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can create an Outlook on the web mailbox policy to apply a common set of policy settings. Outlook on the web mailbox policies are useful for applying and standardizing settings, for example, attachment settings, for specific groups of users.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 ms.reviewer: 
@@ -39,7 +39,7 @@ For more information about Outlook on the web mailbox policies, see [Outlook on 
 
 ## Use the EAC to create an Outlook on the web mailbox policy
 
-1. In the EAC, go to **Permissions** \> **Outlook Web App policies**, and click **New** ![New icon](../../media/ITPro_EAC_AddIcon.png)
+1. In the EAC, go to **Permissions** \> **Outlook Web App policies**, and click **New** ![New icon.](../../media/ITPro_EAC_AddIcon.png)
 
 2. In the new policy window that opens, configure the following settings:
 
@@ -119,7 +119,7 @@ To verify that you've successfully created an Outlook on the web mailbox policy:
 
 To verify that you've successfully created an Outlook on the web mailbox policy, do either of the following steps:
 
-- In the EAC, click **Permissions** \> **Outlook Web App Policies**, and verify the policy is listed. You can select the policy and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to verify the properties of the policy.
+- In the EAC, click **Permissions** \> **Outlook Web App Policies**, and verify the policy is listed. You can select the policy and click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) to verify the properties of the policy.
 
 - In Exchange Online PowerShell, run the following command to verify the policy is listed:
 

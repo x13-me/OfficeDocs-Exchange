@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.oscheck
 ms:contentKeyID: 46629035
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Running Exchange Server on a computer where Windows is running in debug mode is not recommended.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150538(v=EXCHG.150)
 ms:contentKeyID: 47560056
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: About Public folders for Microsoft Outlook clients in Microsoft Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

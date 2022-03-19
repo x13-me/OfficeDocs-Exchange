@@ -5,8 +5,10 @@ ms:assetid: ac00985c-c9a5-44bf-b152-4b99d8ae24ed
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.sitemailbox(v=EXCHG.150)
 ms:contentKeyID: 49720849
 ms.reviewer: 
+ms.topic: article
+description: How to troubleshoot the SiteMailbox health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

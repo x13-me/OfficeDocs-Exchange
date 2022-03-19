@@ -1,10 +1,12 @@
 ---
 title: 'Apply or remove an Outlook Web App mailbox policy on a mailbox: Exchange 2013 Help'
 TOCTitle: Apply or remove an Outlook Web App mailbox policy on a mailbox
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+description: How to apply or remove an Outlook Web App mailbox policy on a mailbox in Exchange 2013
+ms.topic: article
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 f1.keywords:
 - NOCSH

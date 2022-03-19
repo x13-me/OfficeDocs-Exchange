@@ -5,8 +5,10 @@ ms:assetid: 887b0a64-84b1-4b8c-9547-e456ea6f5dbd
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298116(v=EXCHG.150)
 ms:contentKeyID: 49289340
 ms.reviewer: 
+ms.topic: article
+description: Understand management roles in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -107,7 +109,7 @@ Each management role is given a role type that can't be changed. The role type d
 
 **Management role hierarchy**
 
-![RBAC management role hierarchical diagram](images/Dd298116.6851c829-ca8f-40e7-a67c-cc9e85c33953(EXCHG.150).gif "RBAC management role hierarchical diagram")
+![RBAC management role hierarchical diagram.](images/Dd298116.6851c829-ca8f-40e7-a67c-cc9e85c33953(EXCHG.150).gif "RBAC management role hierarchical diagram")
 
 The preceding figure illustrates the hierarchical relationship of several management roles. The Mail Recipients and Help Desk roles are built-in roles. All of the child roles derived from these roles inherit the role type of each built-in role. For example, all child roles derived either directly or indirectly from the Mail Recipients role inherit the `MailRecipients` role type.
 
@@ -141,8 +143,8 @@ The wildcard character (\*) can be used in the role entry name to return all of 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -206,10 +208,10 @@ The following table lists all of the administrative management role types in Exc
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -665,9 +667,9 @@ The following table lists all of the user-focused management role types and thei
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

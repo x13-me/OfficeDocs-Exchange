@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.freebusy(v=EXCHG.
 ms:contentKeyID: 49720773
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to troubleshoot the FreeBusy health set in Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

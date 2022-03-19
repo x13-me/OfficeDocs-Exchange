@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to combine DLP policies with mail flow rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: feb014a7-89dd-4f2d-a06d-52806ce435d4
 f1.keywords:

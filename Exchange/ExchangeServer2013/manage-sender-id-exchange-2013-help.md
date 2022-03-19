@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa997136(v=EXCHG.150)
 ms:contentKeyID: 49287404
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to manage Sender ID in Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -51,7 +53,7 @@ Set-SenderIDConfig -Enabled $true
 > [!NOTE]
 > When you disable Sender ID, the underlying Sender ID agent is still enabled. To disable the Sender ID agent, run the command: <CODE>Disable-TransportAgent "Sender ID Agent"</CODE>.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully enabled or disabled Sender ID, do the following:
 
@@ -77,7 +79,7 @@ This example configures the Sender ID agent to reject any messages where the IP 
 Set-SenderIDConfig -SpoofedDomainAction Reject
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the Sender ID action for spoofed messages, do the following:
 
@@ -105,7 +107,7 @@ Set-SenderIDConfig -TempErrorAction StampStatus
 
 Note that `StampStatus` is the default value for the *TempErrorAction* parameter.
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the Sender ID action for transient errors, do the following:
 
@@ -147,7 +149,7 @@ This example configures the Sender ID agent with the following information:
 Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured recipient and sender domain exceptions, do the following:
 

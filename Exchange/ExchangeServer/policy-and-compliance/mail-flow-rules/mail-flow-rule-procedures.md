@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016 and Exchange 2019'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.reviewer:
 title: Procedures for mail flow rules in Exchange Server
@@ -56,11 +56,11 @@ The EAC allows you to create mail flow rules by using a template (a filtered lis
 
 1. In the EAC, go to **Mail flow** \> **Rules**, and then select one of the following options:
 
-   - To create a rule from a template, click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)) and select a template (a value other than **Create new rule**).
+   - To create a rule from a template, click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)) and select a template (a value other than **Create new rule**).
 
-   - To copy a rule, select the rule, and then select **Copy** (![Copy icon](../../media/ITPro_EAC_CopyIcon.png)). Note that the option to copy a rule is only available in the EAC.
+   - To copy a rule, select the rule, and then select **Copy** (![Copy icon.](../../media/ITPro_EAC_CopyIcon.png)). Note that the option to copy a rule is only available in the EAC.
 
-   - To create a new rule from scratch, **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)) and then select **Create a new rule**.
+   - To create a new rule from scratch, **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)) and then select **Create a new rule**.
 
 2. In the **New rule** page that opens, configure the following settings:
 
@@ -168,9 +168,9 @@ Mail flow rules that you create on a Mailbox server are stored in Active Directo
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. When you select a rule, information about the rule is displayed in the details pane. To see more information about the rule, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+2. When you select a rule, information about the rule is displayed in the details pane. To see more information about the rule, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
-   ![In the EAC, go to Mail flow \> Rules and select a rule](../../media/37502067-8f3f-49d1-aaea-91c7f3eb8e8a.png)
+   ![In the EAC, go to Mail flow \> Rules and select a rule.](../../media/37502067-8f3f-49d1-aaea-91c7f3eb8e8a.png)
 
    In the EAC, the **Version** property is only visible in the details pane. This property indicates the compatibility of the rule with previous versions of Exchange (14.*n*.*n*.*n* is Exchange 2010, 15.0.*n*.*n* is Exchange 2013).
 
@@ -248,7 +248,7 @@ No additional settings are available when you modify a mail flow rule in the EAC
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Select the rule, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)). Note that the properties of the rule are fully expanded (there's no **More options** link available). For more information about the rule properties, see the [Use the EAC to create mail flow rules](#use-the-eac-to-create-mail-flow-rules) section in this topic.
+2. Select the rule, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)). Note that the properties of the rule are fully expanded (there's no **More options** link available). For more information about the rule properties, see the [Use the EAC to create mail flow rules](#use-the-eac-to-create-mail-flow-rules) section in this topic.
 
 ### Use the Exchange Management Shell to modify mail flow rules
 
@@ -272,7 +272,7 @@ For detailed syntax and parameter information, see [Set-TransportRule](/powershe
 
 To verify that you have successfully modified a mail flow rule, use either of the following procedures:
 
-- In the EAC, go to **Mail flow** \> **Rules**, select the rule, and view the information in details pane. To see more settings, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+- In the EAC, go to **Mail flow** \> **Rules**, select the rule, and view the information in details pane. To see more settings, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 - In the Exchange Management Shell, replace _\<RuleName\>_ with the name of the rule, and run the following command:
 
@@ -296,7 +296,7 @@ In the EAC, rules are processed in the order that they're displayed (the first r
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Select a rule, and then click **Move up** (![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.png)) or **Move down** (![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.png)) to move the rule up or down in the list.
+2. Select a rule, and then click **Move up** (![Up Arrow Icon.](../../media/ITPro_EAC_UpArrowIcon.png)) or **Move down** (![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.png)) to move the rule up or down in the list.
 
 ### Use the Exchange Management Shell to set the priority of mail flow rules
 
@@ -400,7 +400,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, use e
 
 1. From the EAC, go to **Mail flow** \> **Rules**.
 
-2. Select the rule you want to remove from the list, and then click **Delete** (![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)).
+2. Select the rule you want to remove from the list, and then click **Delete** (![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png)).
 
 ### Use the Exchange Management Shell to remove mail flow rules
 
@@ -451,13 +451,13 @@ You can import a mail flow rule collection that you've previously exported as a 
 2. Use the following syntax:
 
    ```PowerShell
-   Set-Content -Path "<OutputFile>" -Value $file.FileData -Encoding Byte
+   [System.IO.File]::WriteAllBytes('<OutputFile>', $File.FileData)
    ```
 
    For example, to save the exported mail flow rule collection to the file C:\My Documents\Exported Rules.xml, run the following command:
 
    ```PowerShell
-   Set-Content -Path "C:\My Documents\Exported Rules.xml" -Value $file.FileData -Encoding Byte
+   [System.IO.File]::WriteAllBytes('C:\My Documents\Exported Rules.xml', $File.FileData)
    ```
 
 For detailed syntax and parameter information, see [Export-TransportRuleCollection](/powershell/module/exchange/export-transportrulecollection).
@@ -467,13 +467,13 @@ For detailed syntax and parameter information, see [Export-TransportRuleCollecti
 1. Use the following syntax:
 
    ```PowerShell
-   [Byte[]]$Data = Get-Content -Path "<OutputFile>" -Encoding Byte -ReadCount 0
+   $Data = [System.IO.File]::ReadAllBytes('<OutputFile>')
    ```
 
    For example, to import the mail flow rule collection from C:\My Documents\Exported Rules.xml, run the following command:
 
    ```PowerShell
-   Byte[]]$Data = Get-Content -Path "C:\My Documents\Exported Rules.xml" -Encoding Byte -ReadCount 0
+   $Data = [System.IO.File]::ReadAllBytes('C:\My Documents\Exported Rules.xml')
    ```
 
 2. Run the following command:

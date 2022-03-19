@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: After you create a user mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 f1.keywords:
 - CSH
 ms.custom:
@@ -78,7 +78,7 @@ Use the **Email Addresses** section to view or change the email addresses associ
 
 By clicking the **Manage email address types** link, you can view all the email addresses associated with the user mailbox. The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list.
 
-**Add email address type**: Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add email address type** to add a new email address for this mailbox. Select one of following address types:
+**Add email address type**: Click ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add email address type** to add a new email address for this mailbox. Select one of following address types:
 
    - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **Email address\*:** box.
    - **Enter a custom address type**: Click this button and type one of the supported non-SMTP email address types in the **Email address\*:**  box.
@@ -106,11 +106,11 @@ Use the **Mailbox permissions** section to assign permissions to other users (al
 - **Send on behalf**: This permission also allows a delegate to use this mailbox to send messages. However, after this permission is assigned to a delegate, the **From:** address in any message sent by the delegate indicates that the message was sent by the delegate on behalf of the mailbox owner.
 - **Read and manage**: This permission allows a delegate to sign in to the user's mailbox and view the contents of the mailbox. However, after this permission is assigned to a delegate, the delegate can't send messages from the mailbox. To allow a delegate to send email from the user's mailbox, you still have to assign the delegate the Send As or the Send on Behalf Of permission.
 
-To assign permissions to delegates, click on the **Edit** button next to the appropriate permission. By clicking ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add permissions**, you can view a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **Save**. You can also search for a specific recipient by typing the recipient's name in the search box.
+To assign permissions to delegates, click on the **Edit** button next to the appropriate permission. By clicking ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add permissions**, you can view a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **Save**. You can also search for a specific recipient by typing the recipient's name in the search box.
 
 ### Mailbox policies
 Use the **Mailbox policies** section to apply default mailbox policies for the organization. 
-On clicking **Manage mailbox policies**, you can view or change the mailbox policies. Click ![Edit icon](../../media/ITPro_EAC_EditIcon.gif) and change the following mailbox policies.
+On clicking **Manage mailbox policies**, you can view or change the mailbox policies. Click ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif) and change the following mailbox policies.
 
 - **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The default sharing policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
 - **Role assignment policy**: This box shows the role assignment policy assigned to the mailbox. The role assignment policy specifies the role-based access control (RBAC) roles that are assigned to the user and control what specific mailbox and distribution group configuration settings users can modify. To change the role assignment policy that's assigned to the user, select a different one from the drop-down list.
@@ -139,7 +139,7 @@ Use the **More actions** section to do the following changes:
 
 - **Recover deleted items**: Administrators can search for and recover deleted email messages in a user's mailbox. This includes items that are permanently deleted (purged) by a person by using the Recover Deleted Items feature in Outlook or Outlook on the web (formerly known as Outlook Web App), or items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired. Administrators can search for deleted items based on Time or Subject Line or Item type.
 
-- **Custom attributes**: Custom attributes are extension attributes that you can use to add information about a recipient for which there isn't an existing attribute. You can add a maximum of 15 custom attributes to a mailbox. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add custom attribute** to add custom attributes.
+- **Custom attributes**: Custom attributes are extension attributes that you can use to add information about a recipient for which there isn't an existing attribute. You can add a maximum of 15 custom attributes to a mailbox. Click ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add custom attribute** to add custom attributes.
 
 ### Automatic replies
 
@@ -175,7 +175,7 @@ The **Mailbox Usage** section displays the last time that the user signed in to 
 
 1. In the Classic EAC, go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to change the properties for, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, you can change any of the following properties.
    - **General**
@@ -238,7 +238,7 @@ Use the **Email Address** section to add, view or change the email addresses ass
 
 - **Add**: 
 
-  1. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) **Add email address type** to add a new email address for this mailbox. Select one of following address types:
+  1. Click ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) **Add email address type** to add a new email address for this mailbox. Select one of following address types:
      - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
      - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
@@ -301,11 +301,11 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 - **Message Delivery Restrictions**: These settings control who can send email messages to this user. Click **View details** to view and change these restrictions.
   - **Accept messages from**: Use this section to specify who can send messages to this user.
   - **All senders**: Select this option to specify that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This option is selected by default. This option includes external users only if you clear the **Require that all senders are authenticated** check box. If you select this check box, messages from external users will be rejected.
-  - **Only senders in the following list**: Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
+  - **Only senders in the following list**: Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
   - **Require that all senders are authenticated**: Select this option to prevent anonymous users from sending messages to the user.
   - **Reject messages from**: Use this section to block people from sending messages to this user.
   - **No senders**: Select this option to specify that the mailbox won't reject messages from any senders in the Exchange organization. This option is selected by default.
-  - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
+  - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
 
 ### Member Of
 
@@ -328,7 +328,7 @@ Use the **Mailbox Delegation** section to assign permissions to other users (als
 
 - **Full Access**: This permission allows a delegate to sign in to the user's mailbox and view the contents of the mailbox. However, after this permission is assigned to a delegate, the delegate can't send messages from the mailbox. To allow a delegate to send email from the user's mailbox, you still have to assign the delegate the Send As or the Send on Behalf Of permission.
 
-To assign permissions to delegates, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
+To assign permissions to delegates, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
 
 ## Use Exchange Online PowerShell to change user mailbox properties
 

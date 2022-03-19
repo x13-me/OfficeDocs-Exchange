@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee332350(v=EXCHG.150)
 ms:contentKeyID: 48385572
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Trusted root certification authorities for federation trusts in Microsoft Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,9 +27,9 @@ The following table lists CAs currently trusted Microsoft. These CAs have been t
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the ways load balancing in Exchange Server handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
 ms.reviewer: 
 title: Load balancing in Exchange Server
@@ -42,7 +42,7 @@ With the HTTP protocol in use, all native clients connect using HTTP and HTTPs i
 
 The reduced number of server roles for Exchange 2016 and Exchange 2019 simplifies Exchange implementation and hardware requirements. The number of server roles in Exchange 2016 and 2019 shrinks from seven to two: the Mailbox server and the Edge Transport server. The Mailbox server role includes Client Access services, while the Edge Transport server provides secure mail flow in Exchange 2016 and Exchange 2019, just as it did in earlier versions of Exchange.
 
-![Conceptual overview of the Exchange load balancing process](../../media/30bc24ea-a9df-42ca-82c6-54cd9f009003.png)
+![Conceptual overview of the Exchange load balancing process.](../../media/30bc24ea-a9df-42ca-82c6-54cd9f009003.png)
 
 In Exchange 2013, the Client Access server role made sure that when a user attempted to access their mailbox, the server proxied the request back to the Mailbox server actively serving the user's mailbox. This meant that services such as Outlook on the web (previously known as Outlook Web App) were rendered for the user on the Mailbox itself, removing any need for affinity.
 
@@ -50,8 +50,8 @@ The same functionality remains in Exchange 2016 and Exchange 2019. If two Mailbo
 
 Read more about the server role changes in Exchange Server in the article, [Exchange Server architecture](../../architecture/architecture.md).
 
-|**Server Role**|**Services**|
-|:-----|:-----|
+|Server Role|Services|
+|---|---|
 |Mailbox server|Uses EdgeSync to manage one-way replication of receipt and configuration info from Active Directory to the AD LDS instance on the Edge Transport server.  <br/> Copies only information needed to let Edge Transport perform antispam and enable end-to-end mail flow.|
 |Edge Transport|Manages all inbound and outbound Internet mail flow using:  <br/> • mail relay  <br/> • smart hosting  <br/> • agents that provide more antispam service  <br/> • agents that apply transport to control mail flow  <br/> Not a member of the Active Directory forest|
 
@@ -73,7 +73,7 @@ Read more about HTTP and Exchange Server in the article [MAPI over HTTP in Excha
 
 In the example shown here, multiple servers configured in a database availability group (DAG) host the Mailbox servers running Client Access services. This provides high availability with a small Exchange server footprint. The client connects to the load balancer rather than directly to the Exchange servers. There's no requirement for load balancer pairs, however we recommend deploying in clusters to improve network resilience.
 
-![Client connections to Load balancers that distribute requests to DAG](../../media/4be3de77-92ae-4afc-a56e-79260e2d7aea.png)
+![Client connections to Load balancers that distribute requests to DAG.](../../media/4be3de77-92ae-4afc-a56e-79260e2d7aea.png)
 
 Be aware that DAGs use Microsoft Clustering Services. These services can't be enabled on the same server as Windows Network Load Balancing (NLB). Accordingly, Windows NLB is not an option when using DAGs. There are third-party software and virtual appliance solutions in this case.
 
@@ -119,8 +119,8 @@ SSL should terminate at the load balancer as this offers a centralized place to 
 
 The ports that need to be load balanced include some, such as those for IMAP4 or POP3, that may not even be used in your Exchange organization.
 
-|**TCP Port**|**Roles**|**Uses**|
-|:-----:|:-----:|:-----|
+|TCP Port|Roles|Uses|
+|:---:|:---:|---|
 |25|Mailbox|Inbound SMTP|
 |587|Mailbox|Inbound SMTP for clients|
 |110|Mailbox|POP3 clients|

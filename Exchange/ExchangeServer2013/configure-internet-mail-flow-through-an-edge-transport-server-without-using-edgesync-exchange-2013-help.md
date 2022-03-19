@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb232082(v=EXCHG.150)
 ms:contentKeyID: 61200290
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+description: How to configure internet mail flow through an Edge Transport server without EdgeSync in Exchange Server
+ms.topic: article
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

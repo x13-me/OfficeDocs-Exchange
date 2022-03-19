@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure message expiration intervals, message retries, and message resubmissions in the Transport service on a Mailbox server or on an Edge Transport server in Exchange 2016 and 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
 ms.reviewer: 
 title: Configure message retry, resubmit, and expiration intervals
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure message retry, resubmit, and expiration intervals
+# Configure message retry, resubmit, and expiration intervals in Exchange Server
 
 In Exchange Server, you can configure message retry, resubmit, and expiration intervals in the Transport service on Mailbox servers and Edge Transport servers. For detailed descriptions of these settings, see [Message retry, resubmit, and expiration intervals](message-intervals.md).
 
@@ -109,7 +109,7 @@ To verify that you've configured these intervals, do these steps:
 
 ### Use the EAC to configure the transient failure retry attempts, the transient failure retry interval, or the outbound connection failure retry interval on Mailbox servers
 
-1. In the EAC, go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. In the server properties window that opens, click **Transport limits**.
 
@@ -153,7 +153,7 @@ Set-TransportService -Identity Mailbox01 -TransientFailureRetryCount 8 -Transien
 
 To verify that you've configured these intervals, do any of these steps:
 
-- On a Mailbox server, open the EAC and go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the server properties window that opens, click **Transport limits**, and verify the values in the **Retries** section.
+- On a Mailbox server, open the EAC and go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). In the server properties window that opens, click **Transport limits**, and verify the values in the **Retries** section.
 
 - In the Exchange Management Shell on a Mailbox server or Edge Transport server, run this command to verify the property values:
 
@@ -201,7 +201,7 @@ Get-TransportService | Format-List Name,MessageRetryInterval
 
 ### Use the EAC to configure the delay DSN message notification timeout interval on Mailbox servers
 
-1. In the EAC, click **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, click **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. In the server properties window that opens, click **Transport limits**.
 
@@ -245,7 +245,7 @@ Set-TransportConfig -InternalDelayDSNEnabled $false
 
 To verify that you've configured the delay DSN timeout settings, do any of these steps:
 
-- On a Mailbox server, open the EAC and go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the server properties window that opens, click **Transport limits**, and verify the **Notify sender when message is delayed after (hours)** value in the **Notifications** section.
+- On a Mailbox server, open the EAC and go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). In the server properties window that opens, click **Transport limits**, and verify the **Notify sender when message is delayed after (hours)** value in the **Notifications** section.
 
 - In the Exchange Management Shell on a Mailbox server or Edge Transport server, run these commands to verify the property values:
 
@@ -263,7 +263,7 @@ The message expiration timeout interval specifies how long to wait before the me
 
 ### Use the EAC to configure the message expiration timeout interval on Mailbox servers
 
-1. In the EAC, click **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, click **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. In the server properties window that opens, click **Transport limits**.
 
@@ -287,7 +287,7 @@ Set-TransportService -Identity Mailbox01 -MessageExpirationTimeout 4.00:00:00
 
 To verify that you've configured the message expiration timeout interval, do any of these steps:
 
-- On a Mailbox server, open the EAC and go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the server properties window that opens, click **Transport limits**, and verify the **Maximum time since submission (days)** value in the **Message expiration** section.
+- On a Mailbox server, open the EAC and go to **Servers** \> **Servers**, select the server, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). In the server properties window that opens, click **Transport limits**, and verify the **Maximum time since submission (days)** value in the **Message expiration** section.
 
 - In the Exchange Management Shell on a Mailbox server or Edge Transport server, run this command to verify the **MessageExpirationTimeout** property value:
 

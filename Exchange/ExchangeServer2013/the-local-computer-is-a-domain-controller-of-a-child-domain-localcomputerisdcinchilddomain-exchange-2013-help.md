@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.localco
 ms:contentKeyID: 46628987
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Correct this warning by making the Exchange server a global catalog server.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A list of links to topics for admins in Exchange Online related to clients an mobile access to mailboxes.
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 4b2256d7-2250-40f4-b25f-4ac52c8c9647
 ms.reviewer: 
@@ -24,10 +24,6 @@ Many different clients can be used to access information in an Exchange Online m
 
 The following table contains links to topics that will help you learn about and manage some of the clients and client access methods that can be used to access an Office 365 or Microsoft 365 mailbox.
 
-<br>
-
-****
-
 |Topic|Description|
 |---|---|
 |[Exchange ActiveSync in Exchange Online](exchange-activesync/exchange-activesync.md)|Learn about Exchange ActiveSync, the protocol that provides connectivity to a wide variety of mobile phones and tablets. Using Exchange ActiveSync, users can access email, calendar, contact, and task information.|
@@ -42,4 +38,3 @@ The following table contains links to topics that will help you learn about and 
 |[Client Access Rules in Exchange Online](client-access-rules/client-access-rules.md)|Learn how to use Client Access Rules to control connections to Exchange Online.|
 |[Disable Basic authentication in Exchange Online](disable-basic-authentication-in-exchange-online.md)|Learn how to disable Basic auth connections to your Exchange Online mailboxes.|
 |[Enable or disable modern authentication for Outlook in Exchange Online](enable-or-disable-modern-authentication-in-exchange-online.md)|Learn how to require Modern auth connections to your Exchange Online mailboxes.|
-|

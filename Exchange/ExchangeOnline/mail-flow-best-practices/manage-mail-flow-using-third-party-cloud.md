@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: d0d10ab1-08c1-4ffe-aaa5-f9dbd9a118ed
 ms.reviewer: 
@@ -32,6 +32,8 @@ This topic covers the following complex mail flow scenarios using Exchange Onlin
 ## Using a third-party cloud service with Microsoft 365 or Office 365
 
 ### Scenario 1 - MX record points to third-party spam filtering
+  > [!IMPORTANT]
+  > Microsoft strongly recommends you to enable Enhanced Filtering for Connectors or bypass filtering completely using a mail flow rule (check out point 5). Failure to follow this will inevitably result in misclassification of inbound email to your organization and to subpar experience of Office 365 email and protection features.
 
 I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service for spam, malware, and phish filtering. All email from the internet must first be filtered by this third-party cloud service before being routed to Microsoft 365 or Office 365.
 
@@ -59,7 +61,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
    When you're configuring this scenario, the "host" that you need to configure to receive email from the third-party service is specified in the **MX Record**. For example:
 
-   ![Example host name value](../media/ThirdPartyHostconfig.png)
+   ![Example host name value.](../media/ThirdPartyHostconfig.png)
 
    In this example, the host name for the Microsoft 365 or Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
 
@@ -91,7 +93,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
    - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Defender for Office 365 controls and will therefore prevent a double anti-spam check.
 
-     ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
+     ![Mail flow rule to prevent double-scanning.](../media/TransportRuleFor3rdParty.png)
 
      > [!IMPORTANT]
      > Instead of bypassing spam filtering using a mail flow rule, we highly recommend that you enable [Enhanced Filtering for Connector (also known as Skip Listing)](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Most third-party cloud anti-spam providers share IP addresses among many customers. Bypassing scanning on these IPs might allow spoofed and phishing messages from these IP addresses.
@@ -102,7 +104,7 @@ I plan to use Exchange Online to host all my organization's mailboxes. All email
 
 This scenario requires you to use [Enhanced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Otherwise, mail from all internet senders appears to originate from the third-party service, not from the true sources on the internet.
 
-![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 or Microsoft 365, and showing outbound mail from Microsoft 365 or Office 365 to the third-party solution and then to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
+![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 or Microsoft 365, and showing outbound mail from Microsoft 365 or Office 365 to the third-party solution and then to the internet.](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
 #### Best practices for using a third-party cloud service with Microsoft 365 or Office 365
 

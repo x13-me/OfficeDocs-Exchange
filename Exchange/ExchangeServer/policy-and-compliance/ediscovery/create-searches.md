@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 ms.reviewer:
 title: Create an In-Place eDiscovery search in Exchange Server
@@ -42,7 +42,7 @@ manager: serdars
 
 As previously explained, to create eDiscovery searches, you have to sign in to a user account that has an SMTP address in your organization.
 
-1. Go to **Compliance management** \> **In-place eDiscovery & Hold**, and then click **New** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **In-place eDiscovery & Hold**, and then click **New** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New In-Place eDiscovery & Hold** window, on the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
 
@@ -56,7 +56,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
    - To include public folders in the search (or to place public folders on hold), click **Search all public folders**. For more information about searching public folders, see [Search and place a hold on public folders using In-Place eDiscovery](search-public-folders.md).
 
-   ![Use In-Place eDiscovery to search and place a hold on public folders](../../media/TA_MRM_SearchPublicFolders.gif)
+   ![Use In-Place eDiscovery to search and place a hold on public folders.](../../media/TA_MRM_SearchPublicFolders.gif)
 
 4. On the **Search query** page, complete the following fields:
 
@@ -64,7 +64,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
    - **Filter based on criteria**: Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types. For more information about search queries, see [Message properties and search operators for In-Place eDiscovery in Exchange Server](message-properties-and-search-operators.md).
 
-     ![Configure an eDiscovery search query](../../media/TA_MRM_SearchQuery.png)
+     ![Configure an eDiscovery search query.](../../media/TA_MRM_SearchQuery.png)
 
      > [!NOTE]
      > The **From:** and **To/Cc/Bcc:** fields are connected by an **OR** operator in the search query that's created when you run the search. That means any message sent or received by any of the specified users (and matches the other search criteria) is included in the search results. The dates are connected by an **AND** operator.
@@ -78,7 +78,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
      > [!IMPORTANT]
      > When placing content sources or specific items on In-Place Hold for legal purposes, it's generally recommended to hold items indefinitely and remove the hold when the case or investigation is completed.
 
-6. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane. Click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information displayed in the details pane.
+6. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane. Click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png) to update the information displayed in the details pane.
 
 ## Use the Exchange Management Shell to create a search
 
@@ -160,16 +160,16 @@ After you create an eDiscovery search, you can use the EAC to get an estimate an
 
 2. In the list view, select the search, and then do one of the following:
 
-   - Click **Search** ![Search icon](../../media/ITPro_EAC_.png) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
+   - Click **Search** ![Search icon.](../../media/ITPro_EAC_.png) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate.
 
-     Search estimates are displayed in the details pane. Click **Refresh** ![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png) to update the information displayed in the details pane.
+     Search estimates are displayed in the details pane. Click **Refresh** ![Refresh icon.](../../media/ITPro_EAC_RefreshIcon.png) to update the information displayed in the details pane.
 
    - Click **Preview search results** in the details pane to preview the results after the search estimate is completed. Selecting this option opens the **eDiscovery search preview** window. All messages returned from the mailboxes or public folders that were searched are displayed.
 
      > [!NOTE]
      > The mailboxes or public folders that were searched are listed in the right pane in the **eDiscovery search preview** window. For each source, the number of items returned and the total size of these items is also displayed. All items returned by the search are listed in the right pane, and can be sorted by newest or oldest date. Items from each mailbox or public folder can't be displayed in the right pane by clicking a source in the left pane. To view the items returned from a specific mailbox or public folder, you can copy the search results and view the items in the discovery mailbox.
 
-   ![Estimate or Preview Search Results](../../media/TA_Discovery_EstimatePreviewUI.gif)
+   ![Estimate or Preview Search Results.](../../media/TA_Discovery_EstimatePreviewUI.gif)
 
 ## Use the Exchange Management Shell to estimate search results
 

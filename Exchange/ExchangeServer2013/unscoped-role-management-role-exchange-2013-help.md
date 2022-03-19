@@ -1,4 +1,6 @@
 ---
+ms.topic: article
+description: This article describes the "Unscoped Role Management" management role that enables administrators to create and manage unscoped top-level management roles in an organization.
 title: 'Unscoped Role Management role: Exchange 2013 Help'
 TOCTitle: Unscoped Role Management role
 ms:assetid: d11eb843-64c9-4968-bfd5-9a8d94903058
@@ -6,7 +8,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd876943(v=EXCHG.150)
 ms:contentKeyID: 49289422
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

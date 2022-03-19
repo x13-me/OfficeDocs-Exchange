@@ -5,8 +5,10 @@ ms:assetid: 48922de2-a68c-4092-96a5-d38c8e5f49f5
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.warninginstallexchangerolesondomaincontroller(v=EXCHG.150)
 ms:contentKeyID: 46628923
 ms.reviewer: 
+ms.topic: article
+description: Issues to know about if you install Exchange 20213 on a domain controller
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

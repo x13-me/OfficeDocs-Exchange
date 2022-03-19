@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: The permissions required to perform tasks to manage Microsoft Exchange Online vary depending on the procedure being performed or the cmdlet you want to run.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 15073ce1-0917-403b-8839-02a2ebc96e16
 ms.reviewer:
@@ -41,10 +41,6 @@ If you want to delegate the ability to manage a feature to another user, see [De
 
 You can use the features in the following table to manage your Exchange Online organization and recipients. Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information about these role groups, see [Role groups](permissions-exo.md#role-groups).
 
-<br>
-
-****
-
 |Feature|Permissions required|
 |---|---|
 |Anti-malware|Organization Management <p> Hygiene Management|
@@ -81,7 +77,6 @@ You can use the features in the following table to manage your Exchange Online o
 |Unified Messaging|Organization Management <p> Unified Messaging Management|
 |View-only administrator audit logging|Organization Management <p> Records Management|
 |View reports|Organization Management: Users have access to mailbox reports and mail protection reports. <p> View-Only Organization Management: Users have access to mailbox reports. <p> View-Only Recipients: Users have access to mail protection reports. <p> Compliance Management: Users have access to mail protection reports and Data Loss Prevention (DLP) reports (if their subscription has DLP capabilities).|
-|
 
 > [!NOTE]
 > To find the permissions that are required to run any Exchange Online cmdlet, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).

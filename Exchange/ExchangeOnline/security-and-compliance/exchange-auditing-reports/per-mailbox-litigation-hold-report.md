@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: If your organization is involved in a legal action, you may have to take steps to preserve relevant data, such as email messages, that may be used as evidence. In situations like this, you can use litigation hold to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. For more information about what happens when a mailbox is on litigation hold and how to enable and disable it, see theMailbox Featuressection in Manage user mailboxes.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Run a per-mailbox litigation hold report
+title: Run a per-mailbox litigation hold report in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,6 +19,9 @@ manager: serdars
 ---
 
 # Run a per-mailbox litigation hold report in Exchange Online
+
+> [!NOTE]
+> Classic Exchange admin center is in the process of being deprecated in worldwide deployment. We recommend that you search the audit log in the Microsoft 365 compliance center. For more information, see [Deprecation of the classic Exchange admin center in WW service](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-the-classic-exchange-admin-center-in-ww-service/ba-p/2736358) and [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 If your Exchange Online organization is involved in a legal action, you may have to take steps to preserve relevant data, such as email messages, that may be used as evidence. In situations like this, you can use litigation hold to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. For more information about what happens when a mailbox is on litigation hold and how to enable and disable it, see the "Mailbox Features" section in [Manage user mailboxes](../../recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes.md).
 
@@ -38,7 +41,7 @@ For each of these change types, the report includes the user who made the change
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) forum.
 
-## Use the EAC to run a litigation hold report
+## Use the classic EAC to run a litigation hold report
 
 1. In the EAC, navigate to **Compliance Management** \> **Auditing**.
 
@@ -56,4 +59,4 @@ For each of these change types, the report includes the user who made the change
 To verify that you've successfully run a litigation hold report, mailboxes that had litigation hold changes within the date range are displayed in the search results pane. If there are no results, then no changes to litigation hold have taken place within the date range or recent changes haven't taken effect yet.
 
 > [!NOTE]
-> When a mailbox is put on litigation hold, it can take up to 60 minutes for the hold to take effect.
+> When a mailbox is put on litigation hold, it can take up to 240 minutes for the hold to take effect.

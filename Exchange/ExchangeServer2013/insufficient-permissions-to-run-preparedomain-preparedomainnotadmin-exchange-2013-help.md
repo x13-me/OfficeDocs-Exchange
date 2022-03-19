@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.prepare
 ms:contentKeyID: 46629108
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: 'Exchange Server setup failed: permission lacking to run /PrepareDomain'
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -5,8 +5,10 @@ ms:assetid: 29bdddbf-75d5-4c92-988e-c8506ecc7a1c
 ms:mtpsurl: https://technet.microsoft.com/library/JJ966276(v=EXCHG.150)
 ms:contentKeyID: 51439478
 ms.reviewer: 
+ms.topic: article
+description: How to configure UM to work with Lync Server in Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

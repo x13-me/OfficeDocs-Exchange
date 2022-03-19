@@ -5,9 +5,11 @@ ms:assetid: bb6b8524-aaee-4be8-a04e-e61cd2ab3465
 ms:mtpsurl: https://technet.microsoft.com/library/Mt829264(v=EXCHG.150)
 ms:contentKeyID: 74518107
 ms.reviewer: 
+ms.topic: article
+description: How to recreate arbitration mailboxes in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -21,10 +23,10 @@ Exchange 2013 comes with five system mailboxes known as *arbitration mailboxes*.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -148,6 +150,17 @@ To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29
 
     ```powershell
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
+
+2. In Exchange Management Shell, run the following:
+
+    ```powershell
+    Enable-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}"
+    ```
+3. In Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
+
+    ```powershell
+    Get-Mailbox "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" -Arbitration | Set-Mailbox -Arbitration -UMDataStorage:$true -Force
     ```
 
 ## Re-create the Microsoft Exchange organization mailbox for OABs

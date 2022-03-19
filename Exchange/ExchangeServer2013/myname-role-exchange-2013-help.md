@@ -5,8 +5,10 @@ ms:assetid: 6c8320d3-7a71-4975-b8b3-c1b1b52dd7df
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461931(v=EXCHG.150)
 ms:contentKeyID: 49289291
 ms.reviewer: 
+ms.topic: article
+description: About the MyName role in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

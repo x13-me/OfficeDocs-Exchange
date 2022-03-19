@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the default virtual directory settings on Mailbox servers in Exchange 2016 and Exchange 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: d2d89ce6-4721-4737-a325-fba5ad9422e0
 ms.reviewer: 
 title: Default settings for Exchange virtual directories
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Default settings for Exchange virtual directories
+# Default settings for Exchange virtual directories in Exchange Server
 
 Exchange Server 2016 and Exchange Server 2019 automatically configure multiple Internet Information Services (IIS) virtual directories during the server installation. The tables in the following sections show the settings for the Client Access (frontend) services on Mailbox servers and the default IIS authentication and Secure Sockets Layer (SSL) settings.
 
@@ -24,8 +24,8 @@ Exchange Server 2016 and Exchange Server 2019 automatically configure multiple I
 
 The following table lists the default settings in the Client Access services (the default web site) on Exchange Mailbox servers.
 
-|**Virtual directory**|**Authentication method**|**SSL settings**|**Management method**|
-|:-----|:-----|:-----|:-----|
+|Virtual directory|Authentication method|SSL settings|Management method|
+|---|---|---|---|
 |Default Web Site|Anonymous|Required|IIS management console|
 |API<sup>1</sup>|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption||
 |aspnet_client|Anonymous authentication|SSL required <br/> Requires 128-bit encryption|IIS management console|
@@ -45,8 +45,8 @@ The following table lists the default settings in the Client Access services (th
 
 The following table lists the default settings in the back end services on Exchange Mailbox servers.
 
-|**Virtual directory**|**Authentication method**|**SSL settings**|**Management method**|
-|:-----|:-----|:-----|:-----|
+|Virtual directory|Authentication method|SSL settings|Management method|
+|---|---|---|---|
 |Exchange Back End|Anonymous authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory shouldn't be configured by the user.|
 |API<sup>1</sup>|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory shouldn't be configured by the user.|
 |Autodiscover|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory shouldn't be configured by the user.|

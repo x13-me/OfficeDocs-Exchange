@@ -4,9 +4,10 @@ TOCTitle: Allow Message Waiting Indicator
 ms:assetid: 57fb439e-8208-499f-a20b-814677843a8c
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298001(v=EXCHG.150)
 ms:contentKeyID: 53908377
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -168,9 +169,9 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -210,9 +211,9 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to config
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -258,9 +259,9 @@ The following table shows the parameter on a UM mailbox that must be configured 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -284,9 +285,9 @@ The following table shows the parameter on a UM mailbox policy that must be conf
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

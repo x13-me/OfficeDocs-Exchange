@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124489(v=EXCHG.150)
 ms:contentKeyID: 49315255
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to enable IMAP4 client connectivity in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

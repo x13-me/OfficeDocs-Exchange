@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ619301(v=EXCHG.150)
 ms:contentKeyID: 49289229
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Deploy Microsoft Exchange Server 2013 in a virtualized environment
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

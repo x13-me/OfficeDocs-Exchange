@@ -3,8 +3,8 @@ localization_priority: Critical
 monikerRange: exchserver-2016 || exchserver-2019
 description: 'Summary: Learn about the Windows operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 and the Exchange Management Tools.'
 ms.topic: conceptual
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid:
 ms.reviewer: 
 title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements
@@ -53,11 +53,6 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 ::: moniker-end
 
 - Verify the [Supported operating systems for Exchange 2019](./system-requirements.md?preserve-view=true&view=exchserver-2019#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](./system-requirements.md?preserve-view=true&view=exchserver-2016#supported-operating-systems-for-exchange-2016).
-
-::: moniker range="exchserver-2019"
-> [!NOTE]
-> New to Exchange 2019 is the ability to upgrade your operating system to a newer version while Exchange is installed on Windows Server 2019 or later.
-::: moniker-end
 
 - Verify the computer is joined to the appropriate internal Active Directory domain.
 
@@ -123,6 +118,12 @@ When you use one of these options, you don't need to restart the computer after 
       >
       > - An overview of the latest supported versions is available at: [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
 
+   d. [IIS URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite)
+   
+      > [!NOTE]
+      >
+      > The IIS URL Rewrite Module is required with Cumulative Update 11 or later.
+
 2. Add the required Lync Server or Skype for Business Server components:
 
    a. Install the Server Media Foundation windows feature by executing the following command in Windows PowerShell:
@@ -134,6 +135,8 @@ When you use one of these options, you don't need to restart the computer after 
    b. Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
 
       > [!NOTE]
+      > Make sure to use the Unified Communications Managed API 4.0 until something else is communicated by the Exchange team.
+      >
       > When installing on Windows Server Core, you must use the installation package located in \UCMARedist on distributed media.
 
 3. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the one of the following commands in Windows PowerShell:
@@ -250,7 +253,13 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
       >
       > - Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
-   e. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
+   e. [IIS URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite)
+   
+      > [!NOTE]
+      >
+      > The IIS URL Rewrite Module is required with Cumulative Update 22 or later.
+
+   f. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
 
 ### Exchange 2016 Edge Transport servers on Windows Server 2016
 
@@ -300,7 +309,19 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
       >
       > - Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
-   d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
+   d. [IIS URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite)
+   
+      > [!NOTE]
+      >
+      > The IIS URL Rewrite Module is required with Cumulative Update 22 or later.
+
+   e. [Update for Universal C Runtime in Windows (KB2999226)](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+
+      > [!NOTE]
+      >
+      > The Update for Universal C Runtime in Windows (KB2999226) is required on Server 2012 R2 with Cumulative Update 22 or later.
+
+   f. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
 
 ### Exchange 2016 Edge Transport servers on Windows Server 2012 or Windows Server 2012 R2
 

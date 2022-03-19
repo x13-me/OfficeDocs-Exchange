@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657488(v=EXCHG.150)
 ms:contentKeyID: 49289386
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Email addresses and address books in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -49,8 +51,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

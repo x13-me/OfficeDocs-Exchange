@@ -4,9 +4,10 @@ TOCTitle: Benefits of anti-spam features in Exchange Online Protection over Exch
 ms:assetid: 00e37a3c-3fbc-488f-bdad-d52a3c80fd72
 ms:mtpsurl: https://technet.microsoft.com/library/JJ673032(v=EXCHG.150)
 ms:contentKeyID: 49289144
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -21,7 +22,7 @@ The following are benefits of using Exchange anti-spam protection in the cloud (
 
   - **More control and easier configuration**: Administrators can use the Exchange admin center (EAC) web-based management console in order to customize spam filtering settings so that they best meet the needs of your organization. There is no anti-spam user interface in Exchange Server 2013. EOP anti-spam protection features are included in Exchange Online
 
-  - **Stronger connection filtering**: In Exchange 2013, connection filtering IP Allow lists and IP Block lists are available only if you install an Edge Transport server in your perimeter network. For more information, see [Edge Transport servers](edge-transport-servers-exchange-2013-help.md). In the cloud, you can choose to skip spam filtering on email messages sent from trusted senders (gathered from various third-party sources), ensuring that these messages are not mistakenly marked as spam. Also, the hosted filtering service uses Microsoft's own block lists and lists aggregated from vendors to provide greater IP-level filtering.
+  - **Stronger connection filtering**: In Exchange 2013, connection filtering IP Allowlists and IP Blocklists are available only if you install an Edge Transport server in your perimeter network. For more information, see [Edge Transport servers](edge-transport-servers-exchange-2013-help.md). In the cloud, you can choose to skip spam filtering on email messages sent from trusted senders (gathered from various third-party sources), ensuring that these messages are not mistakenly marked as spam. Also, the hosted filtering service uses Microsoft's own blocklists and lists aggregated from vendors to provide greater IP-level filtering.
 
   - **Stronger content filtering**: You can easily configure your content filter policy to:
 

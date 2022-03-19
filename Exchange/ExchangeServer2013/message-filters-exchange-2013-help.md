@@ -4,9 +4,11 @@ TOCTitle: Message filters
 ms:assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
 ms:mtpsurl: https://technet.microsoft.com/library/Bb123714(v=EXCHG.150)
 ms:contentKeyID: 49286849
+ms.topic: article
+description: Configure filter criteria.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -31,9 +33,9 @@ You can use message properties to create a filter and locate messages that meet 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

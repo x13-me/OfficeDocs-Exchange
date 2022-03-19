@@ -5,8 +5,10 @@ ms:assetid: baebc865-ec3e-48ca-ac48-7aac8b34c003
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124376(v=EXCHG.150)
 ms:contentKeyID: 61200297
 ms.reviewer: 
+ms.topic: article
+description: How to manage Connection Filtering on Edge Transport Servers in Exchange 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -64,7 +66,7 @@ To make the change take effect, restart the Microsoft Exchange Transport service
 Restart-Service MSExchangeTransport
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully enabled or disabled connection filtering, run the following command and verify that the value displayed is the value you configured.
 
@@ -100,7 +102,7 @@ To enable the IP Block list, run the following command:
 Set-IPBlockListConfig -Enabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully enabled or disabled the IP Block list, run the following command and verify that the value displayed is the value you configured.
 
@@ -128,7 +130,7 @@ This example configures the IP Block list with the settings as follows:
 Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured the IP Block list, run the following command and verify that the values displayed are the values you configured.
 
@@ -175,7 +177,7 @@ The following example adds the IP Block list entry for the IP address range 192.
 Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully added an IP Block list entry, run the following command and verify that the new IP Block list entry is displayed.
 
@@ -203,7 +205,7 @@ The following example removes the IP Block list entry that contains the IP addre
 Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully removed an IP Block list entry, run the following command and verify that the IP Block list entry you removed is gone.
 
@@ -239,7 +241,7 @@ To enable all IP Block List providers, run the following command:
 Set-IPBlockListProvidersConfig -Enabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you enabled or disabled all IP Block List providers, run the following command an verify that the value displayed is the value you configured.
 
@@ -267,7 +269,7 @@ Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@f
 
 For more information, see [Set-IPBlockListProvidersConfig](/powershell/module/exchange/Set-IPBlockListProvidersConfig).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured all IP Block List providers, run the following command and verify that the values displayed are the values you configured.
 
@@ -318,7 +320,7 @@ Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl
 
 For more information, see [Add-IPBlockListProvider](/powershell/module/exchange/Add-IPBlockListProvider).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully added an IP Block List provider, run the following command and verify that the new IP Block List provider is displayed.
 
@@ -346,7 +348,7 @@ The following example enables the provider named Contoso IP Block List Provider.
 Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully enabled or disabled an IP Block List provider, run the following command and verify that the value displayed is the value you configured.
 
@@ -372,7 +374,7 @@ Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add
 
 For more information, see [Set-IPBlockListProvider](/powershell/module/exchange/Set-IPBlockListProvider).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured an IP Block List provider, run the following command and verify that the values displayed are the values you configured.
 
@@ -408,7 +410,7 @@ The following example removes the IP Block List provider named Contoso IP Block 
 Remove-IPBlockListProvider "Contoso IP Block list Provider"
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully removed an IP Block List provider, run the following command and verify that the IP Block List provider you removed is gone.
 
@@ -444,7 +446,7 @@ To enable the IP Allow list, run the following command:
 Set-IPAllowListConfig -Enabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully enabled or disabled the IP Allow list, run the following command and verify that the value displayed is the value you configured.
 
@@ -466,7 +468,7 @@ This example configures the IP Allow list to filter incoming connections from in
 Set-IPAllowListConfig -InternalMailEnabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured the IP Allow list, run the following command and verify that the values displayed are the values you configured.
 
@@ -513,7 +515,7 @@ This example adds the IP Allow list entry for the IP address range 192.168.1.10 
 Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully added an IP Allow list entry, run the following command and verify that the new IP Allow list entry is displayed.
 
@@ -541,7 +543,7 @@ This example removes the IP Allow list entry that contains the IP address 192.16
 Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully removed an IP Allow list entry, run the following command and verify that the IP Allow list entry you removed is gone.
 
@@ -577,7 +579,7 @@ To enable all IP Allow List providers, run the following command:
 Set-IPAllowListProvidersConfig -Enabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you enabled or disabled all IP Allow List providers, run the following command and verify that the value displayed is the value you configured.
 
@@ -601,7 +603,7 @@ Set-IPAllowListProvidersConfig -InternalMailEnabled $true
 
 For more information, see [Set-IPBlockListProvidersConfig](/powershell/module/exchange/Set-IPBlockListProvidersConfig).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured all IP Allow List providers, run the following command and verify that the values displayed are the values you configured.
 
@@ -652,7 +654,7 @@ Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain all
 
 For more information, see [Add-IPBlockListProvider](/powershell/module/exchange/Add-IPBlockListProvider).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully added an IP Allow List provider, run the following command and verify that the new IP Allow List provider is displayed.
 
@@ -680,7 +682,7 @@ This example enables the provider named Contoso IP Allow List Provider.
 Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully enabled or disabled an IP Allow List provider, run the following command and verify that the value displayed is the value you configured.
 
@@ -706,7 +708,7 @@ Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add
 
 For more information, see [Set-IPBlockListProvider](/powershell/module/exchange/Set-IPBlockListProvider).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured an IP Allow List provider, run the following command and verify that the values displayed are the values you configured.
 
@@ -742,7 +744,7 @@ This example removes the IP Allow List provider named Contoso IP Allow List Prov
 Remove-IPAllowListProvider "Contoso IP Allow List Provider"
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully removed an IP Allow List provider, run the following command and verify that the IP Allow List provider you removed is gone.
 

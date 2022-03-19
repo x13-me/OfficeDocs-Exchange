@@ -4,9 +4,10 @@ description: 'Summary: Learn about the considerations for using S/MIME in Outloo
 ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 monikerRange: exchserver-2016 || exchserver-2019
 ms.reviewer:
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: jhendr
+author: JoanneHendrickson
 f1.keywords:
 - NOCSH
 ---

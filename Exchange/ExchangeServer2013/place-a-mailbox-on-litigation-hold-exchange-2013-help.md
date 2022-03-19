@@ -1,10 +1,12 @@
 ---
 title: 'Place a mailbox on Litigation Hold: Exchange 2013 Help'
 TOCTitle: Place a mailbox on Litigation Hold
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to place a mailbox on Litigation Hold in Microsoft Exchange
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 f1.keywords:
 - NOCSH
@@ -38,7 +40,7 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
 
 1. Go to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to place on Litigation Hold, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox features.**
 
@@ -105,7 +107,7 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
   1. Go to **Recipients** \> **Mailboxes**.
 
-  2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+  2. In the list of user mailboxes, click the mailbox that you want to verify Litigation Hold settings for, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
   3. On the mailbox properties page, click **Mailbox features.**
 

@@ -4,9 +4,10 @@ TOCTitle: Cannot write to the Exchange organization container
 ms:assetid: 17c4667b-7db1-4e0a-b824-1f6d51d980a9
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.globalserverinstall(v=EXCHG.150)
 ms:contentKeyID: 46628820
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

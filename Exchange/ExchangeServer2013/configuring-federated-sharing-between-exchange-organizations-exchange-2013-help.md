@@ -5,8 +5,10 @@ ms:assetid: 94e31454-b027-4757-b52f-d3c2ead6d916
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657473(v=EXCHG.150)
 ms:contentKeyID: 49289355
 ms.reviewer:
+ms.topic: article
+description: How to configure federated sharing between Exchange organizations
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

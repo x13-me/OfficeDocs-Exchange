@@ -1,10 +1,11 @@
 ---
 title: 'Change the offline address book generation schedule: Exchange 2013 Help'
 TOCTitle: Change the offline address book generation schedule
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage'
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80

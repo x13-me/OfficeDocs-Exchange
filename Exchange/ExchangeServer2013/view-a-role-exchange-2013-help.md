@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd335117(v=EXCHG.150)
 ms:contentKeyID: 49289181
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: how-to
+description: How to view a role in Microsoft Exchange
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

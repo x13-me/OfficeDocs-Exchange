@@ -5,8 +5,10 @@ ms:assetid: b6a3840d-b821-4e53-877b-59c16be77206
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124345(v=EXCHG.150)
 ms:contentKeyID: 49284660
 ms.reviewer: 
+ms.topic: article
+description: About setting message size limits in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -72,10 +74,10 @@ The following tables show the message limits, including information about how to
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -132,10 +134,10 @@ The following tables show the message limits, including information about how to
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -221,10 +223,10 @@ The following tables show the message limits, including information about how to
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -269,10 +271,10 @@ The following tables show the message limits, including information about how to
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

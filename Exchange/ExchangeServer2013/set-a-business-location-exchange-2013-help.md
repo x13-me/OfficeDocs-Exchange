@@ -1,9 +1,11 @@
 ---
 title: 'Set a business location: Exchange 2013 Help'
 TOCTitle: Set a business location
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: how-to
+description: How to specify the location of a business on a Unified Messaging auto attendant in Microsoft Exchange Server
 ms.reviewer:
 ms.assetid: 19bbc20d-d11e-4e75-9bb4-c5d85cf17fc5
 f1.keywords:
@@ -36,9 +38,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to configure a business location
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to set the business location, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to set the business location, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page \> **General**, under **Business location**, type the location of the business.
 

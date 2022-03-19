@@ -5,8 +5,10 @@ ms:assetid: 5df8a44a-0644-4574-bd61-30440b1816f3
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.outlook(v=EXCHG.150)
 ms:contentKeyID: 49720798
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the Outlook health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

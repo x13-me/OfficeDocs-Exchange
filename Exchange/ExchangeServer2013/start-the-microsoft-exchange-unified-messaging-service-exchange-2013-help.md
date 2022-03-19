@@ -5,8 +5,10 @@ ms:assetid: b54008e6-172e-4435-8516-57cff740e89c
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124330(v=EXCHG.150)
 ms:contentKeyID: 49315502
 ms.reviewer: 
+ms.topic: how-to
+description: How to start the Unified Messaging service in Microsoft Excahange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

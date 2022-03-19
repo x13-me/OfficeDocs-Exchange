@@ -1,10 +1,12 @@
 ---
 title: 'Import a custom DLP policy template from a file: Exchange 2013 Help'
 TOCTitle: Import a custom DLP policy template from a file
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to import a custom DLP policy template from a file in Exchange Server
 ms.assetid: 83f49dbd-f9b1-498e-b548-1529c5e1ccdb
 f1.keywords:
 - NOCSH
@@ -37,7 +39,7 @@ Use the following procedure to import a custom DLP policy template from a file. 
 
 1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**.
 
-2. Click the arrow that is next to the **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif) icon, then click **Import policy**.
+2. Click the arrow that is next to the **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif) icon, then click **Import policy**.
 
 3. On the **Import policy** page, complete the following fields:
 
@@ -56,7 +58,7 @@ Use the following procedure to import a custom DLP policy template from a file. 
 This example imports a custom DLP policy template file in the file C:\My Documents\DLP Backup.xml. Importing a DLP policy collection from an XML file removes or overwrites all pre-existing DLP policies that were defined in your organization. Make sure that you have a backup of your current DLP policy collection before you import and overwrite your current DLP policies.
 
 ```powershell
-Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+Import-DlpPolicyCollection -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\DLP Backup.xml'))
 ```
 
 ## For more information

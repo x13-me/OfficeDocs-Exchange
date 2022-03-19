@@ -5,9 +5,11 @@ ms:assetid: 0e0c95ce-6109-4591-b86d-c6cfd44d21f5
 ms:mtpsurl: https://technet.microsoft.com/library/Dd633492(v=EXCHG.150)
 ms:contentKeyID: 49289166
 ms.reviewer: 
+ms.topic: article
+description: About the Records Management role group of the Role Based Access Control permissions model in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -77,15 +79,15 @@ For more information about role assignments and management scopes, see the follo
 
 ### Management roles assigned to this role group
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

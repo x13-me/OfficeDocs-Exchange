@@ -5,8 +5,10 @@ ms:assetid: ea634068-aa8c-4421-a3fc-d8695ea73b80
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pop.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720910
 ms.reviewer: 
+ms.topic: article
+description: How to troubleshoot the POP.Proxy health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -17,11 +19,11 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The POP.Proxy health set monitors the availability of the Microsoft Exchange POP3 proxy infrastructure on the Client Access server (CAS). If you receive an alert that specifies that the POP.Proxy health set is unhealthy, this indicates an issue that affects the POP components on the CAS indicated in the alert.
+The POP.Proxy health set monitors the availability of the Microsoft Exchange POP3 proxy infrastructure on the Client Access server (CAS). If you receive an alert that specifies the POP.Proxy health set is unhealthy, this alert indicates an issue that affects the POP components on the CAS indicated in the alert.
 
 ## Explanation
 
-The POP.Proxy health set works in conjunction with the POP health set.
+The POP.Proxy health set works with the POP health set.
 
 ## User Action
 

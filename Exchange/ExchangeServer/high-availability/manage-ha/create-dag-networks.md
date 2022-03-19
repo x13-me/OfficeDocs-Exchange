@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Create additional networks, if needed, for use in a database availability group (DAG).'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 6caec7be-788a-4058-87a7-f31c575b870c
 ms.reviewer:
 title: Create a database availability group network
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Create a database availability group network
+# Create a database availability group network in Exchange Server
 
 You can use the EAC or the Exchange Management Shell to create a DAG network.
 
@@ -41,7 +41,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Select the DAG you want to configure, and then click ![Add DAG network](../../media/ITPro_EAC_AddDagNetwork.png).
+2. Select the DAG you want to configure, and then click ![Add DAG network.](../../media/ITPro_EAC_AddDagNetwork.png).
 
 3. On the **new database availability group network** page, provide the following information:
 
@@ -49,7 +49,7 @@ Looking for other management tasks related to DAGs? Check out [Manage database a
 
    - **Description**: Use this field to provide a text description of the DAG network.
 
-   - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add a subnet, click ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to edit a subnet, and click minus (-) to remove a subnet.
+   - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to add a subnet, click ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to edit a subnet, and click minus (-) to remove a subnet.
 
 4. Click **Save** to create the DAG network.
 

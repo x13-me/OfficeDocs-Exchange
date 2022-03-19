@@ -1,10 +1,12 @@
 ---
 title: 'Create an offline address book: Exchange 2013 Help'
 TOCTitle: Create an offline address book
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create an offline address book in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.NewOabWizardForm.OabIntroductionWizardPage'
 ms.assetid: b57bb4ce-5b6e-4702-a2f8-04bf3898a861

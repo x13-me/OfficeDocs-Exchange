@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee861109(v=EXCHG.150)
 ms:contentKeyID: 49345054
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to configure Outlook to show the original sender in the quarantine mailbox in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

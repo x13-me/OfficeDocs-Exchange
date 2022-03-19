@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.reviewer:
 title: In-Place eDiscovery in Exchange Server
@@ -37,7 +37,7 @@ Authorized users can perform an In-Place eDiscovery search by selecting the mail
 
 - **Export search results** - After search results are copied to a discovery mailbox, you can export them to a PST file.
 
-![Estimate, Preview, Copy, and Export Search Results](../../media/TA_Discovery_EstimatePreview.gif)
+![Estimate, Preview, Copy, and Export Search Results.](../../media/TA_Discovery_EstimatePreview.gif)
 
 In-Place eDiscovery uses Keyword Query Language (KQL). Users familiar with KQL can construct powerful search queries to search content indexes. For more information about KQL, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
@@ -87,7 +87,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
 
 The following screenshot shows an example of a search query in the EAC.
 
-![Configure an eDiscovery search query](../../media/TA_MRM_SearchQuery.png)
+![Configure an eDiscovery search query.](../../media/TA_MRM_SearchQuery.png)
 
 When using In-Place eDiscovery, also consider the following:
 
@@ -140,7 +140,7 @@ For more information, see [Copy eDiscovery search results to a discovery mailbox
 
 After search results are copied to a discovery mailbox, you can export the search results to a PST file.
 
-![Export eDiscovery Search Results to a PST File](../../media/TA_ExportSearchResullts.gif)
+![Export eDiscovery Search Results to a PST File.](../../media/TA_ExportSearchResullts.gif)
 
 After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. For more information, see [Export eDiscovery search results to a PST file](export-results-to-pst.md).
 
@@ -265,8 +265,8 @@ In Exchange Server, the resources In-Place eDiscovery uses are controlled with t
 
 The default throttling policy contains the following parameters. You can change the default values to meet your organization's requirements by creating a new throttling policy with an Organization scope and name it as "DiscoveryThrottlingPolicy" only.
 
-|**Parameter**|**Description**|**Default value**|
-|:-----|:-----|:-----|
+|Parameter|Description|Default value|
+|---|---|---|
 |DiscoveryMaxConcurrency|The maximum number of In-Place eDiscovery searches a user can perform concurrently.|2|
 |DiscoveryMaxMailboxes|The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search. Public folder mailboxes are also counted against the source mailbox limit.|10,000<sup>1</sup>|
 |DiscoveryMaxStatsSearchMailboxes|The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search that still allows you to view keyword statistics.|100  <br/> **Note**: After you run an eDiscovery search estimate, you can view keyword statistics. These statistics show details about the number of items returned for each keyword used in the search query. If more than 100 source mailboxes are included in the search, an error will be returned if you try to view keyword statistics.|
@@ -280,8 +280,8 @@ The default throttling policy contains the following parameters. You can change 
 
 The following table contains links to Exchange Server topics that will help you learn about and manage In-Place eDiscovery.
 
-|**Topic**|**Description**|
-|:-----|:-----|
+|Topic|Description|
+|---|---|
 |[Assign eDiscovery permissions in Exchange Server](assign-permissions.md)|Learn how to give a user access to use In-Place eDiscovery in the EAC (and by using the corresponding cmdlets) to search Exchange mailboxes.|
 |[Create an In-Place eDiscovery search in Exchange Server](create-searches.md)|Learn how to create an In-Place eDiscovery search, and how to estimate and preview eDiscovery search results.|
 |[Copy eDiscovery search results to a discovery mailbox](copy-results-to-discovery-mailboxes.md)|Learn how to copy the results of an eDiscovery search to a discovery mailbox.|

@@ -4,9 +4,11 @@ TOCTitle: DLP procedures
 ms:assetid: e2f575aa-552e-4dcc-8d7b-1ffd697d67df
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657736(v=EXCHG.150)
 ms:contentKeyID: 49300741
+ms.topic: article
+description: Learn procedures for using data loss prevention (DLP) in your messaging environment.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

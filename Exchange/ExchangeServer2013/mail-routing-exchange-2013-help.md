@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998825(v=EXCHG.150)
 ms:contentKeyID: 48385209
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Mail routing via the Transport service in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -82,10 +84,10 @@ The following table maps the routing destinations to the delivery group based on
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

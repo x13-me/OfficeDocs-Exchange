@@ -4,9 +4,10 @@ TOCTitle: Access control list (ACL) inheritance is blocked_InhBlockPublicFolderT
 ms:assetid: e3b89c8a-d6f8-4864-8bf0-35a78ce87cc4
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.inhblockpublicfoldertree(v=EXCHG.150)
 ms:contentKeyID: 46629148
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -43,7 +44,7 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -82,7 +83,7 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

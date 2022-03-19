@@ -5,8 +5,10 @@ ms:assetid: 6114e9fe-d037-4cb9-a643-933eb5fabc45
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.pop(v=EXCHG.150)
 ms:contentKeyID: 49720812
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the POP health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -31,10 +33,10 @@ The POP service is monitored by using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -93,7 +95,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
    1. Open the Exchange Management Shell, and then run the following command to retrieve the details of the health set that issued the alert:
 
-      Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
+      Get-ServerHealth \<server name> | ?{$_.HealthSetName -eq "\<health set name>"}
 
       For example, to retrieve the POP health set details about server1.contoso.com, run the following command:
 
@@ -103,7 +105,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
    3. Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
 
-      Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
+      Invoke-MonitoringProbe \<health set name>\<probe name> -Server \<server name> | Format-List
 
       For example, assume that the failing monitor is **PopCTPMonitor**. The probe associated with that monitor is **PopCTPProbe**. To run that probe on server1.contoso.com, run the following command:
 
@@ -121,11 +123,11 @@ This monitor alert is typically issued on Mailbox servers.
 
 3. If the probe still fails, failover the databases that are hosted on the Mailbox server by using the following command:
 
-   Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $true
+   Set-MailboxServer -Identity \<ServerName\> -DatabaseCopyActivationDisabledAndMoveNow $true
 
 4. After all the databases are removed from the Mailbox server, you must verify that the databases have been moved successfully. To do this, run the following command:
 
-   Get-MailboxDatabaseCopyStatus -Server <ServerName> | group status
+   Get-MailboxDatabaseCopyStatus -Server \<ServerName\> | group status
 
 5. Make sure that the server does not host any active copies of the database. Then, restart the server.
 
@@ -133,7 +135,7 @@ This monitor alert is typically issued on Mailbox servers.
 
 7. If the probe succeeds, failover the databases by running the following command:
 
-   Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $false
+   Set-MailboxServer -Identity \<ServerName\> -DatabaseCopyActivationDisabledAndMoveNow $false
 
 8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 

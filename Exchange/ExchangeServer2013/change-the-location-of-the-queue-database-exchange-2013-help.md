@@ -4,9 +4,11 @@ TOCTitle: Change the location of the queue database
 ms:assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
 ms:mtpsurl: https://technet.microsoft.com/library/Bb125177(v=EXCHG.150)
 ms:contentKeyID: 50646241
+ms.topic: article
+description: Change the location of the queue database.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,8 +27,8 @@ The location of the queue database and the queue database transaction logs is co
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,7 +57,7 @@ The location of the queue database and the queue database transaction logs is co
 <li><p>Trnres00002.jrs</p></li>
 <li><p>Temp.edb</p></li>
 </ul>
-<p>Note that Temp.edb is used to verify the queue database schema when the Microsoft Exchange Transport service starts. Although Temp.edb isn't a transaction log file, it's kept in the same location as the transaction log files.</p>
+<p>Temp.edb is used to verify the queue database schema when the Microsoft Exchange Transport service starts. Although Temp.edb isn't a transaction log file, it's kept in the same location as the transaction log files.</p>
 <p>The default location is <code>%ExchangeInstallPath%TransportRoles\data\Queue</code>.</p></td>
 </tr>
 </tbody>
@@ -79,7 +81,7 @@ The location of the queue database and the queue database transaction logs is co
 
   - Administrators: Full Control
 
-- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily reconfigure your server after the install. Reconfigure these settings after you install an Exchange CU.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -115,9 +117,9 @@ The location of the queue database and the queue database transaction logs is co
    net stop MSExchangeTransport && net start MSExchangeTransport
    ```
 
-## How do you know this worked?
+## How do you know that this worked?
 
-To verify that you successfully created a new queue database and new transaction logs at a new location, do the following:
+To verify that you successfully created a new queue database and new transaction logs at a new location, follow these steps:
 
 1. Verify the new database files Mail.que and Trn.chk exist at the new location.
 
@@ -157,7 +159,7 @@ Use the following procedure to move the existing queue database and transaction 
     <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
     ```
 
-4. When you are finished, save and close the EdgeTransport.exe.config file.
+4. When you're finished, save and close the EdgeTransport.exe.config file.
 
 5. Stop the Microsoft Exchange Transport service by running the following command:
 
@@ -177,7 +179,7 @@ Use the following procedure to move the existing queue database and transaction 
 
 ## How do you know this worked?
 
-To verify that you successfully moved the existing queue database and transaction logs to the new location, do the following:
+To verify that you successfully moved the existing queue database and transaction logs to the new location, take the following steps:
 
 1. Verify the queue database files Mail.que and Trn.chk exist at the new location.
 

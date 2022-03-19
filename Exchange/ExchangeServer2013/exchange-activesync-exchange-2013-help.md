@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998357(v=EXCHG.150)
 ms:contentKeyID: 48385136
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Learn about the Exchange ActiveSync client protocol for Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

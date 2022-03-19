@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd351278(v=EXCHG.150)
 ms:contentKeyID: 48385730
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to manage database availability group membership in Microsoft Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -44,9 +46,9 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 1. In the EAC, go to **Servers** \> **Database Availability Groups**.
 
-2. Select the DAG you want to configure, and then click ![Manage DAG members](images/Dd351278.d567ae56-d6cd-4edb-ab67-ad8f7c58f337(EXCHG.150).gif "Manage DAG members").
+2. Select the DAG you want to configure, and then click ![Manage DAG members.](images/Dd351278.d567ae56-d6cd-4edb-ab67-ad8f7c58f337(EXCHG.150).gif "Manage DAG members").
 
-   - To add one or more Mailbox servers to the DAG, click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), select the servers from the list, click **Add**, and then click **OK**.
+   - To add one or more Mailbox servers to the DAG, click ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), select the servers from the list, click **Add**, and then click **OK**.
 
    - To remove one or more Mailbox servers from the DAG, select the servers, and then click the minus (-) icon.
 

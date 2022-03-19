@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 ms.reviewer: 
@@ -10,7 +10,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
-title: Create a public folder
+title: Create a public folder in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -20,7 +20,7 @@ manager: serdars
 
 ---
 
-# Create a public folder
+# Create a public folder in Exchange Online
 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
 
@@ -48,7 +48,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
 
 2. If you want to create this public folder as a child of an existing public folder, click the existing public folder in the list view. If you want to create a top-level public folder, skip this step.
 
-3. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. Click **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
 4. In **Public Folder**, type the name of the public folder.
 

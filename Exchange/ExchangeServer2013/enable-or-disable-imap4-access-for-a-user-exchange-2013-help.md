@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb676481(v=EXCHG.150)
 ms:contentKeyID: 49315252
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to enable or disable IMAP4 access for a user in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -41,7 +43,7 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the result pane, select the user for which you want to enable or disable IMAP4, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the result pane, select the user for which you want to enable or disable IMAP4, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. In the **User Mailbox** dialog box, in the console tree, click **Mailbox Features**.
 

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn793976(v=EXCHG.150)
 ms:contentKeyID: 62632390
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Use automatic check to find Exchange quota issues.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -26,9 +28,9 @@ If you already have an user account, select **Sign In**. You don't need an Azure
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

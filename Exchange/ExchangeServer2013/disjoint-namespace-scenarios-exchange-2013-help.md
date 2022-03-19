@@ -4,9 +4,11 @@ TOCTitle: Disjoint namespace scenarios
 ms:assetid: 90101d49-6f45-44be-8a93-eeb2c8283e3b
 ms:mtpsurl: https://technet.microsoft.com/library/Bb676377(v=EXCHG.150)
 ms:contentKeyID: 49289351
+ms.topic: article
+description: Learn about disjoint namespaces and the supported scenarios for deploying Microsoft Exchange 2013 in a domain that has a disjoint namespace.
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -73,7 +75,7 @@ In this scenario, the NetBIOS domain name of the domain controller isn't the sam
 
 **NetBIOS domain name doesn't match DNS domain name**
 
-![NetBIOS domain name does not match DNS domain name](images/Bb676377.1ee18cb6-0296-4875-b572-0ddf33f65f7c(EXCHG.150).gif "NetBIOS domain name does not match DNS domain name")
+![NetBIOS domain name does not match DNS domain name.](images/Bb676377.1ee18cb6-0296-4875-b572-0ddf33f65f7c(EXCHG.150).gif "NetBIOS domain name does not match DNS domain name")
 
 ## Allow Exchange 2013 servers to access domain controllers that are disjoint
 

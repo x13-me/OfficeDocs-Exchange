@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa996026(v=EXCHG.150)
 ms:contentKeyID: 49289162
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange Server 2013 deployment security checklist 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -35,8 +37,8 @@ Before installing Exchange 2013, perform the following procedures.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

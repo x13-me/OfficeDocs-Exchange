@@ -1,10 +1,12 @@
 ---
 title: 'Define your own DLP templates and information types: Exchange 2013 Help'
 TOCTitle: Define your own DLP templates and information types
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to define data loss prevention templates and information types in Exchange Server
 ms.assetid: f4622dba-3347-4758-b4a2-f01b043c908c
 f1.keywords:
 - NOCSH

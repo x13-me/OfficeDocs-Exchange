@@ -1,13 +1,14 @@
 ---
 title: 'Prevent Message Waiting Indicator (MWI) on a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Prevent Message Waiting Indicator (MWI) on a UM IP gateway
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
-ms.reviewer:
 ms.assetid: 7af6d094-199f-4134-a25d-9fc7e9c05fe1
-f1.keywords:
+f1.keywords: 
 - NOCSH
+ms.topic: article
+description: How to prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Server
 mtps_version: v=EXCHG.150
 ---
 
@@ -41,7 +42,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to prevent Message Waiting Indicator
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 2. On the **UM IP Gateway** page, clear the check box next to **Allow message waiting indicator**.
 

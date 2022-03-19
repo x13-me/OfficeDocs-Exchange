@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 16380df7-3911-4bc8-943b-cae9ace27827
 ms.reviewer: 
 description: Enable yor Gmail account for IMAP so you can view and edit your mail in Microsoft Outlook app.
-title: Enable your Gmail account for IMAP
+title: Enable your Gmail account for IMAP in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -29,7 +29,7 @@ manager: serdars
 
 ---
 
-# Enable your Gmail account for IMAP
+# Enable your Gmail account for IMAP in Exchange Online
 
  Internet Message Access Protocol (IMAP) is a protocol that allows you to download messages from a mail provider's servers, such as those for Gmail, onto your computer so you can use Microsoft Outlook to view and edit your email, even when aren't connected to the internet.
 

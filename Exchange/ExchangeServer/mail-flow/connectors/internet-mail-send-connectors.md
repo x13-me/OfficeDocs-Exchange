@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms.reviewer:
 title: Create a Send connector in Exchange Server to send mail to the internet
@@ -41,7 +41,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
 ### Use the EAC to create an internet Send connector
 
-1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). This starts the **New Send connector** wizard.
 
 2. On the first page, enter the following information:
 
@@ -57,7 +57,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
 4. On the next page, enter the following information:
 
-   - In the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, in **Fully Qualified Domain Name (FQDN)**, enter an asterisk (\*), and then click **Save**. This value indicates that the Send connector applies to messages addressed to all external domains.
+   - In the **Address space** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, in **Fully Qualified Domain Name (FQDN)**, enter an asterisk (\*), and then click **Save**. This value indicates that the Send connector applies to messages addressed to all external domains.
 
    - The **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites:
 
@@ -67,7 +67,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
 
    When you're finished, click **Next**.
 
-5. On the next page, in the **Source server** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send mail to the internet. If you have multiple Mailbox servers in your environment, select the ones that can route mail to the internet. If you have only one Mailbox server, select that one. After you've selected at least one Mailbox server, click **Add**, click **OK**, and then click **Finish**.
+5. On the next page, in the **Source server** section, click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png). In the **Select a Server** dialog box that appears, select one or more Mailbox servers that you want to use to send mail to the internet. If you have multiple Mailbox servers in your environment, select the ones that can route mail to the internet. If you have only one Mailbox server, select that one. After you've selected at least one Mailbox server, click **Add**, click **OK**, and then click **Finish**.
 
 After you create the Send connector, it appears in the Send connector list. To configure the Send connector to proxy outbound mail through the Front End Transport service, see [Configure Send connectors to proxy outbound mail](proxy-outbound-mail.md).
 

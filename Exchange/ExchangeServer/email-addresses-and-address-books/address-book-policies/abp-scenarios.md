@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use address book polices to split single Exchange Server organizations into separate virtual organizations based on different requirements and scenarios.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms.reviewer:
 title: Scenario Deploying address book policies in Exchange Server
@@ -28,12 +28,12 @@ This scenario applies to companies or divisions that share the same Exchange env
 
 In this scenario, Contoso and Humongous Insurance are two separate companies that share the same Exchange environment. An ABP for each company lets employees in one company see only members of the same company in the global address list (GAL) in Outlook and Outlook on the web (formerly known as Outlook Web App). All distribution groups belong to one company or the other, and no distribution group contains members from both companies.
 
-![Two companies and one Exchange organization](../../media/ITPro_Mailbox_ABPTwoCompanies.png)
+![Two companies and one Exchange organization.](../../media/ITPro_Mailbox_ABPTwoCompanies.png)
 
 The GAL, offline address book (OAB), room list, and address lists that are required inn the ABPs for this scenario are described in the this table:
 
-|**ABP element**|**Contoso**|**Humongous Insurance**|
-|:-----|:-----|:-----|
+|ABP element|Contoso|Humongous Insurance|
+|---|---|---|
 |Global address list|GAL_CON|GAL_HI|
 |Offline address book|OAB_CON|OAB_HI|
 |Room list|AL_CON_Rooms|AL_HI_Rooms|
@@ -55,12 +55,12 @@ In this scenario, Fabrikam and Tailspin Toys are separate companies in the same 
 
 - The names of the three ABPs are: ABP_FAB, ABP_TAIL, and ABP_CEO.
 
-![Two Companies One CEO](../../media/ITPro_.png)
+![Two Companies One CEO.](../../media/ITPro_.png)
 
 The GAL, OAB, room list, and address lists that are required in the ABPs for this scenario are described in the this table:
 
-|**ABP element**|**Fabrikam**|**Tailspin Toys**|**CEO**|
-|:-----|:-----|:-----|:-----|
+|ABP element|Fabrikam|Tailspin Toys|CEO|
+|---|---|---|---|
 |Name|ABP_FAB|AB_TAIL|ABP_CEO|
 |Global address list|GAL_FAB|GAL_TAIL|Default Global Address Book|
 |Offline address book|OAB_FAB|OAB_TAIL|Default Offline Address Book|
@@ -81,12 +81,12 @@ This scenario is applicable to schools or universities where a division of class
 
 - Distribution groups are created for the parents and faculty that are associated with each class.
 
-![Address Book Policies Education Scenario](../../media/ITPro_Mailbox_ABPEducation.png)
+![Address Book Policies Education Scenario.](../../media/ITPro_Mailbox_ABPEducation.png)
 
 The GAL, OAB, room list, and address lists that are required in the ABPs for this scenario are described in the this table:
 
-|**ABP element**|**Students_ClassA**|**Teachers_ClassA**|**Principal**|
-|:-----|:-----|:-----|:-----|
+|ABP element|Students_ClassA|Teachers_ClassA|Principal|
+|---|---|---|---|
 |Global address list|GAL_StudentsClassA|GAL_TeachersClassA|GAL_Everyone|
 |Offline address book|OAB_StudentsClassA|OAB_TeachersClassA|Default Offline Address Book|
 |Room address list|AL_BlankRoom|AL_BlankRoom|All Rooms|
@@ -298,8 +298,8 @@ For more information, see [Use the Exchange Management Shell to create offline a
 
 This organization requires three ABPs:
 
-|**ABP element**|**Fabrikam**|**Tailspin Toys**|**CEO**|
-|:-----|:-----|:-----|:-----|
+|ABP element|Fabrikam|Tailspin Toys|CEO|
+|---|---|---|---|
 |Name|ABP_FAB|ABP_TAIL|ABP_CEO|
 |Global address list|GAL_FAB|GAL_TAIL|Default Global Address Book|
 |Offline address book|OAB_FAB|OAB_TAIL|Default Offline Address Book|

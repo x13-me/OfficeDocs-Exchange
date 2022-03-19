@@ -1,10 +1,12 @@
 ---
 title: 'Create a holiday schedule: Exchange 2013 Help'
 TOCTitle: Create a holiday schedule
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a holiday schedule in Exchange Server
 ms.assetid: 0c5c51e4-5b51-451b-ab93-2cebf644dc96
 f1.keywords:
 - NOCSH
@@ -17,7 +19,7 @@ _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can define the dates and times your organization will be closed for holidays and other occasions. Between the start dates and the end dates you specify, callers who reach the Unified Messaging (UM) auto attendant will hear a holiday greeting you specify when you configure the holiday schedule. After the caller hears the holiday greeting you've specified, the non-business hours greeting and menu prompts will be played for the caller.
 
-You can also create a holiday schedule within an existing holiday schedule. When you create multiple holiday schedules, Unified Messaging lets you overlap your scheduled holiday times. For example, you can define a holiday schedule from December 15th through December 31st when your organization will be closed for construction, and you can define another holiday schedule from December 24th through December 26th. When callers call in to the auto attendant from December 15th through December 23rd and from December 27th through December 31st, they'll be presented with the holiday greeting that you've specified for this schedule. For example, "We are currently closed for construction." When callers call in to the auto attendant from December 24th through December 26th, they'll be presented with another holiday greeting, such as "We are currently closed for business so that our employees can enjoy the holidays with their families."
+You can also create a holiday schedule within an existing holiday schedule. When you create multiple holiday schedules, Unified Messaging lets you overlap your scheduled holiday times. For example, you can define a holiday schedule from December 15 through December 31 when your organization will be closed for construction, and you can define another holiday schedule from December 24 through December 26th. When callers call in to the auto attendant from December 15 through December 23rd and from December 27 through December 31, they'll be presented with the holiday greeting that you've specified for this schedule. For example, "We are currently closed for construction." When callers call in to the auto attendant from December 24 through December 26, they'll be presented with another holiday greeting, such as "We are currently closed for business so that our employees can enjoy the holidays with their families."
 
 For additional management tasks related to UM auto attendants, see [UM auto attendant procedures](um-auto-attendant-procedures-exchange-2013-help.md).
 
@@ -25,11 +27,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 - Estimated time to complete: Less than 1 minute.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM auto attendants" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can do this procedure or procedures. To see what permissions you need, see the "UM auto attendants" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-- Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](create-um-dial-plan-exchange-2013-help.md).
+- Before you do these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](create-um-dial-plan-exchange-2013-help.md).
 
-- Before you perform these procedures, confirm that a UM auto attendant has been created. For detailed steps, see [Create a UM auto attendant](create-a-um-auto-attendant-exchange-2013-help.md).
+- Before you do these procedures, confirm that a UM auto attendant has been created. For detailed steps, see [Create a UM auto attendant](create-a-um-auto-attendant-exchange-2013-help.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -38,11 +40,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to specify a holiday schedule for a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then on the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then on the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to set the holiday schedule. On the toolbar, click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to set the holiday schedule. On the toolbar, click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM Auto Attendant** page \> **Business Hours**, under **Holiday schedule**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. On the **UM Auto Attendant** page \> **Business Hours**, under **Holiday schedule**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 4. On the **New Holiday** page, configure the following:
 

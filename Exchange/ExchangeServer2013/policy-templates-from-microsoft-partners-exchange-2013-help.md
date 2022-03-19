@@ -1,10 +1,12 @@
 ---
 title: 'Policy templates from Microsoft partners: Exchange 2013 Help'
 TOCTitle: Policy templates from Microsoft partners
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Policy templates from Microsoft partners in Microsoft Exchange 2013
 ms.assetid: 0f95336e-b3ef-4041-9604-adf7b0b335fe
 f1.keywords:
 - NOCSH

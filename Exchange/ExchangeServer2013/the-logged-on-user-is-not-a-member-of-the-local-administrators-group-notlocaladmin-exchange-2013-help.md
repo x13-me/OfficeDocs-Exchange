@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.notloca
 ms:contentKeyID: 46629123
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Setup cannot continue because the logged-on user is not a member of the local computer's administrators group.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

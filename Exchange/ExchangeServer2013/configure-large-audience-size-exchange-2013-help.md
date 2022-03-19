@@ -1,10 +1,12 @@
 ---
 title: 'Configure the large audience size for your organization: Exchange 2013 Help'
 TOCTitle: Configure the large audience size for your organization
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to configure the large audience size for your organization in Exchange Server
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
 f1.keywords:
 - NOCSH

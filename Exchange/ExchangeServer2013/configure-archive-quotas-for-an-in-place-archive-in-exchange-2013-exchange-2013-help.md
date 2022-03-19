@@ -5,9 +5,11 @@ ms:assetid: f10e77c7-e1d4-415a-bef9-cb3f00e74c34
 ms:mtpsurl: https://technet.microsoft.com/library/Ee633489(v=EXCHG.150)
 ms:contentKeyID: 50470879
 ms.reviewer: 
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: How to configure archive quotas for an In-Place Archive in Exchange Server 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

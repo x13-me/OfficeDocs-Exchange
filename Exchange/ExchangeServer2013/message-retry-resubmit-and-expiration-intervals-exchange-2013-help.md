@@ -5,8 +5,10 @@ ms:assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 ms:mtpsurl: https://technet.microsoft.com/library/JJ891103(v=EXCHG.150)
 ms:contentKeyID: 50646229
 ms.reviewer: 
+ms.topic: article
+description: About message retry, resubmit, and expiration intervals in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -35,10 +37,10 @@ The configuration options that are available for message retry intervals are des
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -124,10 +126,10 @@ The configuration options that are available for delay DSN notification messages
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

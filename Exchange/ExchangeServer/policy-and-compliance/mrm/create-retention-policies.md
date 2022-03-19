@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to use retention policies to manage an email lifecycle in Exchange Server. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
 ms.reviewer:
 title: Create a retention policy in Exchange Server
@@ -34,7 +34,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
  **Use the Exchange admin center (EAC) to create a retention tag**
 
-1. Go to **Compliance management** \> **Retention tags**, and click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **Retention tags**, and click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. Select one of the following options:
 
@@ -115,13 +115,13 @@ You need to be assigned permissions before you can perform this procedure or pro
 
  **Use the EAC to create a retention policy**
 
-1. Go to **Compliance management** \> **Retention policies**, and click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. Go to **Compliance management** \> **Retention policies**, and click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. In **New Retention Policy**, complete the following fields:
 
    - **Name**: Enter a name for the retention policy.
 
-   - **Retention tags**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) to select the tags you want to add to this retention policy.
+   - **Retention tags**: Click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png) to select the tags you want to add to this retention policy.
 
      A retention policy can contain the following tags:
 

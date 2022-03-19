@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.shouldr
 ms:contentKeyID: 46629190
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: World Wide Web Publishing Service must be installed and not disabled.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

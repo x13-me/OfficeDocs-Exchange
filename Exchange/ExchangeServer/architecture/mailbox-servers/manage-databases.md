@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange Server.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms.reviewer:
 title: Manage mailbox databases in Exchange Server
@@ -26,7 +26,7 @@ A mailbox database is a unit of granularity where mailboxes are created and stor
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
+- You need permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -47,9 +47,9 @@ A mailbox database is a unit of granularity where mailboxes are created and stor
 
 For an example of how to create a mailbox database, see Example 1 in [New-MailboxDatabase](/powershell/module/exchange/new-mailboxdatabase).
 
-### How do you know this worked?
+### How do you know if this process has worked?
 
-To verify that you have successfully created a database, do the following:
+To verify that you have successfully created a database, implement the following tasks:
 
 - From the EAC, verify that the mailbox database you created is listed on the **Databases** page.
 
@@ -67,9 +67,9 @@ For detailed syntax and parameter information, see [Get-MailboxDatabase](/powers
 
 For an example of how to get mailbox database properties, see Example 3 in [Get-MailboxDatabase](/powershell/module/exchange/Get-MailboxDatabase).
 
-### How do you know this worked?
+### How do you know if this process worked?
 
-To verify that you have successfully retrieved your mailbox database information, do the following:
+To verify that you have successfully retrieved your mailbox database information, implement the following task:
 
 - From the Exchange Management Shell, verify that all your mailbox database information is represented correctly.
 
@@ -81,7 +81,7 @@ To verify that you have successfully retrieved your mailbox database information
 
 2. Select **Databases**, and then click to select the mailbox database you want to configure.
 
-3. Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to configure the attributes of a mailbox database.
+3. Click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png) to configure the attributes of a mailbox database.
 
 4. Use the **General** tab to view status about the mailbox database, including the mailbox database path, last backup, and mailbox database status:
 
@@ -95,8 +95,8 @@ To verify that you have successfully retrieved your mailbox database information
 
    - **Mounted on server**: This read-only field displays which server the database is mounted on.
 
-     > [!NOTE]
-     > This article contains references to the term *master*, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
+   > [!NOTE]
+   > This article contains references to the term **master**, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
 
    - **Master**: This read-only field displays the primary server for the mailbox database. The Mailbox server that hosts the active copy of a database is referred to as the mailbox database master.
 
@@ -142,9 +142,9 @@ To verify that you have successfully retrieved your mailbox database information
 
 For an example of how to set mailbox database properties, see Example 1 in [Set-MailboxDatabase](/powershell/module/exchange/set-mailboxdatabase).
 
-### How do you know this worked?
+### How do you know this process worked?
 
-To verify that you have successfully set the attributes, do the following:
+To verify that you have successfully set the attributes, implement the following tasks:
 
 - Verify that your changes are saved in the EAC.
 
@@ -162,9 +162,9 @@ For detailed syntax and parameter information, see [Move-DatabasePath](/powershe
 
 For an example of how to set mailbox database properties, see Example 1 in [Move-DatabasePath](/powershell/module/exchange/move-databasepath).
 
-### How do you know this worked?
+### How do you know this process has worked?
 
-To verify that you have successfully moved the database path, do the following:
+To verify that you have successfully moved the database path, implement the following steps:
 
 1. From the EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
@@ -178,9 +178,9 @@ For detailed syntax and parameter information, see [Mount-Database](/powershell/
 
 For an example of how to mount a mailbox database, see Example 1 in [Mount-Database](/powershell/module/exchange/mount-database).
 
-### How do you know this worked?
+### How do you know whether this process worked?
 
-To verify that you have successfully mounted the mailbox database, do the following.
+To verify that you have successfully mounted the mailbox database, implement the following task:
 
 - From the Exchange Management Shell, run the following command to retrieve mailbox database properties for all mailbox databases.
 
@@ -196,9 +196,9 @@ For detailed syntax and parameter information, see [Dismount-Database](/powershe
 
 For an example of how to dismount a mailbox database, see Example 1 in [Dismount-Database](/powershell/module/exchange/dismount-database).
 
-### How do you know this worked?
+### How do you know whether this process has worked?
 
-To verify that you have successfully dismounted the database, do the following:
+To verify that you have successfully dismounted the database, implement the following steps:
 
 1. From EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
@@ -210,7 +210,7 @@ To verify that you have successfully dismounted the database, do the following:
 
 1. From the EAC, select **Servers** \> **Databases**, and then click to select the appropriate mailbox.
 
-2. Click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png) to remove the mailbox database.
+2. Click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png) to remove the mailbox database.
 
 ### Use the Exchange Management Shell to remove a mailbox database
 
@@ -226,10 +226,9 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](/pow
 
 3. When the dialog box appears stating that the database was removed successfully, note the location of the Exchange database (.edb) file. If you want to remove this file from the hard drive, you must remove it manually.
 
-### How do you know this worked?
+### How do you know if this process had worked?
 
-To verify that you have successfully removed the mailbox database, do the following:
+To verify that you have successfully removed the mailbox database, implement the following tasks:
 
 - From the EAC, select **Servers** \> **Databases**.
-
 - Verify that the mailbox database has been removed.

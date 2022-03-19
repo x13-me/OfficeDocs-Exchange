@@ -1,6 +1,6 @@
 ---
 title: "Edge Transport servers in Exchange 2013/Exchange 2010 hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -57,7 +57,7 @@ Messages sent from the Exchange Online organization to recipients in the on-prem
 
  **Mail flow in a hybrid deployment without an Edge Transport server deployed**
 
-![On-premises without Edge Transport server](../media/ITPro_Hybrid_2010-2013_OnPrem-NoEdge.png)
+![On-premises without Edge Transport server.](../media/ITPro_Hybrid_2010-2013_OnPrem-NoEdge.png)
 
 ### Mail flow with an Edge Transport server
 
@@ -77,4 +77,4 @@ Messages sent from the Exchange Online organization to recipients in the on-prem
 
  **Mail flow in a hybrid deployment with an Exchange 2013 or 2010 SP3 Edge Transport server deployed**
 
-![On-premises with Edge Transport server](../media/ITPro_Hybrid_2010-2013_OnPrem-Edge.png)
+![On-premises with Edge Transport server.](../media/ITPro_Hybrid_2010-2013_OnPrem-Edge.png)

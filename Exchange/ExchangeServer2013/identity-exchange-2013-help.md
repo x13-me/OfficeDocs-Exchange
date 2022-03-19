@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb125042(v=EXCHG.150)
 ms:contentKeyID: 49352392
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Using the Identity parameter with cmdlets in Exchange Server 
 author: msdmaguire
 f1.keywords:
 - NOCSH

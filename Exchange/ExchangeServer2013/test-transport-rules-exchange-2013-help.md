@@ -1,10 +1,12 @@
 ---
 title: 'Test a transport rule: Exchange 2013 Help'
 TOCTitle: Test a transport rule
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Each time you create a transport rule, you should test it before turning it on.
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 f1.keywords:
 - NOCSH
@@ -30,7 +32,7 @@ You can evaluate the conditions for a rule without taking any actions that impac
 
 Here's what you'll see when a rule is matched if you include the incident report action:
 
-![Message sent when rule is detected](images/TA_EX_Rule_Detected.png)
+![Message sent when rule is detected.](images/TA_EX_Rule_Detected.png)
 
 ### Use a test mode with an incident report action
 

@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Admins can learn about how S/MIME works in Exchange Online for message encryption and digitally signed messages.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 title: S/MIME in Exchange Online
 ms.reviewer: smithre4
@@ -33,11 +33,11 @@ To configure S/MIME in Exchange Online, see the following topics:
 
 Digital signatures are the more commonly used service of S/MIME. As the name suggests, digital signatures are the digital counterpart to the traditional, legal signature on a paper document. As with a legal signature, digital signatures provide the following security capabilities:
 
-- **Authentication**: A signature serves to validate an identity. It verifies the answer to "who are you" by providing a means of differentiating that entity from all others and proving its uniqueness. Because there is no authentication in SMTP email, there is no way to know who sent a message. Authentication in a digital signature solves this problem by allowing a recipient to know that a message was sent by the person or organization who claims to have sent the message.
+- **Authentication**: A signature serves to validate an identity. It verifies the answer to "who are you" by providing a means of differentiating that entity from all others and proving its uniqueness. Because there is no authentication in SMTP email, there is no way to know who sent a message. Authentication in a digital signature solves this problem by allowing a recipient to know that a message was sent by the person or organization who claims to have sent the message.
 
 - **Nonrepudiation**: The uniqueness of a signature prevents the owner of the signature from disowning the signature. This capability is called nonrepudiation. Thus, the authentication that a signature provides gives the means to enforce nonrepudiation. The concept of nonrepudiation is most familiar in the context of paper contracts: a signed contract is a legally binding document, and it is impossible to disown an authenticated signature. Digital signatures provide the same function and, increasingly in some areas, are recognized as legally binding, similar to a signature on paper. Because SMTP email does not provide a means of authentication, it cannot provide nonrepudiation. It is easy for a sender to disavow ownership of an SMTP email message.
 
-- **Data integrity**: An additional security service that digital signatures provide is data integrity. Data integrity is a result of the specific operations that make digital signatures possible. With data integrity services, when the recipient of a digitally signed email message validates the digital signature, the recipient is assured that the email message that is received is, in fact, the same message that was signed and sent, and has not been altered while in transit. Any alteration of the message while in transit after it has been signed invalidates the signature. In this way, digital signatures provide an assurance that signatures on paper cannot, because it is possible for a paper document to be altered after it has been signed.
+- **Data integrity**: An additional security service that digital signatures provide is data integrity. Data integrity is a result of the specific operations that make digital signatures possible. With data integrity services, when the recipient of a digitally signed email message validates the digital signature, the recipient is assured that the email message that is received is, in fact, the same message that was signed and sent, and has not been altered while in transit. Any alteration of the message while in transit after it has been signed invalidates the signature. In this way, digital signatures provide an assurance that signatures on paper cannot, because it is possible for a paper document to be altered after it has been signed.
 
 > [!IMPORTANT]
 > Although digital signatures provide data integrity, they don't provide confidentiality. Messages with only a digital signature are sent in clear text, like SMTP messages and can be read by others. In the case where the message is opaque-signed, a level of obfuscation is achieved because the message is base64-encoded, but it is still clear text. To protect the contents of email messages, encryption must be used.
@@ -48,7 +48,7 @@ Message encryption provides a solution to information disclosure. SMTP-based int
 
 - **Confidentiality**: Message encryption serves to protect the contents of an email message. Only the intended recipient can view the contents, and the contents remain confidential and cannot be known by anyone else who might receive or view the message. Encryption provides confidentiality while the message is in transit and in storage.
 
-- **Data** **integrity:** As with digital signatures, message encryption provides data integrity services as a result of the specific operations that make encryption possible.
+- **Data integrity**: As with digital signatures, message encryption provides data integrity services as a result of the specific operations that make encryption possible.
 
 > [!IMPORTANT]
 > Although message encryption provides confidentiality, it doesn't authenticate the message sender in any way. An unsigned, encrypted message is as susceptible to sender impersonation as a message that isn't encrypted. Because nonrepudiation is a direct result of authentication, message encryption also doesn't provide nonrepudiation. Although encryption does provide data integrity, an encrypted message can show only that the message hasn't been altered since it was sent. No information about who sent the message is provided. To prove the identity of the sender, the message must use a digital signature.

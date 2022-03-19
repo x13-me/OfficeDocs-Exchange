@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to deploy Exchange Server 2016 or Exchange Server 2019 with high availability and site resilience.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
 ms.reviewer:
 title: Exchange high availability, Exchange high availability step by step, Exchange site resilience, Site resilience Exchange, High availability for Exchange, High availability Exchange Server, Exchange DAG high availability, High availability DAG
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Deploying high availability and site resilience
+# Deploying high availability and site resilience in Exchange Server
 
 Microsoft Exchange Server uses the concept known as *incremental deployment* for both high availability and site resilience. You simply install two or more Exchange Mailbox servers as stand-alone servers, and then incrementally configure them and mailbox databases for high availability and site resilience, as needed.
 
@@ -56,7 +56,7 @@ Each location contains the infrastructure elements that are necessary to operate
 
 The following figure illustrates the Contoso configuration.
 
-![Database availability group extended to two sites, keywords: Exchange high availability, Exchange site resilience](../media/ITPro_Mailbox_DAGTwoSites.png)
+![Database availability group extended to two sites, keywords: Exchange high availability, Exchange site resilience.](../media/ITPro_Mailbox_DAGTwoSites.png)
 
 ### Network configuration
 
@@ -64,8 +64,8 @@ As illustrated in the previous figure, the solution involves the use of multiple
 
 The settings for each network adapter in each node are detailed in the following table.
 
-|**Name**|**IPv4 address**|**Subnet mask**|**Default gateway**|
-|:-----|:-----|:-----|:-----|
+|Name|IPv4 address|Subnet mask|Default gateway|
+|---|---|---|---|
 |MBX1 (MAPI)|192.168.1.4|255.255.255.0|192.168.1.1|
 |MBX2 (MAPI)|192.168.1.5|255.255.255.0|192.168.1.1|
 |MBX3 (MAPI)|192.168.2.4|255.255.255.0|192.168.2.1|
@@ -153,7 +153,7 @@ As shown in the following figure, Contoso is taking a balanced approach to their
 
  **Database copy layout for Contoso, Ltd**
 
-![Database Copy Layout for Contoso, Ltd, keywords: Exchange DAG high availability](../media/ITPro_Mailbox_DeployExampleDBLayout.png)
+![Database Copy Layout for Contoso, Ltd, keywords: Exchange DAG high availability.](../media/ITPro_Mailbox_DeployExampleDBLayout.png)
 
 Each Mailbox server hosts an active mailbox database copy, two non-lagged passive database copies, and one lagged passive database copy. The lagged copy of each active mailbox database is hosted on a Mailbox server in the other site.
 

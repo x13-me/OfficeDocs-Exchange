@@ -5,8 +5,10 @@ ms:assetid: 29af464e-ae07-40f8-ac6e-28e876a91d90
 ms:mtpsurl: https://technet.microsoft.com/library/Dn195906(v=EXCHG.150)
 ms:contentKeyID: 53181783
 ms.reviewer: 
+ms.topic: article
+description: The health sets available in Microsoft Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -26,9 +28,9 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -110,9 +112,9 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -389,9 +391,9 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -428,9 +430,9 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

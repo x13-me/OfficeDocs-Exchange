@@ -5,8 +5,10 @@ ms:assetid: 44618df9-54f0-4474-a450-dcba48a02901
 ms:mtpsurl: https://technet.microsoft.com/library/Ee424431(v=EXCHG.150)
 ms:contentKeyID: 49319909
 ms.reviewer: 
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+description: How to add the Federation Mailbox to the AD RMS Super Users Group
 author: msdmaguire
 f1.keywords:
 - NOCSH

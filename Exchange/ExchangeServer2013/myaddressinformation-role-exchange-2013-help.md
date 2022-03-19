@@ -5,8 +5,10 @@ ms:assetid: b1be0e3d-53b9-4810-a225-3d0b203d90d4
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461936(v=EXCHG.150)
 ms:contentKeyID: 49289374
 ms.reviewer: 
+ms.topic: article
+description: About the MyAddressInformation role in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

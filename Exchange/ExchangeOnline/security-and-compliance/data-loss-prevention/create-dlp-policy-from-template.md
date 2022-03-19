@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'In Microsoft Exchange, you can use data loss prevention (DLP) policy templates to help meet the messaging policy and compliance needs of your organization. These templates contain pre-built sets of rules that can help you manage message data that is associated with several common legal and regulatory requirements. To see a list of all the templates supplied by Microsoft, see DLP policy templates supplied in Exchange. Example DLP templates that are supplied can help you manage:'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Create a DLP policy from a template
+title: Create a DLP policy from a template in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Create a DLP policy from a template
+# Create a DLP policy from a template in Exchange Online
 
 In Microsoft Exchange, you can use data loss prevention (DLP) policy templates to help meet the messaging policy and compliance needs of your organization. These templates contain pre-built sets of rules that can help you manage message data that is associated with several common legal and regulatory requirements. To see a list of all the templates supplied by Microsoft, see [DLP policy templates supplied in Exchange](dlp-policy-templates.md). Example DLP templates that are supplied can help you manage:
 
@@ -48,10 +48,10 @@ You can customize any of these DLP templates or use them as-is. DLP policy templ
 
 ## Use the EAC to configure a DLP policy from a template
 
-1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Compliance management** \> **Data loss prevention**, and then click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif).
 
     > [!NOTE]
-    > You can also select this action if you click the arrow next to the **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) icon and select **New DLP policy from template** from the drop down menu.
+    > You can also select this action if you click the arrow next to the **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) icon and select **New DLP policy from template** from the drop down menu.
 
 2. On the **Create a new DLP policy from a template** page, complete the following fields:
 

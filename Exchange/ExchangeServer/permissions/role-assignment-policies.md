@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 ms.reviewer:
 title: Manage role assignment policies
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Manage role assignment policies
+# Manage role assignment policies in Exchange Server
 
 If you want to customize the permissions that you assign to a group of end users, create a new custom management role assignment policy. The assignment policy you create can be customized to suit your end user's specific requirements. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](../../ExchangeServer2013/understanding-management-role-assignment-policies-exchange-2013-help.md).
 
@@ -44,7 +44,7 @@ After you've created the new assignment policy, you assign users to it. For more
 > [!NOTE]
 > You can only create explicit assignment policies using the Exchange admin center (EAC). If you want to create a new default assignment policy, you must use the Exchange Management Shell. For more information, see the "Use the Exchange Management Shell to create a default assignment policy" section later in this topic.
 
-1. In the EAC, navigate to **Permissions** \> **User Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+1. In the EAC, navigate to **Permissions** \> **User Roles** and then click **Add** ![Add icon.](../media/ITPro_EAC_AddIcon.png).
 
 2. In the role assignment policy window, provide a name for the new assignment policy.
 
@@ -100,7 +100,7 @@ If you no longer need a management role assignment policy, you can remove it.
 
 1. In the EAC, navigate to **Permissions** \> **User Roles**.
 
-2. Select the assignment policy you want to remove, and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.png).
+2. Select the assignment policy you want to remove, and then click **Delete** ![Delete icon.](../media/ITPro_EAC_DeleteIcon.png).
 
 #### Use the Exchange Management Shell to remove an assignment policy
 
@@ -258,7 +258,7 @@ For detailed syntax and parameter information, see [Set-RoleAssignmentPolicy](/p
 
 1. In the EAC, navigate to **Permissions** \> **User Roles**.
 
-2. Select the assignment policy you want to add one or more roles to, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select the assignment policy you want to add one or more roles to, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. Select the check box next to the role or roles you want to add to the assignment policy. You can select multiple roles, including end-user roles you've added. If you select a role that has child roles, the child roles are automatically selected.
 
@@ -288,7 +288,7 @@ If you don't want end users to have permissions to manage certain features of th
 
 1. In the EAC, navigate to **Permissions** \> **User Roles**.
 
-2. Select the assignment policy you want to remove one or more roles from, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) .
+2. Select the assignment policy you want to remove one or more roles from, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) .
 
 3. Clear the check box next to the role or roles you want to remove from the assignment policy. If you clear the check box for a role that has child roles, the check boxes for the child roles are also cleared.
 

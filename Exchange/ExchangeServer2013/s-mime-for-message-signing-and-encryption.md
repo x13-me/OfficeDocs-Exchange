@@ -4,9 +4,11 @@ TOCTitle: S/MIME for message signing and encryption
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 ms:mtpsurl:
 ms:contentKeyID:
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: Use S/MIME for message signing and encryption in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

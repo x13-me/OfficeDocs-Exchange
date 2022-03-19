@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.primary
 ms:contentKeyID: 46628919
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Setup requires that the local computer communicate with the authoritative DNS database for the domain.
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

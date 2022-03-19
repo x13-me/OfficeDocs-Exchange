@@ -5,8 +5,10 @@ ms:assetid: cd615210-cd8a-48de-b3e3-8f9ec39ca380
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124591(v=EXCHG.150)
 ms:contentKeyID: 49352799
 ms.reviewer: 
+ms.topic: article
+description: Remote device wipe in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

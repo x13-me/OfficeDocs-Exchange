@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhor
 ms:contentKeyID: 46628920
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: "Exchange setup can't finish because an IIS 7 component is not installed"
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,7 +29,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -87,7 +89,7 @@ Exchange 2010 Setup and Exchange 2007 Setup require that the Windows Server 200
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

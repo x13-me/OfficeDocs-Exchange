@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn793609(v=EXCHG.150)
 ms:contentKeyID: 62629954
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Use automatic checks to identify Outlook mail issues in Exchange 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -30,9 +32,9 @@ We'll check to see if you have Microsoft .NET Framework 4.5 installed. To obtain
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

@@ -5,8 +5,10 @@ ms:assetid: 1fcccec1-4edc-40b8-948c-111647d7d770
 ms:mtpsurl: https://technet.microsoft.com/library/JJ150501(v=EXCHG.150)
 ms:contentKeyID: 47559971
 ms.reviewer: 
+ms.topic: article
+description: The Voice Mail Preview feature of Microsoft Exchange Server Unified Messaging enhances UM voice mail functionality by providing a text version of audio recordings
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

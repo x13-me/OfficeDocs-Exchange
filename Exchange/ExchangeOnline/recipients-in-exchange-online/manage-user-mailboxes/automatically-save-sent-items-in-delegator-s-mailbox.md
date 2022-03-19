@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Automatically save sent items in delegator's mailbox
+title: Automatically save sent items in delegator's mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -21,7 +21,7 @@ manager: serdars
 
 ---
 
-# Automatically save sent items in delegator's mailbox
+# Automatically save sent items in delegator's mailbox in Exchange Online
 
 Mailboxes in Microsoft 365 or Office 365 can be set up so that someone (such as an executive assistant) can access the mailbox of another person (such as a manager) and send mail as them. These people are often called the delegate and the delegator, respectively. We'll call them "assistant" and "manager" for simplicity's sake. When an assistant is granted access to a manager's mailbox, it's called delegated access.
 

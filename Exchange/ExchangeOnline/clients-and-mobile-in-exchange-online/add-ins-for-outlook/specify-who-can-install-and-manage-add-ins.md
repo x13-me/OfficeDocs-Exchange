@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can specify which administrators in your organization have permissions to install and manage add-ins for Outlook. You can also specify which users in your organization have permission to install and manage add-ins for their own use.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb
 ms.reviewer: 
-title: Specify the administrators and users who can install and manage add-ins for Outlook
+title: Specify the administrators and users who can install and manage add-ins for Outlook in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Specify the administrators and users who can install and manage add-ins for Outlook
+# Specify the administrators and users who can install and manage add-ins for Outlook in Exchange Online
 
 You can specify which administrators in your organization have permissions to install and manage add-ins for Outlook. You can also specify which users in your organization have permission to install and manage add-ins for their own use.
 
@@ -51,7 +51,10 @@ For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md)
 
 - You need to be assigned permissions before you can run this cmdlet. Although all parameters for this cmdlet are listed in this topic, you may not have access to some parameters if they're not included in the permissions assigned to you. To see what permissions you need, see the "Role assignments" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
+- Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> **New** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
+
+  > [!NOTE]
+  > URLs with redirections are not supported in Exchange Server 2016, Exchange Server 2019, and Exchange Online. Use a direct URL to the manifest.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -60,15 +63,31 @@ For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md)
 
 ## Assign administrators the permissions required to install and manage add-ins for your organization
 
-### Use the EAC to assign permissions to administrators
+### Use the new EAC to assign permissions to administrators
 
-You can use the Exchange admin center (EAC) to assign administrators the permissions required to install and manage add-ins that are available from the Office Store for your organization.
+You can use the new Exchange admin center (EAC) to assign administrators the permissions required to install and manage add-ins that are available from the Office Store for your organization.
+
+1. Log in to the new EAC as a global administrator.
+2. Go to **Roles**, and then select **Admin Roles**. 
+3. Select an existing group or create a new one.
+4. If you are modifying an existing role, go to **Permissions**, add the permissions required to install and manage add-ins, and then click **Save**. If you are creating a new group, follow the wizard.
+
+For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
 ## Assign users the permissions required to install and manage add-ins for their own use
 
-### Use the EAC to assign permissions to users
+### Use the classic EAC to assign permissions to users
 
-You can use the EAC to assign users the permissions required to view and modify custom add-ins for their own use. For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
+You can use the classic EAC to assign users the permissions required to view and modify custom add-ins for their own use.
+
+1. Log in to the classic EAC as a global administrator.
+2. Go to **Permissions**, and then select **User Roles**. 
+3. Select an existing role assignment policy or create a new one.
+4. Type a name for the policy if you are creating a new one.
+5. Select some or all of the roles: **My Custom Apps**, **My MarketPlace Apps**, and **My ReadWriteMailbox Apps**.
+6. Click **Save**.
+
+For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
 ## Prevent add-in downloads by turning off the Office Store across Outlook
 

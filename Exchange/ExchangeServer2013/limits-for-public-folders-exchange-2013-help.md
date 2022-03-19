@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn594582(v=EXCHG.150)
 ms:contentKeyID: 61218734
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Limits for public folders in Exchange 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -28,9 +30,9 @@ The following table lists the limits for public folders in on-premises Exchange 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

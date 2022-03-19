@@ -1,6 +1,6 @@
 ---
 title: "Create a cloud-based archive in an Exchange hybrid deployment"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
@@ -39,7 +39,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 1. In the EAC in your on-premises organization, go to **Recipients** \> **Mailboxes**.
 
-2. Click **New**![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **User mailbox** or **Office 365 mailbox** depending on where you want to create the mailbox.
+2. Click **New**![Add Icon.](../media/ITPro_EAC_AddIcon.gif) \> **User mailbox** or **Office 365 mailbox** depending on where you want to create the mailbox.
 
 3. On the **New user mailbox** page, create a mailbox for a new or existing user. For more information about creating a user mailbox, see [Create User Mailboxes](../../ExchangeServer/recipients/create-user-mailboxes.md).
 
@@ -53,7 +53,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
    2. Under **Archive**, click the **Create an in-place archive for this user** check box, and then click **Cloud-based archive**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
-    ![Under Archive, click the checkbox and then click Cloud-based archive](../media/43d0473e-30ad-4021-94bc-a9c5449f43ba.png)
+    ![Under Archive, click the checkbox and then click Cloud-based archive.](../media/43d0473e-30ad-4021-94bc-a9c5449f43ba.png)
 
 5. Click **Save** to create the mailbox and the cloud-based archive.
 
@@ -68,7 +68,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 8. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
 
-    ![Click Edit in the details pane to assign a license to the selected user](../media/383a9068-53cb-420a-a05e-823e8b5a2c25.png)
+    ![Click Edit in the details pane to assign a license to the selected user.](../media/383a9068-53cb-420a-a05e-823e8b5a2c25.png)
 
 9. Under the **Location** drop-down menu, select a location for the user.
 
@@ -108,7 +108,7 @@ Once again, wait up to 30 minutes for directory synchronization to provision a c
 
 2. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
 
-    ![Click Edit in the details pane to assign a license to the selected user](../media/383a9068-53cb-420a-a05e-823e8b5a2c25.png)
+    ![Click Edit in the details pane to assign a license to the selected user.](../media/383a9068-53cb-420a-a05e-823e8b5a2c25.png)
 
 3. Under the **Location** drop-down menu, select a location for the user.
 
@@ -122,7 +122,7 @@ Once again, wait up to 30 minutes for directory synchronization to provision a c
 
 7. In the details pane, under **In-Place Archive**, click **Enable**.
 
-    ![Click Enable in the details pane to enable the archive mailbox for the selected user](../media/17ce99f7-d154-4e21-bec1-c938af1d4a0a.png)
+    ![Click Enable in the details pane to enable the archive mailbox for the selected user.](../media/17ce99f7-d154-4e21-bec1-c938af1d4a0a.png)
 
 8. If it's an **online mailbox**:
 
@@ -132,7 +132,7 @@ Once again, wait up to 30 minutes for directory synchronization to provision a c
  
    - On the **Create in-place archive** page, click **Cloud-based archive**, and then click **Ok**. The name of the domain that the archive mailbox will be provisioned in is displayed.
 
-     ![On the Create in-place archive page, click Cloud-based archive](../media/9ad047c9-ef47-47df-93cc-0fab872f1ae1.png)
+     ![On the Create in-place archive page, click Cloud-based archive.](../media/9ad047c9-ef47-47df-93cc-0fab872f1ae1.png)
 
      Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
 
@@ -148,7 +148,7 @@ Before you create the cloud-based archive mailbox, you need to assign the produc
 The following example creates a cloud-based archive mailbox for Ayla who has a primary **on-premises mailbox**:
 
 ```PowerShell
-Enable-Mailbox -Identity ayla@contoso.com -RemoteArchive -ArchiveDomain "archive.contoso.com"
+Enable-Mailbox -Identity ayla@contoso.com -RemoteArchive -ArchiveDomain "contoso.mail.onmicrosoft.com"
 ```
 
 For detailed syntax and parameter information, see [Enable-Mailbox](/powershell/module/exchange/enable-mailbox).
@@ -185,17 +185,17 @@ The following screenshots show the properties that are returned when the provisi
 
 ### Properties before the cloud-based archive mailbox is provisioned by directory synchronization
 
-![Property of cloud-based mailuser before the cloud-based archive is provisioned](../media/c6a42713-f061-4761-93c1-2b5478953e46.png)
+![Property of cloud-based mailuser before the cloud-based archive is provisioned.](../media/c6a42713-f061-4761-93c1-2b5478953e46.png)
 
 Before directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `None`. Also note that the _ArchiveGuid_ and _ArchiveName_ properties are empty.
 
 ### Properties after the cloud-based archive mailbox is provisioned by directory synchronization
 
-![Cloud-based mail user properties after the cloud-based archive is provisioned](../media/005fcc87-6253-4218-aafc-50f212de54fa.png)
+![Cloud-based mail user properties after the cloud-based archive is provisioned.](../media/005fcc87-6253-4218-aafc-50f212de54fa.png)
 
 After directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `Active`, and the _ArchiveGuid_ and _ArchiveName_ properties are populated. At this point, the user is able to access their cloud-based archive mailbox in Outlook or Outlook on the web.
 
-![User can access their cloud-based archive mailbox in Outlook or Outlook on the web](../media/8777bc4d-05c3-4489-8d8c-ff5429a0b2c3.png)
+![User can access their cloud-based archive mailbox in Outlook or Outlook on the web.](../media/8777bc4d-05c3-4489-8d8c-ff5429a0b2c3.png)
 
 You can also run the following PowerShell command in your on-premises Exchange organization to display properties related to the cloud-based archive mailbox of an on-premises user.
 
@@ -210,13 +210,13 @@ Get-MailUser <on-premises mail user> | FL *archive*
 
 #### Properties before the cloud-based archive mailbox is provisioned by directory synchronization
 
-![Mailbox property before the cloud-based archive is provisioned](../media/d5625bc8-03de-439a-8a0a-051ff537a0bf.png)
+![Mailbox property before the cloud-based archive is provisioned.](../media/d5625bc8-03de-439a-8a0a-051ff537a0bf.png)
 
 Before directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `None` and the _ArchiveState_ property is set to `HostedPending`.
 
 #### Properties after the cloud-based archive mailbox is provisioned by directory synchronization
 
-![Mailbox properties after the cloud-based archive is provisioned](../media/9b42d562-1b0a-4722-97aa-35d0ef6f9372.png)
+![Mailbox properties after the cloud-based archive is provisioned.](../media/9b42d562-1b0a-4722-97aa-35d0ef6f9372.png)
 
 After directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `Active` and the _ArchiveState_ property is set to `HostedProvisioned`. At this point, the user is able to access their cloud-based archive mailbox in Outlook or Outlook on the web.
 

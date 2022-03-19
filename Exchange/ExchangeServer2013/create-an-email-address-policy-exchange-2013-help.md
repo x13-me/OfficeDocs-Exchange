@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb125137(v=EXCHG.150)
 ms:contentKeyID: 49289449
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create an Email Address Policy in Exchange Server
 f1.keywords:
 - CSH
 mtps_version: v=EXCHG.150
@@ -31,8 +33,8 @@ When creating an email address policy, you can use the following email address t
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col>
+    <col>
     </colgroup>
     <thead>
     <tr class="header">
@@ -114,7 +116,7 @@ For detailed instructions about how to create an email address policy, see the f
 
 ## Use the EAC to create an email address policy
 
-1. Navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. Navigate to **Mail flow** \> **Email address policies**, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In **Email Address Policy**, complete the following fields:
 

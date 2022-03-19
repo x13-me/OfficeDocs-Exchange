@@ -1,13 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 2cb9cae4-3eee-4da1-8a01-3d37d4b6b8b2
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to configure different methods of collaboration in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to configure collaboration in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to configure different methods of collaboration in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to configure collaboration in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to configure collaboration in the Exchange admin center in Exchange Online
+# Use a screen reader to configure collaboration in the Classic Exchange admin center in Exchange Online
 
-You can use your screen reader in the Exchange admin center (EAC) in Exchange Online to configure different methods of collaboration. These methods might include public folders, distribution groups, or shared mailboxes.
+You can use your screen reader in the Classic Exchange admin center (Classic EAC) in Exchange Online to configure different methods of collaboration. These methods might include public folders, distribution groups, or shared mailboxes.
 
 ## Get started
 

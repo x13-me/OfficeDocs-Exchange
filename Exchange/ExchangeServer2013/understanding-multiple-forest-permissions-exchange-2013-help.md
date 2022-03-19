@@ -5,8 +5,10 @@ ms:assetid: 8241033f-e201-4799-b17c-4f120c6e6445
 ms:mtpsurl: https://technet.microsoft.com/library/Dd298099(v=EXCHG.150)
 ms:contentKeyID: 49289329
 ms.reviewer: 
+ms.topic: article
+description: Multiple-forest permissions in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -60,7 +62,7 @@ Finally, management scopes created in each forest are also bound by the forest. 
 
 **RBAC and forest scope boundary relationship**
 
-![RBAC and forest boundary scope relationships](images/Dd298099.220da7c3-cbb8-42ac-9d58-084d996bf837(EXCHG.150).gif "RBAC and forest boundary scope relationships")
+![RBAC and forest boundary scope relationships.](images/Dd298099.220da7c3-cbb8-42ac-9d58-084d996bf837(EXCHG.150).gif "RBAC and forest boundary scope relationships")
 
 ## Cross-boundary permissions
 
@@ -91,7 +93,7 @@ The following figure shows that USGs in an accounts forest can be associated wit
 
 **Linked role groups associated with USGs in a separate forest**
 
-![Linked role group and USG relationships](images/Dd298099.23f245e8-b80f-4082-8628-ee6701259be6(EXCHG.150).gif "Linked role group and USG relationships")
+![Linked role group and USG relationships.](images/Dd298099.23f245e8-b80f-4082-8628-ee6701259be6(EXCHG.150).gif "Linked role group and USG relationships")
 
 When you create a linked role group, you assign roles to the linked role group in the Exchange 2013 forest. The assignments that associate the roles to the linked role group can include management scopes, if necessary. These scopes are confined to the forest in which the linked role group is created.
 
@@ -105,7 +107,7 @@ The following figure shows the relationship between users in an accounts forest,
 
 **Users in an accounts forest associated with linked mailboxes that are members of role groups**
 
-![Role group and linked mailbox relationships](images/Dd298099.e59242f6-5c63-4114-90f7-6b6c2478570c(EXCHG.150).gif "Role group and linked mailbox relationships")
+![Role group and linked mailbox relationships.](images/Dd298099.e59242f6-5c63-4114-90f7-6b6c2478570c(EXCHG.150).gif "Role group and linked mailbox relationships")
 
 Linked role groups and linked mailboxes both have advantages and disadvantages when used to assign administrative permission across forest boundaries. The following table describes some of them.
 
@@ -113,9 +115,9 @@ Linked role groups and linked mailboxes both have advantages and disadvantages w
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -156,7 +158,7 @@ When a role assignment policy is assigned to a linked mailbox, the user in the a
 
 **Users in an accounts forest associated with linked mailboxes that are each assigned a role assignment policy**
 
-![Role group and assignment policy relationships](images/Dd298099.785b9b35-4292-43ce-917b-117d0174742e(EXCHG.150).gif "Role group and assignment policy relationships")
+![Role group and assignment policy relationships.](images/Dd298099.785b9b35-4292-43ce-917b-117d0174742e(EXCHG.150).gif "Role group and assignment policy relationships")
 
 ## Configure cross-boundary permissions
 
