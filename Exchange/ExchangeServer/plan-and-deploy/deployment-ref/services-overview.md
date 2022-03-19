@@ -28,8 +28,8 @@ The sections in this topic describe the various services that are installed by E
 
 The following table describes the Exchange services that are installed on Mailbox servers.
 
-|**Service name**|**Service short name**|**Description and dependencies**|**Default startup type**|**Security context**|**Dependencies**|**Required or optional**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|Service name|Service short name|Description and dependencies|Default startup type|Security context|Dependencies|Required or optional|
+|---|---|---|---|---|---|---|
 |Microsoft Exchange Active Directory Topology|MSExchangeADTopology|Provides Active Directory topology information to Exchange services. If this service is stopped, most Exchange services can't start.|Automatic|Local System|Net.TCP Port Sharing Service|Required|
 |Microsoft Exchange Anti-spam Update|MSExchangeAntispamUpdate|Provides Exchange SmartScreen spam definition updates. <br/> **Note**: In November, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions were left in place, but their effectiveness will likely degrade over time. For more information, see [Deprecating support for SmartScreen in Outlook and Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).|Automatic|Local System|Microsoft Exchange Active Directory Topology|Optional|
 |Microsoft Exchange Compliance Audit|MSComplianceAudit|Provides Exchange auditing features.|Automatic|Local System|Microsoft Exchange Active Directory Topology|Required|
@@ -67,8 +67,8 @@ The following table describes the Exchange services that are installed on Mailbo
 
 The following table describes the Exchange services that are installed on Edge Transport servers.
 
-|**Service name**|**Service short name**|**Description**|**Default startup type**|**Security context**|**Dependencies**|**Required or optional**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|Service name|Service short name|Description|Default startup type|Security context|Dependencies|Required or optional|
+|---|---|---|---|---|---|---|
 |Microsoft Exchange ADAM|ADAM_MSExchange|Stores configuration data and recipient data on the Edge Transport server. This service represents the named instance of the Active Directory Lightweight Directory Services (AD LDS) that's automatically created by Exchange Setup.|Automatic|Network Service|COM+ Event System|Required|
 |Microsoft Exchange Anti-spam Update|MSExchangeAntispamUpdate|Provides Exchange SmartScreen spam definition updates. <br/> **Note**: In November, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions were left in place, but their effectiveness will likely degrade over time. For more information, see [Deprecating support for SmartScreen in Outlook and Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).|Automatic|Local System|Microsoft Exchange ADAM|Optional|
 |Microsoft Exchange Credential Service|MSExchangeEdgeCredential|Monitors credential changes in Active Directory Lightweight Directory Services (AD LDS) and installs the changes on the Edge Transport server.|Automatic|Local System|Microsoft Exchange ADAM|Required|

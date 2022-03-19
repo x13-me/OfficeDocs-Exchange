@@ -215,10 +215,6 @@ The tables in the following sections contain the Exchange objects in Active Dire
 ::: moniker range="exchserver-2019"
 ### Exchange 2019 Active Directory versions
 
-<br>
-
-****
-
 |Exchange 2019 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
 |Exchange 2019 CU11|17003|13242|16759|
@@ -234,17 +230,12 @@ The tables in the following sections contain the Exchange objects in Active Dire
 |Exchange 2019 CU1|17000|13236|16752|
 |Exchange 2019 RTM|17000|13236|16751|
 |Exchange 2019 Preview|15332|13236|16213|
-|
 
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
 
 ### Exchange 2016 Active Directory versions
-
-<br>
-
-****
 
 |Exchange 2016 version|rangeUpper|objectVersion<br>(Default)|objectVersion<br>(Configuration)|
 |---|:---:|:---:|:---:|
@@ -272,6 +263,5 @@ The tables in the following sections contain the Exchange objects in Active Dire
 |Exchange 2016 CU1|15323|13236|16211|
 |Exchange 2016 RTM|15317|13236|16210|
 |Exchange 2016 Preview|15317|13236|16041|
-|
 
 ::: moniker-end
