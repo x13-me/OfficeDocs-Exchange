@@ -5,8 +5,10 @@ ms:assetid: 11015fb2-5fb8-4b56-9c80-adc4f18d6fd3
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638086(v=EXCHG.150)
 ms:contentKeyID: 49289174
 ms.reviewer: 
+ms.topic: article
+description: How to manage split permissions in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

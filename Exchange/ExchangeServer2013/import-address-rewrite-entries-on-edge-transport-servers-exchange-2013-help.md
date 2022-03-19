@@ -5,8 +5,10 @@ ms:assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms:mtpsurl: https://technet.microsoft.com/library/Bb331966(v=EXCHG.150)
 ms:contentKeyID: 61200296
 ms.reviewer: 
+ms.topic: article
+description: Import address rewrite entries on Edge Transport servers in Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -31,9 +33,9 @@ The first row, or *header row*, of the CSV file lists the names of the parameter
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

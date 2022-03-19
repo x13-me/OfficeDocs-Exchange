@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about MailTips that are presented to users in Outlook and Outlook on the web.
 ms.topic: overview
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
 ms.reviewer: 
-title: MailTips
+title: MailTips in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,7 +19,7 @@ manager: serdars
 
 ---
 
-# MailTips
+# MailTips in Exchange Online
 
 MailTips are informative messages displayed to users while they're composing a message. While a new message is open and being composed, Exchange analyzes the message (including recipients). If a potential problem is detected, the user is notified with a MailTip prior to sending the message. Using the information in the MailTip, the user can adjust the message to avoid undesirable situations or non-delivery reports (also known as NDRs or bounce messages).
 
@@ -59,8 +59,8 @@ The following messaging clients support MailTips:
 
 The following table lists the available MailTips in Exchange Online.
 
-|**MailTip**|**Availability**|**Scenario**|
-|:-----|:-----|:-----|
+|MailTip|Availability|Scenario|
+|---|---|---|
 |Invalid Internal Recipient|Outlook|The sender adds an internal recipient that doesn't exist. For example: <br/>• The non-existent recipient resolves due to an entry in the sender's Auto-Complete List (also known as the _nickname cache_) or an entry in the sender's Contacts folder. <br/>• The sender types a non-existent internal email address, and the email address is in an accepted domain (an authoritative domain) for the Exchange organization. <br/><br/> The MailTip indicates the invalid recipient and gives the sender the option to remove the recipient from the message.|
 |Mailbox Full|Outlook <br/><br/> Outlook on the web|The sender adds an internal recipient whose mailbox exceeds the maximum mailbox size (the ProhibitSendReceive quota on the mailbox or organization). <br/><br/> The MailTip indicates the recipient whose mailbox is full and gives the sender the option to remove the recipient from the message. <br/><br/> The MailTip is accurate at the time of display. If the message isn't immediately sent, the MailTip is updated every two hours. This also applies to messages that were saved in the Drafts folder and reopened after two hours.|
 |Automatic Replies|Outlook <br/><br/> Outlook on the web|The sender adds an internal recipient<sup>\*</sup> who has turned on Automatic Replies. <br/><br/> The MailTip indicates the recipient has Automatic Replies turned on and also displays the first 175 characters of the automatic reply text. <br/><br/> The MailTip is accurate at the time of display. If the message isn't immediately sent, the MailTip is updated every two hours. This also applies to messages that were saved in the Drafts folder and reopened after two hours. <br/><br/> <sup>\*</sup>If the recipient is external, but the recipient's domain is configured as a remote domain, the AllowedOOFType and IsInternal settings determine whether the sender receives the internal automatic reply, the external automatic reply, or no automatic reply at all.|
@@ -87,3 +87,7 @@ MailTips are subject to the following restrictions:
 - While older versions of Exchange Server would populate MailTips in their entirety, Exchange Online will only display up to 1000 characters.
 
 - If the sender starts composing a message and leaves it open for an extended period of time, the Automatic Replies and Mailbox Full MailTips are evaluated every two hours.
+
+## For more information
+
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)

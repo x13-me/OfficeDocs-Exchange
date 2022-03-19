@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.win7rpc
 ms:contentKeyID: 46629145
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Exchange Setup can't continue because update KB2619234 isn't installed
 author: msdmaguire
 f1.keywords:
 - NOCSH

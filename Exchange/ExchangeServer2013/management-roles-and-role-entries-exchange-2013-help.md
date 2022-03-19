@@ -5,8 +5,10 @@ ms:assetid: 243be502-b3d7-4bb3-8f9b-063ab7a85c02
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638097(v=EXCHG.150)
 ms:contentKeyID: 49289196
 ms.reviewer: 
+ms.topic: article
+description: Management roles and role entries in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

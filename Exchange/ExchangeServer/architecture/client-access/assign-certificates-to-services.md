@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to assign certificates to Exchange services in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
 ms.reviewer:
 title: Assign certificates to Exchange Server services
@@ -24,10 +24,8 @@ After you install a certificate on an Exchange server, you need to assign the ce
 
 The available Exchange services are described in the following table.
 
-****
-
-|**Service**|**Uses**|
-|:-----|:-----|
+|Service|Uses|
+|---|---|
 |IIS|TLS encryption for internal and external client connections that use HTTP. This includes: <br/> Autodiscover <br/> Exchange ActiveSync <br/> Exchange admin center <br/> Exchange Web Services <br/> Offline address book (OAB) distribution <br/> Outlook Anywhere (RPC over HTTP) <br/> Outlook MAPI over HTTP <br/> Outlook on the web|
 |IMAP|TLS encryption for IMAP4 client connections. <br/> Don't assign a wildcard certificate to the IMAP4 service. Instead, use the **Set-ImapSettings** cmdlet to configure the fully qualified domain name (FQDN) that clients use to connect to the IMAP4 service.|
 |POP|TLS encryption for POP3 client connections. <br/> Don't assign a wildcard certificate to the POP3 service. Instead, use the **Set-PopSettings** cmdlet to configure the FQDN that clients use to connect to the POP3 service.|
@@ -58,7 +56,7 @@ The available Exchange services are described in the following table.
 
 2. In the **Select server** list, select the Exchange server that holds the certificate.
 
-3. Select the certificate that you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). The certificate needs to have the **Status** value **Valid**.
+3. Select the certificate that you want to configure, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). The certificate needs to have the **Status** value **Valid**.
 
 4. On the **Services** tab, in the **Specify the services you want to assign this certificate to** section, select the services. Remember, you can add services, but you can't remove them. When you're finished, click **Save**.
 

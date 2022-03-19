@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ecp.proxy(v=EXCHG
 ms:contentKeyID: 49720923
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the ECP.Proxy health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -29,10 +31,10 @@ The EAC service is monitored by using the following probes and monitors:
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

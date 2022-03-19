@@ -5,8 +5,10 @@ ms:assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876926(v=EXCHG.150)
 ms:contentKeyID: 50873806
 ms.reviewer: 
+ms.topic: article
+description: Move a mailbox database using database portability in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

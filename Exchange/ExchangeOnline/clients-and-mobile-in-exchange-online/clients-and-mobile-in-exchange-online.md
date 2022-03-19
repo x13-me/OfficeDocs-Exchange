@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: A list of links to topics for admins in Exchange Online related to clients an mobile access to mailboxes.
 ms.topic: conceptual
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 4b2256d7-2250-40f4-b25f-4ac52c8c9647
 ms.reviewer: 
@@ -24,8 +24,8 @@ Many different clients can be used to access information in an Exchange Online m
 
 The following table contains links to topics that will help you learn about and manage some of the clients and client access methods that can be used to access an Office 365 or Microsoft 365 mailbox.
 
-|**Topic**|**Description**|
-|:-----|:-----|
+|Topic|Description|
+|---|---|
 |[Exchange ActiveSync in Exchange Online](exchange-activesync/exchange-activesync.md)|Learn about Exchange ActiveSync, the protocol that provides connectivity to a wide variety of mobile phones and tablets. Using Exchange ActiveSync, users can access email, calendar, contact, and task information.|
 |[Mobile device mailbox policies in Exchange Online](exchange-activesync/mobile-device-mailbox-policies.md)||
 |[POP3 and IMAP4](pop3-and-imap4/pop3-and-imap4.md)|Learn about how you can use the POP3 and IMAP4 protocols to provide users access to a number of the features in their Office 365 or Microsoft 365 mailbox. These client protocols can be used on desktop email applications and on many mobile phones and devices.|

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657470(v=EXCHG.150)
 ms:contentKeyID: 49289345
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: About the MailboxSearchApplication role in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH

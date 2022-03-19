@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Microsoft Exchange Server 2016 Setup displayed this warning as the servers running Exchange 2016 or later in this organization and MAPI over HTTP aren't enabled.
 ms.topic: reference
-author: msdmaguire
+author: JoanneHendrickson
 ms.custom:
 - ms.exch.setupreadiness.WarnMapiHttpNotEnabled
-ms.author: dmaguire
+ms.author: jhendr
 ms.assetid: 8c7e2b60-2973-47b1-ac1c-3c3e96824aee
 ms.reviewer: 
 title: MAPI over HTTP isn't enabled [WarnMapiHttpNotEnabled]

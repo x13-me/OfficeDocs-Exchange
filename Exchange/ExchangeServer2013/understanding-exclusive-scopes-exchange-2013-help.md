@@ -5,8 +5,10 @@ ms:assetid: 32492622-3b01-4e3b-8288-ed39525eea75
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638110(v=EXCHG.150)
 ms:contentKeyID: 49289222
 ms.reviewer: 
+ms.topic: article
+description: Exclusive scopes in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -52,10 +54,10 @@ The figure at the end of this section illustrates how exclusive scopes interact 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -127,9 +129,9 @@ The following three management role assignments in the figure manage the users i
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -171,6 +173,6 @@ Notice that Fred and Martin are accessible by both exclusive scopes. This is bec
 
 **Interaction between exclusive scopes and regular scopes**
 
-![Exclusive and regular scope interaction](images/Dd638110.0aa26d1d-1fa6-44d8-802d-83d75cd2624c(EXCHG.150).jpg "Exclusive and regular scope interaction")
+![Exclusive and regular scope interaction.](images/Dd638110.0aa26d1d-1fa6-44d8-802d-83d75cd2624c(EXCHG.150).jpg "Exclusive and regular scope interaction")
 
 For more information about management scopes, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).

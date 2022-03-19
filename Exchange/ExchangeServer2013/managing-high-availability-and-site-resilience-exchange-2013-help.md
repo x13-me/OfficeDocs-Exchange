@@ -4,9 +4,11 @@ TOCTitle: Managing high availability and site resilience
 ms:assetid: f9677392-88d2-457f-a488-245771a8c1f2
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638215(v=EXCHG.150)
 ms:contentKeyID: 48385734
+ms.topic: article
+description: Configure high availability and site resilience.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

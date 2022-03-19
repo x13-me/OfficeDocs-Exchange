@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.rsatclu
 ms:contentKeyID: 50619802
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Exchange Setup fails if the computer is missing a required Windows feature
 author: msdmaguire
 f1.keywords:
 - NOCSH

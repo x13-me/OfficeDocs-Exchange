@@ -5,8 +5,10 @@ ms:assetid: 20e8a43d-4508-4388-a2c9-aa3073593cc2
 ms:mtpsurl: https://technet.microsoft.com/library/JJ907308(v=EXCHG.150)
 ms:contentKeyID: 50639771
 ms.reviewer: 
+ms.topic: article
+description: Install and configure the Address Book Policy Routing agent in Exchange Server 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

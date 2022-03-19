@@ -6,14 +6,16 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124397(v=EXCHG.150)
 ms:contentKeyID: 48385500
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to configure your new Exchange 2013 organization
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Exchange 2013 post-Installation tasks
+# Exchange 2013 post-installation tasks
 
 _**Applies to:** Exchange Server 2013_
 
@@ -21,8 +23,8 @@ After you've completed the installation of Microsoft Exchange Server 2013, read 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

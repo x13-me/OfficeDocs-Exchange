@@ -4,10 +4,12 @@ TOCTitle: Allow POP3, IMAP4, and SMTP server settings to be viewed by end users 
 ms:assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
 ms:mtpsurl: https://technet.microsoft.com/library/Gg298947(v=EXCHG.150)
 ms:contentKeyID: 49300683
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: How to enable Outlook Web App users to view POP3, IMAP4, and SMTP server settings 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -64,7 +66,7 @@ To apply these changes, you must restart IIS. You don't need to restart the POP3
 iisreset
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've configured Exchange to allow users to view their POP3 server settings:
 
@@ -98,7 +100,7 @@ Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Con
 
 For detailed syntax and parameter information, see [Set-ReceiveConnector](/powershell/module/exchange/Set-ReceiveConnector).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you've configured Exchange to allow users to view their SMTP server settings:
 

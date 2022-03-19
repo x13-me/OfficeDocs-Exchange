@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd335047(v=EXCHG.150)
 ms:contentKeyID: 48384773
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Federation in Exchange Server supports collaboration
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -93,7 +95,7 @@ The following figure illustrates the federation configuration between Contoso, L
 
 **Federated sharing example**
 
-![Federation Trusts and Federated Sharing](images/Dd335047.310f0698-b67d-4b0e-91e4-231c6e9db952(EXCHG.150).gif "Federation Trusts and Federated Sharing")
+![Federation Trusts and Federated Sharing.](images/Dd335047.310f0698-b67d-4b0e-91e4-231c6e9db952(EXCHG.150).gif "Federation Trusts and Federated Sharing")
 
 ## Certificate requirements for Federation
 

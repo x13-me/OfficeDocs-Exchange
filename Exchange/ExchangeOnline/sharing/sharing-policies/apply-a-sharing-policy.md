@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Sharing policies control how your users share their calendars with people outside your organization. The sharing policy that an admin applies to the user's mailbox determines what level of access a user can share and with whom. If you don't change anything, then all users can invite anyone with an email address to view their calendar. If you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. Sharing policies are applied to individual user's mailboxes. An admin can also disable a user's sharing policy to prevent external access to calendars.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: a075b1ec-5a96-4d0e-a609-ab64e50cdb9e
 ms.reviewer: 
@@ -37,7 +37,7 @@ Sharing policies control how your users share their calendars with people outsid
 
 2. Go to **recipients** \> **mailboxes**.
 
-3. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 4. In **User Mailbox**, click **mailbox features**.
 
@@ -89,7 +89,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](/powershell/mod
 
 To verify that you have successfully applied the sharing policy to a user mailbox, do one of the following:
 
-- In the Exchange admin center, go to **recipients** \> **mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), click **mailbox features**, and then confirm that the correct sharing policy displays in the **Sharing policy**.
+- In the Exchange admin center, go to **recipients** \> **mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif), click **mailbox features**, and then confirm that the correct sharing policy displays in the **Sharing policy**.
 
 - Run the following command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed for the _SharingPolicy_ parameter.
 

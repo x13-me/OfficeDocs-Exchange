@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.ffoquarantine(v=E
 ms:contentKeyID: 49720826
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the FfoQuarantine health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

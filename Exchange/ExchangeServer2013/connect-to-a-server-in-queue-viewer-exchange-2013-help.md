@@ -5,8 +5,10 @@ ms:assetid: 6c1ad574-9ab5-4dcc-9398-ec10eca4fd11
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998669(v=EXCHG.150)
 ms:contentKeyID: 49286846
 ms.reviewer: 
+ms.topic: article
+description: How to connect to a server in Queue Viewer in Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

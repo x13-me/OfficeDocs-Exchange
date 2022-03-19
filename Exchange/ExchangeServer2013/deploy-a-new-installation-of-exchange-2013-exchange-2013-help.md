@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998619(v=EXCHG.150)
 ms:contentKeyID: 49289285
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to dDeploy a new installation of Exchange Server 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

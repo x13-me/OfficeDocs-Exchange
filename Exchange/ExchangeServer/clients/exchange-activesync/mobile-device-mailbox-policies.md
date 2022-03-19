@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
 ms.reviewer: 
 title: Mobile device mailbox policies
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Mobile device mailbox policies
+# Mobile device mailbox policies in Exchange Server
 
 In Exchange Server, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange Server organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange Server, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
 
@@ -53,7 +53,7 @@ Android 9.0 and earlier versions utilize Android's device admin functionality to
 With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
 
 |Password complexity level |Password requirements  |
-|---------|---------|
+|---|---|
 |None     |No password requirements are configured         |
 |Low     |Password can be a pattern or a PIN with either repeating (4444) or ordered (1234, 4321, 2468) sequences         |
 |Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
@@ -62,7 +62,7 @@ With Android 10.0 and later, Android has removed device admin functionality. Ins
 From the perspective of an Exchange mobile device mailbox policy, Android's password complexity levels are mapped to the following policy settings:
 
 |Mobile device mailbox policy setting  |Android password complexity level  |
-|---------|---------|
+|---|---|
 |Password enabled = false     | None        |
 |Allow simple password = true<br/>Min password length < 4      |Low         |
 |Allow simple password = true<br/>Min password length < 6      |Medium         |
@@ -74,8 +74,8 @@ From the perspective of an Exchange mobile device mailbox policy, Android's pass
 
 The following table summarizes the settings you can specify using mobile device mailbox policies.
 
-|**Setting**|**Description**|
-|:-----|:-----|
+|Setting|Description|
+|---|---|
 |Allow Bluetooth|This setting specifies whether a mobile device allows Bluetooth connections. The available options are Disable, HandsFree Only, and Allow. The default value is Allow.|
 |Allow Browser|This setting specifies whether Pocket Internet Explorer is allowed on the mobile device. This setting doesn't affect third-party browsers installed on the mobile device. The default value is `$true`.|
 |Allow Camera|This setting specifies whether the mobile device camera can be used. The default value is `$true`.|

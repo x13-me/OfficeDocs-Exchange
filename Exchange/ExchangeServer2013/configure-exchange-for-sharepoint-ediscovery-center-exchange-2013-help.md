@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ218665(v=EXCHG.150)
 ms:contentKeyID: 48385255
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure Exchange Server for SharePoint eDiscovery Center 
 author: msdmaguire
 f1.keywords:
 - NOCSH

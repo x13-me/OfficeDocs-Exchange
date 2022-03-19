@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa997139(v=EXCHG.150)
 ms:contentKeyID: 61200281
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to Manage attachment filtering on Edge Transport servers in Microsoft Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -58,7 +60,7 @@ After you enable or disable attachment filtering, restart the Microsoft Exchange
 Restart-Service MSExchangeTransport
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully enabled or disabled attachment filtering, do the following:
 
@@ -128,7 +130,7 @@ The following example filters attachments that have the .jpg file name extension
 Add-AttachmentFilterEntry -Name *.jpg -Type FileName
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully added an attachment filtering entry, do the following:
 
@@ -166,7 +168,7 @@ The following example removes the file name entry for the .jpg file name extensi
 Remove-AttachmentFilterEntry FileName:*.jpg
 ```
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully removed an attachment filtering entry, do the following:
 
@@ -206,6 +208,6 @@ Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message cont
 
 For more information, see [Set-AttachmentFilterListConfig](/powershell/module/exchange/Set-AttachmentFilterListConfig).
 
-## How do you know this worked?
+### How do you know this worked?
 
 To verify that you successfully configured the attachment filtering action, send a test message that contains a prohibited attachment from an external mailbox to an internal recipient and verify that the message and the attachment are processed as you expect.

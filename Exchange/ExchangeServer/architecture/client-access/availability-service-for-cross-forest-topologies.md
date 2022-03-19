@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms.reviewer:
 title: Configure the Availability service for cross-forest topologies
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure the Availability service for cross-forest topologies
+# Configure the Availability service for cross-forest topologies in Exchange Server
 
 The Availability service improves information workers' free/busy information by providing secure, consistent, and up-to-date free/busy information to clients that are running Outlook. By default, this service is installed with Exchange Server. In cross-forest topologies where all connecting clients are running Outlook, the Availability service is the only method of retrieving free/busy information. You can use the Exchange Management Shell to configure the Availability service for cross-forest topologies.
 

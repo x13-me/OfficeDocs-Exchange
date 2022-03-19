@@ -1,13 +1,15 @@
 ---
-title: 'Exchange 2010 servers must be upgraded to Service Pack 3: Exchange 2013 Help'
+title: 'Exchange Server: Exchange 2010 servers must be upgraded to Service Pack 3: Exchange 2013 Help'
 TOCTitle: Exchange 2010 servers must be upgraded to Service Pack 3
 ms:assetid: 06f99869-79a2-4ac4-b947-b71430b178ad
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.e15e14coexistenceminmajorversionrequirement(v=EXCHG.150)
 ms:contentKeyID: 49300425
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: For exchange Server 2013 Setup, Exchange 2010 servers must be upgraded to SP 3
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhor
 ms:contentKeyID: 46629018
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: IIS 7 .NET Extensibility component is required for Exchange installation
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

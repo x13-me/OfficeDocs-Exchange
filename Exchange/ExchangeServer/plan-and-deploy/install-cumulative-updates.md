@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about installing Cumulative Updates (CUs) in Exchange 2016 or Exchange 2019.'
-ms.topic: get-started-article
-author: msdmaguire
-ms.author: dmaguire
+ms.topic: how-to
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
 ms.reviewer: 
 title: Upgrade Exchange to the latest Cumulative Update
@@ -27,7 +27,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 ## What do you need to know before you begin?
 
-- Estimated time to complete: 60 minutes
+- Estimated time to complete: 180 minutes
 
 - The account that you'll use to install the CU requires membership in the Exchange Organization Management role group. If the CU requires Active Directory schema updates or domain preparation, the account will likely require additional permissions. For more information, see [Prepare Active Directory and domains for Exchange Server](prepare-ad-and-domains.md).
 
@@ -36,7 +36,12 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 - Verify the target server meets the potentially new system requirements and prerequisites for the CU. For more information, see [Exchange Server system requirements](system-requirements.md) and [Exchange Server prerequisites](prerequisites.md).
 
   > [!CAUTION]
-  > Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
+  > The following types of customized settings **will be overwritten** when you install an Exchange CU:
+  > 
+  > - Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server. For example, web.config files or the EdgeTransport.exe.config file.
+  > - Customizations to the operating system's TLS/Cipher settings.
+  > 
+  > Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
 
 - After you install an Exchange CU, you need to restart the computer so that changes can be made to the registry and operating system.
 
@@ -77,42 +82,47 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
    - **Don't check for updates right now**
 
-   ![Exchange Setup, Check for Updates page](../media/exchange-install-checkupdates-no.jpg)
+   ![Exchange Setup, Check for Updates page.](../media/exchange-install-checkupdates-no.jpg)
 
 4. The **Copying Files** page shows the progress of copying files to the local hard drive. Typically, the files are copied to `%WinDir%\Temp\ExchangeSetup`, but you can confirm the location in the Exchange Setup log at `C:\ExchangeSetupLogs\ExchangeSetup.log`.
 
-   ![Exchange Setup, Copying Files page](../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
+   ![Exchange Setup, Copying Files page.](../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
 
 5. The **Upgrade** page shows that Setup detected the existing installation of Exchange, so you're upgrading Exchange on the server (not installing a new Exchange server). Click **Next** to continue.
 
 6. On the **License Agreement** page, review the software license terms, select **I accept the terms in the license agreement**, and then click **Next** to continue.
 
-   ![Exchange Setup, License Agreement page](../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
+   ![Exchange Setup, License Agreement page.](../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
 
 7. On the **Readiness Checks** page, verify that the prerequisite checks completed successfully. If they haven't, the only option on the page is **Retry**, so you need to resolve the errors before you can continue.
 
-   ![Exchange Setup, Readiness Check page with errors detected](../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
+   ![Exchange Setup, Readiness Check page with errors detected.](../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
 
    After you resolve the errors, click **Retry** to run the prerequisite checks again. You can fix some errors without exiting Setup, while the fix for other errors requires you to restart the computer. If you restart the computer, you need to start over at Step 1.
 
    When no more errors are detected on the **Readiness Checks** page, the **Retry** button changes to **Install** so you can continue. Be sure to review any warnings, and then click **Install** to install Exchange.
 
-   ![Exchange Setup, Readiness Check page with errors resolved](../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
+   ![Exchange Setup, Readiness Check page with errors resolved.](../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
 
 8. On the **Setup Progress** page, a progress bar indicates how the installation is proceeding.
 
-   ![Exchange Setup, Setup Progress page](../media/8fddda28-6e29-44c1-b1bc-149fa7798460.png)
+   ![Exchange Setup, Setup Progress page.](../media/8fddda28-6e29-44c1-b1bc-149fa7798460.png)
 
 9. On the **Setup Completed** page, click **Finish**, and then restart the computer.
 
-   ![Exchange Setup, Setup Completed page](../media/b2646172-8088-4d8a-a7f0-888f786c29cf.png)
+   ![Exchange Setup, Setup Completed page.](../media/b2646172-8088-4d8a-a7f0-888f786c29cf.png)
 
 ## Install an Exchange CU using unattended Setup from the command line
 
 To install an Exchange CU from the command line, use the following syntax:
 
+> [!NOTE]
+> - The previous _/IAcceptExchangeServerLicenseTerms_ switch will not work starting with the September 2021 Cumulative Updates (CUs). You now must use either _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ or _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_ for unattended and scripted installs.
+>
+> - The examples below use the _/IAcceptExchangeServerLicenseTerms_DiagnosticDataON_ switch. It's up to you to change the switch to _/IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF_.
+
 ```console
-<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Upgrade [/DomainController:<ServerFQDN>] [/EnableErrorReporting]
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:Upgrade [/DomainController:<ServerFQDN>] [/EnableErrorReporting]
 ```
 
 **Notes**:
@@ -124,7 +134,7 @@ To install an Exchange CU from the command line, use the following syntax:
 This example uses the Exchange CU files on drive E: to install the CU on the local server, and uses the domain controller dc01.contoso.com to read from and write to Active Directory.
 
 ```console
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Upgrade /DomainController:dc01.contoso.com
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /Mode:Upgrade /DomainController:dc01.contoso.com
 ```
 
 For more information about unattended Setup from the command line, see [Install Exchange using unattended mode](deploy-new-installations/unattended-installs.md).

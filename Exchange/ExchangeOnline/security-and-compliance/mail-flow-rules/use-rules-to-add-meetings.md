@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
 ms.reviewer: 
@@ -31,15 +31,10 @@ With the Direct to Calendar feature in Exchange Online, admins can configure mai
 
 Direct to Calendar requires two mail flow rules with specific conditions and actions. These rules are described in the following table:
 
-<br>
-
-****
-
 |Rule description|Condition|Action|Comments|
 |---|---|---|---|
 |This mail flow rule turns regular meeting invitations into Direct to Calendar meeting invitations.|**The sender is** or **The sender** \> **is this person** (the _From_ parameter). <p> This condition identifies the users who are authorized to send Direct to Calendar meeting invitations. Although you can use other conditions, restricting the invitations by sender helps prevent unauthorized use of Direct to Calendar meeting invitations.|**Set the message header to this value** or **Modify the message properties** \> **set a message header** (the _SetHeaderName_ and _SetHeaderValue_ parameters). <p> This action sets the **X-MS-Exchange-Organization-CalendarBooking-Response** header to the value `Accept`. Other valid values are `Tentative` and `Decline`.|We recommend that you use dedicated mailboxes (shared mailboxes are OK) for sending Direct to Calendar meeting invitations, because *any* meeting invitations from these senders will be automatically added to recipient calendars. <p> The dedicated mailboxes require no special permissions to send Direct to Calendar meeting invitations.|
 |This mail flow rule prevents Direct to Calendar meeting invitations from appearing in the Inbox of recipients.|**The sender is** or **The sender** \> **is this person** (the _From_ parameter).|**Set the message header to this value** or **Modify the message properties** \> **set a message header** (the _SetHeaderName_ and _SetHeaderValue_ parameters). <p> This action sets the **X-MS-Exchange-Organization-CalendarBooking-TriageAction** header to the value `MoveToDeletedItems`. The other valid value is `None`.|Technically, this rule is optional (without it, meetings are still automatically added to recipient calendars). <p> Note that this rule doesn't prevent meeting cancellation messages for Direct to Calendar meetings from appearing in the Inbox of recipients.|
-|
 
 For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
 
@@ -64,11 +59,11 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 1. In the EAC, go to **Mail flow** \> **rules**.
 
-2. Click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)), and then select **Create a new rule**.
+2. Click **New** ( ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif)), and then select **Create a new rule**.
 
 3. In the **New rule** page that opens, click **More options**.
 
-   ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
+   ![In the new mail flow rule window, click More options.](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
 4. Configure these additional settings on the **New rule** page:
    - **Name**: Direct to Calendar response (or anything descriptive).
@@ -81,11 +76,11 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
    ![Settings for the Direct to Calendar capture mail flow rule.](../../media/52f4cb2c-5a86-46e7-a31b-231ae89931ab.png)
 
-5. Back at **Mail flow** \> **Rules**, click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) again, and then select **Create a new rule**.
+5. Back at **Mail flow** \> **Rules**, click **New** ( ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif)) again, and then select **Create a new rule**.
 
 6. In the **New rule** page that opens, click **More options**.
 
-   ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
+   ![In the new mail flow rule window, click More options.](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
 7. Configure these additional settings on the **New rule** page:
    - **Name**: Direct to Calendar triage action (or anything descriptive).

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about moving and migrating mailboxes in Exchange Server 2016 and Exchange Server 2019, and the enhanced capabilities in the batch move architecture.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
 ms.reviewer:
 title: Mailbox moves in Exchange Server
@@ -85,12 +85,12 @@ You can create migration endpoints in the EAC or by using the [New-MigrationEndp
 
 ## MRS Proxy endpoints for cross-forest and remote mailbox moves
 
-The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailbox moves and remote move migrations. By default, the Client Access services on Mailbox servers aren't configured to accept incoming move requests, so you'll need to enable the MRS Proxy endpoint.
+The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailbox moves and remote move migrations. By default, the EWS virtual directories on Mailbox servers aren't configured to accept incoming move requests, so you'll need to enable the MRS Proxy endpoint.
 
-- For cross-forest moves from the target forest (pull moves), you need to enable the MRS Proxy endpoint in the Client Access services on Mailbox servers in the source forest.
+- For cross-forest moves from the target forest (pull moves), you need to enable the MRS Proxy endpoint of the EWS virtual directories on Mailbox servers in the source forest.
 
-- For cross-forest moves from the source forest (push moves), you need to enable the MRS Proxy endpoint in the Client Access services on Mailbox servers in the target forest.
+- For cross-forest moves from the source forest (push moves), you need to enable the MRS Proxy endpoint of the EWS virtual directories on Mailbox servers in the target forest.
 
-- For both onboarding and offboarding remote move migrations in hybrid deployments, you need to enable the MRS Proxy endpoint in the Client Access services on Mailbox servers in the on-premises Exchange organization.
+- For both onboarding and offboarding remote move migrations in hybrid deployments, you need to enable the MRS Proxy endpoint of the EWS virtual directories on Mailbox servers in the on-premises Exchange organization.
 
 For more information, see [Enable the MRS Proxy endpoint for remote moves](../architecture/mailbox-servers/mrs-proxy-endpoint.md).

@@ -1,9 +1,11 @@
 ---
 title: 'Create a discovery mailbox: Exchange 2013 Help'
 TOCTitle: Create a discovery mailbox
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to create a discovery mailbox in Exchange Server
 ms.reviewer:
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
 f1.keywords:

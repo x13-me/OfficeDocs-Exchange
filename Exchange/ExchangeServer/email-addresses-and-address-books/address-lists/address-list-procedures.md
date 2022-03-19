@@ -1,9 +1,9 @@
 ---
 description: 'Summary: Learn the tasks that Exchange Server 2016 and Exchange Server 2019 administrators need to know to manage address lists and global address lists (GAL).'
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
 ms.collection: exchange-server
@@ -165,7 +165,7 @@ For detailed syntax and parameter information, see [New-GlobalAddressList](/powe
 
 To verify that you've successfully created a GAL, use either of the following procedures:
 
-- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) to view the details.
+- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) to view the details.
 
 - In the Exchange Management Shell, replace _\<GAL Name\>_ with the name of the GAL, and run the following command to verify the property values:
 
@@ -201,7 +201,7 @@ For detailed syntax and parameter information, see [Set-GlobalAddressList](/powe
 
 To verify that you've successfully modified a GAL, use either of the following procedures:
 
-- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) to view the details.
+- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) to view the details.
 
 - In the Exchange Management Shell, replace _\<GAL Name\>_ with the name of the GAL, and run the following command to verify the property values:
 
@@ -307,7 +307,7 @@ If the address list isn't up to date, you should update the address list before 
 
 #### Use the EAC to view the members of address lists
 
-1. In the EAC, go to **Organization** \> **Address lists**, and select the address list, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+1. In the EAC, go to **Organization** \> **Address lists**, and select the address list, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 2. Click **Preview recipients the address list includes**.
 
@@ -339,7 +339,7 @@ You can create address lists by using the EAC or the Exchange Management Shell. 
 
 #### Use the EAC to create address lists
 
-1. In the EAC, go to **Organization** \> **Address lists**, and then click **New** (![Add icon](../../media/ITPro_EAC_AddIcon.png)).
+1. In the EAC, go to **Organization** \> **Address lists**, and then click **New** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)).
 
 2. In the **Address list** windows that opens, configure the following settings:
 
@@ -391,7 +391,7 @@ For detailed syntax and parameter information, see [New-AddressList](/powershell
 
 To verify that you've successfully created an address list, use either of the following procedures:
 
-- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) to view the details.
+- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) to view the details.
 
 - In the Exchange Management Shell, replace _[\<AddressListPath\>_\] _\<AddressListName\>_ with the name and (optionally) location of the address list, and run the following command to verify the property values:
 
@@ -411,7 +411,7 @@ To verify that you've successfully created an address list, use either of the fo
 
 #### Modify address lists in the EAC
 
-1. In the EAC, go to **Organization** \> **Address lists**, select the address list, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+1. In the EAC, go to **Organization** \> **Address lists**, select the address list, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 2. In **Address list** windows that opens, configure the following settings:
 
@@ -447,7 +447,7 @@ For detailed syntax and parameter information, see [Set-AddressList](/powershell
 
 To verify that you've successfully modified an address list, use either of the following procedures:
 
-- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) to view the details.
+- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) to view the details.
 
 - In the Exchange Management Shell, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command to verify the property values:
 
@@ -477,7 +477,7 @@ For detailed syntax and parameter information, see [Move-AddressList](/powershel
 
 To verify that you've successfully modified an address list, use either of the following procedures:
 
-- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) to view the details.
+- In the EAC, go to **Organization** \> **Address lists**, select the address list, and click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) to view the details.
 
 - In the Exchange Management Shell, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command to verify the property values:
 
@@ -501,7 +501,7 @@ If the address list contains more than 3000 recipients, we recommend that you us
 
 1. In the EAC, go to **Organization** \> **Address lists**.
 
-2. Select the address list or lists that you want to remove, and then click **Remove** (![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)). You can select multiple address lists by pressing the CTRL key while selecting each list.
+2. Select the address list or lists that you want to remove, and then click **Remove** (![Delete icon.](../../media/ITPro_EAC_DeleteIcon.png)). You can select multiple address lists by pressing the CTRL key while selecting each list.
 
 3. Click **Yes** in the warning message that appears. A progress bar allows you to monitor the removal process. When the removal is complete, click **Close**.
 
@@ -555,7 +555,7 @@ Hiding a mailbox from address lists also prevents Outlook from finding the mailb
 
    - **Public folders** \> **Public folders**: Mail-enabled public folders.
 
-2. Select the recipient that you want to hide from address lists, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+2. Select the recipient that you want to hide from address lists, and then click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)).
 
 3. The recipient properties window opens. What you do next depends on the recipient type:
 
@@ -615,7 +615,7 @@ Set-Mailbox -Identity michelle@contoso.com -HiddenFromAddressListsEnabled $true
 
 You can verify that you've successfully hidden a recipient from address lists by using any of the following procedures:
 
-- In the EAC, select the recipient, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) and verify the hide from address lists setting is selected.
+- In the EAC, select the recipient, click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)) and verify the hide from address lists setting is selected.
 
 - In the Exchange Management Shell, run the following command and verify the recipient is listed:
 

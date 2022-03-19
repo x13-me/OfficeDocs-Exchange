@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.longhor
 ms:contentKeyID: 46628802
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange Setup can't continue without IIS 6 Compatibility components installed
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

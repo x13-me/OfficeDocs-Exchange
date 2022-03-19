@@ -1,12 +1,14 @@
 ---
-title: 'Domain Controller Override is set in the Registry'
+title: 'Exchange Server: Domain Controller Override is set in the Registry'
 TOCTitle: Domain Controller Override is set in the Registry_ConfigDCHostNameMismatch
 ms:assetid: 3aef5470-d510-4b59-a4b6-36d274a984ae
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.configdchostnamemismatch(v=EXCHG.150)
 ms:contentKeyID: 46628888
+ms.topic: article
+description: Exchange Server - Domain Controller Override is set in the Registry.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -21,8 +23,8 @@ The content in this topic hasn't been updated for Microsoft Exchange Server 2013
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://social.technet.microsoft.com/forums/office/home?category=exchangeserver).
 
-Microsoft Exchange Server 2007 setup cannot continue because its attempt to use the specified domain controller failed. A domain controller has been statically mapped in the registry.
+Microsoft Exchange Server 2007 setup can't continue because its attempt to use the specified domain controller failed. A domain controller has been statically mapped in the registry.
 
-Exchange 2007 setup requires that the domain controller specified in the setup command match the domain controller that has been statically mapped using a registry override.
+Exchange 2007 setup requires that the domain controller that's specified in the setup command matches the domain controller that has been statically mapped using a registry override.
 
 To resolve this issue, run setup again, specifying the statically mapped domain controller for the **/DomainController: \<***FQDN of the* *statically mapped domain controller***\>** parameter.

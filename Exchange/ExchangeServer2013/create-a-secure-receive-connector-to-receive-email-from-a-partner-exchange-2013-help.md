@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ673037(v=EXCHG.150)
 ms:contentKeyID: 49289153
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to create a secure Receive connector to receive email from a partner in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -38,7 +40,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 ## Use the EAC to Create a Receive Connector to Receive Secure Messages from a Partner
 
-1. In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a new Receive connector.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a new Receive connector.
 
 2. On the **New receive connector** page, specify a name for the Receive connector and then select **Frontend Transport** for the **Role**. Since you are receiving mail from a partner in this case, we recommend that you initially route mail to your front end server to simplify and consolidate your mail flow.
 

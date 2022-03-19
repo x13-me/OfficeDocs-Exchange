@@ -1,10 +1,12 @@
 ---
 title: 'Address lists: Exchange 2013 Help'
 TOCTitle: Address lists
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
 ms.reviewer:
+description: About address lists in Microsoft Exchange
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 f1.keywords:
 - NOCSH

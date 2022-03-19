@@ -5,8 +5,10 @@ ms:assetid: a46c6c37-e7de-4c86-aa10-55c11f2f29cb
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.rps(v=EXCHG.150)
 ms:contentKeyID: 49720843
 ms.reviewer:
+ms.topic: article
+description: How to troubleshoot the RPS health set in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

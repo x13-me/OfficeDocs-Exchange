@@ -5,15 +5,17 @@ ms:assetid: 286b82ee-bddf-493c-b6ea-21aced6dbbad
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.delegatedunifiedmessagingfirstinstall(v=EXCHG.150)
 ms:contentKeyID: 46628839
 ms.reviewer: 
+ms.topic: article
+description: Install of the first Exchange server in the organization can't be delegated 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Installation of the first Exchange server in the organization can't be delegated
+# Install of the first Exchange server in the organization can't be delegated
 
 _**Applies to:** Exchange Server 2013_
 

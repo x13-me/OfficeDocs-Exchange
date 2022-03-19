@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Configure Send connectors to proxy outbound mail through the Front End Transport service.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 6eaa753a-523a-4ae7-b174-a639b819e729
 ms.reviewer:
 title: Configure Send connectors to proxy outbound mail
@@ -20,11 +20,11 @@ manager: serdars
 
 When you create Send connectors, outbound mail flows through the Send connector in the Transport service on the Mailbox server or servers you specify, as shown in the following diagram.
 
-![Send connector created with default configuration](../../media/c43075b4-7254-417a-9a61-d735f4abac4f.png)
+![Send connector created with default configuration.](../../media/c43075b4-7254-417a-9a61-d735f4abac4f.png)
 
 However, you can configure a Send connector to relay or *proxy* outbound mail through the Front End Transport service on the Mailbox server, as shown in the following diagram.
 
-![Send connector configured for outbound proxy](../../media/4180d15b-1ee8-40dd-ad7d-8d381c51e8eb.png)
+![Send connector configured for outbound proxy.](../../media/4180d15b-1ee8-40dd-ad7d-8d381c51e8eb.png)
 
 By default, all inbound mail enters your Exchange organization through the Front End Transport service, and the Front End Transport service proxies inbound mail to the Transport service. For more information, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
 
@@ -47,7 +47,7 @@ When you configure a Send connector to proxy outbound mail through the Front End
 
 In the Exchange admin center (EAC), you can only configure existing Send connectors to proxy outbound mail.
 
-1. In the EAC, navigate to **Mail flow** \> **Send connectors**, select the Send connector, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, select the Send connector, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 2. On the **General** tab, in the **Connector status** section, select **Proxy through client access server**, and then click **Save**.
 
@@ -75,7 +75,7 @@ For information about how to open the Exchange Management Shell, see [Open the E
 
 To verify that a Send connector is configured for outbound proxy, perform either of the following procedures:
 
-- In the EAC, navigate to **Mail flow** \> **Send connectors**, select the Send connector, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). On the **General** tab, in the **Connector status** section, verify **Proxy through client access server** is selected.
+- In the EAC, navigate to **Mail flow** \> **Send connectors**, select the Send connector, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png). On the **General** tab, in the **Connector status** section, verify **Proxy through client access server** is selected.
 
 - In the Exchange Management Shell, run the following command:
 

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa998289(v=EXCHG.150)
 ms:contentKeyID: 51407263
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Exchange search procedures 
 author: msdmaguire
 f1.keywords:
 - NOCSH

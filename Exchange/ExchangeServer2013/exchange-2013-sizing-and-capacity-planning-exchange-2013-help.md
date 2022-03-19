@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn178505(v=EXCHG.150)
 ms:contentKeyID: 54468071
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Exchange 2013 sizing and capacity planning 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

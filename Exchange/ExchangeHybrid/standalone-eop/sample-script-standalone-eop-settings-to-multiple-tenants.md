@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom: 
   - seo-marvel-apr2020
@@ -60,7 +60,7 @@ The sample PowerShell script in this article is for admins who manage multiple s
 ## RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> You might need to modify the `Connect-IPPSSession` line in the script to match your environment (the _ConnectionUri_ value).  For details, see Connect to [Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+> You might need to modify the `Connect-IPPSSession` line in the script to match your environment (the _ConnectionUri_ value). For details, see Connect to [Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

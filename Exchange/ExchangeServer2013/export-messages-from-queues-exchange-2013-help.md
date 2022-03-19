@@ -5,9 +5,12 @@ ms:assetid: 688b342c-f380-4fe0-afce-7e38cf490627
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998625(v=EXCHG.150)
 ms:contentKeyID: 50646234
 ms.reviewer: 
+ms.topic: article
+description: How to export messages from queues in Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

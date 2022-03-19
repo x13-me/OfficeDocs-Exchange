@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about how to configure pipeline tracing in Exchange 2016 and Exchange 2019.
 ms.topic: article
-author: dariomws
-ms.author: serdars
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 
 ms.reviewer: 
 title: Configure pipeline tracing
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure pipeline tracing
+# Exchange Server: Configure pipeline tracing
 
 Pipeline tracing captures copies of email messages as they move through the transport pipeline in the Transport service or the Mailbox Transport service on Mailbox server and on Edge Transport servers.
 
@@ -94,7 +94,7 @@ This example enables pipeline tracing in the Transport service on the Mailbox se
 Set-TransportService Mailbox01 -PipelineTracingEnabled $true
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully configured pipeline tracing, do the following:
 
@@ -124,7 +124,7 @@ This example disables pipeline tracing in the Transport service on the Mailbox s
 Set-TransportService Mailbox01 -PipelineTracingEnabled $false
 ```
 
-## How do you know this worked?
+**How do you know this worked?**
 
 To verify that you have successfully disabled pipeline tracing, do the following:
 

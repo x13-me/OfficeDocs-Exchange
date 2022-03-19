@@ -4,9 +4,11 @@ TOCTitle: Client protocol management
 ms:assetid: 89ba6d24-d1d3-46d5-a0ae-61f0d4c6df21
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657727(v=EXCHG.150)
 ms:contentKeyID: 49300565
+ms.topic: article
+description: Client protocol management for Exchange 2013 Help.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -47,8 +49,8 @@ The following tables indicate which virtual directory settings can be managed on
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -128,8 +130,8 @@ The following tables indicate which virtual directory settings can be managed on
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -189,8 +191,8 @@ Use the following tables indicate which POP/IMAP settings are each server role.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,8 +248,8 @@ Use the following tables indicate which POP/IMAP settings are each server role.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -291,8 +293,8 @@ Use the following tables indicate which POP/IMAP settings are each server role.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

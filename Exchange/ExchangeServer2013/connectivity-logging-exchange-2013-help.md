@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124500(v=EXCHG.150)
 ms:contentKeyID: 49287004
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Connectivity logging in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -81,8 +83,8 @@ The connectivity log stores each outbound transport service connection event on 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

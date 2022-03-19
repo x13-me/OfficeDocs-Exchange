@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
 ms.reviewer:
 title: Procedures for DSNs and NDRs in Exchange Server
@@ -264,15 +264,15 @@ For more information about the EAC, see [Exchange admin center in Exchange Serve
 
 1. In the EAC, go to **Mail flow** \> **Receive connectors**.
 
-2. Click **More options** (![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png)) and select **Organization transport settings**.
+2. Click **More options** (![More Options icon.](../../media/ITPro_EAC_MoreOptionsIcon.png)) and select **Organization transport settings**.
 
 3. In the **Organization transport settings** window that opens, click the **Delivery** tab. In the **DSN codes** section, do one or more of these steps:
 
-   - To add entries, type the enhanced status code that you want to monitor (4. _\<y.z\>_ or 5. _\<y.z\>_), and then click **Add** (![Add icon](../../media/ITPro_EAC_AddIcon.png)). Repeat this step as many times as you need to.
+   - To add entries, type the enhanced status code that you want to monitor (4. _\<y.z\>_ or 5. _\<y.z\>_), and then click **Add** (![Add icon.](../../media/ITPro_EAC_AddIcon.png)). Repeat this step as many times as you need to.
 
-   - To modify an existing entry, select it click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)), and then modify it inline.
+   - To modify an existing entry, select it click **Edit** (![Edit icon.](../../media/ITPro_EAC_EditIcon.png)), and then modify it inline.
 
-   - To remove an existing entry, select it and then click **Remove** (![Remove icon](../../media/ITPro_EAC_RemoveIcon.png)).
+   - To remove an existing entry, select it and then click **Remove** (![Remove icon.](../../media/ITPro_EAC_RemoveIcon.png)).
 
    When you're finished, click **Save**.
 
@@ -364,10 +364,6 @@ The identity of an NDR uses one of these formats:
 ## Supported languages for NDRs
 
 This table lists the supported language that codes you can use in custom NDRs.
-
-<br><br>
-
-****
 
 |Language code|Language|
 |---|---|
@@ -468,7 +464,6 @@ This table lists the supported language that codes you can use in custom NDRs.
 |zh-Hant|Chinese (Traditional)|
 |zh-HK|Chinese (Hong Kong)|
 |zu-ZA|isiZulu (South Africa)|
-|
 
 To control the languages that are used in NDRs, you use these parameters on the **Set-TransportConfig** cmdlet:
 
@@ -497,10 +492,6 @@ To control whether Exchange uses HTML or plain text in NDRs, you use these param
 
 This table describes the HTML tags that you can use in the NDR text.
 
-<br><br>
-
-****
-
 |Description|HTML tags|
 |---|---|
 |Bold|`<B>` and `</B>`|
@@ -508,13 +499,8 @@ This table describes the HTML tags that you can use in the NDR text.
 |Line break|`<BR>`|
 |Paragraph|`<P>` and `</P>`|
 |Hyperlink|`<A HREF="url">` and `</A>` <p> **Note**: Because this tag contains double quotation marks, you need to use single quotation marks (not double quotation marks) around the complete text string if you use this tag in your custom text. Otherwise, you'll receive an error.|
-|
 
 Certain characters in an NDR require escape codes to identify them literally, and not by their function in the NDR. These characters are described in the following table:
-
-<br><br>
-
-****
 
 |Character|Escape code|
 |---|---|
@@ -522,7 +508,6 @@ Certain characters in an NDR require escape codes to identify them literally, an
 |\>|`&gt;`|
 |"|`&quot;`|
 |&|`&amp;`|
-|
 
 For example, if you want the NDR to display the text `Please contact the Help Desk at <1234>.`, you need to the value `"Please contact the Help Desk at &lt;1234&gt;."`
 

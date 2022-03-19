@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
 ms.reviewer: 
 title: Create a theme for Outlook on the web in Exchange Server
@@ -61,7 +61,7 @@ After you create a theme, you may also want to customize elements that are commo
 
 You can inspect the built-in themes by opening a mailbox in Outlook on the web, selecting **Settings**, and then selecting **Change theme**.
 
-![Change theme menu location in Outlook on the web](../../media/a1b88a8c-2143-44c1-89dc-73b2acb944e8.png)
+![Change theme menu location in Outlook on the web.](../../media/a1b88a8c-2143-44c1-89dc-73b2acb944e8.png)
 
 You can use the information in the [Default Outlook on the web themes in Exchange Server](#default-outlook-on-the-web-themes-in-exchange-server) section at the end of this topic to match the display name of the theme in Outlook on the web to the name of the theme folder on the Exchange server.
 
@@ -123,8 +123,8 @@ Theme image files are stored in the following folders in `%ExchangeInstallPath%C
 
 The image files that exist in these folders are described in the following table:
 
-|**File name**|**Dimensions (width x height in pixels)**|**Bit depth**|**Description**|
-|:-----|:-----|:-----|:-----|
+|File name|Dimensions (width x height in pixels)|Bit depth|Description|
+|---|---|---|---|
 |headerbgmaing2.png|2000 x 50|32|The header image for themes that use a static header image. The size of the file varies. <br/><br/> If the theme doesn't use a static header image, the file is 1 x 1, and the size is 2815 bytes.|
 |headerbgmaing2.gif|2000 x 50|24|The header image for themes that use an animated header image. The size of the file varies. <br/><br/> If the theme doesn't use an animated header image, the file is 1 x 1, and the size is 43 bytes.|
 |themepreview.png|64 x 64|24 or 8|The small square image that represents the theme in the **Change theme** panel in Outlook on the web. <br/><br/> For the Default theme and the Black theme, this file 1 x 1, and the preview image is a black square.|
@@ -183,7 +183,7 @@ You need to restart Internet Information Services (IIS) for the changes to take 
 
 3. In the **Actions** pane, click **Restart**.
 
-   ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
+   ![In IIS Manager, select the server, and in the Actions pane, click Restart.](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
 
@@ -208,10 +208,6 @@ To verify that you've successfully created an Outlook on the web theme, perform 
 ## Default Outlook on the web themes in Exchange Server
 
 The built-in Outlook on the web themes are located in the folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes`, and are described in the following table.
-
-<br>
-
-****
 
 |Folder name|Display name in Outlook on the web|Sort order in Outlook on the web (lower listed first)|Header image type|
 |---|---|---|---|
@@ -265,4 +261,3 @@ The built-in Outlook on the web themes are located in the folder `%ExchangeInsta
 |whimsical|Whimsical|220|Static|
 |wntrlnd|Winterland|260|Static|
 |wrld|One World|270|Static|
-|

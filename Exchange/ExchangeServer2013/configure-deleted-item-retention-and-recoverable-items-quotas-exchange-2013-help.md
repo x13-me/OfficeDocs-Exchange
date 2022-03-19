@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee364752(v=EXCHG.150)
 ms:contentKeyID: 50470878
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description: How to configure deleted item retention and recoverable items quotas in Exchange Server
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -43,7 +45,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select a mailbox, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select a mailbox, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following:
 
@@ -59,7 +61,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 1. Navigate to **Servers** \> **Databases**.
 
-2. In the list view, select a mailbox database, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select a mailbox database, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the mailbox database property page, click **Limits**, and then select one of the following:
 

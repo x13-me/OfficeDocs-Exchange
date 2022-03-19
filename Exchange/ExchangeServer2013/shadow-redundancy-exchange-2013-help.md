@@ -5,8 +5,10 @@ ms:assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
 ms:mtpsurl: https://technet.microsoft.com/library/Dd351027(v=EXCHG.150)
 ms:contentKeyID: 49289359
 ms.reviewer: 
+ms.topic: article
+description: Shadow redundancy provides redundant copies of messages before they're delivered to mailboxes in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,8 +29,8 @@ The following table describes the components of shadow redundancy. These terms a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -118,9 +120,9 @@ The following table describes the parameters that enable shadow redundancy.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -173,7 +175,7 @@ Shadow redundancy never tracks shadow messages across a transport high availabil
 
 When the Transport service on an Exchange 2013 Mailbox server receives a message from outside the transport high availability boundary, the Mailbox server isn't concerned about the support or lack of support for shadow redundancy by the sending server. As long as shadow redundancy is enabled, the Mailbox server that receives the message makes a redundant copy of the message on another Mailbox server within the transport high availability boundary before acknowledging receipt of the message back to the sending server. Here's an example of how the process works:
 
-![Shadow message creation](images/Dd351027.a97d383b-6ae4-458d-af3a-1ac0a41cd52b(EXCHG.150).gif "Shadow message creation")
+![Shadow message creation.](images/Dd351027.a97d383b-6ae4-458d-af3a-1ac0a41cd52b(EXCHG.150).gif "Shadow message creation")
 
 1. An SMTP server transmits a message to the Transport service on a Mailbox server. The Mailbox server is the primary server, and the message is the primary message.
 
@@ -215,9 +217,9 @@ The following table describes the parameters that control the creation of shadow
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -328,9 +330,9 @@ The following table describes the parameters that control how shadow messages ar
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -382,8 +384,8 @@ The following table summarizes how shadow redundancy reacts to these two scenari
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

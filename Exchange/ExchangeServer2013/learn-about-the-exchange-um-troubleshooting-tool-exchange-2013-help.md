@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Gg584301(v=EXCHG.150)
 ms:contentKeyID: 55129213
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Use the Unified Messaging Troubleshooting Tool in Exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -217,8 +219,8 @@ The following table includes the parameters you can use with the **Test-Exchange
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

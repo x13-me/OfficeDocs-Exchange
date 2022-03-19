@@ -1,13 +1,13 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 194c5bf8-845c-4804-82dd-e950ee74dfcf
 ms.reviewer: 
 manager: serdars
-description: Admins can learn how to use a screen reader to manage mobile devices in the Exchange admin center (EAC) in Exchange Online.
-title: Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online
+description: Admins can learn how to use a screen reader to manage mobile devices in the Classic Exchange admin center (Classic EAC) in Exchange Online.
+title: Use a screen reader to work with mobile clients in the Classic Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -19,9 +19,9 @@ ms.service: exchange-online
 
 ---
 
-# Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online
+# Use a screen reader to work with mobile clients in the Classic Exchange admin center in Exchange Online
 
-You can use your screen reader in the Exchange admin center (EAC) to enable the use of mobile devices for users of Exchange Online, who can then access information in their Microsoft 365 or Office 365 mailboxes through mobile phones and tablets. [Learn more about clients and mobile in Exchange Online](../clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online.md).
+You can use your screen reader in the Classic Exchange admin center (Classic EAC) to enable the use of mobile devices for users of Exchange Online, who can then access information in their Microsoft 365 or Office 365 mailboxes through mobile phones and tablets. [Learn more about clients and mobile in Exchange Online](../clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online.md).
 
 ## Get started
 

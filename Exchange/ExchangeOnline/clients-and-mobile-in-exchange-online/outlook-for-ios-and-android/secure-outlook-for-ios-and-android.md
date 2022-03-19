@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
 title: Securing Outlook for iOS and Android in Exchange Online
@@ -70,28 +70,28 @@ The richest and broadest protection capabilities for Microsoft 365 and Office 36
 
 ### Block all email apps except Outlook for iOS and Android using conditional access
 
-When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. To do this, you will need several conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. To do this, you will need several conditional access policies, with each policy targeting all potential users. These policies are described in [Conditional Access: Require approved client apps or app protection policy](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365 or Office 365" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow the steps in [Require approved client apps or app protection policy with mobile devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices). This policy allows Outlook for iOS and Android, but blocks OAuth and basic authentication capable Exchange ActiveSync mobile clients from connecting to Exchange Online.
 
    > [!NOTE]
-   > This policy ensures mobile users can access all Office endpoints using the applicable apps.
+   > This policy ensures mobile users can access all Microsoft 365 endpoints using the applicable apps.
 
-2. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Microsoft 365 or Office 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
+2. Follow the steps in [Block Exchange ActiveSync on all devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices), which prevents Exchange ActiveSync clients using basic authentication on non-mobile devices from connecting to Exchange Online.
 
-   The above policies leverage the grant control [Require app protection policy](/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
+   The above policies leverages the grant access control [Require app protection policy](/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures that an Intune App Protection Policy is applied to the associated account within Outlook for iOS and Android prior to granting access. If the user isn't assigned to an Intune App Protection Policy, isn't licensed for Intune, or the app isn't included in the Intune App Protection Policy, then the policy prevents the user from obtaining an access token and gaining access to messaging data.
 
-3. Finally, follow [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication) to block legacy authentication for other Exchange protocols on iOS and Android devices; this policy should target only Office 365 Exchange Online cloud app and iOS and Android device platforms. This ensures mobile apps using Exchange Web Services, IMAP4, or POP3 protocols with basic authentication cannot connect to Exchange Online.
+3. Follow the steps in [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication) to block legacy authentication for other Exchange protocols on iOS and Android devices; this policy should target only Office 365 Exchange Online cloud app and iOS and Android device platforms. This ensures mobile apps using Exchange Web Services, IMAP4, or POP3 protocols with basic authentication cannot connect to Exchange Online.
 
 > [!NOTE]
 > After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked.
-> 
+>
 > When the user authenticates in Outlook for iOS and Android, Exchange Online mobile device access rules (allow, block, or quarantine) are skipped if there are any Azure Active Directory conditional access policies applied to the user that include:
 > - Cloud app condition: Exchange Online or Office 365
 > - Device platform condition: iOS and/or Android
 > - Client apps condition: Mobile apps and desktop client
 > - One of the following Grant access controls: [Require device to be marked as compliant](/azure/active-directory/active-directory-conditional-access-policy-connected-applications), [Require approved client app](/azure/active-directory/active-directory-conditional-access-technical-reference) or [Require app protection policy](/azure/active-directory/conditional-access/app-protection-based-conditional-access)
-> 
+>
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](/intune/app-based-conditional-access-intune).
 
 ### Protect corporate data in Outlook for iOS and Android using Intune app protection policies
@@ -182,12 +182,6 @@ You can define a default block rule and then configure an allow rule for Outlook
 
    ```PowerShell
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Allow
-   ```
-
-3. **Optional**: Create rules that allow Outlook on Windows devices for Exchange ActiveSync connectivity (WindowsMail refers to the Mail app included in Windows 10):
-
-   ```PowerShell
-   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WindowsMail" -AccessLevel Allow
    ```
 
 #### Option 2: Block native Exchange ActiveSync apps on Android and iOS devices
@@ -284,8 +278,8 @@ The `New-ActiveSyncDeviceAccessRule` cmdlet has a `Characteristic` parameter, an
 
 The values for each characteristic are displayed in the following table:
 
-|**Characteristic**|**String for iOS**|**String for Android**|
-|:-----|:-----|:-----|
+|Characteristic|String for iOS|String for Android|
+|---|---|---|
 |DeviceModel|Outlook for iOS and Android|Outlook for iOS and Android|
 |DeviceType|Outlook|Outlook|
 |UserAgent|Outlook-iOS/2.0|Outlook-Android/2.0|

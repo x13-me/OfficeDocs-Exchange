@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.diskspace(v=EXCHG
 ms:contentKeyID: 49720879
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the DiskSpace Health Set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

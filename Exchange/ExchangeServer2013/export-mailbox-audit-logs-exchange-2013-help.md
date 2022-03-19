@@ -1,10 +1,12 @@
 ---
 title: 'Export mailbox audit logs: Exchange 2013 Help'
 TOCTitle: Export mailbox audit logs
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Export mailbox audit logs in Exchange Server 
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
 f1.keywords:
 - NOCSH
@@ -183,8 +185,8 @@ To save and view the SearchResult.xml file:
 
 - **Useful fields in the mailbox audit log**: Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox.
 
-  |**Field**|**Description**|
-  |:-----|:-----|
+  |Field|Description|
+  |---|---|
   |Owner|The owner of the mailbox that was accessed by a non-owner.|
   |LastAccessed|The date and time when the mailbox was accessed.|
   |Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a non-owner mailbox access report in Exchange 2013](non-owner-mailbox-access-report-exchange-2013-help.md).|

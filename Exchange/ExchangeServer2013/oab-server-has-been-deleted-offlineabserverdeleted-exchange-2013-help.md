@@ -1,13 +1,15 @@
 ---
-title: 'OAB server has been deleted_OffLineABServerDeleted: Exchange 2013 Help'
+title: "OAB server has been deleted_OffLineABServerDeleted - Exchange 2013 Help"
 TOCTitle: OAB server has been deleted_OffLineABServerDeleted
 ms:assetid: 38b5dacf-ef65-4b25-97f6-d8dec956d7d5
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.offlineabserverdeleted(v=EXCHG.150)
 ms:contentKeyID: 46628863
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: "Exchange Setup can't finish - OAB server has been deleted" 
 manager: serdars
-ms.author: dmaguire
-author: msdmaguire
+ms.author: serdars
+author: serdars
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -1,10 +1,12 @@
 ---
 title: 'Enable a user to receive faxes: Exchange 2013 Help'
 TOCTitle: Enable a user to receive faxes
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to set a user up to receive faxes in Exchange Server
 ms.assetid: a0505001-aac0-41ef-824f-76e5e56d7675
 f1.keywords:
 - NOCSH

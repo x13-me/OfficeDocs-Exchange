@@ -1,10 +1,12 @@
 ---
 title: 'Create a UM IP gateway: Exchange 2013 Help'
 TOCTitle: Create a UM IP gateway
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a Unified Messaging IP gateway in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage'
 ms.assetid: 542d6b50-147b-4cec-b54d-61c7b8fc0fc7
@@ -36,7 +38,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 
 ## Use the EAC to create a UM IP gateway
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM IP gateways**, and then click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 2. On the **New UM IP gateway** page, enter the following information:
 

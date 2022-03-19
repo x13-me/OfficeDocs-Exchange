@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: You can use the EAC or Exchange Online PowerShell to enable or disable Outlook on the web for a user mailbox. When Outlook on the web is enabled, a user can use Outlook on the web to send and receive email. When Outlook on the web is disabled, the mailbox will continue to receive email messages, and a user can access it to send and receive email by using a MAPI client, such as Microsoft Outlook, or with a POP or IMAP email client, assuming that the mailbox is enabled to support access by those clients.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Enable or disable Outlook on the web for a mailbox
+title: Enable or disable Outlook on the web for a mailbox in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Enable or disable Outlook on the web for a mailbox
+# Enable or disable Outlook on the web for a mailbox in Exchange Online
 
 You can use the EAC or Exchange Online PowerShell to enable or disable Outlook on the web (formerly known as Outlook Web App) for a user mailbox. When Outlook on the web is enabled, a user can use Outlook on the web to send and receive email. When Outlook on the web is disabled, the mailbox will continue to receive email messages, and a user can access it to send and receive email by using a MAPI client, such as Microsoft Outlook, or with a POP or IMAP email client, assuming that the mailbox is enabled to support access by those clients.
 
@@ -62,7 +62,7 @@ For additional management tasks related to managing email client access to a mai
 
 1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list of user mailboxes, click the mailbox that you want to enable or disable Outlook on the web for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of user mailboxes, click the mailbox that you want to enable or disable Outlook on the web for, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 3. On the mailbox properties page, click **Mailbox Features**.
 
@@ -83,7 +83,7 @@ For additional management tasks related to managing email client access to a mai
 
 To verify that you've successfully enabled or disabled Outlook on the web for a user mailbox, do one of the following:
 
-- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif).
 
 - On the mailbox properties page, click **Mailbox Features**.
 

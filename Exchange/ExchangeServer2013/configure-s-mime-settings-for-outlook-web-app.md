@@ -6,7 +6,9 @@ ms:mtpsurl:
 ms:contentKeyID:
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure Outlook Web App S/MIME settings in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

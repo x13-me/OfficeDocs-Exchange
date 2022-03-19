@@ -1,10 +1,12 @@
 ---
 title: 'Review the voice mail calls for a user: Exchange 2013 Help'
 TOCTitle: Review the voice mail calls for a user
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Review the voice mail calls for a user in Exchange Server.
 ms.assetid: 95768fe3-3ae2-43bd-9cbf-18c3b85c4592
 f1.keywords:
 - NOCSH
@@ -25,7 +27,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 ## How do I get call logs for a UM-enabled user?
 
-1. In the Exchange admin center (EAC), select **Unified messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
+1. In the Exchange admin center (EAC), select **Unified messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **User call logs**.
 
 2. Click **Select a user**, and then select the user you want data for.
 

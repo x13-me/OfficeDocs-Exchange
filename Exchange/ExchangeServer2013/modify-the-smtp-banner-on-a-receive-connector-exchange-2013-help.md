@@ -5,8 +5,10 @@ ms:assetid: d667704e-fd69-4aca-9c35-eef7006944b2
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124740(v=EXCHG.150)
 ms:contentKeyID: 50934226
 ms.reviewer: 
+ms.topic: article
+description: Modify the SMTP banner on a Receive connector in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

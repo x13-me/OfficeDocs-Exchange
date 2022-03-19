@@ -5,8 +5,10 @@ ms:assetid: 2ed45d18-2ff3-4099-b841-050eb16a416b
 ms:mtpsurl: https://technet.microsoft.com/library/Ee423542(v=EXCHG.150)
 ms:contentKeyID: 74479247
 ms.reviewer: 
+ms.topic: article
+description: Description of services in Microsoft Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,15 +29,15 @@ The sections in this topic describe the various services that are installed by E
 
 The following table describes the Exchange services that are installed on Mailbox servers.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -280,15 +282,15 @@ The following table describes the Exchange services that are installed on Mailbo
 
 The following table describes the Exchange services that are installed on Client Access servers.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -394,15 +396,15 @@ The following table describes the Exchange services that are installed on Client
 
 The following table describes the Exchange services that are installed on Edge Transport servers.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

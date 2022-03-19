@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa997252(v=EXCHG.150)
 ms:contentKeyID: 48384981
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Direct Push in Exchange Server 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

@@ -1,11 +1,11 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users.'
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 73b693d9-39bb-4689-a1ff-4be505a5945b
-title: Using Outlook for iOS and Android in the Government Community Cloud
+title: Using Outlook for iOS and Android in the Government Community Cloud in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# Using Outlook for iOS and Android in the Government Community Cloud
+# Using Outlook for iOS and Android in the Government Community Cloud in Exchange Online
 
  **Summary**: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their Exchange Online users.
 

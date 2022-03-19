@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150508(v=EXCHG.150)
 ms:contentKeyID: 47559982
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Installation readiness checks in Exchange Server 2013 
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

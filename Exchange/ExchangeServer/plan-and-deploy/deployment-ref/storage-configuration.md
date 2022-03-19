@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about storage options in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
 ms.reviewer: 
 title: Exchange Server storage configuration options
@@ -26,8 +26,8 @@ The following table describes supported storage architectures and provides best 
 
 **Supported storage architectures**
 
-|**Storage architecture**|**Description**|**Best practice**|
-|:-----|:-----|:-----|
+|Storage architecture|Description|Best practice|
+|---|---|---|
 |Direct-attached storage (DAS)|DAS is a digital storage system directly attached to a server or workstation, without a storage network in between. For example, DAS transports include Serial Attached Small Computer System Interface (SCSI) and Serial Attached Advanced Technology Attachment (ATA).|Not available.|
 |Storage area network (SAN): Internet Small Computer System Interface (iSCSI)|SAN is an architecture to attach remote computer storage devices (such as disk arrays and tape libraries) to servers in such a way that the devices appear as locally attached to the operating system (for example, block storage). iSCSI SANs encapsulate SCSI commands within IP packets and use standard networking infrastructure as the storage transport (for example, Ethernet).|Don't share physical disks backing up Exchange data with other applications. <br/> Use dedicated storage networks. <br/> Use multiple network paths for stand-alone configurations.|
 |SAN: Fibre Channel|Fibre Channel SANs encapsulate SCSI commands within Fibre Channel packets and generally use specialized Fibre Channel networks as the storage transport.|Don't share physical disks backing up Exchange data with other applications. <br/> Use multiple Fibre Channel network paths for stand-alone configurations. <br/> Follow storage vendor's best practices for tuning Fibre Channel host bus adapters (HBAs), for example, Queue Depth and Queue Target.|
@@ -45,8 +45,8 @@ The following table provides a list of supported physical disk types and provide
 
 **Supported physical disk types**
 
-|**Physical disk type**|**Description**|**Supported or best practice**|
-|:-----|:-----|:-----|
+|Physical disk type|Description|Supported or best practice|
+|---|---|---|
 |Serial ATA (SATA)|SATA is a serial interface for ATA and integrated device electronics (IDE) disks. SATA disks are available in various form factors, speeds, and capacities. <br/> In general, choose SATA disks for Exchange 2016 mailbox storage when you have the following design requirements: <br/>• High capacity <br/>• Moderate performance <br/>• Moderate power using|Supported: 512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following: <br/>• The hotfix described in [KB982018](https://support.microsoft.com/help/982018). <br/>• Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1. <br/> Exchange 2013 and later supports native 4 kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database reside on the same physical disk type. For example, it isn't a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk. <br/> Best practice: Consider enterprise class SATA disks, which generally have better heat, vibration, and reliability characteristics.|
 |Serial Attached SCSI|Serial Attached SCSI is a serial interface for SCSI disks. Serial Attached SCSI disks are available in various form factors, speeds, and capacities. <br/> In general, choose Serial Attached SCSI disks for Exchange 2016 mailbox storage when you have the following design requirements: <br/>• Moderate capacity <br/>• High performance <br/>• Moderate power utilization|Supported: 512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following: <br/>• The hotfix described in [KB982018](https://support.microsoft.com/help/982018). <br/>• Windows Server 2008 R2 SP1 and Exchange Server 2010 SP1. <br/> Exchange 2013 and later supports native 4 kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database are on the same physical disk type. For example, it is not a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk. <br/> Best practice: Physical disk-write caching must be disabled when used without a UPS.|
 |Fibre Channel|Fibre Channel is an electrical interface used to connect disks to Fibre Channel-based SANs. Fibre Channel disks are available in various speeds and capacities. <br/>  In general, choose Fibre Channel disks for Exchange 2016 mailbox storage when you have the following design requirements: <br/>• Moderate capacity <br/>• High performance <br/>• SAN connectivity|Supported: 512-byte sector disks for Windows Server 2008 and Windows Server 2008 R2. In addition, 512e disks are supported for Windows Server 2008 R2 with the following: <br/>• The hotfix described in [KB982018](https://support.microsoft.com/help/982018). <br/>• Windows Server 2008 R2 with Service Pack 1 (SP1) and Exchange Server 2010 SP1. <br/> Exchange 2013 and later supports native 4 kilobyte (KB) sector disks and 512e disks. Support requires that all copies of a database are on the same physical disk type. For example, it isn't a supported configuration to host one copy of a given database on a 512-byte sector disk and another copy of that same database on a 512e disk or 4K disk. <br/> Best practice: Physical disk-write caching must be disabled when used without a UPS.|
@@ -60,8 +60,8 @@ From a performance perspective, using large, slower disks for Exchange storage i
 
 **Factors in disk type choice**
 
-|**Disk speed (RPM)**|**Disk form factor**|**Interface or transport**|**Capacity**|**Random I/O performance**|**Sequential I/O performance**|**Power utilization**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|Disk speed (RPM)|Disk form factor|Interface or transport|Capacity|Random I/O performance|Sequential I/O performance|Power utilization|
+|---|---|---|---|---|---|---|
 |5,400|2.5 inch|SATA|Average|Poor|Poor|Excellent|
 |5,400|3.5 inch|SATA|Excellent|Poor|Poor|Above average|
 |7,200|2.5 inch|SATA|Average|Average|Average|Excellent|
@@ -115,8 +115,8 @@ In an Exchange environment, a JBOD storage solution involves having both the dat
 
 **RAID or JBOD Considerations**
 
-|**Datacenter servers**|**Two highly available copies (total)**|**Three highly available copies (total)**|**Two or more highly available copies per datacenter**|**One lagged copy**|**Two or more lagged copies per datacenter**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
+|Datacenter servers|Two highly available copies (total)|Three highly available copies (total)|Two or more highly available copies per datacenter|One lagged copy|Two or more lagged copies per datacenter|
+|---|---|---|---|---|---|
 |Primary datacenter servers|RAID|RAID or JBOD (2 copies)|RAID or JBOD|RAID|RAID or JBOD|
 |Secondary datacenter servers|RAID|RAID (1 copy)|RAID or JBOD|RAID|RAID or JBOD|
 
@@ -132,8 +132,8 @@ Multiple databases per volume are a new JBOD scenario available in Exchange 2016
 
 **JBOD Considerations**
 
-|**Datacenter Servers**|**3 or more copies (total)**|**Two or more copies per datacenter**|
-|:-----|:-----|:-----|
+|Datacenter Servers|3 or more copies (total)|Two or more copies per datacenter|
+|---|---|---|
 |Primary datacenter servers|JBOD|JBOD|
 |Secondary datacenter servers|N/A|JBOD|
 
@@ -141,8 +141,8 @@ The following table provides guidance about storage array configurations for Exc
 
 **Supported RAID types for the Exchange 2016 Mailbox server role**
 
-|**RAID type**|**Description**|**Supported or best practice**|
-|:-----|:-----|:-----|
+|RAID type|Description|Supported or best practice|
+|---|---|---|
 |Disk array RAID stripe size (KB)|The stripe size is the per disk unit of data distribution within a RAID set. Stripe size is also referred to as *block size*.|Best practice: 256 KB or greater. Follow storage vendor best practices.|
 |Storage array cache settings|The cache settings are provided by a battery-backed caching array controller.|Best practice: 100 percent write cache (battery or flash backed cache) for DAS storage controllers in either a RAID or JBOD configuration. 75 percent write cache, 25 percent read cache (battery or flash backed cache) for other types of storage solutions such as SAN. If your SAN vendor has different best practices for cache configuration on their platform, follow the guidance of your SAN vendor.|
 |Physical disk write caching|The settings for the cache are on each individual disk.|Supported: Physical disk write caching must be disabled when used without a UPS.|
@@ -151,8 +151,8 @@ The following table provides guidance about database and log file choices.
 
 **Database and log file choices for the Exchange 2016 Mailbox server role**
 
-|**Database and log file options**|**Description**|**Stand-alone: supported or best practice**|**High availability: supported or best practice**|
-|:-----|:-----|:-----|:-----|
+|Database and log file options|Description|Stand-alone: supported or best practice|High availability: supported or best practice|
+|---|---|---|---|
 |File placement: database per log isolation|Database per log isolation refers to placing the database file and logs from the same mailbox database on to different volumes backed by different physical disks.|Best practice: For recoverability, move database (.edb) file and logs from the same database to different volumes backed by different physical disks.|Supported: Isolation of logs and databases isn't required.|
 |File placement: database files per volume|Database files per volume refer to how you distribute database files within or across disk volumes.|Best practice: Based on your backup methodology.|Supported: When using JBOD, create a single volume with separate directories for database(s) and for log files.|
 |File placement: log streams per volume|Log streams per volume refer to how you distribute database log files within or across disk volumes.|Best practice: Based on your backup methodology.|Supported: When using JBOD, create a single volume with separate directories for database(s) and for log files. <br/> Best practice: When using JBOD, use multiple databases per volume.|
@@ -163,8 +163,8 @@ The following table provides guidance about Windows disk types.
 
 **Windows disk types for the Exchange 2016 Mailbox server role**
 
-|**Windows disk type**|**Description**|**Stand-alone: supported or best practice**|**High availability: supported or best practice**|
-|:-----|:-----|:-----|:-----|
+|Windows disk type|Description|Stand-alone: supported or best practice|High availability: supported or best practice|
+|---|---|---|---|
 |Basic disk|A disk initialized for basic storage is called a basic disk. A basic disk contains basic volumes, such as primary partitions, extended partitions, and logical drives.|Supported. <br/> Best practice: Use basic disks.|Supported. <br/> Best practice: Use basic disks.|
 |Dynamic disk|A disk initialized for dynamic storage is called a dynamic disk. A dynamic disk contains dynamic volumes, such as simple volumes, spanned volumes, striped volumes, mirrored volumes, and RAID-5 volumes.|Supported.|Supported.|
 
@@ -172,8 +172,8 @@ The following table provides guidance on volume configurations.
 
 **Volume configurations for the Exchange 2016 Mailbox server role**
 
-|**Volume configuration**|**Description**|**Stand-alone: supported or best practice**|**High availability: supported or best practice**|
-|:-----|:-----|:-----|:-----|
+|Volume configuration|Description|Stand-alone: supported or best practice|High availability: supported or best practice|
+|---|---|---|---|
 |GUID partition table (GPT)|GPT is a disk architecture that expands on the older master boot record (MBR) partitioning scheme. The maximum NTFS formatted partition size is 256 terabytes.|Supported. <br/> Best practice: Use GPT partitions.|Supported. <br/> Best practice: Use GPT partitions.|
 |MBR|An MBR, or partition sector, is the 512-byte boot sector that is the first sector (LBA Sector 0) of a partitioned data storage device such as a hard disk. The maximum NTFS formatted partition size is 2 terabytes.|Supported.|Supported.|
 |Partition alignment|Partition alignment refers to aligning partitions on sector boundaries for optimal performance.|Supported: The Windows Server 2008 R2 and Windows Server 2012 default is 1 megabyte (MB).|Supported: The Windows Server 2008 R2 and Windows Server 2012 default is 1 MB.|

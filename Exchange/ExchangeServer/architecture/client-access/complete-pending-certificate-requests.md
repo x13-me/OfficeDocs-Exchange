@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to complete a pending certificate request in Exchange Server after you receive the certificate from the certification authority.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 3d2a8747-4afa-4db8-94d7-dcce6d90d21f
 ms.reviewer:
 title: Complete a pending Exchange Server certificate request
@@ -86,16 +86,16 @@ Import-ExchangeCertificate -FileName "\\FileServer01\Data\Contoso Cert.cer" -Pas
 To import a chain of certificates file (PKCS #7 text files that have .p7b or .p7c filename extensions), use the following syntax:
 
 ```PowerShell
-Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "<FilePathOrUNCPath>" -ReadCount 0))
+Import-ExchangeCertificate -FileData ([System.IO.File]::ReadAllBytes('<FilePathOrUNCPath>'))
 ```
 
 This example imports the text certificate file `\\FileServer01\Data\Chain of Certificates.p7b` on the local Exchange server.
 
 ```PowerShell
-Import-ExchangeCertificate -FileData ([Byte[]](Get-Content -Encoding Byte -Path "\\FileServer01\Data\Chain of Certificates.p7b" -ReadCount 0))
+Import-ExchangeCertificate -FileData ([System.IO.File]::ReadAllBytes('\\FileServer01\Data\Chain of Certificates.p7b'))
 ```
 
- **Notes:**
+**Notes:**
 
 - The _FileName_ and _FileData_ parameters accept local paths if the certificate file is located on the Exchange server where you're running the command, and this is the same server where you want to import the certificate. Otherwise, use a UNC path.
 

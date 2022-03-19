@@ -1,8 +1,10 @@
 ---
 title: 'Add a SIP address: Exchange 2013 Help'
 TOCTitle: Add a SIP address
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description:  How to add a SIP address in Exchange Server
 manager: serdars
 ms.reviewer:
 ms.assetid: 40295bcf-c62b-4f26-95ca-a8c4bd210fb3
@@ -50,9 +52,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select the mailbox for which you want to add a SIP address, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox for which you want to add a SIP address, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+3. On the **User Mailbox** page, under **Email address**, click **Add** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 4. On the **New email address** page, select **EUM** and, in the **Address/Extension** box, enter the new SIP address for the user.
 

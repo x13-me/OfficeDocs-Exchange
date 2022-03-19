@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In Microsoft 365 or Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: fa618cd2-29d0-42b3-a7a0-0ecd1aee6c20
 ms.reviewer: 
@@ -49,7 +49,7 @@ Android 9.0 and earlier versions utilize Android's device admin functionality to
 With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity using the [getPasswordComplexity](https://developer.android.com/reference/android/app/admin/DevicePolicyManager#getPasswordComplexity()) API. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
 
 |Password complexity level |Password requirements  |
-|---------|---------|
+|---|---|
 |None     |No password requirements are configured         |
 |Low     |Password can be a pattern or a PIN with either repeating (4444) or ordered (1234, 4321, 2468) sequences         |
 |Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
@@ -58,7 +58,7 @@ With Android 10.0 and later, Android has removed device admin functionality. Ins
 Android's password complexity levels are mapped to the following Exchange mobile device mailbox policy settings:
 
 |Mobile device mailbox policy setting  |Android password complexity level  |
-|---------|---------|
+|---|---|
 |Password enabled = false     | None        |
 |Allow simple password = true<br/>Min password length < 4      |Low         |
 |Alphanumeric password required = false<br/>Min password length >= 4<br/>Min password length < 8      |Medium         |
@@ -72,8 +72,8 @@ The following table summarizes the settings you can specify using mobile device 
 
 **Mobile device mailbox policy settings**
 
-|**Setting**|**Description**|
-|:-----|:-----|
+|Setting|Description|
+|---|---|
 |Allow Bluetooth|This setting specifies whether a mobile device allows Bluetooth connections. The available options are Disable, HandsFree Only, and Allow. The default value is Allow.|
 |Allow Browser|This setting specifies whether Pocket Internet Explorer is allowed on the mobile device. This setting doesn't affect third-party browsers installed on the mobile device. The default value is `$true`.|
 |Allow Camera|This setting specifies whether the mobile device camera can be used. The default value is `$true`.|
@@ -147,11 +147,11 @@ Mobile device mailbox policies can be created, modified, or deleted in the Excha
 > [!NOTE]
 > You can only set a subset of mobile device mailbox policy settings in the EAC. To set all the mobile device mailbox policy settings, you need to use the Exchange Online PowerShell.
 
-1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**, and then click **Add** ![Add icon.](../../media/ITPro_EAC_AddIcon.png).
 
 2. Use the various check boxes and drop-down lists to configure the settings for the mobile device mailbox policy.
 
-   ![New mobile device mailbox policy](../../media/EAC-new-mobile-device-mailbox-policies.png)
+   ![New mobile device mailbox policy.](../../media/EAC-new-mobile-device-mailbox-policies.png)
 
     > [!WARNING]
     > Select **This is the default policy** to make the new mobile mailbox policy the default mobile mailbox policy. After you make a mobile mailbox policy the default policy, all new users will be assigned this policy automatically when they are created.
@@ -189,13 +189,13 @@ For more information about this cmdlet, see [Get-MobileDeviceMailboxPolicy](/pow
 
 1. In the EAC, click **Mobile** \> **Mobile Device Mailbox Policies**.
 
-2. Select a policy from the List view and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. Select a policy from the List view and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. Use the **General** and **Security** tabs to edit the mobile device mailbox policy settings.
 
-   ![Edit mobile device mailbox policy - General tab](../../media/EAC-edit-mobile-device-mailbox-policies-general.png)
+   ![Edit mobile device mailbox policy - General tab.](../../media/EAC-edit-mobile-device-mailbox-policies-general.png)
      
-   ![Edit mobile device mailbox policy - Security tab](../../media/EAC-edit-mobile-device-mailbox-policies-security.png)
+   ![Edit mobile device mailbox policy - Security tab.](../../media/EAC-edit-mobile-device-mailbox-policies-security.png)
 
 4. Click **Save** to update the policy.
 

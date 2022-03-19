@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms.reviewer:
-title: Configure Deleted Item retention and Recoverable Items quotas
+title: Configure Deleted Item retention and Recoverable Items quotas in Exchange Server
 ms.collection: exchange-server
 f1.keywords:
 - NOCSH
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Configure Deleted Item retention and Recoverable Items quotas
+# Configure Deleted Item retention and Recoverable Items quotas in Exchange Server
 
 When a user deletes items from the Deleted Items default folder by using the Delete, Shift+Delete, or **Empty Deleted Items Folder** actions, the items are moved to the **Recoverable Items\Deletions** folder. The duration that deleted items remain in this folder is based on the deleted item retention settings configured for the mailbox database or the mailbox. By default, a mailbox database is configured to retain deleted items for 14 days, and the recoverable items warning quota and recoverable items quota are set to 20 gigabytes (GB) and 30 GB respectively.
 
@@ -44,7 +44,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
-2. In the list view, select a mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list view, select a mailbox, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following:
 
@@ -56,7 +56,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
    - **Don't permanently delete items until the database is backed up**: Check this box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
-   ![default retention settings](../../media/f91ba717-276d-4b2b-87c4-036b92db1e85.jpg)
+   ![default retention settings.](../../media/f91ba717-276d-4b2b-87c4-036b92db1e85.jpg)
 
 ## Configure deleted item retention for a mailbox database
 
@@ -64,7 +64,7 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 1. Navigate to **Servers** \> **Databases**.
 
-2. In the list view, select a mailbox database, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+2. In the list view, select a mailbox database, and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.png).
 
 3. On the mailbox database property page, click **Limits**, and then select one of the following:
 

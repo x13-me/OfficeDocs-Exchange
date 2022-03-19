@@ -4,9 +4,11 @@ TOCTitle: 'Checklist: Integrate Exchange 2013 UM with Lync Server'
 ms:assetid: 3b82e86f-9f30-4445-96ad-744082abeaeb
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638120(v=EXCHG.150)
 ms:contentKeyID: 49315388
+ms.topic: article
+description: Use this checklist to install and deploy Unified Messaging (UM) and Microsoft Lync Server 2013.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -31,9 +33,9 @@ For more information about how to perform the tasks that must be completed for L
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

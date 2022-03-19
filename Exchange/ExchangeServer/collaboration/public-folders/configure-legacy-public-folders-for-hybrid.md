@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
-ms.author: dmaguire
+ms.localizationpriority: medium
+ms.author: jhendr
 manager: serdars
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.prod: exchange-server-it-pro
 ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
 ms.reviewer:
@@ -15,11 +15,11 @@ description: 'Summary: Use the steps in this article to synchronize public folde
 f1.keywords:
 - NOCSH
 audience: ITPro
-title: Configure legacy on-premises public folders for a hybrid deployment
+title: Configure legacy on-premises public folders for a hybrid deployment of Exchange Server
 
 ---
 
-# Configure legacy on-premises public folders for a hybrid deployment
+# Configure legacy on-premises public folders for a hybrid deployment of Exchange Server
 
 In a hybrid deployment, your users can be in Exchange Online, Exchange on-premises, or both, and your public folders are either in Exchange Online or Exchange on-premises. Public folders can only reside in one place, so you must decide whether your public folders will be in Exchange Online or on-premises. They can't be in both locations. Public folder mailboxes are synchronized to Exchange Online by the Directory Synchronization service. However, mail-enabled public folders aren't synchronized across premises.
 
@@ -40,8 +40,8 @@ When you complete this procedure your on-premises and Microsoft 365 or Office 36
 
 The following table describes the supported version and location combinations of user mailboxes and public folders. "Hybrid not applicable" is still a supported scenario, but is not considered a hybrid scenario because both the public folders and the users are residing in the same location.
 
-|**Scenario**|**On-Premises Exchange 2010 User Mailbox**|**On-Premises Exchange 2016/2019 User Mailbox**|**Exchange Online User Mailbox**|
-|:-----|:-----|:-----|:-----|
+|Scenario|On-Premises Exchange 2010 User Mailbox|On-Premises Exchange 2016/2019 User Mailbox|Exchange Online User Mailbox|
+|---|---|---|---|
 |On-Premises Exchange 2010 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
 |On-Premises Exchange 2013, Exchange 2016, or Exchange 2019 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
 |Exchange Online Public Folders|Not supported|Supported|Hybrid not applicable|

@@ -2,8 +2,8 @@
 localization_priority: Critical
 description: 'Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
 monikerRange: exchserver-2016 || exchserver-2019
 title: What's new in Exchange Server
@@ -50,7 +50,7 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 ### Clients
 
-- **Calendar - Do Not Forward**: This is similar to Information Rights Management (IRM) for calendar items without the IRM deployment requirements. Attendees can't forward the invitation to other people, and only the organizer can invite additional attendees.
+- **Calendar - Do Not Forward**: This is similar to Information Rights Management (IRM) for calendar items without the IRM deployment requirements. Attendees can't forward the invitation to other people, and only the organizer can invite additional attendees.
 
 - **Calendar - Better Out of Office**: Additional options when you won't be in the office. Key options include: add an event to your calendar that shows you as Away/Out of Office, and a quick option to cancel/decline meetings that will happen while you're away.
 

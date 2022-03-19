@@ -1,10 +1,12 @@
 ---
 title: 'Data loss prevention: Exchange 2013 Help'
 TOCTitle: Data loss prevention
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: About data loss prevention in Exchange Server
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 f1.keywords:
 - NOCSH

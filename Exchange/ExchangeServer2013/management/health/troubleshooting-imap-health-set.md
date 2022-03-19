@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.imap(v=EXCHG.150)
 ms:contentKeyID: 49720747
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the IMAP health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -23,7 +25,7 @@ The IMAP health set monitors the availability of the IMAP4 proxy infrastructure 
 
 [Troubleshooting IMAP.Proxy Health Set](troubleshooting-imap-proxy-health-set.md)
 
-If you receive an alert that specifies that IMAP is unhealthy, this indicates an issue that may prevent your users from accessing their mailboxes by using IMAP.
+If you receive an alert that specifies that IMAP is unhealthy, this alert indicates an issue that may prevent your users from accessing their mailboxes by using IMAP.
 
 ## Explanation
 
@@ -31,10 +33,10 @@ The IMAP4 service is monitored by using the following probes and monitors.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

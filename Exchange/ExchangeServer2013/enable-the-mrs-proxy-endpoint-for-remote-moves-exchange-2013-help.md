@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn155787(v=EXCHG.150)
 ms:contentKeyID: 53903965
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+description: How to enable the MRS Proxy endpoint for remote moves in Exchange Server 
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -51,7 +53,7 @@ The Client Access server on which to enable the MRS Proxy endpoint depends on th
 
 3. In the **Select type** drop-down list, select **EWS** to display the Exchange Web Service (EWS) virtual directory for the selected server.
 
-4. In the list of virtual directories, click **EWS (Default Web Site)** for the Client Access server that you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+4. In the list of virtual directories, click **EWS (Default Web Site)** for the Client Access server that you want to configure, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 5. On the **EWS (Default Web Site)** properties page, select the **Enable MRS Proxy endpoint** check box, and then click **Save**.
 
@@ -80,7 +82,7 @@ To verify that you've successfully enabled the MRS Proxy endpoint, do one of the
 
 2. In the list of virtual directories, click **EWS (Default Web Site)** and verify in the details pane that the MRS Proxy endpoint is enabled.
 
-    Alternatively, you can click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the **EWS (Default Web Site)** properties page and verify that the **Enable MRS Proxy endpoint** check box is selected.
+    Alternatively, you can click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the **EWS (Default Web Site)** properties page and verify that the **Enable MRS Proxy endpoint** check box is selected.
 
 Or
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Automatically restore a database in Exchange Server 2016 or Exchange Server 2019 with pre-provisioned spare disks.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
 ms.reviewer:
 title: AutoReseed
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# AutoReseed
+# About AutoReseed
 
 Automatic Reseed, or AutoReseed, is a feature that replaces standard actions administrators take in response to a disk failure, or a database corruption event, or another issue that needs a reseed of a database copy.
 
@@ -46,7 +46,7 @@ An example AutoReseed configuration is illustrated below.
 
  **Example AutoReseed configuration**
 
-![Example Automatic Reseed Configuration](../../media/ITPro_Mailbox_AutoReseed.gif)
+![Example Automatic Reseed Configuration.](../../media/ITPro_Mailbox_AutoReseed.gif)
 
 In this example, there are three volumes, two of which will contain databases (VOL1 and VOL2), and one of which is a blank, formatted spare (VOL3).
 
@@ -74,8 +74,8 @@ The AutoReseed component that allocates and formats spare disks is called the *D
 
 In addition to the above conditions, the Disk Reclaimer will only attempt to format a given volume once a day. The following table describes the formatting behavior of the Disk Reclaimer.
 
-|**State of Disk and Database Copies**|**Formatting Interval**|
-|:-----|:-----|
+|State of Disk and Database Copies|Formatting Interval|
+|---|---|
 |Disk is unformatted, or formatted but empty, or formatted but contains files that haven't been touched for 24 hours, and there are healthy active database copies in the local Active Directory site that can be used as a seeding source.|1 day|
 |Disk is unformatted, or formatted but empty, or formatted but contains files that haven't been touched for 24 hours, but there are no healthy active database copies in the local Active Directory site that can be used as a seeding source.|2 days|
 |Disk is unformatted, or formatted but empty, or formatted but contains files that haven't been touched for 24 hours, and there are healthy active database copies in the local Active Directory site that can be used as a seeding source, but there are unknown files outside of the database file (EDB file) and log files.|2 weeks|

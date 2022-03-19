@@ -1,10 +1,12 @@
 ---
 title: 'Disable calls from users who are not UM-enabled: Exchange 2013 Help'
 TOCTitle: Disable calls from users who aren't UM-enabled
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Disable calls from non-Unified Messaging-enabled users in Exchange Server
 ms.assetid: 272ff4ab-b4d9-4647-98e2-7c171f9dfc3f
 f1.keywords:
 - NOCSH

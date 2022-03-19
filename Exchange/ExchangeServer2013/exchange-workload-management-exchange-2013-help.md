@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150503(v=EXCHG.150)
 ms:contentKeyID: 47559972
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to Exchange Server workload management  
 author: msdmaguire
 f1.keywords:
 - NOCSH

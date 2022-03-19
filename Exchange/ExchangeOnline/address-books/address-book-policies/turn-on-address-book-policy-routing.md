@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to turn on address book policy routing in Exchange Online to enable virtual organizations within an organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 5627b8ac-0551-4558-b3b6-25c402698426
 ms.reviewer: 

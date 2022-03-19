@@ -5,8 +5,10 @@ ms:assetid: a9754dc1-44aa-4076-8b59-a5d39246d5b0
 ms:mtpsurl: https://technet.microsoft.com/library/JJ983804(v=EXCHG.150)
 ms:contentKeyID: 51407271
 ms.reviewer: 
+ms.topic: article
+description: Message properties that Exchange Search indexes
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,11 +27,11 @@ The following table includes a list of all item properties indexed by Exchange S
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

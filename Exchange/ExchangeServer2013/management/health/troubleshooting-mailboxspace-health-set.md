@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.mailboxstorage(v=
 ms:contentKeyID: 49720787
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+description: How to troubleshoot the MailboxSpace health set in Exchange 2013
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

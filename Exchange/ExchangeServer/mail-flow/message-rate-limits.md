@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
 ms.reviewer:
 title: Message rate limits and throttling
@@ -38,13 +38,13 @@ You can set the message rate limits and throttling options in the following loca
 
 The following table shows the message throttling options that are available on Mailbox servers and Edge Transport servers.
 
-|**Rate limit**|**Default value**|**Exchange Management Shell configuration**|**EAC configuration**|
-|:-----|:-----|:-----|:-----|
+|Rate limit|Default value|Exchange Management Shell configuration|EAC configuration|
+|---|---|---|---|
 |**Maximum concurrent mailbox deliveries**: The maximum number of delivery threads that the Transport service and the Mailbox Transport Delivery service can have open at the same time to deliver message to mailboxes.|20 <br/> We recommend that you don't modify this value unless you're directed to do so by Microsoft Customer Service and Support.|Cmdlet: **Set-TransportService** and **Set-MailboxTransportService** <br/> Parameter: _MaxConcurrentMailboxDeliveries_|Not available|
 |**Maximum concurrent mailbox submissions**: The maximum number of submission threads that the Transport service and the Mailbox Transport Submission service can have open at the same time to send messages from mailboxes.|20 <br/> We recommend that you don't modify this value unless you're directed to do so by Microsoft Customer Service and Support.|Cmdlet: **Set-TransportService** and **Set-MailboxTransportService** <br/> Parameter: _MaxConcurrentMailboxSubmissions_|Not available|
 |**Maximum connection rate per minute**: The maximum rate that connections are allowed to be opened with the Transport service.|1200|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxConnectionRatePerMinute_|Not available|
-|**Maximum concurrent connections**: The maximum number of outbound connections that the Transport service can have open at a time.|1000 <br/> This value must be greater than or equal to the _MaxPerDomainOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
-|**Maximum concurrent connections per domain**: The maximum number of outbound connections that the Transport service can have open to a single domain at a time.|20 <br/> This value must be less than or equal to the _MaxOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxPerDomainOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections per domain**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
+|**Maximum concurrent connections**: The maximum number of outbound connections that the Transport service can have open at a time.|1000 <br/> This value must be greater than or equal to the _MaxPerDomainOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
+|**Maximum concurrent connections per domain**: The maximum number of outbound connections that the Transport service can have open to a single domain at a time.|20 <br/> This value must be less than or equal to the _MaxOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxPerDomainOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections per domain**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
 
 To see the values of these server message throttling settings, run the following command in the Exchange Management Shell:
 
@@ -60,8 +60,8 @@ Write-Host "Transport service:" -ForegroundColor yellow; Get-TransportService | 
 
 The following table shows the message throttling options that are available on Send connectors. Send connectors exist in the Transport service on Mailbox servers and on Edge Transport servers. For more information, see [Send connectors](connectors/send-connectors.md).
 
-|**Rate limit**|**Default value**|**Exchange Management Shell configuration**|**EAC configuration**|
-|:-----|:-----|:-----|:-----|
+|Rate limit|Default value|Exchange Management Shell configuration|EAC configuration|
+|---|---|---|---|
 |**Connection inactivity time out**: The maximum amount of time that an open SMTP connection with a source messaging server can remain idle before the connection is closed.| `00:10:00` (10 minutes)|Cmdlet: **New-SendConnector** and **Set-SendConnector** <br/> Parameter: _ConnectionInactivityTimeOut_|Not available|
 |**Maximum messages per connection**: The maximum number of messages that can be sent over a single connection|20|Cmdlet: **New-SendConnector** and **Set-SendConnector** <br/> Parameter: _SmtpMaxMessagesPerConnection_|Not available|
 
@@ -76,8 +76,8 @@ Get-SendConnector | Format-List Name,ConnectionInactivityTimeout,SmtpMaxMessages
 
 The following table shows the message throttling options that are available on Receive connectors. Receive connectors are available in the Front End Transport service on Mailbox servers, the Transport service on Mailbox servers, and on Edge Transport servers. For more information, see [Receive connectors](connectors/receive-connectors.md).
 
-|**Rate limit**|**Default value**|**Exchange Management Shell configuration**|**EAC configuration**|
-|:-----|:-----|:-----|:-----|
+|Rate limit|Default value|Exchange Management Shell configuration|EAC configuration|
+|---|---|---|---|
 |**Connection time out**: The maximum amount of time that an SMTP connection with a source messaging server can remain open, even when the source messaging server is transmitting data.| `00:10:00` (10 minutes) for Receive connectors on Mailbox servers. <br/> `00:05:00` (1 minute) for Receive connectors on Edge Transport servers. <br/> This value must be greater than the _ConnectionInactivityTimeOut_ value.|Cmdlet: **New-ReceiveConnector** and **Set-ReceiveConnector** <br/> Parameter: _ConnectionTimeout_|Not available|
 |**Connection inactivity time out**: The maximum amount of time that an open SMTP connection with a source messaging server can remain idle before the connection is closed.| `00:05:00` (5 minutes) for Receive connectors on Mailbox servers. <br/> `00:01:00` (1 minute) for Receive connectors on Edge Transport servers. <br/> This value must be less than the _ConnectionTimeout_ value.|Cmdlet: **New-ReceiveConnector** and **Set-ReceiveConnector** <br/> Parameter: _ConnectionInactivityTimeOut_|Not available|
 |**Maximum inbound connections**: The maximum number of inbound SMTP connections that are allowed at the same time.|5000|Cmdlet: **New-ReceiveConnector** and **Set-ReceiveConnector** <br/> Parameter: _MaxInboundConnection_|Not available|

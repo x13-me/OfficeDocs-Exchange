@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638146(v=EXCHG.150)
 ms:contentKeyID: 49289319
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+description: How to configure Exchange Server for shared permissions
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -5,8 +5,10 @@ ms:assetid: 25913e43-326a-4371-90b5-021a35f100fe
 ms:mtpsurl: https://technet.microsoft.com/library/Dd638100(v=EXCHG.150)
 ms:contentKeyID: 49289200
 ms.reviewer: 
+ms.topic: article
+description: Management role assignment policies in Microsoft Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -42,7 +44,7 @@ The following figure shows each of the role assignment policy layers in the prec
 
 **Management role assignment policy model**
 
-![Role Assignment Model Relationships](images/Dd638100.7f7c11ca-0d61-464d-98a3-a9991ec811b5(EXCHG.150).jpg "Role Assignment Model Relationships")
+![Role Assignment Model Relationships.](images/Dd638100.7f7c11ca-0d61-464d-98a3-a9991ec811b5(EXCHG.150).jpg "Role Assignment Model Relationships")
 
 For more information about management roles, role assignments, and scopes, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
@@ -82,8 +84,8 @@ The following table lists the role assignment policy layer and the procedural to
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,9 +1,11 @@
 ---
 title: 'Disable voice mail for a user: Exchange 2013 Help'
 TOCTitle: Disable voice mail for a user
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: You can disable Unified Messaging for a UM enabled user.
 ms.reviewer:
 ms.assetid: cecc9c0d-377d-489e-9db4-d487e9c0b552
 f1.keywords:

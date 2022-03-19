@@ -4,9 +4,11 @@ TOCTitle: Move a public folder to a different public folder mailbox
 ms:assetid: b8744934-a3cb-443e-acce-a9a6ca5d88f6
 ms:mtpsurl: https://technet.microsoft.com/library/JJ906435(v=EXCHG.150)
 ms:contentKeyID: 50630968
+ms.topic: article
+description: Move a public folder to a different public folder mailbox.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

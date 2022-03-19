@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms.reviewer:
 title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox
@@ -24,8 +24,8 @@ When you create a new user mailbox in Exchange, you also create the correspondin
 
 You can create user mailboxes in Exchange Server by using the Exchange admin center (EAC) or the Exchange Management Shell. The following table describes some of the important properties for user mailboxes.
 
-|**Property**|**Required or optional**|**Description**|
-|:-----|:-----|:-----|
+|Property|Required or optional|Description|
+|---|---|---|
 |Alias|Optional|The Exchange alias (also known as the *mail nickname*) for the mailbox. The maximum length is 64 characters. Valid characters are letters, numbers and ASCII text characters that are allowed in email addresses. For example, periods are allowed, but each period must be surrounded by other valid characters (for example, pilar.pinilla).  <br/>  The alias value is used to generate the primary email address (_\<alias\>_@ _\<domain\>_). If you don't specify an alias value, the username part of the account name (user principal name) is used.  <br/> The alias value must be unique.  <br/> **Note**: Don't use apostrophes (') or quotation marks (") in the alias. Although these characters are allowed, they might cause problems later.|
 |Display name|EAC: Required  <br/> Exchange Management Shell: Optional|Identifies the mailbox in the EAC, and in address lists in Outlook and Outlook on the web (formerly known as Outlook Web App). The maximum length is 256 characters. Spaces and other text characters are allowed.  <br/> In the EAC, the display name is populated by the values that you enter for the first name, middle initial, and last name, but you can specify a custom value.  <br/> In the Exchange Management Shell, if you don't specify a value for the display name, the value of the **Name** property is used.  <br/> The display name value doesn't need to be unique, but having multiple mailboxes with the same display name would be confusing.|
 |Name|Required|Specifies the name of the object in Active Directory. Only administrators see this value in Exchange or Active Directory management tools. The maximum length is 64 characters. Spaces and other text characters are allowed.  <br/> The name value must be unique.|
@@ -51,9 +51,9 @@ The procedures in this section describe how to create a new mailbox and the asso
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. Click **New** (![Add icon](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
+2. Click **New** (![Add icon.](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
 
-   ![In the EAC, click Recipients, Mailboxes, New, keywords: Exchange create mailbox](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
+   ![In the EAC, click Recipients, Mailboxes, New, keywords: Exchange create mailbox.](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
 
    **Note**: A linked mailbox is a local mailbox that's associated with a user account in a different (trusted) Active Directory forest. For more information, see [Manage linked mailboxes](linked-mailboxes.md).
 
@@ -151,9 +151,9 @@ When you mailbox-enable a user account, you can only select existing Active Dire
 
 1. In the EAC, go to **Recipients** \> **Mailboxes**.
 
-2. Click **New** (![Add icon](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
+2. Click **New** (![Add icon.](../media/ITPro_EAC_AddIcon.png)) and then select **User mailbox**.
 
-   ![In the EAC, click Recipients, Mailboxes, New, keywords: create Exchange mailbox, Exchange Server create mailbox](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
+   ![In the EAC, click Recipients, Mailboxes, New, keywords: create Exchange mailbox, Exchange Server create mailbox.](../media/a90059a8-f77c-475d-b6b7-32dea2046e6c.png)
 
 3. On the **New user mailbox** page, configure the following settings.
 

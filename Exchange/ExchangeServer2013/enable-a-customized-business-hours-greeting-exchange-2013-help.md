@@ -1,10 +1,12 @@
 ---
 title: 'Enable a customized business hours greeting: Exchange 2013 Help'
 TOCTitle: Enable a customized business hours greeting
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to enable a customized business hours greeting in Exchange Server
 ms.assetid: a2272b7d-de88-4d3f-81e6-ad81f0ee6c5e
 f1.keywords:
 - NOCSH
@@ -42,9 +44,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ## Use the EAC to enable a customized business hours greeting
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to enable a customized business hours greeting, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to enable a customized business hours greeting, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 3. On the **UM Auto Attendant** page, \> **Greetings**, under **Business hours greeting** click **Change**, and then click **Browse** to locate the customized business hours greeting file you created before you started this procedure.
 

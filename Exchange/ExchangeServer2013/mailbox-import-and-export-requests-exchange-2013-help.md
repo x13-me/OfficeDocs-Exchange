@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee633455(v=EXCHG.150)
 ms:contentKeyID: 49360508
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to import data from or export data to .pst files in Exchange
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -82,8 +84,8 @@ Use the following cmdlets for mailbox import requests.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -141,8 +143,8 @@ Use the following cmdlets for mailbox export requests.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

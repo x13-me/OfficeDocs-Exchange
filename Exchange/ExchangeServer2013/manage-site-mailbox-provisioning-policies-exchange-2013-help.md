@@ -5,8 +5,10 @@ ms:assetid: 2f160d1a-a031-461f-8d29-c9cd49ca1645
 ms:mtpsurl: https://technet.microsoft.com/library/JJ710340(v=EXCHG.150)
 ms:contentKeyID: 49382860
 ms.reviewer: 
+ms.topic: article
+description: How to manage site mailbox provisioning policies in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

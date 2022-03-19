@@ -4,9 +4,11 @@ TOCTitle: Outlook Web App
 ms:assetid: 3814b665-01e8-4881-9a44-163f14789ee4
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657718(v=EXCHG.150)
 ms:contentKeyID: 49300478
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: About Outlook Web App and Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

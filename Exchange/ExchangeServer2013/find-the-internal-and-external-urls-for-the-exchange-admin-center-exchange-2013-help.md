@@ -5,8 +5,10 @@ ms:assetid: 3ddb30ff-a405-4b9d-8d77-2d7a3a5ab8fa
 ms:mtpsurl: https://technet.microsoft.com/library/JJ680108(v=EXCHG.150)
 ms:contentKeyID: 49558154
 ms.reviewer: 
+ms.topic: article
+description: How to find the internal and external URLs for the Exchange admin center
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

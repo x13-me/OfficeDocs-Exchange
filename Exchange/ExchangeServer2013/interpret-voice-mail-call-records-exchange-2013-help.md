@@ -1,10 +1,12 @@
 ---
 title: 'Interpret voice mail call records: Exchange 2013 Help'
 TOCTitle: Interpret voice mail call records
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: How to interpret voice mail call records in Exchange Server
 ms.assetid: 368d9c58-61a2-43d5-8189-d3469a9e2a8d
 f1.keywords:
 - NOCSH
@@ -21,7 +23,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 ## Use the EAC to export daily UM call records
 
-1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon.](images/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
 
 2. Under **Show**, click **Daily (90 days)**, and then choose the UM dial plan or UM IP gateway, or both, if you want. The report automatically updates as you choose options.
 

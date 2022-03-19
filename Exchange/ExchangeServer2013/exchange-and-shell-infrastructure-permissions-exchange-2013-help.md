@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd638114(v=EXCHG.150)
 ms:contentKeyID: 48384969
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Exchange and Shell infrastructure permissions in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -43,8 +45,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -117,8 +119,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -162,8 +164,8 @@ Users who are assigned the View-Only Management role group can view the configur
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

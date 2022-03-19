@@ -1,9 +1,11 @@
 ---
 title: 'Connect your voice mail system to your telephone network: Exchange 2013 Help'
 TOCTitle: Connect your voice mail system to your telephone network
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: article
+description: How to connect your voice mail system to your telephone network in Exchange Server
 ms.reviewer: 
 ms.assetid: b606b49d-5bd3-4321-ae77-99fa4604c875
 f1.keywords:

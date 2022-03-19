@@ -5,8 +5,10 @@ ms:assetid: a7cecf59-b93a-413b-bb88-29f2669ef2cf
 ms:mtpsurl: https://technet.microsoft.com/library/Bb124084(v=EXCHG.150)
 ms:contentKeyID: 49315480
 ms.reviewer: 
+ms.topic: article
+description: How to connect a VoIP gateway, IP PBX, or session border controller to Unified Messaging in Exchange Server
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

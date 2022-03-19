@@ -1,5 +1,5 @@
 ---
-title: "Message trace in the modern EAC"
+title: Message trace in the modern EAC in Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,13 +8,13 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
 description: "Admins can use message trace in the modern Exchange amdin center to find out what happened to messages."
 ---
 
-# Message trace in the modern Exchange admin center
+# Message trace in the modern Exchange admin center in Exchange Online
 
 Message trace in the modern Exchange admin center (modern EAC) follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
@@ -71,11 +71,11 @@ The default value is **2 days**, but you can specify date/time ranges of up to 9
 
 - By default, you select the time range in **Slider** view using a time line.
 
-  ![A Slider time range in a new message trace in the modern EAC](../../media/message-trace-time-slider-modern-eac.png)
+  ![A Slider time range in a new message trace in the modern EAC.](../../media/message-trace-time-slider-modern-eac.png)
 
   But, you can also switch to **Custom time range** view where you can specify the **Start date** and **End date** values (including times), and you can also select the **Time zone** for the date/time range. Note that the **Time zone** setting applies to both your query inputs and your query results.
 
-  ![A Custom time range in a new message trace in the modern EAC](../../media/message-trace-time-range-modern-eac.png)
+  ![A Custom time range in a new message trace in the modern EAC.](../../media/message-trace-time-range-modern-eac.png)
 
   For 10 days or less, the results are available instantly as a **Summary** report. If you specify a time range that's even slightly greater than 10 days, the results will be delayed as they are only available as a downloadable CSV file ( **Enhanced summary** or **Extended** reports).
 
@@ -191,7 +191,7 @@ For more information about the Message ID, see the Message ID section earlier in
 
 In the summary report output, you can view details about a message by select the row (click anywhere in the row except the check box).
 
-![Details after clicking a row in the summary report message trace results in the modern EAC](../../media/message-trace-message-details-full-modern-eac.png)
+![Details after clicking a row in the summary report message trace results in the modern EAC.](../../media/message-trace-message-details-full-modern-eac.png)
 
 The message trace details contain the following additional information that's not present in the summary report:
 
@@ -205,6 +205,8 @@ The message trace details contain the following additional information that's no
   - **Transfer**: Recipients were moved to a bifurcated message because of content conversion, message recipient limits, or agents.
   - **Defer**: The message delivery was postponed and might be re-attempted later.
   - **Resolved**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
+  - **DLP rule**: The message had a DLP rule match in this message.
+  - **Sensitivity label:** A server-side labeling event occurred. For example, a label was automatically added to a message that includes an action to encrypt or was added via the web or mobile client. This action is completed by the Exchange server and logged. A label added via Outlook will not be included in the event field.
 
   Notes:
 
@@ -335,8 +337,6 @@ An example **custom_data** value for a message that's filtered for spam like thi
 
 A **custom_data** value that starts with `S:AMA` is from the malware filter agent. The key details are described in the following table:
 
-****
-
 |Value|Description|
 |---|---|
 |`AMA=SUM|v=1|` or `AMA=EV|v=1`|The message was determined to contain malware. `SUM` indicates the malware could've been detected by any number of engines. `EV` indicates the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
@@ -351,7 +351,6 @@ A **custom_data** value that starts with `S:AMA` is from the malware filter agen
 |`Action=b`|The message was blocked.|
 |`Name=<malware>`|The name of the malware that was detected.|
 |`File=<filename>`|The name of the file that contained the malware.|
-|
 
 An example **custom_data** value for a message that contains malware looks like this:
 
@@ -361,15 +360,12 @@ An example **custom_data** value for a message that contains malware looks like 
 
 A **custom_data** value that starts with`S:TRA` is from the Transport Rule agent for mail flow rules (also known as transport rules). The key details are described in the following table:
 
-****
-
 |Value|Description|
 |---|---|
 |`ETR|ruleId=<guid>`|The rule ID that was matched.|
 |`St=<datetime>`|The date and time in UTC when the rule match occurred.|
 |`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
 |`Mode=<Mode>`|The mode of the rule. Valid values are: <ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li?</ul>|
-|
 
 An example **custom_data** value for a messages that matches the conditions of a mail flow rule looks like this:
 

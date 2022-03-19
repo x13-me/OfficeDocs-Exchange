@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb124133(v=EXCHG.150)
 ms:contentKeyID: 50395403
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+description:  How to configure calendar options for POP3 in Exchange Server
+ms.topic: article
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

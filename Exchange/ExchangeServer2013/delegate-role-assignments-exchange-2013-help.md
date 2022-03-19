@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dd351237(v=EXCHG.150)
 ms:contentKeyID: 49289453
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to delegate role assignments in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH

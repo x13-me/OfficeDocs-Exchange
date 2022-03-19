@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
 ms.reviewer: 
 title: Mail flow and the transport pipeline
@@ -45,7 +45,7 @@ The following diagram shows the relationships among the components in the Exchan
 > [!NOTE]
 > Although the diagrams in this topic show the components on a single Exchange server, communication also occurs between those components on different Exchange servers. The only communication that always occurs on the local Exchange server is between the Mailbox Transport service and the local mailbox database.
 
-![Transport pipeline overview diagram](../media/Transport_PipelineOverview.png)
+![Transport pipeline overview diagram.](../media/Transport_PipelineOverview.png)
 
 ### How messages from external senders enter the transport pipeline
 
@@ -55,7 +55,7 @@ The way messages from outside the Exchange organization enter the transport pipe
 
 The following diagram and list describe inbound mail flow with only Exchange Mailbox servers.
 
-![Inbound mail flow in the transport pipleline (no Edge Transport servers)](../media/45f8e675-43b1-4e3f-ba14-5c9a0d1551bf.png)
+![Inbound mail flow in the transport pipleline (no Edge Transport servers).](../media/45f8e675-43b1-4e3f-ba14-5c9a0d1551bf.png)
 
 1. A message from outside the organization enters the transport pipeline through the default Receive connector named "Default Frontend _\<Mailbox server name\>_" in the Front End Transport service.
 
@@ -69,7 +69,7 @@ The following diagram and list describe inbound mail flow with only Exchange Mai
 
 The following diagram and list describe inbound mail flow with an Edge Transport server installed in the perimeter network
 
-![Inbound mail flow in the transport pipleline with Edge Transport servers](../media/e0983c92-784c-4c17-8483-8e2cb07cf097.png)
+![Inbound mail flow in the transport pipleline with Edge Transport servers.](../media/e0983c92-784c-4c17-8483-8e2cb07cf097.png)
 
 1. A message from outside the Exchange organization enters the transport pipeline through the default Receive connector named "Default internal Receive connector _\<Edge Transport server name\>_" in the Transport service on the Edge Transport server.
 
@@ -98,7 +98,7 @@ The message is routed based on the routing destination or delivery group.
 
 By default, in a new Exchange Server organization, there's no Send connector that's configured to send messages to the Internet. You need to create the Send connector yourself. After you do that, Outbound mail flow occurs as described in the following diagram and list.
 
-![Outbound mail flow in the transport pipleline (no Edge Transport servers)](../media/a672122e-435c-4e81-bd03-8f1643829e59.png)
+![Outbound mail flow in the transport pipleline (no Edge Transport servers).](../media/a672122e-435c-4e81-bd03-8f1643829e59.png)
 
 1. The Mailbox Transport Submission service uses RPC to retrieve the outbound message from the local mailbox database.
 
@@ -116,7 +116,7 @@ By default, in a new Exchange Server organization, there's no Send connector tha
 
 If you have an Edge Transport server installed in the perimeter network, outbound mail never flows through the Front End Transport service. Outbound mail flow with an Edge Transport server is described in the following diagram and list.
 
-![Outbound mail flow in the transport pipleline with Edge Transport servers](../media/2d0d3b5a-cc06-4dfa-8846-1a6885fdb19d.png)
+![Outbound mail flow in the transport pipleline with Edge Transport servers.](../media/2d0d3b5a-cc06-4dfa-8846-1a6885fdb19d.png)
 
 1. The Mailbox Transport Submission service uses RPC to retrieve the outbound message from the local mailbox database.
 

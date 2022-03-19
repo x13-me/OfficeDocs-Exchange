@@ -1,6 +1,6 @@
 ---
 title: "Hybrid Configuration wizard options"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
@@ -25,15 +25,15 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 > [!NOTE]
 > This table is an expanded version of the one which was originally published in Chapter 13 in the book, Microsoft Office 365 Administration Inside Out, 2nd Edition. Reference- Fisher, Ed; Guilmette, Aaron; Kegg, Darryl; Mandich, Lou. Microsoft Office 365 Administration Inside Out (Includes Current Book Service), 2nd ed. Pearson Education, Inc., 2017. Print.
 
-|**Exchange Hybrid Configuration Options**|**Classic Minimal**|**Classic Express**|**Classic Full**|**Modern Minimal**|**Modern Full**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
+|Exchange Hybrid Configuration Options|Classic Minimal|Classic Express|Classic Full|Modern Minimal|Modern Full|
+|---|---|---|---|---|---|
 |E-mail Address Policy and Domain configuration|Yes|Yes|Yes|Yes|Yes|
 |Send and Receive Connector Configuration|No|No|Yes|No|Yes|
-|OAuth Configuration   |No|No|Yes for  Exchange 2013/2016/2019 with current CU|No|Yes for Exchange 2013/2016/2019 with current CU|
-|Federation Trust and Organization Relationship|No|No|Yes|No   |Yes  |
+|OAuth Configuration|No|No|Yes for  Exchange 2013/2016/2019 with current CU|No|Yes for Exchange 2013/2016/2019 with current CU|
+|Federation Trust and Organization Relationship|No|No|Yes|No|Yes|
 |MRS Endpoint Configuration|Yes|Yes|Yes|Yes|Yes|
 |AAD Connect in Express Configuration|No|Yes|No; set up separately|No; set up separately|No; set up separately|
-|Organization Configuration Transfer|Yes|Yes|Yes|Yes|Yes  |
+|Organization Configuration Transfer|Yes|Yes|Yes|Yes|Yes|
 |Hybrid Modern Authentication|No|No|No [1]|No|No|
 |Cross-premises multi mailbox search|No|No|Yes|No|No|
 |Cross-premises Mail Tips|No|No|Yes|No|Yes|

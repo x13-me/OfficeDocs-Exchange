@@ -1,10 +1,12 @@
 ---
 title: 'Change the settings of an address book policy: Exchange 2013 Help'
 TOCTitle: Change the settings of an address book policy
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: Change the settings of an address book policy.
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 f1.keywords:
 - NOCSH

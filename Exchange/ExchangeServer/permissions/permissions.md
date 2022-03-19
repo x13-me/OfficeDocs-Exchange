@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about Role Based Access Control in Exchange Server 2016 and Exchange Server 2019'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
 ms.reviewer:
 title: Exchange Server permissions, permissions Exchange Server, Exchange Admin roles, Exchange admin permissions, role assignment policy Exchange
@@ -57,7 +57,7 @@ The following figure shows the relationship between users, role groups, and role
 
  **Roles, role groups, and role group members**
 
-![Role, role group and member relationship](../media/ITPro_Security_RBAC_SimplifiedRoleGroupRelationship.gif)
+![Role, role group and member relationship.](../media/ITPro_Security_RBAC_SimplifiedRoleGroupRelationship.gif)
 
 Exchange Server includes several built-in role groups, each one providing permissions to manage specific areas in Exchange Server. Some role groups may overlap with others. The following table lists each role group with a description of its use. If you want to see the roles assigned to each role group, click the name of the role group in the "Role group" column, and then open the "Management Roles Assigned to This Role Group" section.
 
@@ -66,8 +66,8 @@ Exchange Server includes several built-in role groups, each one providing permis
 
 **Built-in role groups**
 
-|**Role group**|**Description**|
-|:-----|:-----|
+|Role group|Description|
+|---|---|
 |[Organization Management](../../ExchangeServer2013/organization-management-exchange-2013-help.md)|Administrators who are members of the Organization Management role group have administrative access to the entire Exchange Server organization and can perform almost any task against any Exchange Server object, with some exceptions, such as the `Discovery Management` role.  <br/> **Important**: Because the Organization Management role group is a powerful role, only users or USGs that perform organizational-level administrative tasks that can potentially impact the entire Exchange organization should be members of this role group.|
 |[View-Only Organization Management](../../ExchangeServer2013/view-only-organization-management-exchange-2013-help.md)|Administrators who are members of the View Only Organization Management role group can view the properties of any object in the Exchange organization.|
 |[Recipient Management](../../ExchangeServer2013/recipient-management-exchange-2013-help.md)|Administrators who are members of the Recipient Management role group have administrative access to create or modify Exchange Server recipients within the Exchange Server organization.|
@@ -105,7 +105,7 @@ When an end-user role is assigned to a role assignment policy, all of the mailbo
 
  **Roles, role assignment policies, and mailboxes**
 
-![Role, role assignment policy, mailbox relationship](../media/ITPro_Security_RBAC_SimplifiedRAPRelationship.gif)
+![Role, role assignment policy, mailbox relationship.](../media/ITPro_Security_RBAC_SimplifiedRAPRelationship.gif)
 
 The Default Role Assignment Policy role assignment policy is included with Exchange Server. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#work-with-role-assignment-policies) later in this topic.
 
@@ -115,7 +115,7 @@ To manage your permissions using role groups in Exchange Server, we recommend th
 
 ### New role group dialog box in the EAC
 
-![New role group dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRoleGroup.jpg)
+![New role group dialog box in the EAC.](../media/ITPro_Security_RBAC_SimplifiedEACRoleGroup.jpg)
 
 If none of the role groups included with Exchange Server have the permissions you need, you can use the EAC to create a role group and add the roles that have the permissions you need. For your new role group, you'll need to:
 
@@ -142,7 +142,7 @@ To manage the permissions that you grant end users to manage their own mailbox i
 
 ### Role assignment policy dialog box in the EAC
 
-![Role assignment policy dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
+![Role assignment policy dialog box in the EAC.](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
 
 Exchange Server includes a role assignment policy named Default Role Assignment Policy. This role assignment policy enables users whose mailboxes are associated with it to do the following:
 

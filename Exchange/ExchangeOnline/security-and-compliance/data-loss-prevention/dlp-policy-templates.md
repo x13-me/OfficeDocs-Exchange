@@ -1,14 +1,14 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In Microsoft Exchange Server and Exchange Online, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: DLP policy templates supplied in Exchange
+title: DLP policy templates supplied in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# DLP policy templates supplied in Exchange
+# DLP policy templates supplied in Exchange Online
 
 In Microsoft Exchange Server and Exchange Online, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization.
 
@@ -29,8 +29,8 @@ In Microsoft Exchange Server and Exchange Online, you can use data loss preventi
 
 The following table lists the DLP policy templates in Exchange.
 
-|**Template**|**Description**|
-|:-----|:-----|
+|Template|Description|
+|---|---|
 |Australia Financial Data|Helps detect the presence of information commonly considered to be financial data in Australia, including credit cards, and SWIFT codes.|
 |Australia Health Records Act (HRIP Act)|Helps detect the presence of information commonly considered to be subject to the Health Records and Information Privacy (HRIP) act in Australia, like medical account number and tax file number.|
 |Australia Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in Australia, like tax file number and driver's license.|

@@ -5,8 +5,10 @@ ms:assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 ms:mtpsurl: https://technet.microsoft.com/library/JJ657511(v=EXCHG.150)
 ms:contentKeyID: 49289465
 ms.reviewer: 
+ms.topic: article
+description: How to manage role assignment policies in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -21,7 +23,7 @@ If you want to customize the permissions that you assign to a group of end users
 
 Looking for other management tasks related to managing permissions? Check out [Permissions](permissions-exchange-2013-help.md).
 
-## What do you need to know before you begin?
+### What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes
 
@@ -41,7 +43,7 @@ After you've created the new assignment policy, you assign users to it. For more
 > [!NOTE]
 > You can only create explicit assignment policies using the Exchange admin center (EAC). If you want to create a new default assignment policy, you must use the Exchange Management Shell. For more information, see the "Use the Shell to create a default assignment policy" section later in this topic.
 
-1. In the EAC, navigate to **Permissions** \> **User Roles** and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Permissions** \> **User Roles** and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 2. In the role assignment policy window, provide a name for the new assignment policy.
 
@@ -85,7 +87,7 @@ For detailed syntax and parameter information, see [New-RoleAssignmentPolicy](/p
 
 If you no longer need a management role assignment policy, you can remove it.
 
-## What do you need to know before you begin?
+### What do you need to know before you begin?
 
 - All users assigned the assignment policy must be changed to another assignment policy. For more information about how to change an assignment policy on a mailbox, see [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md).
 
@@ -97,7 +99,7 @@ If you no longer need a management role assignment policy, you can remove it.
 
 1. In the EAC, navigate to **Permissions** \> **User Roles**.
 
-2. Select the assignment policy you want to remove, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
+2. Select the assignment policy you want to remove, and then click **Delete** ![Delete icon.](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
 ## Use the Shell to remove an assignment policy
 
@@ -255,7 +257,7 @@ For detailed syntax and parameter information, see [Set-RoleAssignmentPolicy](/p
 
 1. In the EAC, navigate to **Permissions** \> **User Roles**.
 
-2. Select the assignment policy you want to add one or more roles to, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the assignment policy you want to add one or more roles to, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. Select the check box next to the role or roles you want to add to the assignment policy. You can select multiple roles, including end-user roles you've added. If you select a role that has child roles, the child roles are automatically selected.
 
@@ -285,7 +287,7 @@ If you don't want end users to have permissions to manage certain features of th
 
 1. In the EAC, navigate to **Permissions** \> **User Roles**.
 
-2. Select the assignment policy you want to remove one or more roles from, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") .
+2. Select the assignment policy you want to remove one or more roles from, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") .
 
 3. Clear the check box next to the role or roles you want to remove from the assignment policy. If you clear the check box for a role that has child roles, the check boxes for the child roles are also cleared.
 

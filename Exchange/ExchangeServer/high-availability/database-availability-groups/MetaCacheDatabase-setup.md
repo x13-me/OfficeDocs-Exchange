@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the MetaCacheDatabase (MCDB) feature in Exchange Server 2019, and how to configure it in your organization.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 monikerRange: exchserver-2019
 title: MetaCacheDatabase (MCDB) setup
 ms.collection: exchange-server
@@ -121,7 +121,7 @@ This parameter sets the Active Directory state for the DAG object. Full replicat
 Manage-MCDB -DagName TestDag1 -ConfigureMCDBPrerequisite -SSDSizeInBytes 5242880000 -SSDCountPerServer 2
 ```
 
-![MCDB configure prerequisites](../../media/mcdb1.png)
+![MCDB configure prerequisites.](../../media/mcdb1.png)
 
 ### Step 3: Run Manage-MCDB -ServerAllowMCDB
 
@@ -134,7 +134,7 @@ This command sets the local state on each DAG member to allow/disallow MCDB popu
 **Parameters**:
 
 | Parameter|Required|Description|
-|:-------|:-----|:---|
+|:-------|---|:---|
 |DagName|True|Name of the Database availability group.|
 |ServerName|True|Specifies the server to enable MetaCacheDatabase on.|
 |ForceFailover|Optional|This Boolean switch can be utilized to cause all databases on a server to fail over. This is required to make all configuration changes take effect and to begin utilizing MCDB after mount points and database instances have been successfully created in [Step 4: Run Manage-MCDB -ConfigureMCDBOnServer](#step-4-run-manage-mcdb--configuremcdbonserver). It is also needed to disable SSD acceleration.|
@@ -146,14 +146,14 @@ This command sets the local state on each DAG member to allow/disallow MCDB popu
 **Examples**:
 
 ```PowerShell
-Manage-MCDB -DagName TestDag1 -ServerAllowMCDB $true -ServerName "exhs-5046"
+Manage-MCDB -DagName TestDag1 -ServerAllowMCDB:$true -ServerName "exhs-5046"
 ```
 
 ```PowerShell
-Manage-MCDB -DagName TestDag1 -ServerAllowMCDB $false -ServerName "exhs-5046" -ForceFailover $true
+Manage-MCDB -DagName TestDag1 -ServerAllowMCDB:$false -ServerName "exhs-5046" -ForceFailover $true
 ```
 
-![MCDB run ServerAllowMCDB](../../media/mcdb2.png)
+![MCDB run ServerAllowMCDB.](../../media/mcdb2.png)
 
 ### Step 4: Run Manage-MCDB -ConfigureMCDBOnServer
 
@@ -181,9 +181,9 @@ Example:
 Manage-MCDB -DagName TestDag1 -ConfigureMCDBOnServer -ServerName "exhs-4056" -SSDSizeInBytes 5242880000
 ```
 
-![Run MCDBOnServer1](../../media/mcdb3.png)
+![Run MCDBOnServer1.](../../media/mcdb3.png)
 
-![Run MCDBOnServer2](../../media/mcdb4.png)
+![Run MCDBOnServer2.](../../media/mcdb4.png)
 
 After performing the previous three steps (configuring _ConfigureMCDBPrerequisite_, _ServerAllowMCDB_, and _ConfigureMCDBOnServer_), the MCDB state will display as **Storage Offline**. This means that the environment is prepared and ready for MCDB instances to be created and populated. The next fail over of the database instance will cause the creation of the MCDB instance and enable acceleration. The instances will transition through the health states shown in [MCDB health states](#mcdb-health-states).
 

@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn to use the custom attributes in Exchange Server 2016 or Exchange Server 2019 to add information about a mail recipient.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 ms.reviewer:
 title: Custom attributes
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# Custom attributes
+# Custom attributes in Exchange Server
 
 Exchange Server includes 15 extension attributes that you can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
 
@@ -69,7 +69,7 @@ A common scenario in many Exchange deployments is that of creating an e-mail add
 If the recipients in a particular OU don't share any common properties that you can filter by, such as department or location, you can populate one of the custom attributes with a common value, as shown in this example.
 
 ```PowerShell
-Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox -CustomAttribute1 "SalesOU"
 ```
 
 With that done, now you can create an e-mail address policy for all recipients that have the _CustomAttribute1_ property that equals SalesOU, as shown in this example.

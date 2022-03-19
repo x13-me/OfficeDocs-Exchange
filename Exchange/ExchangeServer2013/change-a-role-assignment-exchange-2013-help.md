@@ -4,9 +4,10 @@ TOCTitle: Change a role assignment
 ms:assetid: 0fa77efc-e393-461f-b3c0-232cc56cee85
 ms:mtpsurl: https://technet.microsoft.com/library/Dd335096(v=EXCHG.150)
 ms:contentKeyID: 49289170
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -1,5 +1,5 @@
 ---
-title: "Non-accepted domain report in the new EAC"
+title: "Non-accepted domain report in the new EAC in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,12 +8,12 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: exchange-online
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 description: "Admins can learn how to use the Non-accepted domain report in the new Exchange admin center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
 ---
 
-# Non-accepted domain report in the new Exchange admin center
+# Non-accepted domain report in the new Exchange admin center in Exchange Online
 
 The **Non-accepted domain** report in the new Exchange admin center (new EAC) displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.
 
@@ -26,7 +26,7 @@ Microsoft 365 might throttle these messages if we have data to prove that the in
 
 The overview section contains a chart that shows the number of messages sent per connector:
 
-![Overview of the Auto forwarded messages report](../../media/mfr-non-accepted-domain-report.png)
+![Overview of the Auto forwarded messages report.](../../media/mfr-non-accepted-domain-report.png)
 
 The **Non-Accepted domain details** section contains the following information:
 
@@ -36,11 +36,11 @@ The **Non-Accepted domain details** section contains the following information:
 - **Count**
 - **Sample messages**: This field contains the internet message IDs (also known as the Client IDs) of a sample of the original messages. This value is stored in the **Message-ID** header field in the message header and is constant for the lifetime of the message.
 
-To quickly filter the results, click **Search** ![Search icon](../../media/modern-eac-search-icon.png) and start typing a value.
+To quickly filter the results, click **Search** ![Search icon.](../../media/modern-eac-search-icon.png) and start typing a value.
 
 To filter the results by date range or connector name, use the boxes. You can specify a date range up to 90 days.
 
-For more advanced filters that you can also save and use later, click **Filter** ![Filter icon](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
+For more advanced filters that you can also save and use later, click **Filter** ![Filter icon.](../../media/modern-eac-filter-icon.png) and select **New filter**. In the **Custom filter** flyout that appears, enter the following information:
 
 - **Name your filter**: Enter a unique name.
 
@@ -54,11 +54,11 @@ For more advanced filters that you can also save and use later, click **Filter**
 
   You can click **Add new clause** as many times as you need. Multiple clauses use AND logic (\<Clause1\> AND \<Clause2\>...).
 
-  To remove a clause, click **Remove** ![Remove icon](../../media/modern-eac-remove-icon.png)
+  To remove a clause, click **Remove** ![Remove icon.](../../media/modern-eac-remove-icon.png)
 
   When you're finished, click **Save**. The new filter is automatically loaded, and the results are changed based on the filter. This is the same result as clicking **Filter** and selecting the customer filter from the list.
 
-  To unload a existing filter (return to the default list), click **Filter** ![Active filter icon](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
+  To unload a existing filter (return to the default list), click **Filter** ![Active filter icon.](../../media/modern-eac-filter-active-icon.png) and select **Clear all filters**.
 
 Click **Export** to export the displayed results to a .csv file.
 

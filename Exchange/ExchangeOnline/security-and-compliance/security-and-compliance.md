@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 510524c6-6d3e-416f-9e27-fa25446b099a
 ms.reviewer: 
@@ -30,8 +30,8 @@ Leakage of sensitive information such as intellectual property, trade secrets, b
 
 The following table provides an overview of the security and compliance features in Exchange Online and includes links to topics that will help you learn about and manage these features.
 
-|**Feature**|**Description**|
-|:-----|:-----|
+|Feature|Description|
+|---|---|
 |[Archive mailboxes in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes)|Archive mailboxes (called In-Place Archiving) let people in your Microsoft 365 or Office 365 organization take control of messaging data by providing additional email storage. People can use Outlook or Outlook on the web (formerly known as Outlook Web App) to view messages in their archive mailbox and move or copy messages between their primary and archive mailboxes.|
 |[Litigation Hold](in-place-and-litigation-holds.md)|Litigation Hold allows you to preserve or archive mailbox content for compliance and eDiscovery.|
 |[Inactive mailboxes in Exchange Online](/microsoft-365/compliance/inactive-mailboxes-in-office-365)|You can preserve the contents of deleted mailboxes indefinitely by using inactive mailboxes. You can make an inactive mailbox by placing an In-Place Hold or a Litigation Hold on the mailbox, and then deleting the corresponding user account. In addition to preserving mailbox contents, administrators or compliance officers can use Content Search in the Microsoft 365 compliance centers to search the contents of an inactive mailbox.|

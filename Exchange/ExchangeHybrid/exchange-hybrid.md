@@ -1,6 +1,6 @@
 ---
 title: "Exchange Server hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
@@ -79,7 +79,7 @@ A hybrid deployment involves several different services and components:
    > We don't support the installation of Exchange servers running the Mailbox or Client Access server roles in a perimeter network.
 
    > [!IMPORTANT]
-   > We recommend using the Exchange Server with the latest CU and SU for configuring Hybrid.
+   > Hybrid deployments require the latest Cumulative Update (CU) or Update Rollup (RU) that's available for your version of Exchange. We recommend using the Exchange Server with the latest CU and SU for configuring Hybrid. If you can't install the latest update, the immediately previous release is also supported.
 
 - **Office 365 or Microsoft 365**: Several Office 365 and Microsoft 365 service subscriptions include an Exchange Online organization. Organizations configuring a hybrid deployment need to purchase a license for each mailbox that's migrated to or created in the Exchange Online organization.
 
@@ -102,7 +102,7 @@ A hybrid deployment involves several different services and components:
 
 Take a look at the following scenario. It's an example topology that provides an overview of a typical Exchange 2016 deployment. Contoso, Ltd. is a single-forest, single-domain organization with two domain controllers and one Exchange 2016 server installed. Remote Contoso users use Outlook on the web to connect to Exchange 2016 over the Internet to check their mailboxes and access their Outlook calendar.
 
-![On-premises Exchange deployment before hybrid deployment with Microsoft 365 or Office 365 is configured](media/dad133ae-d18a-42ec-8f0a-dd1de391200e.png)
+![On-premises Exchange deployment before hybrid deployment with Microsoft 365 or Office 365 is configured.](media/dad133ae-d18a-42ec-8f0a-dd1de391200e.png)
 
 Let's say that you're the network administrator for Contoso, and you're interested in configuring a hybrid deployment. You deploy and configure a required Azure AD Connect server and you also decide to use the Azure AD Connect password synchronization feature to let users use the same credentials for both their on-premises network account and their Microsoft 365 or Office 365 account. After you complete the hybrid deployment prerequisites and use the Hybrid Configuration wizard to select options for the hybrid deployment, your new topology has the following configuration:
 
@@ -116,12 +116,12 @@ Let's say that you're the network administrator for Contoso, and you're interest
 
 - On-premises and Exchange Online users use the same URL to connect to their mailboxes over the Internet.
 
-![On-premises Exchange deployment after hybrid deployment with Microsoft 365 or Office 365 is configured](media/e8681849-f15d-4d0e-b77e-6105b6096c4b.png)
+![On-premises Exchange deployment after hybrid deployment with Microsoft 365 or Office 365 is configured.](media/e8681849-f15d-4d0e-b77e-6105b6096c4b.png)
 
 If you compare Contoso's existing organization configuration and the hybrid deployment configuration, you'll see that configuring a hybrid deployment has added servers and services that support additional communication and features that are shared between the on-premises and Exchange Online organizations. Here's an overview of the changes that a hybrid deployment has made from the initial on-premises Exchange organization.
 
-|**Configuration**|**Before hybrid deployment**|**After hybrid deployment**|
-|:-----|:-----|:-----|
+|Configuration|Before hybrid deployment|After hybrid deployment|
+|---|---|---|
 |Mailbox location|Mailboxes on-premises only.|Mailboxes on-premises and in Exchange Online.|
 |Message transport|On-premises Mailbox servers handle all inbound and outbound message routing.|On-premises Mailbox servers handle internal message routing between the on-premises and Exchange Online organization.|
 |Outlook on the web|On-premises Mailbox servers receive all Outlook on the web requests and displays mailbox information.|On-premises Mailbox servers redirect Outlook on the web requests to either on-premises Exchange 2016 Mailbox servers or provides a link to log on to Exchange Online.|
@@ -260,8 +260,8 @@ The following list provides you with definitions of the core components associat
 
 The following table contains links to topics that will help you learn about and manage hybrid deployments in Microsoft Exchange.
 
-|**Topic**|**Description**|
-|:-----|:-----|
+|Topic|Description|
+|---|---|
 |[Hybrid Configuration wizard](hybrid-configuration-wizard.md)|Learn how the Hybrid Configuration wizard and the Hybrid Configuration Engine configure a hybrid deployment.|
 |[Hybrid deployment prerequisites](hybrid-deployment-prerequisites.md)|Learn more about hybrid deployment prerequisites, including compatible Exchange Server organizations, Microsoft 365 or Office 365 requirements, and other on-premises configuration requirements.|
 |[Certificate requirements for hybrid deployments](certificate-requirements.md)|Learn more about the requirements for digital certificates in hybrid deployments.|

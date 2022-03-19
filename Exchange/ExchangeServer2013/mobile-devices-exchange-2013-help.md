@@ -4,9 +4,11 @@ TOCTitle: Mobile devices
 ms:assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
 ms:mtpsurl: https://technet.microsoft.com/library/Bb232129(v=EXCHG.150)
 ms:contentKeyID: 49360512
-ms.reviewer: 
+ms.reviewer:
+ms.topic: article
+description: Using mobile devices with Exchange 2013 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

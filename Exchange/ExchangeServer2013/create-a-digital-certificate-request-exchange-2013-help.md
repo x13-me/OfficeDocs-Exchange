@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb125165(v=EXCHG.150)
 ms:contentKeyID: 51492809
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to create a digital certificate request in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -34,7 +36,7 @@ In Exchange Server 2013, you can manage certificates using the EAC or the Shell.
 
 1. In the EAC, navigate to **Servers** \> **Certificates**.
 
-2. In the **Select server** list, select the server for which you want to create a certificate, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. In the **Select server** list, select the server for which you want to create a certificate, and then click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 3. In the **New Exchange certificate** wizard, choose either **Create a request for a certificate from a certification authority** or **Create a self-signed certificate**, and then select **Next**.
 

@@ -1,6 +1,6 @@
 ---
 title: "Transport routing in Exchange 2013/Exchange 2007 hybrid deployments"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
@@ -70,7 +70,7 @@ When centralized mail transport is disabled (default configuration), incoming In
 
  **Route mail through the Exchange Online organization for both on-premises and Exchange Online organizations with centralized mail transport disabled (default configuration)**
 
-![Inbound via Exchange Online without centralized](../media/ITPro_Hybrid_2007-2013_Inbound_ViaEXO_NoCentralized.png)
+![Inbound via Exchange Online without centralized.](../media/ITPro_Hybrid_2007-2013_Inbound_ViaEXO_NoCentralized.png)
 
 When centralized mail transport is enabled, incoming Internet messages are routed as follows in a hybrid deployment:
 
@@ -92,7 +92,7 @@ When centralized mail transport is enabled, incoming Internet messages are route
 
  **Route mail through the Exchange Online organization for both on-premises and Exchange Online organizations with centralized mail transport enabled**
 
-![Inbound via Exchange Online with centralized](../media/ITPro_Hybrid_2007-2013_Inbound_ViaEXO_Centralized.png)
+![Inbound via Exchange Online with centralized.](../media/ITPro_Hybrid_2007-2013_Inbound_ViaEXO_Centralized.png)
 
 ### Route incoming Internet messages through your on-premises organization
 
@@ -114,7 +114,7 @@ The following steps and diagram illustrate the inbound Internet message path tha
 
    **Route mail through the on-premises organization for both on-premises and Exchange Online organizations**
 
-   ![Inbound mail flow via on-premises organization](../media/ITPro_Hybrid_2007-2013_Inbound_ViaOnPrem.png)
+   ![Inbound mail flow via on-premises organization.](../media/ITPro_Hybrid_2007-2013_Inbound_ViaOnPrem.png)
 
 ## Outbound messages to the Internet
 <a name="BKMK_Outbound"> </a>
@@ -140,7 +140,7 @@ The following steps and diagram illustrate the outbound message path for message
 
    **Messages from on-premises senders to Internet recipients**
 
-   ![Outbound routing from on-premises only](../media/ITPro_Hybrid_2007-2013_Outbound_FromOnPrem.png)
+   ![Outbound routing from on-premises only.](../media/ITPro_Hybrid_2007-2013_Outbound_FromOnPrem.png)
 
 Read the section below that matches how you plan to route messages sent from recipients in the Exchange Online organization to Internet recipients.
 
@@ -156,7 +156,7 @@ The following steps and diagram illustrate the outbound message path for message
 
    **Mail from Exchange Online senders routed directly to the Internet with centralized mail transport disabled (default configuration)**
 
-   ![Outbound routing direct from Exchange Online](../media/ITPro_Hybrid_2007-2013_Outbound_EXODirect.png)
+   ![Outbound routing direct from Exchange Online.](../media/ITPro_Hybrid_2007-2013_Outbound_EXODirect.png)
 
 ### Route Internet-bound messages from Exchange Online through your on-premises organization (Centralized mail transport enabled)
 
@@ -176,4 +176,4 @@ The following steps and diagram illustrate the outbound message path for message
 
    **Mail from Exchange Online senders routed through on-premises organization with centralized mail transport enabled**
 
-   ![Outbound from Exchange Online via on-premises](../media/ITPro_Hybrid_2007-2013_Outbound_EXOViaOnPrem.png)
+   ![Outbound from Exchange Online via on-premises.](../media/ITPro_Hybrid_2007-2013_Outbound_EXOViaOnPrem.png)

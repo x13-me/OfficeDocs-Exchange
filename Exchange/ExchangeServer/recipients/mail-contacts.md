@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: ed0438ea-f396-480e-b661-9f704b0a04e6
 ms.reviewer:
 title: Manage mail contacts
@@ -39,7 +39,7 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
-2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Mail contact**.
+2. Click **New** ![Add icon.](../media/ITPro_EAC_AddIcon.png) \> **Mail contact**.
 
 3. Complete the following boxes on the **New mail contact** page:
 
@@ -95,7 +95,7 @@ To verify that you've successfully created a mail contact, do one of the followi
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
-2. In the list of mail contacts and mail users, click the mail contact that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. In the list of mail contacts and mail users, click the mail contact that you want to change the properties for, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png).
 
 3. On the mail contact properties page, click one of the following sections to view or change properties.
 
@@ -192,7 +192,7 @@ Get-Contact -Filter "Department -eq 'Public Relations'" | Set-MailContact -Custo
 
 To verify that you've successfully changed properties for a mail contact, do the following:
 
-- In the EAC, select the mail contact, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the property that you changed.
+- In the EAC, select the mail contact, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) to view the property that you changed.
 
 - In the Exchange Management Shell, use the **Get-Contact** and **Get-MailContact** cmdlets to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mail contacts. In the example above where all mail contacts had the CustomAttribute1 property set to PartTime and were hidden from the address book, run the following command to verify the changes.
 
@@ -233,7 +233,7 @@ When you bulk edit mail contacts, you can change the following property areas:
 
 To verify that you've successfully bulk edited mail contacts, do one of the following:
 
-- In the EAC, select each of the mail contacts that you bulk edited, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the properties that you changed.
+- In the EAC, select each of the mail contacts that you bulk edited, and then click **Edit** ![Edit icon.](../media/ITPro_EAC_EditIcon.png) to view the properties that you changed.
 
 - In the Exchange Management Shell, use the **Get-Contact** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail contacts from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell.
 

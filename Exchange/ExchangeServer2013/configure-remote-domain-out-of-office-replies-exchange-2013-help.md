@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ657713(v=EXCHG.150)
 ms:contentKeyID: 49300434
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure remote domain out of office replies in Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -17,7 +19,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-You can use the Exchange Management Shell to configure the way emails are sent and received through remote domains. The following demonstrates how to use the Exchange Management Shell to configure the way Exchange handles out of office replies.
+You can use the Exchange Management Shell to configure the way emails are sent and received through remote domains. The following information demonstrates how to use the Exchange Management Shell to configure the way Exchange handles out of office replies.
 
 ## What do you need to know before you begin?
 

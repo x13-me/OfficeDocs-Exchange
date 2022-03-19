@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.eds(v=EXCHG.150)
 ms:contentKeyID: 49720743
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the EDS health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

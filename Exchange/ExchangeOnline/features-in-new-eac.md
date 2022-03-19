@@ -1,12 +1,12 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the features in new EAC.
 ms.topic: overview
 author: Benny-54
 ms.author: v-bshilpa
 ms.assetid:
 ms.reviewer:
-title: New EAC - Get to new EAC and Features
+title: New EAC in Exchange Online - Get to new EAC and Features in Exchange Online
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -18,7 +18,7 @@ manager: serdars
 
 ---
 
-# New Exchange admin center
+# New Exchange admin center in Exchange Online
 
 The new Exchange admin center is simple and accessible, and it enables you to perform tasks like restoring mailboxes, migrating data, and much more.
 
@@ -30,7 +30,7 @@ You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/a
 
 2. In the left navigation pane, navigate to **Admin centers** > **Exchange**.
 
-    ![New EAC](media/new-eac-selection.png)
+    ![New EAC.](media/new-eac-selection.png)
 
 You can also get to the new Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
 
@@ -41,7 +41,7 @@ You can also get to the new Exchange admin center directly by using the URL [htt
 
 Here's what the new Exchange admin center looks like.
 
-![New EAC homepage](media/new-eac-home-page.png)
+![New EAC homepage.](media/new-eac-home-page.png)
 
 ### Home page
 
@@ -55,19 +55,15 @@ You can personalize your home page by selecting a theme, setting your language, 
 
 4. To learn about the new Exchange admin center, in **Training & guide**, select **Training for admins** for a video tutorial and **Documentation**.
 
-5. To get help from Microsoft 365 Support assistant, click ![get help](media/get-help-icon.PNG).
+5. To get help from Microsoft 365 Support assistant, click ![get help.](media/get-help-icon.PNG).
 
-6. To give feedback to help improve the new Exchange admin center, click ![give feedback](media/give-feedback-icon.PNG). While it's not necessary to provide your email ID, you can click **You can contact me about this feedback** checkbox and provide your email ID to help the team to resolve your concerns faster.
+6. To give feedback to help improve the new Exchange admin center, click ![give feedback.](media/give-feedback-icon.PNG). While it's not necessary to provide your email ID, you can click **You can contact me about this feedback** checkbox and provide your email ID to help the team to resolve your concerns faster.
 
-![New EAC feature pane](media/new-eac-home-page-feature-pane.png)
+![New EAC feature pane.](media/new-eac-home-page-feature-pane.png)
 
 ### Feature pane
 
 Here are the features available in the left-hand navigation.
-
-<br>
-
-****
 
 |Area|What you do here|
 |---|---|
@@ -79,7 +75,6 @@ Here are the features available in the left-hand navigation.
 |**Insights**|Use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.|
 |**Organization**|Manage organization sharing and apps for Outlook.|
 |**Public folders**|Manage public folders and public folder mailboxes.|
-|
 
 > [!NOTE]
 > You can also access **Classic Exchange admin center** and **Microsoft 365 admin center**, by selecting them at the bottom of left navigation panel.
@@ -96,7 +91,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 When you select a tab, in most cases you'll see a list view. The list view in the new Exchange admin center is designed to remove limitations that existed in the Classic Exchange admin center and Exchange Control Panel.
 
-![New EAC tabs](media/new-eac-home-page-details-pane.png)
+![New EAC tabs.](media/new-eac-home-page-details-pane.png)
 
 ### Details pane
 

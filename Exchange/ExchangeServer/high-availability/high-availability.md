@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
 ms.reviewer: 
 title: High availability and site resilience
@@ -16,7 +16,7 @@ manager: serdars
 
 ---
 
-# High availability and site resilience
+# High availability and site resilience in Exchange Server
 
 You can protect your Exchange Server mailbox databases and the data they contain by configuring your Exchange servers and databases for high availability and site resilience. Exchange Server minimizes the cost and complexity of deploying a highly available and resilient messaging solution while providing high levels of service and data availability and support for very large mailboxes.
 
@@ -171,8 +171,8 @@ If you're a partner seeking information about the third-party API, contact your 
 
 The following table contains links to topics that will help you learn about and manage DAGs, mailbox database copies, and backup and restore for Exchange Server.
 
-|**Topic**|**Description**|
-|:-----|:-----|
+|Topic|Description|
+|---|---|
 |[Database availability groups](database-availability-groups/database-availability-groups.md)|Learn about DAGs, Active Manager, Datacenter Activation Coordination (DAC) mode, and mailbox database copies.|
 |[Plan for high availability and site resilience](plan-ha.md)|Learn about the general, hardware, network, software, witness server, and other requirements and best practices for DAGs.|
 |[Deploying high availability and site resilience](deploy-ha.md)|Explore an example deployment scenario for deploying and configuring DAGs.|

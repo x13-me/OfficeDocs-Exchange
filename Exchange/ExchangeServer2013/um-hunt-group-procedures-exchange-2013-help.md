@@ -1,10 +1,12 @@
 ---
 title: 'UM hunt group procedures: Exchange 2013 Help'
 TOCTitle: UM hunt group procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Unified Messaging hunt group procedures in Microsoft Exchange Server
 ms.assetid: 4251c24a-9616-4923-92da-ed783aa8d802
 f1.keywords:
 - NOCSH

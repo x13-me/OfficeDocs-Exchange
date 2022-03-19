@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.userthrottling(v=
 ms:contentKeyID: 49720850
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to troubleshooting the UserThrottling Health set in Microsoft exchange
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

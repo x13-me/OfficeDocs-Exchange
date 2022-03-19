@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn879084(v=EXCHG.150)
 ms:contentKeyID: 63917937
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Performance recommendations for Exchange Server 2013 
 author: msdmaguire
 f1.keywords:
 - NOCSH

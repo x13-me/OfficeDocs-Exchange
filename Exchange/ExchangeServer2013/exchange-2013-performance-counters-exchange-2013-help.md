@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Dn904093(v=EXCHG.150)
 ms:contentKeyID: 63917938
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Using performance counters to troubleshooting Exchange Server
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -27,9 +29,9 @@ The following tables displays acceptable thresholds and information about Exchan
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -68,9 +70,9 @@ The following tables displays acceptable thresholds and information about proces
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -114,9 +116,9 @@ The following tables displays acceptable thresholds and information about memory
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -143,9 +145,9 @@ The following tables displays acceptable thresholds and information about .NET F
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -177,9 +179,9 @@ The following tables displays acceptable thresholds and information about common
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -216,9 +218,9 @@ The following tables displays acceptable thresholds and information about common
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -263,9 +265,9 @@ The following table shows active log I/O latency requirements counters and their
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -327,9 +329,9 @@ The following tables displays acceptable thresholds and information about ASP.NE
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -376,9 +378,9 @@ The following tables displays acceptable thresholds and information about RPC Cl
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -425,8 +427,8 @@ The following tables displays information about HTTP Proxy counters.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -473,9 +475,9 @@ The following tables displays acceptable thresholds and information about Inform
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -517,8 +519,8 @@ The following tables displays information about client connection counters and I
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -582,8 +584,8 @@ The following tables displays information about Exchange Workload Management cou
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

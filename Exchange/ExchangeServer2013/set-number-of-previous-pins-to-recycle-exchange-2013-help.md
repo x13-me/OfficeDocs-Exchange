@@ -1,9 +1,11 @@
 ---
 title: 'Set the number of previous voice mail PINs to recycle: Exchange 2013 Help'
 TOCTitle: Set the number of previous voice mail PINs to recycle
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+ms.topic: how-to
+description: How to set the number of previous voice mail PINs to recycle in Microsoft Exchange Server
 ms.reviewer:
 ms.assetid: b094e68e-c493-4576-a6b1-4c780e635405
 f1.keywords:
@@ -43,9 +45,9 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
 
-2. In the list view, select the dial plan you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the dial plan you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
-3. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to change, and then click **Edit** ![Edit icon](images/ITPro_EAC_EditIcon.gif).
+3. On the **UM dial plan** page, under **UM Mailbox Policies**, select the UM mailbox policy you want to change, and then click **Edit** ![Edit icon.](images/ITPro_EAC_EditIcon.gif).
 
 4. Click **PIN policies**, and next to **PIN recycle count**, enter a value between 1 and 20.
 

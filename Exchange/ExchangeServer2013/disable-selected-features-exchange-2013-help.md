@@ -1,10 +1,12 @@
 ---
 title: 'Disable selected features for Outlook Voice Access users: Exchange 2013 Help'
 TOCTitle: Disable selected features for Outlook Voice Access users
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to disable features for Outlook Voice Access users in Exchange Server
 ms.assetid: 37421edf-af60-4ca9-9e8b-262b8b851607
 f1.keywords:
 - NOCSH

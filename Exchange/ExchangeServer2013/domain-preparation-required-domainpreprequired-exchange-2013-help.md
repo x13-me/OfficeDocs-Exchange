@@ -4,9 +4,11 @@ TOCTitle: Domain preparation required_DomainPrepRequired
 ms:assetid: f6feae6f-7404-4b1f-887f-ed63c26a6bcd
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.domainpreprequired(v=EXCHG.150)
 ms:contentKeyID: 46629205
+ms.topic: article
+description: Domain preparation required_DomainPrepRequired - Exchange 2013 Help.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

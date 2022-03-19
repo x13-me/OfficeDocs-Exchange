@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.scom.monitoring(v=EXCH
 ms:contentKeyID: 49720759
 ms.reviewer:
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to troubleshoot the Monitoring health set in Exchange 2013
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -1,24 +1,24 @@
 ---
-localization_priority: Normal
-description: Learn how to use message trace in the classic Exchange admin center to find out what happened to email messages.
+ms.localizationpriority: medium
 ms.topic: troubleshooting
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 74a9fc59-7e0e-4832-baf9-2a86418b0079
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Run a message trace and view the results in the Exchange admin center
+title: Run a message trace and view the results in the Exchange admin center in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 audience: ITPro
+description: How to run a message trace in the classic Exchange admin center in Exchange Online
 ms.service: exchange-online
 manager: serdars
 
 ---
 
-# Run a message trace in the classic EAC
+# Run a message trace in the classic EAC in Exchange Online
 
 > [!NOTE]
 > Message trace is available in the modern Exchange admin center. For more information, see [Message trace in the modern Exchange admin center](message-trace-modern-eac.md). The **Exchange message trace** link in the Microsoft 365 Defender portal opens message trace in the modern EAC.
@@ -130,7 +130,8 @@ In the events section, the following fields provide information about the events
   - **TRANSFER**: Recipients were moved to a bifurcated message because of content conversion, message recipient limits, or agents.
   - **DEFER**: The message delivery was postponed and may be re-attempted later.
   - **RESOLVED**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
-  - **DLP rule**: The message had a DLP rule or sensitivity label match in this message.
+  - **DLP rule**: The message had a DLP rule match in this message.
+  - **Sensitivity label:** A server-side labeling event occurred. For example, a label was automatically added to a message that includes an action to encrypt or was added via the web or mobile client. This action is completed by the Exchange server and logged. A label added via Outlook will not be included in the event field.
 
     > [!TIP]
     > Additional events may appear. For more information about these events, see [Event types in the message tracking log](../../../ExchangeServer/mail-flow/transport-logs/message-tracking.md#event-types-in-the-message-tracking-log).
@@ -210,11 +211,7 @@ Additionally, the **custom_data** field may contain values that are specific to 
 
 A string beginning with S:SFA is an entry from the spam filter agent and provides the following key details:
 
-<br>
-
-****
-
-|Log Information|Description|
+|Log information|Description|
 |---|---|
 |SFV=NSPM|The message was marked as non-spam and was sent to the intended recipients.|
 |SFV=SPM|The message was marked as spam by the content filter.|
@@ -228,11 +225,10 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |DI=SJ|The message was sent to the recipient's Junk Email folder.|
 |DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 |DI=SO|The message was routed through the normal outbound delivery pool.|
-|SFS=[a]|SFS=[b]|This denotes that spam rules were matched.|
+|SFS=[a] <br> SFS=[b]|This denotes that spam rules were matched.|
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |H=[helostring]|The HELO or EHLO string of the connecting mail server.|
 |PTR=[ReverseDNS]|The PTR record of the sending IP address, also known as the reverse DNS address.|
-|
 
 When a message is filtered for spam, a sample custom_data entry would look similar to the following:
 
@@ -241,10 +237,6 @@ When a message is filtered for spam, a sample custom_data entry would look simil
 #### Malware Filter Agent (S:AMA)
 
 A string beginning with S:AMA is an entry from the anti-malware agent and provides the following key details:
-
-<br>
-
-****
 
 |Log Information|Description|
 |---|---|
@@ -260,7 +252,6 @@ A string beginning with S:AMA is an entry from the anti-malware agent and provid
 |Action=b|The message was blocked.|
 |Name=\<*malware*\>|The name of the malware that was detected.|
 |File=\<*filename*\>|The name of the file that contained the malware.|
-|
 
 When a message contains malware, a sample custom_data entry would look similar to the following:
 
@@ -270,17 +261,12 @@ When a message contains malware, a sample custom_data entry would look similar t
 
 A string beginning with S:TRA is an entry from the Transport Rule agent and provides the following key details:
 
-<br>
-
-****
-
 |Log Information|Description|
 |---|---|
 |ETR\|ruleId=[guid]|The rule ID that was matched.|
 |St=[datetime]|The date and time (in UTC) when the rule match occurred.|
 |Action=[ActionDefinition]|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
 |Mode=Enforce|The mode of the rule. Possible values are: <ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li></ul>|
-|
 
 When a message matches a mail flow rule, a sample custom_data entry would look similar to the following:
 

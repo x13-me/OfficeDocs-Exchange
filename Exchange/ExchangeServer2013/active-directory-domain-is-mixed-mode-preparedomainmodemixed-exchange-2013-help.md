@@ -5,8 +5,10 @@ ms:assetid: 97c9f480-7a2b-482e-8f51-f7b965fe1556
 ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.preparedomainmodemixed(v=EXCHG.150)
 ms:contentKeyID: 46629042
 ms.reviewer: 
+description: "How to resolve the issue when Active Directory domain is mixed mode\_PrepareDomainModeMixed."
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

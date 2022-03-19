@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn how to search for and purge messages from Exchange Server 2016 and Exchange Server 2019 mailboxes.'
 ms.topic: article
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 ms.reviewer:
 title: Search for and delete messages in Exchange Server

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ552409(v=EXCHG.150)
 ms:contentKeyID: 48679374
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: Exchange admin center in Microsoft Exchange Server 2013 FAQ
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -85,8 +87,8 @@ The following table lists the changes to the Exchange 2013 Toolbox:
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

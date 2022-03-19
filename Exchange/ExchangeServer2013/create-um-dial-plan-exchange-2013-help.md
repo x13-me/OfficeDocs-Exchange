@@ -1,10 +1,12 @@
 ---
 title: 'Create a UM dial plan: Exchange 2013 Help'
 TOCTitle: Create a UM dial plan
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer:
+ms.topic: article
+description: How to create a UM dial plan in Exchange Server
 ms.custom:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMDialPlanWizardForm.CreateUMDialPlanWizardPage'
 ms.assetid: 963ff2e1-515d-439a-953a-664174e5e283
@@ -36,7 +38,7 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 ## Use the EAC to create a UM dial plan
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, and then click **New** ![Add Icon.](images/ITPro_EAC_AddIcon.gif).
 
 2. On the **New UM dial plan** page, complete the following boxes:
 

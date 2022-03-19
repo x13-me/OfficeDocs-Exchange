@@ -1,6 +1,6 @@
 ---
 title: "Address list attributes"
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: dstrome
@@ -9,7 +9,7 @@ f1.keywords:
 audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
@@ -21,8 +21,8 @@ description: "Address list attributes can be copied by the Hybrid Configuration 
 
 The following attributes of Address lists are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-|**AddressList**|**Available In**|
-|:-----|:-----|
+|AddressList|Available In|
+|---|---|
 |Conditional Company|Exchange 2010, 2013, 2016, 2019|
 |ConditionalCustomAttribute1|Exchange 2010, 2013, 2016, 2019|
 |ConditionalCustomAttribute10|Exchange 2010, 2013, 2016, 2019|

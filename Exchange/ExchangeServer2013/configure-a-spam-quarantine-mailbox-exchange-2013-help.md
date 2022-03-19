@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/Bb123746(v=EXCHG.150)
 ms:contentKeyID: 49300568
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: How to configure a spam quarantine mailbox in Exchange Server.
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -81,7 +83,7 @@ This example sends all messages that exceed the spam quarantine threshold to spa
 Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
 ```
 
-## How do you know this step worked?
+### How do you know this step worked?
 
 To verify that you have successfully specified the spam quarantine mailbox, do the following:
 

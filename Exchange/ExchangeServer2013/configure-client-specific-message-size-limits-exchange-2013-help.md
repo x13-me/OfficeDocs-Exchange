@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Hh529949(v=EXCHG.150)
 ms:contentKeyID: 50934227
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+ms.author: serdars
 author: msdmaguire
+description: How to configure client-specific message size limits in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -25,10 +27,10 @@ However, there are client-specific message size limits you can configure for Out
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -96,10 +98,10 @@ To change the maximum message size for ActiveSync clients, you need to change th
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -145,10 +147,10 @@ To change the maximum message size for ActiveSync clients, you need to change th
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

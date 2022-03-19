@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ff461940(v=EXCHG.150)
 ms:contentKeyID: 49319937
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: Information Rights Management logging in Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
@@ -45,9 +47,9 @@ The following table shows the logs generated on different server roles.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -120,8 +122,8 @@ IRM log files are text files that contain data in comma-separated value (CSV) fo
 
     <table>
     <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
+    <col/>
+    <col/>
     </colgroup>
     <thead>
     <tr class="header">
@@ -188,8 +190,8 @@ On each server role that has IRM features enabled, IRM logging is enabled by def
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

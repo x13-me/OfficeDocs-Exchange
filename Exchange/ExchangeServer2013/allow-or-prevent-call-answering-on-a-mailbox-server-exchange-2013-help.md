@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Aa997908(v=EXCHG.150)
 ms:contentKeyID: 49315413
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
 author: msdmaguire
+description: How to allow or prevent call answering on a Mailbox server in Microsoft Exchange Server
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

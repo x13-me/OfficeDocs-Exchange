@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: As an admin, you can set up both private and public attachment handling in Outlook on the web depending on how you configure your Outlook on the web mailbox policies. The settings for private (internal) and public (external) networks define how users can open, view, send, or receive attachments depending on whether a user is signed in to Outlook on the web on a computer that is part of a private or of a public network.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 2b5b8f6a-1bce-4872-8989-bac53ffafaa4
 ms.reviewer: 
@@ -28,8 +28,8 @@ Although there are both private (internal network) and public (external network)
 
 The Outlook on the web mailbox policy parameters in the following table should be set to `$true` to enable an admin to control attachment handling for public computers and networks.
 
-|**Parameter***|**Description**|
-|:-----|:-----|
+|Parameter*|Description|
+|---|---|
 |_DirectFileAccessOnPublicComputersEnabled_|Specifies left-click and other options available for attachments when the user has signed in to Outlook on the web from a computer outside of a private or corporate network. If this parameter is set to `$true`, **Open** and other options are available. If it's set to `$false`, the **Open** option is disabled.|
 |_ForceWacViewingFirstOnPublicComputers_|Specifies whether a user who signed in to Outlook on the web from a computer outside of a private or corporate network can open an Office file directly without first viewing it as a webpage.|
 |_WacViewingOnPublicComputersEnabled_|Specifies whether a user who has signed into Outlook on the web from a computer outside of the corporate network can view supported Office files using Outlook on the web.|
@@ -70,9 +70,7 @@ Set-OrganizationConfig -PublicComputersDetectionEnabled $true
 **Note**: Setting this parameter to `$true` won't affect the settings for the following parameters:
 
 - _ForceWacViewingFirstOnPublicComputers_
-
 - _WSSAccessOnPublicComputersEnabled_
-
 - _UNCAccessOnPublicComputersEnabled_
 
 ## Task 2 - Add and create claim rules in AD FS 2.0
@@ -89,9 +87,17 @@ You must create a custom claim rule because an AD FS server relies on the presen
 
 5. On the **Configure Rule** page under **Claim rule name** type the display name for this rule.
 
-6. Under **Custom rule**, input the following: `exists ([Type == "http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"]) => issue(Type = "http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value = "false");`
+6. Under **Custom rule**, input the following text:
 
-7. Next, input the following: `NOT exists ([Type == "http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"]) => issue(Type = "http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value = "true");`
+   ```text
+   exists ([Type == "http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"]) => issue(Type = "http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value = "false");
+   ```
+
+7. Next, input the following text:
+
+   ```text
+   NOT exists ([Type == "http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"]) => issue(Type = "http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value = "true");
+   ```
 
 8. Click **Finish**.
 
@@ -109,7 +115,7 @@ You must create a custom claim rule because an AD FS server relies on the presen
 
     File access can be controlled based on whether a user has logged on to a public or private computer. The option for users to select private computer access or public computer access is available only when you're using forms-based authentication. All other forms of authentication default to private computer access.
 
-  - **Direct file access**: Select this check box if you want to enable direct file access. Direct file access lets users open files attached to email messages.
+   **Direct file access**: Select this check box if you want to enable direct file access. Direct file access lets users open files attached to email messages.
 
 4. Click **Save** to update the policy.
 
@@ -130,63 +136,33 @@ Some attachments might be removed or blocked by antivirus software used by your 
 **File name extensions allowed by default**:
 
 - .avi
-
 - .bmp
-
 - .doc
-
 - .doc
-
 - .docm
-
 - .docx
-
 - .gif
-
 - .jpeg
-
 - .mp3
-
 - .one
-
 - .pdf
-
 - .png
-
 - .ppsm
-
 - .ppsx
-
 - .ppt
-
 - .pptm
-
 - .pptx
-
 - .pub
-
 - .rpmsg
-
 - .rtf
-
 - .tif
-
 - .txt
-
 - .vsd
-
 - .wav
-
 - .wma
-
 - .wmv
-
 - .xls
-
 - .xls
-
 - .xlsb
-
 - .xlsm
-
 - .xlsx

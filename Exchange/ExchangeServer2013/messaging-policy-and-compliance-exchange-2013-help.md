@@ -5,8 +5,10 @@ ms:assetid: 65f20a20-27a4-4f6e-9b27-f8705d65b8d9
 ms:mtpsurl: https://technet.microsoft.com/library/Aa998599(v=EXCHG.150)
 ms:contentKeyID: 48385169
 ms.reviewer: 
+ms.topic: article
+description: About messaging policy and compliance in Exchange 2013
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -29,9 +31,9 @@ The following table provides an overview of the messaging policy and compliance 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

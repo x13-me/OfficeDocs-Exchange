@@ -6,8 +6,10 @@ ms:mtpsurl: https://technet.microsoft.com/library/Gg309147(v=EXCHG.150)
 ms:contentKeyID: 53382779
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
+ms.topic: article
+description: How to import custom prompts from Exchange 2007 to Exchange 2013
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150

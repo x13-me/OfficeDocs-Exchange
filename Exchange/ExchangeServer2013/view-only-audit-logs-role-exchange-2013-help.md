@@ -5,8 +5,10 @@ ms:assetid: 9298fe59-0a16-4a09-bdb8-514d1cea6e2f
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461933(v=EXCHG.150)
 ms:contentKeyID: 49289353
 ms.reviewer: 
+ms.topic: article
+description: The View-Only Audit Logs management role in Microsoft Exchange Server enables administrators and specialist users to search the administrator audit logs in an organization
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -37,15 +39,15 @@ This role has role assignments to one or more role assignees. The following tabl
 
 ### Default management role assignments for this role
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

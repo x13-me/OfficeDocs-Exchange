@@ -4,9 +4,11 @@ TOCTitle: Clean up the Recoverable Items folder
 ms:assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms:mtpsurl: https://technet.microsoft.com/library/Ff678798(v=EXCHG.150)
 ms:contentKeyID: 50470877
+ms.topic: article
+description: Clean up the Recoverable Items folder.
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - CSH

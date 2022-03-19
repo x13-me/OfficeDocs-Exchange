@@ -1,9 +1,9 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Summary: Learn about subscribing an Edge Transport server to your internal Exchange Server 2016 or Exchange Server 2019 organization, which provides end-to-end mail flow, recipient look-up, and safelist aggregation.'
 ms.topic: overview
-author: msdmaguire
-ms.author: dmaguire
+author: JoanneHendrickson
+ms.author: jhendr
 ms.assetid: 3addd71a-4165-401f-a009-002bcd8baba6
 ms.reviewer: 
 title: Edge Subscriptions
@@ -16,9 +16,12 @@ manager: serdars
 
 ---
 
-# Edge Subscriptions
+# Edge Subscriptions in Exchange Server
 
 Edge Subscriptions are used to populate the Active Directory Lightweight Directory Services (AD LDS) instance on the Edge Transport server with Active Directory data. Although creating an Edge Subscription is optional, subscribing an Edge Transport server to the Exchange organization provides a simpler management experience and enhances antispam features. You need to create an Edge Subscription if you plan to use recipient lookup or safelist aggregation, or if you plan to help secure SMTP communications with partner domains by using Mutual Transport Layer Security (MTLS).
+
+> [!NOTE]
+> The Edge Subscription is mandatory if Edge Transport should handle hybrid mail flow. Organization headers are only promoted between Edge Transport and Mailbox servers through the Direct Trust Authentication (aka Mutual TLS) and Edge Subscription is required to achieve this authentication method.
 
 ## Edge Subscription process
 
@@ -145,7 +148,7 @@ When you import the Edge Subscription file to the Active Directory site by runni
 This example subscribes an Edge Transport server to the specified site and automatically creates the Internet Send connector and the Send connector from the Edge Transport server to the Mailbox servers.
 
 ```PowerShell
-New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+New-EdgeSubscription -FileData ([System.IO.File]::ReadAllBytes('C:\Data\EdgeSubscriptionInfo.xml')) -Site "Default-First-Site-Name"
 ```
 
 > [!NOTE]
@@ -169,8 +172,8 @@ When you run the **New-EdgeSubscription** cmdlet on the Mailbox server, the _Cre
 
 **Automatic inbound Send connector configuration**
 
-|**Property**|**Value**|
-|:-----|:-----|
+|Property|Value|
+|---|---|
 |_Name_|EdgeSync - Inbound to \< _Site Name_\>|
 |_AddressSpaces_|`SMTP:--;1` <br/> The `--` value in the address space represents all authoritative and internal relay accepted domains for the Exchange organization. Any messages the Edge Transport server receives for these accepted domains are routed to this Send connector and relayed to the smart hosts.|
 |_SourceTransportServers_|\< _Edge Subscription name_\>|
@@ -186,8 +189,8 @@ When you run the **New-EdgeSubscription** cmdlet on the Mailbox server, the _Cre
 
 **Automatic Internet Send connector configuration**
 
-|**Property**|**Value**|
-|:-----|:-----|
+|Property|Value|
+|---|---|
 |_Name_|EdgeSync - \< _Site Name_\> to Internet|
 |_AddressSpaces_|`SMTP:*;100`|
 |_SourceTransportServers_|\< _Edge Subscription name_\> <br/> The name of the Edge Subscription is the same as the name of the subscribed Edge Transport server.|
@@ -263,8 +266,8 @@ The following table lists the EdgeSync properties related to locking and leasing
 
 **EdgeSync lease properties**
 
-|**Parameter**|**Default value**|**Description**|
-|:-----|:-----|:-----|
+|Parameter|Default value|Description|
+|---|---|---|
 |_LockDuration_|`00:05:00` (5 minutes)|This setting determines how long a particular EdgeSync service will acquire a lock. If the EdgeSync service on the Mailbox server that's holding this lock doesn't respond, after five minutes the EdgeSync service on another Mailbox server will take over the lease. Forcing immediate EdgeSync synchronization doesn't override this setting.|
 |_OptionDuration_|`01:00:00` (1 hour)|This setting determines how long an EdgeSync service can declare a lease option on an Edge Transport server. If the EdgeSync service holding the lease is unavailable and doesn't restart during this option period, no other Exchange EdgeSync service will take over the lease option unless you force EdgeSync synchronization.|
 |_LockRenewalDuration_|`00:01:00` (1 minute)|This setting determines how frequently the lock field is updated when an EdgeSync service has acquired a lock to an Edge Transport server.|

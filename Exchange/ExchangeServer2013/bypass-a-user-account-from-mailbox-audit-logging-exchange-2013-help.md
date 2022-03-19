@@ -4,9 +4,10 @@ TOCTitle: Bypass a user account from mailbox audit logging
 ms:assetid: 98a87071-fe31-4b67-beb8-a73799e54df2
 ms:mtpsurl: https://technet.microsoft.com/library/Ff461934(v=EXCHG.150)
 ms:contentKeyID: 49300631
+ms.topic: article
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -1,10 +1,12 @@
 ---
 title: 'Faxing procedures: Exchange 2013 Help'
 TOCTitle: Faxing procedures
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
 ms.reviewer: 
+ms.topic: article
+description: Fax procedures in Exchange Server references
 ms.assetid: 6732a834-c9d2-4757-8ad9-44aeff6be9f7
 f1.keywords:
 - NOCSH

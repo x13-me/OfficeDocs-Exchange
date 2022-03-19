@@ -4,9 +4,11 @@ TOCTitle: Add Mailbox and Client Access servers to a SIP URI dial plan
 ms:assetid: 17fed308-ff0d-4e61-b9f9-e6680b6eccaa
 ms:mtpsurl: https://technet.microsoft.com/library/Aa996399(v=EXCHG.150)
 ms:contentKeyID: 51439477
-ms.reviewer: 
+ms.reviewer:
+description: How to add Mailbox and Client Access servers to a SIP URI dial plan in Exchange Server
+ms.topic: article
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -40,11 +42,11 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Mailbox server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Mailbox server you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
-4. Under **UM Service settings** \> **Associated dial plans**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+4. Under **UM Service settings** \> **Associated dial plans**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 5. In the **Select a UM Dial Plan** window, select the SIP URI dial plan, click **Add**, click **OK**, and then click **Save**.
 
@@ -72,11 +74,11 @@ Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2
 
 1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2. In the list view, select the Client Access server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Client Access server you want to modify, and then click **Edit** ![Edit icon.](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
 3. On the **Exchange Server** page, click **Unified Messaging**.
 
-4. Under **UM Call Router settings** \> **Associated dial plans**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+4. Under **UM Call Router settings** \> **Associated dial plans**, click **Add** ![Add Icon.](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
 5. In the **Select a UM Dial Plan** window, select the SIP URI dial plan, click **Add**, click **OK**, and then click **Save**.
 

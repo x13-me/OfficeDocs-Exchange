@@ -1,9 +1,9 @@
 ---
 description: Learn how to use mail flow rules to route email messages based on their contents in Exchange Online.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: jhendr
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.service: exchange-online
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
 ms.collection: 
@@ -18,7 +18,7 @@ title: Use mail flow rules to route email based on a list of words, phrases, or 
 
 ---
 
-# Use mail flow rules to route email based on a list of words, phrases, or patterns
+# Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online
 
 In Exchange Online organizations or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use mail flow rules (also known as transport rules) to find and act on messages that contains specific words. This action can help your users comply with your organization's email policies.
 
@@ -32,7 +32,7 @@ If your list of words or phrases is short, you can create a rule using the Excha
 
 This example blocks messages with common typos.
 
-![Rule showing blocking a message based on text patterns](../../media/a8489cbb-be59-4890-ae30-1431703eeb88.png)
+![Rule showing blocking a message based on text patterns.](../../media/a8489cbb-be59-4890-ae30-1431703eeb88.png)
 
 ## Example 2: Use a long list of unacceptable words
 
@@ -47,17 +47,12 @@ New-TransportRule -Name "Block messages with unacceptable words" -SubjectOrBodyC
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-<br>
-
-****
-
 |Expression|Matches|
 |---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|
 |[*character_group*]|Any single character in *character_group*.|
-|
 
 For example, this text file contains common misspellings of Microsoft.
 

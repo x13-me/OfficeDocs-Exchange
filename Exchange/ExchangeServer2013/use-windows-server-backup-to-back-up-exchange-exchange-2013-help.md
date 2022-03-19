@@ -5,8 +5,10 @@ ms:assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
 ms:mtpsurl: https://technet.microsoft.com/library/Dd876854(v=EXCHG.150)
 ms:contentKeyID: 48384847
 ms.reviewer: 
+ms.topic: how-to
+description: How to use Windows Server Backup to back up in Microsoft Exchange
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH

@@ -6,7 +6,9 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ150519(v=EXCHG.150)
 ms:contentKeyID: 47560017
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.author: serdars
+ms.topic: article
+description: About Mailbox and Client Access servers in Exchange 
 author: msdmaguire
 f1.keywords:
 - NOCSH
@@ -25,8 +27,8 @@ The following table contains links to topics that will help you learn about and 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">

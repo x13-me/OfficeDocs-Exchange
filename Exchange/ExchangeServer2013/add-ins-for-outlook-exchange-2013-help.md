@@ -1,9 +1,11 @@
 ---
 title: 'Add-ins for Outlook: Exchange 2013 Help'
 TOCTitle: Add-ins for Outlook
-ms.author: dmaguire
+ms.author: serdars
 author: msdmaguire
 manager: serdars
+description: About available add-ins for Outlook in Exchange Server
+ms.topic: article
 ms.reviewer:
 ms.assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 f1.keywords:
@@ -27,7 +29,7 @@ Add-ins for Outlook are applications that extend the usefulness of Outlook clien
 Outlook clients supports a variety of add-ins that are available through the Office Store. Outlook also supports custom add-ins that you can create and distribute to users in your organization.
 
 > [!NOTE]
-> Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> ![Add Icon](images/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
+> Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> ![Add Icon.](images/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider.
 
 > [!NOTE]
 > Some add-ins for Outlook are installed by default. Default add-ins for Outlook only activate on English language content. For example, German postal addresses in the message body won't activate the Bing Maps add-in.

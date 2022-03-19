@@ -6,14 +6,16 @@ ms:mtpsurl: https://technet.microsoft.com/library/ms.exch.setupreadiness.delegat
 ms:contentKeyID: 46628932
 ms.reviewer: 
 manager: serdars
-ms.author: dmaguire
+ms.topic: article
+description: Installation of first Exchange server in the organization can't be delegated  
+ms.author: serdars
 author: msdmaguire
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
 ---
 
-# Installation of the first Exchange server in the organization can't be delegated
+# Installation of first Exchange server in the organization can't be delegated
 
 _**Applies to:** Exchange Server 2013_
 

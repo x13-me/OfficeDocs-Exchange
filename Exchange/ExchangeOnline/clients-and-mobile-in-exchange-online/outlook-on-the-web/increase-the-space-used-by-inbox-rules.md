@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to increase or decrease the space that's available to store Inbox rules in mailboxes in an Exchange Online organization.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 3f01edde-1cdc-4891-ad9d-7d01582664e9
 ms.reviewer: 

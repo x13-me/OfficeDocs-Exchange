@@ -1,8 +1,8 @@
 ---
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online.
 ms.topic: article
-author: msdmaguire
+author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 ms.reviewer: 
@@ -66,9 +66,9 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 1. Go to **Mail flow** \> **Rules**.
 
 2. Create the rule by using one of the following options:
-   - To create a rule from a template, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and select a template.
-   - To copy a rule, select the rule, and then select **Copy** ![Copy Icon](../../media/ITPro_EAC_CopyIcon.gif).
-   - To create a new rule from scratch, **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+   - To create a rule from a template, click **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and select a template.
+   - To copy a rule, select the rule, and then select **Copy** ![Copy Icon.](../../media/ITPro_EAC_CopyIcon.gif).
+   - To create a new rule from scratch, **Add** ![Add Icon.](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
 
 3. In the **New rule** dialog box, name the rule, and then select the conditions and actions for this rule:
    1. In **Apply this rule if...**, select the condition you want from the list of available conditions.
@@ -179,17 +179,12 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 You can also use the Set-TransportRule cmdlet to modify existing mail flow rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](/powershell/module/exchange/set-transportrule)
 
-<br>
-
-****
-
 |Condition Name in the EAC|Condition name in Exchange Online PowerShell|Description|
 |---|---|---|---|
 |**Stop Processing Rules**|_StopRuleProcessing_|Enables you to stop processing additional rules|
 |**Header/Envelope matching**|_SenderAddressLocation_|Enables you to examine the SMTP message envelope to ensure the header and envelop match|
 |**Audit severity**|_SetAuditSeverity_|Enables you to select a severity level for the audit|
 |**Rule modes**|_Mode_|Enables you to set the mode for the rule|
-|
 
 ## Set the priority of a mail flow rule
 
@@ -259,7 +254,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, do th
 ### Use the EAC to remove a mail flow rule
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
-2. Select the rule you want to remove and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+2. Select the rule you want to remove and then click **Delete** ![Delete icon.](../../media/ITPro_EAC_DeleteIcon.gif).
 
 ### Use Exchange Online PowerShell to remove a mail flow rule
 
