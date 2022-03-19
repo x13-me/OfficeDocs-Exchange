@@ -124,9 +124,8 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataON /PrepareAD /Org
 
 > [!IMPORTANT]
 > If you have a hybrid deployment configured between your on-premises organization and Exchange Online, add the _/TenantOrganizationConfig_ switch to the command.
-
-> [!NOTE]
-> For existing environments you do not have to specify the parameters OrganizationName and TenantOrganizationConfig!
+>
+> For existing environments, you don't need to use the _/OrganizationName_ and _/TenantOrganizationConfig_ switches.
 
 As in Step 1, you'll need to wait while Active Directory replicates the changes from this step to all of your domain controllers before you proceed, and you can use the `repadmin` tool to check the progress of the replication.
 
