@@ -83,8 +83,8 @@ Users may receive multiple authentication prompts depending on:
 
 The authentication prompt experience that users can expect is described in the following table.
 
-|**Authentication method**|**Client computer**|**Authentication prompt experience**|
-|:-----|:-----|:-----|
+|Authentication method|Client computer|Authentication prompt experience|
+|---|---|---|
 |Identity federation|Internal Internet connection|Single prompt|
 |Identity Federation|External Internet connection|Double prompt|
 |No Identity federation|Domain joined (internal or external)|Double prompt|

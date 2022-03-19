@@ -52,10 +52,6 @@ The following tables identify the operating system platforms on which each versi
 > [!IMPORTANT]
 > Releases of Windows Server and Windows that aren't listed in the tables below are not supported for use with any version or release of Exchange.
 
-<br>
-
-****
-
 |Server operating system|Exchange 2019|Exchange 2016 CU3 and later|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|:---:|
 |Windows Server 2022|Not supported|Not supported|Not supported|Not supported|Not supported|
@@ -65,14 +61,9 @@ The following tables identify the operating system platforms on which each versi
 |Windows Server 2012|Not supported|Supported|Supported|Supported|Supported|
 |Windows Server 2008 R2 SP1|Not supported|Not supported|Not supported|Supported|Supported|
 |Windows Server 2008 SP2|Not supported|Not supported|Not supported|Not supported|Supported|
-|
 
 > [!NOTE]
 > Client operating systems only support the Exchange management tools.
-
-<br>
-
-****
 
 |Client operating system|Exchange 2019|Exchange 2016 CU3 and later|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|
@@ -80,15 +71,10 @@ The following tables identify the operating system platforms on which each versi
 |Windows 10|Supported|Supported|Not supported|Not supported|
 |Windows 8.1|Not supported|Supported|Supported|Not supported|
 |Windows 8|Not supported|Not supported|Supported|Supported|
-|
 
 ## Supported Active Directory environments
 
 The following table identifies the Active Directory environments that Exchange can communicate with. An Active Directory server refers to both writable global catalog servers and to writable domain controllers. Read-only global catalog servers and read-only domain controllers are not supported.
-
-<br>
-
-****
 
 |Operating system environment|Exchange 2019|Exchange 2016 CU12 and later|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -100,11 +86,6 @@ The following table identifies the Active Directory environments that Exchange c
 |Windows Server 2008 R2 SP1 Active Directory servers|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
 |Windows Server 2008 SP2 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|
 |Windows Server 2003 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|
-|
-
-<br>
-
-****
 
 |AD forest functional level|Exchange 2019|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -114,15 +95,10 @@ The following table identifies the Active Directory environments that Exchange c
 |Windows Server 2008 R2|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|
 |Windows Server 2008|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|
 |Windows Server 2003|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|
-|
 
 ## Web browsers supported for use with the premium version of Outlook Web App or Outlook on the web
 
 The following table identifies the web browsers supported for use together with the premium version of Outlook Web App or Outlook on the web.
-
-<br>
-
-****
 
 |Browser|Exchange 2019|Exchange 2016|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|
@@ -133,15 +109,10 @@ The following table identifies the web browsers supported for use together with 
 |Internet Explorer 8|Not supported|Not supported|Supported|Supported|
 |Internet Explorer 7|Not supported|Not supported|Not supported|Supported|
 |Firefox|Current release of Firefox<sup>\*</sup>|Current release of Firefox<sup>\*</sup>|Not supported|Not supported|
-|Firefox 3.0.1 or later|Not supported|Not supported|Not supported|Supported|
-|Firefox 12 or later|Not supported|Not supported|Supported|Supported|
 |Safari|Current release of Safari|Current release of Safari|Not supported|Not supported|
 |Safari 3.1 or later|Not supported|Not supported|Not supported|Supported|
 |Safari 5.0 or later|Not supported|Not supported|Supported|Supported|
 |Chrome|Current release of Chrome<sup>\*</sup>|Current release of Chrome<sup>\*</sup>|Not supported|Not supported|
-|Chrome 3.0.195 or later|Not supported|Not supported|Not supported|Supported|
-|Chrome 18 or later|Not supported|Not supported|Supported|Supported|
-|
 
 <sup>\*</sup> Current release of Firefox or Chrome refers to the latest version or the immediately previous version.
 
@@ -151,10 +122,6 @@ The following table identifies the web browsers supported for use together with 
 
 > [!NOTE]
 > Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue can't be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
-
-<br>
-
-****
 
 |Browser|Exchange 2019|Exchange 2016|Exchange 2013|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|
@@ -168,17 +135,12 @@ The following table identifies the web browsers supported for use together with 
 |Firefox|Not supported|Current release of Firefox<sup>\*</sup>|Supported|Supported|
 |Chrome|Not supported|Current release of Chrome<sup>\*</sup>|Not supported|Not supported|
 |Opera|Not supported|Not supported|Supported|Supported|
-|
 
 <sup>\*</sup> Current release of Firefox or Chrome refers to the latest version or the immediately previous version.
 
 ## Web browsers supported for use of S/MIME with Outlook Web App or Outlook on the web
 
 The following table identifies the web browsers supported for the use of S/MIME together with Outlook Web App or Outlook on the web.
-
-<br>
-
-****
 
 |Browser|Exchange 2019|Exchange 2016|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|
@@ -188,19 +150,15 @@ The following table identifies the web browsers supported for the use of S/MIME 
 |Internet Explorer 9|Not supported|Not supported|Supported|Supported|
 |Internet Explorer 8|Not supported|Not supported|Not supported|Supported|
 |Internet Explorer 7|Not supported|Not supported|Not supported|Supported|
-|
 
 ## Clients
 
 The following tables identify the mail clients that are supported for use together with each version of Exchange.
 
-<br>
-
-****
-
 |Client|Exchange 2019|Exchange 2016|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|
 |Microsoft 365 Apps for enterprise|Supported|Supported|Supported|Not supported|
+|Outlook 2021|Supported|Supported|Not supported|Not supported|
 |Outlook 2019|Supported|Supported|Supported|Not supported|
 |Outlook 2016|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Supported|
 |Outlook 2013|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Supported|
@@ -209,7 +167,6 @@ The following tables identify the mail clients that are supported for use togeth
 |Outlook for Mac (Microsoft 365, 2019)|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Not supported|
 |Outlook 2019 for Mac|Supported<sup>1</sup>|Supported<sup>1</sup>|Supported|Not supported|
 |Outlook for Mac (Microsoft 365, 2016)|Not supported|Supported<sup>1</sup>|Supported|Supported|
-|
 
 <sup>1</sup> Requires the latest Office service pack and the latest public update.
 
@@ -271,21 +228,12 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 ### Exchange 2019
 
-<br>
-
-****
-
 |.NET Framework version|CU11 to CU4|CU3, CU2|CU1, RTM|
 |---|:---:|:---:|:---:|
 |4.8|Supported|Supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|
-|
 
 ### Exchange 2016
-
-<br>
-
-****
 
 |.NET Framework version|CU22 to CU15|CU14, CU13|CU12, CU11|CU10|CU9, CU8|CU7, CU6, CU5|CU4, CU3|CU2|CU1, RTM|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -295,15 +243,10 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 |4.6.2|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Not supported|Not supported|
 |4.6.1<sup>\*</sup>|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Not supported|
 |4.5.2|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|
-|
 
 <sup>\*</sup> .NET Framework 4.6.1 also requires a hotfix, and a different hotfix is required for different versions of Windows. For more information, see [Released: June 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2016-Quarterly-Exchange-Updates/ba-p/604877).
 
 ### Exchange 2013
-
-<br>
-
-****
 
 |.NET Framework version|CU23|CU21, CU22|CU19, CU20|CU16, CU17, CU18|CU15|CU13, CU14|CU12 to SP1|CU3 to RTM|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -315,15 +258,10 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 |4.5.2|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Not supported|
 |4.5.1|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Not supported|
 |4.5|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|
-|
 
 <sup>\*</sup> .NET Framework 4.6.1 also requires a hotfix, and a different hotfix is required for different versions of Windows. For more information, see [Released: June 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Released-June-2016-Quarterly-Exchange-Updates/ba-p/604877).
 
 ### Exchange 2010 SP3
-
-<br>
-
-****
 
 |.NET Framework version|Exchange 2010 SP3|
 |---|:---:|
@@ -331,7 +269,6 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 |.NET Framework 4.0|Supported<sup>1,2</sup>|
 |.NET Framework 3.5 SP1|Supported|
 |.NET Framework 3.5|Supported<sup>1</sup>|
-|
 
 <sup>1</sup> On Windows Server 2012, you need to install the .NET Framework 3.5 before you can use Exchange 2010 SP3.
 
@@ -351,25 +288,15 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 The following table identifies the version of Microsoft Management Console (MMC) that can be used together with each version of Exchange.
 
-<br>
-
-****
-
 |MMC|Exchange 2016|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|
 |MMC 3.0|Supported|Supported|Supported|
-|
 
 ## Windows Installer
 
 The following table identifies the version of Windows Installer that is used together with each version of Exchange.
 
-<br>
-
-****
-
 |Windows Installer|Exchange 2016|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|
 |Windows Installer 4.5|Supported|Supported|Supported|
 |Windows Installer 5.0|Supported|Supported|Not supported|
-|

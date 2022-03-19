@@ -253,6 +253,7 @@
 ### [Mail flow reports in the new EAC](../monitoring/mail-flow-reports/mail-flow-reports.md)
 #### [Auto forwarded messages report in the new EAC](../monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report.md)
 #### [Email issues for priority accounts report in the new EAC](../monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report.md)
+#### [Exchange transport rule report in the new EAC](../monitoring/mail-flow-reports/mfr-exchange-transport-rule-report.md)
 #### [Inbound messages report in the new EAC](../monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports.md)
 #### [Non-accepted domain report in the new EAC](../monitoring/mail-flow-reports/mfr-non-accepted-domain-report.md)
 #### [Non-delivery details report in the new EAC](../monitoring/mail-flow-reports/mfr-non-delivery-details-report.md)

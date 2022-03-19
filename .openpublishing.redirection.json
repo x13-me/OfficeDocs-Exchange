@@ -1804,6 +1804,11 @@
       "source_path": "Exchange/ExchangeOnline/voice-mail-unified-messaging/um-and-voice-mail-terminology.md",
       "redirect_url": "/exchange/voice-mail-unified-messaging/voice-mail-unified-messaging",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Exchange/ExchangeServer/policy-and-compliance/mrm/default-folders-that-support-tags.md",
+      "redirect_url": "/exchange/policy-and-compliance/mrm/retention-tags-and-retention-policies",
+      "redirect_document_id": false
     }
   ]
 }

@@ -62,16 +62,14 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 The table in this section provides build numbers and general release dates for each version of Microsoft Exchange Server 2019.
 
-<br>
-
-****
-
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
+|&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU11 Mar22SU](https://support.microsoft.com/help/5012698)|March 8, 2022|15.2.986.22|15.02.0986.022|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU11 Jan22SU](https://support.microsoft.com/help/5008631)|January 11, 2022|15.2.986.15|15.02.0986.015|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU11 Nov21SU](https://support.microsoft.com/help/5007409)|November 9, 2021|15.2.986.14|15.02.0986.014|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU11 Oct21SU](https://support.microsoft.com/help/5007012)|October 12, 2021|15.2.986.9|15.02.0986.009|
 |[Exchange Server 2019 CU11](https://www.microsoft.com/download/details.aspx?familyID=40be4769-0188-4b1a-a023-1a3ecb919870)|September 28, 2021|15.2.986.5|15.02.0986.005|
+|&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU10 Mar22SU](https://support.microsoft.com/help/5012698)|March 8, 2022|15.2.922.27|15.02.0922.027|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU10 Jan22SU](https://support.microsoft.com/help/5008631)|January 11, 2022|15.2.922.20|15.02.0922.020|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU10 Nov21SU](https://support.microsoft.com/help/5007409)|November 9, 2021|15.2.922.19|15.02.0922.019|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 CU10 Oct21SU](https://support.microsoft.com/help/5007012)|October 12, 2021|15.2.922.14|15.02.0922.014|
@@ -102,22 +100,19 @@ The table in this section provides build numbers and general release dates for e
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2019 RTM Mar21SU](https://support.microsoft.com/help/5000871)|March 2, 2021|15.2.221.18|15.02.0221.018|
 |Exchange Server 2019 RTM|October 22, 2018|15.2.221.12|15.02.0221.012|
 |Exchange Server 2019 Preview|July 24, 2018|15.2.196.0|15.02.0196.000|
-|
 
 ## Exchange Server 2016
 
 The table in this section provides build numbers and general release dates for each version of Microsoft Exchange Server 2016.
 
-<br>
-
-****
-
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
+|&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU22 Mar22SU](https://support.microsoft.com/help/5012698)|March 8, 2022|15.1.2375.24|15.01.2375.024|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU22 Jan22SU](https://support.microsoft.com/help/5008631)|January 11, 2022|15.1.2375.18|15.01.2375.018|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU22 Nov21SU](https://support.microsoft.com/help/5007409)|November 9, 2021|15.1.2375.17|15.01.2375.017|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU22 Oct21SU](https://support.microsoft.com/help/5007012)|October 12, 2021|15.1.2375.12|15.01.2375.012|
 |[Exchange Server 2016 CU22](https://www.microsoft.com/download/details.aspx?familyID=a7d608a2-d81b-46af-8753-8c3c2ea1f783)|September 28, 2021|15.1.2375.7|15.01.2375.007|
+|&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU21 Mar22SU](https://support.microsoft.com/help/5012698)|March 8, 2022|15.1.2308.27|15.01.2308.027|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU21 Jan22SU](https://support.microsoft.com/help/5008631)|January 11, 2022|15.1.2308.21|15.01.2308.021|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU21 Nov21SU](https://support.microsoft.com/help/5007409)|November 9, 2021|15.1.2308.20|15.01.2308.020|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2016 CU21 Oct21SU](https://support.microsoft.com/help/5007012)|October 12, 2021|15.1.2308.15|15.01.2308.015|
@@ -162,18 +157,14 @@ The table in this section provides build numbers and general release dates for e
 |Exchange Server 2016 CU1|March 15, 2016|15.1.396.30|15.01.0396.030|
 |Exchange Server 2016 RTM|October 1, 2015|15.1.225.42|15.01.0225.042|
 |Exchange Server 2016 Preview|July 22, 2015|15.1.225.16|15.01.0225.016|
-|
 
 ## Exchange Server 2013
 
 The table in this section provides build numbers and general release dates for each version of Microsoft Exchange Server 2013.
 
-<br>
-
-****
-
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
+|&nbsp;&nbsp;&nbsp;[Exchange Server 2013 CU23 Mar22SU](https://support.microsoft.com/help/5010324)|March 8, 2022|15.0.1497.33|15.00.1497.033|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2013 CU23 Jan22SU](https://support.microsoft.com/help/5008631)|January 11, 2022|15.0.1497.28|15.00.1497.028|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2013 CU23 Nov21SU](https://support.microsoft.com/help/5007409)|November 9, 2021|15.0.1497.26|15.00.1497.026|
 |&nbsp;&nbsp;&nbsp;[Exchange Server 2013 CU23 Oct21SU](https://support.microsoft.com/help/5007011)|October 12, 2021|15.0.1497.24|15.00.1497.024|
@@ -208,17 +199,12 @@ The table in this section provides build numbers and general release dates for e
 |Exchange Server 2013 CU2|July 9, 2013|15.0.712.24|15.00.0712.024|
 |Exchange Server 2013 CU1|April 2, 2013|15.0.620.29|15.00.0620.029|
 |Exchange Server 2013 RTM|December 3, 2012|15.0.516.32|15.00.0516.032|
-|
 
 ## Exchange Server 2010
 
 The tables in this section provide build numbers and general release dates for each version of Microsoft Exchange Server 2010.
 
 ### Exchange Server 2010 SP3 build numbers
-
-<br>
-
-****
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
@@ -256,13 +242,8 @@ The tables in this section provide build numbers and general release dates for e
 |Update Rollup 2 for Exchange Server 2010 SP3|August 8, 2013|14.3.158.1|14.03.0158.001|
 |Update Rollup 1 for Exchange Server 2010 SP3|May 29, 2013|14.3.146.0|14.03.0146.000|
 |Exchange Server 2010 SP3|February 12, 2013|14.3.123.4|14.03.0123.004|
-|
 
 ### Build numbers for previous releases of Exchange Server 2010
-
-<br>
-
-****
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
@@ -296,7 +277,6 @@ The tables in this section provide build numbers and general release dates for e
 |Update Rollup 2 for Exchange Server 2010|March 4, 2010|14.0.689.0|14.00.0689.000|
 |Update Rollup 1 for Exchange Server 2010|December 9, 2009|14.0.682.1|14.00.0682.001|
 |Exchange Server 2010 RTM|November 9, 2009|14.0.639.21|14.00.0639.021|
-|
 
 ## Exchange Server 2007
 
@@ -304,10 +284,6 @@ The tables in this section provide build numbers and general release dates for e
 
 > [!NOTE]
 > The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn't updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn't directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
-
-<br>
-
-****
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
@@ -337,13 +313,8 @@ The tables in this section provide build numbers and general release dates for e
 |Update Rollup 2 for Exchange Server 2007 SP3|December 10, 2010|8.3.137.3|8.03.0137.003|
 |Update Rollup 1 for Exchange Server 2007 SP3|September 9, 2010|8.3.106.2|8.03.0106.002|
 |Exchange Server 2007 SP3|June 7, 2010|8.3.83.6|8.03.0083.006|
-|
 
 ### Build numbers for previous releases of Exchange Server 2007
-
-<br>
-
-****
 
 |Product name|Release date|Build number<br>(short format)|Build number<br>(long format)|
 |---|---|:---:|:---:|
@@ -374,15 +345,10 @@ The tables in this section provide build numbers and general release dates for e
 |Update Rollup 2 for Exchange Server 2007|May 8, 2007|8.0.711.2|8.00.0711.002|
 |Update Rollup 1 for Exchange Server 2007|April 17, 2007|8.0.708.3|8.00.0708.003|
 |Exchange Server 2007 RTM|March 8, 2007|8.0.685.25|8.00.0685.025|
-|
 
 ## Exchange Server 2003
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server 2003. To view the build number of Exchange Server 2003, open the **Properties** dialog box of the server object.
-
-<br>
-
-****
 
 |Product name|Release date|Build number|
 |---|---|---|
@@ -391,15 +357,10 @@ The following table lists the build numbers and general release dates for each v
 |Exchange Server 2003 SP2|October 19, 2005|6.5.7683|
 |Exchange Server 2003 SP1|May25, 2004|6.5.7226|
 |Exchange Server 2003|September 28, 2003|6.5.6944|
-|
 
 ## Exchange 2000 Server
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange 2000 Server. To view the build number of Exchange 2000 Server, open the **Properties** dialog box of the server object.
-
-<br>
-
-****
 
 |Product name|Release date|Build number|
 |---|---|---|
@@ -412,15 +373,10 @@ The following table lists the build numbers and general release dates for each v
 |Exchange 2000 Server SP2|November 29, 2001|6.0.5762|
 |Exchange 2000 Server SP1|June 21, 2001|6.0.4712|
 |Exchange 2000 Server|November 29, 2000|6.0.4417|
-|
 
 ## Exchange Server 5.5
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server version 5.5.
-
-<br>
-
-****
 
 |Product name|Release date|Build number|
 |---|---|---|
@@ -429,28 +385,18 @@ The following table lists the build numbers and general release dates for each v
 |Exchange Server version 5.5 SP2|December 23, 1998|5.5.2448|
 |Exchange Server version 5.5 SP1|August 5, 1998|5.5.2232|
 |Exchange Server version 5.5|February 3, 1998|5.5.1960|
-|
 
 ## Exchange Server 5.0
-
-<br>
-
-****
 
 |Product name|Release date|Build number|
 |---|---|---|
 |Exchange Server 5.0 SP2|February 19, 1998|5.0.1460|
 |Exchange Server 5.0 SP1|June 18, 1997|5.0.1458|
 |Exchange Server 5.0|May 23, 1997|5.0.1457|
-|
 
 ## Exchange Server 4.0
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server 4.0.
-
-<br>
-
-****
 
 |Product name|Release date|Build number|
 |---|---|---|
