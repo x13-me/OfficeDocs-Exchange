@@ -166,8 +166,8 @@ To verify that you have successfully disabled an archive mailbox, do the followi
 
 If the archive is disabled, the following values are returned for archive-related properties.
 
-|**Property**|**Value**|
-|:-----|:-----|
+|Property|Value|
+|---|---|
 |**ArchiveDatabase** (for on-premises archives)|\<blank\>|
 |**ArchiveState**| `None`|
 |**DisabledArchiveDatabase** (for on-premises archives)| _\<name of mailbox database\>_|
