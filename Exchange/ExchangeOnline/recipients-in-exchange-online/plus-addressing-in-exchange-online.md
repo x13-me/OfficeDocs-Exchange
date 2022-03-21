@@ -25,7 +25,7 @@ An SMTP email address uses the basic syntax: `<local-part>@<domain>`. For exampl
 
 Plus addressing uses the syntax: `<local-part>+<tag>@<domain>`. For example, sean+newsletter@contoso.com. 
 
-The original email address must be valid. The `+tag` value that you add is arbitrary, although regular character restrictions for SMTP email addresses apply (for example, no spaces). For more information about using plus addresses, see the [Using plus addresses](using-plus-addresses) section.
+The original email address must be valid. The `+tag` value that you add is arbitrary, although regular character restrictions for SMTP email addresses apply (for example, no spaces). For more information about using plus addresses, see the [Using plus addresses](#using-plus-addresses) section.
 
 Plus addressing is available in Outlook on the web (formerly known as Outlook Web App or OWA) in Exchange Online at <https://outlook.live.com/owa/>.
 
@@ -38,7 +38,7 @@ If inbound internet email for your on-premises organization is routed through Ex
 ## Enable plus addressing in Exchange Online
 
 > [!NOTE]
-> These setting won't be available after plus addressing is turned on by default in all organizations starting in late April 2022. After that happens, use the procedures described in the [Use PowerShell to disable plus addressing](#use-powershell-to-disable-plus-addressing) section to disable plus addressing in your organization.
+> These settings won't be available after plus addressing is turned on by default in all organizations starting in late April 2022. After that happens, use the procedures described in the [Use PowerShell to disable plus addressing](#use-powershell-to-disable-plus-addressing) section to disable plus addressing in your organization.
 
 ### Use the new Exchange admin center to enable plus addressing
 
@@ -65,7 +65,7 @@ If inbound internet email for your on-premises organization is routed through Ex
 ## Use Exchange Online PowerShell to disable plus addressing
 
 > [!NOTE]
-> This setting will be available only after plus addressing is turned on by default in all organizations starting in late April 2022. Before that happens, you can disable plus addressing in your organization by using the AllowPlusAddressInRecipients parameter with the value $false as previously described.
+> This setting will be effective only after plus addressing is turned on by default in all organizations starting in late April 2022. Before that happens, you can disable plus addressing in your organization by using the AllowPlusAddressInRecipients parameter with the value $false as previously described. You can also proactively turn off plus addressing using this setting now so the setting will take affect after April 2022.
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
