@@ -38,7 +38,7 @@ If inbound internet email for your on-premises organization is routed through Ex
 ## Enable plus addressing in Exchange Online
 
 > [!NOTE]
-> These settings won't be available after plus addressing is turned on by default in all organizations starting in late April 2022. After that happens, use the procedures described in the [Use PowerShell to disable plus addressing](#use-powershell-to-disable-plus-addressing) section to disable plus addressing in your organization.
+> These settings won't be available after plus addressing is turned on by default in all organizations starting in late April 2022. After that happens, use the procedures described in the [Use Exchange Online PowerShell to disable plus addressing](#use-exchange-online-powershell-to-disable-plus-addressing) section to disable plus addressing in your organization.
 
 ### Use the new Exchange admin center to enable plus addressing
 
