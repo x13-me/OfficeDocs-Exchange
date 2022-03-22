@@ -54,11 +54,6 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 
 - Verify the [Supported operating systems for Exchange 2019](./system-requirements.md?preserve-view=true&view=exchserver-2019#supported-operating-systems-for-exchange-2019) or [Supported operating systems for Exchange 2016](./system-requirements.md?preserve-view=true&view=exchserver-2016#supported-operating-systems-for-exchange-2016).
 
-::: moniker range="exchserver-2019"
-> [!NOTE]
-> New to Exchange 2019 is the ability to upgrade your operating system to a newer version while Exchange is installed on Windows Server 2019 or later.
-::: moniker-end
-
 - Verify the computer is joined to the appropriate internal Active Directory domain.
 
 - Install the latest Windows updates on your computer.

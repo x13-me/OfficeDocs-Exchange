@@ -111,8 +111,8 @@ The Recoverable Items folder contains the following subfolders used to store del
 
 **Properties that trigger copy-on-write**
 
-|**Item type**|**Properties that trigger copy-on-write**|
-|:-----|:-----|
+|Item type|Properties that trigger copy-on-write|
+|---|---|
 |Messages (IPM.Note\*)  <br/> Posts (IPM.Post\*)|Subject  <br/> Body  <br/> Attachments  <br/> Senders/Recipients  <br/> Sent/Received Dates|
 |Items other than messages and posts|Any change to a visible property, except the following:  <br/> • Item location (when an item is moved between folders)  <br/> • Item status change (read or unread)  <br/> • Changes to retention tag applied to an item|
 |Items in the default folder Drafts|None (items in the Drafts folder are exempt from copy on write)|
