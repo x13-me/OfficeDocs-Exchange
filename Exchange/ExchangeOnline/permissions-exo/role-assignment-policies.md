@@ -45,8 +45,8 @@ Role assignment policies are how end-user roles (as opposed to management roles)
 
 The available end-user roles that you can assign to mailbox plans are described in the following table:
 
-|**Role**|**Assigned to Default Role Assignment Policy by default?**|**Description**|
-|:-----|:-----|:-----|
+|Role|Assigned to Default Role Assignment Policy by default?|Description|
+|---|---|---|
 |My Custom Apps|Yes|Install custom apps.|
 |My Marketplace Apps|Yes|Install marketplace apps.|
 |My ReadWriteMailbox Apps|Yes|Install apps with ReadWriteMailbox permissions.|
