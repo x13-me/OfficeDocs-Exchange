@@ -131,10 +131,6 @@ To view the contents of the **CmdletParameters** and **ModifiedProperties** fiel
 
 Each audit log entry contains the information described in the following table. The audit log contains one or more audit log entries.
 
-<br>
-
-****
-
 |Field|Description|
 |---|---|
 |`RunspaceId`|This field is used internally.|
@@ -155,4 +151,3 @@ Each audit log entry contains the information described in the following table. 
 |`Identity`|This field is used internally.|
 |`IsValid`|This field is used internally.|
 |`ObjectState`|This field is used internally.|
-|

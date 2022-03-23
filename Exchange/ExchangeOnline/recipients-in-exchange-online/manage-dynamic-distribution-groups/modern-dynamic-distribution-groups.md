@@ -25,17 +25,12 @@ The membership list is now stored for each DDG and is updated once every 24 hour
 
 The changes in behavior for dynamic distribution groups in Exchange Online are described in the following table:
 
-<br>
-
-****
-
 |Area|Old behavior|New behavior|
 |---|---|---|
 |Mail delivery latency|Unpredictable. The time it takes to deliver mail to a DDG depends on how complex the filters are on that DDG.|Faster and more predictable overall. You should see delivery times more in line with those for regular distribution groups.|
 |Creation|DDGs could be used immediately after being created. |It takes 2 hours for the initial membership list to be calculated and be available for use.|
 |Modification|DDGs could be used immediately after any changes were made|Users have to wait up to 2 hours for the membership list to be recalculated and links updated.|
 |Membership list "freshness"|The list of members was up to date in real time.|The list of members for each DDG is refreshed every 24 hours.|
-|
 
 > [!IMPORTANT]
 > The list of DDG members might become stale. For example, if a user has left a department that was used as a filter for the DDG, they might continue to receive mail that's sent to the DDG for the next 24 hours util the membership list is refreshed.

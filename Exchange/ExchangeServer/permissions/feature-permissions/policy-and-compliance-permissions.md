@@ -39,8 +39,8 @@ You can use the features in the following table to configure messaging policy an
 
 Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-Only Organization Management](../../../ExchangeServer2013/view-only-organization-management-exchange-2013-help.md).
 
-|**Feature**|**Permissions required**|
-|:-----|:-----|
+|Feature|Permissions required|
+|---|---|
 |Data loss prevention (DLP)|[Compliance Management](../../../ExchangeServer2013/compliance-management-exchange-2013-help.md)|
 |Delete mailbox content (using the [Search-Mailbox](/powershell/module/exchange/search-mailbox) cmdlet with the _DeleteContent_ switch)|[Discovery Management](../../../ExchangeServer2013/discovery-management-exchange-2013-help.md) **and** <br/> [Mailbox Import Export Role](../../../ExchangeServer2013/mailbox-import-export-role-exchange-2013-help.md) <br/> **Note**: By default, the Mailbox Import Export role isn't assigned to any role group. You can assign a management role to a built-in or custom role group, a user, or a universal security group. Assigning a role to a role group is recommended. For more information, see [Add a role to a role group](../role-groups.md#add-a-role-to-a-role-group).|
 |Discovery mailboxes - Create|[Organization Management](../../../ExchangeServer2013/organization-management-exchange-2013-help.md) <br/> [Recipient Management](../../../ExchangeServer2013/recipient-management-exchange-2013-help.md)|

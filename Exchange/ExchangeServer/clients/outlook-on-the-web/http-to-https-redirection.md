@@ -191,8 +191,8 @@ To verify that you have successfully configured http to https redirection for Ou
 
 The default **Require SSL** and **HTTP Redirect** settings for the default website and all virtual directories in the default website on an Exchange server are described in the following table.
 
-|**Website**|**Virtual directory**|**Require SSL**|**HTTP Redirect**|
-|:-----|:-----|:-----|:-----|
+|Website|Virtual directory|Require SSL|HTTP Redirect|
+|---|---|---|---|
 |Default Web Site|n/a|yes|none|
 |Default Web Site|API|yes|none|
 |Default Web Site|aspnet_client (directory)|yes|none|

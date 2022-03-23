@@ -112,13 +112,10 @@ If an item is removed from the Deletions subfolder, either by a user purging the
 
 The following table lists the contents of and actions that can be performed in the Recoverable Items folder if single item recovery is enabled.
 
-****
-
 |State of single item recovery|Recoverable Items folder contains soft-deleted items|Recoverable Items folder contains hard-deleted items|Users can purge items from the Recoverable Items folder|Managed Folder Assistant automatically purges items from the Recoverable Items folder|
 |---|---|---|---|---|
 |Enabled|Yes|Yes|No|Yes. By default, all items are purged after 14 days, except for calendar items, which are purged after 120 days. If the Recoverable Items warning quota is reached before the deleted item retention period elapses, messages are deleted in first in, first out (FIFO) order.|
 |Disabled|Yes|No|Yes|Yes. By default, all items are purged after 14 days, except for calendar items, which are purged after 120 days. If the Recoverable Items warning quota is reached before the deleted item retention period elapses, messages are deleted in first in, first out (FIFO) order.|
-|
 
 ### In-Place Hold and Litigation Hold
 
@@ -131,13 +128,10 @@ Putting a mailbox on In-Place Hold or Litigation Hold stops the Managed Folder A
 
 The following table lists the contents of and actions that can be performed in the Recoverable Items folder if Litigation Hold is enabled.
 
-****
-
 |State of hold|Recoverable Items folder contains soft-deleted items|Recoverable Items folder contains modified and hard-deleted items|Users can purge items from the Recoverable Items folder|Managed Folder Assistant automatically purges items from the Recoverable Items folder|
 |---|---|---|---|---|
 |Enabled|Yes|Yes|No|No|
 |Disabled|Yes|No|Yes|Yes|
-|
 
 To learn more about In-Place eDiscovery, In-Place Hold, and Litigation Hold, see the following articles:
 
@@ -150,8 +144,6 @@ To learn more about In-Place eDiscovery, In-Place Hold, and Litigation Hold, see
 If a user who is placed on In-Place Hold or Litigation Hold modifies specific properties of a mailbox item, a copy of the original mailbox item is created before the changed item is written. The original copy is saved in the Versions subfolder. This process is known as *copy-on-write page protection*. Copy-on-write page protection applies to items residing in any mailbox folder. The Versions subfolder isn't visible to users.
 
 The following table lists the message properties that trigger copy-on-write page protection.
-
-****
 
 |Item type|Properties that trigger copy-on-write page protection|
 |---|---|

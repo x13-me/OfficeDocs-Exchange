@@ -45,6 +45,9 @@ Beginning in early 2021, we started to disable Basic authentication for existing
 
 In September 2021, we announced that effective **October 1, 2022**, we will begin disabling Basic authentication for Outlook, EWS, RPS, POP, IMAP, and EAS protocols in Exchange Online. SMTP Auth will also be disabled if it is not being used. See full announcement: [Basic Authentication and Exchange Online – September 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210).
 
+> [!NOTE]
+> In Office 365 Operated by 21Vianet, we will begin disabling Basic authentiction on March 31, 2023. All other cloud environments are subject to the October 1, 2022 date. 
+
 ## Impact to messaging protocols and existing applications
 
 This change affects the applications and scripts you might use in different ways.
@@ -183,10 +186,6 @@ For Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exch
 - **If you have written your own code using these protocols**, update your code to use **OAuth 2.0** instead of Basic Authentication, or migrate to a newer protocol (Graph API).
 - **If you or your users are using a 3rd party application  which uses these protocols**, reach out to the 3rd party app developer who supplied this application to update it to support OAuth 2.0 authentication or assist your users to switch to an application that's built using OAuth 2.0.
 
-<br>
-
-****
-
 |Key Protocol Service|Impacted Clients|Client specific Recommendation|Protocol Info / Notes|
 |---|---|---|---|
 |Outlook|All versions of Outlook for Windows and Mac|<ul><li>Upgrade to Outlook 2013 or later for Windows and Outlook 2016 or later for Mac</li><li>If you are using Outlook 2013 for Windows, turn on modern auth through the [registry key](/office365/admin/security-and-compliance/enable-modern-authentication)</li></ul>|[Enabling Modern Auth for Outlook – How Hard Can It Be?](https://techcommunity.microsoft.com/t5/exchange-team-blog/enabling-modern-auth-for-outlook-how-hard-can-it-be/ba-p/2278411)|
@@ -194,7 +193,6 @@ For Exchange Web Services (EWS), Remote PowerShell (RPS), POP and IMAP, and Exch
 |Remote PowerShell (RPS)|<ul><li>Exchange administrators</li><li>[Delegated Admin Privileges](/partner-center/customers-revoke-admin-privileges)</li><li>Automated management tools</li></ul>|Use either: <ul><li>[Exchange Online PowerShell V2 Module](/powershell/exchange/exchange-online-powershell).</li><li>[PowerShell within Azure Cloud Shell](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Azure-Cloud-Shell-Now-Supports-Exchange-Online/ba-p/652269).</li></ul>|Learn more about [Automation and certificate-based authentication support for the EXO V2 Module](/powershell/exchange/app-only-auth-powershell-v2).|
 |POP and IMAP|Third party mobile clients such as Thunderbird first party clients configured to use POP or IMAP|Recommendations: <ul><li>Move away from these protocols as they don't enable full features.</li><li>Move to OAuth 2.0 for POP/IMAP when your client app supports it.</li></ul>|IMAP is popular for Linux and education customers. OAuth 2.0 support started rolling out in April 2020.|
 |Exchange ActiveSync (EAS)|Mobile email clients from Apple, Samsung etc.|<ul><li>Move to Outlook for iOS and Android or another mobile email app that supports Modern Auth</li><li>Update the app settings if it can do OAuth but the device is still using Basic</li><li>Switch to Outlook on the web or another mobile browser app that supports modern auth.</li></ul> <p> Popular Apps: <ul><li>Apple iPhone/iPad/macOS: All up to date iOS/macOS devices are capable of using modern authentication, just remove and add back the account.</li><li>Microsoft Windows 10 Mail client: Remove and add back the account, choosing Office 365 as the account type</li></ul>|Mobile devices that use a native app to connect to Exchange Online generally use this protocol.|
-|
 
 ## What if I want to block Basic authentication now?
 

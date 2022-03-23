@@ -102,10 +102,6 @@ In an Exchange hybrid deployment, authentication for your on-premises mailboxes 
 
 You manage all aspects of authentication policies in Exchange Online PowerShell. The protocols and services in Exchange Online that you can block Basic authentication for are described in the following table.
 
-<br>
-
-****
-
 |Protocol or service|Description|Parameter name|
 |---|---|---|
 |Exchange Active Sync (EAS)|Used by some email clients on mobile devices.|*AllowBasicAuthActiveSync*|
@@ -120,24 +116,18 @@ You manage all aspects of authentication policies in Exchange Online PowerShell.
 |Authenticated SMTP|Used by POP and IMAP clients to send email messages.|*AllowBasicAuthSmtp*|
 |Exchange Web Services (EWS)|A programming interface that's used by Outlook, Outlook for Mac, and third-party apps.|*AllowBasicAuthWebServices*|
 |PowerShell|Used to connect to Exchange Online with remote PowerShell. If you block Basic authentication for Exchange Online PowerShell, you need to use the Exchange Online V2 module to connect. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).|*AllowBasicAuthPowerShell*|
-|
 
 Typically, when you block Basic authentication for a user, we recommend that you block Basic authentication for all protocols. However, you can use the *AllowBasicAuth\** parameters (switches) on the **New-AuthenticationPolicy** and **Set-AuthenticationPolicy** cmdlets to selectively allow or block Basic authentication for specific protocols.
 
 For email clients and apps that don't support modern authentication, you need to allow Basic authentication for the protocols and services that they require. These protocols and services are described in the following table:
 
-<br>
-
-****
-
 |Client|Protocols and services|
-|:-----|:-----|
+|---|---|
 |Older EWS clients|<ul><li>Autodiscover</li><li>EWS</li></ul>|
 |Older ActiveSync clients|<ul><li>Autodiscover</li><li>ActiveSync</li></ul>|
 |POP clients|<ul><li>POP3</li><li>Authenticated SMTP</li></ul>|
 |IMAP clients|<ul><li>IMAP4</li><li>Authenticated SMTP</li></ul>|
 |Outlook 2010|<ul><li>Autodiscover</li><li>MAPI over HTTP</li><li>Offline Address Book</li><li>Outlook Anywhere (RPC over HTTP)</li><li>Exchange Web Services (EWS)</li></ul>|
-|
 
 > [!NOTE]
 > Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password](https://support.microsoft.com/office/3e7c860f-bda4-4441-a618-b53953ee1183).

@@ -47,17 +47,12 @@ New-TransportRule -Name "Block messages with unacceptable words" -SubjectOrBodyC
 
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
 
-<br>
-
-****
-
 |Expression|Matches|
 |---|---|
 |**.**|Any single character|
 |**\***|Any additional characters|
 |**\d**|Any decimal digit|
 |[*character_group*]|Any single character in *character_group*.|
-|
 
 For example, this text file contains common misspellings of Microsoft.
 

@@ -69,8 +69,8 @@ Address rewriting changes an email address by rewriting specific fields in the m
 
 **Message fields rewritten on outbound and inbound messages**
 
-|**Field name**|**Location**|**Outbound messages**|**Inbound messages**|
-|:-----|:-----|:-----|:-----|
+|Field name|Location|Outbound messages|Inbound messages|
+|---|---|---|---|
 |**MAIL FROM**|Message envelope|Rewritten|Not rewritten|
 |**RCPT TO**|Message envelope|Not rewritten|Rewritten|
 |**To**|Message header|Not Rewritten|Rewritten|

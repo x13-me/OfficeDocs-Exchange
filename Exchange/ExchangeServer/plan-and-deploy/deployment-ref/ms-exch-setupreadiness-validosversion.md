@@ -27,8 +27,8 @@ Microsoft Exchange Server 2016 Setup can't continue because it detected an incom
 
  **Supported operating systems for Exchange 2016**
 
-|**Component**|**Requirement**|
-|:-----|:-----|
+|Component|Requirement|
+|---|---|
 |Mailbox and Edge Transport server roles|Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/> Windows Server 2012 R2 Standard or Datacenter <br/> Windows Server 2012 Standard or Datacenter|
 |Management tools|One of the following: <br/>• Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• 64-bit edition of Windows 10 <br/>• 64-bit edition of Windows 8.1|
 

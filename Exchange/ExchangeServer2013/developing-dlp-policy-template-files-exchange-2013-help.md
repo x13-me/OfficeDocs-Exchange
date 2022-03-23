@@ -31,8 +31,8 @@ Simple management operations are available for DLP policy templates though both 
 
 DLP policy templates are represented as XML documents. A single XML schema is used for policies provided within Exchange and externally also. The conceptual structure of the XML document is represented in the table below, which shows the major elements. The set of policy component definitions helps you achieve a specific policy objective such as a regulation or business need.
 
-|**Structural Element**|**Meaning or Example**|
-|:-----|:-----|
+|Structural Element|Meaning or Example|
+|---|---|
 |Publisher|Microsoft or Partner|
 |Version|15.0.1.0|
 |Policy Name|PCI-DSS|
@@ -92,8 +92,8 @@ This is an optional set of parameters that need to be supplied during the templa
 
 This is the root element for the DLP policy template and is required for every template. Available attributes are shown in the following table:
 
-|**Attribute Name**|**Required?**|**Description**|
-|:-----|:-----|:-----|
+|Attribute Name|Required?|Description|
+|---|---|---|
 |Version|Yes|The version number used in this DLP policy template document.|
 |State|No|Optional default configuration for the state of the policy.|
 |Mode|No|Optional default configuration for the mode of the policy.|
@@ -101,8 +101,8 @@ This is the root element for the DLP policy template and is required for every t
 
 Child elements include the following sequence of elements.
 
-|**Child Element**|**(minimum, maximum)**|**Description**|
-|:-----|:-----|:-----|
+|Child Element|(minimum, maximum)|Description|
+|---|---|---|
 |PublisherName|(1, 1)|Meta data for the template's publisher|
 |Name|(1, 1)|Localizable name for this template.|
 |Description|(1, 1)|Localizable description for this template.|
@@ -173,8 +173,8 @@ New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToSco
 
 Child elements include the following ordered sequence of elements.
 
-|**Child Element**|**(Minimum, Maximum)**|**Description**|
-|:-----|:-----|:-----|
+|Child Element|(Minimum, Maximum)|Description|
+|---|---|---|
 |CommandBlock|(1, n)|A command block that is executed in the PowerShell. The command blocks are each executed in sequence.|
 
 ## For more information

@@ -337,8 +337,6 @@ An example **custom_data** value for a message that's filtered for spam like thi
 
 A **custom_data** value that starts with `S:AMA` is from the malware filter agent. The key details are described in the following table:
 
-****
-
 |Value|Description|
 |---|---|
 |`AMA=SUM|v=1|` or `AMA=EV|v=1`|The message was determined to contain malware. `SUM` indicates the malware could've been detected by any number of engines. `EV` indicates the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
@@ -353,7 +351,6 @@ A **custom_data** value that starts with `S:AMA` is from the malware filter agen
 |`Action=b`|The message was blocked.|
 |`Name=<malware>`|The name of the malware that was detected.|
 |`File=<filename>`|The name of the file that contained the malware.|
-|
 
 An example **custom_data** value for a message that contains malware looks like this:
 
@@ -363,15 +360,12 @@ An example **custom_data** value for a message that contains malware looks like 
 
 A **custom_data** value that starts with`S:TRA` is from the Transport Rule agent for mail flow rules (also known as transport rules). The key details are described in the following table:
 
-****
-
 |Value|Description|
 |---|---|
 |`ETR|ruleId=<guid>`|The rule ID that was matched.|
 |`St=<datetime>`|The date and time in UTC when the rule match occurred.|
 |`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
 |`Mode=<Mode>`|The mode of the rule. Valid values are: <ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li?</ul>|
-|
 
 An example **custom_data** value for a messages that matches the conditions of a mail flow rule looks like this:
 

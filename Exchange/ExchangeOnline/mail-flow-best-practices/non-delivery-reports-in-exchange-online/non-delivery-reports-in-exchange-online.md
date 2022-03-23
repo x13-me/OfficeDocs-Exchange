@@ -26,10 +26,6 @@ When there's a problem delivering an email message that you sent, Microsoft 365 
 
 The following table contains the NDR codes (also called enhanced status codes) for the most common bounce messages and NDRs that you might encounter in Exchange Online.
 
-<br>
-
-****
-
 |NDR code|Description|Possible cause|Additional information|
 |---|---|---|---|
 |432&nbsp;4.3.2|`STOREDRV.Deliver; recipient thread limit exceeded`|The recipient mailbox's ability to accept messages is being throttled because it's receiving too many messages too quickly. This is done so a single recipient's mail processing doesn't unfairly impact other recipients sharing the same mailbox database.|For more information about this by-design throttling, see [Store Driver Fault Isolation Improvements in Exchange 2010 SP1](https://techcommunity.microsoft.com/t5/exchange-team-blog/store-driver-fault-isolation-improvements-in-exchange-2010-sp1/ba-p/586093).|
@@ -95,7 +91,6 @@ The following table contains the NDR codes (also called enhanced status codes) f
 |5.7.700-749|`5.7.705 Access denied, tenant has exceeded threshold`, `5.7.708 Access denied, traffic not accepted from this IP`|The majority of traffic from this tenant has been detected as suspicious and has resulted in a ban on sending ability for the tenant.|Ensure that any compromises or open relays have been resolved, and then contact support through your regular channel. <p> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
 |5.7.750|`Service unavailable. Client blocked from sending from unregistered domains`|A suspicious number of messages from unprovisioned domains is coming from this tenant.|Add and validate any and all domains that you use to send email from Microsoft 365 or Office 365. <p> For more information, see [Fix email delivery issues for error codes 5.7.700 through 5.7.750 in Exchange Online](fix-error-code-5-7-700-through-5-7-750.md).|
 |n/a|`The message can't be submitted because the sender's submission quota was exceeded`|The user account has exceeded the recipient rate limit (10,000 recipients per day).|The account has likely been compromised. For more information, see [Fix email delivery issues for error 'the sender's submission quota was exceeded' in Exchange Online](fix-error-for-submission-quota-exceeded-in-exchange-online.md).|
-|
 
 ## Run non-delivery report diagnostics
 
@@ -119,10 +114,6 @@ Exchange NDRs are designed to be easy to read and understand by email users and 
 
 Information provided in the newest style NDRs is designed to help the typical email user solve their problem immediately. When that isn't possible, the NDR provides details for administrators and also a link to more help on the web. The following fields appear in the newest Office 365 NDRs.
 
-<br>
-
-****
-
 |Field|Description|
 |---|---|
 |**Office 365 logo**|This indicates that Microsoft 365 or Office 365 generated the NDR. The logo doesn't mean that Microsoft 365 or Office 365 was responsible for the error. This tells which messaging endpoints or services are involved in the email transaction, which isn't always clear in older style NDRs.|
@@ -131,7 +122,6 @@ Information provided in the newest style NDRs is designed to help the typical em
 |**How to fix it**|This section is designed for the end-user or the email sender who receives the NDR. It explains how to fix the issue.|
 |**More info for email admins**|This section provides a detailed explanation of the problem and solution along with technical details and a link to a web-based article that has detailed reference information.|
 |**Message hops**|This section contains times and system references for the message, which allows an admin to follow the message's hops or server-to-server path. With this info, an admin might quickly spot problems between message hops.|
-|
 
 For NDRs that don't have the latest format, the information might be separated into two sections: User information, and Diagnostic information for administrators. The following figure shows the format for one type of Exchange Online NDR.
 
@@ -159,10 +149,6 @@ Original message headers
 <message header fields>
 ```
 
-<br>
-
-****
-
 |Field|Description|
 |---|---|
 |**Generating server**|This field indicates the name of the SMTP mail server that created the NDR. If no remote server is listed below the sender's email address, the generating server is also the server that rejected the original email message. When the remote mail server acknowledges and accepts the message, but later rejects the message, for example, because of content restrictions, the remote server generates the NDR. If the remote mail server never acknowledges and never accepts the message, the sending server in Exchange Online generates the NDR.|
@@ -171,7 +157,6 @@ Original message headers
 |**\<Enhanced status code\>**|This value is assigned by the mail server that rejected the original message and indicates why the message was rejected. These codes are defined in RFC 3463, and use the format _abc x.y.z_, where the placeholder values are integers. For example, a 5._x.x_ code indicates a permanent error, and a 4._x.x_ code indicates a temporary error. Although the enhanced status code is often generated by an external mail server, Exchange Online uses the enhanced status code value to determine the text to display in the user information section.|
 |**\<SMTP response\>**|This value is returned by the mail server that rejected the original message. This text provides an explanation for the enhanced status code value. The text is always presented in US-ASCII format.|
 |**Original message headers**|This section contains the message header fields of the rejected message. These header fields can provide useful diagnostic information, such as the path that the message took before it was rejected, or whether the `To` field value matches the rejected recipient value.|
-|
 
 ## How to interpret an Exchange NDR
 

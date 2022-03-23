@@ -22,8 +22,7 @@ manager: serdars
 
 # Manage dynamic distribution groups in Exchange Online
 
-
->[!Note]
+> [!NOTE]
 > A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by March 2022. Learn more: [Modern dynamic distribution groups](modern-dynamic-distribution-groups.md).
 
 Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
@@ -31,6 +30,7 @@ Dynamic distribution groups are mail-enabled Active Directory group objects that
 Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
 
 > [!IMPORTANT]
+>
 > - A dynamic distribution group includes any recipient in Active Directory with attribute values that match its filter. If a recipient's properties are modified to match the filter, the recipient could inadvertently become a group member and start receiving messages that are sent to the group. Well-defined, consistent account provisioning processes will reduce the chances of this issue occurring.
 > - Dynamic distribution groups are not synced from Exchange Online to Azure Active Directory or to your on-premises Active Directory. Therefore, features such as Azure Conditional Access do not support being scoped to an Exchange Online dynamic distribution group.
 
@@ -54,9 +54,9 @@ Unlike regular distribution groups that contain a defined set of members, the me
 2. Click **Add a group** and follow the instructions in the details pane.
 
    - Under **Choose a group type** section, select **Dynamic distribution group** and click **Next**.
-   
+
    - Under **Set up the basics** section, enter the details and click **Next**.
-   
+
 3. In **Assign Users** section, select the group owner from the drop-down list.
 
 4. Use the **Members** section to specify the types of recipients for the group and set up rules that will determine membership. Select one of the following boxes:
@@ -77,8 +77,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 5. Select one of the following attributes from the drop-down list and provide a value to define the criteria for membership in this group.
 
-   |**Attribute**|**Send message to a recipient if...**|
-   |:-----|:-----|
+   |Attribute|Send message to a recipient if...|
+   |---|---|
    |**State or province**|The specified value matches the recipient's State or province property.|
    |**Company**|The specified value matches the recipient's Company property.|
    |**Department**|The specified value matches the recipient's Department property.|
@@ -106,20 +106,20 @@ Unlike regular distribution groups that contain a defined set of members, the me
 2. On the **New dynamic distribution group** page, complete the following boxes:
 
    - **Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the Classic EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
-   
+
    > [!NOTE]
    > Group naming policy isn't applied to dynamic distribution groups.
-   
+
    - **Alias**: Use this box to type the name of the alias for the group. The alias cannot exceed 64 characters and must be unique in the forest. When a user types the alias in the To: line of an email message, it resolves to the group's display name.
-   
+
    - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the shared address book.
-   
+
    - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the Classic EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
-   
+
    To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
-   
+
    - **Owner**: An owner for a dynamic distribution group is optional. You can add owners by clicking **Browse** and then selecting users from the list.
-   
+
 3. Use the **Members** section to specify the types of recipients for the group and set up rules that will determine membership. Select one of the following boxes:
 
    - **All recipient types**: Choose this option to send messages that meet the criteria defined for this group to all recipient types.
@@ -140,8 +140,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 5. Select one of the following recipient attributes from the drop-down list and provide a value. If the value for the selected attribute matches that value you define, the recipient receives a message sent to this group.
 
-   |**Attribute**|**Send message to a recipient if...**|
-   |:-----|:-----|
+   |Attribute|Send message to a recipient if...|
+   |---|---|
    |**Recipient container**|The recipient object resides in the specified domain or OU.|
    |**State or province**|The specified value matches the recipient's State or province property.|
    |**Company**|The specified value matches the recipient's Company property.|
@@ -198,6 +198,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
   ```PowerShell
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
+
 ## Change dynamic distribution group properties
 
 ### Use the new EAC to change dynamic distribution group properties
@@ -241,7 +242,7 @@ Use this section to manage who can send email to this group.
 - **Sender options**
 
   By default, only people inside your organization can send message to this group. You can also allow people outside the organization to send to this group.
- 
+
   - **Only allow messages from people inside my organization**: Select this option to allow only senders in your organization to send messages to the group. This means that if someone outside your organization sends an email message to this group, it is rejected. This is the default setting.
 
   - **Allow messages from people inside and outside my organization**: Select this option to allow anyone to send messages to the group.
@@ -328,7 +329,7 @@ Use this section to manage who can send email to this group.
   > [!IMPORTANT]
   > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
 
-#### Message approval 
+#### Message approval for membership
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
@@ -346,7 +347,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **Don't notify anyone when a message isn't approved**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
 
-#### Email options 
+#### Email options
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 

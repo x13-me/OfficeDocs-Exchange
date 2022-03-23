@@ -77,8 +77,6 @@ The tabs are your second level of navigation. Each of the feature areas contains
 
 When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the icons and their actions.
 
-****
-
 |Icon|Name|Action|
 |---|---|---|
 |![Add Icon.](../media/ITPro-EAC-AddIcon.gif)|Add, New|Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.|
@@ -89,7 +87,6 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![More Options Icon.](../media/ITPro-EAC-MoreOptionsIcon.gif)|More options|Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.|
 |![Up Arrow Icon.](../media/ITPro-EAC-UpArrowIcon.gif)![Down Arrow Icon](../media/ITPro-EAC-DownArrowIcon.gif)|Up arrow and down arrow|Use these icons to move an object's priority up or down.|
 |![Remove icon.](../media/ITPro-EAC-RemoveIcon.gif)|Remove|Use this icon to remove objects from a list.|
-|
 
 ### List View
 

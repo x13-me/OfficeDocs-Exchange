@@ -46,8 +46,8 @@ After you create authentication policies, you assign them to users. Assigning a 
 
 You manage all aspects of authentication policies in the Exchange Management Shell. The protocols and services in Exchange that you can block legacy authentication for are described in the following table.
 
-|**Protocol or service**|**Description**|**Parameter name**|
-|:-----|:-----|:-----|
+|Protocol or service|Description|Parameter name|
+|---|---|---|
 |Exchange Active Sync (EAS)|Used by some email clients on mobile devices.|*BlockLegacyAuthActiveSync*|
 |Autodiscover|Used by Outlook and EAS clients to find and connect to mailboxes in Exchange|*BlockLegacyAuthAutodiscover*|
 |IMAP|Used by IMAP email clients.|*BlockLegacyAuthImap*|

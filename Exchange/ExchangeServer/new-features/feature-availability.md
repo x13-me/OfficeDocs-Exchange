@@ -19,7 +19,7 @@ description: Learn about the major Exchange Server features available across dif
 The following table lists the major Exchange Server features available across different supported versions (certain caveats apply -- see the footnotes for further information -- this table may change without notice).
 
 | Feature | Description | Exchange Server 2013 | Exchange Server 2016 | Exchange Server 2019 |
-|:-----|:-----|:-----|:-----|:-----|
+|---|---|---|---|---|
 |[Anti-spam and anti-malware protection](/exchange/antispam-and-antimalware/antispam-and-antimalware)|Built-in anti-spam and anti-malware protection|Yes|Yes|Yes|
 ||Customize anti-spam and anti-malware policies|Yes<sup>via PowerShell</sup>|Yes<sup>via PowerShell</sup>|Yes<sup>via PowerShell</sup>|
 ||Quarantine - administrator management|Yes|Yes|Yes|
