@@ -29,18 +29,11 @@ We refer to the Exchange 2010 SP3 RU8 and Exchange 2007 SP3 RU15 servers as the 
 You'll perform the migration by using the **\*MigrationBatch** cmdlets, and the **\*PublicFolderMigrationRequest** cmdlets for troubleshooting. In addition, you will use the following PowerShell scripts:
 
 - `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file.
-
 - `Export-PublicFolderStatistics.psd1`: This support file is used by the Export-PublicFolderStatistics.ps1 script and should be downloaded to the same location.
-
 - `PublicFolderToMailboxMapGenerator.ps1`: This script creates the public folder-to-mailbox mapping file.
-
 - `PublicFolderToMailboxMapGenerator.strings.psd1`: This support file is used by the PublicFolderToMailboxMapGenerator.ps1 script and should be downloaded to the same location.
-
 - `Create-PublicFolderMailboxesForMigration.ps1`: This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for public folders](limits-for-public-folders-exchange-2013-help.md).
-
 - `Create-PublicFolderMailboxesForMigration.strings.psd1`: This support file is used by the Create-PublicFolderMailboxesForMigration.ps1 script and should be downloaded to the same location.
-
-Step 1: Download the migration scripts provides details about where to download these scripts. Make sure all scripts are downloaded to the same location.
 
 For additional management tasks related to public folders, see [Public folder procedures](public-folder-procedures-exchange-2013-help.md).
 
@@ -49,7 +42,6 @@ For additional management tasks related to public folders, see [Public folder pr
 Exchange supports moving your public folders from the following legacy versions of Exchange Server:
 
 - Exchange 2010 SP3 RU8 or later
-
 - Exchange 2007 SP3 RU15 or later
 
 If you need to move your public folders to Exchange 2013 but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration allows for significantly faster and greater reliability.
@@ -166,17 +158,11 @@ Perform the following prerequisite steps before you begin the migration.
 For detailed syntax and parameter information, see the following topics:
 
 - [Get-PublicFolder](/powershell/module/exchange/get-publicfolder)
-
 - [Get-PublicFolderDatabase](/powershell/module/exchange/get-publicfolderdatabase)
-
 - [Set-PublicFolder](/powershell/module/exchange/set-publicfolder)
-
 - [Get-PublicFolderStatistics](/powershell/module/exchange/get-publicfolderstatistics)
-
 - [Get-PublicFolderClientPermission](/powershell/module/exchange/get-publicfolderclientpermission)
-
 - [Get-OrganizationConfig](/powershell/module/exchange/Get-OrganizationConfig)
-
 - [Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig)
 
 ### Prerequisite steps on the Exchange 2013 server
@@ -186,7 +172,9 @@ For detailed syntax and parameter information, see the following topics:
    An existing migration request can be one of two types: batch migration or serial migration. The commands for detecting requests for each type and for removing requests of each type are as follows.
 
    > [!IMPORTANT]
-   > • Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made. <br/><br/>• Support for serial migration of public folders (**\*-PublicFolderMigrationRequest\*** cmdlets) ended in Exchange 2013 Cumulative Update 8 (CU8).
+   >
+   > - Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made.
+   > - Support for serial migration of public folders (**\*-PublicFolderMigrationRequest\*** cmdlets) ended in Exchange 2013 Cumulative Update 8 (CU8).
 
    The following example will discover any existing serial migration requests.
 
@@ -242,25 +230,15 @@ For detailed syntax and parameter information, see the following topics:
 For detailed syntax and parameter information, see the following topics:
 
 - [Get-MigrationBatch](/powershell/module/exchange/Get-MigrationBatch)
-
 - [Get-PublicFolderMailboxMigrationRequest](/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
-
 - [Remove-PublicFolderMailboxMigrationRequest](/powershell/module/exchange/remove-publicfoldermailboxmigrationrequest)
-
 - [Get-PublicFolderMigrationRequest](/powershell/module/exchange/Get-PublicFolderMigrationRequest)
-
 - [Remove-PublicFolderMigrationRequest](/powershell/module/exchange/Remove-PublicFolderMigrationRequest)
-
 - [Get-Mailbox](/powershell/module/exchange/Get-Mailbox)
-
 - [Get-PublicFolder](/powershell/module/exchange/Get-PublicFolder)
-
 - [Get-MailPublicFolder](/powershell/module/exchange/Get-MailPublicFolder)
-
 - [Disable-MailPublicFolder](/powershell/module/exchange/Disable-MailPublicFolder)
-
 - [Remove-PublicFolder](/powershell/module/exchange/Remove-PublicFolder)
-
 - [Remove-Mailbox](/powershell/module/exchange/Remove-Mailbox)
 
 ## Step 3: Generate the .csv files
@@ -352,9 +330,7 @@ The steps for migrating Exchange 2007 public folders are different from the step
    You can start the migration in the EAC.
 
    1. Log into Exchange Online and open the EAC.
-
    2. Navigate to **Recipients** \> **Migration**.
-
    3. Select the migration batch you just created, and then click the start button.
 
 The **Status** column will show the initial batch status as **Created**. The status changes to **Syncing** during migration. When the migration request is complete, the status will be **Synced**. You can double-click a batch to view the status of individual mailboxes within the batch. Mailbox jobs begin with a status of **Queued**. When the job begins the status is **Syncing**, and once `InitialSync` is complete, the status will show **Synced**.
@@ -370,11 +346,8 @@ The progress and completion of the migration can be viewed and managed in the EA
 For detailed syntax and parameter information, see the following topics:
 
 - [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch)
-
 - [Get-PublicFolderDatabase](/powershell/module/exchange/Get-PublicFolderDatabase)
-
 - [Get-PublicFolderMailboxMigrationRequest](/powershell/module/exchange/get-publicfoldermailboxmigrationrequest)
-
 - [Get-PublicFolderMailboxMigrationRequestStatistics](/powershell/module/exchange/get-publicfoldermailboxmigrationrequeststatistics)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
@@ -427,11 +400,8 @@ After you finalize the public folder migration, you should run the following tes
 2. Log on to Outlook 2007 or later with the test user identified in the previous step, and then perform the following public folder tests:
 
    - View the hierarchy.
-
    - Check permissions.
-
    - Create and delete public folders.
-
    - Post content to and delete content from a public folder.
 
 3. If you run into any issues, see Roll back the migration later in this topic. If the public folder content and hierarchy is acceptable and functions as expected, run the following command to unlock the public folders for all other users.
@@ -486,7 +456,6 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 After the migration is complete, and you have verified that your Exchange 2013 public folders are working as expected, you should remove the public folder databases on the legacy Exchange servers.
 
 - For details about how to remove public folder databases from Exchange 2007 servers, see [Removing Public Folder Databases](/previous-versions/office/exchange-server-2007/cc164367(v=exchg.80)).
-
 - For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](/previous-versions/office/exchange-server-2010/dd876883(v=exchg.141)).
 
 ## Roll back the migration

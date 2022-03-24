@@ -79,7 +79,11 @@ To address this issue, either reinstall just the failed server role(s), or remov
 5. On the **Server Role Selection** page, select the check boxes for the server roles that you want to install, and then click **Next**.
 
     > [!NOTE]
-    > The Edge Transport server role cannot coexist on the same computer with any other server role. <br/><br/> You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest. <br/><br/> If you select Management Tools, you will install the Exchange Management Console, the Exchange cmdlets for the Exchange Management Shell, and the Exchange Help file. The management tools will be installed automatically if you install any other server role.
+    > The Edge Transport server role cannot coexist on the same computer with any other server role.
+    >
+    > You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest.
+    >
+    > If you select Management Tools, you will install the Exchange Management Console, the Exchange cmdlets for the Exchange Management Shell, and the Exchange Help file. The management tools will be installed automatically if you install any other server role.
 
 6. If you selected **Hub Transport Role**, and if you are installing Exchange 2007 in a forest that has an existing Exchange Server 2003 or Exchange 2000 Server organization, on the **Mail Flow Settings** page, select a bridgehead server in the existing organization that is a member of the Exchange 2003 or Exchange 2000 routing group to which you want to create a routing group connector.
 
