@@ -112,7 +112,8 @@ A journal report is the message that the Journaling agent generates when a messa
 
 When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built in. In Microsoft 365 or Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.  The messages and attachments are decrypted if the encryption originates from the organization. (Journaling does not decrypt on items that are encrypted by external organizations.)
 
-To enable journal report decryption for the Exchange Online organization, open a Powershell session and run the following command.
+To enable journal report decryption for the Exchange Online organization, open a PowerShell session and run the following command.
+
 ```powershell
  Set-IRMConfiguration -JournalReportDecryptionEnabled $true
  ```
