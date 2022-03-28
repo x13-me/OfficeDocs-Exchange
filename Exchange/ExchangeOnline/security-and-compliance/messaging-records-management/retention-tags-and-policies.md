@@ -151,7 +151,9 @@ The Managed Folder Assistant is a throttle-based assistant. Throttle-based assis
 You can also use the [Start-ManagedFolderAssistant](/powershell/module/exchange/start-managedfolderassistant) cmdlet to manually trigger the assistant to process a specified mailbox.
 
 > [!NOTE]
-> The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed. <br/><br/> MRM won't move items larger than the values of MaxSendSize and MaxReceiveSize set on the mailbox.
+> The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed.
+>
+> MRM won't move items larger than the values of MaxSendSize and MaxReceiveSize set on the mailbox.
 
 ### Moving items between folders
 
