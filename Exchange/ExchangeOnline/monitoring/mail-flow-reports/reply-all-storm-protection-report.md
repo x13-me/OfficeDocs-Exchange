@@ -20,7 +20,7 @@ The Reply-all storm protection report in the new Exchange admin center (new EAC)
 > [!NOTE]
 > For more information on permissions that are required to use this report, see [Permissions required to view mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports#permissions-required-to-view-mail-flow-reports).
 
-![Reply-all storm protection report1](../../media/reply-all-storm-protection-report.png)
+![Reply-all storm protection report1](../../media/reply-all-storm-protection-report.png.jpg)
 
 The top of the report shows the current settings used by Reply-all Storm Protection for detecting and blocking reply-all messages during a reply-all storm.
 
@@ -29,7 +29,9 @@ The top of the report shows the current settings used by Reply-all Storm Protect
  - Minimum reply-alls
  - Block duration hours
  
-To view the current feature settings here on the report you must have read access to Transport configuration information (Get-TransportConfig) via the View-Only Configuration or Organization Transport Settings roles. Both the Organization Management and View-only Organization Management role groups include both of these roles.
+To view the current feature settings here on the report you must have read access to Transport configuration information (Get-TransportConfig) via the View-Only Configuration or Organization Transport Settings roles. Both the Organization Management and View-Only Organization Management role groups include both of these roles.
+
+For more information, see [View-only Organization Management](/exchange/view-only-organization-management-exchange-2013-help#:~:text=The%20View-Only%20Organization%20Management%20management%20role%20group%20is%2crequired%20to%20perform%20a%20given%20set%20of%20tasks)
 
 Note that the current settings shown might not be the same as the settings that were used for past reply-all storms if they were previously changed. Changing the settings while a storm is happening might not apply those settings in time to affect the current storm, but it will apply to future storms.
 
@@ -49,7 +51,7 @@ The **Messages blocked** chart includes a subset of the messages shown in the **
 
 Selecting any one of the reply-all storm names in either chart will pop up a side panel showing specific details about the selected reply-all storm, as shown below. 
 
-![Reply-all report](../../media/reply-all-storm-protection-report-current-settings.png)
+![Reply-all report](../../media/reply-all-storm-protection-report-current-settings.png.jpg)
 
 The reply-all storm details panel includes the following information about the storm:
 
