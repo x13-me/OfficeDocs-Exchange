@@ -20,7 +20,7 @@ The Reply-all storm protection report in the new Exchange admin center (new EAC)
 > [!NOTE]
 > For more information on permissions that are required to use this report, see [Permissions required to view mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports#permissions-required-to-view-mail-flow-reports).
 
-![Reply-all storm protection report1](../../media/reply-all-storm-protection-report.png.jpg)
+![Reply-all storm protection report1](../../media/reply-all-storm-protection-report.png.png)
 
 The top of the report shows the current settings used by Reply-all Storm Protection for detecting and blocking reply-all messages during a reply-all storm.
 
@@ -51,7 +51,7 @@ The **Messages blocked** chart includes a subset of the messages shown in the **
 
 Selecting any one of the reply-all storm names in either chart will pop up a side panel showing specific details about the selected reply-all storm, as shown below. 
 
-![Reply-all report](../../media/reply-all-storm-protection-report-current-settings.png.jpg)
+![Reply-all report](../../media/reply-all-storm-protection-report-current-settings.png.png)
 
 The reply-all storm details panel includes the following information about the storm:
 
