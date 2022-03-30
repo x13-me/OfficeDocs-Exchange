@@ -31,7 +31,7 @@ The top of the report shows the current settings used by Reply-all Storm Protect
  
 To view the current feature settings here on the report you must have read access to Transport configuration information (Get-TransportConfig) via the View-Only Configuration or Organization Transport Settings roles. Both the Organization Management and View-Only Organization Management role groups include both of these roles.
 
-For more information, see [View-only Organization Management](/exchange/view-only-organization-management-exchange-2013-help#:~:text=The%20View-Only%20Organization%20Management%20management%20role%20group%20is%2crequired%20to%20perform%20a%20given%20set%20of%20tasks)
+For more information, see [View-only Organization Management](/exchange/view-only-organization-management-exchange-2013-help#:~:text=The%20View-Only%20Organization%20Management%20management%20role%20group%20is%2crequired%20to%20perform%20a%20given%20set%20of%20tasks).
 
 Note that the current settings shown might not be the same as the settings that were used for past reply-all storms if they were previously changed. Changing the settings while a storm is happening might not apply those settings in time to affect the current storm, but it will apply to future storms.
 
