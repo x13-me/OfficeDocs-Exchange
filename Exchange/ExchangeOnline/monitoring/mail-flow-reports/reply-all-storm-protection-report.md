@@ -29,7 +29,7 @@ The top of the report shows the current settings used by Reply-all Storm Protect
  - Minimum reply-alls
  - Block duration hours
  
-To view the current feature settings here on the report you must have read access to Transport configuration information (Get-TransportConfig) via the View-Only Configuration or Organization Transport Settings roles. Both the Organization Management and View-Only Organization Management role groups include both of these roles.
+To view the current feature settings here on the report, you must have read access to Transport configuration information (Get-TransportConfig) via the View-Only Configuration or Organization Transport Settings roles. Both the Organization Management and View-Only Organization Management role groups include both of these roles.
 
 For more information, see [View-only Organization Management](/exchange/view-only-organization-management-exchange-2013-help#:~:text=The%20View-Only%20Organization%20Management%20management%20role%20group%20is%2crequired%20to%20perform%20a%20given%20set%20of%20tasks).
 
@@ -42,7 +42,7 @@ The overview section shows these two charts:
  - **Detected reply-all storm messages**
  - **Messages blocked**
 
-The **Detected reply-all storm messages** chart shows the number of reply-all messages that were sent during the preceding time-interval for detected reply-all storms. For example, in the chart above the five reply-all messages for the "Happy Thanksgiving" storm shown at 3pm were detected between 2:45 and 3pm. While reply-all messages sent before a reply-all storm is detected won't get blocked, they are included in the **Detected reply-all storm messages** chart values, as are the messages that were blocked. 
+The **Detected reply-all storm messages** chart shows the number of reply-all messages that were sent during the preceding time-interval for detected reply-all storms. For example, in the chart above the five reply-all messages for the "Happy Thanksgiving" storm shown at 3pm were detected between 2:45 and 3pm. While reply-all messages sent before a reply-all storm is detected won't get blocked, they're included in the **Detected reply-all storm messages** chart values, as are the messages that were blocked. 
 
 > [!NOTE]
 > This chart displays data only for declared reply-all storms where at least one reply-all message has been blocked. It can't be used to track potential storms before they're declared a reply-all storm.
