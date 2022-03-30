@@ -110,10 +110,16 @@ A journal report is the message that the Journaling agent generates when a messa
 
 ### Journal reports and IRM-protected messages
 
-When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built-in. In Microsoft 365 or Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.
+When implementing journaling, you must consider journaling reports and IRM-protected messages. IRM-protected messages will affect the search and discovery capabilities of third-party archiving systems that don't have RMS support built in. In Microsoft 365 or Office 365, you can configure Journal Report Decryption to save a clear-text copy of the message in a journal report.  The messages and attachments are decrypted if the encryption originates from the organization. (Journaling does not decrypt on items that are encrypted by external organizations.)
+
+To enable journal report decryption for the Exchange Online organization, open a PowerShell session and run the following command.
+
+```powershell
+ Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+ ```
 
 > [!IMPORTANT]
-> The Journal Report Decryption feature currently does not support the explicit use of OME templates. If you use a mail flow rule (also known as a transport rule) to apply an OME template, the journal report will not contain a decrypted copy of the message. Currently, journal report decryption only works with the default OME template that's implicitly applied by Exchange Online (on OME messages).
+> The Journal Report Decryption feature currently does not support the explicit use of OME branding templates. If you use a mail flow rule (also known as a transport rule) to apply an OME branding template, the journal report will not contain a decrypted copy of the message. Currently, journal report decryption only works with the default OME branding template that's applied without a mail flow rule by Exchange Online (implicitly on OME messages).
 
 ## Troubleshooting
 
