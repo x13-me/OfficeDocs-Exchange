@@ -86,7 +86,7 @@ For detailed information, see the following resources:
 
 - [Overview of Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
-- [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
+- [Manage settings and features on your devices with Microsoft Intune policies](/mem/intune/configuration/device-profiles)
 
 - Instructions for your end-users to enroll a device in Basic Mobility and Security: [Enroll your mobile device using Basic Mobility and Security](https://support.microsoft.com/office/c8ac722d-dcaf-4135-8345-3e6327f5d3c5)
 
