@@ -29,7 +29,7 @@ Most Microsoft email migration information assumes that you're running Exchange 
 
 In this scenario, the goal is to support cross-premises email coexistence. A third-party messaging system remains in the on-premises organization and shares an email namespace (domain) with the Exchange Online messaging system in the cloud. A unified address book in the cloud shows all users in both the on-premises and cloud organizations. This email coexistence might be a short-term or long-term solution.
 
-As you plan for this third-party email coexistence, consider the Azure Active Directory [hybrid identity options](/azure/active-directory/hybrid/whatis-hybrid-identity) and the [authentication choices](/azure/security/azure-ad-choose-authn) for synchronization and end user authentication options.
+As you plan for this third-party email coexistence, consider the Azure Active Directory [hybrid identity options](/azure/active-directory/hybrid/whatis-hybrid-identity) and the [authentication choices](/azure/active-directory/hybrid/choose-ad-authn) for synchronization and end user authentication options.
 
 **Scenario goals**:
 
