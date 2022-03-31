@@ -474,7 +474,7 @@ Get-ADUser -Filter "Department -eq 'Developer'" -Properties Department
 ### Step 2: Disable legacy authentication in Exchange Online
 
 > [!NOTE]
-> The attribute values for on-premises users are synchronized to Exchange Online only for users that have a valid Exchange Online license. For more information, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-user).
+> The attribute values for on-premises users are synchronized to Exchange Online only for users that have a valid Exchange Online license. For more information, see [Add users individually or in bulk](/microsoft-365/enterprise/add-several-users-at-the-same-time).
 
 The Exchange Online PowerShell syntax uses the following commands (two to identify the user accounts, and the other to apply the policy to those users):
 
