@@ -2565,11 +2565,11 @@
       - name: Change user throttling settings for all users in your organization
         href: change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md
   - name: Exchange Server 2013 Management Pack Guide
-    href: /Exchange/Exchange/ExchangeServer2013/exchange-server-2013-management-pack-guide
+    href: /exchange/management/exchange-server-2013-management-pack-guide
   - name: Exchange Server 2013 Management Pack Health Sets
-    href: /Exchange/Exchange/ExchangeServer2013/exchange-2013-management-pack-health-sets
+    href: /exchange/management/health/exchange-2013-management-pack-health-sets
   - name: Exchange Server 2013 Technical Articles
-    href: /Exchange/Exchange/ExchangeServer2013/exchange-server-2013-technical-articles
+    href: /Exchange/Exchange/ExchangeServer2013/exchange-server-2013-technical-articles 
   - name: About Exchange documentation
     href: about-exchange-documentation-exchange-2013-help.md
     items:
