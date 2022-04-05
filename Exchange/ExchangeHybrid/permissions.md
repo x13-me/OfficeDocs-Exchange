@@ -81,12 +81,14 @@ For more information, see [Overview of delegation in an Office 365 hybrid enviro
   ```PowerShell
   Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
   ```
+For detailed syntax and parameter information, see [Add-ADPermission](/powershell/module/exchange/Add-ADPermission).
 
   Then run the corresponding command in Exchange Online PowerShell:
 
   ```PowerShell
   Add-RecipientPermission -Identity EXO1 -Trustee ONPREM1 -AccessRights SendAs
   ```
+For detailed syntax and parameter information, see [Add-RecipientPermission](/powershell/module/exchange/Add-RecipientPermission).
 
   > [!NOTE]
   > Send As permission is also needed to comply with the on-premises Exchange server and AAD Connect requirements in the next two sections.
