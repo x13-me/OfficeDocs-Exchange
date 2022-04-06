@@ -163,7 +163,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 > [!NOTE]
 > If you want to specify rules for attributes other than the ones available in the Classic EAC, you must use Exchange Online PowerShell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using Exchange Online PowerShell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using Exchange Online PowerShell to create a dynamic distribution group.
 
-### Use Exchange Online PowerShell to create a dynamic distribution group
+#### [**With Exchange Online PowerShell**](#tab/Exo-powershell)
 
 This example creates the dynamic distribution group "Mailbox Users DDG" that contains only mailbox users.
 
@@ -201,7 +201,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
 
 ## Change dynamic distribution group properties
 
-### Use the new EAC to change dynamic distribution group properties
+#### [**With new EAC**](#tab/new-eac-properties)
 
 1. In the new EAC, navigate to **Recipients** > **Groups** > **Dynamic distribution list**.
 
@@ -282,7 +282,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **No notifications**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
 
-### Use the Classic EAC to change dynamic distribution group properties
+#### [**With the classic EAC**](#tab/classic-eac-properties)
 
 1. In the Classic EAC, navigate to **Recipients** \> **Groups**.
 
@@ -389,7 +389,7 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 
 To assign permissions to delegates in Classic EAC, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
-#### Use Exchange Online PowerShell to change dynamic distribution group properties
+#### [**With Exchange Online PowerShell**](#tab/exo-powershell-properties)
 
 Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics:
 
