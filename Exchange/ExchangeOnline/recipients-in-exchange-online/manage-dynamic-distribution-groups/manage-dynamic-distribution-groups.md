@@ -47,7 +47,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 ## Create a dynamic distribution group
 
-### Use the new EAC to create a dynamic distribution group
+#### [**In the new EAC**](#tab/new-eac)
 
 1. In the new EAC, navigate to **Recipients** > **Groups**.
 
@@ -99,7 +99,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 > [!NOTE]
 > If you want to specify rules for attributes other than the ones available in the new EAC, you must use Exchange Online PowerShell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using Exchange Online PowerShell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using Exchange Online PowerShell to create a dynamic distribution group.
 
-### Use the Classic EAC to create a dynamic distribution group
+#### [**In the Classic EAC**](#tab/classic-eac)
 
 1. In the Classic EAC, navigate to **Recipients** \> **Groups** \> **New** \> **Dynamic distribution group**.
 
