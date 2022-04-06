@@ -29,13 +29,11 @@ The top of the report shows the current settings used by Reply-all Storm Protect
  - Minimum reply-alls
  - Block duration hours
  
-To view the current feature settings here on the report, you must have read access to Transport configuration information (Get-TransportConfig) via the View-Only Configuration or Organization Transport Settings roles. Both the Organization Management and View-Only Organization Management role groups include both of these roles.
-
-For more information, see [View-only Organization Management](/exchange/view-only-organization-management-exchange-2013-help#:~:text=The%20View-Only%20Organization%20Management%20management%20role%20group%20is%2crequired%20to%20perform%20a%20given%20set%20of%20tasks).
+To view the current feature settings here on the report, you must have read access to Transport configuration information (Get-TransportConfig) via the View-Only Configuration or Organization Transport Settings roles. Both the Organization Management and View-Only Organization Management role groups include both of these roles. For more information, see [View-only Organization Management](/exchange/view-only-organization-management-exchange-2013-help#:~:text=The%20View-Only%20Organization%20Management%20management%20role%20group%20is%2crequired%20to%20perform%20a%20given%20set%20of%20tasks).
 
 Note that the current settings shown might not be the same as the settings that were used for past reply-all storms if they were previously changed. Changing the settings while a storm is happening might not apply those settings in time to affect the current storm, but it will apply to future storms.
 
-Beneath the current settings, is the time/date range drop-down from which you can select to view from 3 hours to 90 days of data (with the last 3 hours as default). All times shown are based on your local time. 
+Beneath the current settings is the time/date range drop-down from which you can select to view from 3 hours to 90 days of data (with the last 3 hours as the default). All times shown are based on your local time. 
 
 The overview section shows these two charts: 
 
@@ -66,7 +64,7 @@ The reply-all storm details panel includes the following information about the s
 |**Message ID**|The Message ID of the first message in the conversation thread. Clicking on this link will open Message Trace in a new tab and run a query for this message.|
 |**Reply-all senders**|Users who sent (or tried to send) a reply-all to the thread. Includes whether or not the message they sent was allowed through or blocked.|
 
-The final section of the main report page, **Reply-all storm details**, shows a table of all the reply-all storms shown in the above charts for the selected time/date range. It also includes the key details about each of the following:
+The final section of the main report page, **Reply-all storm details**, shows a table of all the reply-all storms shown in the charts for the selected time range. It also includes the key details about each of the following:
 
  - **Start Date/Time**
  - **End Date/Time**
