@@ -417,7 +417,7 @@ You can only turn off these settings in Exchange Online PowerShell.
 
 This method uses one specific attribute as a filter for on-premises Active Directory group members that will be synchronized with Exchange Online. This method allows you to disable legacy protocols for specific groups without affecting the entire organization.
 
-Throughout this example, we'll use the **Department** attribute, because it's a common attributes that identifies users based on their department and role. To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx).
+Throughout this example, we'll use the **Department** attribute, because it's a common attribute that identifies users based on their department and role. To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx).
 
 ### Step 1: Find the Active Directory users and set the Active Directory user attributes
 
