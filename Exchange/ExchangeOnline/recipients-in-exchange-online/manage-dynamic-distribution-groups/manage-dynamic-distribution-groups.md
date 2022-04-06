@@ -23,7 +23,7 @@ manager: serdars
 # Manage dynamic distribution groups in Exchange Online
 
 > [!NOTE]
-> A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by April 2022.
+> A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by April 2022, replacing the earlier method.
 
 Dynamic distribution groups (DDGs) are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 

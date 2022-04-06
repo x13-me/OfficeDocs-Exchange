@@ -29,7 +29,7 @@ Get-DynamicDistributionGroupMember -Identity <DDGIdentity>
 For detailed parameter and syntax information, see [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember).
 
 > [!NOTE]
-> Don't use the old procedure for viewing members of a DDG as described in [View members of a dynamic distribution group in Exchange Online](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members). The old procedure returns all users that satisfy the DDG filters at the time you run the command. The old procedure does not return the calculated list of members that are stored on the DDG object.
+> Don't use the old procedure for viewing members of a DDG. The old procedure returns all users that satisfy the DDG filters at the time you run the command and doesn't return the calculated list of members that are stored on the DDG object.
 
 ## Refresh the membership of a DDG
 
@@ -49,13 +49,6 @@ Dynamic distribution groups are distribution groups whose membership is periodic
 
 You can use Exchange Online PowerShell to view the list of recipients for a dynamic distribution group. You can't view members of a dynamic distribution in the Exchange admin center (EAC).
 
-## What do you need to know before you begin?
-
-- Estimated time to complete: 2 minutes.
-
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
-
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://social.technet.microsoft.com/forums/msonline/home?forum=onlineservicesexchange) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
