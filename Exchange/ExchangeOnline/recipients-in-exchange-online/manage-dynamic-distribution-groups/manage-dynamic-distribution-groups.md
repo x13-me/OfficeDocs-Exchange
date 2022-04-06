@@ -23,18 +23,36 @@ manager: serdars
 # Manage dynamic distribution groups in Exchange Online
 
 > [!NOTE]
-> A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by March 2022. Learn more: [Modern dynamic distribution groups](modern-dynamic-distribution-groups.md).
+> A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by April 2022.
 
-Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
+Dynamic distribution groups (DDGs) are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
 
-Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
+DDGs in Exchange Online have been modernized to bring a more reliable, predictable, and better performing experience. This change will reduce mail delivery latency, improve service reliability, and allow you to see the members of a DDG before sending a message.
+
+The membership list is now stored for each DDG and is updated once every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability.
+
+## Important changes in DDGs
+
+As of April 2022, DDGs now perform differently than before. Review the changes in the table below:
+
+|Area|Old behavior|New behavior|
+|---|---|---|
+|Mail delivery latency|Unpredictable. The time it takes to deliver mail to a DDG depends on how complex the filters are on that DDG.|Faster and more predictable overall. You should see delivery times more in line with those for regular distribution groups.|
+|Creation|DDGs could be used immediately after being created. |It takes 2 hours for the initial membership list to be calculated and be available for use.|
+|Modification|DDGs could be used immediately after any changes were made|Users have to wait up to 2 hours for the membership list to be recalculated and links updated.|
+|Membership list "freshness"|The list of members was up to date in real time.|The list of members for each DDG is refreshed every 24 hours.|
+
+> [!IMPORTANT]
+> The list of DDG members might become stale. For example, if a user has left a department that was used as a filter for the DDG, they might continue to receive mail that's sent to the DDG for the next 24 hours util the membership list is refreshed.
+>
+> Mail flow rules (also known as transport rules) are also affected by this behavior, because the
 
 > [!IMPORTANT]
 >
 > - A dynamic distribution group includes any recipient in Active Directory with attribute values that match its filter. If a recipient's properties are modified to match the filter, the recipient could inadvertently become a group member and start receiving messages that are sent to the group. Well-defined, consistent account provisioning processes will reduce the chances of this issue occurring.
 > - Dynamic distribution groups are not synced from Exchange Online to Azure Active Directory or to your on-premises Active Directory. Therefore, features such as Azure Conditional Access do not support being scoped to an Exchange Online dynamic distribution group.
 
-## Before you start
+## Before you begin
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
