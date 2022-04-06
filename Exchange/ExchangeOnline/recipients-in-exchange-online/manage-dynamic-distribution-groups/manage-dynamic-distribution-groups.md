@@ -208,7 +208,7 @@ You can change the group properties, here's how.
 
 3. On the group's properties page, click one of the following sections to view or change properties.
 
-##### General
+###### General
 
 Use this section to view or change basic information about the group.
 
@@ -216,13 +216,13 @@ Use this section to view or change basic information about the group.
 
 - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the address book and in the Details pane in the new EAC.
 
-##### Email options in new EAC
+###### Email options in new EAC
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. Under **Edit email addresses** page, change/edit the **Primary email address**, add/delete **Aliases** and then click **Save changes**. 
 
 You can also select the group and then click **Edit email addresses** from the toolbar to change/edit the **Primary email address**, add/delete **Aliases** and then click **Save changes**.
 
-##### Members
+###### Members
 
 Use this section to change/edit the following:
 
@@ -230,11 +230,11 @@ Use this section to change/edit the following:
 
 - Use **Members** section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the new EAC to create a dynamic distribution group](#use-the-new-eac-to-create-a-dynamic-distribution-group).
 
-##### Settings
+###### Settings
 
 Under **General settings** section, select the checkbox **Hide from my organization's global address list** if you want to hide the group from the list.
 
-##### Delivery management
+###### Delivery management
 
 Use this section to manage who can send email to this group.
 
@@ -253,7 +253,7 @@ Use this section to manage who can send email to this group.
   > [!IMPORTANT]
   > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
 
-##### Manage delegates
+###### Manage delegates
 
 Use this section to assign permissions to a user (called a delegate) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions:
 
@@ -263,7 +263,7 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 
 To assign permissions to delegates in new EAC, add the delegates under the **Edit delegates** page, select the **Permission type** from the drop-down list and click **Save changes**.
 
-##### Message approval 
+###### Message approval 
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
@@ -281,6 +281,12 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **No notifications**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
 
+###### How do you know this worked?
+
+To verify that you've successfully changed properties for a dynamic distribution group:
+
+- Select the group to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
+
 #### [**With the classic EAC**](#tab/properties-classic-eac)
 
 1. In the Classic EAC, navigate to **Recipients** \> **Groups**.
@@ -289,7 +295,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 3. On the group's properties page, click one of the following sections to view or change properties.
 
-##### General
+###### General
 
 Use this section to view or change basic information about the group.
 
@@ -303,17 +309,17 @@ Use this section to view or change basic information about the group.
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the dynamic distribution group. You have to use Active Directory Users and Computers to move the group to a different OU.
 
-##### Ownership
+###### Ownership
 
 Use this section to assign a group owner. A dynamic distribution group can have only one owner. The group owner appears on the **Managed by** tab of the object in Active Directory Users and Computers.
 
 You can add owners by clicking **Browse** and selecting the owner from the list. To remove the owner, click **Clear** and then click **Save**.![Remove icon.](../../media/ITPro_EAC_RemoveIcon.gif).
 
-##### Membership
+###### Membership
 
 Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the Classic EAC to create a dynamic distribution group](#use-the-classic-eac-to-create-a-dynamic-distribution-group) in the procedures for configuring membership when you use the Classic EAC to create a new dynamic distribution group.
 
-##### Delivery management
+###### Delivery management
 
 Use this section to manage who can send email to this group.
 
@@ -328,7 +334,7 @@ Use this section to manage who can send email to this group.
   > [!IMPORTANT]
   > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
 
-##### Message approval for membership
+###### Message approval for membership
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
 
@@ -346,7 +352,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
   - **Don't notify anyone when a message isn't approved**: When you select this option, notifications aren't sent to senders whose messages aren't approved by the group moderators.
 
-##### Email options
+###### Email options
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -371,14 +377,14 @@ Use this section to view or change the email addresses associated with the group
 
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
 
-##### MailTip
+###### MailTip
 
 Use this section to add a MailTip to alert users of potential issues before they send a message to this group. A MailTip is text that's displayed in the InfoBar when this group is added to the To, Cc, or Bcc lines of a new email message. For example, you could add a MailTip to large groups to warn potential senders that their message will be sent to lots of people.
 
 > [!NOTE]
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
-##### Group delegation
+###### Group delegation
 
 Use this section to assign permissions to a user (called a delegate) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions:
 
@@ -387,6 +393,12 @@ Use this section to assign permissions to a user (called a delegate) to allow th
 - **Send on Behalf Of**: This permission also allows a delegate to send messages on behalf of the group. After this permission is assigned, the delegate has the option to add the group on the **From** line. The message will appear to be sent by the group and will say that it was sent by the delegate on behalf of the group.
 
 To assign permissions to delegates in Classic EAC, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
+
+###### How do you know this worked?
+
+To verify that you've successfully changed properties:
+
+- Select the group and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
 
 #### [**With Exchange Online PowerShell**](#tab/properties-powershell)
 
@@ -418,15 +430,11 @@ This example adds the proxy SMTP email address, Seattle.Employees@contoso.com, t
 Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.Employees@contoso.com, smtp:Seattle.Employees@contoso.com
 ```
 
-### How do you know this worked?
+###### How do you know this worked?
 
-To verify that you've successfully changed properties for a dynamic distribution group, do the following:
+To verify that you've successfully changed properties: 
 
-- In the new EAC, select the group to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
-
-- In the Classic EAC, select the group and then click **Edit** ![Edit icon.](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the details pane for the selected group.
-
-- In Exchange Online PowerShell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values.
+- Use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values.
 
   ```PowerShell
   Get-DynamicDistributionGroup -ResultSize unlimited | Format-List Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
