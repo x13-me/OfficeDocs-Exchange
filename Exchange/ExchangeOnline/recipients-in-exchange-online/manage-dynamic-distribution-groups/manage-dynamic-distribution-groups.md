@@ -196,7 +196,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
   ```PowerShell
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
---
+---
 ## Change dynamic distribution group properties
 You can change the group properties, here's how.
 
