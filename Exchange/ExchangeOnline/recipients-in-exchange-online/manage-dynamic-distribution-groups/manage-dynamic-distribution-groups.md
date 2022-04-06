@@ -248,6 +248,9 @@ Use this section to change/edit the following:
 
 - Use **Members** section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the new EAC to create a dynamic distribution group](#use-the-new-eac-to-create-a-dynamic-distribution-group).
 
+>[!Important]
+>It can take up to 2 hours for the membership list to be recalculated and links updated.
+
 ###### Settings
 
 Under **General settings** section, select the checkbox **Hide from my organization's global address list** if you want to hide the group from the list.
@@ -447,6 +450,10 @@ This example adds the proxy SMTP email address, Seattle.Employees@contoso.com, t
 ```PowerShell
 Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.Employees@contoso.com, smtp:Seattle.Employees@contoso.com
 ```
+
+>[!Important]
+>It can take up to 2 hours for the membership list to be recalculated and links updated.
+
 
 ###### How do you know this worked?
 
