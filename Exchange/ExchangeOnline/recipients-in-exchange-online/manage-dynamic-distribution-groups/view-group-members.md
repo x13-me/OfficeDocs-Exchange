@@ -26,7 +26,7 @@ Do not use the old procedure for viewing members. The old procedure returns all 
 
 
 >[!Important]
->If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differently -- including how to view members.
+>If your tenant resides in a government cloud, including GCC, GCC High, or DoD, Dynamic Distribution groups function differently.
 >
 > See [Using Dynamic Distribution groups in a government cloud](manage-dynamic-distribution-groups.md#using-ddgs-in-a-government-cloud) for steps on how to view members.
 
