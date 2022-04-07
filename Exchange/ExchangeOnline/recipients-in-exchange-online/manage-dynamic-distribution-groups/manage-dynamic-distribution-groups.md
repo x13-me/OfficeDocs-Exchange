@@ -22,7 +22,7 @@ manager: serdars
 
 # Manage dynamic distribution groups in Exchange Online
 
-> [!NOTE]
+>[!NOTE]
 > A new version of this feature is currently being rolled out to customers. **Modern Dynamic Distribution Groups** will be fully released by April 2022, replacing the earlier method.
 
 Dynamic distribution groups (DDGs) are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
@@ -30,6 +30,12 @@ Dynamic distribution groups (DDGs) are mail-enabled Active Directory group objec
 DDGs in Exchange Online have been modernized to bring a more reliable, predictable, and better performing experience. This change will reduce mail delivery latency, improve service reliability, and allow you to see the members of a DDG before sending a message.
 
 The membership list is now stored for each DDG and is updated once every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability.
+
+>[!Important]
+>If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differnently. 
+>
+>To learn more, see [Using DDGs in a government cloud](#using-ddgs-in-a-government-cloud)
+
 
 ## Important changes in DDGs
 
@@ -470,3 +476,27 @@ To verify that you've successfully changed properties:
   ```PowerShell
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
+## Using DDGs in a government cloud
+If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differnently. 
+
+For government clouds, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
+
+### View group members (Government cloud only)
+Use Exchange Online PowerShell to preview the list of members of a dynamic distribution group
+
+This example returns the list of members for the dynamic distribution group named Full Time Employees.
+
+```PowerShell
+$FTE = Get-DynamicDistributionGroup "Full Time Employees"
+Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+This example displays the list of users and email addresses for the same group if it has more than 1,000 members.
+```
+
+```PowerShell
+$FTE = Get-DynamicDistributionGroup "Full Time Employees"
+Get-Recipient -ResultSize Unlimited -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer | Format-Table Name,Primary*
+```
+For detailed syntax and parameter information, see Get-DynamicDistributionGroupMember.
+
+**How do you know this worked?**
+To verify that you've successfully viewed the members of a dynamic distribution group, run Get-DynamicDistributionGroupMember to view the list of group members. For example, if you created a new user mailbox with properties that match the recipient filter for the dynamic distribution group, this new mailbox should be displayed in the list of group members.
