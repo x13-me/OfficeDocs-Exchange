@@ -267,7 +267,7 @@ Use this section to change/edit the following:
 
 - Under **Owners** section, select **View all and manage owners** to add/remove group owners from the drop-down list and then select **Save changes**. The dynamic distribution group must have at least one owner. 
 
-- Use **Members** section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [[**Create a DDG using the new EAC**](#tab/create-new-eac)](#in-the-new-eactabcreate-new-eac).
+- Use **Members** section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Create a dynamic distribution group](#create-a-dynamic-distribution-group)
 
 >[!Important]
 >It can take up to 2 hours for the membership list to be recalculated and links updated.
@@ -359,7 +359,7 @@ You can add owners by clicking **Browse** and selecting the owner from the list.
 
 ###### Membership
 
-Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see[[**Create a DDG using the Classic EAC**](#tab/create-classic-eac)](#in-the-classic-eactabcreate-classic-eac).
+Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. To learn how, see [Create a dynamic distribution group](#create-a-dynamic-distribution-group).
 
 ###### Delivery management
 
