@@ -32,9 +32,9 @@ DDGs in Exchange Online have been modernized to bring a more reliable, predictab
 The membership list is now stored for each DDG and is updated once every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability.
 
 >[!Important]
->If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differnently. 
+>If your tenant resides in a government cloud, including GCC, GCC High, or DoD, Dynamic Distribution Groups function differnently. 
 >
->To learn more, see [Using DDGs in a government cloud](#using-ddgs-in-a-government-cloud)
+>To learn more, see [Using Dynamic Distribution groups in a government cloud](#using-ddgs-in-a-government-cloud)
 
 
 ## Important changes in DDGs
@@ -476,6 +476,7 @@ To verify that you've successfully changed properties:
   ```PowerShell
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
+---
 ## Using DDGs in a government cloud
 If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differnently. 
 
