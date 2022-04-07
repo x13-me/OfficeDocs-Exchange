@@ -22,6 +22,10 @@ manager: serdars
 
 Use Exchange Online PowerShell to view the list of recipients for a Dynamic Distribution group (DDG). You can't view members of a dynamic distribution in the Exchange admin center (EAC).
 
+>[!Note]
+>If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differently.
+> See [Using Dynamic Distribution groups in a government cloud](manage-dynamic-distribution-groups.md#using-ddgs-in-a-government-cloud) for steps on how to view members.
+
 To view the members of a DDG, replace \<DDGIdentity\> with the name, alias, or email address of the DDG and run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). The command returns the calculated list of members that's stored on the dynamic distribution group object.
 
 ```PowerShell
