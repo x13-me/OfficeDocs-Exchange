@@ -71,6 +71,8 @@ As of April 2022, DDGs now perform differently than before. Review the changes i
 
 #### [**In the new EAC**](#tab/create-new-eac)
 
+Use the new EAC to create a dynamic distribution group.
+
 >[!Important]
 >It can take up to 2 hours for the initial membership list to be calculated and be available for use.
 
@@ -125,6 +127,8 @@ As of April 2022, DDGs now perform differently than before. Review the changes i
 > If you want to specify rules for attributes other than the ones available in the new EAC, you must use Exchange Online PowerShell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using Exchange Online PowerShell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using Exchange Online PowerShell to create a dynamic distribution group.
 
 #### [**In the Classic EAC**](#tab/create-classic-eac)
+
+Use the classic EAC to create a dynamic distribution group.
 
 >[!Important]
 >It can take up to 2 hours for the initial membership list to be calculated and be available for use.
@@ -192,6 +196,8 @@ As of April 2022, DDGs now perform differently than before. Review the changes i
 > If you want to specify rules for attributes other than the ones available in the Classic EAC, you must use Exchange Online PowerShell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using Exchange Online PowerShell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using Exchange Online PowerShell to create a dynamic distribution group.
 
 #### [**With Exchange Online PowerShell**](#tab/create-powershell)
+
+Use Exchange online PowerShell to create a dynamic distribution group.
 
 >[!Important]
 >It can take up to 2 hours for the initial membership list to be calculated and be available for use.
