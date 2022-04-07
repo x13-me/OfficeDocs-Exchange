@@ -20,7 +20,9 @@ manager: serdars
 
 # View members of a dynamic distribution group in Exchange Online
 
-Use Exchange Online PowerShell to view the list of recipients for a Dynamic Distribution group (DDG). You can't view members of a dynamic distribution in the Exchange admin center (EAC). Do not use the old method of viewing members.
+Use Exchange Online PowerShell to view the list of recipients for a Dynamic Distribution group (DDG). You can't view members of a dynamic distribution in the Exchange admin center (EAC). 
+
+Do not use the old procedure for viewing members. The old procedure returns all users that satisfy the DDG filters at the time you run the command. The calculated list of members that are stored on the DDG object are not returned.
 
 
 >[!Important]
