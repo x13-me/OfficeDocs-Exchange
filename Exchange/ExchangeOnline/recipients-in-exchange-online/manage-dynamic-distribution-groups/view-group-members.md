@@ -20,10 +20,13 @@ manager: serdars
 
 # View members of a dynamic distribution group in Exchange Online
 
-Use Exchange Online PowerShell to view the list of recipients for a Dynamic Distribution group (DDG). You can't view members of a dynamic distribution in the Exchange admin center (EAC).
+Use Exchange Online PowerShell to view the list of recipients for a Dynamic Distribution group (DDG). You can't view members of a dynamic distribution in the Exchange admin center (EAC). 
 
->[!Note]
->If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differently.
+Modern DGGs use the following method for viewing members of a DDG. Do not use the earlier procedure. The old procedure returns all users that satisfy the DDG filters at the time you run the command and doesn't return the calculated list of members that are stored on the DDG object.
+
+>[!Important]
+>If your tenant resides in a government cloud, including GCC, GCC High, or DoD, the Dynamic Distribution Groups, DDGs function differently -- including how to view members.
+>
 > See [Using Dynamic Distribution groups in a government cloud](manage-dynamic-distribution-groups.md#using-ddgs-in-a-government-cloud) for steps on how to view members.
 
 To view the members of a DDG, replace \<DDGIdentity\> with the name, alias, or email address of the DDG and run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). The command returns the calculated list of members that's stored on the dynamic distribution group object.
@@ -34,8 +37,6 @@ Get-DynamicDistributionGroupMember -Identity <DDGIdentity>
 
 For detailed parameter and syntax information, see [Get-DynamicDistributionGroupMember](/powershell/module/exchange/get-dynamicdistributiongroupmember).
 
-> [!NOTE]
-> Don't use the old procedure for viewing members of a DDG. The old procedure returns all users that satisfy the DDG filters at the time you run the command and doesn't return the calculated list of members that are stored on the DDG object.
 
 ## Refresh the membership of a DDG
 
