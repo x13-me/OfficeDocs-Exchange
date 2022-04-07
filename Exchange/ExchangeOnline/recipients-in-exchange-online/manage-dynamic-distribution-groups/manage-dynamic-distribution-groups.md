@@ -51,7 +51,7 @@ As of April 2022, DDGs now perform differently than before. Review the changes i
 > [!IMPORTANT]
 > The list of DDG members might become stale. For example, if a user has left a department that was used as a filter for the DDG, they might continue to receive mail that's sent to the DDG for the next 24 hours util the membership list is refreshed.
 >
-> Mail flow rules (also known as transport rules) are also affected by this behavior, because the
+> Mail flow rules (also known as transport rules) are also affected by this behavior, because the membership list that the mail flow rules use is also refreshed once every 24 hours.
 
 > [!IMPORTANT]
 >
