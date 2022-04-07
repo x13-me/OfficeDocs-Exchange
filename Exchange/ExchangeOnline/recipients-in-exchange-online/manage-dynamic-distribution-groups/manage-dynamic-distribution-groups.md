@@ -32,7 +32,7 @@ DDGs in Exchange Online have been modernized to bring a more reliable, predictab
 The membership list is now stored for each DDG and is updated once every 24 hours. You'll know exactly to whom the message is being sent, and it also addresses potential compliance issues. By storing the calculated list of members on the DDG object, messages can be delivered more quickly and our service will have greater reliability.
 
 >[!Important]
->**Government cloud:** If your tenant resides in a government cloud, including GCC, GCC High, or DoD, Dynamic Distribution Groups function differnently. 
+>**Government cloud:** If your tenant resides in a government cloud, including GCC, GCC High, or DoD, Dynamic Distribution Groups function differently. 
 >
 >To learn more, see [Using Dynamic Distribution groups in a government cloud](#using-ddgs-in-a-government-cloud)
 
