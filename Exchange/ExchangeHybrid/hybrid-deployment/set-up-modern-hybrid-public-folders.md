@@ -66,6 +66,12 @@ An Exchange Online, Microsoft 365, or Office 365 user must be represented by a M
     > [!NOTE]
     > The download package at this location contains additional files. To follow the instructions in this article, you only need the two listed above.
 
+    > [!NOTE]
+    > The scripts supports only basic authentication, and the script execution will fail, if basic authentication is disabled for 1) Remote PowerShell protocol 2) The admin account provided on the script. Please use following instructions to workaround the issue:
+>1) (Click here)[https://aka.ms/PillarEXOBasicAuth] (needs tenant admin login to your tenant) to check if the basic authentication is disabled for Remote PowerShell ?protocol and enable basic authentication for Remote PowerShell protocol.
+>2) If you have disabled the basic authentication on admin account, enable the basic authentication for admin account that's used on the script till the time script execution is required.
+
+
 2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
 
 ## Step 2: Synchronize mail-enabled public folder objects to Exchange Online
