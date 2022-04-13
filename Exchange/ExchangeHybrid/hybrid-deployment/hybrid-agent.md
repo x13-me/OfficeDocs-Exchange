@@ -215,6 +215,37 @@ Name : O365 to On-premises - c6d22e11-2340-4432-9122-19097bacf0c1
 TargetSharingEpr : https://087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.his.msappproxy.net/EWS/Exchange.asmx
 ```
 
+## Hybrid Agent PowerShell Module
+The Hybrid Management PowerShell module, installed by the Hybrid Configuration wizard at “\Program Files\Microsoft Hybrid Service\” on the machine where the Hybrid Agent is installed. These module provides following cmdlets which can now be used with or without MFA enabled Administrator account.  
+
+|Cmdlets|Purpose|
+|---|---|
+|Get-HybridAgent|To view Hybrid Agents Installed |
+|Update-HybridApplication|To edit parameters like Target URI of Hybrid Application |
+|Get-HybridApplication|To view all Hybrid Applications in the Tenant |
+|Remove-HybridApplication|To remove a specific Hybrid Application|
+
+## How to use these Hybrid Agent Cmdlets with or without MFA enabled accounts
+To use these cmdlets you would need to import the latest HybridManagement.psm1 available at “\Program Files\Microsoft Hybrid Service\”. It can also be downloaded directly from [https://aka.ms/HybridAgentPSM](https://aka.ms/HybridAgentPSM).
+
+To import the Hybrid Management module, run the following from a Windows PowerShell prompt as Administrator:
+
+```PowerShell
+Import-module .\HybridManagement.psm1
+```
+
+Then to execute the above cmdlets with MFA enabled admin credentials you need provide userPrincipalName parameter. If you are using non MFA enabled admin account you can also use Credential parameter in lieu of userPrincipalName parameter which will lead to usage of basic authentication.
+
+Following table shows how the usage differs in these two modes:
+
+||Admin with MFA enabled account|Admin with Basic Auth|
+|---|---|---|
+|1|Get-HybridAgent -userPrincipalName <tenant admin UPN>|	Get-HybridAgent -Credential (Get-Credential)|
+|2|Get-HybridApplication -userPrincipalName <tenant admin UPN> -appId <GUID>|Get-HybridApplication -credential (Get-Credential) -appId <GUID>|
+|3|Remove-HybridApplication -userPrincipalName <tenant admin UPN> -appId <GUID>|Remove-HybridApplication -credential (Get-Credential) -appId <GUID>|
+|4|New-HybridApplication -userPrincipalName <tenant admin UPN> -targetUri “Server FQDN”| New-HybridApplication -credential (Get-Credential) -targetUri “Server FQDN”|
+|5|Update-HybridApplication -appId <GUID> -targetUri “Server FQDN” -userPrincipalName <tenant admin UPN>|Update-HybridApplication -appId <GUID> -targetUri “Server FQDN” -credential(Get-Credential)|
+
 ## Multi Agent Deployment
 
 ### Option 1: Use the Hybrid Configuration wizard to install additional agents
