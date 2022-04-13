@@ -23,7 +23,9 @@ The Managed Store in Exchange Server 2016 and Exchange Server 2019 is the name f
 For more information about the Managed Store, see [Managed Store in Exchange Server](managed-store.md).
 
 > [!NOTE]
-> Connections by administrator accounts have maximum session limits of 64000. <br/><br/> Exchange Online limits (including Managed Store limits) are described in the [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+> Connections by administrator accounts have maximum session limits of 64000.
+>
+> Exchange Online limits (including Managed Store limits) are described in the [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 ## Terminology
 

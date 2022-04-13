@@ -124,7 +124,7 @@ Various event types in the **event-id** field are used to classify the message e
 |**DEFER**|Message delivery was delayed.|
 |**DELIVER**|A message was delivered to a local mailbox.|
 |**DELIVERFAIL**|An agent tried to deliver the message to a folder that doesn't exist in the mailbox.|
-|**DROP**|A message was dropped without a delivery status notification (also known as a DSN, bounce message, non-delivery report, or NDR). For example:  <br/> • Completed moderation approval request messages.  <br/> • Spam messages that were silently dropped without an NDR.|
+|**DROP**|A message was dropped without a delivery status notification (also known as a DSN, bounce message, non-delivery report, or NDR). For example: <ul><li>Completed moderation approval request messages.</li><li>Spam messages that were silently dropped without an NDR.</li></ul>|
 |**DSN**|A delivery status notification (DSN) was generated.|
 |**DUPLICATEDELIVER**|A duplicate message was delivered to the recipient. Duplication may occur if a recipient is a member of multiple nested distribution groups. Duplicate messages are detected and removed by the information store.|
 |**DUPLICATEEXPAND**|During the expansion of the distribution group, a duplicate recipient was detected.|
@@ -153,7 +153,7 @@ Various event types in the **event-id** field are used to classify the message e
 |**RESUBMITDEFER**|A message resubmitted from Safety Net was deferred.|
 |**RESUBMITFAIL**|A message resubmitted from Safety Net failed.|
 |**SEND**|A message was sent by SMTP between transport services.|
-|**SUBMIT**|The Mailbox Transport Submission service successfully transmitted the message to the Transport service. For **SUBMIT** events, the **source-context** property contains the following details:  <br/> **MDB**: The mailbox database GUID.  <br/> **Mailbox**: The mailbox GUID.  <br/> **Event**: The event sequence number.  <br/> **MessageClass**: The type of message. For example, `IPM.Note`.  <br/> **CreationTime**: Date-time of the message submission.  <br/> **ClientType**: For example, `User`, `OWA`, or `ActiveSync`.|
+|**SUBMIT**|The Mailbox Transport Submission service successfully transmitted the message to the Transport service. For **SUBMIT** events, the **source-context** property contains the following details: <ul><li>**MDB**: The mailbox database GUID.</li><li>**Mailbox**: The mailbox GUID.</li><li>**Event**: The event sequence number.</li><li>**MessageClass**: The type of message. For example, `IPM.Note`.</li><li>**CreationTime**: Date-time of the message submission.</li><li>**ClientType**: For example, `User`, `OWA`, or `ActiveSync`.</li></ul>|
 |**SUBMITDEFER**|The message transmission from the Mailbox Transport Submission service to the Transport service was deferred.|
 |**SUBMITFAIL**|The message transmission from the Mailbox Transport Submission service to the Transport service failed.|
 |**SUPPRESSED**|The message transmission was suppressed.|
