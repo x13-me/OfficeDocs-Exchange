@@ -1,12 +1,12 @@
 ---
 ms.localizationpriority: medium
-description: 'Recipient Management for Exchange Hybrid Environments in Exchange Server 2019 using Exchange Server Management tools.'
+description: 'Manage on-premises recipients in Exchange Server 2019 Hybrid Environments using Exchange Server Management tools.'
 ms.topic: how-to
 author: JoanneHendrickson
 ms.author: jhendr
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
 ms.reviewer: 
-title: Recipient Management for Exchange Hybrid Environments"
+title: "Manage recipients in Exchange Server 2019 Hybrid environments"
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
@@ -17,11 +17,19 @@ ms.prod: exchange-server-it-pro
 manager: serdars
 
 ---
-# Manage recipients using Exchange Server Management tools (Exchange Hybrid Environments)
+# Manage recipients in Exchange Server Hybrid environments using Exchange Server Management tools
 
-In Exchange Hybrid environments, Exchange attributes for on-premises recipients are edited using an active Exchange Server in the on-premises Active Directory. The changes are then copied to Azure AD using directory synchronization. You have to keep an Exchange Server running if using directory synchronization via the AAD Connect tool.
+If you keep an Exchange server running just for recipient management, you may be able to shut down your last Exchange server and manage recipients using Windows PowerShell.
 
-However, if you keep an Exchange server running just for recipient management, you may be able to shut down your last Exchange server and manage recipients using Windows PowerShell. 
+>[!Note]
+>This feature is only available for Exchange Server 2019 April 2020 Cumulative Update or higher.
+
+## Overview
+
+In Exchange Hybrid environments, you must have an active Exchange Server to manage recipients attributes. First, attributes are edited using an Exchange Server in on-premises Active Directory (AD), that are then copied to Azure AD using directory synchronization. On-premises recipients can’t be modified directly in Azure Active Directory (Azure AD) or Exchange Online. Therefore customers have to keep an Exchange Server running using directory synchronization via AAD Connect tool.
+ 
+## Will this work for me?
+
 An updated version of the Exchange Management Tools is now available that eliminates the need for a running Exchange server if all of the following are true:
 
 - Have migrated all mailboxes and public folders to Exchange Online 
@@ -45,7 +53,7 @@ With the updated Exchange Management Tools, domain admins and members of the Rec
 >[!Note]
 > You can't modify on-premises recipients directly in Azure AD or Exchange Online. 
 
-## Prerequisites
+### Prerequisites
 
 - Exchange Server 2019 April 2020 Cumulative Update or higher
 
