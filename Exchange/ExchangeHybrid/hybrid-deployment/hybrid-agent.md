@@ -215,8 +215,8 @@ Name : O365 to On-premises - c6d22e11-2340-4432-9122-19097bacf0c1
 TargetSharingEpr : https://087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.his.msappproxy.net/EWS/Exchange.asmx
 ```
 
-## Hybrid Agent PowerShell Module
-The Hybrid Management PowerShell module, installed by the Hybrid Configuration wizard at “\Program Files\Microsoft Hybrid Service\” on the machine where the Hybrid Agent is installed. These module provides following cmdlets which can now be used with or without MFA enabled Administrator account.  
+## Hybrid Agent PowerShell module
+The Hybrid Management PowerShell module is installed by the Hybrid Configuration wizard at **\Program Files\Microsoft Hybrid Service\** on the computer where the Hybrid Agent is installed. This module provides the following cmdlets that can now be used with or without a multifactor authentication-enabled administrator account.  
 
 |Cmdlets|Purpose|
 |---|---|
