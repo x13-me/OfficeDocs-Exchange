@@ -225,10 +225,10 @@ The Hybrid Management PowerShell module is installed by the Hybrid Configuration
 |Get-HybridApplication|To view all Hybrid Applications in the organization.|
 |Remove-HybridApplication|To remove a specific Hybrid Application.|
 
-## How to use these Hybrid Agent Cmdlets with or without MFA enabled accounts
-To use these cmdlets you would need to import the latest HybridManagement.psm1 available at “\Program Files\Microsoft Hybrid Service\”. It can also be downloaded directly from [https://aka.ms/HybridAgentPSM](https://aka.ms/HybridAgentPSM).
+### How to use these Hybrid Agent cmdlets with or without multifactor authentication-enabled accounts
+To use these cmdlets you would need to import the latest HybridManagement.psm1 available at **\Program Files\Microsoft Hybrid Service\**. It can also be downloaded directly from [https://aka.ms/HybridAgentPSM](https://aka.ms/HybridAgentPSM).
 
-To import the Hybrid Management module, run the following from a Windows PowerShell prompt as Administrator:
+To import the Hybrid Management module, run the following from a Windows PowerShell prompt as an administrator:
 
 ```PowerShell
 Import-module .\HybridManagement.psm1
