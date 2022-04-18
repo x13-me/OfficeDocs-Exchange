@@ -38,7 +38,7 @@ An updated version of the Exchange Management Tools can eliminate the need for r
 - Run only one Exchange server and only for recipient management purposes
 - Want to manage recipients without running any Exchange servers.
 
-With the updated Exchange Management Tools, domain admins and members of the Recipient Management EMT group (created through step 7 below) can use Windows PowerShell to run the following cmdlets without a running Exchange server:
+With the updated Exchange Management Tools, domain admins and members of the Recipient Management EMT group (created through step 6 below) can use Windows PowerShell to run the following cmdlets without a running Exchange server:
 
 - Set-MailUser, Get-MailUser, New-MailUser, Remove-MailUser, Disable-MailUser and Enable-MailUser
 - Set-MailContact, Get-MailContact, New-MailContact, Remove-MailContact, Disable-MailContact and Enable-MailContact
@@ -96,10 +96,12 @@ Set-RemoteDomain -TargetDeliveryDomain: $true -Identity 'Hybrid Domain - M365B43
 5. If you have the Scripting Agent enabled, copy **ScriptingAgentConfig.xml** from *$env:ExchangeInstallPath\Bin\CmdletExtensionAgents* on the Exchange Server, to the *$env:ExchangeInstallPath\Bin\CmdletExtensionAgents* folder on the computer with the Management Tools update installed.
 
 6. Run the provided script to create the Recipient Management EMT security group that grants users without Domain admin rights to manage recipients.
-a)	Sign-in to the computer with the Management Tools update as a Domain Admin and open Windows PowerShell.
-b)	Load the Recipient Management snap-in by running Add-PSSnapin *RecipientManagement.
-c)	Run Add-PermissionForEMT.ps1 from the $env:ExchangeInstallPath\Scripts folder.
-The script creates a security group called Recipient Management EMT. Members of this group have recipient management permissions. All admins without domain admin rights need to perform recipient management should be added to this security group.
+   
+   a)	Sign-in to the computer with the Management Tools update as a Domain Admin and open Windows PowerShell.
+   
+   b)	Load the Recipient Management snap-in by running Add-PSSnapin *RecipientManagement.
+   
+   c)	Run Add-PermissionForEMT.ps1 from the $env:ExchangeInstallPath\Scripts folder. The script creates a security group called Recipient Management EMT. Members of this group have recipient management permissions. All admins without domain admin rights need to perform recipient management should be added to this security group.
 
 7.	Sign in to the computer with the Management Tools update with the appropriate permissions (domain admin or member of Recipient Management EMT) and load the Recipient Management snap-in by running 
 ```powershell
@@ -136,7 +138,7 @@ Remove-ExchangeCertificate –Thumbprint $fedThumbprint
 ```
 5. Remove the service principal credentials created for OAuth. To do this, you need to determine which KeyId matches the key value of the OAuth certificate. To find the KeyId that matches, follow these steps:
 
- a. Run these commands in the Exchange Management Shell to get the OAuth credValue:
+   a. Run these commands in the Exchange Management Shell to get the OAuth credValue:
 ```powershell
 $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint 
 $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint} 
@@ -144,7 +146,7 @@ $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cer
 $certBytes = $oAuthCert.Export($certType) 
 $credValue = [System.Convert]::ToBase64String($certBytes) 
 ```
- b. Find the KeyId that is same as the $credValue found above, run the following commands as a tenant admin using the Azure Active Directory Module for Windows PowerShell.
+  b. Find the KeyId that is same as the $credValue found above, run the following commands as a tenant admin using the Azure Active Directory Module for Windows PowerShell.
 
 ```powershell
 Install-Module -Name MSOnline
@@ -155,7 +157,7 @@ $keyId = (Get-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -
 ``` 
 This gives the KeyId of the key whose value matches the $credValue found above.
 
- c. To remove the service principal credential, run the following command: 
+   c. To remove the service principal credential, run the following command: 
 
 ```powershell
 Remove-MsolServicePrincipalCredential –KeyIds @($keyId) -AppPrincipalId $p.AppPrincipalId
@@ -196,7 +198,7 @@ RemoteServer
 ```
 In this example, 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 is the AppId to be used in the next step.
 
-c. Remove the App by running:
+   c. Remove the App by running:
 
 ```powershell
 Remove-HybridApplication -appId 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 -Credential (Get-Credential)
@@ -205,7 +207,8 @@ Remove-HybridApplication -appId 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 -Credential
 >[!Note]
 >The AppId is 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 only for this example; your value will be different.
 
-d.	Uninstall the Hybrid agent using the steps here. 
+   d.	Uninstall the Hybrid agent using the steps [here](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent#uninstall-the-hybrid-agent). 
+   
 7.	If not already done, point your MX and Autodiscover DNS records to Exchange Online. This is important to ensure mail flow isn't affected. For more information, see External Domain Name System records for Office 365. 
 
 8.	Shut down your last Exchange server.
