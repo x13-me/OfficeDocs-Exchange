@@ -19,12 +19,14 @@ manager: serdars
 ---
 # Manage recipients in Exchange Hybrid environments using Management tools
 
-In Exchange Hybrid environments, you must have an active Exchange Server to manage recipients attributes. First, attributes are edited using an Exchange Server in on-premises Active Directory (AD), that are then copied to Azure AD using directory synchronization. On-premises recipients can’t be modified directly in Azure Active Directory (Azure AD) or Exchange Online. Therefore you have to keep an Exchange Server running using directory synchronization via AAD Connect tool.
+In Exchange Hybrid environments, you must have an active Exchange Server to manage recipients attributes. First, attributes are edited using an Exchange Server in on-premises Active Directory (AD), that are then copied to Azure AD using directory synchronization. On-premises recipients can’t be modified directly in Azure Active Directory (Azure AD) or Exchange Online. Therefore you have to keep an Exchange Server running using directory synchronization via Azure Active Directory (AAD) Connect tool.
 
-If you keep an Exchange server running just for recipient management, you may be able to shut down your last Exchange server and manage recipients using Windows PowerShell. You need to [install the latest Management tools](https://docs.microsoft.com/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) provided through Exchange Server 2019 Setup on any domain joined computer (client or server).
+If you keep an Exchange server running just for recipient management, you may be able to shut down your last Exchange server and manage recipients using Windows PowerShell. 
 
->[!Note]
->This feature is only available for Exchange Server 2019 April 2020 Cumulative Update or higher.
+Install the latest Management tools provided through Exchange Server 2019 Setup on any domain-joined computer (client or server).  [Learn how to install the latest Management tools](https://docs.microsoft.com/exchange/plan-and-deploy/post-installation-tasks/install-management-tools).
+
+>[!Important]
+>This feature is only available for Exchange Server 2019 H1 2022 Cumulative Update or higher.
  
 ## Will this work for me?
 
@@ -72,7 +74,7 @@ Get-Mailbox
 Get-RemoteDomain Hybrid* | fl DomainName,TargetDeliveryDomain
 ```
 
-If the coexistence domain is not added as a remote domain, you can add it using New-RemoteDomain. For example:
+If the coexistence domain isn't added as a remote domain, you can add it using New-RemoteDomain. For example:
 
 ```powershell
 New-RemoteDomain -Name 'Hybrid Domain - M365B434489.mail.onmicrosoft.com' -DomainName 'M365B434489.mail.onmicrosoft.com'
@@ -86,7 +88,7 @@ Set-RemoteDomain -TargetDeliveryDomain: $true -Identity 'Hybrid Domain - M365B43
 >[!Note]
 >In you have already removed Exchange Server or never had an Exchange Server to start with, Set-Remotedomain and New-RemoteDomain cmdlets can be accessed via Microsoft.Exchange.Management.PowerShell.E2010 snapin. Add the snapin before using the Set-RemoteDomain or New-RemoteDomain cmdlets.
 
-3. [Install the Exchange Management Tools](https://docs.microsoft.com/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2020 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization, and can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
+3. [Install the Exchange Management Tools](https://docs.microsoft.com/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2020 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization. It can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
 
 >[!Note]
 >Installing the updated Exchange Management Tools in an environment with only Exchange 2013 and/or Exchange 2016 will upgrade the Exchange organization to Exchange Server 2019, and it will perform an AD schema update. If you have a large AD deployment, or if a separate team manages AD, use the steps [here](https://docs.microsoft.com/Exchange/plan-and-deploy/prepare-ad-and-domains) to perform the schema update.
@@ -226,6 +228,7 @@ This script is available at: *$env:ExchangeInstallPath\Scripts\CleanupActiveDire
 
 ### Important: Be Aware
 
-**Once you shut down the last Exchange server, Exchange RBAC will no longer function**. Users who were a part of Exchange Recipient groups or had custom Exchange roles allowing for recipient management will no longer have permission. Only domain admins and users who are assigned permission using Add-PermissionForEMT.ps1 script will be able to perform recipient management.
-
-Once you shut down your last Exchange server and perform the Exchange hybrid and Active Directory cleanup steps listed above, you should **erase and reformat your last Exchange server**. **Do Not Uninstall the Exchange Server**
+>[!Warning]
+>**Once you shut down the last Exchange server, Exchange RBAC will no longer function**. Users who were a part of Exchange Recipient groups or had custom Exchange roles allowing for recipient management will no longer have permission. Only domain admins and users who are assigned permission using Add-PermissionForEMT.ps1 script will be able to perform recipient management.
+>
+>Once you shut down your last Exchange server and perform the Exchange hybrid and Active Directory cleanup steps listed above, you should **erase and reformat your last Exchange server**. **Do Not Uninstall the Exchange Server**
