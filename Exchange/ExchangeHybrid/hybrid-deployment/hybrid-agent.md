@@ -238,7 +238,7 @@ Then to execute the above cmdlets with MFA enabled admin credentials you need pr
 
 Following table shows how the usage differs in these two modes:
 
-||Admin with MFA enabled account|Admin with Basic Auth|
+||Admin with a multifactor authentication-enabled account|Admin with basic authentication|
 |---|---|---|
 |1|Get-HybridAgent -userPrincipalName <tenant admin UPN>|	Get-HybridAgent -Credential (Get-Credential)|
 |2|Get-HybridApplication -userPrincipalName <tenant admin UPN> -appId <GUID>|Get-HybridApplication -credential (Get-Credential) -appId <GUID>|
