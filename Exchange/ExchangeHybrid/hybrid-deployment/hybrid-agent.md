@@ -234,9 +234,9 @@ To import the Hybrid Management module, run the following from a Windows PowerSh
 Import-module .\HybridManagement.psm1
 ```
 
-Then to execute the above cmdlets with MFA enabled admin credentials you need provide userPrincipalName parameter. If you are using non MFA enabled admin account you can also use Credential parameter in lieu of userPrincipalName parameter which will lead to usage of basic authentication.
+To execute the these cmdlets with multifactor authentication-enabled admin credentials you need to provide a _userPrincipalName_ parameter. If your account is not a multifactor authentication-enabled admin account, you can also use the _Credential_ parameter in lieu of the _userPrincipalName_ parameter, which will result in the usage of basic authentication.
 
-Following table shows how the usage differs in these two modes:
+The following table shows how the usage differs in these two modes:
 
 ||Admin with a multifactor authentication-enabled account|Admin with basic authentication|
 |---|---|---|
