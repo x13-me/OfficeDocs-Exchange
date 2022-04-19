@@ -54,13 +54,15 @@ The following tables identify the operating system platforms on which each versi
 
 |Server operating system|Exchange 2019 CU12 and later|Exchange 2019 CU11 and earlier|Exchange 2016 CU3 and later|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|Windows Server 2022|supported|Not supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2022<sub>1</sub>|supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |Windows Server 2019|supported|supported|Not supported|Not supported|Not supported|Not supported|
 |Windows Server 2016|Not supported|Not supported|Supported|Not supported|Not supported|Not supported|
 |Windows Server 2012 R2|Not supported|Not supported|Supported|Supported|Supported|Supported|
 |Windows Server 2012|Not supported|Not supported|Supported|Supported|Supported|Supported|
 |Windows Server 2008 R2 SP1|Not supported|Not supported|Not supported|Not supported|Supported|Supported|
 |Windows Server 2008 SP2|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|
+
+<sup>1</sup> In-place upgrades from Windows Server 2019 to Windows Server 2022 are not yet supported.
 
 > [!NOTE]
 > Client operating systems only support the Exchange management tools.
