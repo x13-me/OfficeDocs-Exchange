@@ -24,7 +24,7 @@ Critical product updates are packages that address a Microsoft-released security
 
 ::: moniker range="exchserver-2019"
 
-To get the latest version of Exchange 2019, download and install [Cumulative Update 12 for Exchange Server 2019](https://www.microsoft.com/download/details.aspx?familyID=xxxxxxxxxxxx). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
+To get the latest version of Exchange 2019, download and install [Cumulative Update 12 for Exchange Server 2019](https://www.microsoft.com/download/details.aspx?familyID=a149e06c-62f4-4b62-adf8-7d382223a239). Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2019 CUs.
 
@@ -49,7 +49,7 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 ::: moniker range="exchserver-2016"
 
-To get the latest version of Exchange 2016, download and install [Cumulative Update 23 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=xxxxxxxxxxxx). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 23 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=ad395419-4d2f-4eb0-97fb-a5b88ab814e1). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
