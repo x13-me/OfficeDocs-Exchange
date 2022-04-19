@@ -43,11 +43,18 @@ Exchange 2019 supports hybrid deployments with Microsoft 365 or Office 365 organ
 
 ## Network and directory server requirements for Exchange 2019
 
+> [!NOTE]
+>
+> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2019 CU12 (2022H1).
+>
+> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
+>
+
 The requirements for the network and the directory servers in your Exchange 2019 organization are described in the following table:
 
 |Component|Requirement|
 |---|---|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li></ul>|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li></ul>|
 |Active Directory forest|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace|Exchange 2019 supports the following DNS namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://support.microsoft.com/help/2269838).|
@@ -78,10 +85,17 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 ## Supported operating systems for Exchange 2019
 
+> [!NOTE]
+>
+> Support for Windows Server 2022 was introduced with Exchange Server 2019 CU12 (2022H1).
+>
+> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
+>
+
 |Exchange component|Requirement|
 |---|---|
-|Mailbox and Edge Transport server roles|Windows Server 2019 Standard or Datacenter|
-|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2019 Standard or Datacenter</li><li>64-bit edition of Windows 10</li></ul>|
+|Mailbox and Edge Transport server roles|<ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li></ul>|
+|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>64-bit edition of Windows 10</li></ul>|
 
 > [!NOTE]
 >
@@ -109,7 +123,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 |Exchange 2019 version|.NET Framework 4.8|.NET Framework 4.7.2|
 |---|:---:|:---:|
-|CU4 to CU11|Supported||
+|CU4 to CU12|Supported||
 |CU2, CU3|Supported|Supported|
 |RTM, CU1||Supported|
 
@@ -153,11 +167,18 @@ Exchange 2016 supports hybrid deployments with Microsoft 365 or Office 365 organ
 
 ## Network and directory server requirements for Exchange 2016
 
+> [!NOTE]
+>
+> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2016 CU23 (2022H1).
+>
+> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
+>
+
 The following table lists the requirements for the network and the directory servers in your Exchange 2016 organization.
 
 |Component|Requirement|
 |---|---|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>Windows Server 2008 R2 Standard or Enterprise</li><li>Windows Server 2008 R2 Datacenter RTM or later</li></ul>|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>Windows Server 2008 R2 Standard or Enterprise</li><li>Windows Server 2008 R2 Datacenter RTM or later</li></ul>|
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
@@ -227,7 +248,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 |Exchange 2016 version|.NET Framework 4.8|.NET Framework 4.7.2|.NET Framework 4.7.1|.NET Framework 4.6.2|
 |---|:---:|:---:|:---:|:---:|
-|CU15 to CU22|Supported||||
+|CU15 to CU23|Supported||||
 |CU13, CU14|Supported|Supported|||
 |CU11, CU12||Supported|Supported||
 |CU10|||Supported||

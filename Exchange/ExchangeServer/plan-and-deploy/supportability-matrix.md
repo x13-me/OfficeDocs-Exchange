@@ -52,15 +52,15 @@ The following tables identify the operating system platforms on which each versi
 > [!IMPORTANT]
 > Releases of Windows Server and Windows that aren't listed in the tables below are not supported for use with any version or release of Exchange.
 
-|Server operating system|Exchange 2019|Exchange 2016 CU3 and later|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3|
-|---|:---:|:---:|:---:|:---:|:---:|
-|Windows Server 2022|Not supported|Not supported|Not supported|Not supported|Not supported|
-|Windows Server 2019|supported|Not supported|Not supported|Not supported|Not supported|
-|Windows Server 2016|Not supported|Supported|Not supported|Not supported|Not supported|
-|Windows Server 2012 R2|Not supported|Supported|Supported|Supported|Supported|
-|Windows Server 2012|Not supported|Supported|Supported|Supported|Supported|
-|Windows Server 2008 R2 SP1|Not supported|Not supported|Not supported|Supported|Supported|
-|Windows Server 2008 SP2|Not supported|Not supported|Not supported|Not supported|Supported|
+|Server operating system|Exchange 2019 CU12 and later|Exchange 2019 CU11 and earlier|Exchange 2016 CU3 and later|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+|Windows Server 2022|supported|Not supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2019|supported|supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2016|Not supported|Not supported|Supported|Not supported|Not supported|Not supported|
+|Windows Server 2012 R2|Not supported|Not supported|Supported|Supported|Supported|Supported|
+|Windows Server 2012|Not supported|Not supported|Supported|Supported|Supported|Supported|
+|Windows Server 2008 R2 SP1|Not supported|Not supported|Not supported|Not supported|Supported|Supported|
+|Windows Server 2008 SP2|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|
 
 > [!NOTE]
 > Client operating systems only support the Exchange management tools.
@@ -76,16 +76,16 @@ The following tables identify the operating system platforms on which each versi
 
 The following table identifies the Active Directory environments that Exchange can communicate with. An Active Directory server refers to both writable global catalog servers and to writable domain controllers. Read-only global catalog servers and read-only domain controllers are not supported.
 
-|Operating system environment|Exchange 2019|Exchange 2016 CU12 and later|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Windows Server 2022 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
-|Windows Server 2019 Active Directory servers|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
-|Windows Server 2016 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Not supported|
-|Windows Server 2012 R2 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2012 Active Directory servers|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2008 R2 SP1 Active Directory servers|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2008 SP2 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2003 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|
+|Operating system environment|Exchange 2019 CU12 and later|Exchange 2019 CU11 and earlier|Exchange 2016 CU23 and later|Exchange 2016 CU12 to CU22|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 CU23|Exchange 2013 SP1 to CU22|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Windows Server 2022 Active Directory servers|Supported|Not supported|Supported|Not supported|Not supported|Not supported|Not supported|Supported|Not supported|Not supported|Not supported|
+|Windows Server 2019 Active Directory servers|Supported|Supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2016 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Not supported|
+|Windows Server 2012 R2 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2012 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2008 R2 SP1 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2008 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2003 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|
 
 |AD forest functional level|Exchange 2019|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -228,14 +228,14 @@ To upgrade the .NET Framework on an existing Exchange Server, do the following s
 
 ### Exchange 2019
 
-|.NET Framework version|CU11 to CU4|CU3, CU2|CU1, RTM|
+|.NET Framework version|CU12 to CU4|CU3, CU2|CU1, RTM|
 |---|:---:|:---:|:---:|
 |4.8|Supported|Supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|
 
 ### Exchange 2016
 
-|.NET Framework version|CU22 to CU15|CU14, CU13|CU12, CU11|CU10|CU9, CU8|CU7, CU6, CU5|CU4, CU3|CU2|CU1, RTM|
+|.NET Framework version|CU23 to CU15|CU14, CU13|CU12, CU11|CU10|CU9, CU8|CU7, CU6, CU5|CU4, CU3|CU2|CU1, RTM|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |4.8|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
 |4.7.2|Not supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
