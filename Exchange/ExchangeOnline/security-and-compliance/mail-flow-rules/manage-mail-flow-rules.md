@@ -293,7 +293,7 @@ To learn more, see [Exchange transport rule report](/microsoft-365/security/offi
 
 ### Download an Excel version of the reports
 
-For steps to download reports, see [Download existing reports in the Microsoft 365 compliance center](/microsoft-365/compliance/download-existing-reports).
+For steps to download reports, see [Download existing reports in the Microsoft Purview compliance portal](/microsoft-365/compliance/download-existing-reports).
 
 ## Import or export a mail flow rule collection
 
