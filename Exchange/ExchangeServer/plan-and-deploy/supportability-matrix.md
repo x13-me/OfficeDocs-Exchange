@@ -78,16 +78,16 @@ The following tables identify the operating system platforms on which each versi
 
 The following table identifies the Active Directory environments that Exchange can communicate with. An Active Directory server refers to both writable global catalog servers and to writable domain controllers. Read-only global catalog servers and read-only domain controllers are not supported.
 
-|Operating system environment|Exchange 2019 CU12 and later|Exchange 2019 CU11 and earlier|Exchange 2016 CU23 and later|Exchange 2016 CU12 to CU22|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 CU23|Exchange 2013 SP1 to CU22|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Windows Server 2022 Active Directory servers|Supported|Not supported|Supported|Not supported|Not supported|Not supported|Not supported|Supported|Not supported|Not supported|Not supported|
-|Windows Server 2019 Active Directory servers|Supported|Supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
-|Windows Server 2016 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Not supported|
-|Windows Server 2012 R2 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2012 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2008 R2 SP1 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2008 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|
-|Windows Server 2003 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|
+|Operating system environment|Exchange 2019 CU12 and later|Exchange 2019 CU11 and earlier|Exchange 2016 CU12 and later|Exchange 2016 CU7 to CU11|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Windows Server 2022 Active Directory servers|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2019 Active Directory servers|Supported|Supported|Supported|Not supported|Not supported|Not supported|Not supported|Not supported|Not supported|
+|Windows Server 2016 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Not supported|
+|Windows Server 2012 R2 Active Directory servers|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2012 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2008 R2 SP1 Active Directory servers|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2008 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|Supported|
+|Windows Server 2003 SP2 Active Directory servers|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|Supported|Supported|Supported|
 
 |AD forest functional level|Exchange 2019|Exchange 2016 CU7 and later|Exchange 2016 CU3 to CU6|Exchange 2016 CU2 and earlier|Exchange 2013 SP1 and later|Exchange 2010 SP3 RU22 or later|Exchange 2010 SP3 RU5 - RU21|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
