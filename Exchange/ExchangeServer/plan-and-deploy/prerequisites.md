@@ -97,9 +97,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
 > [!NOTE]
 >
-> Support for Windows Server 2022 was introduced with Exchange Server 2019 CU12 (2022H1).
->
-> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
+> Support for Windows Server 2022 was introduced with [Exchange Server 2019 CU12 (2022H1)](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026).
 >
 
 The requirements to install Exchange 2019 on Windows Server 2019 or Windows Server 2022 computers are described in the following sections. We recommend either of the following methods to install the Windows prerequisites for Exchange 2019:
