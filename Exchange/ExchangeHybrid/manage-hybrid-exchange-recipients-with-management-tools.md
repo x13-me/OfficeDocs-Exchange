@@ -23,7 +23,7 @@ In Exchange Hybrid environments, you must have an active Exchange Server to mana
 
 If you keep an Exchange server running just for recipient management, you may be able to shut down your last Exchange server and manage recipients using Windows PowerShell. 
 
-Install the latest Management tools provided through Exchange Server 2019 Setup on any domain-joined computer (client or server).  [Learn how to install the latest Management tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools).
+Install the latest Management tools provided through Exchange Server 2019 Setup on any domain-joined computer (client or server).  [Learn how to install the latest Management tools](exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2019).
 
 >[!Important]
 >This feature is only available for Exchange Server 2019 H1 2022 Cumulative Update or higher.
