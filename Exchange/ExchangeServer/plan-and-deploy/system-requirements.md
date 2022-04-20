@@ -53,7 +53,7 @@ The requirements for the network and the directory servers in your Exchange 2019
 |DNS namespace|Exchange 2019 supports the following DNS namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://support.microsoft.com/help/2269838).|
 |IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <p> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
 
-<sup>1</sup> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2019 CU12 (2022H1).
+<sup>1</sup> Support for Windows Server 2022 Active Directory servers was introduced with Exchange Server 2019 CU12 (2022H1).
 
 ## Directory server architecture for Exchange 2019
 
@@ -167,7 +167,7 @@ The following table lists the requirements for the network and the directory ser
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
 |IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
 
-<sup>1</sup> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2016 CU23 (2022H1).
+<sup>1</sup> Support for Windows Server 2022 Active Directory servers was introduced with Exchange Server 2016 CU23 (2022H1).
 
 ## Directory server architecture for Exchange 2016
 
@@ -208,10 +208,10 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 |Component|Requirement|
 |---|---|
-|Mailbox and Edge Transport server roles|<ul><li>Windows Server 2016 Standard or Datacenter<sup>\*</sup></li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li></ul>|
-|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2016 Standard or Datacenter<sup>\*</sup></li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>64-bit edition of Windows 10</li><li>64-bit edition of Windows 8.1</li></ul>|
+|Mailbox and Edge Transport server roles|<ul><li>Windows Server 2016 Standard or Datacenter<sup>1</sup></li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li></ul>|
+|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2016 Standard or Datacenter<sup>1</sup></li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>64-bit edition of Windows 10</li><li>64-bit edition of Windows 8.1</li></ul>|
 
-<sup>\*</sup> Requires Exchange Server 2016 Cumulative Update 3 or later.
+<sup>1</sup> Requires Exchange Server 2016 Cumulative Update 3 or later.
 
 ### Supported Windows Management Framework versions for Exchange 2016
 
