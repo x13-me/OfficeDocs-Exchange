@@ -43,22 +43,17 @@ Exchange 2019 supports hybrid deployments with Microsoft 365 or Office 365 organ
 
 ## Network and directory server requirements for Exchange 2019
 
-> [!NOTE]
->
-> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2019 CU12 (2022H1).
->
-> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
->
-
 The requirements for the network and the directory servers in your Exchange 2019 organization are described in the following table:
 
 |Component|Requirement|
 |---|---|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li></ul>|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2022<sup>1</sup> Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li></ul>|
 |Active Directory forest|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace|Exchange 2019 supports the following DNS namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://support.microsoft.com/help/2269838).|
 |IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <p> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
+
+<sup>1</sup> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2019 CU12 (2022H1).
 
 ## Directory server architecture for Exchange 2019
 
@@ -85,17 +80,12 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
 ## Supported operating systems for Exchange 2019
 
-> [!NOTE]
->
-> Support for Windows Server 2022 was introduced with Exchange Server 2019 CU12 (2022H1).
->
-> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
->
-
 |Exchange component|Requirement|
 |---|---|
-|Mailbox and Edge Transport server roles|<ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li></ul>|
-|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>64-bit edition of Windows 10</li></ul>|
+|Mailbox and Edge Transport server roles|<ul><li>Windows Server 2022<sup>1</sup> Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li></ul>|
+|Management tools|One of the following versions of Windows: <ul><li>Windows Server 2022<sup>1</sup> Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>64-bit edition of Windows 10</li></ul>|
+
+<sup>1</sup> Support for Windows Server 2022 was introduced with Exchange Server 2019 CU12 (2022H1).
 
 > [!NOTE]
 >
@@ -167,22 +157,17 @@ Exchange 2016 supports hybrid deployments with Microsoft 365 or Office 365 organ
 
 ## Network and directory server requirements for Exchange 2016
 
-> [!NOTE]
->
-> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2016 CU23 (2022H1).
->
-> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
->
-
 The following table lists the requirements for the network and the directory servers in your Exchange 2016 organization.
 
 |Component|Requirement|
 |---|---|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2022 Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>Windows Server 2008 R2 Standard or Enterprise</li><li>Windows Server 2008 R2 Datacenter RTM or later</li></ul>|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2022<sup>1</sup> Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>Windows Server 2008 R2 Standard or Enterprise</li><li>Windows Server 2008 R2 Datacenter RTM or later</li></ul>|
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
 |IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
+
+<sup>1</sup> Support for Windows Server 2022 Active Directory Servers was introduced with Exchange Server 2016 CU23 (2022H1).
 
 ## Directory server architecture for Exchange 2016
 

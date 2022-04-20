@@ -93,7 +93,14 @@ You can use any member of the Active Directory domain to prepare Active Director
 > [!NOTE]
 > Using the Exchange Setup Wizard to prepare Active Directory requires the installation of the Management Tools Exchange role.
 
-## Windows Server 2019/2022 prerequisites for Exchange 2019
+## Windows Server 2019 & Windows Server 2022 prerequisites for Exchange 2019
+
+> [!NOTE]
+>
+> Support for Windows Server 2022 was introduced with Exchange Server 2019 CU12 (2022H1).
+>
+> See: [Released: 2022 H1 Cumulative Updates for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2022-h1-cumulative-updates-for-exchange-server/ba-p/3285026)
+>
 
 The requirements to install Exchange 2019 on Windows Server 2019 or Windows Server 2022 computers are described in the following sections. We recommend either of the following methods to install the Windows prerequisites for Exchange 2019:
 
@@ -102,7 +109,7 @@ The requirements to install Exchange 2019 on Windows Server 2019 or Windows Serv
 
 When you use one of these options, you don't need to restart the computer after the Windows components have been added.
 
-### Exchange 2019 Mailbox servers on Windows Server 2019/2022
+### Exchange 2019 Mailbox servers on Windows Server 2019 & Windows Server 2022
 
 1. Install the following software:
 
@@ -153,7 +160,7 @@ When you use one of these options, you don't need to restart the computer after 
       Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Metabase, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
       ```
 
-### Exchange 2019 Edge Transport servers on Windows Server 2019/2022
+### Exchange 2019 Edge Transport servers on Windows Server 2019 & Windows Server 2022
 
 1. Install the following software:
 
