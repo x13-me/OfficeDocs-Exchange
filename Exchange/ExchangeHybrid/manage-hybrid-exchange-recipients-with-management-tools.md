@@ -23,7 +23,7 @@ In Exchange Hybrid environments, you must have an active Exchange Server to mana
 
 If you keep an Exchange server running just for recipient management, you may be able to shut down your last Exchange server and manage recipients using Windows PowerShell. 
 
-Install the latest Management tools provided through Exchange Server 2019 Setup on any domain-joined computer (client or server).  [Learn how to install the latest Management tools](https://docs.microsoft.com/exchange/plan-and-deploy/post-installation-tasks/install-management-tools).
+Install the latest Management tools provided through Exchange Server 2019 Setup on any domain-joined computer (client or server).  [Learn how to install the latest Management tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools).
 
 >[!Important]
 >This feature is only available for Exchange Server 2019 H1 2022 Cumulative Update or higher.
@@ -88,12 +88,12 @@ Set-RemoteDomain -TargetDeliveryDomain: $true -Identity 'Hybrid Domain - M365B43
 >[!Note]
 >In you have already removed Exchange Server or never had an Exchange Server to start with, Set-Remotedomain and New-RemoteDomain cmdlets can be accessed via Microsoft.Exchange.Management.PowerShell.E2010 snapin. Add the snapin before using the Set-RemoteDomain or New-RemoteDomain cmdlets.
 
-3. [Install the Exchange Management Tools](https://docs.microsoft.com/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2020 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization. It can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
+3. [Install the Exchange Management Tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2020 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization. It can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
 
 >[!Note]
->Installing the updated Exchange Management Tools in an environment with only Exchange 2013 and/or Exchange 2016 will upgrade the Exchange organization to Exchange Server 2019, and it will perform an AD schema update. If you have a large AD deployment, or if a separate team manages AD, use the steps [here](https://docs.microsoft.com/Exchange/plan-and-deploy/prepare-ad-and-domains) to perform the schema update.
+>Installing the updated Exchange Management Tools in an environment with only Exchange 2013 and/or Exchange 2016 will upgrade the Exchange organization to Exchange Server 2019, and it will perform an AD schema update. If you have a large AD deployment, or if a separate team manages AD, use the steps here: [Prepare Active Directory and domains for Exchange Serve](/Exchange/plan-and-deploy/prepare-ad-and-domains) to perform the schema update.
 
-4. Install the Windows Remote Server Administration Tools using the steps [here](https://docs.microsoft.com/windows-server/remote/remote-server-administration-tools#install-uninstall-and-turn-offon-rsat-tools).
+4. Install the Windows Remote Server Administration Tools using the steps in this article: [Install, uninstall and turn off/on RSAT tools](/windows-server/remote/remote-server-administration-tools#install-uninstall-and-turn-offon-rsat-tools).
 
 5. If you have the Scripting Agent enabled, copy **ScriptingAgentConfig.xml** from *$env:ExchangeInstallPath\Bin\CmdletExtensionAgents* on the Exchange Server, to the *$env:ExchangeInstallPath\Bin\CmdletExtensionAgents* folder on the computer with the Management Tools update installed.
 
@@ -123,7 +123,7 @@ If you intend to permanently shut down your last Exchange Server, we recommend t
 >If you are using your last Exchange server for any purpose other than recipient management (e.g., for SMTP relay), then do not shut it down.
 
 1. Turn on your last Exchange server.
-2. Clean up your hybrid configuration by performing [Steps 1 to 8](https://docs.microsoft.com/exchange/decommission-on-premises-exchange#to-keep-ad-fs-and-directory-synchronization-and-decommission-most-of-the-exchange-servers) for Scenario 2 in How and when to decommission your on-premises Exchange servers in a hybrid deployment.
+2. Clean up your hybrid configuration by performing [Steps 1 to 8](/exchange/decommission-on-premises-exchange#to-keep-ad-fs-and-directory-synchronization-and-decommission-most-of-the-exchange-servers) for Scenario 2 in How and when to decommission your on-premises Exchange servers in a hybrid deployment.
 
 3. Remove the Federation Trust by running the following command in the Exchange Management Shell:
 ```powershell
@@ -209,7 +209,7 @@ Remove-HybridApplication -appId 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 -Credential
 >[!Note]
 >The AppId is 6ca7c832-49a2-4a5d-aeae-a616f6d4b8e7 only for this example; your value will be different.
 
-   d.	Uninstall the Hybrid agent using the steps [here](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent#uninstall-the-hybrid-agent). 
+   d.	Uninstall the Hybrid agent using the steps here: [Uninstall the hybrid agent](/exchange/hybrid-deployment/hybrid-agent#uninstall-the-hybrid-agent). 
    
 7.	If not already done, point your MX and Autodiscover DNS records to Exchange Online. This is important to ensure mail flow isn't affected. For more information, see External Domain Name System records for Office 365. 
 
