@@ -48,10 +48,10 @@ Generally, there are no special storage requirements specific to DAGs or mailbox
 ## Software requirements
 <a name="SoftReq"> </a>
 
+Each member of a DAG must be running the same operating system. Exchange Server 2016 is supported on the Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016. Exchange Server 2019 is supported on the Windows Server 2019 and Windows Server 2022 operating system. Within a specific DAG, all members must be running the same supported operating system.
+
 > [!NOTE]
 > Support for Windows Server 2022 servers was introduced with Exchange Server 2019 CU12 (2022H1).
-
-Each member of a DAG must be running the same operating system. Exchange Server 2016 is supported on the Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016. Exchange Server 2019 is supported on the Windows Server 2019 and Windows Server 2022 operating system. Within a specific DAG, all members must be running the same supported operating system.
 
 In addition to meeting the prerequisites for installing Exchange Server, there are operating system requirements that must be met. DAGs use Windows Failover Clustering technology, and as a result, they require the Standard or Datacenter version of the Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 or Windows Server 2022 operating systems.
 
