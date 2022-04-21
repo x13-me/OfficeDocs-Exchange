@@ -88,7 +88,7 @@ Set-RemoteDomain -TargetDeliveryDomain: $true -Identity 'Hybrid Domain - M365B43
 >[!Note]
 >In you have already removed Exchange Server or never had an Exchange Server to start with, Set-Remotedomain and New-RemoteDomain cmdlets can be accessed via Microsoft.Exchange.Management.PowerShell.E2010 snapin. Add the snapin before using the Set-RemoteDomain or New-RemoteDomain cmdlets.
 
-3. [Install the Exchange Management Tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2020 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization. It can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
+3. [Install the Exchange Management Tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2022 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization. It can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
 
 >[!Note]
 >Installing the updated Exchange Management Tools in an environment with only Exchange 2013 and/or Exchange 2016 will upgrade the Exchange organization to Exchange Server 2019, and it will perform an AD schema update. If you have a large AD deployment, or if a separate team manages AD, use the steps here: [Prepare Active Directory and domains for Exchange Serve](/Exchange/plan-and-deploy/prepare-ad-and-domains) to perform the schema update.
