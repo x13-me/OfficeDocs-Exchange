@@ -44,7 +44,7 @@ An updated version of the Exchange Management Tools can eliminate the need for r
 - Want to manage recipients without running any Exchange servers.
 
 
->[!Warning}
+>[!Warning]
 >**DO NOT** uninstall the last server. You can choose to shut down the server, and use the script to clean up, but DO NOT uninstall. Uninstalling the server removes critical information out of Active Directory that results in breaking the management tool package to manage Exchange attributes. Learn more here: [Important: Be Aware](#important-be-aware)
 
 With the updated Exchange Management Tools, domain admins and members of the Recipient Management EMT group (created through step 6 below) can use Windows PowerShell to run the following cmdlets without a running Exchange server:
