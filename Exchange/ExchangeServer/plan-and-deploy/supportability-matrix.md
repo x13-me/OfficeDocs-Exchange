@@ -62,7 +62,7 @@ The following tables identify the operating system platforms on which each versi
 |Windows Server 2008 R2 SP1|Not supported|Not supported|Not supported|Not supported|Supported|Supported|
 |Windows Server 2008 SP2|Not supported|Not supported|Not supported|Not supported|Not supported|Supported|
 
-<sup>1</sup> In-place upgrades from Windows Server 2019 with Exchange 2019 installed to Windows Server 2022 are not yet supported.
+<sup>1</sup> In-place upgrades from Windows Server 2019 with Exchange 2019 installed to Windows Server 2022 are not supported.
 
 > [!NOTE]
 > Client operating systems only support the Exchange management tools.
