@@ -76,24 +76,20 @@ Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq 
 This example creates a certificate renewal request with the following properties:
 
 - **Certificate to renew**: `5DB9879E38E36BCB60B761E29794392B23D1C054`
-
 - **RequestFile**: `\\FileServer01\Data\ContosoCertRenewal.req`
 
 ```PowerShell
 Get-ExchangeCertificate -Thumbprint 5DB9879E38E36BCB60B761E29794392B23D1C054 | New-ExchangeCertificate -GenerateRequest -RequestFile \\FileServer01\Data\ContosoCertRenewal.req
 ```
 
+For detailed syntax and parameter information, see [Get-ExchangeCertificate](/powershell/module/exchange/get-exchangecertificate) and [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
+
  **Notes:**
 
-- The _RequestFile_ parameter accepts a local path or a UNC path.
-
 - We didn't use the _BinaryEncoded_ switch, so the request is Base64 encoded. The information that's displayed onscreen is also written to the file, and the contents of the file are what we need to send to the CA. If we had used the _BinaryEncoded_ switch, the request would have been encoded by DER, and the certificate request file itself is what we would need to send to the CA.
-
 - We didn't use the _KeySize_ parameter, so the certificate request has a 2048 bit RSA public key.
 
-- For more information, see [Get-ExchangeCertificate](/powershell/module/exchange/get-exchangecertificate) and [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
-
-### How do you know this worked?
+### How do you know that you successfully created a certificate renewal request?
 
 To verify that you have successfully created a certificate renewal request for a certification authority, perform either of the following steps:
 
@@ -136,16 +132,14 @@ Get-ExchangeCertificate | where {$_.IsSelfSigned -eq $true} | Format-List Friend
 This example renews a self-signed certificate on the local Exchange server, and uses the following settings:
 
 - The thumbprint value of the existing self-signed certificate to renew is `BC37CBE2E59566BFF7D01FEAC9B6517841475F2D`
-
 - The _Force_ switch replaces the original self-signed certificate without a confirmation prompt.
-
 - The private key is exportable. This allows you to export the certificate and import it on other servers.
 
 ```PowerShell
 Get-ExchangeCertificate -Thumbprint BC37CBE2E59566BFF7D01FEAC9B6517841475F2D | New-ExchangeCertificate -Force -PrivateKeyExportable $true
 ```
 
-### How do you know this worked?
+### How do you know that you've successfully renewed an Exchange self-signed certificate?
 
 To verify that you have successfully renewed an Exchange self-signed certificate, use either of the following procedures:
 
