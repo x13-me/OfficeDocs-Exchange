@@ -29,7 +29,7 @@ If you keep an Exchange server running just for recipient management, you may be
 Install the latest Management tools provided through Exchange Server 2019 Setup on any domain-joined computer (client or server).  [Learn how to install the latest Management tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2019&preserve-view=true).
 
 >[!Important]
->This feature is only available for Exchange Server 2019 H1 2022 Cumulative Update or higher. No new licensing is required.
+>This feature is only available for Exchange Server 2019 Cumulative Update 12 or later.
  
 ## Will this work for me?
 

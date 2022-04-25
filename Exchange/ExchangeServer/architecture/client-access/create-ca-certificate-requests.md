@@ -126,70 +126,57 @@ The certificate request appears in the list of Exchange certificates with a stat
 To create a new certificate request for a wildcard certificate, a SAN certificate, or a certificate for a single host, use the following syntax:
 
 ```PowerShell
-New-ExchangeCertificate -GenerateRequest -RequestFile <FilePathOrUNCPath>\<FileName>.req [-FriendlyName <DescriptiveName>] -SubjectName [C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>],CN=<HostNameOrFQDN> [-DomainName <Host1>,<Host2>...] [-BinaryEncoded <$true | $false>] [-KeySize <1024 | 2048 | 4096>] [-Server <ServerIdentity>]
+$request = New-ExchangeCertificate -GenerateRequest [-FriendlyName <DescriptiveName>] -SubjectName [C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>],CN=<HostNameOrFQDN> [-DomainName <Host1>,<Host2>...] [-BinaryEncoded <$true | $false>] [-KeySize <1024 | 2048 | 4096>] [-Server <ServerIdentity>]
+Set-Content -Path "<FilePathOrUNCPath>\<FileName>.req" -Value $request
 ```
 
 This example creates a certificate request on the local Exchange server for a wildcard certificate with the following properties:
 
 - **SubjectName**: \*.contoso.com in the United States, which requires the value `C=US,CN=*.contoso.com`.
-
 - **RequestFile**: `\\FileServer01\Data\Contoso Wildcard Cert.req`
-
 - **FriendlyName**: Contoso.com Wildcard Cert
 
 ```PowerShell
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso Wildcard Cert.req" -FriendlyName "Contoso.com Wildcard Cert" -SubjectName "C=US,CN=*.contoso.com"
+$request = New-ExchangeCertificate -GenerateRequest -FriendlyName "Contoso.com Wildcard Cert" -SubjectName "C=US,CN=*.contoso.com"
+Set-Content -Path "\\FileServer01\Data\Contoso Wildcard Cert.req" -Value $request
 ```
 
 This example creates a certificate request on the local Exchange server for a SAN certificate with the following properties:
 
 - **SubjectName**: mail.contoso.com in the United States, which requires the value `C=US,CN=mail.contoso.com`. Note that this CN value is automatically included in the _DomainName_ parameter (the **Subject Alternative Name** field).
-
 - Additional **Subject Alternative Name** field values:
-
   - autodiscover.contoso.com
-
   - legacy.contoso.com
-
   - mail.contoso.net
-
   - autodiscover.contoso.net
-
   - legacy.contoso.net
-
 - **RequestFile**: `\\FileServer01\Data\Contoso SAN Cert.req`
-
 - **FriendlyName**: Contoso.com SAN Cert
-
 - **DomainName**: Unquoted comma-separated list of domains
 
 ```PowerShell
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Contoso SAN Cert.req" -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com" -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net
+$request = New-ExchangeCertificate -GenerateRequest -FriendlyName "Contoso.com SAN Cert" -SubjectName "C=US,CN=mail.contoso.com" -DomainName autodiscover.contoso.com,legacy.contoso.com,mail.contoso.net,autodiscover.contoso.net,legacy.contoso.net
+Set-Content -Path "\\FileServer01\Data\Contoso SAN Cert.req" -Value $request
 ```
 
 This example creates a request for a single subject certificate with the following properties:
 
 - **SubjectName**: mail.contoso.com in the United States, which requires the value `C=US,CN=mail.contoso.com`.
-
 - **RequestFile**: `\\FileServer01\Data\Mail.contoso.com Cert.req`
-
 - **FriendlyName**: Mail.contoso.com Cert
 
 ```PowerShell
-New-ExchangeCertificate -GenerateRequest -RequestFile "\\FileServer01\Data\Mail.contoso.com Cert.req" -FriendlyName "Mail.contoso.com Cert" -SubjectName "C=US,CN=mail.contoso.com"
+$request = New-ExchangeCertificate -GenerateRequest -FriendlyName "Mail.contoso.com Cert" -SubjectName "C=US,CN=mail.contoso.com"
+Set-Content -Path "\\FileServer01\Data\Mail.contoso.com Cert.req" -Value $request
 ```
 
- **Notes:**
+For detailed syntax and parameter information, see [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
+
+**Notes:**
 
 - The only required part of the X.500 _SubjectName_ parameter value (the certificate's **Subject** field) is `CN=<HostNameOrFQDN>`. However, the certificate request should always include the `C=<CountryOrRegion>` value (otherwise, you might not be able to renew the certificate). Check the **Subject** field requirements of your CA.
-
-- The _RequestFile_ parameter accepts a local path or a UNC path.
-
 - We didn't use the _BinaryEncoded_ switch, so the request is Base64 encoded. The information that's displayed onscreen is also written to the file, and the contents of the file are what we need to send to the CA. If we had used the _BinaryEncoded_ switch, the request would have been encoded by DER, and the certificate request file itself is what we would need to send to the CA.
-
 - We didn't use the _KeySize_ parameter, so the certificate request has a 2048 bit RSA public key.
-
-- For more information, see [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
 
 ## How do you know this worked?
 
@@ -207,7 +194,7 @@ To verify that you have successfully created a new certificate request, perform 
 
 The content of a Base64 encoded certificate request file looks like this:
 
-```
+```text
 -----BEGIN NEW CERTIFICATE REQUEST-----
 MIIEBjCCAu4CAQAwYzEWMBQGA1UEAwwNKi5jb250b3NvLmNvbTELMAkGA1UECwwC
 SVQxEDAOBgNVBAoMB0NvbnRvc28xEDAOBgNVBAcMB1NlYXR0bGUxCzAJBgNVBAgM
