@@ -23,6 +23,9 @@ In Exchange Hybrid environments, you must have an active Exchange Server to mana
 
 If you keep an Exchange server running just for recipient management, you may be able to shut down your last Exchange server and manage recipients using Windows PowerShell. 
 
+>[!Important]
+>You can still use this method to manage your recipients and leave your server running if you only run the Exchange server for recipient management. Shutting down the server is optional.
+
 Install the latest Management tools provided through Exchange Server 2019 Setup on any domain-joined computer (client or server).  [Learn how to install the latest Management tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2019&preserve-view=true).
 
 >[!Important]
@@ -32,13 +35,17 @@ Install the latest Management tools provided through Exchange Server 2019 Setup 
 
 An updated version of the Exchange Management Tools can eliminate the need for running Exchange server if all of the following are true:
 
-- Have migrated all mailboxes and public folders to Exchange Online 
+- You have migrated all mailboxes and public folders to Exchange Online 
 - Use AD for recipient management and Azure AD Connect for synchronization
-- Don't use/require the on-premises Exchange admin center or Exchange Role-Based Access Control (RBAC)
+- You don't use/require the on-premises Exchange admin center or Exchange Role-Based Access Control (RBAC)
 - Are comfortable with using only Windows PowerShell for recipient management
-- Don't require auditing or logging of recipient management activity
-- Run only one Exchange server and only for recipient management purposes
+- You don't require auditing or logging of recipient management activity
+- You are running only one Exchange server and only for recipient management purposes
 - Want to manage recipients without running any Exchange servers.
+
+
+>[!Warning]
+>**DO NOT** uninstall the last server. You can choose to shut down the server, and use the script to clean up, but DO NOT uninstall. Uninstalling the server removes critical information out of Active Directory that results in breaking the management tool package to manage Exchange attributes. Learn more here: [Important: Be Aware](#important-be-aware)
 
 With the updated Exchange Management Tools, domain admins and members of the Recipient Management EMT group (created through step 6 below) can use Windows PowerShell to run the following cmdlets without a running Exchange server:
 
@@ -88,7 +95,7 @@ Set-RemoteDomain -TargetDeliveryDomain: $true -Identity 'Hybrid Domain - M365B43
 >[!Note]
 >In you have already removed Exchange Server or never had an Exchange Server to start with, Set-Remotedomain and New-RemoteDomain cmdlets can be accessed via Microsoft.Exchange.Management.PowerShell.E2010 snapin. Add the snapin before using the Set-RemoteDomain or New-RemoteDomain cmdlets.
 
-3. [Install the Exchange Management Tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2020 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization. It can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
+3. [Install the Exchange Management Tools](/exchange/plan-and-deploy/post-installation-tasks/install-management-tools) role using the Exchange Server 2019 April 2022 Cumulative Update Setup. The updated tools can be installed on any domain-joined computer in an Exchange organization. It can be used in organizations running Exchange Server 2013, Exchange Server 2016, and/or Exchange Server 2019. 
 
 >[!Note]
 >Installing the updated Exchange Management Tools in an environment with only Exchange 2013 and/or Exchange 2016 will upgrade the Exchange organization to Exchange Server 2019, and it will perform an AD schema update. If you have a large AD deployment, or if a separate team manages AD, use the steps here: [Prepare Active Directory and domains for Exchange Serve](/Exchange/plan-and-deploy/prepare-ad-and-domains) to perform the schema update.
@@ -231,4 +238,4 @@ This script is available at: *$env:ExchangeInstallPath\Scripts\CleanupActiveDire
 >[!Warning]
 >**Once you shut down the last Exchange server, Exchange RBAC will no longer function**. Users who were a part of Exchange Recipient groups or had custom Exchange roles allowing for recipient management will no longer have permission. Only domain admins and users who are assigned permission using Add-PermissionForEMT.ps1 script will be able to perform recipient management.
 >
->Once you shut down your last Exchange server and perform the Exchange hybrid and Active Directory cleanup steps listed above, you should **erase and reformat your last Exchange server**. **Do Not Uninstall the Exchange Server**
+>Once you shut down your last Exchange server and perform the Exchange hybrid and Active Directory cleanup steps listed above, you should **erase and reformat your last Exchange server**. **Do Not Uninstall the Exchange Server**.

@@ -161,13 +161,11 @@ The following table lists the requirements for the network and the directory ser
 
 |Component|Requirement|
 |---|---|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2022<sup>1</sup> Standard or Datacenter</li><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>Windows Server 2008 R2 Standard or Enterprise</li><li>Windows Server 2008 R2 Datacenter RTM or later</li></ul>|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <ul><li>Windows Server 2019 Standard or Datacenter</li><li>Windows Server 2016 Standard or Datacenter</li><li>Windows Server 2012 R2 Standard or Datacenter</li><li>Windows Server 2012 Standard or Datacenter</li><li>Windows Server 2008 R2 Standard or Enterprise</li><li>Windows Server 2008 R2 Datacenter RTM or later</li></ul>|
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <ul><li>Contiguous</li><li>Noncontiguous</li><li>Single label domains</li><li>Disjoint</li></ul> <p> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
 |IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](../../ExchangeServer2013/ipv6-support-in-exchange-2013-exchange-2013-help.md).|
-
-<sup>1</sup> Support for Windows Server 2022 Active Directory servers was introduced with Exchange Server 2016 CU23 (2022H1).
 
 ## Directory server architecture for Exchange 2016
 
