@@ -61,11 +61,21 @@ The certificate request appears in the list of Exchange certificates with a stat
 
 ### Use the Exchange Management Shell to create a certificate renewal request for a certification authority
 
-To create a certificate renewal request for a certification authority on the local Exchange server, use the following syntax:
+To create a new certificate renewal request for a certification authority, use the following syntax:
 
-```PowerShell
-Get-ExchangeCertificate -Thumbprint <Thumbprint> | New-ExchangeCertificate -GenerateRequest -RequestFile <FilePathOrUNCPath>\<FileName>.req
-```
+- If you need to send the _content_ of the certificate renewal request file to the CA, use the following syntax to create a Base64 encoded request file:
+
+  ```PowerShell
+  $txtrequest = Get-ExchangeCertificate -Thumbprint <Thumbprint> | New-ExchangeCertificate -GenerateRequest [-KeySize <1024 | 2048 | 4096>] [-Server <ServerIdentity>]
+  [System.IO.File]::WriteAllBytes('<FilePathOrUNCPath>\<FileName>.req', [System.Text.Encoding]::Unicode.GetBytes($txtrequest))
+  ```
+
+- If you need to send the _certificate renewal request file_ to the CA, use the following syntax to create a DER encoded request file:
+
+  ```PowerShell
+  $binrequest = Get-ExchangeCertificate -Thumbprint <Thumbprint> | New-ExchangeCertificate -GenerateRequest -BinaryEncoded [-KeySize <1024 | 2048 | 4096>] [-Server <ServerIdentity>]
+  [System.IO.File]::WriteAllBytes('<FilePathOrUNCPath>\<FileName>.pfx', $binrequest.FileData)
+  ```
 
 To find the thumbprint value of the certificate that you want to renew, run the following command:
 
@@ -73,21 +83,26 @@ To find the thumbprint value of the certificate that you want to renew, run the 
 Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $false} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
 ```
 
-This example creates a certificate renewal request with the following properties:
-
-- **Certificate to renew**: `5DB9879E38E36BCB60B761E29794392B23D1C054`
-- **RequestFile**: `\\FileServer01\Data\ContosoCertRenewal.req`
-
-```PowerShell
-Get-ExchangeCertificate -Thumbprint 5DB9879E38E36BCB60B761E29794392B23D1C054 | New-ExchangeCertificate -GenerateRequest -RequestFile \\FileServer01\Data\ContosoCertRenewal.req
-```
-
 For detailed syntax and parameter information, see [Get-ExchangeCertificate](/powershell/module/exchange/get-exchangecertificate) and [New-ExchangeCertificate](/powershell/module/exchange/new-exchangecertificate).
 
- **Notes:**
+**Notes:**
 
-- We didn't use the _BinaryEncoded_ switch, so the request is Base64 encoded. The information that's displayed onscreen is also written to the file, and the contents of the file are what we need to send to the CA. If we had used the _BinaryEncoded_ switch, the request would have been encoded by DER, and the certificate request file itself is what we would need to send to the CA.
-- We didn't use the _KeySize_ parameter, so the certificate request has a 2048 bit RSA public key.
+- If you don't use the _KeySize_ parameter, the certificate request has a 2048 bit RSA public key.
+- If you don't use the _Server_ parameter, the command is run the local Exchange server.
+
+This example creates a Base64 encoded certificate renewal request for the existing certificate with the Thumbprint value `5DB9879E38E36BCB60B761E29794392B23D1C054`:
+
+```PowerShell
+$txtrequest = Get-ExchangeCertificate -Thumbprint 5DB9879E38E36BCB60B761E29794392B23D1C054 | New-ExchangeCertificate -GenerateRequest
+[System.IO.File]::WriteAllBytes('\\FileServer01\Data\ContosoCertRenewal.req', [System.Text.Encoding]::Unicode.GetBytes($txtrequest))
+```
+
+This example creates a DER (binary) encoded certificate renewal request for the same certificate:
+
+```PowerShell
+$binrequest = Get-ExchangeCertificate -Thumbprint <Thumbprint> | New-ExchangeCertificate -GenerateRequest -BinaryEncoded
+[System.IO.File]::WriteAllBytes('\\FileServer01\Data\ContosoCertRenewal.pfx', $binrequest.FileData)
+```
 
 ### How do you know that you successfully created a certificate renewal request?
 
