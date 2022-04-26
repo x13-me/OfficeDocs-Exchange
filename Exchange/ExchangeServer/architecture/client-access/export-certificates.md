@@ -71,9 +71,30 @@ $cert = Export-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d01986286753
 [System.IO.File]::WriteAllBytes('C:\Data\Fabrikam.pfx', $cert.FileData)
 ```
 
-**Note**: You can use a similar procedure to export a pending certificate request (also known as a certificate signing request or CSR). For example, if you need to resubmit the certificate request to the certification authority, and you can't find the original certificate request file. When you export a certificate request, you typically don't need to use the _Password_ parameter or the _BinaryEncoded_ switch, and you save the request to a .req file. Note that you can't import an exported certificate request on another server.
+To export a pending certificate request (also known as a certificate signing request or CSR), use the following syntax:
+
+```powershell
+$txtcert = Export-ExchangeCertificate -Thumbprint <Thumbprint> [-Server <ServerName>]
+[System.IO.File]::WriteAllBytes('<FilePathOrUNCPath>\<FileName>.req', [System.Text.Encoding]::Unicode.GetBytes($txtcert))
+```
+
+This example exports a pending certificate request from the local Exchange server to a file with the following settings:
+
+- The certificate that has the thumbprint value `72570529B260E556349F3403F5CF5819D19B3B58` is exported to the file `\\FileServer01\Data\Fabrikam.req`.
+- The exported certificate file is Base64 encoded.
+
+```powershell
+$txtcert = Export-ExchangeCertificate -Thumbprint 72570529B260E556349F3403F5CF5819D19B3B58
+[System.IO.File]::WriteAllBytes('\\FileServer01\Data\Fabrikam.req', [System.Text.Encoding]::Unicode.GetBytes($txtcert))
+```
 
 For detailed syntax and parameter information, see [Export-ExchangeCertificate](/powershell/module/exchange/export-exchangecertificate).
+
+**Notes**:
+
+- You can export a pending certificate request if you need to resubmit the certificate request to the certification authority and you can't find the original certificate request file.
+- When you export a certificate request, you typically don't need to use the _Password_ parameter or the _BinaryEncoded_ switch, and you save the request to a .req file.
+- You can't import an exported pending certificate request on another server.
 
 ## How do you know this worked?
 
