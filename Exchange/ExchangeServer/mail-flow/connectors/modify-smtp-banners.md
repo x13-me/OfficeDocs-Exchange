@@ -58,7 +58,7 @@ Set-ReceiveConnector -Identity <ConnectorIdentity> -Banner "220 <Banner Text>"
 This example changes the SMTP banner on the Receive connector named Default Frontend Mailbox01 to the value 220 contoso.com.
 
 ```PowerShell
-Set-ReceiveConnector -Identity "Default Frontend Mailbox01" -Banner "220 consoso.com"
+Set-ReceiveConnector -Identity "Default Frontend Mailbox01" -Banner "220 contoso.com"
 ```
 
 This example removes the custom SMTP banner, which returns the SMTP banner to the default value.
